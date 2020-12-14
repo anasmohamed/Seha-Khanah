@@ -23,16 +23,20 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-00-0Q0" userLabel="SocialStackView">
-                                <rect key="frame" x="57" y="253" width="300" height="109"/>
+                                <rect key="frame" x="57" y="253" width="300" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KAI-jZ-6yt">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-WQ-Dkz">
-                                                <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ler-0W-Tdp"/>
+                                                    <constraint firstAttribute="width" constant="40" id="u6Z-Ox-OFg"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fT-I6-aCS">
-                                                <rect key="frame" x="35" y="0.0" width="265" height="33"/>
+                                                <rect key="frame" x="42" y="0.0" width="258" height="40"/>
                                                 <color key="backgroundColor" red="0.2808449864" green="0.36257418990000001" blue="0.58879619839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Login with Faceboo">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,14 +45,18 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dJq-XA-iHX">
-                                        <rect key="frame" x="0.0" y="38" width="300" height="33"/>
+                                        <rect key="frame" x="0.0" y="45" width="300" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-QB-Ymk">
-                                                <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-QB-Ymk">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9DS-Gy-5AD"/>
+                                                    <constraint firstAttribute="width" constant="40" id="xfq-Ic-IOt"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErW-S3-YH7">
-                                                <rect key="frame" x="35" y="0.0" width="265" height="33"/>
-                                                <color key="backgroundColor" red="0.2808449864" green="0.36257418990000001" blue="0.58879619839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="42" y="0.0" width="258" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.64354866740000005" blue="0.9539354444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Login with Faceboo">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -56,16 +64,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-oB-6SZ">
-                                        <rect key="frame" x="0.0" y="76" width="300" height="33"/>
+                                        <rect key="frame" x="0.0" y="90" width="300" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jDN-zn-dWp">
-                                                <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="jDN-zn-dWp">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="2K0-xf-BZY"/>
+                                                    <constraint firstAttribute="height" constant="40" id="gPf-19-Zs9"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsU-cj-Hnh">
-                                                <rect key="frame" x="35" y="0.0" width="265" height="33"/>
-                                                <color key="backgroundColor" red="0.2808449864" green="0.36257418990000001" blue="0.58879619839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="42" y="0.0" width="258" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Login with Faceboo">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -76,7 +88,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-2G-iGb" userLabel=":oginStackView">
-                                <rect key="frame" x="20" y="515" width="374" height="90"/>
+                                <rect key="frame" x="20" y="536" width="374" height="90"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Or Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-gX-KNf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -94,19 +106,19 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="578-NQ-LXJ">
-                                <rect key="frame" x="195.5" y="387" width="23.5" height="20.5"/>
+                                <rect key="frame" x="195.5" y="408" width="23.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcH-8n-eeA">
-                                <rect key="frame" x="57" y="416" width="300" height="30"/>
+                                <rect key="frame" x="57" y="437" width="300" height="30"/>
                                 <state key="normal" title="Create New Account">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-iU-XGu">
-                                <rect key="frame" x="57" y="626" width="300" height="30"/>
+                                <rect key="frame" x="57" y="647" width="300" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="TbZ-Jj-4Nz"/>
@@ -116,13 +128,13 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W6-Nc-uRQ">
-                                <rect key="frame" x="135" y="454" width="144" height="30"/>
+                                <rect key="frame" x="135" y="475" width="144" height="30"/>
                                 <state key="normal" title="Terms And Condition">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-hW-cpS">
-                                <rect key="frame" x="117.5" y="664" width="179" height="30"/>
+                                <rect key="frame" x="117.5" y="685" width="179" height="30"/>
                                 <state key="normal" title="Did You Forget Password?">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -179,7 +191,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Facebook_logo" width="33" height="33"/>
+        <image name="Facebook_logo" width="33.5" height="33.5"/>
+        <image name="Google_Logo" width="265.5" height="267.5"/>
+        <image name="Twitter_Logo" width="1280" height="720"/>
         <image name="logo" width="266.5" height="266.5"/>
     </resources>
 </document>
