@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
 		A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A325875B2600604E64 /* AppDelegate.swift */; };
 		A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A525875B2600604E64 /* SceneDelegate.swift */; };
 		A8AC86A825875B2600604E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A725875B2600604E64 /* ViewController.swift */; };
@@ -14,9 +15,15 @@
 		A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */; };
 		A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86AF25875B2B00604E64 /* Assets.xcassets */; };
 		A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */; };
+		A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86BF25876E3E00604E64 /* Signup.storyboard */; };
+		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
+		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.release.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.release.xcconfig"; sourceTree = "<group>"; };
+		4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.debug.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.debug.xcconfig"; sourceTree = "<group>"; };
+		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A025875B2600604E64 /* Seha Khanah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seha Khanah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		A8AC86AF25875B2B00604E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC86B425875B2B00604E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8AC86BF25876E3E00604E64 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldIcon+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6534F88701601621A7404715 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */,
+				3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A82F34112587DC96000A3591 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F299882587AE7000A6BB35 /* RegisterViewController.swift */,
+				A8AC86BF25876E3E00604E64 /* Signup.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A8AC869725875B2500604E64 = {
 			isa = PBXGroup;
 			children = (
 				A8AC86A225875B2600604E64 /* Seha Khanah */,
 				A8AC86A125875B2600604E64 /* Products */,
+				6534F88701601621A7404715 /* Pods */,
+				C0C17034AC418FA8FC07E430 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +89,8 @@
 		A8AC86A225875B2600604E64 /* Seha Khanah */ = {
 			isa = PBXGroup;
 			children = (
+				A8AC86C1258790CE00604E64 /* Common */,
+				A8AC86BB25876D2C00604E64 /* Presentaion */,
 				A8AC86A325875B2600604E64 /* AppDelegate.swift */,
 				A8AC86A525875B2600604E64 /* SceneDelegate.swift */,
 				A8AC86A725875B2600604E64 /* ViewController.swift */,
@@ -70,6 +103,54 @@
 			path = "Seha Khanah";
 			sourceTree = "<group>";
 		};
+		A8AC86BB25876D2C00604E64 /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC86BC25876D4F00604E64 /* AuthenticationScene */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		A8AC86BC25876D4F00604E64 /* AuthenticationScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC86BE25876DB300604E64 /* Signup */,
+				A8AC86BD25876DA800604E64 /* Login */,
+			);
+			path = AuthenticationScene;
+			sourceTree = "<group>";
+		};
+		A8AC86BD25876DA800604E64 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A8AC86BE25876DB300604E64 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				A82F34112587DC96000A3591 /* View */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		A8AC86C1258790CE00604E64 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C0C17034AC418FA8FC07E430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8AC86B725875B2B00604E64 /* Build configuration list for PBXNativeTarget "Seha Khanah" */;
 			buildPhases = (
+				5686F69C9A5D0815001AD006 /* [CP] Check Pods Manifest.lock */,
 				A8AC869C25875B2500604E64 /* Sources */,
 				A8AC869D25875B2500604E64 /* Frameworks */,
 				A8AC869E25875B2500604E64 /* Resources */,
+				04BB14F15F1A5E63371485CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +213,54 @@
 			files = (
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
+				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04BB14F15F1A5E63371485CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5686F69C9A5D0815001AD006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Seha Khanah-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8AC869C25875B2500604E64 /* Sources */ = {
@@ -142,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
+				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
+				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
@@ -286,6 +414,7 @@
 		};
 		A8AC86B825875B2B00604E64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +432,7 @@
 		};
 		A8AC86B925875B2B00604E64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

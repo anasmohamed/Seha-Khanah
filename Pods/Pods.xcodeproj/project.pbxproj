@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B30531318B8568BBBB31AF024E86865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2D103BBEFE9CE323A14C853861E4F801 /* MBRadioCheckboxButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BDE5804C9BCE314D05C8064FC6D1084 /* MBRadioCheckboxButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46E1797A3F13C02626E28F990BA9644B /* RadioCheckboxBaseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C2D62019E1A8A0DA180BA89E95024 /* RadioCheckboxBaseContainer.swift */; };
+		5BD8F71BA00B723CE3006522F10DE3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		652660D8A0DED1B07F1D3304C68972BE /* CheckBoxColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E193262BEF8C87075480BC0FDDC77D9D /* CheckBoxColor.swift */; };
+		741FA609F45BC4F01D1A587DF19ECBBA /* RadioButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72530051DBC04B7C32C9E28E08EB7565 /* RadioButtonColor.swift */; };
+		7C3FDD1FC86D93B805BFC5F7275104C3 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF2E6C78CF7BF9BC19DCDBD86D5994 /* CheckboxButton.swift */; };
+		842EEDEA961F5E57A0C03FEEF1BF469B /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FD1A0BE9AEE34639A5664A7B29FAF /* RadioButton.swift */; };
+		8A44B1C9B94C2C6831EA5F935560C256 /* RadioButtonCircleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A673E34BD910CE572D0167438AC652 /* RadioButtonCircleStyle.swift */; };
+		96E0C24088BBA11F6C17B3D9277383FA /* RadioCheckboxBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F73319C5289A06A41CDC9D525DC2D /* RadioCheckboxBaseButton.swift */; };
+		B4EDD6BA5B7FF2597E37BA39BAF1741B /* RadioButtonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE3E50A5D92A52320F42061648312B /* RadioButtonContainer.swift */; };
+		B5158000D8AF34EC5472BEB7614DA645 /* MBRadioCheckboxButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D251C2BEEDC699530354516560D1166C /* MBRadioCheckboxButton-dummy.m */; };
+		C4CF9DB856606722BEA2C24F67F47ED2 /* CheckboxLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55D25D439C203666691C59EC3CFD1D /* CheckboxLineStyle.swift */; };
+		D910DEA97F985EE37DB29BE21FC6F312 /* CheckboxButtonContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9027A68CC6F8E19A4A68A4FC0866E1 /* CheckboxButtonContainerView.swift */; };
+		EBC3F50A26B8272609388A82BAED144E /* Pods-Seha Khanah-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79DB575B78870EC4DAF0541F5136CE75 /* Pods-Seha Khanah-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4EA53823A5D1C79F5E68EE4B389E8F /* RadioButtonContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666598EC4BF8DDF26466366FC00043AC /* RadioButtonContainerView.swift */; };
+		F27336E36E943139D98D59B3206DA50F /* CheckboxButtonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C525DCC6B5344C50D12A1A830120403 /* CheckboxButtonContainer.swift */; };
+		F9602AB7DF2BB0C1606D895CA74F1111 /* Pods-Seha Khanah-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47AD0F0E89EDD8C29302C2ADA02BB7 /* Pods-Seha Khanah-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33518EBD1487E1CC4B70745B362B5DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB9C4135C214FAD2CB39E8241B20B94;
+			remoteInfo = MBRadioCheckboxButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1170B865D671FD46471ADD1846F5B5BC /* MBRadioCheckboxButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBRadioCheckboxButton.release.xcconfig; sourceTree = "<group>"; };
+		1C3265D3AB562D95CC167AF0570B679A /* MBRadioCheckboxButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBRadioCheckboxButton-Info.plist"; sourceTree = "<group>"; };
+		28141A2E802590022A9F3B09D93F7A3D /* MBRadioCheckboxButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBRadioCheckboxButton.modulemap; sourceTree = "<group>"; };
+		2BDE5804C9BCE314D05C8064FC6D1084 /* MBRadioCheckboxButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBRadioCheckboxButton-umbrella.h"; sourceTree = "<group>"; };
+		30A673E34BD910CE572D0167438AC652 /* RadioButtonCircleStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButtonCircleStyle.swift; path = Source/RadioButton/RadioButtonCircleStyle.swift; sourceTree = "<group>"; };
+		3A37CF288A96A00AE038EEBE7B6AE122 /* Pods-Seha Khanah-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Seha Khanah-acknowledgements.plist"; sourceTree = "<group>"; };
+		3C525DCC6B5344C50D12A1A830120403 /* CheckboxButtonContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckboxButtonContainer.swift; path = Source/CheckboxButton/CheckboxButtonContainer.swift; sourceTree = "<group>"; };
+		49EE3E50A5D92A52320F42061648312B /* RadioButtonContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButtonContainer.swift; path = Source/RadioButton/RadioButtonContainer.swift; sourceTree = "<group>"; };
+		4C3C52CE754DEEDF1CA3C036186F36D1 /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Seha_Khanah.framework; path = "Pods-Seha Khanah.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56326ECABCB372DD1809F5E05145A128 /* Pods-Seha Khanah-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Seha Khanah-Info.plist"; sourceTree = "<group>"; };
+		5BBB9638F91FFE5D5DFAD7DAEE82B711 /* Pods-Seha Khanah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Seha Khanah.release.xcconfig"; sourceTree = "<group>"; };
+		666598EC4BF8DDF26466366FC00043AC /* RadioButtonContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButtonContainerView.swift; path = Source/RadioButton/RadioButtonContainerView.swift; sourceTree = "<group>"; };
+		67B6292320315A5E7D2F53047F7E9E31 /* MBRadioCheckboxButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBRadioCheckboxButton-prefix.pch"; sourceTree = "<group>"; };
+		72530051DBC04B7C32C9E28E08EB7565 /* RadioButtonColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButtonColor.swift; path = Source/RadioButton/RadioButtonColor.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		79DB575B78870EC4DAF0541F5136CE75 /* Pods-Seha Khanah-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Seha Khanah-umbrella.h"; sourceTree = "<group>"; };
+		84FF2E6C78CF7BF9BC19DCDBD86D5994 /* CheckboxButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckboxButton.swift; path = Source/CheckboxButton/CheckboxButton.swift; sourceTree = "<group>"; };
+		877F73319C5289A06A41CDC9D525DC2D /* RadioCheckboxBaseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioCheckboxBaseButton.swift; path = Source/BaseButton/RadioCheckboxBaseButton.swift; sourceTree = "<group>"; };
+		8C55D25D439C203666691C59EC3CFD1D /* CheckboxLineStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckboxLineStyle.swift; path = Source/CheckboxButton/CheckboxLineStyle.swift; sourceTree = "<group>"; };
+		8C85C0AD3D2BB68EBF1CA99E30FC8CB9 /* Pods-Seha Khanah-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Seha Khanah-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A9D7C54629B9BD72DCB3461DDF3A67C /* Pods-Seha Khanah.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Seha Khanah.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC1C2D62019E1A8A0DA180BA89E95024 /* RadioCheckboxBaseContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioCheckboxBaseContainer.swift; path = Source/BaseButton/RadioCheckboxBaseContainer.swift; sourceTree = "<group>"; };
+		C55FD1A0BE9AEE34639A5664A7B29FAF /* RadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButton.swift; path = Source/RadioButton/RadioButton.swift; sourceTree = "<group>"; };
+		D251C2BEEDC699530354516560D1166C /* MBRadioCheckboxButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBRadioCheckboxButton-dummy.m"; sourceTree = "<group>"; };
+		D417802829D6AE846D84D5AF790AA35E /* MBRadioCheckboxButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBRadioCheckboxButton.framework; path = MBRadioCheckboxButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA47AD0F0E89EDD8C29302C2ADA02BB7 /* Pods-Seha Khanah-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Seha Khanah-dummy.m"; sourceTree = "<group>"; };
+		DA9027A68CC6F8E19A4A68A4FC0866E1 /* CheckboxButtonContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckboxButtonContainerView.swift; path = Source/CheckboxButton/CheckboxButtonContainerView.swift; sourceTree = "<group>"; };
+		DFF7958B5481CBBC3838FD837D53F690 /* MBRadioCheckboxButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBRadioCheckboxButton.debug.xcconfig; sourceTree = "<group>"; };
+		E193262BEF8C87075480BC0FDDC77D9D /* CheckBoxColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckBoxColor.swift; path = Source/CheckboxButton/CheckBoxColor.swift; sourceTree = "<group>"; };
+		E6F23ADCB873F2E76BF916E4A58BF654 /* Pods-Seha Khanah-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Seha Khanah-frameworks.sh"; sourceTree = "<group>"; };
+		E804D03E241ABC14384ABA1C5184BB55 /* Pods-Seha Khanah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Seha Khanah.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B8361A29327342B22664DFDB83F517B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD8F71BA00B723CE3006522F10DE3D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02211CB2DC3A6F96B7E321D6E836A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B30531318B8568BBBB31AF024E86865 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6286E66507DB4C33C5CC6D54A0E23680 /* Pods-Seha Khanah */ = {
+			isa = PBXGroup;
+			children = (
+				9A9D7C54629B9BD72DCB3461DDF3A67C /* Pods-Seha Khanah.modulemap */,
+				8C85C0AD3D2BB68EBF1CA99E30FC8CB9 /* Pods-Seha Khanah-acknowledgements.markdown */,
+				3A37CF288A96A00AE038EEBE7B6AE122 /* Pods-Seha Khanah-acknowledgements.plist */,
+				DA47AD0F0E89EDD8C29302C2ADA02BB7 /* Pods-Seha Khanah-dummy.m */,
+				E6F23ADCB873F2E76BF916E4A58BF654 /* Pods-Seha Khanah-frameworks.sh */,
+				56326ECABCB372DD1809F5E05145A128 /* Pods-Seha Khanah-Info.plist */,
+				79DB575B78870EC4DAF0541F5136CE75 /* Pods-Seha Khanah-umbrella.h */,
+				E804D03E241ABC14384ABA1C5184BB55 /* Pods-Seha Khanah.debug.xcconfig */,
+				5BBB9638F91FFE5D5DFAD7DAEE82B711 /* Pods-Seha Khanah.release.xcconfig */,
+			);
+			name = "Pods-Seha Khanah";
+			path = "Target Support Files/Pods-Seha Khanah";
+			sourceTree = "<group>";
+		};
+		7ED068B85AB96631FB7A5633AFB77273 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6286E66507DB4C33C5CC6D54A0E23680 /* Pods-Seha Khanah */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8F21FE1F725A6A571C64B05C66863AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D417802829D6AE846D84D5AF790AA35E /* MBRadioCheckboxButton.framework */,
+				4C3C52CE754DEEDF1CA3C036186F36D1 /* Pods_Seha_Khanah.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B008CE07FEB08ED957185DF0D6FACF68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1EBFAB4A6AAC16A8163679083A6F3F3 /* MBRadioCheckboxButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9D8FEFAC6FF4B7D4621F35378B5C263 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28141A2E802590022A9F3B09D93F7A3D /* MBRadioCheckboxButton.modulemap */,
+				D251C2BEEDC699530354516560D1166C /* MBRadioCheckboxButton-dummy.m */,
+				1C3265D3AB562D95CC167AF0570B679A /* MBRadioCheckboxButton-Info.plist */,
+				67B6292320315A5E7D2F53047F7E9E31 /* MBRadioCheckboxButton-prefix.pch */,
+				2BDE5804C9BCE314D05C8064FC6D1084 /* MBRadioCheckboxButton-umbrella.h */,
+				DFF7958B5481CBBC3838FD837D53F690 /* MBRadioCheckboxButton.debug.xcconfig */,
+				1170B865D671FD46471ADD1846F5B5BC /* MBRadioCheckboxButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBRadioCheckboxButton";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B008CE07FEB08ED957185DF0D6FACF68 /* Pods */,
+				8F21FE1F725A6A571C64B05C66863AF0 /* Products */,
+				7ED068B85AB96631FB7A5633AFB77273 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1EBFAB4A6AAC16A8163679083A6F3F3 /* MBRadioCheckboxButton */ = {
+			isa = PBXGroup;
+			children = (
+				84FF2E6C78CF7BF9BC19DCDBD86D5994 /* CheckboxButton.swift */,
+				3C525DCC6B5344C50D12A1A830120403 /* CheckboxButtonContainer.swift */,
+				DA9027A68CC6F8E19A4A68A4FC0866E1 /* CheckboxButtonContainerView.swift */,
+				E193262BEF8C87075480BC0FDDC77D9D /* CheckBoxColor.swift */,
+				8C55D25D439C203666691C59EC3CFD1D /* CheckboxLineStyle.swift */,
+				C55FD1A0BE9AEE34639A5664A7B29FAF /* RadioButton.swift */,
+				30A673E34BD910CE572D0167438AC652 /* RadioButtonCircleStyle.swift */,
+				72530051DBC04B7C32C9E28E08EB7565 /* RadioButtonColor.swift */,
+				49EE3E50A5D92A52320F42061648312B /* RadioButtonContainer.swift */,
+				666598EC4BF8DDF26466366FC00043AC /* RadioButtonContainerView.swift */,
+				877F73319C5289A06A41CDC9D525DC2D /* RadioCheckboxBaseButton.swift */,
+				AC1C2D62019E1A8A0DA180BA89E95024 /* RadioCheckboxBaseContainer.swift */,
+				C9D8FEFAC6FF4B7D4621F35378B5C263 /* Support Files */,
+			);
+			name = MBRadioCheckboxButton;
+			path = MBRadioCheckboxButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4ED74990B454958B5DFC9B19D2690901 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC3F50A26B8272609388A82BAED144E /* Pods-Seha Khanah-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AABBEE02C7CF37FEA348DE26DF78140 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D103BBEFE9CE323A14C853861E4F801 /* MBRadioCheckboxButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		125AD892A0236BAACFDC8C07C4FBDCE8 /* Pods-Seha Khanah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AEC42C4A7A6546C08740D4B861F8FA7 /* Build configuration list for PBXNativeTarget "Pods-Seha Khanah" */;
+			buildPhases = (
+				4ED74990B454958B5DFC9B19D2690901 /* Headers */,
+				EFD3ED56B3BECB531E00CA1F9EB4EF6A /* Sources */,
+				E02211CB2DC3A6F96B7E321D6E836A53 /* Frameworks */,
+				954C224F4D853024F86C4230F6B4DE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D16F365C951E984EA6F64189DB31FE /* PBXTargetDependency */,
+			);
+			name = "Pods-Seha Khanah";
+			productName = "Pods-Seha Khanah";
+			productReference = 4C3C52CE754DEEDF1CA3C036186F36D1 /* Pods_Seha_Khanah.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AB9C4135C214FAD2CB39E8241B20B94 /* MBRadioCheckboxButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DA69252F589F93B8840CF01BD9B533 /* Build configuration list for PBXNativeTarget "MBRadioCheckboxButton" */;
+			buildPhases = (
+				5AABBEE02C7CF37FEA348DE26DF78140 /* Headers */,
+				C758758628D5436EE2CE313CCDBB69A2 /* Sources */,
+				9B8361A29327342B22664DFDB83F517B /* Frameworks */,
+				09AB0E3559EC34FDCDE57B6FB4DCC83A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBRadioCheckboxButton;
+			productName = MBRadioCheckboxButton;
+			productReference = D417802829D6AE846D84D5AF790AA35E /* MBRadioCheckboxButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8F21FE1F725A6A571C64B05C66863AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AB9C4135C214FAD2CB39E8241B20B94 /* MBRadioCheckboxButton */,
+				125AD892A0236BAACFDC8C07C4FBDCE8 /* Pods-Seha Khanah */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09AB0E3559EC34FDCDE57B6FB4DCC83A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954C224F4D853024F86C4230F6B4DE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C758758628D5436EE2CE313CCDBB69A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FDD1FC86D93B805BFC5F7275104C3 /* CheckboxButton.swift in Sources */,
+				F27336E36E943139D98D59B3206DA50F /* CheckboxButtonContainer.swift in Sources */,
+				D910DEA97F985EE37DB29BE21FC6F312 /* CheckboxButtonContainerView.swift in Sources */,
+				652660D8A0DED1B07F1D3304C68972BE /* CheckBoxColor.swift in Sources */,
+				C4CF9DB856606722BEA2C24F67F47ED2 /* CheckboxLineStyle.swift in Sources */,
+				B5158000D8AF34EC5472BEB7614DA645 /* MBRadioCheckboxButton-dummy.m in Sources */,
+				842EEDEA961F5E57A0C03FEEF1BF469B /* RadioButton.swift in Sources */,
+				8A44B1C9B94C2C6831EA5F935560C256 /* RadioButtonCircleStyle.swift in Sources */,
+				741FA609F45BC4F01D1A587DF19ECBBA /* RadioButtonColor.swift in Sources */,
+				B4EDD6BA5B7FF2597E37BA39BAF1741B /* RadioButtonContainer.swift in Sources */,
+				EC4EA53823A5D1C79F5E68EE4B389E8F /* RadioButtonContainerView.swift in Sources */,
+				96E0C24088BBA11F6C17B3D9277383FA /* RadioCheckboxBaseButton.swift in Sources */,
+				46E1797A3F13C02626E28F990BA9644B /* RadioCheckboxBaseContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD3ED56B3BECB531E00CA1F9EB4EF6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9602AB7DF2BB0C1606D895CA74F1111 /* Pods-Seha Khanah-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5D16F365C951E984EA6F64189DB31FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBRadioCheckboxButton;
+			target = 9AB9C4135C214FAD2CB39E8241B20B94 /* MBRadioCheckboxButton */;
+			targetProxy = 33518EBD1487E1CC4B70745B362B5DF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4AFD9EBC585F5D6C4603592AFBB03EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E804D03E241ABC14384ABA1C5184BB55 /* Pods-Seha Khanah.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54CA621D9204BDAE9ECAE843AB2BA033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1170B865D671FD46471ADD1846F5B5BC /* MBRadioCheckboxButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBRadioCheckboxButton/MBRadioCheckboxButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBRadioCheckboxButton/MBRadioCheckboxButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBRadioCheckboxButton/MBRadioCheckboxButton.modulemap";
+				PRODUCT_MODULE_NAME = MBRadioCheckboxButton;
+				PRODUCT_NAME = MBRadioCheckboxButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77BC444BDF4D8300BF407810848DB54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		93075FA9D2148A47F741B767953712FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFF7958B5481CBBC3838FD837D53F690 /* MBRadioCheckboxButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBRadioCheckboxButton/MBRadioCheckboxButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBRadioCheckboxButton/MBRadioCheckboxButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBRadioCheckboxButton/MBRadioCheckboxButton.modulemap";
+				PRODUCT_MODULE_NAME = MBRadioCheckboxButton;
+				PRODUCT_NAME = MBRadioCheckboxButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		976BECA00803CE90D231E6994D548BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BBB9638F91FFE5D5DFAD7DAEE82B711 /* Pods-Seha Khanah.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFCC42C465A1B70A0E9416A98F9507A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DA69252F589F93B8840CF01BD9B533 /* Build configuration list for PBXNativeTarget "MBRadioCheckboxButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93075FA9D2148A47F741B767953712FD /* Debug */,
+				54CA621D9204BDAE9ECAE843AB2BA033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AEC42C4A7A6546C08740D4B861F8FA7 /* Build configuration list for PBXNativeTarget "Pods-Seha Khanah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFD9EBC585F5D6C4603592AFBB03EE9 /* Debug */,
+				976BECA00803CE90D231E6994D548BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BC444BDF4D8300BF407810848DB54F /* Debug */,
+				EFCC42C465A1B70A0E9416A98F9507A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
