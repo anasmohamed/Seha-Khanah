@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
+		A82F34142587E463000A3591 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82F34132587E463000A3591 /* Login.storyboard */; };
+		A82F34162587E489000A3591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F34152587E489000A3591 /* LoginViewController.swift */; };
 		A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A325875B2600604E64 /* AppDelegate.swift */; };
 		A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A525875B2600604E64 /* SceneDelegate.swift */; };
 		A8AC86A825875B2600604E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A725875B2600604E64 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.release.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.release.xcconfig"; sourceTree = "<group>"; };
 		4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.debug.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.debug.xcconfig"; sourceTree = "<group>"; };
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82F34132587E463000A3591 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A82F34152587E489000A3591 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A8AC86A025875B2600604E64 /* Seha Khanah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seha Khanah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 			children = (
 				A8F299882587AE7000A6BB35 /* RegisterViewController.swift */,
 				A8AC86BF25876E3E00604E64 /* Signup.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A82F34122587E429000A3591 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A82F34132587E463000A3591 /* Login.storyboard */,
+				A82F34152587E489000A3591 /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 		A8AC86BD25876DA800604E64 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A82F34122587E429000A3591 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -214,6 +228,7 @@
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
+				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,

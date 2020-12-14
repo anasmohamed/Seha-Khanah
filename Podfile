@@ -7,6 +7,7 @@ target 'Seha Khanah' do
 
   # Pods for Seha Khanah
     pod 'MBRadioCheckboxButton'
-
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
 
 end
