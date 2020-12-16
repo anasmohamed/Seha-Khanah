@@ -10,6 +10,7 @@
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
 		A82F34142587E463000A3591 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82F34132587E463000A3591 /* Login.storyboard */; };
 		A82F34162587E489000A3591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F34152587E489000A3591 /* LoginViewController.swift */; };
+		A83D6EAD258A20AD00186693 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EAC258A20AD00186693 /* Offers.storyboard */; };
 		A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A325875B2600604E64 /* AppDelegate.swift */; };
 		A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A525875B2600604E64 /* SceneDelegate.swift */; };
 		A8AC86A825875B2600604E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A725875B2600604E64 /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 		A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86AF25875B2B00604E64 /* Assets.xcassets */; };
 		A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */; };
 		A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86BF25876E3E00604E64 /* Signup.storyboard */; };
+		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
+		A8DBD8352588EF6D001C203E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DBD8342588EF6D001C203E /* MainStoryboard.storyboard */; };
+		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,7 @@
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82F34132587E463000A3591 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A82F34152587E489000A3591 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A83D6EAC258A20AD00186693 /* Offers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
 		A8AC86A025875B2600604E64 /* Seha Khanah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seha Khanah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC86B425875B2B00604E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AC86BF25876E3E00604E64 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8DBD8342588EF6D001C203E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldIcon+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +89,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A83D6EAA258A206300186693 /* OffersScene */ = {
+			isa = PBXGroup;
+			children = (
+				A83D6EAE258A2DD600186693 /* New Group */,
+				A83D6EAB258A207900186693 /* View */,
+			);
+			path = OffersScene;
+			sourceTree = "<group>";
+		};
+		A83D6EAB258A207900186693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A83D6EAC258A20AD00186693 /* Offers.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A83D6EAE258A2DD600186693 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A8AC869725875B2500604E64 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +151,8 @@
 		A8AC86BB25876D2C00604E64 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				A83D6EAA258A206300186693 /* OffersScene */,
+				A8DBD8302588EE59001C203E /* SearchScene */,
 				A8AC86BC25876D4F00604E64 /* AuthenticationScene */,
 			);
 			path = Presentaion;
@@ -155,6 +189,24 @@
 				A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A8DBD8302588EE59001C203E /* SearchScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8DBD8312588EE6A001C203E /* View */,
+			);
+			path = SearchScene;
+			sourceTree = "<group>";
+		};
+		A8DBD8312588EE6A001C203E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8DBD8322588EF21001C203E /* MainViewController.swift */,
+				A8DBD8342588EF6D001C203E /* MainStoryboard.storyboard */,
+				A8DBD836258908B5001C203E /* SearchViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C0C17034AC418FA8FC07E430 /* Frameworks */ = {
@@ -225,7 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DBD8352588EF6D001C203E /* MainStoryboard.storyboard in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
+				A83D6EAD258A20AD00186693 /* Offers.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
@@ -285,10 +339,12 @@
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
+				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
+				A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

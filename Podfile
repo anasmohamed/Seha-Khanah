@@ -9,5 +9,7 @@ target 'Seha Khanah' do
     pod 'MBRadioCheckboxButton'
     pod 'FacebookCore'
     pod 'FacebookLogin'
+    pod 'AACarousel'
+
 
 end

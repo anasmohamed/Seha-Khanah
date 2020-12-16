@@ -1,4 +1,5 @@
 PODS:
+  - AACarousel (1.1.1)
   - FacebookCore (0.9.0):
     - FBSDKCoreKit (~> 5.0)
   - FacebookLogin (0.9.0):
@@ -18,12 +19,14 @@ PODS:
   - MBRadioCheckboxButton (2.0)
 
 DEPENDENCIES:
+  - AACarousel
   - FacebookCore
   - FacebookLogin
   - MBRadioCheckboxButton
 
 SPEC REPOS:
   trunk:
+    - AACarousel
     - FacebookCore
     - FacebookLogin
     - FBSDKCoreKit
@@ -31,12 +34,13 @@ SPEC REPOS:
     - MBRadioCheckboxButton
 
 SPEC CHECKSUMS:
+  AACarousel: e0dbd2d3153c56c36df8aa282553f20fc88e132b
   FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
   FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
   FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
   FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
   MBRadioCheckboxButton: 6e2a2cdc441e292e45b64c4e65eb8fc1fc05eef2
 
-PODFILE CHECKSUM: 51b6ef8a0e620ca7049738c58016671d3ae39964
+PODFILE CHECKSUM: ae7c6d806ac6820b0f2ec97c17995bb6939fd3fd
 
 COCOAPODS: 1.9.3
