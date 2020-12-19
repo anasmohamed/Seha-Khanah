@@ -40,8 +40,17 @@ class OffersCategoriesPresenter {
     }
    
     
-    func configure(cell: OffersCategorisCellView, for index: Int) {
-        let offerCategory = offers[index]
+    func configure(cell: OffersCategorisCellView, for index: Int,section:Int) {
+        print(offers.count)
+        
+        if offers.count > 0{
+            let offerCategory : OffersCategory
+            if section == 0{
+                 offerCategory = offers[0]}
+            else{
+                offerCategory = offers[1..<offers.count]
+
+            }
         
         
         
@@ -52,7 +61,7 @@ class OffersCategoriesPresenter {
             else { return }
         
         cell.configure(image: image, categoryName: nameEn)
-        
+        }
         
     }}
 
