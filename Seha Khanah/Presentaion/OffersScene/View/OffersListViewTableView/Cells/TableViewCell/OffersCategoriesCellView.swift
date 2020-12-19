@@ -8,5 +8,5 @@
 
 import Foundation
 protocol OffersCategorisCellView:class {
-    func displayCategory(category: OffersCategory)
+    func configure(image:String,categoryName:String)
 }

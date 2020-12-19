@@ -7,27 +7,28 @@
 //
 
 import UIKit
-
-class OfferCategoriesCollectionViewCell: UICollectionViewCell {
+import SDWebImage
+class OfferCategoriesCollectionViewCell: UICollectionViewCell,OffersCategorisCellView {
+   
     
-      
-      @IBOutlet var image : UIImageView!
-
-
-      static let identifier = "CategoryCollectionViewCell"
-         
-         static func nib() ->UINib{
-             return UINib(nibName: "CategoryCollectionViewCell", bundle: nil)
-         }
+    @IBOutlet var categoryImage : UIImageView!
+    @IBOutlet var categoryNameLbl : UILabel!
+    
+    
+    static let identifier = "OfferCategoriesCollectionViewCell"
+    
+    static func nib() ->UINib{
+        return UINib(nibName: "OfferCategoriesCollectionViewCell", bundle: nil)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-      public func configure(image:String)
-        {
-            
-//            self.image.sd_setImage(with:URL(string: image) , placeholderImage: UIImage(named: "no_image_avaliable"))
-    //         self.image.sd_setImage(with:URL(string: image) , placeholderImage: UIImage(named: "7"))
-        }
-
+    public func configure(image:String,categoryName:String)
+    {
+        categoryNameLbl.text = categoryName
+                    self.categoryImage.sd_setImage(with:URL(string: image) , placeholderImage: UIImage(named: "no_image_avaliable"))
+                
+    }
+    
 }

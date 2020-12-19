@@ -11,6 +11,6 @@ import Foundation
 protocol OffersCategorisViewProtocol: class {
     func showIndicator()
     func hideIndicator()
-    func getOffersCategorisSuccess(category: OffersCategory)
+    func getOffersCategorisSuccess()
     func showError(error: String)
 }

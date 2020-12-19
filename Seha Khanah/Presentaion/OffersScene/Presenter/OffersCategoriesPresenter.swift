@@ -8,30 +8,53 @@
 
 import Foundation
 class OffersCategoriesPresenter {
+    private let offersInteractor:OffersInteractor
+    private var offers: [OffersCategory]
     private weak var view: OffersCategorisViewProtocol?
     init(view: OffersCategorisViewProtocol) {
         self.view = view
+        self.offersInteractor = OffersInteractor()
+        offers = [OffersCategory]()
+        
     }
     
     func getOffersCategories() {
         
         view?.showIndicator()
-        SehaKhanahAPIClient.getOffersCategories{ result in
-            
-            self.view?.hideIndicator()
-            
-            switch result {
-            case .success(let offersCategoris):
-                print(offersCategoris)
+        offersInteractor.getOffersCategoris{ (result,error)  in
+            if let error = error {
+                print("errrror\(error)")
+                self.view?.showError(error: error.localizedDescription)
+            } else {
+                if result != nil{
+                    self.offers = result!
+                    self.view?.getOffersCategorisSuccess()
+                }
                 
-                
-            case .failure(let error):
-                print(error)
             }
             
         }
     }
-}
+    public func getOffersCategoriesCount() -> Int {
+        return offers.count
+    }
+   
+    
+    func configure(cell: OffersCategorisCellView, for index: Int) {
+        let offerCategory = offers[index]
+        
+        
+        
+        
+        
+        guard let image = offerCategory.photo,
+            let nameEn = offerCategory.nameEn
+            else { return }
+        
+        cell.configure(image: image, categoryName: nameEn)
+        
+        
+    }}
 
 
 

@@ -10,9 +10,12 @@ import Foundation
 import SwiftyJSON
 class OffersCategory:Codable  {
     var photo: String?
+    var nameEn: String?
     init?(withJSON data: JSON) {
-    
-        self.photo = data["photos"][0].stringValue
-       
+        
+        self.photo = data["featured"].stringValue
+        self.nameEn = data["name_en"].stringValue
+        print(photo)
+        print(nameEn)
     }
 }

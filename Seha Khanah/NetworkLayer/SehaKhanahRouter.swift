@@ -1,78 +1,98 @@
 //
-//  SehaKhanahAPIManeger.swift
-//  Seha Khanah
+//  LuzazRouter.swift
+//  Luzaz
 //
-//  Created by Anas on 12/17/20.
-//  Copyright © 2020 Anas. All rights reserved.
+//  Created by jets on 12/15/1440 AH.
+//  Copyright © 1440 AH Luzaz. All rights reserved.
 //
 
 import Foundation
 import Alamofire
 
-enum HTTPHeaderField: String {
-    case authentication = "Authorization"
-    case contentType = "Content-Type"
-    case acceptType = "Accept"
-    case acceptEncoding = "Accept-Encoding"
-}
-
-enum ContentType: String {
-    case json = "application/json"
-}
-
 enum SehaKhanahRouter: URLRequestConvertible {
     
+    
     case getOffersCategories
-   
+ 
     
-    // MARK: - HTTPMethod
-    private var method: HTTPMethod {
-        switch self {
-      
-        case .getOffersCategories:
-            return .get
-        
-        }
-    }
     
-    // MARK: - Path
-    private var path: String {
+    var path: String {
         switch self {
         case .getOffersCategories:
             return NetworkingConstants.getOffersCategories
+      
+
         }
     }
     
-    // MARK: - Parameters
-    private var parameters: Parameters? {
+    var httpMethod: HTTPMethod {
+        
         switch self {
         case .getOffersCategories:
-            return nil
+            return .get
+      
+            
         }
     }
     
-    // MARK: - URLRequestConvertible
-    func asURLRequest() throws -> URLRequest {
-        let url = try NetworkingConstants.baseURL.asURL()
+//    var httpHeaders: HTTPHeaders {
+//
+//        let httpHeaders = [String:String]()
+//
+//        switch self {
+//            //        case .getOffers:
+//            //            httpHeaders[NetworkingConstants.accept] = NetworkingConstants.contentTypeJSON
+//        //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
+//        default:
+//            print("Empty request headers")
+//        }
+//
+//        return httpHeaders
+//    }
+    
+    var body: [String: Any] {
         
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+        let body = [String:Any]()
         
-        // HTTP Method
-        urlRequest.httpMethod = method.rawValue
-        
-        // Common Headers
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-        
-        // Parameters
-        if let parameters = parameters {
-            do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-            } catch {
-                throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
-            }
+        switch self {
+            
+            
+        default:
+            print("Empty request body")
         }
         
-        return urlRequest
+        return body
+    }
+    
+    var params: [String: Any] {
+        
+        var params = [String:Any]()
+        
+        switch self {
+        
+            
+        default:
+            print("Empty Paramter")
+            
+        }
+        
+        return params
+    }
+    
+    func asURLRequest() throws -> URLRequest {
+        let baseURL = try NetworkingConstants.baseURL.asURL()
+        
+        // URL Request Components
+        var urlRequest = URLRequest(url: baseURL.appendingPathComponent(path))
+        urlRequest.httpMethod = httpMethod.rawValue
+        switch self {
+        case .getOffersCategories:
+            
+            return try URLEncoding.default.encode(urlRequest, with: params)
+            
+            //        case .register, .addBarber, .addService:
+            //            return try JSONEncoding.default.encode(urlRequest, with: body)
+            
+        }
     }
 }

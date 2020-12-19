@@ -16,15 +16,14 @@
 		A83D6EB2258A2E6000186693 /* OffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB0258A2E6000186693 /* OffersTableViewCell.swift */; };
 		A83D6EB3258A2E6000186693 /* OffersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB1258A2E6000186693 /* OffersTableViewCell.xib */; };
 		A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */; };
-		A83D6EB8258A322500186693 /* OfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB6258A322500186693 /* OfferCollectionViewCell.xib */; };
+		A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */; };
 		A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EBC258A394C00186693 /* NetworkingConstants.swift */; };
-		A87D28D6258C167E00B7957F /* SehaKhanahAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D5258C167E00B7957F /* SehaKhanahAPIClient.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
-		A8A9B35F258CD65E002DA9A0 /* Base in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B35E258CD65E002DA9A0 /* Base */; };
 		A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B369258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift */; };
 		A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B36D258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift */; };
 		A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B36F258CE9E3002DA9A0 /* OffersCategoriesCellView.swift */; };
 		A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B371258CEEA3002DA9A0 /* OffersViewController.swift */; };
+		A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B374258CF6B7002DA9A0 /* OffersInteractor.swift */; };
 		A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A325875B2600604E64 /* AppDelegate.swift */; };
 		A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A525875B2600604E64 /* SceneDelegate.swift */; };
 		A8AC86A825875B2600604E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A725875B2600604E64 /* ViewController.swift */; };
@@ -52,15 +51,14 @@
 		A83D6EB0258A2E6000186693 /* OffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersTableViewCell.swift; sourceTree = "<group>"; };
 		A83D6EB1258A2E6000186693 /* OffersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffersTableViewCell.xib; sourceTree = "<group>"; };
 		A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
-		A83D6EB6258A322500186693 /* OfferCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCollectionViewCell.xib; sourceTree = "<group>"; };
+		A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A83D6EBC258A394C00186693 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
-		A87D28D5258C167E00B7957F /* SehaKhanahAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehaKhanahAPIClient.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
-		A8A9B35E258CD65E002DA9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base; path = "Seha Khanah/Common/Base"; sourceTree = "<group>"; };
 		A8A9B369258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesPresenter.swift; sourceTree = "<group>"; };
 		A8A9B36D258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesViewProtocol.swift; sourceTree = "<group>"; };
 		A8A9B36F258CE9E3002DA9A0 /* OffersCategoriesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesCellView.swift; sourceTree = "<group>"; };
 		A8A9B371258CEEA3002DA9A0 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		A8A9B374258CF6B7002DA9A0 /* OffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersInteractor.swift; sourceTree = "<group>"; };
 		A8AC86A025875B2600604E64 /* Seha Khanah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seha Khanah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +118,7 @@
 		A83D6EAA258A206300186693 /* OffersScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8A9B373258CF606002DA9A0 /* Interactor */,
 				A8A9B368258CE18C002DA9A0 /* Presenter */,
 				A83D6EAB258A207900186693 /* View */,
 			);
@@ -158,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */,
-				A83D6EB6258A322500186693 /* OfferCollectionViewCell.xib */,
+				A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -178,7 +177,6 @@
 			children = (
 				A83D6EBB258A393200186693 /* Utilities */,
 				A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */,
-				A87D28D5258C167E00B7957F /* SehaKhanahAPIClient.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -207,10 +205,17 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		A8A9B373258CF606002DA9A0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8A9B374258CF6B7002DA9A0 /* OffersInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A8AC869725875B2500604E64 = {
 			isa = PBXGroup;
 			children = (
-				A8A9B35E258CD65E002DA9A0 /* Base */,
 				A8AC86A225875B2600604E64 /* Seha Khanah */,
 				A8AC86A125875B2600604E64 /* Products */,
 				6534F88701601621A7404715 /* Pods */,
@@ -377,7 +382,7 @@
 			files = (
 				A83D6EB3258A2E6000186693 /* OffersTableViewCell.xib in Resources */,
 				A8DBD8352588EF6D001C203E /* MainStoryboard.storyboard in Resources */,
-				A83D6EB8258A322500186693 /* OfferCollectionViewCell.xib in Resources */,
+				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
 				A83D6EAD258A20AD00186693 /* Offers.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
@@ -436,17 +441,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A9B35F258CD65E002DA9A0 /* Base in Sources */,
 				A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
-				A87D28D6258C167E00B7957F /* SehaKhanahAPIClient.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
 				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */,
+				A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
