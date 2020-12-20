@@ -12,11 +12,13 @@ class OffersViewController: UIViewController {
     
     
     @IBOutlet weak var mostOrderOffersTableView: UITableView!
-    
 
-    
     @IBOutlet weak var imageSlider: AACarousel!
     @IBOutlet weak var offersCategoriesCollectionView: UICollectionView!
+    @IBOutlet weak var mostOrderedOffersTableView: UITableView!
+    
+    
+    var mostOrderedOffersPresenter : MostOrderedOffersPresenter!
     var presenter: OffersCategoriesPresenter!
     var titleArray = [String]()
     
@@ -24,9 +26,15 @@ class OffersViewController: UIViewController {
         super.viewDidLoad()
         offersCategoriesCollectionView.delegate = self
         offersCategoriesCollectionView.dataSource = self
-        presenter = OffersCategoriesPresenter(view : self)
-        setupCollectionView()
         
+        mostOrderOffersTableView.delegate = self
+        mostOrderedOffersTableView.dataSource = self
+        
+        
+        presenter = OffersCategoriesPresenter(view : self)
+        mostOrderedOffersPresenter = MostOrderedOffersPresenter(view: self)
+        setupCollectionView()
+        setupMostOrderedOffersTableView()
         let pathArray = ["http://www.gettyimages.ca/gi-resources/images/Embed/new/embed2.jpg",
                          "https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg",
                          "https://imgct2.aeplcdn.com/img/800x600/car-data/big/honda-amaze-image-12749.png",
@@ -39,6 +47,7 @@ class OffersViewController: UIViewController {
         imageSlider.setCarouselOpaque(layer: false, describedTitle: false, pageIndicator: false)
         imageSlider.setCarouselLayout(displayStyle: 0, pageIndicatorPositon: 5, pageIndicatorColor: nil, describedTitleColor: nil, layerColor: nil)
         presenter.getOffersCategories()
+        mostOrderedOffersPresenter.getMostOrderedOffers()
         collectionViewLayoutInsets()
     }
     override func viewWillAppear(_ animated: Bool) {

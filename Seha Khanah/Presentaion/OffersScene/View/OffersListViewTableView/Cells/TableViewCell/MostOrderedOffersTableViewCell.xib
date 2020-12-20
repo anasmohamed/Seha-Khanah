@@ -99,6 +99,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookNowBtn" destination="c4N-Jv-wEn" id="mRe-zB-n9W"/>
+                <outlet property="discountLbl" destination="hRk-oK-2Br" id="9qP-fC-Y5C"/>
+                <outlet property="doctorNameLbl" destination="4Vy-k2-wlA" id="Vwq-DK-aVn"/>
+                <outlet property="doctorPhotoImageVIew" destination="a74-JG-yn7" id="mfk-Qf-gTQ"/>
+                <outlet property="offerDetailsLbl" destination="eTm-rj-QYL" id="9aw-G2-xK6"/>
+                <outlet property="offerNameLbl" destination="1xl-b4-zng" id="lF3-PX-XVm"/>
+                <outlet property="offerPhotoImageIView" destination="JDQ-84-yKz" id="P0w-97-7qo"/>
+                <outlet property="offerRating" destination="kT6-sk-Us5" id="Bty-7F-dvk"/>
+                <outlet property="saleLbl" destination="y9G-4S-OuH" id="qTQ-hb-3cs"/>
+            </connections>
             <point key="canvasLocation" x="145.6521739130435" y="187.5"/>
         </tableViewCell>
     </objects>
