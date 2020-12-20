@@ -13,13 +13,15 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     
     case getOffersCategories
- 
+    case getMostOrderedOffers
     
     
     var path: String {
         switch self {
         case .getOffersCategories:
             return NetworkingConstants.getOffersCategories
+        case .getMostOrderedOffers:
+            return NetworkingConstants.getMostOrderedOffers
       
 
         }
@@ -28,7 +30,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .getOffersCategories:
+        case .getOffersCategories,.getMostOrderedOffers:
             return .get
       
             
@@ -86,7 +88,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var urlRequest = URLRequest(url: baseURL.appendingPathComponent(path))
         urlRequest.httpMethod = httpMethod.rawValue
         switch self {
-        case .getOffersCategories:
+        case .getOffersCategories,.getMostOrderedOffers:
             
             return try URLEncoding.default.encode(urlRequest, with: params)
             

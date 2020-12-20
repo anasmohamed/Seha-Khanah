@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Syd-4a-Kv4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -21,7 +21,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ND6-kp-BB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="152"/>
+            <point key="canvasLocation" x="341" y="551"/>
+        </scene>
+        <!--OffersViewController-->
+        <scene sceneID="B8O-jz-Q8r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Offers" referencedIdentifier="OffersViewController" id="zez-vq-jO1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="U4H-wZ-NQU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBl-Gb-rXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="68"/>
         </scene>
         <!--Search-->
         <scene sceneID="l5d-EJ-kah">
@@ -245,6 +255,7 @@
                     <connections>
                         <segue destination="OKn-8L-Dt0" kind="relationship" relationship="viewControllers" id="n99-ho-iac"/>
                         <segue destination="FzW-s2-eFP" kind="relationship" relationship="viewControllers" id="1rx-rc-bPe"/>
+                        <segue destination="zez-vq-jO1" kind="relationship" relationship="viewControllers" id="mvV-lR-rXW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyc-TL-BlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

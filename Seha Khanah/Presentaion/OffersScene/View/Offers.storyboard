@@ -11,7 +11,7 @@
         <!--Offers View Controller-->
         <scene sceneID="Mah-V5-YqD">
             <objects>
-                <viewController id="4aL-22-4yU" customClass="OffersViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="OffersViewController" storyboardIdentifier="OffersViewController" id="4aL-22-4yU" customClass="OffersViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Czu-aJ-Mt5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,6 +69,7 @@
                     </view>
                     <connections>
                         <outlet property="imageSlider" destination="oLu-Dd-5W7" id="iC1-Tg-wat"/>
+                        <outlet property="mostOrderOffersTableView" destination="k5D-US-lln" id="FUS-Op-KmQ"/>
                         <outlet property="offersCategoriesCollectionView" destination="9cI-vh-ykG" id="qq8-pD-ohn"/>
                     </connections>
                 </viewController>

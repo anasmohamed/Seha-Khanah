@@ -21,6 +21,7 @@ class NetworkingConstants {
         
   
         static let getOffersCategories = "offer/categories"
-    
+        static let getMostOrderedOffers = "offer/mostrequest"
+
    
 }
