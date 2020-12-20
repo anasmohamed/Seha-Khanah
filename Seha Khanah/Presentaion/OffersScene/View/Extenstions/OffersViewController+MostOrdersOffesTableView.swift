@@ -25,6 +25,8 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
         mostOrderedOffersPresenter.configure(cell: cell, for: indexPath.row)
                return cell
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 270
+    }
     
 }

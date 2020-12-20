@@ -35,10 +35,10 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
 
     }
    func configure(mostOrderedOffer: MostOrderedOffers) {
-    offerPhotoImageIView.kf.setImage(with: URL(string: "https://example.com/image.png"))
-    doctorNameLbl.text = mostOrderedOffer.nameEn
+    offerPhotoImageIView.kf.setImage(with: URL(string: mostOrderedOffer.coverImage!))
+    doctorNameLbl.text = mostOrderedOffer.titleEn
     doctorPhotoImageVIew.kf.setImage(with: URL(string: "https://example.com/image.png"))
-    saleLbl.text = mostOrderedOffer.nameEn
+//    saleLbl.text = mostOrderedOffer.nameEn
     
     
    }

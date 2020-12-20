@@ -9,13 +9,18 @@
 import Foundation
 import SwiftyJSON
 class MostOrderedOffers {
-    var photo: String?
-    var nameEn: String?
+    var doctorPhoto: String?
+    var titleEn: String?
+    var price :String?
+    var discount:String?
+    var coverImage: String?
     init?(withJSON data: JSON) {
         
-        self.photo = data["featured"].stringValue
-        self.nameEn = data["name_en"].stringValue
-        print(photo)
-        print(nameEn)
+        self.doctorPhoto = data["doctor"]["featured"].stringValue
+        self.titleEn = data["title_en"].stringValue
+        self.price = data["price"].stringValue
+        self.discount = data["discount"].stringValue
+        self.coverImage = data["images"][0]["featured"].stringValue
+        print(coverImage)
     }
 }
