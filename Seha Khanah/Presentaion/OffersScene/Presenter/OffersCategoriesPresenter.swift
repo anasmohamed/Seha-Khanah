@@ -38,7 +38,7 @@ class OffersCategoriesPresenter {
     public func getOffersCategoriesCount() -> Int {
         return offers.count
     }
-   
+    
     
     func configure(cell: OffersCategorisCellView, for index: Int,section:Int) {
         print(offers.count)
@@ -46,21 +46,24 @@ class OffersCategoriesPresenter {
         if offers.count > 0{
             let offerCategory : OffersCategory
             if section == 0{
-                 offerCategory = offers[0]}
-            else{
-                offerCategory = offers[1..<offers.count]
-
+                offerCategory = offers[0]
+                
             }
-        
-        
-        
-        
-        
-        guard let image = offerCategory.photo,
-            let nameEn = offerCategory.nameEn
-            else { return }
-        
-        cell.configure(image: image, categoryName: nameEn)
+            else{
+                
+                offerCategory = offers[index + 1]
+                
+            }
+            
+            
+            
+            
+            
+            guard let image = offerCategory.photo,
+                let nameEn = offerCategory.nameEn
+                else { return }
+            
+            cell.configure(image: image, categoryName: nameEn)
         }
         
     }}

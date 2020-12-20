@@ -15,5 +15,6 @@ target 'Seha Khanah' do
     pod 'Swinject'
     pod 'SDWebImage', '~> 5.0'
     pod 'Kingfisher', '~> 5.0'
+    pod 'Cosmos', '~> 23.0'
 
 end

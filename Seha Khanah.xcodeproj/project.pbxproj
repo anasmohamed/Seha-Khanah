@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
+		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
+		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
+		A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */; };
 		A82F34142587E463000A3591 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82F34132587E463000A3591 /* Login.storyboard */; };
 		A82F34162587E489000A3591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F34152587E489000A3591 /* LoginViewController.swift */; };
 		A83CB062258B4DBA00207BDC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83CB061258B4DBA00207BDC /* State.swift */; };
@@ -43,6 +46,9 @@
 		3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.release.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.release.xcconfig"; sourceTree = "<group>"; };
 		4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.debug.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.debug.xcconfig"; sourceTree = "<group>"; };
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
+		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
+		A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+ImageSliderExtension.swift"; sourceTree = "<group>"; };
 		A82F34132587E463000A3591 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A82F34152587E489000A3591 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A83CB061258B4DBA00207BDC /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -97,6 +103,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A82EA354258F51DF00F30C61 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */,
+				A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */,
+				A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
 		A82F34112587DC96000A3591 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +144,7 @@
 		A83D6EAB258A207900186693 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A82EA354258F51DF00F30C61 /* Extenstions */,
 				A83D6EAE258A2DD600186693 /* OffersListViewTableView */,
 				A83D6EAC258A20AD00186693 /* Offers.storyboard */,
 				A8A9B371258CEEA3002DA9A0 /* OffersViewController.swift */,
@@ -442,8 +459,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */,
+				A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
+				A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
@@ -458,6 +477,7 @@
 				A83D6EB2258A2E6000186693 /* OffersTableViewCell.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
+				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
 				A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,

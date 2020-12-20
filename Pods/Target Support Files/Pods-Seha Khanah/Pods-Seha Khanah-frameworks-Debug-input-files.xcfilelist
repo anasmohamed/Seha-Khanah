@@ -1,6 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AACarousel/AACarousel.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework
 ${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework

@@ -1,6 +1,7 @@
 PODS:
   - AACarousel (1.1.1)
   - Alamofire (5.2.1)
+  - Cosmos (23.0.0)
   - FacebookCore (0.9.0):
     - FBSDKCoreKit (~> 5.0)
   - FacebookLogin (0.9.0):
@@ -30,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - AACarousel
   - Alamofire (~> 5.2)
+  - Cosmos (~> 23.0)
   - FacebookCore
   - FacebookLogin
   - Kingfisher (~> 5.0)
@@ -42,6 +44,7 @@ SPEC REPOS:
   trunk:
     - AACarousel
     - Alamofire
+    - Cosmos
     - FacebookCore
     - FacebookLogin
     - FBSDKCoreKit
@@ -55,6 +58,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AACarousel: e0dbd2d3153c56c36df8aa282553f20fc88e132b
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
   FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
   FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
@@ -65,6 +69,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 521ffe0609522a2e7528d609101c0cb9a67f50c5
+PODFILE CHECKSUM: 2dff0dff2fd07b436e8fe5fd8425b86c45e4062c
 
 COCOAPODS: 1.9.3
