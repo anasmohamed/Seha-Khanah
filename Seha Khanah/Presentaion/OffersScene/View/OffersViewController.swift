@@ -45,7 +45,8 @@ class OffersViewController: UIViewController {
         imageSlider.setCarouselData(paths: pathArray,  describedTitle: titleArray, isAutoScroll: true, timer: 5.0, defaultImage: "defaultImage")
         //optional methods
         imageSlider.setCarouselOpaque(layer: false, describedTitle: false, pageIndicator: false)
-        imageSlider.setCarouselLayout(displayStyle: 0, pageIndicatorPositon: 5, pageIndicatorColor: nil, describedTitleColor: nil, layerColor: nil)
+        imageSlider.setCarouselLayout(displayStyle: 3, pageIndicatorPositon: 2, pageIndicatorColor: nil, describedTitleColor: nil, layerColor: nil)
+        
         presenter.getOffersCategories()
         mostOrderedOffersPresenter.getMostOrderedOffers()
         collectionViewLayoutInsets()

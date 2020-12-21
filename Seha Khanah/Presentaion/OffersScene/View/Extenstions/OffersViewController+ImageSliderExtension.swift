@@ -34,6 +34,6 @@ extension OffersViewController : AACarouselDelegate{
      func startAutoScroll() {
          //optional method
          imageSlider.startScrollImageView()
-         
+        imageSlider.layoutSubviews()
      }
 }

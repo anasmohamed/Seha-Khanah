@@ -17,18 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLu-Dd-5W7" customClass="AACarousel" customModule="AACarousel">
-                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="152.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="aen-dw-v11"/>
-                                </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-vh-ykG">
-                                <rect key="frame" x="0.0" y="244" width="414" height="288"/>
+                                <rect key="frame" x="0.0" y="243" width="414" height="268.5"/>
                                 <color key="backgroundColor" red="0.97247451539999996" green="0.97259086370000003" blue="0.97243505720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="288" id="Ued-6K-tg8"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wpW-mE-A8y">
                                     <size key="itemSize" width="126" height="112"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -48,7 +42,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-US-lln">
-                                <rect key="frame" x="0.0" y="530" width="414" height="332"/>
+                                <rect key="frame" x="0.0" y="538.5" width="414" height="323.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="277" id="UZH-or-tD2">
@@ -61,17 +55,42 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most Ordered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haV-SW-SbG">
+                                <rect key="frame" x="10" y="519.5" width="95" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-aU-ELi">
+                                <rect key="frame" x="10" y="204" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-GP-Fkq">
+                                <rect key="frame" x="335" y="199" width="59" height="30"/>
+                                <state key="normal" title="Show All"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="JeF-lG-Obh" firstAttribute="trailing" secondItem="oLu-Dd-5W7" secondAttribute="trailing" id="320-nO-K7E"/>
                             <constraint firstItem="JeF-lG-Obh" firstAttribute="trailing" secondItem="k5D-US-lln" secondAttribute="trailing" id="3ab-5L-Zmy"/>
+                            <constraint firstItem="haV-SW-SbG" firstAttribute="top" secondItem="9cI-vh-ykG" secondAttribute="bottom" constant="8" id="5Ac-19-W2z"/>
                             <constraint firstItem="k5D-US-lln" firstAttribute="leading" secondItem="JeF-lG-Obh" secondAttribute="leading" id="5Yh-Gj-ip9"/>
+                            <constraint firstItem="9cI-vh-ykG" firstAttribute="height" secondItem="Czu-aJ-Mt5" secondAttribute="height" multiplier="0.3" id="DLl-QZ-d97"/>
+                            <constraint firstItem="JeF-lG-Obh" firstAttribute="trailing" secondItem="OmU-GP-Fkq" secondAttribute="trailing" constant="20" id="GmI-vv-A0O"/>
                             <constraint firstItem="oLu-Dd-5W7" firstAttribute="leading" secondItem="JeF-lG-Obh" secondAttribute="leading" id="Jxf-GT-GtS"/>
+                            <constraint firstItem="k5D-US-lln" firstAttribute="top" secondItem="haV-SW-SbG" secondAttribute="bottom" constant="1" id="Jyq-bG-d07"/>
                             <constraint firstItem="9cI-vh-ykG" firstAttribute="leading" secondItem="JeF-lG-Obh" secondAttribute="leading" id="Nta-SC-yX1"/>
-                            <constraint firstItem="k5D-US-lln" firstAttribute="top" secondItem="9cI-vh-ykG" secondAttribute="bottom" constant="-2" id="Vlm-cf-af5"/>
+                            <constraint firstItem="haV-SW-SbG" firstAttribute="leading" secondItem="JeF-lG-Obh" secondAttribute="leading" constant="10" id="Oqg-o1-yCL"/>
+                            <constraint firstItem="9cI-vh-ykG" firstAttribute="top" secondItem="5ZH-aU-ELi" secondAttribute="bottom" constant="18" id="TOP-AQ-wli"/>
+                            <constraint firstItem="5ZH-aU-ELi" firstAttribute="top" secondItem="oLu-Dd-5W7" secondAttribute="bottom" constant="7.5" id="W2Y-qg-54S"/>
                             <constraint firstItem="JeF-lG-Obh" firstAttribute="trailing" secondItem="9cI-vh-ykG" secondAttribute="trailing" id="YMW-5G-EaY"/>
-                            <constraint firstItem="9cI-vh-ykG" firstAttribute="top" secondItem="oLu-Dd-5W7" secondAttribute="bottom" id="s85-ek-VtD"/>
+                            <constraint firstItem="5ZH-aU-ELi" firstAttribute="leading" secondItem="JeF-lG-Obh" secondAttribute="leading" constant="10" id="cO0-oP-GxU"/>
+                            <constraint firstItem="9cI-vh-ykG" firstAttribute="top" secondItem="OmU-GP-Fkq" secondAttribute="bottom" constant="14" id="djC-3r-Wci"/>
+                            <constraint firstItem="oLu-Dd-5W7" firstAttribute="height" secondItem="Czu-aJ-Mt5" secondAttribute="height" multiplier="0.17" id="hCU-6b-wvh"/>
+                            <constraint firstItem="OmU-GP-Fkq" firstAttribute="top" secondItem="oLu-Dd-5W7" secondAttribute="bottom" constant="2.5" id="m4H-5s-0KH"/>
                             <constraint firstItem="JeF-lG-Obh" firstAttribute="bottom" secondItem="k5D-US-lln" secondAttribute="bottom" id="ypb-XX-WkL"/>
                             <constraint firstItem="oLu-Dd-5W7" firstAttribute="top" secondItem="JeF-lG-Obh" secondAttribute="top" id="z0a-19-jDR"/>
                         </constraints>

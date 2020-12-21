@@ -39,12 +39,12 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
         if indexPath.section == 0 {
             // First section
             width = collectionView.frame.width/2
-            height = 200
+            height = 150
             return CGSize(width: width, height: height)
         } else {
             // Second section
-            width = collectionView.frame.width/3
-            height = 100
+            width = collectionView.frame.width/4
+            height = 70
             return CGSize(width: width, height: height)
         }
     }

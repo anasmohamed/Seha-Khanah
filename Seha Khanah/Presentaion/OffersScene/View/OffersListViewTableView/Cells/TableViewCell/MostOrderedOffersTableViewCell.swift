@@ -24,7 +24,8 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     @IBOutlet weak var offerDetailsLbl: UILabel!
     @IBOutlet weak var offerNameLbl: UILabel!
     
-
+    @IBOutlet weak var priceLbl: UILabel!
+    
     static let identifier = "MostOrderedOffersTableViewCell"
     static func nib() ->UINib{
         return UINib(nibName: "MostOrderedOffersTableViewCell", bundle: nil)
@@ -36,9 +37,19 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     }
    func configure(mostOrderedOffer: MostOrderedOffers) {
     offerPhotoImageIView.kf.setImage(with: URL(string: mostOrderedOffer.coverImage!))
-    doctorNameLbl.text = mostOrderedOffer.titleEn
-    doctorPhotoImageVIew.kf.setImage(with: URL(string: "https://example.com/image.png"))
+    offerNameLbl.text = mostOrderedOffer.titleEn
+    doctorPhotoImageVIew.kf.setImage(with: URL(string: mostOrderedOffer.doctorPhoto!))
 //    saleLbl.text = mostOrderedOffer.nameEn
+    doctorNameLbl.text = mostOrderedOffer.doctorFristNameEn! + " " + mostOrderedOffer.doctorLastNameEn!
+    let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: mostOrderedOffer.price!)
+    attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+    discountLbl.text = "Discount " + mostOrderedOffer.discount! + "%"
+    offerRating.rating = Double(mostOrderedOffer.rating!)!
+    priceLbl.attributedText = attributeString
+    saleLbl.text = String(Double(mostOrderedOffer.price!)! * Double(mostOrderedOffer.discount!)! / 100)
+    
+    
+    
     
     
    }

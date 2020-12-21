@@ -30,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4N-Jv-wEn">
-                        <rect key="frame" x="270" y="207.5" width="70" height="30"/>
+                        <rect key="frame" x="257" y="207.5" width="70" height="30"/>
                         <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="Book Now">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,12 +43,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9G-4S-OuH">
-                                <rect key="frame" x="0.0" y="20" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-7l-OHo">
+                                <rect key="frame" x="0.0" y="20" width="94" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9G-4S-OuH">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFe-lK-Uwj">
+                                        <rect key="frame" x="52" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-8q-msR">
@@ -98,7 +109,7 @@
                     <constraint firstAttribute="bottom" secondItem="EsY-Dt-D9M" secondAttribute="bottom" constant="0.5" id="qVU-2U-Ny0"/>
                     <constraint firstItem="4Vy-k2-wlA" firstAttribute="top" secondItem="JDQ-84-yKz" secondAttribute="bottom" constant="7" id="qsv-mP-1vV"/>
                     <constraint firstItem="EsY-Dt-D9M" firstAttribute="top" secondItem="dP3-8q-msR" secondAttribute="bottom" constant="0.5" id="ulQ-dz-OOW"/>
-                    <constraint firstAttribute="trailing" secondItem="c4N-Jv-wEn" secondAttribute="trailing" constant="-3" id="waE-Dy-Uqq"/>
+                    <constraint firstAttribute="trailing" secondItem="c4N-Jv-wEn" secondAttribute="trailing" constant="10" id="waE-Dy-Uqq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -111,7 +122,8 @@
                 <outlet property="offerNameLbl" destination="1xl-b4-zng" id="lF3-PX-XVm"/>
                 <outlet property="offerPhotoImageIView" destination="JDQ-84-yKz" id="P0w-97-7qo"/>
                 <outlet property="offerRating" destination="kT6-sk-Us5" id="Bty-7F-dvk"/>
-                <outlet property="saleLbl" destination="y9G-4S-OuH" id="qTQ-hb-3cs"/>
+                <outlet property="priceLbl" destination="y9G-4S-OuH" id="gJG-GW-k6u"/>
+                <outlet property="saleLbl" destination="NFe-lK-Uwj" id="879-Vl-heK"/>
             </connections>
             <point key="canvasLocation" x="145.6521739130435" y="187.5"/>
         </tableViewCell>
