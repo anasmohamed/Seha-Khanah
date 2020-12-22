@@ -22,11 +22,13 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MostOrderedOffersTableViewCell", for: indexPath) as! MostOrderedOffersTableViewCell
+        cell.leftInset = 20
+          cell.rightInset = 20
         mostOrderedOffersPresenter.configure(cell: cell, for: indexPath.row)
                return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 270
     }
-    
+   
 }

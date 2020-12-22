@@ -14,7 +14,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case getOffersCategories
     case getMostOrderedOffers
-    
+    case search(name:String)
     
     var path: String {
         switch self {
@@ -22,6 +22,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getOffersCategories
         case .getMostOrderedOffers:
             return NetworkingConstants.getMostOrderedOffers
+        case .search:
+            return NetworkingConstants.search
       
 
         }
@@ -30,7 +32,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
     var httpMethod: HTTPMethod {
         
         switch self {
-        case .getOffersCategories,.getMostOrderedOffers:
+        case .getOffersCategories,
+             .getMostOrderedOffers,
+             .search:
             return .get
       
             
@@ -71,7 +75,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var params = [String:Any]()
         
         switch self {
-        
+        case let .search(name):
+            params[NetworkingConstants.searchByNameParameter] = name
+            
             
         default:
             print("Empty Paramter")
@@ -88,13 +94,11 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var urlRequest = URLRequest(url: baseURL.appendingPathComponent(path))
         urlRequest.httpMethod = httpMethod.rawValue
         switch self {
-        case .getOffersCategories,.getMostOrderedOffers:
+        case .getOffersCategories,
+             .getMostOrderedOffers,
+             .search:
             
             return try URLEncoding.default.encode(urlRequest, with: params)
-            
-            //        case .register, .addBarber, .addService:
-            //            return try JSONEncoding.default.encode(urlRequest, with: body)
-            
         }
     }
 }

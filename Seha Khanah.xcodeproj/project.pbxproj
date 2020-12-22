@@ -22,11 +22,19 @@
 		A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */; };
 		A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */; };
 		A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EBC258A394C00186693 /* NetworkingConstants.swift */; };
+		A84FE19325914ACB007BF313 /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE19225914ACB007BF313 /* SearchByNameViewController.swift */; };
+		A856771C2591F9B80086CD78 /* SearchByNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856771B2591F9B80086CD78 /* SearchByNameInteractor.swift */; };
+		A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856771D2592067B0086CD78 /* SearchPresenter.swift */; };
+		A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856771F259208920086CD78 /* SearchViewProtocol.swift */; };
+		A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856772125920B8C0086CD78 /* SearchedResults.swift */; };
+		A856772525921B640086CD78 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856772425921B640086CD78 /* SearchResultTableViewCell.swift */; };
+		A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856772625921C260086CD78 /* SearchedResultsTableViewCellView.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
 		A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A7C259004090095B7BD /* MostOrderedOffersPresenter.swift */; };
 		A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */; };
 		A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */; };
 		A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */; };
+		A8965F452591145300C504BA /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8965F442591145300C504BA /* CategoryTableViewController.swift */; };
 		A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B369258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift */; };
 		A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B36D258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift */; };
 		A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B36F258CE9E3002DA9A0 /* OffersCategoriesCellView.swift */; };
@@ -65,11 +73,19 @@
 		A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A83D6EBC258A394C00186693 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		A84FE19225914ACB007BF313 /* SearchByNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
+		A856771B2591F9B80086CD78 /* SearchByNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameInteractor.swift; sourceTree = "<group>"; };
+		A856771D2592067B0086CD78 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		A856771F259208920086CD78 /* SearchViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewProtocol.swift; sourceTree = "<group>"; };
+		A856772125920B8C0086CD78 /* SearchedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedResults.swift; sourceTree = "<group>"; };
+		A856772425921B640086CD78 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		A856772625921C260086CD78 /* SearchedResultsTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedResultsTableViewCellView.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
 		A8952A7C259004090095B7BD /* MostOrderedOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersPresenter.swift; sourceTree = "<group>"; };
 		A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffers.swift; sourceTree = "<group>"; };
 		A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersTableViewCellView.swift; sourceTree = "<group>"; };
 		A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersViewProtocol.swift; sourceTree = "<group>"; };
+		A8965F442591145300C504BA /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		A8A9B369258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesPresenter.swift; sourceTree = "<group>"; };
 		A8A9B36D258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesViewProtocol.swift; sourceTree = "<group>"; };
 		A8A9B36F258CE9E3002DA9A0 /* OffersCategoriesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesCellView.swift; sourceTree = "<group>"; };
@@ -145,9 +161,8 @@
 		A83D6EAA258A206300186693 /* OffersScene */ = {
 			isa = PBXGroup;
 			children = (
-				A8A9B373258CF606002DA9A0 /* Interactor */,
-				A8A9B368258CE18C002DA9A0 /* Presenter */,
-				A83D6EAB258A207900186693 /* View */,
+				A8965F462591160A00C504BA /* OffersScene */,
+				A8965F422591135E00C504BA /* CateoryScene */,
 			);
 			path = OffersScene;
 			sourceTree = "<group>";
@@ -155,12 +170,9 @@
 		A83D6EAB258A207900186693 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8965F432591137100C504BA /* OffersView */,
 				A82EA354258F51DF00F30C61 /* Extenstions */,
 				A83D6EAE258A2DD600186693 /* OffersListViewTableView */,
-				A83D6EAC258A20AD00186693 /* Offers.storyboard */,
-				A8A9B371258CEEA3002DA9A0 /* OffersViewController.swift */,
-				A8A9B36D258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift */,
-				A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,13 +231,96 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		A84FE19125914A36007BF313 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A856772325921B3B0086CD78 /* Cell */,
+				A84FE19225914ACB007BF313 /* SearchByNameViewController.swift */,
+				A856771F259208920086CD78 /* SearchViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A84FE19425914DED007BF313 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A856771D2592067B0086CD78 /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A84FE19525914DF5007BF313 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A856771B2591F9B80086CD78 /* SearchByNameInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A856772325921B3B0086CD78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A856772425921B640086CD78 /* SearchResultTableViewCell.swift */,
+				A856772625921C260086CD78 /* SearchedResultsTableViewCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A87D28D7258C173700B7957F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A87D28D8258C176B00B7957F /* OffersCategory.swift */,
 				A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */,
+				A856772125920B8C0086CD78 /* SearchedResults.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A8965F422591135E00C504BA /* CateoryScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8965F472591163A00C504BA /* View */,
+			);
+			path = CateoryScene;
+			sourceTree = "<group>";
+		};
+		A8965F432591137100C504BA /* OffersView */ = {
+			isa = PBXGroup;
+			children = (
+				A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */,
+				A8A9B36D258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift */,
+				A8A9B371258CEEA3002DA9A0 /* OffersViewController.swift */,
+			);
+			path = OffersView;
+			sourceTree = "<group>";
+		};
+		A8965F462591160A00C504BA /* OffersScene */ = {
+			isa = PBXGroup;
+			children = (
+				A83D6EAC258A20AD00186693 /* Offers.storyboard */,
+				A8A9B373258CF606002DA9A0 /* Interactor */,
+				A8A9B368258CE18C002DA9A0 /* Presenter */,
+				A83D6EAB258A207900186693 /* View */,
+			);
+			path = OffersScene;
+			sourceTree = "<group>";
+		};
+		A8965F472591163A00C504BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8965F442591145300C504BA /* CategoryTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8965F4825913E8000C504BA /* SearchByNameScene */ = {
+			isa = PBXGroup;
+			children = (
+				A84FE19525914DF5007BF313 /* Interactor */,
+				A84FE19425914DED007BF313 /* Presenter */,
+				A84FE19125914A36007BF313 /* View */,
+			);
+			path = SearchByNameScene;
 			sourceTree = "<group>";
 		};
 		A8A9B368258CE18C002DA9A0 /* Presenter */ = {
@@ -329,6 +424,7 @@
 		A8DBD8302588EE59001C203E /* SearchScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8965F4825913E8000C504BA /* SearchByNameScene */,
 				A8DBD8312588EE6A001C203E /* View */,
 			);
 			path = SearchScene;
@@ -477,29 +573,37 @@
 				A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
+				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
 				A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */,
 				A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */,
 				A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
+				A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
 				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,
 				A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */,
+				A84FE19325914ACB007BF313 /* SearchByNameViewController.swift in Sources */,
 				A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
+				A8965F452591145300C504BA /* CategoryTableViewController.swift in Sources */,
+				A856772525921B640086CD78 /* SearchResultTableViewCell.swift in Sources */,
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
 				A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */,
+				A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
+				A856771C2591F9B80086CD78 /* SearchByNameInteractor.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
 				A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */,
 				A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */,
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
+				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
