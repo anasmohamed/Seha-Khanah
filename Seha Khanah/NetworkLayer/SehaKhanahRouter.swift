@@ -14,7 +14,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case getOffersCategories
     case getMostOrderedOffers
-    case search(name:String)
+    case searchByName(name:String)
+    case searchBySpecialty(specialty:String)
+    case getAllSpecialties
     
     var path: String {
         switch self {
@@ -22,10 +24,15 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getOffersCategories
         case .getMostOrderedOffers:
             return NetworkingConstants.getMostOrderedOffers
-        case .search:
+        case .searchByName:
             return NetworkingConstants.search
-      
+        case.searchBySpecialty:
+            return NetworkingConstants.search
+        case .getAllSpecialties:
+            return NetworkingConstants.getAllSpecialties
 
+            
+            
         }
     }
     
@@ -34,27 +41,29 @@ enum SehaKhanahRouter: URLRequestConvertible {
         switch self {
         case .getOffersCategories,
              .getMostOrderedOffers,
-             .search:
+             .searchByName,
+             .searchBySpecialty,
+             .getAllSpecialties:
             return .get
-      
+            
             
         }
     }
     
-//    var httpHeaders: HTTPHeaders {
-//
-//        let httpHeaders = [String:String]()
-//
-//        switch self {
-//            //        case .getOffers:
-//            //            httpHeaders[NetworkingConstants.accept] = NetworkingConstants.contentTypeJSON
-//        //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
-//        default:
-//            print("Empty request headers")
-//        }
-//
-//        return httpHeaders
-//    }
+    //    var httpHeaders: HTTPHeaders {
+    //
+    //        let httpHeaders = [String:String]()
+    //
+    //        switch self {
+    //            //        case .getOffers:
+    //            //            httpHeaders[NetworkingConstants.accept] = NetworkingConstants.contentTypeJSON
+    //        //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
+    //        default:
+    //            print("Empty request headers")
+    //        }
+    //
+    //        return httpHeaders
+    //    }
     
     var body: [String: Any] {
         
@@ -75,8 +84,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var params = [String:Any]()
         
         switch self {
-        case let .search(name):
+        case let .searchByName(name):
             params[NetworkingConstants.searchByNameParameter] = name
+        case let .searchBySpecialty(specialty):
+            params[NetworkingConstants.searchBySpecialtyParameter] = specialty
             
             
         default:
@@ -96,7 +107,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
         switch self {
         case .getOffersCategories,
              .getMostOrderedOffers,
-             .search:
+             .searchByName,
+             .searchBySpecialty,
+             .getAllSpecialties:
             
             return try URLEncoding.default.encode(urlRequest, with: params)
         }

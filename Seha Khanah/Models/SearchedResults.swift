@@ -13,7 +13,7 @@ class SearchedResults:Codable {
        var nameEn: String?
        init?(withJSON data: JSON) {
            
-           self.photo = data["featured"].stringValue
+           self.photo = data["icon"].stringValue
            self.nameEn = data["name_en"].stringValue
            print(photo)
            print(nameEn)

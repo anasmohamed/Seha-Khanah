@@ -21,7 +21,8 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
 
 
     func configure(image: String, name: String) {
-           
+        searchResultImageView.kf.setImage(with: URL(string: image))
+        searchResultLbl.text = name
        }
        
 }

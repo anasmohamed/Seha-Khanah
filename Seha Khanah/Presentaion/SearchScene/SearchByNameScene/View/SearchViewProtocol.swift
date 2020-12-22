@@ -12,4 +12,5 @@ protocol SearchViewProtocol: class {
     func hideIndicator()
     func searchResults()
     func showError(error: String)
+    func showNoDataFoundImage()
 }

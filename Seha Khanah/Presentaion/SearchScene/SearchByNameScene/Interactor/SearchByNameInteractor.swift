@@ -12,7 +12,7 @@ import SwiftyJSON
 class SearchByNameInteractor{
     func searchBy(name:String,
        completionHandler: @escaping ([SearchedResults]?, Error?) -> Void) {
-    AF.request(SehaKhanahRouter.search(name: name)).validate().responseJSON{
+        AF.request(SehaKhanahRouter.searchByName(name:name)).validate().responseJSON{
            (response) in
         
         
@@ -51,7 +51,9 @@ class SearchByNameInteractor{
                print(json)
                var searchedResultsList = [SearchedResults]()
                let searchedResults = json["data"].arrayValue
-               
+               print("results \(searchedResults)")
+               print("results \(searchedResults.count)")
+
                for searchedResult in searchedResults
                {
                    let data = SearchedResults(withJSON: searchedResult)

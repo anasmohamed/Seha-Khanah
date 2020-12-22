@@ -18,14 +18,15 @@ class NetworkingConstants {
         static let contentType = "Content-Type"
         static let accept = "Accept"
         static let contentTypeJSON = "application/json"
-        
   
         static let getOffersCategories = "offer/categories"
         static let getMostOrderedOffers = "offer/mostrequest"
-    
+        static let getAllSpecialties = "specialties"
+
     
         static let search = "search"
         static let searchByNameParameter = "name"
+        static let searchBySpecialtyParameter = "specialty"
 
 
    
