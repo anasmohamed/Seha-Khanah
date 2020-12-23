@@ -23,11 +23,20 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
         searchBySpecialtyResultTableView.delegate = self
         searchBySpecialtyResultTableView.dataSource = self
         searchBySpecialtyPresenter = SearchBySpecialtyPresenter(view: self)
-        
+//        setupTableView()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         searchBySpecialtyPresenter.getAllspecialty()
+    }
+    
+//    func setupTableView() {
+//         searchBySpecialtyResultTableView.register(UINib(nibName: "SearchBySpcialtyTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchBySpcialtyTableViewCell")
+//
+//     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchBySpecialtyPresenter.searchResultCount()

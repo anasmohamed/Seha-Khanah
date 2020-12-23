@@ -36,9 +36,6 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         numberOfVotes.text = result.numberOfVisitor
         profissionalTitleEnLbl.text = result.profissionalTitleEn
         rating.rating = Double(result.rating!)!
-        
-
-     
        }
        
 }

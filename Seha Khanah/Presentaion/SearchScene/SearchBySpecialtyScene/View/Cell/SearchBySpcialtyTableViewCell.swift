@@ -14,9 +14,7 @@ class SearchBySpcialtyTableViewCell: UITableViewCell,SearchBySpeialtyTableViewCe
     @IBOutlet weak var spcialtyImageView: UIImageView!
     @IBOutlet weak var spcialtyTitleLbl: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+ 
     func configure(result:SearchBySpecialtyModel){
         spcialtyImageView.kf.setImage(with: URL(string: result.photo!))
         spcialtyTitleLbl.text = result.nameEn

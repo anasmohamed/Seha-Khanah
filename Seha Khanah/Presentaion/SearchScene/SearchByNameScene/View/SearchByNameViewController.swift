@@ -23,7 +23,10 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     }
     
     func searchResults() {
+        
         searchByNameResultsTableView.reloadData()
+        searchByNameResultsTableView.isHidden = false
+        noDataFoundStackView.isHidden = true
     }
     
     func showError(error: String) {
@@ -33,7 +36,6 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     
     @IBOutlet weak var searchByNameResultsTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var noDataFoundStackView: UIStackView!
     
     var searchedResultsPresenter : SearchPresenter!
@@ -42,11 +44,20 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
         searchedResultsPresenter = SearchPresenter(view: self)
         searchBar.delegate = self
         searchByNameResultsTableView.delegate = self
-        searchByNameResultsTableView.delegate = self
+        searchByNameResultsTableView.dataSource = self
+        setupTableView()
         
     }
     
+    func setupTableView() {
+        searchByNameResultsTableView.register(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchResultTableViewCell")
+        
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("number ofr rows\(searchedResultsPresenter.searchResultCount())")
         return searchedResultsPresenter.searchResultCount()
     }
     
@@ -59,10 +70,12 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchedResultsPresenter.searchBy(name: searchText)
+        searchByNameResultsTableView.reloadData()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchedResultsPresenter.searchBy(name: searchBar.text ?? "")
 
     }
+    
 }

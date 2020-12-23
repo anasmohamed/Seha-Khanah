@@ -50,7 +50,7 @@ class SearchByNameInteractor{
                let json = JSON(response.value)
                print(json)
                var searchedResultsList = [SearchedResults]()
-               let searchedResults = json["data"].arrayValue
+               let searchedResults = json["data"]["search"].arrayValue
                print("results \(searchedResults)")
                print("results \(searchedResults.count)")
 
