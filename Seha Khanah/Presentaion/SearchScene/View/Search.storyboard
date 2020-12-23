@@ -602,7 +602,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="5UP-hh-vy5"/>
                     <connections>
-                        <outlet property="emailBtn" destination="XRC-VH-MKg" id="ehb-bT-pbB"/>
                         <outlet property="searchByPharmacyNameStackView" destination="12g-Y7-YTV" id="yNT-8o-iWH"/>
                         <outlet property="searchByRegionStackView" destination="3IW-6Q-sue" id="k5z-mN-btN"/>
                         <outlet property="showAllStackView" destination="mkm-3c-7pn" id="hzc-NR-Dw4"/>
