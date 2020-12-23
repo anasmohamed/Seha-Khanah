@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 class SearchBySpecialtyInteractor{
     func searchBy(specialty:String,
-                  completionHandler: @escaping ([SearchedResults]?, Error?) -> Void) {
+                  completionHandler: @escaping ([SearchBySpecialtyModel]?, Error?) -> Void) {
         AF.request(SehaKhanahRouter.searchBySpecialty(specialty: specialty)).validate().responseJSON{
             (response) in
             let result = response.result
@@ -19,14 +19,14 @@ class SearchBySpecialtyInteractor{
             case .success :
                 let json = JSON(response.value)
                 print(json)
-                var searchedResultsList = [SearchedResults]()
+                var searchedResultsList = [SearchBySpecialtyModel]()
                 let searchedResults = json["data"].arrayValue
                 print("results \(searchedResults)")
                 print("results \(searchedResults.count)")
                 
                 for searchedResult in searchedResults
                 {
-                    let data = SearchedResults(withJSON: searchedResult)
+                    let data = SearchBySpecialtyModel(withJSON: searchedResult)
                     searchedResultsList.append(data!)
                     
                 }
@@ -39,7 +39,7 @@ class SearchBySpecialtyInteractor{
         
     }
     func getAllSpecialties(
-        completionHandler: @escaping ([SearchedResults]?, Error?) -> Void) {
+        completionHandler: @escaping ([SearchBySpecialtyModel]?, Error?) -> Void) {
         AF.request(SehaKhanahRouter.getAllSpecialties).validate().responseJSON{
             (response) in
             
@@ -77,14 +77,14 @@ class SearchBySpecialtyInteractor{
             case .success :
                 let json = JSON(response.value)
                 print(json)
-                var searchedResultsList = [SearchedResults]()
+                var searchedResultsList = [SearchBySpecialtyModel]()
                 let searchedResults = json["data"].arrayValue
                 print("results \(searchedResults)")
                 print("results \(searchedResults.count)")
                 
                 for searchedResult in searchedResults
                 {
-                    let data = SearchedResults(withJSON: searchedResult)
+                    let data = SearchBySpecialtyModel(withJSON: searchedResult)
                     searchedResultsList.append(data!)
                     
                 }

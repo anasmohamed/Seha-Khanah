@@ -48,12 +48,8 @@ class SearchPresenter {
         print(searchedResults.count)
         if searchedResults.count > 0{
             let searchedResult = searchedResults[index]
-            guard let image = searchedResult.photo,
-                let name = searchedResult.nameEn
-                else{
-                    return
-            }
-            cell.configure(image:image , name: name)
+            
+            cell.configure(result: searchedResult)
         }
         
     }

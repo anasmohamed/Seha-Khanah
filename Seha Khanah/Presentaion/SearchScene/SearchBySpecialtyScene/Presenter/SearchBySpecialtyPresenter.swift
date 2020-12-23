@@ -9,12 +9,12 @@
 import Foundation
 class SearchBySpecialtyPresenter {
     private let searchInteractor:SearchBySpecialtyInteractor
-    private var searchedResults: [SearchedResults]
+    private var searchedResults: [SearchBySpecialtyModel]
     private weak var view: SearchViewProtocol?
     init(view: SearchViewProtocol) {
         self.view = view
         self.searchInteractor = SearchBySpecialtyInteractor()
-        searchedResults = [SearchedResults]()
+        searchedResults = [SearchBySpecialtyModel]()
     }
     
     func searchBy(specialty:String) {
@@ -66,16 +66,12 @@ class SearchBySpecialtyPresenter {
     }
     
     
-    func configure(cell: SearchedResultsTableViewCellView, for index: Int) {
+    func configure(cell: SearchBySpeialtyTableViewCellView, for index: Int) {
         print(searchedResults.count)
         if searchedResults.count > 0{
             let searchedResult = searchedResults[index]
-            guard let image = searchedResult.photo,
-                let name = searchedResult.nameEn
-                else{
-                    return
-            }
-            cell.configure(image:image , name: name)
+            
+            cell.configure(result: searchedResult)
         }
         
     }

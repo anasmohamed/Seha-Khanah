@@ -34,7 +34,7 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath) as! SearchResultTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchBySpcialtyTableViewCell", for: indexPath) as! SearchBySpcialtyTableViewCell
         searchBySpecialtyPresenter.configure(cell: cell, for: indexPath.row)
         return cell
     }

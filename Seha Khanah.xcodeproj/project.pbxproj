@@ -32,7 +32,11 @@
 		A8567731259247A30086CD78 /* SearchBySpecialtyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567730259247A30086CD78 /* SearchBySpecialtyInteractor.swift */; };
 		A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856773225924BBA0086CD78 /* SearchBySpecialtyViewController.swift */; };
 		A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856773425924D8D0086CD78 /* SearchBySpecialtyPresenter.swift */; };
+		A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8567737259272320086CD78 /* SearchResultTableViewCell.xib */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
+		A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C23DE2593547A002AA4F7 /* SearchBySpecialtyModel.swift */; };
+		A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C23E1259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift */; };
+		A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C23E325936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift */; };
 		A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A7C259004090095B7BD /* MostOrderedOffersPresenter.swift */; };
 		A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */; };
 		A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */; };
@@ -86,7 +90,11 @@
 		A8567730259247A30086CD78 /* SearchBySpecialtyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyInteractor.swift; sourceTree = "<group>"; };
 		A856773225924BBA0086CD78 /* SearchBySpecialtyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyViewController.swift; sourceTree = "<group>"; };
 		A856773425924D8D0086CD78 /* SearchBySpecialtyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyPresenter.swift; sourceTree = "<group>"; };
+		A8567737259272320086CD78 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
+		A88C23DE2593547A002AA4F7 /* SearchBySpecialtyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyModel.swift; sourceTree = "<group>"; };
+		A88C23E1259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpcialtyTableViewCell.swift; sourceTree = "<group>"; };
+		A88C23E325936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpeialtyTableViewCellView.swift; sourceTree = "<group>"; };
 		A8952A7C259004090095B7BD /* MostOrderedOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersPresenter.swift; sourceTree = "<group>"; };
 		A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffers.swift; sourceTree = "<group>"; };
 		A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersTableViewCellView.swift; sourceTree = "<group>"; };
@@ -268,6 +276,7 @@
 			children = (
 				A856772425921B640086CD78 /* SearchResultTableViewCell.swift */,
 				A856772625921C260086CD78 /* SearchedResultsTableViewCellView.swift */,
+				A8567737259272320086CD78 /* SearchResultTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -301,6 +310,7 @@
 		A856772F2592477E0086CD78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A88C23E02593564A002AA4F7 /* Cell */,
 				A856773225924BBA0086CD78 /* SearchBySpecialtyViewController.swift */,
 			);
 			path = View;
@@ -312,8 +322,18 @@
 				A87D28D8258C176B00B7957F /* OffersCategory.swift */,
 				A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */,
 				A856772125920B8C0086CD78 /* SearchedResults.swift */,
+				A88C23DE2593547A002AA4F7 /* SearchBySpecialtyModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A88C23E02593564A002AA4F7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A88C23E1259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift */,
+				A88C23E325936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A8965F422591135E00C504BA /* CateoryScene */ = {
@@ -550,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83D6EB3258A2E6000186693 /* MostOrderedOffersTableViewCell.xib in Resources */,
+				A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */,
 				A8DBD8352588EF6D001C203E /* Search.storyboard in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
@@ -620,6 +641,7 @@
 				A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */,
+				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
@@ -637,6 +659,7 @@
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
 				A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */,
 				A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */,
+				A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */,
 				A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */,
@@ -648,6 +671,7 @@
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
 				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
+				A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

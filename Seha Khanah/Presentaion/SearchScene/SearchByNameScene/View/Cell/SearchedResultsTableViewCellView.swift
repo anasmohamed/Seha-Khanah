@@ -8,5 +8,5 @@
 
 import Foundation
 protocol SearchedResultsTableViewCellView:class {
-    func configure(image:String,name:String)
+    func configure(result:SearchedResults)
 }
