@@ -22,6 +22,10 @@
 		A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */; };
 		A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */; };
 		A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EBC258A394C00186693 /* NetworkingConstants.swift */; };
+		A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B462593F2BF005EB836 /* SearchForPharmaciesViewController.swift */; };
+		A8452B492593F806005EB836 /* SearchByPharmacyNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B482593F806005EB836 /* SearchByPharmacyNameViewController.swift */; };
+		A8452B4F2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B4E2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift */; };
+		A8452B532593F935005EB836 /* ShowAllPharmaciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B522593F935005EB836 /* ShowAllPharmaciesViewController.swift */; };
 		A84FE19325914ACB007BF313 /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE19225914ACB007BF313 /* SearchByNameViewController.swift */; };
 		A856771C2591F9B80086CD78 /* SearchByNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856771B2591F9B80086CD78 /* SearchByNameInteractor.swift */; };
 		A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856771D2592067B0086CD78 /* SearchPresenter.swift */; };
@@ -80,6 +84,10 @@
 		A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A83D6EBC258A394C00186693 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		A8452B462593F2BF005EB836 /* SearchForPharmaciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPharmaciesViewController.swift; sourceTree = "<group>"; };
+		A8452B482593F806005EB836 /* SearchByPharmacyNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByPharmacyNameViewController.swift; sourceTree = "<group>"; };
+		A8452B4E2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByPharmacyRegionViewController.swift; sourceTree = "<group>"; };
+		A8452B522593F935005EB836 /* ShowAllPharmaciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllPharmaciesViewController.swift; sourceTree = "<group>"; };
 		A84FE19225914ACB007BF313 /* SearchByNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
 		A856771B2591F9B80086CD78 /* SearchByNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameInteractor.swift; sourceTree = "<group>"; };
 		A856771D2592067B0086CD78 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -243,6 +251,105 @@
 				A83D6EBC258A394C00186693 /* NetworkingConstants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8452B3D2593ECF9005EB836 /* ParmacyScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B502593F908005EB836 /* ShowAllPharmaciesScene */,
+				A8452B4A2593F832005EB836 /* SearchByRegionScene */,
+				A8452B452593F1D4005EB836 /* SearchForPharmaciesScene */,
+				A8452B3E2593ED39005EB836 /* SearchByPharmacyNameScene */,
+			);
+			path = ParmacyScene;
+			sourceTree = "<group>";
+		};
+		A8452B3E2593ED39005EB836 /* SearchByPharmacyNameScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B412593EDE0005EB836 /* Presenter */,
+				A8452B402593EDD4005EB836 /* Interactor */,
+				A8452B3F2593EDCB005EB836 /* View */,
+			);
+			path = SearchByPharmacyNameScene;
+			sourceTree = "<group>";
+		};
+		A8452B3F2593EDCB005EB836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B482593F806005EB836 /* SearchByPharmacyNameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8452B402593EDD4005EB836 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A8452B412593EDE0005EB836 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8452B452593F1D4005EB836 /* SearchForPharmaciesScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B462593F2BF005EB836 /* SearchForPharmaciesViewController.swift */,
+			);
+			path = SearchForPharmaciesScene;
+			sourceTree = "<group>";
+		};
+		A8452B4A2593F832005EB836 /* SearchByRegionScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B4D2593F86F005EB836 /* Interactor */,
+				A8452B4C2593F867005EB836 /* Presenter */,
+				A8452B4B2593F85D005EB836 /* View */,
+			);
+			path = SearchByRegionScene;
+			sourceTree = "<group>";
+		};
+		A8452B4B2593F85D005EB836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B4E2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8452B4C2593F867005EB836 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8452B4D2593F86F005EB836 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A8452B502593F908005EB836 /* ShowAllPharmaciesScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B512593F91A005EB836 /* View */,
+			);
+			path = ShowAllPharmaciesScene;
+			sourceTree = "<group>";
+		};
+		A8452B512593F91A005EB836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8452B522593F935005EB836 /* ShowAllPharmaciesViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A84FE19125914A36007BF313 /* View */ = {
@@ -484,6 +591,7 @@
 		A8DBD8302588EE59001C203E /* SearchScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8452B3D2593ECF9005EB836 /* ParmacyScene */,
 				A856772C259247390086CD78 /* SearchBySpecialtyScene */,
 				A8965F4825913E8000C504BA /* SearchByNameScene */,
 				A8DBD8312588EE6A001C203E /* View */,
@@ -631,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8452B532593F935005EB836 /* ShowAllPharmaciesViewController.swift in Sources */,
 				A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */,
 				A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
@@ -644,9 +753,11 @@
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
+				A8452B492593F806005EB836 /* SearchByPharmacyNameViewController.swift in Sources */,
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
 				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,
+				A8452B4F2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift in Sources */,
 				A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */,
 				A84FE19325914ACB007BF313 /* SearchByNameViewController.swift in Sources */,
 				A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */,
@@ -671,6 +782,7 @@
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
 				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
+				A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */,
 				A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);
