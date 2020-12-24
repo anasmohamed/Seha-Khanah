@@ -8,16 +8,65 @@
 
 import UIKit
 
-class ShowAllPharmaciesViewController: UIViewController {
+class ShowAllPharmaciesViewController: UITableViewController,PharmacyOffersViewProtocol {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var pharmacyOffersPresenter: PharmacyOffersPresenter!
+    @IBOutlet weak var noDataFoundStackView: UIStackView!
 
-        // Do any additional setup after loading the view.
-    }
-    
-
-    
+      override func viewDidLoad() {
+          super.viewDidLoad()
+         
+          pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
+          setupTableView()
+        pharmacyOffersPresenter.getPharmacyOffers()
+      }
+      
+      
+      
+      func setupTableView() {
+          tableView.register(UINib(nibName: "SearchByPharmacyNameTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchByPharmacyNameTableViewCell")
+          
+      }
+      
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+          return pharmacyOffersPresenter.pharmacyOffersCount()
+      }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+          return 280
+      }
+      
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+          let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByPharmacyNameTableViewCell", for: indexPath) as! SearchByPharmacyNameTableViewCell
+        
+          pharmacyOffersPresenter.configure(cell: cell, for: indexPath.row)
+        
+          return cell
+      }
+      
+   
+      
+      func showIndicator() {
+          
+      }
+      
+      func hideIndicator() {
+          
+      }
+      func pharamcyOffersResults() {
+          tableView.reloadData()
+      }
+      
+      func showError(error: String) {
+          
+          
+      }
+      
+      func showNoDataFoundImage() {
+          tableView.reloadData()
+          
+          noDataFoundStackView.isHidden = false
+      }
+      
     
 
 }

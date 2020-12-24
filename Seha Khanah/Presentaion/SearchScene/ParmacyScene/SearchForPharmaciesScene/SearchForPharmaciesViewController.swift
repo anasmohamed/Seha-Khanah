@@ -23,8 +23,8 @@ class SearchForPharmaciesViewController: UIViewController {
          let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllPharmaciesTab(_:)))
         
         searchByPharmacyNameStackView.addGestureRecognizer(searchByPharmacyNameTab)
-        searchByRegionStackView.addGestureRecognizer(showAllPharmaciesTab)
-        showAllStackView.addGestureRecognizer(searchByRegionTab)
+        searchByRegionStackView.addGestureRecognizer(searchByRegionTab)
+        showAllStackView.addGestureRecognizer(showAllPharmaciesTab)
 
     }
     
