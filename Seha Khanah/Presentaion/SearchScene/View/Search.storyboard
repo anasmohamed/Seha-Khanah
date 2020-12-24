@@ -917,38 +917,13 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchBySpcialtyTableViewCell" rowHeight="71" id="bHC-Rc-Fl3" customClass="SearchBySpcialtyTableViewCell" customModule="Seha_Khanah" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="71"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchBySpcialtyTableViewCell" rowHeight="167" id="bHC-Rc-Fl3" customClass="SearchBySpcialtyTableViewCell" customModule="Seha_Khanah" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bHC-Rc-Fl3" id="b0J-eG-Xdo">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RcQ-eE-2xI">
-                                                    <rect key="frame" x="20" y="15.5" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="DfO-b2-eKR"/>
-                                                        <constraint firstAttribute="height" constant="40" id="NZw-B8-tu8"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWs-U6-ySo">
-                                                    <rect key="frame" x="68" y="25.5" width="42" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="iWs-U6-ySo" firstAttribute="centerY" secondItem="b0J-eG-Xdo" secondAttribute="centerY" id="0qE-xj-6Or"/>
-                                                <constraint firstItem="iWs-U6-ySo" firstAttribute="leading" secondItem="RcQ-eE-2xI" secondAttribute="trailing" constant="8" id="JXe-tO-W4M"/>
-                                                <constraint firstItem="RcQ-eE-2xI" firstAttribute="centerY" secondItem="b0J-eG-Xdo" secondAttribute="centerY" id="OXR-x7-vxB"/>
-                                                <constraint firstItem="RcQ-eE-2xI" firstAttribute="leading" secondItem="b0J-eG-Xdo" secondAttribute="leading" constant="20" id="rCG-Tj-Rxa"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="spcialtyImageView" destination="RcQ-eE-2xI" id="SCZ-tO-h9q"/>
-                                            <outlet property="spcialtyTitleLbl" destination="iWs-U6-ySo" id="zEA-92-KA6"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -993,7 +968,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glb-k3-H5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5351" y="1781"/>
+            <point key="canvasLocation" x="5350.7246376811599" y="1780.5803571428571"/>
         </scene>
     </scenes>
     <resources>
