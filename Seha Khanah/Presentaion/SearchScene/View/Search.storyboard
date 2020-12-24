@@ -844,7 +844,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qHq-AI-Y9Y">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qHq-AI-Y9Y">
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -896,6 +896,11 @@
                         <viewLayoutGuide key="safeArea" id="mQn-tG-sTG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="eN0-Mu-3jt"/>
+                    <connections>
+                        <outlet property="noDataFoundStackView" destination="AEq-3q-7LM" id="fqj-yh-IlY"/>
+                        <outlet property="searchByPharmacyNameTableView" destination="qHq-AI-Y9Y" id="dNY-UM-9KS"/>
+                        <outlet property="searchBypharmacyNameBar" destination="OLO-Bu-MUa" id="kCw-fO-CCo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zz-Fb-CvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

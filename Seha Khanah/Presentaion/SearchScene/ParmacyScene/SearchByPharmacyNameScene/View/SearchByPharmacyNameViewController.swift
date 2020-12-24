@@ -24,6 +24,7 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
         searchByPharmacyNameTableView.dataSource = self
         pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
         setupTableView()
+      
     }
     
     
@@ -36,10 +37,15 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pharmacyOffersPresenter.pharmacyOffersCount()
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 280
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByPharmacyNameTableViewCell", for: indexPath) as! SearchByPharmacyNameTableViewCell
+      
         pharmacyOffersPresenter.configure(cell: cell, for: indexPath.row)
+      
         return cell
     }
     

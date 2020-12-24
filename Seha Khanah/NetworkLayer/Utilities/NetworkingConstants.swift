@@ -22,7 +22,7 @@ class NetworkingConstants {
         static let getOffersCategories = "offer/categories"
         static let getMostOrderedOffers = "offer/mostrequest"
         static let getAllSpecialties = "specialties"
-        static let getAllPharmacyOffers = "pharmacy/offer"
+        static let getAllPharmacyOffers = "pharmacy/offers"
 
         static let search = "search"
         static let searchByNameParameter = "name"
