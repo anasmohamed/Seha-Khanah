@@ -611,10 +611,10 @@
             </objects>
             <point key="canvasLocation" x="3149" y="944"/>
         </scene>
-        <!--View Controller-->
+        <!--Search For All Labs View Controller-->
         <scene sceneID="CrD-QT-IAe">
             <objects>
-                <viewController id="cVB-bf-77r" sceneMemberID="viewController">
+                <viewController id="cVB-bf-77r" customClass="SearchForAllLabsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ZX-bX-Za1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -784,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPX-U1-caS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3148" y="2669"/>
+            <point key="canvasLocation" x="2539" y="2510"/>
         </scene>
         <!--Search By Pharmacy Region View Controller-->
         <scene sceneID="0UD-yX-euS">
@@ -942,6 +942,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zz-Fb-CvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5351" y="277"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="MLh-Rw-rgn">
+            <objects>
+                <viewController storyboardIdentifier="SearchByPharmacyNameViewController" id="VPJ-Si-wvw" customClass="SearchByLabNameViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ID7-MV-czk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search By Doctor Name" translatesAutoresizingMaskIntoConstraints="NO" id="0YY-Ud-VKo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Xu-dp-dJr">
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="239" id="8Ev-Qc-pQl">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="239"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Ev-Qc-pQl" id="obx-gm-vD9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="239"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMK-dP-dxs">
+                                <rect key="frame" x="132" y="403" width="150" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-XW-wYG">
+                                        <rect key="frame" x="40" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="U7X-RR-8hd"/>
+                                            <constraint firstAttribute="width" constant="70" id="caa-fq-Lw3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-NU-s0u">
+                                        <rect key="frame" x="17.5" y="70" width="115" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bRu-yf-OSH"/>
+                                    <constraint firstAttribute="width" constant="150" id="rga-oK-CL9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Xu-dp-dJr" firstAttribute="leading" secondItem="fl6-gJ-lhw" secondAttribute="leading" id="3mc-c6-yPY"/>
+                            <constraint firstItem="6Xu-dp-dJr" firstAttribute="bottom" secondItem="fl6-gJ-lhw" secondAttribute="bottom" constant="34" id="5KQ-TA-Dqh"/>
+                            <constraint firstItem="LMK-dP-dxs" firstAttribute="centerX" secondItem="fl6-gJ-lhw" secondAttribute="centerX" id="Nue-8H-wWr"/>
+                            <constraint firstItem="0YY-Ud-VKo" firstAttribute="top" secondItem="fl6-gJ-lhw" secondAttribute="top" id="Usd-ib-bb0"/>
+                            <constraint firstItem="0YY-Ud-VKo" firstAttribute="leading" secondItem="fl6-gJ-lhw" secondAttribute="leading" id="W72-qh-hSk"/>
+                            <constraint firstItem="fl6-gJ-lhw" firstAttribute="trailing" secondItem="0YY-Ud-VKo" secondAttribute="trailing" id="fty-FT-jwJ"/>
+                            <constraint firstItem="fl6-gJ-lhw" firstAttribute="trailing" secondItem="6Xu-dp-dJr" secondAttribute="trailing" id="r4N-Ex-WlP"/>
+                            <constraint firstItem="LMK-dP-dxs" firstAttribute="centerY" secondItem="fl6-gJ-lhw" secondAttribute="centerY" id="shg-AB-qd5"/>
+                            <constraint firstItem="6Xu-dp-dJr" firstAttribute="top" secondItem="0YY-Ud-VKo" secondAttribute="bottom" id="vmd-nH-bGm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fl6-gJ-lhw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="DeU-xL-yid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7N-07-wfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="3177"/>
         </scene>
     </scenes>
     <resources>
