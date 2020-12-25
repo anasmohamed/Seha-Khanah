@@ -7,18 +7,27 @@
 //
 
 import UIKit
-
-class SearchByLabNameTableViewCell: UITableViewCell {
-
+import Cosmos
+class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCellProtocol {
+    
+    
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var labName: UILabel!
+    
+    @IBOutlet weak var bookNowBtn: UIButton!
+    @IBOutlet weak var ratingView: CosmosView!
+    @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var accountPhoto: UIImageView!
+    @IBOutlet weak var labPhoto: UIImageView!
+    @IBOutlet weak var containerView: DropShadowView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+ 
+    func configure(lab: Lab) {
+        
     }
     
 }

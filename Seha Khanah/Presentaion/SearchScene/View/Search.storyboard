@@ -218,6 +218,7 @@
                         <outlet property="emailBtn" destination="W7c-TK-Jh2" id="9SC-dN-1n2"/>
                         <outlet property="searchByNameStackView" destination="WLc-gD-SCh" id="pbg-fJ-Nlw"/>
                         <outlet property="searchBySpecialtyStackView" destination="Yam-H3-bhE" id="uri-gI-kEb"/>
+                        <outlet property="searchForLabsStackView" destination="D9X-09-8mD" id="R0S-te-ULf"/>
                         <outlet property="searchForPharmaciesStackView" destination="8Ix-l5-UeL" id="afR-cY-9wb"/>
                     </connections>
                 </viewController>
@@ -614,7 +615,7 @@
         <!--Search For All Labs View Controller-->
         <scene sceneID="CrD-QT-IAe">
             <objects>
-                <viewController id="cVB-bf-77r" customClass="SearchForAllLabsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchForAllLabsViewController" id="cVB-bf-77r" customClass="SearchForAllLabsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ZX-bX-Za1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -777,9 +778,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="nNY-jL-8ps"/>
                     <connections>
-                        <outlet property="emailBtn" destination="wP8-yV-j7E" id="v2e-Lq-yeY"/>
-                        <outlet property="searchByNameStackView" destination="5YO-D7-1gL" id="ECN-UB-vlj"/>
-                        <outlet property="searchBySpecialtyStackView" destination="nze-0t-XX0" id="NPV-oN-gnL"/>
+                        <outlet property="searchByLabNameStackView" destination="5YO-D7-1gL" id="dww-oh-XFh"/>
+                        <outlet property="searchByRegionStackView" destination="nze-0t-XX0" id="Nhi-nl-Eos"/>
+                        <outlet property="showAllStackView" destination="CzB-yF-XEH" id="Gqh-S5-Cf1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPX-U1-caS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -946,7 +947,7 @@
         <!--Search-->
         <scene sceneID="MLh-Rw-rgn">
             <objects>
-                <viewController storyboardIdentifier="SearchByPharmacyNameViewController" id="VPJ-Si-wvw" customClass="SearchByLabNameViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchByLabNameViewController" id="VPJ-Si-wvw" customClass="SearchByLabNameViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ID7-MV-czk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

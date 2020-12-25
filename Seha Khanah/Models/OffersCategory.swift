@@ -15,7 +15,6 @@ class OffersCategory:Codable  {
         
         self.photo = data["featured"].stringValue
         self.nameEn = data["name_en"].stringValue
-        print(photo)
-        print(nameEn)
+        
     }
 }
