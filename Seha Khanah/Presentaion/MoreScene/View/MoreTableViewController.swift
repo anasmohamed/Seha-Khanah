@@ -38,11 +38,12 @@ class MoreTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
-            self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)
+            let settingsTableViewController = UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsTableViewController") as! SettingsTableViewController
+            self.navigationController!.pushViewController(settingsTableViewController, animated: true)
         case 1:
-            let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
-            self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)
+            let settingsTableViewController = UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsTableViewController") as! SettingsTableViewController
+            self.navigationController!.pushViewController(settingsTableViewController, animated: true)
+            
             
         case 2:
             let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController

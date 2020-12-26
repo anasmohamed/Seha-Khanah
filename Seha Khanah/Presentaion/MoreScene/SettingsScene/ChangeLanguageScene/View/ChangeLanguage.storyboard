@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Change Language View Controller-->
+        <scene sceneID="S0i-Ut-S1R">
+            <objects>
+                <viewController id="gI6-aC-exC" customClass="ChangeLanguageViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7lY-fj-LOR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="jcL-KJ-jTN">
+                                <rect key="frame" x="57" y="319" width="300" height="258"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n35-A5-w8b">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="2gZ-s5-8X7"/>
+                                            <constraint firstAttribute="height" constant="60" id="Doz-fJ-R7z"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-R0-H4V">
+                                        <rect key="frame" x="49" y="120" width="202" height="18"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-M9-bTS" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="18"/>
+                                                <state key="normal" title="English"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSD-Oh-2d0" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                                <rect key="frame" x="134" y="0.0" width="68" height="18"/>
+                                                <state key="normal" title="Arabic"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy4-p8-bpK">
+                                        <rect key="frame" x="25" y="198" width="250" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="R4v-74-JdJ"/>
+                                            <constraint firstAttribute="width" constant="250" id="fTx-4f-GSN"/>
+                                        </constraints>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveBtnDidTapped:" destination="gI6-aC-exC" eventType="touchUpInside" id="0KV-5g-ofV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jcL-KJ-jTN" firstAttribute="centerY" secondItem="3lu-et-lJC" secondAttribute="centerY" id="ukg-CT-vBH"/>
+                            <constraint firstItem="jcL-KJ-jTN" firstAttribute="centerX" secondItem="3lu-et-lJC" secondAttribute="centerX" id="znd-dJ-YS1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3lu-et-lJC"/>
+                    </view>
+                    <connections>
+                        <outlet property="arabicCheckBox" destination="ZSD-Oh-2d0" id="Znf-u8-3DG"/>
+                        <outlet property="chosenLanguageView" destination="n35-A5-w8b" id="f7X-kR-ACh"/>
+                        <outlet property="englishCheckBox" destination="isQ-M9-bTS" id="qsC-Y3-VmF"/>
+                        <outlet property="saveBtn" destination="uy4-p8-bpK" id="loq-V5-sf4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5t-Xt-118" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.72463768115944" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+</document>

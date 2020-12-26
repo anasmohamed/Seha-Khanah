@@ -6,7 +6,7 @@ target 'Seha Khanah' do
   use_frameworks!
 
   # Pods for Seha Khanah
- pod 'MBRadioCheckboxButton'
+    pod 'MBRadioCheckboxButton'
     pod 'FacebookCore'
     pod 'FacebookLogin'
     pod 'AACarousel'
