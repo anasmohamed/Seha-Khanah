@@ -16,5 +16,5 @@ target 'Seha Khanah' do
     pod 'SDWebImage', '~> 5.0'
     pod 'Kingfisher', '~> 5.0'
     pod 'Cosmos', '~> 23.0'
-
+    pod 'MOLH'
 end

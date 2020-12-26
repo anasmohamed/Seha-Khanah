@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Search By Category"; ObjectID = "5ZH-aU-ELi"; */
+"5ZH-aU-ELi.text" = "Search By Category";
+
+/* Class = "UIButton"; normalTitle = "Show All"; ObjectID = "OmU-GP-Fkq"; */
+"OmU-GP-Fkq.normalTitle" = "Show All";
+
+/* Class = "UILabel"; text = "Most Ordered"; ObjectID = "haV-SW-SbG"; */
+"haV-SW-SbG.text" = "Most Ordered";
+
+/* Class = "UINavigationItem"; title = "Offers"; ObjectID = "iql-5T-GfB"; */
+"iql-5T-GfB.title" = "Offers";

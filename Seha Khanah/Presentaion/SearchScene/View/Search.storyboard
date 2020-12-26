@@ -20,7 +20,7 @@
         <!--Search View Controller-->
         <scene sceneID="l5d-EJ-kah">
             <objects>
-                <viewController id="OKn-8L-Dt0" customClass="SearchViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="OKn-8L-Dt0" customClass="SearchViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XV9-pa-c90">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

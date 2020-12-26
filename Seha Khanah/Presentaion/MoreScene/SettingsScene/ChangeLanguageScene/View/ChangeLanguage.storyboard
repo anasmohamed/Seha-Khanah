@@ -10,7 +10,7 @@
         <!--Change Language View Controller-->
         <scene sceneID="S0i-Ut-S1R">
             <objects>
-                <viewController id="gI6-aC-exC" customClass="ChangeLanguageViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChangeLanguageViewController" id="gI6-aC-exC" customClass="ChangeLanguageViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7lY-fj-LOR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,34 +20,47 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n35-A5-w8b">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-5c-OQf">
+                                                <rect key="frame" x="129" y="20" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="2gZ-s5-8X7"/>
                                             <constraint firstAttribute="height" constant="60" id="Doz-fJ-R7z"/>
+                                            <constraint firstItem="OjQ-5c-OQf" firstAttribute="centerX" secondItem="n35-A5-w8b" secondAttribute="centerX" id="JiT-wm-HC4"/>
+                                            <constraint firstItem="OjQ-5c-OQf" firstAttribute="centerY" secondItem="n35-A5-w8b" secondAttribute="centerY" id="fA0-wn-4nf"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-R0-H4V">
-                                        <rect key="frame" x="49" y="120" width="202" height="18"/>
+                                        <rect key="frame" x="51" y="120" width="198" height="18"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-M9-bTS" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="18"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-M9-bTS" customClass="RadioButton" customModule="MBRadioCheckboxButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="18"/>
                                                 <state key="normal" title="English"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSD-Oh-2d0" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="134" y="0.0" width="68" height="18"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSD-Oh-2d0" customClass="RadioButton" customModule="MBRadioCheckboxButton">
+                                                <rect key="frame" x="132" y="0.0" width="66" height="18"/>
                                                 <state key="normal" title="Arabic"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy4-p8-bpK">
                                         <rect key="frame" x="25" y="198" width="250" height="60"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="R4v-74-JdJ"/>
                                             <constraint firstAttribute="width" constant="250" id="fTx-4f-GSN"/>
                                         </constraints>
-                                        <state key="normal" title="Save"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="saveBtnDidTapped:" destination="gI6-aC-exC" eventType="touchUpInside" id="0KV-5g-ofV"/>
+                                            <action selector="saveBtnDidTapped:" destination="gI6-aC-exC" eventType="touchUpInside" id="3hL-ac-Py6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -61,9 +74,10 @@
                         <viewLayoutGuide key="safeArea" id="3lu-et-lJC"/>
                     </view>
                     <connections>
-                        <outlet property="arabicCheckBox" destination="ZSD-Oh-2d0" id="Znf-u8-3DG"/>
+                        <outlet property="arabicRadioButton" destination="ZSD-Oh-2d0" id="gn1-82-rLV"/>
+                        <outlet property="choosenLangeuageLbl" destination="OjQ-5c-OQf" id="41w-lO-mNz"/>
                         <outlet property="chosenLanguageView" destination="n35-A5-w8b" id="f7X-kR-ACh"/>
-                        <outlet property="englishCheckBox" destination="isQ-M9-bTS" id="qsC-Y3-VmF"/>
+                        <outlet property="englishRadioButton" destination="isQ-M9-bTS" id="G0F-Xk-IeO"/>
                         <outlet property="saveBtn" destination="uy4-p8-bpK" id="loq-V5-sf4"/>
                     </connections>
                 </viewController>

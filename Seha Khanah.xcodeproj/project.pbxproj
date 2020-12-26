@@ -16,7 +16,6 @@
 		A82F34162587E489000A3591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F34152587E489000A3591 /* LoginViewController.swift */; };
 		A83CB062258B4DBA00207BDC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83CB061258B4DBA00207BDC /* State.swift */; };
 		A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */; };
-		A83D6EAD258A20AD00186693 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EAC258A20AD00186693 /* Offers.storyboard */; };
 		A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB0258A2E6000186693 /* MostOrderedOffersTableViewCell.swift */; };
 		A83D6EB3258A2E6000186693 /* MostOrderedOffersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB1258A2E6000186693 /* MostOrderedOffersTableViewCell.xib */; };
 		A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */; };
@@ -43,6 +42,9 @@
 		A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E32862594ADBD00842D0F /* PharmacyOffersInteractor.swift */; };
 		A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A860322C2596A1BC003A7DA5 /* More.storyboard */; };
 		A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */; };
+		A8674A20259748890099E7CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A22259748890099E7CE /* Localizable.strings */; };
+		A8674A26259749060099E7CE /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A28259749060099E7CE /* Offers.storyboard */; };
+		A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A2D259749F60099E7CE /* InfoPlist.strings */; };
 		A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */; };
 		A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */; };
 		A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */; };
@@ -105,7 +107,6 @@
 		A82F34152587E489000A3591 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A83CB061258B4DBA00207BDC /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehaKhanahRouter.swift; sourceTree = "<group>"; };
-		A83D6EAC258A20AD00186693 /* Offers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
 		A83D6EB0258A2E6000186693 /* MostOrderedOffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersTableViewCell.swift; sourceTree = "<group>"; };
 		A83D6EB1258A2E6000186693 /* MostOrderedOffersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostOrderedOffersTableViewCell.xib; sourceTree = "<group>"; };
 		A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +133,14 @@
 		A85E32862594ADBD00842D0F /* PharmacyOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersInteractor.swift; sourceTree = "<group>"; };
 		A860322C2596A1BC003A7DA5 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		A8674A21259748890099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A8674A23259748DD0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		A8674A24259748DE0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A8674A25259748DE0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A8674A27259749060099E7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Offers.storyboard; sourceTree = "<group>"; };
+		A8674A2A259749190099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Offers.strings; sourceTree = "<group>"; };
+		A8674A2C259749230099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Offers.strings; sourceTree = "<group>"; };
+		A8674A2D259749F60099E7CE /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForAllLabsViewController.swift; sourceTree = "<group>"; };
 		A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameViewController.swift; sourceTree = "<group>"; };
 		A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameTableViewCell.swift; sourceTree = "<group>"; };
@@ -619,7 +628,7 @@
 		A8965F462591160A00C504BA /* OffersScene */ = {
 			isa = PBXGroup;
 			children = (
-				A83D6EAC258A20AD00186693 /* Offers.storyboard */,
+				A8674A28259749060099E7CE /* Offers.storyboard */,
 				A8A9B373258CF606002DA9A0 /* Interactor */,
 				A8A9B368258CE18C002DA9A0 /* Presenter */,
 				A83D6EAB258A207900186693 /* View */,
@@ -730,6 +739,8 @@
 				A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */,
 				A8AC86B425875B2B00604E64 /* Info.plist */,
 				A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */,
+				A8674A22259748890099E7CE /* Localizable.strings */,
+				A8674A2D259749F60099E7CE /* InfoPlist.strings */,
 			);
 			path = "Seha Khanah";
 			sourceTree = "<group>";
@@ -854,6 +865,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A8AC869725875B2500604E64;
 			productRefGroup = A8AC86A125875B2600604E64 /* Products */;
@@ -875,14 +887,16 @@
 				A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */,
 				A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */,
 				A8DBD8352588EF6D001C203E /* Search.storyboard in Resources */,
+				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
 				A8A8529F259730A300E99A67 /* ChangeLanguage.storyboard in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
-				A83D6EAD258A20AD00186693 /* Offers.storyboard in Resources */,
+				A8674A26259749060099E7CE /* Offers.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
+				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
 			);
@@ -1011,10 +1025,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A8674A22259748890099E7CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8674A21259748890099E7CE /* en */,
+				A8674A25259748DE0099E7CE /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A8674A28259749060099E7CE /* Offers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8674A27259749060099E7CE /* Base */,
+				A8674A2A259749190099E7CE /* en */,
+				A8674A2C259749230099E7CE /* ar */,
+			);
+			name = Offers.storyboard;
+			sourceTree = "<group>";
+		};
 		A8AC86A925875B2600604E64 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A8AC86AA25875B2600604E64 /* Base */,
+				A8674A23259748DD0099E7CE /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1023,6 +1057,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8AC86B225875B2B00604E64 /* Base */,
+				A8674A24259748DE0099E7CE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1034,6 +1069,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1094,6 +1130,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

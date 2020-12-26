@@ -8,62 +8,68 @@
 
 import UIKit
 import MBRadioCheckboxButton
+import MOLH
+
 class ChangeLanguageViewController: UIViewController {
     
+    @IBOutlet weak var choosenLangeuageLbl: UILabel!
     
     @IBOutlet weak var chosenLanguageView: UIView!
-    @IBOutlet weak var arabicCheckBox: CheckboxButton!
-    @IBOutlet weak var englishCheckBox: CheckboxButton!
+    
+    @IBOutlet weak var arabicRadioButton: RadioButton!
+    @IBOutlet weak var englishRadioButton: RadioButton!
     @IBOutlet weak var saveBtn: UIButton!
-    var languageBtnsGroup = CheckboxButtonContainer()
+    var languageBtnsGroup = RadioButtonContainer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        saveBtn.layer.cornerRadius = 10
         
+        // corner radius
+        chosenLanguageView.layer.cornerRadius = 10
+        
+        // border
+        chosenLanguageView.layer.borderWidth = 1.0
+        chosenLanguageView.layer.borderColor = UIColor.black.cgColor
+        
+        // shadow
+        chosenLanguageView.layer.shadowColor = UIColor.black.cgColor
+        chosenLanguageView.layer.shadowOffset = CGSize(width: 3, height: 3)
+        chosenLanguageView.layer.shadowOpacity = 0.7
+        chosenLanguageView.layer.shadowRadius = 4.0
+        setupLanguageBtns()
         // Do any additional setup after loading the view.
     }
     func setupLanguageBtns() {
-        languageBtnsGroup.addButtons([englishCheckBox, arabicCheckBox])
+        languageBtnsGroup.addButtons([englishRadioButton, arabicRadioButton])
         languageBtnsGroup.delegate = self
         
-        languageBtnsGroup.selectedButtons = [englishCheckBox]
-        
-        // set style, color and border for option A
-//        optionAG3.style = .square
-//        optionAG3.checkBoxColor = CheckBoxColor(activeColor: UIColor.clear, inactiveColor: UIColor.red, inactiveBorderColor: UIColor.red, checkMarkColor: UIColor.magenta)
-//        optionAG3.checkboxLine = CheckboxLineStyle(checkBoxHeight: 25)
-//
-//        // set style, color for option B
-//        optionBG3.style = .circle
-//        optionBG3.checkBoxColor = CheckBoxColor(activeColor: UIColor.brown, inactiveColor: UIColor.yellow, inactiveBorderColor: UIColor.blue, checkMarkColor: UIColor.black)
-//
-//        // set border for option C
-//        optionCG3.checkboxLine = CheckboxLineStyle(checkBoxHeight: 35, checkmarkLineWidth: 7, padding: 15)
-//        optionCG3.checkBoxColor = CheckBoxColor(activeColor: UIColor.white, inactiveColor: UIColor.white, inactiveBorderColor: UIColor.white, checkMarkColor: optionCG3.tintColor)
+        languageBtnsGroup.selectedButtons = [englishRadioButton]
+        englishRadioButton.style = .square
+        arabicRadioButton.style = .square
+       
     }
     @IBAction func saveBtnDidTapped(_ sender: Any) {
+        
+        let languageString  = choosenLangeuageLbl.text == "English" ? "en" : "ar"
+        MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == languageString ? "ar" : "en")
+        MOLH.reset(transition: .transitionCrossDissolve)
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+ 
 }
-extension ChangeLanguageViewController: CheckboxButtonDelegate {
-    
-    func chechboxButtonDidSelect(_ button: CheckboxButton) {
+extension ChangeLanguageViewController: RadioButtonDelegate {
+    func radioButtonDidSelect(_ button: RadioButton) {
+        choosenLangeuageLbl.text = button.title(for: .normal)!
         print("Select: ", button.title(for: .normal)!)
+        
     }
     
-    func chechboxButtonDidDeselect(_ button: CheckboxButton) {
+    func radioButtonDidDeselect(_ button: RadioButton) {
         print("Deselect: ", button.title(for: .normal)!)
+        
     }
+    
+    
     
     
 }

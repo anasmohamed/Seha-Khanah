@@ -22,6 +22,7 @@ PODS:
     - Kingfisher/Core (= 5.14.0)
   - Kingfisher/Core (5.14.0)
   - MBRadioCheckboxButton (2.0)
+  - MOLH (1.4.1)
   - SDWebImage (5.9.3):
     - SDWebImage/Core (= 5.9.3)
   - SDWebImage/Core (5.9.3)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - FacebookLogin
   - Kingfisher (~> 5.0)
   - MBRadioCheckboxButton
+  - MOLH
   - SDWebImage (~> 5.0)
   - SwiftyJSON (~> 4.0)
   - Swinject
@@ -51,6 +53,7 @@ SPEC REPOS:
     - FBSDKLoginKit
     - Kingfisher
     - MBRadioCheckboxButton
+    - MOLH
     - SDWebImage
     - SwiftyJSON
     - Swinject
@@ -65,10 +68,11 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
   MBRadioCheckboxButton: 6e2a2cdc441e292e45b64c4e65eb8fc1fc05eef2
+  MOLH: 9ea6c0390f5963b2df9827ae64035fbc8598b092
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 2dff0dff2fd07b436e8fe5fd8425b86c45e4062c
+PODFILE CHECKSUM: 80f5c2c8e7d034a875e93bdcb6036059a6bbbb26
 
 COCOAPODS: 1.9.3

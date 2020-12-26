@@ -8,16 +8,27 @@
 
 import UIKit
 import CoreData
+import MOLH
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MOLHLanguage.setDefaultLanguage("en")
+        MOLH.shared.activate(true)
+
+
         return true
     }
+    
+     func reset() {
+           let stry = UIStoryboard(name: "Main", bundle: nil)
+             window?.rootViewController = stry.instantiateInitialViewController()
+      }
 
     // MARK: UISceneSession Lifecycle
 

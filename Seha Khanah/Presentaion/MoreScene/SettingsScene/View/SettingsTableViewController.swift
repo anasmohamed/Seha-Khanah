@@ -40,7 +40,10 @@ class SettingsTableViewController: UITableViewController {
 
         return cell
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
+        self.navigationController!.pushViewController(languageChangeViewController, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.
