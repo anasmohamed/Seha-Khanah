@@ -61,6 +61,28 @@ class SearchByLabNamePresenter {
                
            }
        }
+    func getAllLabs() {
+           
+           view?.showIndicator()
+           searchByLabNameInteractor.getAllLabs{ (result,error)  in
+               if let error = error {
+                   print("errrror\(error)")
+                   self.view?.showError(error: error.localizedDescription)
+               } else {
+                   if result != nil{
+                       print("final result\(result?.count)")
+                       if (result!.count == 0)
+                       {self.view?.showNoDataFoundImage()
+                           
+                       }else{
+                           self.labs = result!
+                           self.view?.labsResults()
+                       }}
+                   
+               }
+               
+           }
+       }
     
     public func labsCount() -> Int {
         return labs.count

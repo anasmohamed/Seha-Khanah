@@ -21,7 +21,7 @@ class SearchForAllLabsViewController: UIViewController {
         
         let searchByLabNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByLabNameTab(_:)))
         let searchByRegionTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByRegionTab(_:)))
-         let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllPharmaciesTab(_:)))
+         let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllLabsTab(_:)))
         
         searchByLabNameStackView.addGestureRecognizer(searchByLabNameTab)
         searchByRegionStackView.addGestureRecognizer(searchByRegionTab)
@@ -35,9 +35,9 @@ class SearchForAllLabsViewController: UIViewController {
     
     @objc func handleSearchByLabNameTab(_ sender: UITapGestureRecognizer? = nil) {
         
-        let searchByNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByPharmacyNameViewController") as! SearchByPharmacyNameViewController
+        let searchByLabNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByLabNameViewController") as! SearchByLabNameViewController
         
-        self.navigationController!.pushViewController(searchByNameViewController, animated: true)
+        self.navigationController!.pushViewController(searchByLabNameViewController, animated: true)
         
     }
     
@@ -49,10 +49,11 @@ class SearchForAllLabsViewController: UIViewController {
         
     }
     
-    @objc func handleShowAllPharmaciesTab(_ sender: UITapGestureRecognizer? = nil) {
+    @objc func handleShowAllLabsTab(_ sender: UITapGestureRecognizer? = nil) {
         
-        let searchBySpecialtyViewController = storyboard?.instantiateViewController(withIdentifier: "ShowAllPharmaciesViewController") as! ShowAllPharmaciesViewController
-        self.navigationController!.pushViewController(searchBySpecialtyViewController, animated: true)
+        let showAllLabsViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByLabNameViewController") as! SearchByLabNameViewController
+        showAllLabsViewController.showAllLabs = true
+        self.navigationController!.pushViewController(showAllLabsViewController, animated: true)
         
     }
     

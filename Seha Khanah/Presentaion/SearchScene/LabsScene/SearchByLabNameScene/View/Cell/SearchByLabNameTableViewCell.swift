@@ -25,7 +25,7 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        bookNowBtn.layer.cornerRadius = 10
         accountPhoto.layer.cornerRadius = accountPhoto.frame.width / 2
 
         containerView.layer.cornerRadius = cornerRadius
@@ -46,6 +46,7 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
         labPhoto.kf.setImage(with: URL(string:lab.photo!))
         accountPhoto.kf.setImage(with: URL(string:lab.photo!))
         labName.text = lab.labNameEn
+        addressLbl.text = lab.addressEn
     }
     
 }

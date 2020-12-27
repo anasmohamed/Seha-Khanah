@@ -28,6 +28,9 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
         super.awakeFromNib()
         // Initialization code
         pharmacyPhoto.layer.cornerRadius = pharmacyPhoto.frame.width / 2
+        pharmacyPhoto.layer.borderWidth = 1
+        pharmacyPhoto.layer.borderColor = UIColor.black.cgColor
+        
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
