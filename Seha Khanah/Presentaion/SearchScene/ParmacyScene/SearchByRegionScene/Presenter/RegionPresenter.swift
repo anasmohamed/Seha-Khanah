@@ -43,17 +43,20 @@ class RegionPresenter {
     public func areasCount() -> Int {
         return areas.count
     }
+    public func getAreaIdAt(index:Int) -> String {
+        return areas[index].areaId!
+    }
     public func getAreasList() -> [Area]
     {
         return areas
     }
     
-//    func configure(cell: PharmacyOfferTableViewCellViewProtocol, for index: Int) {
-//        print(areas.count)
-//        if areas.count > 0{
-//            let pharmacyOffer = areas[index]
-//            cell.configure(offer: areas)
-//        }
-//
-//    }
+    //    func configure(cell: PharmacyOfferTableViewCellViewProtocol, for index: Int) {
+    //        print(areas.count)
+    //        if areas.count > 0{
+    //            let pharmacyOffer = areas[index]
+    //            cell.configure(offer: areas)
+    //        }
+    //
+    //    }
 }

@@ -14,6 +14,7 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
     @IBOutlet weak var searchByPharmacyNameTableView: UITableView!
     @IBOutlet weak var noDataFoundStackView: UIStackView!
     
+    var searchByAreaId = false
     
     var pharmacyOffersPresenter: PharmacyOffersPresenter!
     
@@ -24,7 +25,10 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
         searchByPharmacyNameTableView.dataSource = self
         pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
         setupTableView()
-      
+        if searchByAreaId
+        {pharmacyOffersPresenter.getPharmacyOffers()
+            
+        }
     }
     
     
@@ -43,9 +47,9 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByPharmacyNameTableViewCell", for: indexPath) as! SearchByPharmacyNameTableViewCell
-      
+        
         pharmacyOffersPresenter.configure(cell: cell, for: indexPath.row)
-      
+        
         return cell
     }
     

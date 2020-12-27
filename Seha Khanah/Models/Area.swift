@@ -11,9 +11,11 @@ import SwiftyJSON
 class Area: Codable {
     var areaNameEn: String?
     var areaNameAr: String?
+    var areaId : String?
     init?(withJSON data: JSON) {
         self.areaNameEn = data["area_en"].stringValue
         self.areaNameAr = data["area_ar"].stringValue
+        self.areaId = data["id"].stringValue
         
     }
 }

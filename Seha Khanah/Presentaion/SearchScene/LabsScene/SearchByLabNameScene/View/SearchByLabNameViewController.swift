@@ -14,6 +14,7 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     @IBOutlet weak var searchByLabNameTableView: UITableView!
     @IBOutlet weak var noDataFoundStackView: UIStackView!
     
+    var areaId: String?
     
     var labPresenter: SearchByLabNamePresenter!
     
@@ -23,9 +24,12 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
         searchByLabNameTableView.delegate = self
         searchByLabNameTableView.dataSource = self
         labPresenter = SearchByLabNamePresenter(view: self)
+        
         setupTableView()
         
-
+        if areaId != nil{
+            labPresenter.searchForLabBy(araeId: areaId!)
+        }
     }
     
     
@@ -67,10 +71,7 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     func hideIndicator() {
         
     }
-    func pharamcyOffersResults() {
-        searchByLabNameTableView.reloadData()
-    }
-    
+  
     func showError(error: String) {
         
         
@@ -86,7 +87,8 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     
     
     func labsResults() {
-        
+        searchByLabNameTableView.reloadData()
+
     }
     
     

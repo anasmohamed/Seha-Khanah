@@ -37,5 +37,34 @@ class SearchByLabNameInteractor {
         }
         
     }
+    func searchForLabByAreaId(areadId:String,
+                    completionHandler: @escaping ([Lab]?, Error?) -> Void) {
+          AF.request(SehaKhanahRouter.searchForLabByAreaId(areaId: areadId)).validate().responseJSON{
+              (response) in
+                        
+                          
+              let result = response.result
+              switch result {
+              case .success :
+                  let json = JSON(response.value)
+                  print(json)
+                  var labsList = [Lab]()
+                  let labs = json["data"]["search"].arrayValue
+                 
+                  
+                  for lab in labs
+                  {
+                      let data = Lab(withJSON: lab)
+                      labsList.append(data!)
+                      
+                  }
+                  completionHandler(labsList, nil)
+              case .failure(let error):
+                  completionHandler(nil, error)
+              }
+              
+          }
+          
+      }
 }
 

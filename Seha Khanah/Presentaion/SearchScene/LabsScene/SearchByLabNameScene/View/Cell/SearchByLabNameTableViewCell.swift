@@ -20,14 +20,32 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
     @IBOutlet weak var accountPhoto: UIImageView!
     @IBOutlet weak var labPhoto: UIImageView!
     @IBOutlet weak var containerView: DropShadowView!
+    
+    let cornerRadius : CGFloat = 25.0
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
- 
-    func configure(lab: Lab) {
         
+        accountPhoto.layer.cornerRadius = accountPhoto.frame.width / 2
+
+        containerView.layer.cornerRadius = cornerRadius
+        containerView.layer.shadowColor = UIColor.gray.cgColor
+        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        containerView.layer.shadowRadius = 15.0
+        containerView.layer.shadowOpacity = 0.9
+        
+        
+        backView.layer.cornerRadius = cornerRadius
+        backView.clipsToBounds = true
+        
+    }
+    
+    
+    func configure(lab: Lab) {
+        ratingView.rating = Double(lab.rating!)!
+        labPhoto.kf.setImage(with: URL(string:lab.photo!))
+        accountPhoto.kf.setImage(with: URL(string:lab.photo!))
+        labName.text = lab.labNameEn
     }
     
 }

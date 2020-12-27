@@ -635,6 +635,7 @@
 		A870838125960EAF002AC96C /* LabsScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8BA70BF2598A09D00857F4F /* ShowAllLabsScene */,
 				A870839725963410002AC96C /* SearchForLabsScene */,
 				A87083842596268F002AC96C /* SearchByLabNameScene */,
 			);
@@ -901,6 +902,37 @@
 				A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A8BA70BF2598A09D00857F4F /* ShowAllLabsScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8BA70C22598A0BB00857F4F /* interactor */,
+				A8BA70C12598A0B300857F4F /* Presenter */,
+				A8BA70C02598A0AC00857F4F /* View */,
+			);
+			path = ShowAllLabsScene;
+			sourceTree = "<group>";
+		};
+		A8BA70C02598A0AC00857F4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8BA70C12598A0B300857F4F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8BA70C22598A0BB00857F4F /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
 			sourceTree = "<group>";
 		};
 		A8DBD8302588EE59001C203E /* SearchScene */ = {

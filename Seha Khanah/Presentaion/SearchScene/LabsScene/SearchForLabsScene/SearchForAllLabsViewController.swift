@@ -43,8 +43,9 @@ class SearchForAllLabsViewController: UIViewController {
     
     @objc func handleSearchByRegionTab(_ sender: UITapGestureRecognizer? = nil) {
         
-        let searchBySpecialtyViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByPharmacyRegionViewController") as! SearchByPharmacyRegionViewController
-        self.navigationController!.pushViewController(searchBySpecialtyViewController, animated: true)
+        let searchByRegionViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByPharmacyRegionViewController") as! SearchByPharmacyRegionViewController
+        searchByRegionViewController.searchForLab = true
+        self.navigationController!.pushViewController(searchByRegionViewController, animated: true)
         
     }
     

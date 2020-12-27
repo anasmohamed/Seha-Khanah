@@ -3,4 +3,134 @@
    uuid = "A59D697C-97E7-4148-9739-1B7CF63E399F"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BB8AAD6-476B-4611-A62C-B4BB8A3C74EA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/View/SearchByLabNameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "searchForLabBy(araeId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A - 3cbfb8d3681839c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Seha_Khanah.SearchByLabNamePresenter.searchForLabBy(araeId: Swift.String) -&gt; ()"
+                  moduleName = "Seha Khanah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A - 7c2a3c9d867b85bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Seha_Khanah.Lab&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Seha_Khanah.SearchByLabNamePresenter.searchForLabBy(araeId: Swift.String) -&gt; ()"
+                  moduleName = "Seha Khanah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "243">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B2DAA09-6B95-4360-B633-092721CAC6A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "searchForLabBy(araeId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6ACA15B-B9E8-47D9-AC16-2BCE8A193795"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Interactor/SearchByLabNameInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "searchForLabByAreaId(areadId:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E6ACA15B-B9E8-47D9-AC16-2BCE8A193795 - 90d4d1179c00f3c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Seha_Khanah.SearchByLabNameInteractor.searchForLabByAreaId(areadId: Swift.String, completionHandler: (Swift.Optional&lt;Swift.Array&lt;Seha_Khanah.Lab&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Seha Khanah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Interactor/SearchByLabNameInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "E6ACA15B-B9E8-47D9-AC16-2BCE8A193795 - 32ba08bfe3e665a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Seha_Khanah.SearchByLabNameInteractor.searchForLabByAreaId(areadId: Swift.String, completionHandler: (Swift.Optional&lt;Swift.Array&lt;Seha_Khanah.Lab&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Seha Khanah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Interactor/SearchByLabNameInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "686">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

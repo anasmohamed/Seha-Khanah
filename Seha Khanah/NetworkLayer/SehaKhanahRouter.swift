@@ -21,6 +21,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case getAreas
     case searchByLabName(name:String)
     case aboutUs
+    case searchForLabByAreaId(areaId:String)
     
     var path: String {
         switch self {
@@ -42,6 +43,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.searchByLabName
         case .aboutUs:
             return NetworkingConstants.aboutUs
+        case .searchForLabByAreaId:
+            return NetworkingConstants.searchForLabByAreaId
             
             
             
@@ -59,7 +62,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .getAllPharmacyOffers,
              .getAreas,
              .searchByLabName,
-             .aboutUs:
+             .aboutUs,
+             .searchForLabByAreaId:
             return .get
             
             
@@ -106,7 +110,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.searchBySpecialtyParameter] = specialty
         case let .searchByLabName(name):
             params[NetworkingConstants.searchByLabNameParameter] = name
-            
+        case let .searchForLabByAreaId(areaId):
+            params[NetworkingConstants.searchForLabByAreaIdParameter] = areaId
         default:
             print("Empty Paramter")
             
@@ -130,7 +135,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .getAllPharmacyOffers,
              .getAreas,
              .searchByLabName,
-             .aboutUs:
+             .aboutUs,
+             .searchForLabByAreaId:
             
             return try URLEncoding.default.encode(urlRequest, with: params)
         }

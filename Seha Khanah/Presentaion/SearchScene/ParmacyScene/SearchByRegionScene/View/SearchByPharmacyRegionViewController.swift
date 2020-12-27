@@ -13,7 +13,7 @@ class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol 
     
     
     var regionPresenter: RegionPresenter!
-    
+    var searchForLab = false
     override func viewDidLoad() {
         super.viewDidLoad()
         regionPresenter = RegionPresenter(view: self)
@@ -26,7 +26,19 @@ class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol 
         return regionPresenter.areasCount()
     }
   
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if searchForLab{
+            
+            
+            let searchByLabNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByLabNameViewController") as! SearchByLabNameViewController
+            searchByLabNameViewController.areaId = regionPresenter.getAreaIdAt(index: indexPath.row)
+            self.navigationController!.pushViewController(searchByLabNameViewController, animated: true)
+        }else{
+            let searchByPharmacyNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByPharmacyNameViewController") as! SearchByPharmacyNameViewController
+            searchByPharmacyNameViewController.searchByAreaId = true
+                      self.navigationController!.pushViewController(searchByPharmacyNameViewController, animated: true)
+        }
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllRegionsCell", for: indexPath)
         cell.textLabel?.text = regionPresenter.getAreasList()[indexPath.row].areaNameEn

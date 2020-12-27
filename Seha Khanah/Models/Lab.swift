@@ -35,7 +35,8 @@ class Lab: Codable {
         self.addressEn = data["address_en"].stringValue
         self.addressAr = data["address_ar"].stringValue
         self.rating = data["rating"].stringValue
-
+print(labNameAr)
+        print(labNameEn)
        
     }
 }

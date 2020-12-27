@@ -24,10 +24,14 @@ class NetworkingConstants {
         static let getAllSpecialties = "specialties"
         static let getAllPharmacyOffers = "pharmacy/offers"
         static let getAreas = "areas"
-
+       
         static let search = "search"
         static let searchByNameParameter = "name"
         static let searchBySpecialtyParameter = "specialty"
+    
+        static let searchForLabByAreaId = "laboratory/search"
+        static let searchForLabByAreaIdParameter = "area_id"
+
         static let aboutUs = "admin/aboutUs"
 
         static let searchByLabName = "laboratory/search"
