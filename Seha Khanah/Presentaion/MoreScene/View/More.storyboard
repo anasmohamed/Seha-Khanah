@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--More Table View Controller-->
+        <!--More-->
         <scene sceneID="bSN-0D-jZm">
             <objects>
-                <tableViewController id="gtd-ts-Ips" customClass="MoreTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MoreTableViewController" id="gtd-ts-Ips" customClass="MoreTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cgG-ZA-nHj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="gtd-ts-Ips" id="L31-yT-adR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uAO-RB-tsU"/>
+                    <navigationItem key="navigationItem" title="More" id="uAO-RB-tsU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6k-6z-md3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +53,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
