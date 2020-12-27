@@ -10,7 +10,7 @@
         <!--About App View Controller-->
         <scene sceneID="Z31-bI-YsK">
             <objects>
-                <viewController id="4p1-nd-1UZ" customClass="AboutAppViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutAppViewController" id="4p1-nd-1UZ" customClass="AboutAppViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t6l-mc-6sX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -43,19 +43,19 @@ class MoreTableViewController: UITableViewController {
             let settingsTableViewController = UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsTableViewController") as! SettingsTableViewController
             self.navigationController!.pushViewController(settingsTableViewController, animated: true)
         case 1:
-            let settingsTableViewController = UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsTableViewController") as! SettingsTableViewController
+            let settingsTableViewController = UIStoryboard.init(name: "CallUs", bundle: nil).instantiateViewController(withIdentifier: "CallUsViewController") as! CallUsViewController
             self.navigationController!.pushViewController(settingsTableViewController, animated: true)
             
             
         case 2:
-            let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
-            self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)
+             let aboutAppViewController = UIStoryboard.init(name: "AboutApp", bundle: nil).instantiateViewController(withIdentifier: "AboutAppViewController") as! AboutAppViewController
+            self.navigationController!.pushViewController(aboutAppViewController, animated: true)
         case 3:
             let howTheAppWorksViewController = UIStoryboard.init(name: "HowTheAppWorks", bundle: nil).instantiateViewController(withIdentifier: "HowTheAppWorksViewController") as! HowTheAppWorksViewController
             self.navigationController!.pushViewController(howTheAppWorksViewController, animated: true)
         case 4:
-            let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
-            self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)
+            let aboutAppViewController = UIStoryboard.init(name: "AboutApp", bundle: nil).instantiateViewController(withIdentifier: "AboutAppViewController") as! AboutAppViewController
+            self.navigationController!.pushViewController(aboutAppViewController, animated: true)
         default:
             break
         }

@@ -14,7 +14,8 @@ class CallUsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         messageTextView!.layer.borderWidth = 1
-        messageTextView!.layer.borderColor = UIColor.red.cgColor
+        messageTextView.layer.cornerRadius = 5
+        messageTextView!.layer.borderColor = UIColor.gray.cgColor
         // Do any additional setup after loading the view.
     }
     

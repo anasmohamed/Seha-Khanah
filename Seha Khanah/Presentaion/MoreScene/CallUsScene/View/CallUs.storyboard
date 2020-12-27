@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,26 +10,26 @@
         <!--Call Us View Controller-->
         <scene sceneID="DPi-ol-n7k">
             <objects>
-                <viewController id="n5m-gy-zIr" customClass="CallUsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CallUsViewController" id="n5m-gy-zIr" customClass="CallUsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ilp-t7-GaM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="FK8-pg-O6z">
-                                <rect key="frame" x="157" y="96" width="100" height="100"/>
+                                <rect key="frame" x="157" y="52" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="J6S-sU-ucu"/>
                                     <constraint firstAttribute="height" constant="100" id="xlb-9p-AiA"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Happy to receive your suggestions and inquiries " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFq-xx-gUE">
-                                <rect key="frame" x="7" y="232" width="400" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Happy to receive your suggestions and inquiries " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFq-xx-gUE">
+                                <rect key="frame" x="20" y="188" width="374" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Message" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qH3-k8-L8V">
-                                <rect key="frame" x="22" y="272" width="370" height="80"/>
+                                <rect key="frame" x="22" y="248.33333333333337" width="370" height="80"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="SS1-3o-jni"/>
@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Sx-uY-bbj">
-                                <rect key="frame" x="141.5" y="696" width="131" height="23"/>
+                                <rect key="frame" x="141.66666666666669" y="570" width="130.66666666666669" height="23"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-U8-gkG">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="23"/>
@@ -49,7 +49,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16711" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dP-2b-zLh">
-                                        <rect key="frame" x="77" y="0.0" width="54" height="23"/>
+                                        <rect key="frame" x="77" y="0.0" width="53.666666666666657" height="23"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deV-mD-PpH">
-                                <rect key="frame" x="57" y="792" width="300" height="50"/>
+                                <rect key="frame" x="57" y="666" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9Yb-6c-h1E"/>
@@ -68,7 +68,7 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyQ-7s-mTt">
-                                <rect key="frame" x="7" y="747" width="414" height="2"/>
+                                <rect key="frame" x="7" y="621" width="414" height="2"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="12m-9b-Px9"/>
@@ -80,7 +80,8 @@
                             <constraint firstItem="qH3-k8-L8V" firstAttribute="centerX" secondItem="gO4-Jb-gOz" secondAttribute="centerX" id="49r-tg-KVp"/>
                             <constraint firstItem="gO4-Jb-gOz" firstAttribute="trailing" secondItem="zyQ-7s-mTt" secondAttribute="trailing" constant="-7" id="7qq-Rp-Fnd"/>
                             <constraint firstItem="deV-mD-PpH" firstAttribute="centerX" secondItem="gO4-Jb-gOz" secondAttribute="centerX" id="8oW-Cq-V9y"/>
-                            <constraint firstItem="jFq-xx-gUE" firstAttribute="centerX" secondItem="gO4-Jb-gOz" secondAttribute="centerX" id="K0i-v4-ehS"/>
+                            <constraint firstItem="jFq-xx-gUE" firstAttribute="trailing" secondItem="gO4-Jb-gOz" secondAttribute="trailing" constant="-20" id="IYV-6a-mF3"/>
+                            <constraint firstItem="gO4-Jb-gOz" firstAttribute="leading" secondItem="jFq-xx-gUE" secondAttribute="leading" constant="-20" id="JT4-SR-eOz"/>
                             <constraint firstItem="6Sx-uY-bbj" firstAttribute="centerX" secondItem="gO4-Jb-gOz" secondAttribute="centerX" id="OHt-Bk-gp3"/>
                             <constraint firstItem="qH3-k8-L8V" firstAttribute="top" secondItem="jFq-xx-gUE" secondAttribute="bottom" constant="19.5" id="Oxx-n4-i1l"/>
                             <constraint firstItem="jFq-xx-gUE" firstAttribute="top" secondItem="FK8-pg-O6z" secondAttribute="bottom" constant="36" id="amL-I8-JCk"/>
@@ -99,10 +100,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7u-r8-0Sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.811594202898561" y="33.482142857142854"/>
+            <point key="canvasLocation" x="76" y="32.833583208395808"/>
         </scene>
     </scenes>
     <resources>
-        <image name="email" width="341.5" height="341.5"/>
+        <image name="email" width="341.33334350585938" height="341.33334350585938"/>
     </resources>
 </document>

@@ -11,8 +11,6 @@
 		A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A912597BA75003F414A /* AboutAppPresenter.swift */; };
 		A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A932597BA98003F414A /* AboutAppProtocol.swift */; };
 		A8094A992597C5AD003F414A /* HowTheAppWorks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8094A982597C5AD003F414A /* HowTheAppWorks.storyboard */; };
-		A8094AA52597CAAB003F414A /* PhotoSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8094AA42597CAAB003F414A /* PhotoSliderView.xib */; };
-		A8094AA72597CAEE003F414A /* PhotoSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094AA62597CAEE003F414A /* PhotoSliderView.swift */; };
 		A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
@@ -114,8 +112,6 @@
 		A8094A912597BA75003F414A /* AboutAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		A8094A932597BA98003F414A /* AboutAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppProtocol.swift; sourceTree = "<group>"; };
 		A8094A982597C5AD003F414A /* HowTheAppWorks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowTheAppWorks.storyboard; sourceTree = "<group>"; };
-		A8094AA42597CAAB003F414A /* PhotoSliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSliderView.xib; sourceTree = "<group>"; };
-		A8094AA62597CAEE003F414A /* PhotoSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSliderView.swift; sourceTree = "<group>"; };
 		A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTheAppWorksViewController.swift; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
@@ -243,7 +239,6 @@
 		A8094A952597C49B003F414A /* HowTheAppWorksScene */ = {
 			isa = PBXGroup;
 			children = (
-				A8094A972597C58E003F414A /* ImageSlider */,
 				A8094A962597C587003F414A /* View */,
 			);
 			path = HowTheAppWorksScene;
@@ -256,15 +251,6 @@
 				A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A8094A972597C58E003F414A /* ImageSlider */ = {
-			isa = PBXGroup;
-			children = (
-				A8094AA42597CAAB003F414A /* PhotoSliderView.xib */,
-				A8094AA62597CAEE003F414A /* PhotoSliderView.swift */,
-			);
-			path = ImageSlider;
 			sourceTree = "<group>";
 		};
 		A82EA354258F51DF00F30C61 /* Extenstions */ = {
@@ -1023,7 +1009,6 @@
 				A8674A26259749060099E7CE /* Offers.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A8094A992597C5AD003F414A /* HowTheAppWorks.storyboard in Resources */,
-				A8094AA52597CAAB003F414A /* PhotoSliderView.xib in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
 				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
@@ -1115,7 +1100,6 @@
 				A851FD74259794A50036790B /* AboutAppViewController.swift in Sources */,
 				A84FE19325914ACB007BF313 /* SearchByNameViewController.swift in Sources */,
 				A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */,
-				A8094AA72597CAEE003F414A /* PhotoSliderView.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
