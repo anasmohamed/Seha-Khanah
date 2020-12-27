@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--How The App Works View Controller-->
+        <scene sceneID="weL-ro-Gdf">
+            <objects>
+                <viewController storyboardIdentifier="HowTheAppWorksViewController" id="Eo4-RK-puf" customClass="HowTheAppWorksViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hoK-iv-9TQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k04-86-gmw">
+                                <rect key="frame" x="20.5" y="776" width="373" height="40"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HFh-ys-JV4"/>
+                                </constraints>
+                                <state key="normal" title="Book Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-jL-W9n" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="87" y="280" width="240" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FyE-pJ-hRi"/>
+                                    <constraint firstAttribute="height" constant="300" id="gyR-mb-8gC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VVz-C8-gRp" firstAttribute="bottom" secondItem="k04-86-gmw" secondAttribute="bottom" constant="46" id="LyX-X4-IVy"/>
+                            <constraint firstItem="k04-86-gmw" firstAttribute="centerX" secondItem="VVz-C8-gRp" secondAttribute="centerX" id="SuX-IY-kSO"/>
+                            <constraint firstItem="k04-86-gmw" firstAttribute="width" secondItem="hoK-iv-9TQ" secondAttribute="width" multiplier="0.9" id="bgF-xQ-5OX"/>
+                            <constraint firstItem="k04-86-gmw" firstAttribute="top" secondItem="x2g-jL-W9n" secondAttribute="bottom" constant="196" id="g62-1h-W6U"/>
+                            <constraint firstItem="x2g-jL-W9n" firstAttribute="centerX" secondItem="VVz-C8-gRp" secondAttribute="centerX" id="mbw-hZ-aIU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VVz-C8-gRp"/>
+                    </view>
+                    <connections>
+                        <outlet property="bookNowBtn" destination="k04-86-gmw" id="WOS-Jb-1kd"/>
+                        <outlet property="imageSlideShow" destination="x2g-jL-W9n" id="83U-PY-VKg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeE-Ul-ttg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.72463768115944" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+</document>

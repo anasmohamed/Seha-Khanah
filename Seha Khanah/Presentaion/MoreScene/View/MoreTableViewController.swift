@@ -49,8 +49,8 @@ class MoreTableViewController: UITableViewController {
             let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
             self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)
         case 3:
-            let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
-            self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)
+            let howTheAppWorksViewController = UIStoryboard.init(name: "HowTheAppWorks", bundle: nil).instantiateViewController(withIdentifier: "HowTheAppWorksViewController") as! HowTheAppWorksViewController
+            self.navigationController!.pushViewController(howTheAppWorksViewController, animated: true)
         case 4:
             let searchForPharmaciesViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForPharmaciesViewController") as! SearchForPharmaciesViewController
             self.navigationController!.pushViewController(searchForPharmaciesViewController, animated: true)

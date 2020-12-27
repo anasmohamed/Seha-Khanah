@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About App View Controller-->
+        <scene sceneID="Z31-bI-YsK">
+            <objects>
+                <viewController id="4p1-nd-1UZ" customClass="AboutAppViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6l-mc-6sX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-7z-JuM">
+                                <rect key="frame" x="157" y="54" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="goV-aR-oqw"/>
+                                    <constraint firstAttribute="width" constant="100" id="myJ-xy-yvF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-kU-jNl">
+                                <rect key="frame" x="20" y="177" width="41.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.42352941176470588" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qjh-kU-jNl" firstAttribute="leading" secondItem="jQl-ps-cu1" secondAttribute="leading" constant="20" id="6qy-mv-HGf"/>
+                            <constraint firstItem="sOc-7z-JuM" firstAttribute="centerX" secondItem="jQl-ps-cu1" secondAttribute="centerX" id="T5i-D2-t6l"/>
+                            <constraint firstItem="qjh-kU-jNl" firstAttribute="top" secondItem="sOc-7z-JuM" secondAttribute="bottom" constant="23" id="TK4-vC-YLU"/>
+                            <constraint firstItem="sOc-7z-JuM" firstAttribute="top" secondItem="jQl-ps-cu1" secondAttribute="top" constant="10" id="hwA-WT-XUv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jQl-ps-cu1"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutAppLbl" destination="qjh-kU-jNl" id="Wi6-bM-4el"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7C-I4-mzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="266.5" height="266.5"/>
+    </resources>
+</document>
