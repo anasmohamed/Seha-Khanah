@@ -13,19 +13,25 @@ class SearchForPharmaciesViewController: UIViewController {
     @IBOutlet weak var showAllStackView: UIStackView!
     @IBOutlet weak var searchByRegionStackView: UIStackView!
     
+    @IBOutlet weak var arrowImageOne: UIImageView!
+    @IBOutlet weak var arrowImageTwo: UIImageView!
+    @IBOutlet weak var arrowImageThree: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
+        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
+        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
         let searchByPharmacyNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByPharmacyNameTab(_:)))
         let searchByRegionTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByRegionTab(_:)))
-         let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllPharmaciesTab(_:)))
+        let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllPharmaciesTab(_:)))
         
         searchByPharmacyNameStackView.addGestureRecognizer(searchByPharmacyNameTab)
         searchByRegionStackView.addGestureRecognizer(searchByRegionTab)
         showAllStackView.addGestureRecognizer(showAllPharmaciesTab)
-
+        
     }
     
     

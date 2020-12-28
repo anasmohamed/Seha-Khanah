@@ -20,9 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
         // Override point for customization after application launch.
         MOLHLanguage.setDefaultLanguage("en")
         MOLH.shared.activate(true)
-        self.window = UIWindow()
-        self.window!.makeKeyAndVisible()
- reset()
+       // self.window = UIWindow()
+     //   self.window!.makeKeyAndVisible()
 
         return true
     }

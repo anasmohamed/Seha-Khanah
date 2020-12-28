@@ -9,23 +9,22 @@
 import UIKit
 import MBRadioCheckboxButton
 import MOLH
-
+import LanguageManager_iOS
 class ChangeLanguageViewController: UIViewController {
     
     @IBOutlet weak var choosenLangeuageLbl: UILabel!
-    
     @IBOutlet weak var chosenLanguageView: UIView!
-    
     @IBOutlet weak var arabicRadioButton: RadioButton!
     @IBOutlet weak var englishRadioButton: RadioButton!
     @IBOutlet weak var saveBtn: UIButton!
+    
     var languageBtnsGroup = RadioButtonContainer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         saveBtn.layer.cornerRadius = 10
         self.navigationItem.title = "Change Language".localized
-
+        
         // corner radius
         chosenLanguageView.layer.cornerRadius = 10
         
@@ -48,15 +47,32 @@ class ChangeLanguageViewController: UIViewController {
         languageBtnsGroup.selectedButtons = [englishRadioButton]
         englishRadioButton.style = .square
         arabicRadioButton.style = .square
-       
+        
     }
     @IBAction func saveBtnDidTapped(_ sender: Any) {
+        //        Localize.setCurrentLanguage("ar")
+        //
+        //        let languageString  = choosenLangeuageLbl.text == "English" ? "en" : "ar"
+        //        MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == languageString ? "ar" : "en")
+        //
         
-        let languageString  = choosenLangeuageLbl.text == "English" ? "en" : "ar"
-        MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == languageString ? "ar" : "en")
+//        let selectedLanguage: Languages = choosenLangeuageLbl.text == "English" ? .en : .ar
+//
+//
+//        LanguageManager.shared.setLanguage(language: selectedLanguage)
+//
+//
+        
+        if LocalizationSystem.sharedInstance.getLanguage() == "ar" {
+                  LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
+                  UIView.appearance().semanticContentAttribute = .forceLeftToRight
+              } else {
+                  LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
+                  UIView.appearance().semanticContentAttribute = .forceRightToLeft
+              }
         MOLH.reset()
     }
- 
+    
 }
 extension ChangeLanguageViewController: RadioButtonDelegate {
     func radioButtonDidSelect(_ button: RadioButton) {

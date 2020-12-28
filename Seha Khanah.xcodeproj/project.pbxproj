@@ -63,6 +63,7 @@
 		A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870839225963336002AC96C /* SearchByLabNameInteractor.swift */; };
 		A8708396259633FA002AC96C /* SearchByLabNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */; };
 		A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */; };
+		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
 		A884DD77259A1610006D686B /* localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884DD76259A1610006D686B /* localized.swift */; };
 		A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */; };
@@ -173,6 +174,7 @@
 		A870839225963336002AC96C /* SearchByLabNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameInteractor.swift; sourceTree = "<group>"; };
 		A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNamePresenter.swift; sourceTree = "<group>"; };
 		A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameProtocol.swift; sourceTree = "<group>"; };
+		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
 		A884DD76259A1610006D686B /* localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localized.swift; sourceTree = "<group>"; };
 		A884DD79259A2093006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HowTheAppWorks.storyboard; sourceTree = "<group>"; };
@@ -874,7 +876,6 @@
 				A860322B2596A17F003A7DA5 /* MoreScene */,
 				A83D6EAA258A206300186693 /* OffersScene */,
 				A8DBD8302588EE59001C203E /* SearchScene */,
-				A8AC86BC25876D4F00604E64 /* AuthenticationScene */,
 			);
 			path = Presentaion;
 			sourceTree = "<group>";
@@ -911,6 +912,7 @@
 				A83CB061258B4DBA00207BDC /* State.swift */,
 				A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */,
 				A884DD76259A1610006D686B /* localized.swift */,
+				A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -965,6 +967,7 @@
 				A8DBD8322588EF21001C203E /* MainViewController.swift */,
 				A8674A31259776180099E7CE /* Search.storyboard */,
 				A8DBD836258908B5001C203E /* SearchViewController.swift */,
+				A8AC86BC25876D4F00604E64 /* AuthenticationScene */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1137,6 +1140,7 @@
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
 				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A851FD7825979B460036790B /* AboutAppInteractor.swift in Sources */,
+				A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */,
 				A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,
 				A8A7DD4125951960007FBFE0 /* Area.swift in Sources */,

@@ -9,24 +9,29 @@
 import UIKit
 
 class SearchForAllLabsViewController: UIViewController {
-
-   @IBOutlet weak var searchByLabNameStackView: UIStackView!
+    
+    @IBOutlet weak var searchByLabNameStackView: UIStackView!
     @IBOutlet weak var showAllStackView: UIStackView!
     @IBOutlet weak var searchByRegionStackView: UIStackView!
     
+    @IBOutlet weak var arrowImageOne: UIImageView!
+    @IBOutlet weak var arrowImageTwo: UIImageView!
+    @IBOutlet weak var arrowImageThree: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
+        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
+        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
         let searchByLabNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByLabNameTab(_:)))
         let searchByRegionTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByRegionTab(_:)))
-         let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllLabsTab(_:)))
+        let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllLabsTab(_:)))
         
         searchByLabNameStackView.addGestureRecognizer(searchByLabNameTab)
         searchByRegionStackView.addGestureRecognizer(searchByRegionTab)
         showAllStackView.addGestureRecognizer(showAllPharmaciesTab)
-
+        
     }
     
     
@@ -58,6 +63,6 @@ class SearchForAllLabsViewController: UIViewController {
     }
     
     
-  
-
+    
+    
 }
