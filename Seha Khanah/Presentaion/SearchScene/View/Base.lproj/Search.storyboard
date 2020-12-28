@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Syd-4a-Kv4">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,9 +48,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRJ-hL-BZX">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-4Q-5DS">
-                                                        <rect key="frame" x="322.66666666666669" y="17.333333333333293" width="17.333333333333314" height="15.333333333333336"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hom_row" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-4Q-5DS">
+                                                        <rect key="frame" x="310" y="5" width="40" height="40"/>
                                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="GLV-V8-3qm"/>
+                                                            <constraint firstAttribute="width" constant="40" id="fLR-F4-dPI"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nbe-h5-VRo">
                                                         <rect key="frame" x="20" y="15.666666666666627" width="19.666666666666671" height="18"/>
@@ -65,7 +70,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6Fb-3W-QRe"/>
                                                     <constraint firstItem="Nbe-h5-VRo" firstAttribute="centerY" secondItem="bRJ-hL-BZX" secondAttribute="centerY" id="8qR-jh-6GF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="yjA-4Q-5DS" secondAttribute="trailing" constant="10" id="NxC-mx-gtQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yjA-4Q-5DS" secondAttribute="trailing" id="NxC-mx-gtQ"/>
                                                     <constraint firstItem="Nbe-h5-VRo" firstAttribute="leading" secondItem="bRJ-hL-BZX" secondAttribute="leading" constant="20" id="WnJ-FD-t64"/>
                                                     <constraint firstItem="yjA-4Q-5DS" firstAttribute="centerY" secondItem="bRJ-hL-BZX" secondAttribute="centerY" id="fsG-hc-wCE"/>
                                                     <constraint firstItem="qyv-Iy-wQ4" firstAttribute="leading" secondItem="Nbe-h5-VRo" secondAttribute="trailing" constant="10" id="jHO-Yw-cP8"/>
@@ -80,9 +85,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxo-P8-XCW">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Np2-YC-dE0">
-                                                        <rect key="frame" x="322.66666666666669" y="17.333333333333293" width="17.333333333333314" height="15.333333333333336"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hom_row" translatesAutoresizingMaskIntoConstraints="NO" id="Np2-YC-dE0">
+                                                        <rect key="frame" x="310" y="5" width="40" height="40"/>
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="620-Ev-7LG"/>
+                                                            <constraint firstAttribute="height" constant="40" id="XEH-h3-cuW"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor_ic" translatesAutoresizingMaskIntoConstraints="NO" id="wbk-kx-ka7">
                                                         <rect key="frame" x="10" y="10" width="30" height="30"/>
@@ -106,7 +115,7 @@
                                                     <constraint firstItem="kxd-Oz-RLF" firstAttribute="centerY" secondItem="vxo-P8-XCW" secondAttribute="centerY" id="eT2-Dl-5mr"/>
                                                     <constraint firstItem="wbk-kx-ka7" firstAttribute="centerY" secondItem="vxo-P8-XCW" secondAttribute="centerY" id="mjF-dM-hv0"/>
                                                     <constraint firstItem="Np2-YC-dE0" firstAttribute="centerY" secondItem="vxo-P8-XCW" secondAttribute="centerY" id="rMn-84-edX"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Np2-YC-dE0" secondAttribute="trailing" constant="10" id="rTD-bk-3m9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Np2-YC-dE0" secondAttribute="trailing" id="rTD-bk-3m9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -117,9 +126,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10s-bW-UQ9">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Iqj-eX-4nA">
-                                                        <rect key="frame" x="322.66666666666669" y="17.333333333333293" width="17.333333333333314" height="15.333333333333336"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hom_row" translatesAutoresizingMaskIntoConstraints="NO" id="Iqj-eX-4nA">
+                                                        <rect key="frame" x="310" y="5" width="40" height="40"/>
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="tdn-mv-Gh2"/>
+                                                            <constraint firstAttribute="width" constant="40" id="zZX-i5-Ieu"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pharmaci_ic" translatesAutoresizingMaskIntoConstraints="NO" id="2it-jt-Cal">
                                                         <rect key="frame" x="10" y="10" width="30" height="30"/>
@@ -138,7 +151,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstItem="2it-jt-Cal" firstAttribute="leading" secondItem="10s-bW-UQ9" secondAttribute="leading" constant="10" id="08e-b1-1vZ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Iqj-eX-4nA" secondAttribute="trailing" constant="10" id="K3V-OY-R3A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Iqj-eX-4nA" secondAttribute="trailing" id="K3V-OY-R3A"/>
                                                     <constraint firstItem="l1L-NK-776" firstAttribute="leading" secondItem="2it-jt-Cal" secondAttribute="trailing" constant="10" id="O9e-os-aDN"/>
                                                     <constraint firstItem="l1L-NK-776" firstAttribute="centerY" secondItem="10s-bW-UQ9" secondAttribute="centerY" id="Vko-8N-Z7T"/>
                                                     <constraint firstAttribute="height" constant="50" id="i3h-1u-IhL"/>
@@ -154,9 +167,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bi5-Nt-Gsf">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-F0-8Y2">
-                                                        <rect key="frame" x="322.66666666666669" y="17.333333333333407" width="17.333333333333314" height="15.333333333333336"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hom_row" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-F0-8Y2">
+                                                        <rect key="frame" x="310" y="5" width="40" height="40"/>
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="88W-aF-wW1"/>
+                                                            <constraint firstAttribute="height" constant="40" id="h0E-mP-GTt"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lab_ic" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-Pl-LuT">
                                                         <rect key="frame" x="10" y="10" width="30" height="30"/>
@@ -174,7 +191,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="WIA-F0-8Y2" secondAttribute="trailing" constant="10" id="1Me-re-6wv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WIA-F0-8Y2" secondAttribute="trailing" id="1Me-re-6wv"/>
                                                     <constraint firstItem="FoZ-dg-g9r" firstAttribute="leading" secondItem="9ZE-Pl-LuT" secondAttribute="trailing" constant="10" id="5mZ-gg-sbi"/>
                                                     <constraint firstAttribute="height" constant="50" id="FZr-NX-8U8"/>
                                                     <constraint firstItem="9ZE-Pl-LuT" firstAttribute="centerY" secondItem="Bi5-Nt-Gsf" secondAttribute="centerY" id="diD-Oc-bZU"/>
@@ -241,6 +258,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="rEl-SG-JbZ"/>
                     <connections>
+                        <outlet property="arrowImageFour" destination="WIA-F0-8Y2" id="sa1-yR-KNS"/>
+                        <outlet property="arrowImageOne" destination="yjA-4Q-5DS" id="BiR-o7-Gf5"/>
+                        <outlet property="arrowImageThree" destination="Iqj-eX-4nA" id="Inb-BO-Nu9"/>
+                        <outlet property="arrowImageTwo" destination="Np2-YC-dE0" id="FIJ-fd-oLe"/>
                         <outlet property="emailBtn" destination="W7c-TK-Jh2" id="9SC-dN-1n2"/>
                         <outlet property="searchByNameStackView" destination="WLc-gD-SCh" id="pbg-fJ-Nlw"/>
                         <outlet property="searchBySpecialtyStackView" destination="Yam-H3-bhE" id="uri-gI-kEb"/>
@@ -329,7 +350,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ne1-eL-fck">
             <objects>
-                <tabBarController id="Syd-4a-Kv4" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" id="Syd-4a-Kv4" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g8x-Qo-nIo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1023,7 +1044,7 @@
         <scene sceneID="dfX-fV-cJ1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="evy-qG-dir" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Offers" id="U4H-wZ-NQU"/>
+                    <tabBarItem key="tabBarItem" title="Offers" image="tag.fill" catalog="system" id="U4H-wZ-NQU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tio-DF-RD7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1071,10 +1092,12 @@
         <image name="background" width="750" height="1330"/>
         <image name="doctor_ic" width="72" height="74"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="hom_row" width="72" height="74"/>
         <image name="lab_ic" width="72" height="74"/>
         <image name="logo" width="266.66665649414062" height="266.66665649414062"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="pharmaci_ic" width="72" height="74"/>
         <image name="search" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="tag.fill" catalog="system" width="128" height="116"/>
     </resources>
 </document>

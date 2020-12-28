@@ -15,22 +15,35 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchByNameStackView: UIStackView!
     @IBOutlet weak var searchForPharmaciesStackView: UIStackView!
     
+    @IBOutlet weak var arrowImageOne: UIImageView!
+    @IBOutlet weak var arrowImageTwo: UIImageView!
+    @IBOutlet weak var arrowImageThree: UIImageView!
+    @IBOutlet weak var arrowImageFour: UIImageView!
     
     @IBOutlet weak var emailBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
+        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
+        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
+        arrowImageFour.image = arrowImageFour.image?.flipIfNeeded()
         emailBtn.layer.cornerRadius = emailBtn.frame.width / 2
         let searchByNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByNameTab(_:)))
         let searchBySpecialtyTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchBySpecialtyTab(_:)))
         let searchForPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchForPharmaciesTab(_:)))
-         let searchForLabsTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchForLabsTab(_:)))
+        let searchForLabsTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchForLabsTab(_:)))
         
         searchByNameStackView.addGestureRecognizer(searchByNameTab)
         searchBySpecialtyStackView.addGestureRecognizer(searchBySpecialtyTab)
         searchForPharmaciesStackView.addGestureRecognizer(searchForPharmaciesTab)
         
         searchForLabsStackView.addGestureRecognizer(searchForLabsTab)
-
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.items?[1].title = "Offers".localized
+        
     }
     @objc func handleSearchByNameTab(_ sender: UITapGestureRecognizer? = nil) {
         
@@ -53,9 +66,9 @@ class SearchViewController: UIViewController {
         
     }
     @objc func handleSearchForLabsTab(_ sender: UITapGestureRecognizer? = nil) {
-          
-          let searchForAllLabsViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForAllLabsViewController") as! SearchForAllLabsViewController
-          self.navigationController!.pushViewController(searchForAllLabsViewController, animated: true)
-          
-      }
+        
+        let searchForAllLabsViewController = storyboard?.instantiateViewController(withIdentifier: "SearchForAllLabsViewController") as! SearchForAllLabsViewController
+        self.navigationController!.pushViewController(searchForAllLabsViewController, animated: true)
+        
+    }
 }

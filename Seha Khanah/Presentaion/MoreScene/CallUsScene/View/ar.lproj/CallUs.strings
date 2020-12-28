@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "16711"; ObjectID = "8dP-2b-zLh"; */
+"8dP-2b-zLh.text" = "16711";
+
+/* Class = "UILabel"; text = "For More"; ObjectID = "U8G-U8-gkG"; */
+"U8G-U8-gkG.text" = "للمزيد اتصل ب";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "deV-mD-PpH"; */
+"deV-mD-PpH.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "We Happy to receive your suggestions and inquiries "; ObjectID = "jFq-xx-gUE"; */
+"jFq-xx-gUE.text" = "نحن سعداء لتلقى إستفساراتكم وإقتراحتكم";
+
+/* Class = "UITextView"; text = "Add Message"; ObjectID = "qH3-k8-L8V"; */
+"qH3-k8-L8V.text" = "أضف رسالة";

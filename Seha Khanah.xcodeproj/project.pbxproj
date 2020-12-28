@@ -10,7 +10,6 @@
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
 		A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A912597BA75003F414A /* AboutAppPresenter.swift */; };
 		A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A932597BA98003F414A /* AboutAppProtocol.swift */; };
-		A8094A992597C5AD003F414A /* HowTheAppWorks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8094A982597C5AD003F414A /* HowTheAppWorks.storyboard */; };
 		A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
@@ -54,7 +53,6 @@
 		A8674A26259749060099E7CE /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A28259749060099E7CE /* Offers.storyboard */; };
 		A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A2D259749F60099E7CE /* InfoPlist.strings */; };
 		A8674A2F259776180099E7CE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A31259776180099E7CE /* Search.storyboard */; };
-		A8674A3B259776EE0099E7CE /* CallUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A3A259776EE0099E7CE /* CallUs.storyboard */; };
 		A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674A3C259777110099E7CE /* CallUsViewController.swift */; };
 		A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */; };
 		A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */; };
@@ -66,6 +64,9 @@
 		A8708396259633FA002AC96C /* SearchByLabNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */; };
 		A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
+		A884DD77259A1610006D686B /* localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884DD76259A1610006D686B /* localized.swift */; };
+		A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */; };
+		A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A884DD81259A2110006D686B /* CallUs.storyboard */; };
 		A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C23DE2593547A002AA4F7 /* SearchBySpecialtyModel.swift */; };
 		A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C23E1259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift */; };
 		A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C23E325936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift */; };
@@ -112,7 +113,6 @@
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8094A912597BA75003F414A /* AboutAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		A8094A932597BA98003F414A /* AboutAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppProtocol.swift; sourceTree = "<group>"; };
-		A8094A982597C5AD003F414A /* HowTheAppWorks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowTheAppWorks.storyboard; sourceTree = "<group>"; };
 		A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTheAppWorksViewController.swift; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
@@ -150,6 +150,7 @@
 		A85E32812594A12100842D0F /* SearchByPharmacyNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchByPharmacyNameTableViewCell.xib; sourceTree = "<group>"; };
 		A85E32842594A40500842D0F /* PharmacyOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffer.swift; sourceTree = "<group>"; };
 		A85E32862594ADBD00842D0F /* PharmacyOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersInteractor.swift; sourceTree = "<group>"; };
+		A85FE00D259951C500528BB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Search.strings; sourceTree = "<group>"; };
 		A860322C2596A1BC003A7DA5 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		A8674A21259748890099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -162,8 +163,6 @@
 		A8674A2D259749F60099E7CE /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		A8674A30259776180099E7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		A8674A33259776240099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Search.strings; sourceTree = "<group>"; };
-		A8674A352597762B0099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Search.strings; sourceTree = "<group>"; };
-		A8674A3A259776EE0099E7CE /* CallUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallUs.storyboard; sourceTree = "<group>"; };
 		A8674A3C259777110099E7CE /* CallUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
 		A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForAllLabsViewController.swift; sourceTree = "<group>"; };
 		A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +174,13 @@
 		A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNamePresenter.swift; sourceTree = "<group>"; };
 		A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameProtocol.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
+		A884DD76259A1610006D686B /* localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localized.swift; sourceTree = "<group>"; };
+		A884DD79259A2093006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HowTheAppWorks.storyboard; sourceTree = "<group>"; };
+		A884DD7C259A20A5006D686B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HowTheAppWorks.strings; sourceTree = "<group>"; };
+		A884DD7E259A20A8006D686B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HowTheAppWorks.strings; sourceTree = "<group>"; };
+		A884DD80259A2110006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CallUs.storyboard; sourceTree = "<group>"; };
+		A884DD83259A2118006D686B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CallUs.strings; sourceTree = "<group>"; };
+		A884DD85259A211D006D686B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CallUs.strings; sourceTree = "<group>"; };
 		A88C23DE2593547A002AA4F7 /* SearchBySpecialtyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyModel.swift; sourceTree = "<group>"; };
 		A88C23E1259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpcialtyTableViewCell.swift; sourceTree = "<group>"; };
 		A88C23E325936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpeialtyTableViewCellView.swift; sourceTree = "<group>"; };
@@ -249,7 +255,7 @@
 		A8094A962597C587003F414A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8094A982597C5AD003F414A /* HowTheAppWorks.storyboard */,
+				A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */,
 				A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */,
 			);
 			path = View;
@@ -614,7 +620,7 @@
 		A8674A37259776BF0099E7CE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8674A3A259776EE0099E7CE /* CallUs.storyboard */,
+				A884DD81259A2110006D686B /* CallUs.storyboard */,
 				A8674A3C259777110099E7CE /* CallUsViewController.swift */,
 			);
 			path = View;
@@ -902,6 +908,7 @@
 				A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */,
 				A83CB061258B4DBA00207BDC /* State.swift */,
 				A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */,
+				A884DD76259A1610006D686B /* localized.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1032,7 +1039,7 @@
 				A85E32832594A12100842D0F /* SearchByPharmacyNameTableViewCell.xib in Resources */,
 				A83D6EB3258A2E6000186693 /* MostOrderedOffersTableViewCell.xib in Resources */,
 				A851FD76259794F80036790B /* AboutApp.storyboard in Resources */,
-				A8674A3B259776EE0099E7CE /* CallUs.storyboard in Resources */,
+				A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */,
 				A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */,
 				A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
@@ -1043,7 +1050,7 @@
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
 				A8674A26259749060099E7CE /* Offers.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
-				A8094A992597C5AD003F414A /* HowTheAppWorks.storyboard in Resources */,
+				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
 				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
@@ -1135,6 +1142,7 @@
 				A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */,
 				A851FD74259794A50036790B /* AboutAppViewController.swift in Sources */,
 				A84FE19325914ACB007BF313 /* SearchByNameViewController.swift in Sources */,
+				A884DD77259A1610006D686B /* localized.swift in Sources */,
 				A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */,
@@ -1207,9 +1215,29 @@
 			children = (
 				A8674A30259776180099E7CE /* Base */,
 				A8674A33259776240099E7CE /* ar */,
-				A8674A352597762B0099E7CE /* en */,
+				A85FE00D259951C500528BB1 /* en */,
 			);
 			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
+		A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A884DD79259A2093006D686B /* Base */,
+				A884DD7C259A20A5006D686B /* en */,
+				A884DD7E259A20A8006D686B /* ar */,
+			);
+			name = HowTheAppWorks.storyboard;
+			sourceTree = "<group>";
+		};
+		A884DD81259A2110006D686B /* CallUs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A884DD80259A2110006D686B /* Base */,
+				A884DD83259A2118006D686B /* en */,
+				A884DD85259A211D006D686B /* ar */,
+			);
+			name = CallUs.storyboard;
 			sourceTree = "<group>";
 		};
 		A8AC86A925875B2600604E64 /* Main.storyboard */ = {
@@ -1356,6 +1384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Seha Khanah/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1374,6 +1403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Seha Khanah/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

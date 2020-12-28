@@ -9,7 +9,7 @@
 import UIKit
 
 class MoreTableViewController: UITableViewController {
-    var settingsTitles = ["Settings","Call US","About the App","How The App Works","Login"]
+    var settingsTitles = ["Settings".localized,"Call US".localized,"About the App".localized,"How The App Works".localized,"Login".localized]
     var settingsImages = ["gear","","","",""]
     override func viewDidLoad() {
         super.viewDidLoad()

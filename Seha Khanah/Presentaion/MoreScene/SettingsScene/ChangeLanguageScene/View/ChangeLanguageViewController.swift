@@ -53,7 +53,7 @@ class ChangeLanguageViewController: UIViewController {
         
         let languageString  = choosenLangeuageLbl.text == "English" ? "en" : "ar"
         MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == languageString ? "ar" : "en")
-        MOLH.reset(transition: .transitionCrossDissolve)
+        MOLH.reset()
     }
  
 }

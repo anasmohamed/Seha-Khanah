@@ -20,14 +20,15 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
     @IBOutlet weak var accountPhoto: UIImageView!
     @IBOutlet weak var labPhoto: UIImageView!
     @IBOutlet weak var containerView: DropShadowView!
+    let locale = NSLocale.current.languageCode
     
     let cornerRadius : CGFloat = 25.0
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         bookNowBtn.layer.cornerRadius = 10
         accountPhoto.layer.cornerRadius = accountPhoto.frame.width / 2
-
+        
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
         containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
@@ -45,8 +46,13 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
         ratingView.rating = Double(lab.rating!)!
         labPhoto.kf.setImage(with: URL(string:lab.photo!))
         accountPhoto.kf.setImage(with: URL(string:lab.photo!))
-        labName.text = lab.labNameEn
-        addressLbl.text = lab.addressEn
+        if locale == "en"{
+            labName.text = lab.labNameEn
+            addressLbl.text = lab.addressEn
+        }else{
+            labName.text = lab.labNameAr
+            addressLbl.text = lab.addressAr
+        }
     }
     
 }

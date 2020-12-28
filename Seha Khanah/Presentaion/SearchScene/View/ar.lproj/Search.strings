@@ -1,87 +1,84 @@
 
 /* Class = "UILabel"; text = "Search By Name"; ObjectID = "0Uo-xF-Hnk"; */
-"0Uo-xF-Hnk.text" = "Search By Name";
+"0Uo-xF-Hnk.text" = "بحث بأسم الطبيب";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "0YY-Ud-VKo"; */
-"0YY-Ud-VKo.placeholder" = "Search By Doctor Name";
+"0YY-Ud-VKo.placeholder" = "بحث بأسم الطبيب";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "2Q8-er-26V"; */
-"2Q8-er-26V.title" = "Search";
+"2Q8-er-26V.title" = "البحث";
 
 /* Class = "UILabel"; text = "Search By Pharmacy Name"; ObjectID = "2l8-bn-Qoz"; */
-"2l8-bn-Qoz.text" = "Search By Pharmacy Name";
+"2l8-bn-Qoz.text" = "بحث بأسم الصيدلية";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "3Bn-wE-i2M"; */
-"3Bn-wE-i2M.title" = "Search";
+"3Bn-wE-i2M.title" = "البحث";
 
 /* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "6cG-gx-7uz"; */
-"6cG-gx-7uz.text" = "We Care About Your Health";
+"6cG-gx-7uz.text" = "لان صحتك تهمنا";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "70t-LU-TyK"; */
-"70t-LU-TyK.text" = "Label";
 
 /* Class = "UILabel"; text = "Show All"; ObjectID = "9MY-sG-hJC"; */
-"9MY-sG-hJC.text" = "Show All";
+"9MY-sG-hJC.text" = "شاهد الكل";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "DeU-xL-yid"; */
-"DeU-xL-yid.title" = "Search";
+"DeU-xL-yid.title" = "البحث";
 
 /* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "FT1-K4-xjq"; */
-"FT1-K4-xjq.text" = "We Care About Your Health";
+"FT1-K4-xjq.text" = "لان صحتك تهمنا";
 
 /* Class = "UILabel"; text = "Search By Lab"; ObjectID = "FoZ-dg-g9r"; */
-"FoZ-dg-g9r.text" = "Search By Lab";
+"FoZ-dg-g9r.text" = "بحث بأسم المختبر";
 
 /* Class = "UITabBarItem"; title = "Search"; ObjectID = "H9r-VO-dzN"; */
-"H9r-VO-dzN.title" = "Search";
-
+"H9r-VO-dzN.title" = "بحث";
+//
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "OLO-Bu-MUa"; */
-"OLO-Bu-MUa.placeholder" = "Search By Doctor Name";
+"OLO-Bu-MUa.placeholder" = "بحث بأسم الطبيب";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "PaK-NP-IfZ"; */
-"PaK-NP-IfZ.placeholder" = "Search By Doctor Name";
+"PaK-NP-IfZ.placeholder" = "بحث بأسم الطبيب";
 
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "SeF-pO-OO0"; */
-"SeF-pO-OO0.text" = "No Data Found";
+"SeF-pO-OO0.text" = "لا يوجد بيانات";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "U4H-wZ-NQU"; */
-"U4H-wZ-NQU.title" = "Item";
-
+"U4H-wZ-NQU.title" = "العروض";
 /* Class = "UILabel"; text = "Show All"; ObjectID = "UAS-X1-KI3"; */
-"UAS-X1-KI3.text" = "Show All";
-
+"UAS-X1-KI3.text" = "شاهد الكل";
+//
 /* Class = "UILabel"; text = "Search By Region"; ObjectID = "WTh-qt-48S"; */
-"WTh-qt-48S.text" = "Search By Region";
+"WTh-qt-48S.text" = "بحث بالمنطقة";
 
 /* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "adV-QM-K1j"; */
-"adV-QM-K1j.text" = "We Care About Your Health";
-
+"adV-QM-K1j.text" = "نحن نهتم بصحتك";
+//
 /* Class = "UILabel"; text = "Search By Region"; ObjectID = "b6O-TD-bwl"; */
-"b6O-TD-bwl.text" = "Search By Region";
+"b6O-TD-bwl.text" = "بحث حسب المنطقة";
 
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "chF-bm-z1u"; */
-"chF-bm-z1u.text" = "No Data Found";
+"chF-bm-z1u.text" = "لا يوجد نتائج";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "eN0-Mu-3jt"; */
-"eN0-Mu-3jt.title" = "Search";
+"eN0-Mu-3jt.title" = "البحث";
 
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "fdh-NU-s0u"; */
-"fdh-NU-s0u.text" = "No Data Found";
+"fdh-NU-s0u.text" = "لا يوجد نتائج";
 
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "gUi-h2-Bpx"; */
-"gUi-h2-Bpx.text" = "No Data Found";
+"gUi-h2-Bpx.text" = "لا يوجد نتائج";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "jIa-oN-Wij"; */
-"jIa-oN-Wij.text" = "Title";
+"jIa-oN-Wij.text" = "العنوان";
 
 /* Class = "UILabel"; text = "Search By Specialty"; ObjectID = "kxd-Oz-RLF"; */
-"kxd-Oz-RLF.text" = "Search By Specialty";
+"kxd-Oz-RLF.text" = "بحث حسب التخصص";
 
 /* Class = "UILabel"; text = "Search For Pharmacies"; ObjectID = "l1L-NK-776"; */
-"l1L-NK-776.text" = "Search For Pharmacies";
+"l1L-NK-776.text" = "بحث عن الصيدليات";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "qTm-nm-vGZ"; */
-"qTm-nm-vGZ.placeholder" = "Search By Doctor Name";
+"qTm-nm-vGZ.placeholder" = "بحث بأسم الطبيب";
 
 /* Class = "UILabel"; text = "Search By Name"; ObjectID = "qyv-Iy-wQ4"; */
-"qyv-Iy-wQ4.text" = "Search By Name";
+"qyv-Iy-wQ4.text" = "بحث بأسم الطبيب";
