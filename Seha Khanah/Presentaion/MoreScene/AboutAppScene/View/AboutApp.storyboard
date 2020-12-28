@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-kU-jNl">
-                                <rect key="frame" x="20" y="177" width="0.0" height="0.0"/>
+                                <rect key="frame" x="20" y="177" width="386" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -36,6 +36,7 @@
                             <constraint firstItem="sOc-7z-JuM" firstAttribute="centerX" secondItem="jQl-ps-cu1" secondAttribute="centerX" id="T5i-D2-t6l"/>
                             <constraint firstItem="qjh-kU-jNl" firstAttribute="top" secondItem="sOc-7z-JuM" secondAttribute="bottom" constant="23" id="TK4-vC-YLU"/>
                             <constraint firstItem="sOc-7z-JuM" firstAttribute="top" secondItem="jQl-ps-cu1" secondAttribute="top" constant="10" id="hwA-WT-XUv"/>
+                            <constraint firstItem="jQl-ps-cu1" firstAttribute="trailing" secondItem="qjh-kU-jNl" secondAttribute="trailing" constant="8" id="yGI-S7-CZk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jQl-ps-cu1"/>
                     </view>

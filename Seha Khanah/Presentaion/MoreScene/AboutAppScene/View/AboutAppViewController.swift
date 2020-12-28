@@ -18,6 +18,8 @@ class AboutAppViewController: UIViewController,AboutAppProtocol {
     var aboutAppPresenter : AboutAppPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "About the App".localized
+
         aboutAppPresenter = AboutAppPresenter(view:self)
         aboutAppPresenter.getAboutApp()
         // Do any additional setup after loading the view.

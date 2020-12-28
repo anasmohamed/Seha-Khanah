@@ -3,10 +3,10 @@
 "5ZH-aU-ELi.text" = "Search By Category";
 
 /* Class = "UIButton"; normalTitle = "Show All"; ObjectID = "OmU-GP-Fkq"; */
-"OmU-GP-Fkq.normalTitle" = "Show All";
+"OmU-GP-Fkq.normalTitle" = "شاهد الكل";
 
 /* Class = "UILabel"; text = "Most Ordered"; ObjectID = "haV-SW-SbG"; */
 "haV-SW-SbG.text" = "Most Ordered";
 
 /* Class = "UINavigationItem"; title = "Offers"; ObjectID = "iql-5T-GfB"; */
-"iql-5T-GfB.title" = "Offers";
+"iql-5T-GfB.title" = "العروض";

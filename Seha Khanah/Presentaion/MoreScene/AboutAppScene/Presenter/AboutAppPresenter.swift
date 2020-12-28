@@ -11,6 +11,8 @@ class AboutAppPresenter {
     private let aboutAppInteractor:AboutAppInteractor
      private var aboutApp: [AboutApp]
      private weak var view: AboutAppProtocol?
+    let locale = NSLocale.current.languageCode
+
      init(view: AboutAppProtocol) {
          self.view = view
          self.aboutAppInteractor = AboutAppInteractor()
@@ -40,7 +42,15 @@ class AboutAppPresenter {
          
      public func getAboutAppText() -> String
      {
-        return aboutApp[0].aboutAppEn!
+        if locale == "en"
+        {
+            return aboutApp[0].aboutAppEn!
+
+        }else
+        {
+            return aboutApp[0].aboutAppAr!
+
+        }
     }
      
 }

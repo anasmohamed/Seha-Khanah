@@ -21,6 +21,7 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
     @IBOutlet weak var rating: CosmosView!
     @IBOutlet weak var profissionalTitleEnLbl: UILabel!
 
+    let locale = NSLocale.current.languageCode
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,11 +32,19 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         doctorPhoto.kf.setImage(with: URL(string: result.photo!))
         watingTimeLbl.text = result.waitingTime
         costLbl.text = result.price
-        doctorNameLbl.text = result.firstNameEn!  + result.lastNameEn!
-        aboutDoctorLbl.text = result.aboutDoctorEn
         numberOfVotes.text = result.numberOfVisitor
-        profissionalTitleEnLbl.text = result.profissionalTitleEn
         rating.rating = Double(result.rating!)!
+        if locale == "en"
+        {
+            doctorNameLbl.text = result.firstNameEn!  + result.lastNameEn!
+            aboutDoctorLbl.text = result.aboutDoctorEn
+            profissionalTitleEnLbl.text = result.profissionalTitleEn
+
+        }else{
+            doctorNameLbl.text = result.firstNameAr!  + result.lastNameAr!
+            aboutDoctorLbl.text = result.aboutDoctorAr
+            profissionalTitleEnLbl.text = result.profissionalTitleAr
+        }
        }
        
 }

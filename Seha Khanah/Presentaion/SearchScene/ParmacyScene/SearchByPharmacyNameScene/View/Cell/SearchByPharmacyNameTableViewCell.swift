@@ -22,6 +22,7 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
     var bottomInset: CGFloat = 0
     var rightInset: CGFloat = 0
     let cornerRadius : CGFloat = 25.0
+    let locale = NSLocale.current.languageCode
     
     @IBOutlet weak var backView: UIView!
     override func awakeFromNib() {
@@ -47,14 +48,23 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
     func configure(offer: PharmacyOffer) {
         photo.kf.setImage(with: URL(string: offer.photo!))
         pharmacyPhoto.kf.setImage(with: URL(string: offer.pharmacyPhoto!))
-        pharmacyNameLbl.text = offer.pharamcyNameEn
-        typeLbl.text = offer.titleEn
         priceLbl.text = offer.price
+
+        if locale == "en"
+        {
+            pharmacyNameLbl.text = offer.pharamcyNameEn
+            typeLbl.text = offer.titleEn
+        }
+        else{
+            pharmacyNameLbl.text = offer.pharmacyNameAr
+            typeLbl.text = offer.titleAr
+        }
+        
         
         
     }
     
-   
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()

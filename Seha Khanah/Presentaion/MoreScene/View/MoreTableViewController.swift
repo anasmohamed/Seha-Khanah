@@ -13,7 +13,8 @@ class MoreTableViewController: UITableViewController {
     var settingsImages = ["gear","","","",""]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "More".localized
+
     }
     
     // MARK: - Table view data source

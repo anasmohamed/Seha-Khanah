@@ -17,6 +17,8 @@ class HowTheAppWorksViewController: UIViewController {
     let localSource = [BundleImageSource(imageString: "slider_1"), BundleImageSource(imageString: "slider_2"), BundleImageSource(imageString: "slider_3"), BundleImageSource(imageString: "slider_4")]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "How The App Works".localized
+
         imageSlideShow.slideshowInterval = 5.0
         imageSlideShow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         imageSlideShow.contentScaleMode = UIViewContentMode.scaleAspectFill

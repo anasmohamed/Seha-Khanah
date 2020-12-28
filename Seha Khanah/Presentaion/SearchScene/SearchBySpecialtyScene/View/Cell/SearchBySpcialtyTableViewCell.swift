@@ -13,11 +13,20 @@ class SearchBySpcialtyTableViewCell: UITableViewCell,SearchBySpeialtyTableViewCe
     
     @IBOutlet weak var spcialtyImageView: UIImageView!
     @IBOutlet weak var spcialtyTitleLbl: UILabel!
+    let locale = NSLocale.current.languageCode
 
  
     func configure(result:SearchBySpecialtyModel){
         spcialtyImageView.kf.setImage(with: URL(string: result.photo!))
-        spcialtyTitleLbl.text = result.nameEn
+        if locale == "en"
+        {
+            spcialtyTitleLbl.text = result.nameEn
+
+        }
+        else{
+            spcialtyTitleLbl.text = result.nameAr
+
+        }
     }
 
 }

@@ -24,7 +24,8 @@ class ChangeLanguageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         saveBtn.layer.cornerRadius = 10
-        
+        self.navigationItem.title = "Change Language".localized
+
         // corner radius
         chosenLanguageView.layer.cornerRadius = 10
         
