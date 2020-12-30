@@ -9,7 +9,6 @@
 import UIKit
 import MBRadioCheckboxButton
 import MOLH
-import LanguageManager_iOS
 class ChangeLanguageViewController: UIViewController {
     
     @IBOutlet weak var choosenLangeuageLbl: UILabel!
