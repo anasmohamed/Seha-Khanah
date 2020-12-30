@@ -38,23 +38,32 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
         
         if indexPath.section == 0 {
             // First section
-            width = collectionView.frame.width/2
+            width = 150
             height = 150
             return CGSize(width: width, height: height)
         } else {
             // Second section
-            width = collectionView.frame.width/4
-            height = 70
+            width = 120
+            height = 80
             return CGSize(width: width, height: height)
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if section == 1{
+       return UIEdgeInsets(top: 20, left: 5, bottom: 50, right: 5)
+        }else{
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
         }
     }
     
     func collectionViewLayoutInsets()  {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-             layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 30, right: 20)
+//             layout.sectionInset = UIEdgeInsets(top: 10, left: 100, bottom: 30, right: 100)
+    
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: offersCategoriesCollectionView.frame.height/3, height: offersCategoriesCollectionView.frame.height/3)
-             layout.minimumInteritemSpacing = 0
+//        layout.itemSize = CGSize(width: 90, height: 90)
+             layout.minimumInteritemSpacing = 10
              layout.minimumLineSpacing = 10
              offersCategoriesCollectionView.collectionViewLayout = layout
     }

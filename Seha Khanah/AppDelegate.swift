@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import MOLH
-
+import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
 
@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
         // Override point for customization after application launch.
         MOLHLanguage.setDefaultLanguage("en")
         MOLH.shared.activate(true)
+        UILabel.appearance().font = UIFont(name: "Sukar-Regular.ttf", size: 17)
        // self.window = UIWindow()
      //   self.window!.makeKeyAndVisible()
 
