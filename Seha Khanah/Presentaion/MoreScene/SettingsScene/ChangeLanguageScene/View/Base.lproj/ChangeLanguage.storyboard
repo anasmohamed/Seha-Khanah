@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sukar-Regular.ttf">
+            <string>Sukar-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Change Language View Controller-->
         <scene sceneID="S0i-Ut-S1R">
@@ -16,15 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="jcL-KJ-jTN">
-                                <rect key="frame" x="57" y="319" width="300" height="258"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="jcL-KJ-jTN">
+                                <rect key="frame" x="57" y="322" width="300" height="262"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n35-A5-w8b">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-5c-OQf">
-                                                <rect key="frame" x="129" y="20" width="42" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="132.5" y="19" width="35.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -38,25 +43,28 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-R0-H4V">
-                                        <rect key="frame" x="58" y="120" width="184" height="18"/>
+                                        <rect key="frame" x="58.5" y="120" width="183" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-M9-bTS" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="22"/>
+                                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                 <state key="normal" title="English"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSD-Oh-2d0" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="132" y="0.0" width="52" height="18"/>
+                                                <rect key="frame" x="131" y="0.0" width="52" height="22"/>
+                                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                 <state key="normal" title="عربى"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy4-p8-bpK">
-                                        <rect key="frame" x="25" y="198" width="250" height="60"/>
+                                        <rect key="frame" x="25" y="202" width="250" height="60"/>
                                         <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="R4v-74-JdJ"/>
                                             <constraint firstAttribute="width" constant="250" id="fTx-4f-GSN"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                         <state key="normal" title="Save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>

@@ -2,10 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sukar-Regular.ttf">
+            <string>Sukar-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--How The App Works View Controller-->
         <scene sceneID="weL-ro-Gdf">
@@ -21,6 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HFh-ys-JV4"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                 <state key="normal" title="Book Now">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
