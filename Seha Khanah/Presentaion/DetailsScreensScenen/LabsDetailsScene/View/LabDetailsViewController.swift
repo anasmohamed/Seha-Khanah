@@ -12,6 +12,7 @@ import Cosmos
 import Auk
 class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ratingView: UIView!
     
     @IBOutlet weak var ratingCollectionView: UICollectionView!
@@ -26,17 +27,16 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     var labDetailsPresenter : LabDetailsPresenter!
     var titleArray = [String]()
     let locale = NSLocale.current.languageCode
-    
+
+    @IBOutlet weak var contentView: UIView!
     var labId : String?
     override func viewDidLoad() {
         super.viewDidLoad()
         labDetailsPresenter = LabDetailsPresenter(view: self)
         labDetailsPresenter.showLabDetails(id: labId!)
-        
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: ratingView)
 
-        
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
         

@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-Z0-dFv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="821"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-MR-TiH">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
@@ -120,7 +120,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgQ-IT-imd">
-                                                <rect key="frame" x="20" y="581" width="374" height="237"/>
+                                                <rect key="frame" x="20" y="581" width="374" height="240"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jvx-Oa-Wza">
                                                         <rect key="frame" x="10" y="10" width="87" height="30"/>
@@ -141,7 +141,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="en5-Sb-hbU">
-                                                        <rect key="frame" x="10" y="50" width="354" height="177"/>
+                                                        <rect key="frame" x="10" y="50" width="354" height="180"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JH1-Yl-Ir6">
                                                             <size key="itemSize" width="128" height="128"/>
@@ -151,7 +151,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QdP-kK-DKV">
-                                                                <rect key="frame" x="0.0" y="24.5" width="128" height="128"/>
+                                                                <rect key="frame" x="0.0" y="26" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ARp-Xz-Ch6">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -166,6 +166,7 @@
                                                     <constraint firstItem="Jvx-Oa-Wza" firstAttribute="leading" secondItem="EgQ-IT-imd" secondAttribute="leading" constant="10" id="4Cc-jU-MgG"/>
                                                     <constraint firstItem="en5-Sb-hbU" firstAttribute="top" secondItem="Jvx-Oa-Wza" secondAttribute="bottom" constant="10" id="8X1-le-tKP"/>
                                                     <constraint firstAttribute="bottom" secondItem="en5-Sb-hbU" secondAttribute="bottom" constant="10" id="A4h-Ux-8fF"/>
+                                                    <constraint firstAttribute="height" constant="240" id="OIf-m3-bJi"/>
                                                     <constraint firstItem="en5-Sb-hbU" firstAttribute="leading" secondItem="EgQ-IT-imd" secondAttribute="leading" constant="10" id="Q7v-HA-Mt3"/>
                                                     <constraint firstAttribute="trailing" secondItem="en5-Sb-hbU" secondAttribute="trailing" constant="10" id="WnC-Gr-aHI"/>
                                                     <constraint firstItem="Jvx-Oa-Wza" firstAttribute="top" secondItem="EgQ-IT-imd" secondAttribute="top" constant="10" id="XOI-B5-m9h"/>
@@ -197,7 +198,6 @@
                                     <constraint firstItem="GEa-Z0-dFv" firstAttribute="width" secondItem="kbc-ma-8Km" secondAttribute="width" id="Rys-Qd-5Nd"/>
                                     <constraint firstAttribute="trailing" secondItem="GEa-Z0-dFv" secondAttribute="trailing" id="U63-P9-VK2"/>
                                     <constraint firstItem="GEa-Z0-dFv" firstAttribute="top" secondItem="kbc-ma-8Km" secondAttribute="top" id="Uef-38-fwY"/>
-                                    <constraint firstItem="GEa-Z0-dFv" firstAttribute="height" secondItem="kbc-ma-8Km" secondAttribute="height" id="j2t-dA-bNk"/>
                                     <constraint firstItem="GEa-Z0-dFv" firstAttribute="leading" secondItem="kbc-ma-8Km" secondAttribute="leading" id="mLu-qb-FNe"/>
                                     <constraint firstAttribute="bottom" secondItem="GEa-Z0-dFv" secondAttribute="bottom" id="v6j-Yt-WbJ"/>
                                 </constraints>
@@ -215,6 +215,7 @@
                         <viewLayoutGuide key="safeArea" id="DHt-Jz-Ivj"/>
                     </view>
                     <connections>
+                        <outlet property="contentView" destination="GEa-Z0-dFv" id="oGy-KE-uyd"/>
                         <outlet property="datesCollectionView" destination="ACh-N7-WrA" id="ZjH-61-kDx"/>
                         <outlet property="datesView" destination="uUx-FL-shQ" id="BDW-r9-BT0"/>
                         <outlet property="labAdderss" destination="4al-No-Ava" id="O2Q-ud-Pfh"/>
@@ -223,6 +224,7 @@
                         <outlet property="rating" destination="VyX-DT-6zg" id="b80-jy-b8H"/>
                         <outlet property="ratingCollectionView" destination="en5-Sb-hbU" id="VSz-ps-Y5B"/>
                         <outlet property="ratingView" destination="EgQ-IT-imd" id="p5g-5q-Vuy"/>
+                        <outlet property="scrollView" destination="kbc-ma-8Km" id="xPy-Jc-Q6V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQg-Lz-cJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
