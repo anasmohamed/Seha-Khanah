@@ -12,7 +12,9 @@ import Cosmos
 import Auk
 class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     
+    @IBOutlet weak var ratingView: UIView!
     
+    @IBOutlet weak var ratingCollectionView: UICollectionView!
     @IBOutlet weak var labImages: UIScrollView!
     
     @IBOutlet weak var datesView: UIView!
@@ -30,20 +32,28 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         super.viewDidLoad()
         labDetailsPresenter = LabDetailsPresenter(view: self)
         labDetailsPresenter.showLabDetails(id: labId!)
-        datesView.layer.shadowColor = UIColor.black.cgColor
-        datesView.layer.shadowOpacity = 1
-        datesView.layer.shadowOffset = .zero
-        datesView.layer.shadowRadius = 5
-        datesView.layer.shadowPath = UIBezierPath(rect: datesView.bounds).cgPath
-        datesView.layer.shouldRasterize = true
-        datesView.layer.rasterizationScale = UIScreen.main.scale
-        datesView.layer.cornerRadius = 10
+        
+        cornerRadiusAndShodow(view: datesView)
+        cornerRadiusAndShodow(view: ratingView)
+
         
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
+        
+        ratingCollectionView.delegate = self
+        ratingCollectionView.dataSource = self
         setupCollectionView()
     }
-    
+    func cornerRadiusAndShodow(view:UIView)  {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 5
+        view.layer.shadowPath = UIBezierPath(rect: datesView.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
+        view.layer.cornerRadius = 10
+    }
     
     func showIndicator() {
         
@@ -71,6 +81,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         rating.rating = Double(labDetails.rating!)!
         
         datesCollectionView.reloadData()
+        ratingCollectionView.reloadData()
     }
     
     func showError(error: String) {

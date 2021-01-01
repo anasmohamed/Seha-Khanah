@@ -28,6 +28,8 @@ class LabDetails: Codable {
     var labDates = [JSON]()
     var datesList = [LabDate]()
     var labPhotos = [String]()
+    var ratingsList = [LabRatings]()
+    var labRatings = [JSON]()
     init() {
         
     }
@@ -44,7 +46,9 @@ class LabDetails: Codable {
         self.addressAr = data["address_ar"].stringValue
         self.rating = data["rating"].stringValue
         self.labDates = data["dates"].arrayValue
+        self.labRatings = data["ratings"].arrayValue
         let labPhotosList = data["laboratory_photos"].arrayValue
+        
         for labPhoto in labPhotosList
         {
             self.labPhotos.append(labPhoto["featured"].stringValue)
@@ -53,6 +57,11 @@ class LabDetails: Codable {
         {
             self.dates = LabDate(withJSON: date)
             self.datesList.append(dates!)
+        }
+        for labRating in labRatings
+        {
+            let data = LabRatings(withJSON: labRating)
+            self.ratingsList.append(data!)
         }
         
     }
