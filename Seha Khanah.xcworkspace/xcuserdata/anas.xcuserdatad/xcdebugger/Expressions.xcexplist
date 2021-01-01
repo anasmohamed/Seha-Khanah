@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LabDetailsViewController.showLabDetails(labDetails:):LabDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "labPhotos?.append(photo[&quot;featured&quot;].stringValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SehaKhanahRouter.asURLRequest():SehaKhanahRouter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "path">
+            </PersistentString>
+            <PersistentString
+               value = "params">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LabDetails.init(withJSON:):LabDetails.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "photo[&quot;featured&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -88,7 +88,9 @@ class SearchByLabNamePresenter {
         return labs.count
     }
     
-    
+    public func getLabId(index: Int) -> String?{
+        return labs[index].id
+    }
     func configure(cell: SearchByLabNameTableViewCellProtocol, for index: Int) {
         print(labs.count)
         if labs.count > 0{

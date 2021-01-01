@@ -71,49 +71,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E6ACA15B-B9E8-47D9-AC16-2BCE8A193795"
+            uuid = "5A62FCC0-8063-4C91-B3C1-8E68A1A7A5C2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Interactor/SearchByLabNameInteractor.swift"
+            filePath = "Pods/Auk/Auk/Auk.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "searchForLabByAreaId(areadId:completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E6ACA15B-B9E8-47D9-AC16-2BCE8A193795 - 90d4d1179c00f3c7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Seha_Khanah.SearchByLabNameInteractor.searchForLabByAreaId(areadId: Swift.String, completionHandler: (Swift.Optional&lt;Swift.Array&lt;Seha_Khanah.Lab&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Seha Khanah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Interactor/SearchByLabNameInteractor.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "E6ACA15B-B9E8-47D9-AC16-2BCE8A193795 - 32ba08bfe3e665a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Seha_Khanah.SearchByLabNameInteractor.searchForLabByAreaId(areadId: Swift.String, completionHandler: (Swift.Optional&lt;Swift.Array&lt;Seha_Khanah.Lab&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Seha Khanah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Interactor/SearchByLabNameInteractor.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "325">
-               </Location>
-            </Locations>
+            startingLineNumber = "289"
+            endingLineNumber = "289"
+            landmarkName = "images"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE8A3593-1F71-4EE6-8515-E2FE1D94D5ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Auk/Auk/Auk.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "images"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E94CE1B7-B0FE-4AD9-AF2E-BA4114FC6F9A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Auk/Auk/Auk.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "images"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13CB5814-ADCC-4008-AAC2-8719FD13FDAA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Auk/Auk/Auk.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "images"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

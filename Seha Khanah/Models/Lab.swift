@@ -9,7 +9,8 @@
 import Foundation
 import SwiftyJSON
 class Lab: Codable {
- var photo: String?
+    var id : String?
+    var photo: String?
     var labNameEn: String?
     var labNameAr: String?
     var price: String?
@@ -23,7 +24,10 @@ class Lab: Codable {
     var addressEn: String?
     var addressAr: String?
     var rating: String?
+    var labPhotosJson : [JSON]!
+    var labPhotos : [String]?
     init?(withJSON data: JSON) {
+        self.id = data["id"].stringValue
         self.photo = data["featured"].stringValue
         self.labNameEn = data["laboratory_name_en"].stringValue
         self.labNameAr = data["laboratory_name_ar"].stringValue
@@ -35,8 +39,12 @@ class Lab: Codable {
         self.addressEn = data["address_en"].stringValue
         self.addressAr = data["address_ar"].stringValue
         self.rating = data["rating"].stringValue
-print(labNameAr)
-        print(labNameEn)
-       
+        self.labPhotosJson = data["laboratory_photos"].arrayValue
+        
+        for index in 0..<labPhotosJson.count
+        {
+            self.labPhotos?.append(labPhotosJson[index]["featured"].stringValue)
+        }
+
     }
 }

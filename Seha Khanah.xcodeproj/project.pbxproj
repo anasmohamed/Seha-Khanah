@@ -10,6 +10,13 @@
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
 		A806CAFE259E189900D1764C /* BookingDatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */; };
 		A806CAFF259E189900D1764C /* BookingDatesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A806CAFD259E189900D1764C /* BookingDatesCollectionViewCell.xib */; };
+		A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */; };
+		A806CB03259E1E5800D1764C /* LabDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB02259E1E5800D1764C /* LabDate.swift */; };
+		A806CB05259E292D00D1764C /* LabDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB04259E292D00D1764C /* LabDetails.swift */; };
+		A806CB07259E2A9400D1764C /* LabDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB06259E2A9400D1764C /* LabDetailsInteractor.swift */; };
+		A806CB09259E2AA700D1764C /* LabDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB08259E2AA700D1764C /* LabDetailsPresenter.swift */; };
+		A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */; };
+		A806CB0D259E2D8600D1764C /* LabDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB0C259E2D8600D1764C /* LabDetailsProtocol.swift */; };
 		A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A912597BA75003F414A /* AboutAppPresenter.swift */; };
 		A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A932597BA98003F414A /* AboutAppProtocol.swift */; };
 		A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */; };
@@ -121,6 +128,13 @@
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDatesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A806CAFD259E189900D1764C /* BookingDatesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingDatesCollectionViewCell.xib; sourceTree = "<group>"; };
+		A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDatesCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
+		A806CB02259E1E5800D1764C /* LabDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDate.swift; sourceTree = "<group>"; };
+		A806CB04259E292D00D1764C /* LabDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetails.swift; sourceTree = "<group>"; };
+		A806CB06259E2A9400D1764C /* LabDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsInteractor.swift; sourceTree = "<group>"; };
+		A806CB08259E2AA700D1764C /* LabDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsPresenter.swift; sourceTree = "<group>"; };
+		A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsViewController.swift; sourceTree = "<group>"; };
+		A806CB0C259E2D8600D1764C /* LabDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsProtocol.swift; sourceTree = "<group>"; };
 		A8094A912597BA75003F414A /* AboutAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		A8094A932597BA98003F414A /* AboutAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppProtocol.swift; sourceTree = "<group>"; };
 		A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTheAppWorksViewController.swift; sourceTree = "<group>"; };
@@ -276,6 +290,7 @@
 			children = (
 				A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */,
 				A806CAFD259E189900D1764C /* BookingDatesCollectionViewCell.xib */,
+				A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */,
 			);
 			path = BookingDatesCollectionViewCell;
 			sourceTree = "<group>";
@@ -706,6 +721,8 @@
 			children = (
 				A806CAF9259E182100D1764C /* Cells */,
 				A869A568259DFB290059C3C2 /* LabDetails.storyboard */,
+				A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */,
+				A806CB0C259E2D8600D1764C /* LabDetailsProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -713,6 +730,7 @@
 		A869A566259DFA8D0059C3C2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A806CB08259E2AA700D1764C /* LabDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -720,6 +738,7 @@
 		A869A567259DFA970059C3C2 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A806CB06259E2A9400D1764C /* LabDetailsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -799,6 +818,8 @@
 				A8A7DD4025951960007FBFE0 /* Area.swift */,
 				A870838E25962C4C002AC96C /* Lab.swift */,
 				A851FD7925979CB00036790B /* AboutApp.swift */,
+				A806CB02259E1E5800D1764C /* LabDate.swift */,
+				A806CB04259E292D00D1764C /* LabDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1212,11 +1233,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */,
+				A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */,
 				A8A98C012598EB53000146FB /* ShowAllLabsVIewController.swift in Sources */,
 				A8452B532593F935005EB836 /* ShowAllPharmaciesViewController.swift in Sources */,
 				A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */,
 				A8BFC9452594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift in Sources */,
 				A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */,
+				A806CB0D259E2D8600D1764C /* LabDetailsProtocol.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A8A7DD3D25950DDC007FBFE0 /* DropShadowView.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
@@ -1230,6 +1253,7 @@
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */,
 				A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */,
+				A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */,
 				A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */,
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
@@ -1251,6 +1275,7 @@
 				A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */,
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */,
+				A806CB09259E2AA700D1764C /* LabDetailsPresenter.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
 				A8567731259247A30086CD78 /* SearchBySpecialtyInteractor.swift in Sources */,
 				A8965F452591145300C504BA /* CategoryTableViewController.swift in Sources */,
@@ -1259,10 +1284,12 @@
 				A856772525921B640086CD78 /* SearchResultTableViewCell.swift in Sources */,
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
 				A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */,
+				A806CB07259E2A9400D1764C /* LabDetailsInteractor.swift in Sources */,
 				A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */,
 				A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */,
 				A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */,
 				A851FD7A25979CB00036790B /* AboutApp.swift in Sources */,
+				A806CB03259E1E5800D1764C /* LabDate.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */,
 				A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */,
@@ -1290,6 +1317,7 @@
 				A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */,
 				A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */,
 				A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */,
+				A806CB05259E292D00D1764C /* LabDetails.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

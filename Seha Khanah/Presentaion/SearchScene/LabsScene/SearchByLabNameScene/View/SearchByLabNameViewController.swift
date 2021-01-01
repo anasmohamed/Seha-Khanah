@@ -17,7 +17,6 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     var areaId: String?
     var showAllLabs = false
     var labPresenter: SearchByLabNamePresenter!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchByLabNameBar.delegate = self
@@ -50,6 +49,14 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
         return 280
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "LabDetails", bundle: nil)
+        
+        let showLabsDetailsViewController = storyboard.instantiateViewController(withIdentifier: "LabDetailsViewController") as! LabDetailsViewController
+        showLabsDetailsViewController.labId = labPresenter.getLabId(index: indexPath.row)
+        self.navigationController!.pushViewController(showLabsDetailsViewController, animated: true)
+        
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByLabNameTableViewCell", for: indexPath) as! SearchByLabNameTableViewCell
         

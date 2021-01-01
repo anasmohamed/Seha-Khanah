@@ -18,5 +18,7 @@ target 'Seha Khanah' do
     pod 'Cosmos', '~> 23.0'
     pod 'MOLH'
     pod 'ImageSlideshow', '~> 1.9.0'
-
+    pod "ImageSlideshow/Kingfisher"
+    pod 'moa', '~> 12.0'
+    pod 'Auk', '~> 11.0'
 end

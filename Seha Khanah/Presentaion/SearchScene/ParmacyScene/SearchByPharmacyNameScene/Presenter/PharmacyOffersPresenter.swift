@@ -26,7 +26,6 @@ class PharmacyOffersPresenter {
                 self.view?.showError(error: error.localizedDescription)
             } else {
                 if result != nil{
-                    print("final result\(result?.count)")
                     if (result!.count == 0)
                     {self.view?.showNoDataFoundImage()
                         

@@ -38,6 +38,10 @@ class NetworkingConstants {
         static let searchByLabName = "laboratory/search"
         static let searchByLabNameParameter = "name"
 
+        static let showLabDetails = "laboratory/show/"
+
+    
+    
 
    
 }

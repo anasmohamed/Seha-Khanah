@@ -23,6 +23,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case aboutUs
     case searchForLabByAreaId(areaId:String)
     case getAllLabs
+    case showLabDetails(id:String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -47,8 +48,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.searchForLabByAreaId
         case .getAllLabs:
             return NetworkingConstants.getAllLabs
-            
-            
+        case .showLabDetails:
+            return NetworkingConstants.showLabDetails
             
         }
     }
@@ -66,7 +67,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchByLabName,
              .aboutUs,
              .searchForLabByAreaId,
-             .getAllLabs:
+             .getAllLabs,
+             .showLabDetails:
             return .get
             
             
@@ -115,6 +117,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.searchByLabNameParameter] = name
         case let .searchForLabByAreaId(areaId):
             params[NetworkingConstants.searchForLabByAreaIdParameter] = areaId
+        case let .showLabDetails(id):
+            params[NetworkingConstants.showLabDetails] = id
         default:
             print("Empty Paramter")
             
@@ -142,7 +146,16 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchForLabByAreaId,
              .getAllLabs:
             
+            
             return try URLEncoding.default.encode(urlRequest, with: params)
+        case .showLabDetails:
+            print( params[NetworkingConstants.showLabDetails])
+            let showLabDetailsUrlString = (urlRequest.url?.absoluteString)!
+            let paramString = params[NetworkingConstants.showLabDetails]!
+            
+            urlRequest = URLRequest(url: URL(string: showLabDetailsUrlString + (paramString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+            
         }
     }
 }

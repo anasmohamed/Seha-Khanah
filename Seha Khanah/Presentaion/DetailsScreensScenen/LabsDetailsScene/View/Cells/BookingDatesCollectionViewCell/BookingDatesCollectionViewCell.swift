@@ -8,11 +8,28 @@
 
 import UIKit
 
-class BookingDatesCollectionViewCell: UICollectionViewCell {
+class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollectionViewCellProtocol{
+    
+    
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var dayLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var startHourLbl: UILabel!
+    @IBOutlet weak var endHourLbl: UILabel!
+    @IBOutlet weak var bookNowBtn: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    
+    @IBAction func bookNowBtnDidTapped(_ sender: Any) {
+    }
+    func configure(labDates: LabDate) {
+        
+    }
 }
