@@ -13,7 +13,6 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
     
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var labName: UILabel!
-    
     @IBOutlet weak var bookNowBtn: UIButton!
     @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var addressLbl: UILabel!

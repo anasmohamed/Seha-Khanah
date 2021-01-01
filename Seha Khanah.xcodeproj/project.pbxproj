@@ -63,6 +63,7 @@
 		A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A2D259749F60099E7CE /* InfoPlist.strings */; };
 		A8674A2F259776180099E7CE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A31259776180099E7CE /* Search.storyboard */; };
 		A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674A3C259777110099E7CE /* CallUsViewController.swift */; };
+		A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */; };
 		A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A869A568259DFB290059C3C2 /* LabDetails.storyboard */; };
 		A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */; };
 		A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */; };
@@ -188,6 +189,7 @@
 		A8674A30259776180099E7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		A8674A33259776240099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Search.strings; sourceTree = "<group>"; };
 		A8674A3C259777110099E7CE /* CallUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
+		A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
 		A869A568259DFB290059C3C2 /* LabDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LabDetails.storyboard; sourceTree = "<group>"; };
 		A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForAllLabsViewController.swift; sourceTree = "<group>"; };
 		A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameViewController.swift; sourceTree = "<group>"; };
@@ -698,6 +700,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A8693E18259F66C500285921 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A869A563259DFA510059C3C2 /* DetailsScreensScenen */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,6 +729,7 @@
 		A869A565259DFA870059C3C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8693E18259F66C500285921 /* Extensions */,
 				A806CAF9259E182100D1764C /* Cells */,
 				A869A568259DFB290059C3C2 /* LabDetails.storyboard */,
 				A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */,
@@ -1263,6 +1274,7 @@
 				A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */,
 				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A851FD7825979B460036790B /* AboutAppInteractor.swift in Sources */,
+				A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */,
 				A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */,
 				A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,

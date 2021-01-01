@@ -15,6 +15,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     
     @IBOutlet weak var labImages: UIScrollView!
     
+    @IBOutlet weak var datesView: UIView!
     @IBOutlet weak var labName: UILabel!
     @IBOutlet weak var rating: CosmosView!
     @IBOutlet weak var labAdderss: UILabel!
@@ -23,13 +24,24 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     var labDetailsPresenter : LabDetailsPresenter!
     var titleArray = [String]()
     let locale = NSLocale.current.languageCode
-
+    
     var labId : String?
     override func viewDidLoad() {
         super.viewDidLoad()
         labDetailsPresenter = LabDetailsPresenter(view: self)
         labDetailsPresenter.showLabDetails(id: labId!)
-    
+        datesView.layer.shadowColor = UIColor.black.cgColor
+        datesView.layer.shadowOpacity = 1
+        datesView.layer.shadowOffset = .zero
+        datesView.layer.shadowRadius = 5
+        datesView.layer.shadowPath = UIBezierPath(rect: datesView.bounds).cgPath
+        datesView.layer.shouldRasterize = true
+        datesView.layer.rasterizationScale = UIScreen.main.scale
+        datesView.layer.cornerRadius = 10
+        
+        datesCollectionView.delegate = self
+        datesCollectionView.dataSource = self
+        setupCollectionView()
     }
     
     
@@ -46,7 +58,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         for image in labDetails.labPhotos
         {
             labImages.auk.show(url: image)
-
+            
         }
         labImages.auk.startAutoScroll(delaySeconds: 3)
         if locale == "en"{
@@ -58,6 +70,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         }
         rating.rating = Double(labDetails.rating!)!
         
+        datesCollectionView.reloadData()
     }
     
     func showError(error: String) {
@@ -68,5 +81,5 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         
     }
     
-   
+    
 }

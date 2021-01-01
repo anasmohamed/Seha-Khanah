@@ -14,10 +14,10 @@ class LabDetailsPresenter {
     init(view: LabDetailsProtocol) {
         self.view = view
         self.labDetailsInteractor = LabDetailsInteractor()
+        labDetails = LabDetails()
     }
     
     func showLabDetails(id:String) {
-        
         view?.showIndicator()
         labDetailsInteractor.showLabDetails(id: id){ (result,error)  in
             if let error = error {
@@ -37,15 +37,14 @@ class LabDetailsPresenter {
     }
     
     
-   
+    func getDatesCount() -> Int {
+        return (labDetails?.datesList.count)!
+    }
     
     
-//    func configure(cell: LabDeta, for index: Int) {
-//
-//
-//
-//            cell.configure(lab: labDetails)
-//        }
-        
-//    }
+    func configure(cell: BookingDatesCollectionViewCellProtocol, for index: Int) {
+        cell.configure(labDates: (labDetails?.dates)!)
+    }
+    
+    
 }
