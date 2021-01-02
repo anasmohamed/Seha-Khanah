@@ -23,7 +23,13 @@ extension LabDetailsViewController : UICollectionViewDelegate,UICollectionViewDa
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "LabServices", bundle:nil )
+        let labServicesViewController = storyboard.instantiateViewController(withIdentifier: "LabServicesTableViewController") as! LabServicesTableViewController
+        labServicesViewController.labService = labDetailsPresenter.getLabServices()
+        labServicesViewController.labDate = labDetailsPresenter.getLabDates(index: indexPath.row)
+        self.navigationController!.pushViewController(labServicesViewController, animated: true)
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == datesCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingDatesCollectionViewCell", for: indexPath) as! BookingDatesCollectionViewCell

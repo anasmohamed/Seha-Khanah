@@ -43,6 +43,12 @@ class LabDetailsPresenter {
     func getRatingsCount() -> Int {
         return (labDetails?.ratingsList.count)!
     }
+    func getLabServices() -> [LabServices] {
+        return labDetails!.labServicesList
+    }
+    func getLabDates(index:Int) -> LabDate {
+        return (labDetails?.datesList[index])!
+    }
     
     func configure(cell: BookingDatesCollectionViewCellProtocol, for index: Int) {
         cell.configure(labDates: (labDetails?.dates)!)

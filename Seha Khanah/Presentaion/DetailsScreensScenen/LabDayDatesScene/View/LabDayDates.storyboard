@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lab Day Dates View Controller-->
+        <scene sceneID="goo-pU-aNf">
+            <objects>
+                <viewController storyboardIdentifier="LabDayDatesViewController" id="BDr-Dp-Dqw" customClass="LabDayDatesViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bOf-dr-cRY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-yX-e3A">
+                                <rect key="frame" x="10" y="44" width="394" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c5k-B8-5IX"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="87J-z5-DUx">
+                                <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kng-7t-059">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabDayDatesCell" id="Eql-et-8nq">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="akq-fg-dGt">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="i1s-yX-e3A" firstAttribute="top" secondItem="vB7-sL-bTS" secondAttribute="top" id="0M9-TT-bHO"/>
+                            <constraint firstItem="vB7-sL-bTS" firstAttribute="trailing" secondItem="i1s-yX-e3A" secondAttribute="trailing" constant="10" id="NYn-zi-fy3"/>
+                            <constraint firstItem="i1s-yX-e3A" firstAttribute="leading" secondItem="vB7-sL-bTS" secondAttribute="leading" constant="10" id="PrK-02-PVc"/>
+                            <constraint firstItem="87J-z5-DUx" firstAttribute="top" secondItem="i1s-yX-e3A" secondAttribute="bottom" constant="21" id="Uqq-0k-lbp"/>
+                            <constraint firstItem="87J-z5-DUx" firstAttribute="leading" secondItem="vB7-sL-bTS" secondAttribute="leading" id="aqG-6o-1OY"/>
+                            <constraint firstItem="vB7-sL-bTS" firstAttribute="bottom" secondItem="87J-z5-DUx" secondAttribute="bottom" id="uCR-wc-F7K"/>
+                            <constraint firstItem="vB7-sL-bTS" firstAttribute="trailing" secondItem="87J-z5-DUx" secondAttribute="trailing" id="wbr-gH-jHZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vB7-sL-bTS"/>
+                    </view>
+                    <connections>
+                        <outlet property="dayDateView" destination="i1s-yX-e3A" id="5p6-ts-RKe"/>
+                        <outlet property="dayDatesCollectionView" destination="87J-z5-DUx" id="3dx-au-uR8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5a-Wq-2nf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="-86.383928571428569"/>
+        </scene>
+    </scenes>
+</document>

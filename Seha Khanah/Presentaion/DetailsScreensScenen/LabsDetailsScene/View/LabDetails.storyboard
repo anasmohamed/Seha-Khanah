@@ -199,7 +199,7 @@
                                     <constraint firstAttribute="trailing" secondItem="GEa-Z0-dFv" secondAttribute="trailing" id="U63-P9-VK2"/>
                                     <constraint firstItem="GEa-Z0-dFv" firstAttribute="top" secondItem="kbc-ma-8Km" secondAttribute="top" id="Uef-38-fwY"/>
                                     <constraint firstItem="GEa-Z0-dFv" firstAttribute="leading" secondItem="kbc-ma-8Km" secondAttribute="leading" id="mLu-qb-FNe"/>
-                                    <constraint firstAttribute="bottom" secondItem="GEa-Z0-dFv" secondAttribute="bottom" id="v6j-Yt-WbJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="GEa-Z0-dFv" secondAttribute="bottom" constant="40" id="v6j-Yt-WbJ"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Fol-Q2-xuh"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="b1a-Dl-jza"/>
