@@ -28,6 +28,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     var titleArray = [String]()
     let locale = NSLocale.current.languageCode
 
+    @IBOutlet weak var goToLocationView: UIView!
     @IBOutlet weak var contentView: UIView!
     var labId : String?
     override func viewDidLoad() {
@@ -36,6 +37,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         labDetailsPresenter.showLabDetails(id: labId!)
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: ratingView)
+        cornerRadiusAndShodow(view: goToLocationView)
 
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
@@ -49,7 +51,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 5
-        view.layer.shadowPath = UIBezierPath(rect: datesView.bounds).cgPath
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
         view.layer.shouldRasterize = true
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 10

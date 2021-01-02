@@ -49,7 +49,8 @@ extension LabDetailsViewController : UICollectionViewDelegate,UICollectionViewDa
         }else
         {
             width = 170
-            height = 100
+            height = 150
+            
             return CGSize(width: width, height: height)
         }
         

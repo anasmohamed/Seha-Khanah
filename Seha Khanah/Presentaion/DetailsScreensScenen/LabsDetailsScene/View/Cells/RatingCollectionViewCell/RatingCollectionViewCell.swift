@@ -11,11 +11,12 @@ import Cosmos
 class RatingCollectionViewCell: UICollectionViewCell,RatingCollectionViewCellPrortocol {
     
     @IBOutlet weak var backView: UIView!
-    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var rating: CosmosView!
     @IBOutlet weak var comment: UILabel!
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var containerView: DropShadowView!
+    
     let cornerRadius : CGFloat = 10.0
     
     override func awakeFromNib() {
@@ -24,10 +25,9 @@ class RatingCollectionViewCell: UICollectionViewCell,RatingCollectionViewCellPro
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         containerView.layer.shadowRadius = 5.0
         containerView.layer.shadowOpacity = 0.9
-        
         
         backView.layer.cornerRadius = cornerRadius
         backView.clipsToBounds = true
@@ -37,7 +37,7 @@ class RatingCollectionViewCell: UICollectionViewCell,RatingCollectionViewCellPro
         rating.rating = Double(labRating.rate!)!
         personName.text = labRating.personName
         comment.text = labRating.comment
-        date.text = labRating.data
+        date.text = labRating.date
     }
     
     

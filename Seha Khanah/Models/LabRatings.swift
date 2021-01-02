@@ -12,14 +12,14 @@ class LabRatings:  Codable{
     var rate: String?
     var comment: String?
     var  personName:String?
-    var data:String?
+    var date:String?
     
     init?(withJSON data: JSON) {
         
         self.rate = data["rate"].stringValue
         self.comment = data["comment"].stringValue
         self.personName = data["person_name"].stringValue
-        self.data = data["data"].stringValue
+        self.date = data["date"].stringValue
         
         
     }
