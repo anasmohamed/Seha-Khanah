@@ -26,8 +26,11 @@ extension LabDetailsViewController : UICollectionViewDelegate,UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: "LabServices", bundle:nil )
         let labServicesViewController = storyboard.instantiateViewController(withIdentifier: "LabServicesTableViewController") as! LabServicesTableViewController
+        labServicesViewController.labDetails = labDetailsPresenter.getLabDetails()
         labServicesViewController.labService = labDetailsPresenter.getLabServices()
         labServicesViewController.labDate = labDetailsPresenter.getLabDates(index: indexPath.row)
+        labServicesViewController.labName = labDetailsPresenter.getLabDetails().labNameEn
+        labServicesViewController.labPhoto = labDetailsPresenter.getLabDetails().photo
         self.navigationController!.pushViewController(labServicesViewController, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

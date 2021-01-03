@@ -80,6 +80,8 @@
 		A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870839225963336002AC96C /* SearchByLabNameInteractor.swift */; };
 		A8708396259633FA002AC96C /* SearchByLabNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */; };
 		A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */; };
+		A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87533DE25A267A500ECF699 /* BookNow.storyboard */; };
+		A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87533E025A26BB900ECF699 /* BookViewController.swift */; };
 		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
 		A884DD77259A1610006D686B /* localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884DD76259A1610006D686B /* localized.swift */; };
@@ -216,6 +218,8 @@
 		A870839225963336002AC96C /* SearchByLabNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameInteractor.swift; sourceTree = "<group>"; };
 		A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNamePresenter.swift; sourceTree = "<group>"; };
 		A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameProtocol.swift; sourceTree = "<group>"; };
+		A87533DE25A267A500ECF699 /* BookNow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookNow.storyboard; sourceTree = "<group>"; };
+		A87533E025A26BB900ECF699 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
 		A884DD76259A1610006D686B /* localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localized.swift; sourceTree = "<group>"; };
@@ -879,6 +883,23 @@
 			path = SearchForLabsScene;
 			sourceTree = "<group>";
 		};
+		A87533DC25A263E700ECF699 /* BookScene */ = {
+			isa = PBXGroup;
+			children = (
+				A87533DD25A264FB00ECF699 /* View */,
+			);
+			path = BookScene;
+			sourceTree = "<group>";
+		};
+		A87533DD25A264FB00ECF699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A87533DE25A267A500ECF699 /* BookNow.storyboard */,
+				A87533E025A26BB900ECF699 /* BookViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A87D28D7258C173700B7957F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1049,6 +1070,7 @@
 		A8AC86BB25876D2C00604E64 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				A87533DC25A263E700ECF699 /* BookScene */,
 				A869A563259DFA510059C3C2 /* DetailsScreensScenen */,
 				A860322B2596A17F003A7DA5 /* MoreScene */,
 				A83D6EAA258A206300186693 /* OffersScene */,
@@ -1237,6 +1259,7 @@
 				A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */,
 				A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */,
 				A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */,
+				A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
@@ -1403,6 +1426,7 @@
 				A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */,
 				A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */,
 				A806CB05259E292D00D1764C /* LabDetails.swift in Sources */,
+				A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */,
 				A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);

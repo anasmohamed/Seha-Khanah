@@ -36,7 +36,9 @@ class LabDetailsPresenter {
         }
     }
     
-    
+    func getLabDetails() ->LabDetails{
+        return labDetails!
+    }
     func getDatesCount() -> Int {
         return (labDetails?.datesList.count)!
     }

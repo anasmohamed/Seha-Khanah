@@ -11,6 +11,9 @@ import UIKit
 class LabServicesTableViewController: UITableViewController {
     var labService : [LabServices]?
     var labDate : LabDate?
+    var labDetails : LabDetails?
+    var labName : String?
+    var labPhoto :String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +39,11 @@ class LabServicesTableViewController: UITableViewController {
         let storyboard = UIStoryboard.init(name: "LabDayDates", bundle:nil )
         let labDayDatesViewController = storyboard.instantiateViewController(withIdentifier: "LabDayDatesViewController") as! LabDayDatesViewController
         labDayDatesViewController.times = labDate?.timesList
+        labDayDatesViewController.labDetails = labDetails
+        labDayDatesViewController.labName = labName
+        labDayDatesViewController.labPhoto = labPhoto
+        labDayDatesViewController.labService = labService![indexPath.row]
+        labDayDatesViewController.labDate = labDate
         self.navigationController!.pushViewController(labDayDatesViewController, animated: true)
     }
     
