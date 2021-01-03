@@ -25,6 +25,7 @@
 		A80DD8D325A120AE00FD2CF1 /* LabServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DD8D225A120AE00FD2CF1 /* LabServicesTableViewController.swift */; };
 		A80DD8D725A1327300FD2CF1 /* LabDayDates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80DD8D625A1327300FD2CF1 /* LabDayDates.storyboard */; };
 		A80DD8D925A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DD8D825A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift */; };
+		A80DD8DD25A141C000FD2CF1 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DD8DC25A141C000FD2CF1 /* TimeCollectionViewCell.swift */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
 		A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */; };
@@ -153,6 +154,7 @@
 		A80DD8D225A120AE00FD2CF1 /* LabServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabServicesTableViewController.swift; sourceTree = "<group>"; };
 		A80DD8D625A1327300FD2CF1 /* LabDayDates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LabDayDates.storyboard; sourceTree = "<group>"; };
 		A80DD8D825A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDayDatesCollectionViewController.swift; sourceTree = "<group>"; };
+		A80DD8DC25A141C000FD2CF1 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
 		A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+ImageSliderExtension.swift"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 			children = (
 				A80DD8D625A1327300FD2CF1 /* LabDayDates.storyboard */,
 				A80DD8D825A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift */,
+				A80DD8DC25A141C000FD2CF1 /* TimeCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1371,6 +1374,7 @@
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */,
 				A80DD8D925A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift in Sources */,
+				A80DD8DD25A141C000FD2CF1 /* TimeCollectionViewCell.swift in Sources */,
 				A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */,
 				A85E32822594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift in Sources */,
 				A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */,

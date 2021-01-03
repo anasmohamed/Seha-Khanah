@@ -8,10 +8,10 @@
 
 import UIKit
 
-private let reuseIdentifier = "LabDayDatesCell"
+private let reuseIdentifier = "TimeCollectionViewCell"
 
 class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
-    var times : [String]?
+    var times : [Time]?
     @IBOutlet weak var dayDatesCollectionView: UICollectionView!
     @IBOutlet weak var dayDateView: UIView!
     override func viewDidLoad() {
@@ -46,9 +46,8 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
     }
 
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-       
-        // Configure the cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TimeCollectionViewCell
+        cell.timeLbl.text = times![indexPath.row].time
     
         return cell
     }
