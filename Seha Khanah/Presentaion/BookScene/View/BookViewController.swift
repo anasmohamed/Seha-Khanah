@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BookViewController: UIViewController {
+class BookViewController: UIViewController,BookingProtocol {
+    
+    
     var labDetails : LabDetails?
     @IBOutlet weak var labImageView: UIImageView!
     @IBOutlet weak var labNameAndSpeciltyVIew: UIView!
@@ -27,6 +29,7 @@ class BookViewController: UIViewController {
     var labPhoto :String?
     var labService: LabServices?
     var bookDate : String?
+    var preseter : BookingPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
@@ -39,6 +42,8 @@ class BookViewController: UIViewController {
         labServiceLbl.text = labService?.nameEn
         labImageView.kf.setImage(with: URL(string: labPhoto!))
         timeLbl.text = bookDate
+        
+        preseter = BookingPresenter(view: self)
         // Do any additional setup after loading the view.
     }
     
@@ -52,17 +57,32 @@ class BookViewController: UIViewController {
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 10
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showIndicator() {
+        
     }
-    */
+    
+    func hideIndicator() {
+        
+    }
+    
+    func bookingSuccess() {
+        
+    }
+    
+    func showError(error: String) {
+        
+    }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
+        preseter?.bookLab(name: , email: <#T##String#>, phoneNumber: <#T##String#>, bookingDate: <#T##String#>, labId: <#T##String#>, checkbox: <#T##String#>)
     }
     
 }

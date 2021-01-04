@@ -41,6 +41,15 @@ class NetworkingConstants {
         static let showLabDetails = "laboratory/show/"
 
     
+        static let reservation = "reservation"
+        static let reservationNameParameter = "name"
+        static let reservationEmailParameter = "email"
+        static let reservationPhonenumberParameter = "phonenumber"
+        static let reservationBookingDateParameter = "booking_date"
+        static let reservationDoctorIdParameter = "doctor_id"
+        static let reservationCheckboxParameter = "checkbox"
+
+
     
 
    

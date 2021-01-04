@@ -24,6 +24,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case searchForLabByAreaId(areaId:String)
     case getAllLabs
     case showLabDetails(id:String)
+    case reservation(name: String,email : String,phonenumber : String,booking_date: String,doctor_id : String,checkbox : String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -50,6 +51,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getAllLabs
         case .showLabDetails:
             return NetworkingConstants.showLabDetails
+        case .reservation:
+            return NetworkingConstants.reservation
             
         }
     }
@@ -68,7 +71,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .aboutUs,
              .searchForLabByAreaId,
              .getAllLabs,
-             .showLabDetails:
+             .showLabDetails,
+             .reservation:
             return .get
             
             
@@ -119,6 +123,14 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.searchForLabByAreaIdParameter] = areaId
         case let .showLabDetails(id):
             params[NetworkingConstants.showLabDetails] = id
+        case let .reservation(name, email, phonenumber, booking_date, doctor_id, checkbox):
+            params[NetworkingConstants.reservationNameParameter] = name
+            params[NetworkingConstants.reservationEmailParameter] = email
+            params[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
+            params[NetworkingConstants.reservationBookingDateParameter] = booking_date
+            params[NetworkingConstants.reservationDoctorIdParameter] = doctor_id
+            params[NetworkingConstants.reservationCheckboxParameter] = checkbox
+
         default:
             print("Empty Paramter")
             
@@ -144,7 +156,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchByLabName,
              .aboutUs,
              .searchForLabByAreaId,
-             .getAllLabs:
+             .getAllLabs,
+             .reservation:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)
