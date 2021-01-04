@@ -30,6 +30,8 @@
 		A812A07725A3205E0039029B /* ReservationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07625A3205E0039029B /* ReservationResponse.swift */; };
 		A812A07925A323D70039029B /* BookingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07825A323D70039029B /* BookingPresenter.swift */; };
 		A812A07B25A324B00039029B /* BookingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07A25A324B00039029B /* BookingProtocol.swift */; };
+		A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */; };
+		A812A08225A345E10039029B /* SuccessBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A08125A345E10039029B /* SuccessBookingViewController.swift */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
 		A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */; };
@@ -165,6 +167,8 @@
 		A812A07625A3205E0039029B /* ReservationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationResponse.swift; sourceTree = "<group>"; };
 		A812A07825A323D70039029B /* BookingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPresenter.swift; sourceTree = "<group>"; };
 		A812A07A25A324B00039029B /* BookingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingProtocol.swift; sourceTree = "<group>"; };
+		A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuccessfulBooking.storyboard; sourceTree = "<group>"; };
+		A812A08125A345E10039029B /* SuccessBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBookingViewController.swift; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
 		A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+ImageSliderExtension.swift"; sourceTree = "<group>"; };
@@ -388,6 +392,33 @@
 				A80DD8D625A1327300FD2CF1 /* LabDayDates.storyboard */,
 				A80DD8D825A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift */,
 				A80DD8DC25A141C000FD2CF1 /* TimeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A812A07C25A33FCE0039029B /* SuccessfulBookingScene */ = {
+			isa = PBXGroup;
+			children = (
+				A812A07E25A340010039029B /* View */,
+			);
+			path = SuccessfulBookingScene;
+			sourceTree = "<group>";
+		};
+		A812A07D25A33FEA0039029B /* BookingScene */ = {
+			isa = PBXGroup;
+			children = (
+				A87533DD25A264FB00ECF699 /* View */,
+				A87533E325A2871F00ECF699 /* Presenter */,
+				A87533E425A2886400ECF699 /* Interactor */,
+			);
+			path = BookingScene;
+			sourceTree = "<group>";
+		};
+		A812A07E25A340010039029B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */,
+				A812A08125A345E10039029B /* SuccessBookingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -894,9 +925,8 @@
 		A87533DC25A263E700ECF699 /* BookScene */ = {
 			isa = PBXGroup;
 			children = (
-				A87533E425A2886400ECF699 /* Interactor */,
-				A87533E325A2871F00ECF699 /* Presenter */,
-				A87533DD25A264FB00ECF699 /* View */,
+				A812A07D25A33FEA0039029B /* BookingScene */,
+				A812A07C25A33FCE0039029B /* SuccessfulBookingScene */,
 			);
 			path = BookScene;
 			sourceTree = "<group>";
@@ -1288,6 +1318,7 @@
 				A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */,
 				A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */,
 				A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */,
+				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
@@ -1459,6 +1490,7 @@
 				A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */,
 				A806CB05259E292D00D1764C /* LabDetails.swift in Sources */,
 				A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */,
+				A812A08225A345E10039029B /* SuccessBookingViewController.swift in Sources */,
 				A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);

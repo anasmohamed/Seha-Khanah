@@ -14,6 +14,8 @@ class LabServicesTableViewController: UITableViewController {
     var labDetails : LabDetails?
     var labName : String?
     var labPhoto :String?
+    var labId: String?
+    var labAddress: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +46,8 @@ class LabServicesTableViewController: UITableViewController {
         labDayDatesViewController.labPhoto = labPhoto
         labDayDatesViewController.labService = labService![indexPath.row]
         labDayDatesViewController.labDate = labDate
+        labDayDatesViewController.labId = labId
+        labDayDatesViewController.labAddress = labAddress
         self.navigationController!.pushViewController(labDayDatesViewController, animated: true)
     }
     

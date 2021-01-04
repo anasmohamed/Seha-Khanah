@@ -24,12 +24,19 @@ class BookViewController: UIViewController,BookingProtocol {
     @IBOutlet weak var bookNowBtn: UIButton!
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var dayLbl: UILabel!
+    @IBOutlet weak var fullNameTextField: UITextField!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var mobileNumberTextField: UITextField!
     var date : String?
     var labName : String?
     var labPhoto :String?
     var labService: LabServices?
     var bookDate : String?
+    var labId: String?
+    var dayName : String?
     var preseter : BookingPresenter?
+    var labAddress : String?
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
@@ -37,12 +44,12 @@ class BookViewController: UIViewController,BookingProtocol {
         cornerRadiusAndShodow(view: labNameAndSpeciltyVIew)
         cornerRadiusAndShodow(view: presonDetailsView)
         
-        
+        dayLbl.text = dayName
         labNameLbl.text = labName
         labServiceLbl.text = labService?.nameEn
         labImageView.kf.setImage(with: URL(string: labPhoto!))
         timeLbl.text = bookDate
-        
+        lacationNameLbl.text = labAddress
         preseter = BookingPresenter(view: self)
         // Do any additional setup after loading the view.
     }
@@ -67,6 +74,14 @@ class BookViewController: UIViewController,BookingProtocol {
     
     func bookingSuccess() {
         
+        let storyboard = UIStoryboard.init(name: "SuccessfulBooking", bundle:nil )
+        let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
+        successfulBookingViewController.labName = labName
+        successfulBookingViewController.labService = labService
+        successfulBookingViewController.labId = labId
+        successfulBookingViewController.dayText = dayName
+        successfulBookingViewController.labAddress = labAddress
+        self.navigationController!.pushViewController(successfulBookingViewController, animated: true)
     }
     
     func showError(error: String) {
@@ -82,7 +97,19 @@ class BookViewController: UIViewController,BookingProtocol {
      }
      */
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
-        preseter?.bookLab(name: , email: <#T##String#>, phoneNumber: <#T##String#>, bookingDate: <#T##String#>, labId: <#T##String#>, checkbox: <#T##String#>)
+        print (date! + timeLbl.text!)
+        var timeWithoutAMOrPM : String?
+        if  (timeLbl.text?.contains("am"))!
+        {
+            timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
+            
+        }else
+        {
+            timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
+        }
+        print (date! + " " + timeWithoutAMOrPM!)
+        
+        preseter?.bookLab(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
     }
     
 }

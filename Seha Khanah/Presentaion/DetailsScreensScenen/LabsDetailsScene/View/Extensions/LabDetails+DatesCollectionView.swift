@@ -31,6 +31,8 @@ extension LabDetailsViewController : UICollectionViewDelegate,UICollectionViewDa
         labServicesViewController.labDate = labDetailsPresenter.getLabDates(index: indexPath.row)
         labServicesViewController.labName = labDetailsPresenter.getLabDetails().labNameEn
         labServicesViewController.labPhoto = labDetailsPresenter.getLabDetails().photo
+        labServicesViewController.labId = labId
+        labServicesViewController.labAddress = labAdderss.text
         self.navigationController!.pushViewController(labServicesViewController, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

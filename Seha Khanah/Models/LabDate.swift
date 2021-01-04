@@ -19,7 +19,7 @@ class LabDate: Codable {
         
         self.dayAr = data["day_ar"].stringValue
         self.dayEn = data["day_en"].stringValue
-        self.date = data["timesdate"].stringValue
+        self.date = data["date"].stringValue
         self.startTime = data["start_time"].stringValue
         self.endTime = data["end_time"].stringValue
         let times = data["times"].arrayValue

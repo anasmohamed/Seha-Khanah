@@ -18,6 +18,8 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
     var labName : String?
     var labPhoto :String?
     var labService: LabServices?
+    var labId: String?
+    var labAddress: String?
     @IBOutlet weak var dayDatesCollectionView: UICollectionView!
     @IBOutlet weak var dayDateView: UIView!
     override func viewDidLoad() {
@@ -68,7 +70,9 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         bookViewController.labService = labService
         bookViewController.bookDate = times![indexPath.row].time
         bookViewController.date = labDate?.date
-        
+        bookViewController.labId = labId
+        bookViewController.dayName = labDate?.dayEn
+        bookViewController.labAddress = labAddress
         self.navigationController!.pushViewController(bookViewController, animated: true)
         
     }

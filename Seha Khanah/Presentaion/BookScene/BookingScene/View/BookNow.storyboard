@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Book View Controller-->
         <scene sceneID="jlA-qU-oGj">
@@ -191,10 +196,14 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8we-Bb-POu">
                                 <rect key="frame" x="10" y="812" width="394" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pzb-U8-9cJ"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                <state key="normal" title="BOOK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="bookNowBtnDidTapped:" destination="tx7-30-usk" eventType="touchUpInside" id="ryh-NB-a6Q"/>
                                 </connections>
@@ -221,11 +230,14 @@
                     <connections>
                         <outlet property="bookNowBtn" destination="8we-Bb-POu" id="7eL-q2-bQx"/>
                         <outlet property="dayLbl" destination="9xk-gj-LPI" id="QaL-dh-pVb"/>
+                        <outlet property="emailTextField" destination="CTA-jg-wue" id="Bq3-1H-9Ga"/>
+                        <outlet property="fullNameTextField" destination="72g-8w-oav" id="ZEc-y3-Klq"/>
                         <outlet property="labImageView" destination="x4l-gM-2wf" id="j5F-WV-e4T"/>
                         <outlet property="labNameAndSpeciltyVIew" destination="T6B-pC-XiH" id="QgZ-Xk-Fd7"/>
                         <outlet property="labNameLbl" destination="LsS-I0-Dyu" id="ZpZ-zN-XPu"/>
                         <outlet property="labServiceLbl" destination="YVs-WP-s3v" id="AZj-IF-sy9"/>
                         <outlet property="lacationNameLbl" destination="YxI-y5-irk" id="XrT-ZU-ofk"/>
+                        <outlet property="mobileNumberTextField" destination="MKb-m7-sOx" id="8m0-Y7-RxJ"/>
                         <outlet property="presonDetailsView" destination="6rx-nc-CuL" id="K6I-ay-Erh"/>
                         <outlet property="timeLbl" destination="Zsj-nu-Mtz" id="1Ky-bJ-1cF"/>
                         <outlet property="timeView" destination="lSe-yC-fOB" id="gA9-km-mtU"/>

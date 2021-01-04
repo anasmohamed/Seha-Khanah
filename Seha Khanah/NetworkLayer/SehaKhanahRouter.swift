@@ -71,10 +71,11 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .aboutUs,
              .searchForLabByAreaId,
              .getAllLabs,
-             .showLabDetails,
-             .reservation:
+             .showLabDetails
+            :
             return .get
-            
+        case .reservation:
+            return .post
             
         }
     }
@@ -130,7 +131,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.reservationBookingDateParameter] = booking_date
             params[NetworkingConstants.reservationDoctorIdParameter] = doctor_id
             params[NetworkingConstants.reservationCheckboxParameter] = checkbox
-
+            
         default:
             print("Empty Paramter")
             
