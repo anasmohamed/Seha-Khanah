@@ -79,6 +79,8 @@
 		A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674A3C259777110099E7CE /* CallUsViewController.swift */; };
 		A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */; };
 		A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A869A568259DFB290059C3C2 /* LabDetails.storyboard */; };
+		A869D67825A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */; };
+		A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D67925A660FF001D8886 /* DoctorDates.swift */; };
 		A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */; };
 		A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */; };
 		A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */; };
@@ -230,6 +232,8 @@
 		A8674A3C259777110099E7CE /* CallUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
 		A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
 		A869A568259DFB290059C3C2 /* LabDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LabDetails.storyboard; sourceTree = "<group>"; };
+		A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoctorDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
+		A869D67925A660FF001D8886 /* DoctorDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDates.swift; sourceTree = "<group>"; };
 		A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForAllLabsViewController.swift; sourceTree = "<group>"; };
 		A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameViewController.swift; sourceTree = "<group>"; };
 		A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameTableViewCell.swift; sourceTree = "<group>"; };
@@ -468,6 +472,7 @@
 		A812A08625A399400039029B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A869D67625A65F9A001D8886 /* Extensions */,
 				A812A08925A3998A0039029B /* DoctorDetails.storyboard */,
 				A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */,
 				A8CBF49725A5C56F003A084F /* DoctorDetailsProtocol.swift */,
@@ -925,6 +930,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A869D67625A65F9A001D8886 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A870838125960EAF002AC96C /* LabsScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -1042,6 +1055,7 @@
 				A812A07625A3205E0039029B /* ReservationResponse.swift */,
 				A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */,
 				A8CBF49525A5BFF5003A084F /* DoctorRatings.swift */,
+				A869D67925A660FF001D8886 /* DoctorDates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1478,6 +1492,7 @@
 				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
 				A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */,
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
+				A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */,
 				A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */,
 				A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */,
 				A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */,
@@ -1568,6 +1583,7 @@
 				A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */,
 				A812A08225A345E10039029B /* SuccessBookingViewController.swift in Sources */,
 				A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */,
+				A869D67825A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift in Sources */,
 				A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

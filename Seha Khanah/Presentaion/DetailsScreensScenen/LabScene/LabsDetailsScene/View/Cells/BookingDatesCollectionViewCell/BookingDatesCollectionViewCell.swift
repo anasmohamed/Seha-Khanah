@@ -9,6 +9,10 @@
 import UIKit
 
 class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollectionViewCellProtocol{
+  
+    
+   
+    
     
     
     
@@ -42,17 +46,17 @@ class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollecti
     
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
     }
-    func configure(labDates: LabDate) {
-        startHourLbl.text = labDates.startTime
-        endHourLbl.text = labDates.endTime
-        dateLbl.text = labDates.date
+    func configure(date: LabDate) {
+        startHourLbl.text = date.startTime
+        endHourLbl.text = date.endTime
+        dateLbl.text = date.date
         if locale == "en"
         {
-            dayLbl.text = labDates.dayEn
+            dayLbl.text = date.dayEn
             
         }else
         {
-            dayLbl.text = labDates.dayAr
+            dayLbl.text = date.dayAr
 
         }
         

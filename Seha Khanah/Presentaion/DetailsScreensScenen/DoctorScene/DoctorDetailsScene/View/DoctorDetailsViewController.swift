@@ -10,7 +10,11 @@ import UIKit
 import Cosmos
 import ReadMoreTextView
 class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
-  
+    @IBOutlet weak var datesView: UIView!
+    @IBOutlet weak var ratingsCollectionView: UICollectionView!
+    
+    @IBOutlet weak var ratingView: UIView!
+    @IBOutlet weak var datesCollectionView: UICollectionView!
     @IBOutlet weak var aboutDoctorTextView: ReadMoreTextView!
     
     @IBOutlet weak var aboutDoctorLbl: UILabel!
@@ -20,6 +24,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var numberOfRaitings: UILabel!
     
+    @IBOutlet weak var cityNameLbl: UILabel!
     @IBOutlet weak var moreAndLessLbl: UILabel!
     @IBOutlet weak var aboutDoctorViewHeight: NSLayoutConstraint!
     @IBOutlet weak var totalRating: CosmosView!
@@ -36,21 +41,32 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         presenter.showDoctorDetails(id: doctorId!)
         aboutDoctorLbl.numberOfLines = 1
         let moreOrLessTap = UITapGestureRecognizer(target: self, action:#selector(moreOrLessLblDidTapped(_:)))
-             
-             moreAndLessLbl.addGestureRecognizer(moreOrLessTap)
-      
+        
+        moreAndLessLbl.addGestureRecognizer(moreOrLessTap)
+        datesCollectionView.delegate = self
+        datesCollectionView.dataSource = self
+        ratingsCollectionView.delegate = self
+        ratingsCollectionView.dataSource = self
+        setupCollectionView()
+        
         // Do any additional setup after loading the view.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.showDoctorDates(id: doctorId!)
+    }
+    func showDoctorDates() {
+        datesCollectionView.reloadData()
+    }
     func showIndicator() {
-          
-      }
-      
-      func hideIndicator() {
-          
-      }
-      
-      func showDoctorDetails(doctorDetails: DoctorDetails) {
+        
+    }
+    
+    func hideIndicator() {
+        
+    }
+    
+    func showDoctorDetails(doctorDetails: DoctorDetails) {
         watingTimeLbl.text = doctorDetails.waitingTime
         costLbl.text = doctorDetails.price
         totalRating.rating = Double(doctorDetails.rating!)!
@@ -60,29 +76,33 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
         profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
         aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
-
+        
         cornerRadiusAndShodow(view: doctorView)
         cornerRadiusAndShodow(view: aboutDoctorView)
-      }
-      func cornerRadiusAndShodow(view:UIView)  {
-             view.layer.shadowColor = UIColor.gray.cgColor
-             view.layer.shadowOpacity = 1
-             view.layer.shadowOffset = .zero
-             view.layer.shadowRadius = 3
-             view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-             view.layer.shouldRasterize = true
-             view.layer.rasterizationScale = UIScreen.main.scale
-             view.layer.cornerRadius = 5
-         }
-      func showError(error: String) {
-          
-      }
-      
-      func showNoDataFoundImage() {
-          
-      }
-   @objc func moreOrLessLblDidTapped(_ sender: UITapGestureRecognizer? = nil)
-   {
+        cornerRadiusAndShodow(view: ratingView)
+        cornerRadiusAndShodow(view: datesView)
+
+        ratingsCollectionView.reloadData()
+    }
+    func cornerRadiusAndShodow(view:UIView)  {
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 3
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
+        view.layer.cornerRadius = 5
+    }
+    func showError(error: String) {
+        
+    }
+    
+    func showNoDataFoundImage() {
+        
+    }
+    @objc func moreOrLessLblDidTapped(_ sender: UITapGestureRecognizer? = nil)
+    {
         aboutDoctorViewHeight.constant = 200
         
     }

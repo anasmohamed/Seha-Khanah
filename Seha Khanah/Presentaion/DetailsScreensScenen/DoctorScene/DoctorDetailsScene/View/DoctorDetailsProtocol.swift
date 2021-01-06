@@ -13,4 +13,5 @@ protocol DoctorDetailsProtocol:class {
     func showDoctorDetails(doctorDetails: DoctorDetails)
     func showError(error: String)
     func showNoDataFoundImage()
+    func showDoctorDates()
 }

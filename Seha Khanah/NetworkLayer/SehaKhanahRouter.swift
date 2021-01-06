@@ -25,6 +25,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case getAllLabs
     case showLabDetails(id:String)
     case showDoctorDetails(id:String)
+    case showDoctorDates(id:String)
     
     case reservation(name: String,email : String,phonenumber : String,booking_date: String,doctor_id : String,checkbox : String)
     var path: String {
@@ -57,6 +58,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.reservation
         case .showDoctorDetails:
             return NetworkingConstants.showDoctorDetails
+        case .showDoctorDates:
+            return NetworkingConstants.showDoctorDates
             
         }
     }
@@ -76,7 +79,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchForLabByAreaId,
              .getAllLabs,
              .showLabDetails,
-             .showDoctorDetails:
+             .showDoctorDetails,
+             .showDoctorDates:
             return .get
         case .reservation:
             return .post
@@ -130,6 +134,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.showLabDetails] = id
         case let .showDoctorDetails(id):
             params[NetworkingConstants.showDoctorDetails] = id
+        case let .showDoctorDates(id):
+            params[NetworkingConstants.showDoctorDates] = id
         case let .reservation(name, email, phonenumber, booking_date, doctor_id, checkbox):
             params[NetworkingConstants.reservationNameParameter] = name
             params[NetworkingConstants.reservationEmailParameter] = email
@@ -180,6 +186,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             let doctorDetailsparamString = params[NetworkingConstants.showDoctorDetails]!
             urlRequest = URLRequest(url: URL(string: showDoctorDetailsUrlString + (doctorDetailsparamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .showDoctorDates:
+            let showDoctorDatesUrlString = (urlRequest.url?.absoluteString)!
+            
+            let doctorDatesparamString = params[NetworkingConstants.showDoctorDates]!
+            urlRequest = URLRequest(url: URL(string: showDoctorDatesUrlString + (doctorDatesparamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }

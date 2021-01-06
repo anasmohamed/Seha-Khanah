@@ -29,7 +29,7 @@ class DoctorDetails: Codable {
     var aboutDoctorEn:String?
     var prefixTitleAr: String?
     var prefixTitleEn: String?
-    var ratingsList = [DoctorRatings]()
+    var ratingsList = [LabRatings]()
     var doctorRatings = [JSON]()
     var vistorNumber: String?
     var waitingTime: String?
@@ -59,9 +59,10 @@ class DoctorDetails: Codable {
         self.prefixTitleEn = data["prefix_title"]["name_en"].stringValue
         self.vistorNumber = data["visitor_num"].stringValue
         self.waitingTime = data["waiting_time"].stringValue
+        self.doctorRatings = data["ratings"].arrayValue
         for doctorRating in doctorRatings
         {
-            let data = DoctorRatings(withJSON: doctorRating)
+            let data = LabRatings(withJSON: doctorRating)
             self.ratingsList.append(data!)
         }
     }

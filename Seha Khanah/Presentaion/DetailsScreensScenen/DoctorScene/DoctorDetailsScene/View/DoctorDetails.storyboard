@@ -8,6 +8,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Doctor Details View Controller-->
         <scene sceneID="PER-4i-J14">
@@ -101,10 +106,11 @@
                                                             <constraint firstAttribute="width" constant="100" id="cQa-ih-HgC"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grz-kM-yg5">
-                                                        <rect key="frame" x="176" y="125" width="42" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grz-kM-yg5">
+                                                        <rect key="frame" x="176" y="125" width="42" height="24.5"/>
+                                                        <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr6-pp-Vkj">
@@ -122,14 +128,14 @@
                                                         <state key="normal" image="hart_border"/>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utj-on-79Y">
-                                                        <rect key="frame" x="0.0" y="153.5" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="157.5" width="394" height="2"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="Rbi-WX-pZl"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="sxU-Gf-2QH">
-                                                        <rect key="frame" x="31.5" y="165.5" width="331.5" height="40"/>
+                                                        <rect key="frame" x="31.5" y="169.5" width="331.5" height="40"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f9s-cy-DSV">
                                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="40"/>
@@ -225,7 +231,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="THn-et-Mrd">
                                                         <rect key="frame" x="10" y="10" width="92" height="40"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dS7-50-ZQg">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="dS7-50-ZQg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Z55-j3-Sv2"/>
@@ -240,16 +246,16 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aou-b1-0hg">
-                                                        <rect key="frame" x="60" y="67" width="326" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Now And The Details Will Be Sent In Full Address And Clinic Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aou-b1-0hg">
+                                                        <rect key="frame" x="60" y="50.5" width="326" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pWW-Un-07c">
-                                                        <rect key="frame" x="10" y="95.5" width="374" height="154"/>
+                                                        <rect key="frame" x="10" y="99.5" width="374" height="150"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L26-Ni-n0Z">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L26-Ni-n0Z">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -257,7 +263,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NBb-KJ-SjD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="0.0" y="11" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rTH-Vi-bUW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -266,7 +272,7 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T42-uB-1en">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entering The Specifid Reservation Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T42-uB-1en">
                                                         <rect key="frame" x="10" y="259.5" width="376" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -281,7 +287,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="Aou-b1-0hg" secondAttribute="trailing" constant="8" id="Wad-9J-e5D"/>
                                                     <constraint firstItem="T42-uB-1en" firstAttribute="top" secondItem="pWW-Un-07c" secondAttribute="bottom" constant="10" id="Wv2-b8-NBs"/>
                                                     <constraint firstItem="Aou-b1-0hg" firstAttribute="leading" secondItem="GDC-L9-AAq" secondAttribute="leading" id="Xtm-QN-Zg5"/>
-                                                    <constraint firstItem="Aou-b1-0hg" firstAttribute="top" secondItem="GDC-L9-AAq" secondAttribute="bottom" constant="26.5" id="ZUQ-dR-IH1"/>
+                                                    <constraint firstItem="Aou-b1-0hg" firstAttribute="top" secondItem="GDC-L9-AAq" secondAttribute="bottom" constant="10" id="ZUQ-dR-IH1"/>
                                                     <constraint firstAttribute="trailing" secondItem="pWW-Un-07c" secondAttribute="trailing" constant="10" id="a8S-bQ-cA6"/>
                                                     <constraint firstAttribute="trailing" secondItem="T42-uB-1en" secondAttribute="trailing" constant="8" id="j7f-VB-o6r"/>
                                                     <constraint firstItem="THn-et-Mrd" firstAttribute="top" secondItem="uWG-0d-iQ9" secondAttribute="top" constant="10" id="nBc-gr-el6"/>
@@ -314,7 +320,7 @@
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8hr-WN-GVE">
                                                         <rect key="frame" x="10" y="54" width="374" height="559"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C0i-jq-ecl">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C0i-jq-ecl">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -423,7 +429,10 @@
                         <outlet property="aboutDoctorLbl" destination="q4f-td-yeA" id="xXk-YF-e50"/>
                         <outlet property="aboutDoctorView" destination="tAi-nl-bhr" id="s78-cV-h4t"/>
                         <outlet property="aboutDoctorViewHeight" destination="eM9-qT-3Ou" id="WWr-mf-PbO"/>
+                        <outlet property="cityNameLbl" destination="GDC-L9-AAq" id="dK2-d9-QJx"/>
                         <outlet property="costLbl" destination="TrS-io-TQ3" id="t6i-bI-oGv"/>
+                        <outlet property="datesCollectionView" destination="pWW-Un-07c" id="188-xB-xEt"/>
+                        <outlet property="datesView" destination="uWG-0d-iQ9" id="GO2-mG-oQU"/>
                         <outlet property="doctorImageView" destination="cKo-Nf-iwl" id="hAK-NT-BHE"/>
                         <outlet property="doctorNameLbl" destination="IGZ-cH-kLf" id="yua-BO-KA3"/>
                         <outlet property="doctorView" destination="2Nk-La-Wj4" id="fn2-fa-dco"/>
@@ -431,6 +440,8 @@
                         <outlet property="numberOfRaitings" destination="grz-kM-yg5" id="FsY-32-Zmi"/>
                         <outlet property="numberOfSeenLbl" destination="gr6-pp-Vkj" id="yij-Ah-Xkg"/>
                         <outlet property="profissionalTitleLbl" destination="Dkf-gD-Y8k" id="dYV-PZ-Cvj"/>
+                        <outlet property="ratingView" destination="8Qv-TJ-aw1" id="hr4-dP-8CI"/>
+                        <outlet property="ratingsCollectionView" destination="8hr-WN-GVE" id="m3M-9c-wBi"/>
                         <outlet property="totalRating" destination="O79-mm-GOg" id="vzN-8p-PiN"/>
                         <outlet property="watingTimeLbl" destination="Bzg-Sv-43q" id="jsf-az-hTD"/>
                     </connections>
@@ -444,6 +455,7 @@
         <image name="clock" width="64" height="64"/>
         <image name="hart_border" width="256" height="256"/>
         <image name="info" width="50" height="50"/>
+        <image name="map" width="24" height="24"/>
         <image name="money" width="512" height="512"/>
     </resources>
 </document>

@@ -8,5 +8,5 @@
 
 import Foundation
 protocol BookingDatesCollectionViewCellProtocol {
-    func configure(labDates: LabDate)
+    func configure(date: LabDate)
 }

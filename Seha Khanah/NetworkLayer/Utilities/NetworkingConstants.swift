@@ -40,6 +40,7 @@ class NetworkingConstants {
 
         static let showLabDetails = "laboratory/show/"
         static let showDoctorDetails = "doctor/show/"
+        static let showDoctorDates = "dates/"
 
 
         static let reservation = "reservation"
