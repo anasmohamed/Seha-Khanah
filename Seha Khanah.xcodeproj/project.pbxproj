@@ -133,6 +133,11 @@
 		A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C9E3E2259FC42C0085B806 /* RatingCollectionViewCell.xib */; };
 		A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */; };
 		A8C9E3E8259FC5C50085B806 /* LabRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9E3E7259FC5C50085B806 /* LabRatings.swift */; };
+		A8CBF49625A5BFF5003A084F /* DoctorRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CBF49525A5BFF5003A084F /* DoctorRatings.swift */; };
+		A8CBF49825A5C56F003A084F /* DoctorDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CBF49725A5C56F003A084F /* DoctorDetailsProtocol.swift */; };
+		A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22B25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift */; };
+		A8D1A22E25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */; };
+		A8D1A23025A3C6AA000DD0AD /* DoctorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */; };
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
@@ -288,6 +293,11 @@
 		A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCollectionViewCellPrortocol.swift; sourceTree = "<group>"; };
 		A8C9E3E7259FC5C50085B806 /* LabRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabRatings.swift; sourceTree = "<group>"; };
 		A8C9E3E9259FCD6E0085B806 /* A-Google.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A-Google.ttf"; sourceTree = "<group>"; };
+		A8CBF49525A5BFF5003A084F /* DoctorRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRatings.swift; sourceTree = "<group>"; };
+		A8CBF49725A5C56F003A084F /* DoctorDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsProtocol.swift; sourceTree = "<group>"; };
+		A8D1A22B25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsPresenter.swift; sourceTree = "<group>"; };
+		A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsInteractor.swift; sourceTree = "<group>"; };
+		A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetails.swift; sourceTree = "<group>"; };
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -460,6 +470,7 @@
 			children = (
 				A812A08925A3998A0039029B /* DoctorDetails.storyboard */,
 				A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */,
+				A8CBF49725A5C56F003A084F /* DoctorDetailsProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -467,6 +478,7 @@
 		A812A08725A3994D0039029B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A8D1A22B25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -474,6 +486,7 @@
 		A812A08825A399550039029B /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -1027,6 +1040,8 @@
 				A8C9E3E7259FC5C50085B806 /* LabRatings.swift */,
 				A80DD8CC25A120AE00FD2CF1 /* LabServices.swift */,
 				A812A07625A3205E0039029B /* ReservationResponse.swift */,
+				A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */,
+				A8CBF49525A5BFF5003A084F /* DoctorRatings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1472,6 +1487,7 @@
 				A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */,
 				A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */,
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
+				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
 				A8708396259633FA002AC96C /* SearchByLabNamePresenter.swift in Sources */,
@@ -1481,7 +1497,9 @@
 				A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */,
 				A851FD7825979B460036790B /* AboutAppInteractor.swift in Sources */,
 				A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */,
+				A8CBF49625A5BFF5003A084F /* DoctorRatings.swift in Sources */,
 				A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */,
+				A8D1A22E25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift in Sources */,
 				A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,
 				A8A7DD4125951960007FBFE0 /* Area.swift in Sources */,
@@ -1511,6 +1529,7 @@
 				A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */,
 				A851FD7A25979CB00036790B /* AboutApp.swift in Sources */,
 				A806CB03259E1E5800D1764C /* LabDate.swift in Sources */,
+				A8D1A23025A3C6AA000DD0AD /* DoctorDetails.swift in Sources */,
 				A812A08C25A399DC0039029B /* DoctorDetailsViewController.swift in Sources */,
 				A80DD8CD25A120AE00FD2CF1 /* LabServices.swift in Sources */,
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
@@ -1539,6 +1558,7 @@
 				A8A7DD4325951A49007FBFE0 /* RegionPresenter.swift in Sources */,
 				A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */,
 				A8C9E3E8259FC5C50085B806 /* LabRatings.swift in Sources */,
+				A8CBF49825A5C56F003A084F /* DoctorDetailsProtocol.swift in Sources */,
 				A8A7DD4525951A98007FBFE0 /* AreasProtocol.swift in Sources */,
 				A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */,
 				A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */,

@@ -23,8 +23,9 @@ class SearchedResults:Codable {
     var waitingTime:String?
     var numberOfVisitor:String?
     var rating:String?
+    var id: String?
     init?(withJSON data: JSON) {
-        
+        self.id = data["id"].stringValue
         self.photo = data["featured"].stringValue
         self.firstNameAr = data["firstName_ar"].stringValue
         self.lastNameAr = data["lastName_ar"].stringValue

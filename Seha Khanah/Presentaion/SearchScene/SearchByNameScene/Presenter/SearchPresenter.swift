@@ -42,7 +42,9 @@ class SearchPresenter {
     public func searchResultCount() -> Int {
         return searchedResults.count
     }
-    
+    func getDoctorId(index:Int) -> String {
+        return searchedResults[index].id!
+    }
     
     func configure(cell: SearchedResultsTableViewCellView, for index: Int) {
         print(searchedResults.count)

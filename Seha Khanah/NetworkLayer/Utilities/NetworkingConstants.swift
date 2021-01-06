@@ -39,8 +39,9 @@ class NetworkingConstants {
         static let searchByLabNameParameter = "name"
 
         static let showLabDetails = "laboratory/show/"
+        static let showDoctorDetails = "doctor/show/"
 
-    
+
         static let reservation = "reservation"
         static let reservationNameParameter = "name"
         static let reservationEmailParameter = "email"
