@@ -32,6 +32,7 @@ PODS:
   - MBRadioCheckboxButton (2.0)
   - moa (12.0.0)
   - MOLH (1.4.1)
+  - ReadMoreTextView (3.0.1)
   - SDWebImage (5.9.3):
     - SDWebImage/Core (= 5.9.3)
   - SDWebImage/Core (5.9.3)
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - MBRadioCheckboxButton
   - moa (~> 12.0)
   - MOLH
+  - ReadMoreTextView
   - SDWebImage (~> 5.0)
   - SwiftyJSON (~> 4.0)
   - Swinject
@@ -70,6 +72,7 @@ SPEC REPOS:
     - MBRadioCheckboxButton
     - moa
     - MOLH
+    - ReadMoreTextView
     - SDWebImage
     - SwiftyJSON
     - Swinject
@@ -88,10 +91,11 @@ SPEC CHECKSUMS:
   MBRadioCheckboxButton: 6e2a2cdc441e292e45b64c4e65eb8fc1fc05eef2
   moa: e2346f12de6c65bbca4d103950d45db9e46785ef
   MOLH: 9ea6c0390f5963b2df9827ae64035fbc8598b092
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: ed5bd47c14024ec79d482b614aa258ebc585f006
+PODFILE CHECKSUM: 0c148b2843bd6c7e0467249f8f9a40f06cb7ba11
 
 COCOAPODS: 1.9.3

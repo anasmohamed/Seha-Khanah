@@ -8,13 +8,20 @@
 
 import UIKit
 import Cosmos
+import ReadMoreTextView
 class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
   
+    @IBOutlet weak var aboutDoctorTextView: ReadMoreTextView!
+    
+    @IBOutlet weak var aboutDoctorLbl: UILabel!
     @IBOutlet weak var doctorView: UIView!
     
+    @IBOutlet weak var aboutDoctorView: UIView!
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var numberOfRaitings: UILabel!
     
+    @IBOutlet weak var moreAndLessLbl: UILabel!
+    @IBOutlet weak var aboutDoctorViewHeight: NSLayoutConstraint!
     @IBOutlet weak var totalRating: CosmosView!
     @IBOutlet weak var watingTimeLbl: UILabel!
     @IBOutlet weak var costLbl: UILabel!
@@ -27,7 +34,11 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         super.viewDidLoad()
         presenter = DoctorDetailsPresenter(view:self)
         presenter.showDoctorDetails(id: doctorId!)
-
+        aboutDoctorLbl.numberOfLines = 1
+        let moreOrLessTap = UITapGestureRecognizer(target: self, action:#selector(moreOrLessLblDidTapped(_:)))
+             
+             moreAndLessLbl.addGestureRecognizer(moreOrLessTap)
+      
         // Do any additional setup after loading the view.
     }
     
@@ -48,7 +59,10 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         numberOfRaitings.text = "Overall Rating From " + doctorDetails.vistorNumber! + "Visitor"
         doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
         profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
+        aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
+
         cornerRadiusAndShodow(view: doctorView)
+        cornerRadiusAndShodow(view: aboutDoctorView)
       }
       func cornerRadiusAndShodow(view:UIView)  {
              view.layer.shadowColor = UIColor.gray.cgColor
@@ -67,14 +81,10 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
       func showNoDataFoundImage() {
           
       }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   @objc func moreOrLessLblDidTapped(_ sender: UITapGestureRecognizer? = nil)
+   {
+        aboutDoctorViewHeight.constant = 200
+        
     }
-    */
-
+    
 }
