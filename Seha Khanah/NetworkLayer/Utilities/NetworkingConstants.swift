@@ -11,48 +11,49 @@ import Foundation
 
 
 class NetworkingConstants {
+    static let baseURL = "https://laravelapi.sehakhanah.com/"
+    // Request Headers
+    static let contentType = "Content-Type"
+    static let accept = "Accept"
+    static let contentTypeJSON = "application/json"
     
-    static let baseURL = "https://laravelapi.sehakhanah.com/api/"
-        
-        // Request Headers
-        static let contentType = "Content-Type"
-        static let accept = "Accept"
-        static let contentTypeJSON = "application/json"
-  
-        static let getOffersCategories = "offer/categories"
-        static let getMostOrderedOffers = "offer/mostrequest"
-        static let getAllSpecialties = "specialties"
-        static let getAllPharmacyOffers = "pharmacy/offers"
-        static let getAreas = "areas"
-        static let getAllLabs = "laboratories"
-
-        static let search = "search"
-        static let searchByNameParameter = "name"
-        static let searchBySpecialtyParameter = "specialty"
+    static let getOffersCategories = "api/offer/categories"
+    static let getMostOrderedOffers = "api/offer/mostrequest"
+    static let getAllSpecialties = "api/specialties"
+    static let getAllPharmacyOffers = "api/pharmacy/offers"
+    static let getAreas = "api/areas"
+    static let getAllLabs = "api/laboratories"
     
-        static let searchForLabByAreaId = "laboratory/search"
-        static let searchForLabByAreaIdParameter = "area_id"
-
-        static let aboutUs = "admin/aboutUs"
-
-        static let searchByLabName = "laboratory/search"
-        static let searchByLabNameParameter = "name"
-
-        static let showLabDetails = "laboratory/show/"
-        static let showDoctorDetails = "doctor/show/"
-        static let showDoctorDates = "dates/"
-
-
-        static let reservation = "reservation"
-        static let reservationNameParameter = "name"
-        static let reservationEmailParameter = "email"
-        static let reservationPhonenumberParameter = "phonenumber"
-        static let reservationBookingDateParameter = "booking_date"
-        static let reservationDoctorIdParameter = "doctor_id"
-        static let reservationCheckboxParameter = "checkbox"
-
-
+    static let search = "sapi/earch"
+    static let searchByNameParameter = "name"
+    static let searchBySpecialtyParameter = "specialty"
     
-
-   
+    static let searchForLabByAreaId = "api/laboratory/search"
+    static let searchForLabByAreaIdParameter = "area_id"
+    
+    static let aboutUs = "api/admin/aboutUs"
+    
+    static let searchByLabName = "api/laboratory/search"
+    static let searchByLabNameParameter = "name"
+    
+    static let showLabDetails = "api/laboratory/show/"
+    static let showDoctorDetails = "api/doctor/show/"
+    static let showDoctorDates = "api/dates/"
+    
+    
+    static let doctorReservation = "api/reservation"
+    static let labReservation = "laboratory/reservation"
+    
+    static let reservationNameParameter = "name"
+    static let reservationEmailParameter = "email"
+    static let reservationPhonenumberParameter = "phonenumber"
+    static let reservationBookingDateParameter = "booking_date"
+    static let reservationDoctorIdParameter = "doctor_id"
+    static let reservationLaboratoryIdParameter = "laboratory_id"
+    static let reservationCheckboxParameter = "checkbox"
+    
+    
+    
+    
+    
 }

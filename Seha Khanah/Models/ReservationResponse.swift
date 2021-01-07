@@ -16,6 +16,7 @@ class ReservationResponse: Codable {
     var bookingDate:String?
     var doctorId:String?
     var statusId : String?
+    var labId:String?
     var id : String?
     init() {
         
@@ -28,6 +29,7 @@ class ReservationResponse: Codable {
         self.bookingDate = data["booking_date"].stringValue
         self.doctorId = data["doctor_id"].stringValue
         self.statusId = data["status_id"].stringValue
+        self.labId  = data["laboratory_id"].stringValue
         self.id = data["id"].stringValue
         
     }

@@ -13,13 +13,16 @@ private let reuseIdentifier = "TimeCollectionViewCell"
 class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
     var times : [Time]?
     var labDate : LabDate?
-
+    var isDoctor: Bool?
+    var doctorCost: String?
     var labDetails : LabDetails?
     var labName : String?
     var labPhoto :String?
     var labService: LabServices?
     var labId: String?
     var labAddress: String?
+    var profissionalTitle: String?
+
     @IBOutlet weak var dayDatesCollectionView: UICollectionView!
     @IBOutlet weak var dayDateView: UIView!
     override func viewDidLoad() {
@@ -73,6 +76,9 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         bookViewController.labId = labId
         bookViewController.dayName = labDate?.dayEn
         bookViewController.labAddress = labAddress
+        bookViewController.isDoctor = isDoctor!
+        bookViewController.doctorCost = doctorCost
+        bookViewController.profissionalTitle = profissionalTitle
         self.navigationController!.pushViewController(bookViewController, animated: true)
         
     }

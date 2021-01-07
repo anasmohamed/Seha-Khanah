@@ -27,7 +27,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case showDoctorDetails(id:String)
     case showDoctorDates(id:String)
     
-    case reservation(name: String,email : String,phonenumber : String,booking_date: String,doctor_id : String,checkbox : String)
+    case doctorReservation(name: String,email : String,phonenumber : String,bookingDate: String,doctorId : String,checkbox : String)
+    case labReservation(name: String,email : String,phonenumber : String,bookingDate: String,labId : String,checkbox : String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -54,8 +55,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getAllLabs
         case .showLabDetails:
             return NetworkingConstants.showLabDetails
-        case .reservation:
-            return NetworkingConstants.reservation
+        case .doctorReservation:
+            return NetworkingConstants.doctorReservation
+        case .labReservation:
+            return NetworkingConstants.labReservation
         case .showDoctorDetails:
             return NetworkingConstants.showDoctorDetails
         case .showDoctorDates:
@@ -82,7 +85,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showDoctorDetails,
              .showDoctorDates:
             return .get
-        case .reservation:
+        case .doctorReservation,.labReservation:
             return .post
             
         }
@@ -136,14 +139,20 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.showDoctorDetails] = id
         case let .showDoctorDates(id):
             params[NetworkingConstants.showDoctorDates] = id
-        case let .reservation(name, email, phonenumber, booking_date, doctor_id, checkbox):
+        case let .doctorReservation(name, email, phonenumber, bookingDate, doctorId, checkbox):
             params[NetworkingConstants.reservationNameParameter] = name
             params[NetworkingConstants.reservationEmailParameter] = email
             params[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
-            params[NetworkingConstants.reservationBookingDateParameter] = booking_date
-            params[NetworkingConstants.reservationDoctorIdParameter] = doctor_id
+            params[NetworkingConstants.reservationBookingDateParameter] = bookingDate
+            params[NetworkingConstants.reservationDoctorIdParameter] = doctorId
             params[NetworkingConstants.reservationCheckboxParameter] = checkbox
-            
+        case let .labReservation(name, email, phonenumber, bookingDate, labId, checkbox):
+            params[NetworkingConstants.reservationNameParameter] = name
+            params[NetworkingConstants.reservationEmailParameter] = email
+            params[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
+            params[NetworkingConstants.reservationBookingDateParameter] = bookingDate
+            params[NetworkingConstants.reservationDoctorIdParameter] = labId
+            params[NetworkingConstants.reservationCheckboxParameter] = checkbox
         default:
             print("Empty Paramter")
             
@@ -170,7 +179,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .aboutUs,
              .searchForLabByAreaId,
              .getAllLabs,
-             .reservation:
+             .doctorReservation,
+             .labReservation:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

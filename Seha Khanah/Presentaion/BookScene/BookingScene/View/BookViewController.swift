@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import MBRadioCheckboxButton
 class BookViewController: UIViewController,BookingProtocol {
     
+    @IBOutlet weak var costView: UIView!
     
+    @IBOutlet weak var costLbl: UILabel!
     var labDetails : LabDetails?
     @IBOutlet weak var labImageView: UIImageView!
     @IBOutlet weak var labNameAndSpeciltyVIew: UIView!
@@ -26,6 +28,7 @@ class BookViewController: UIViewController,BookingProtocol {
     @IBOutlet weak var dayLbl: UILabel!
     @IBOutlet weak var fullNameTextField: UITextField!
     
+    @IBOutlet weak var bookingForAnotherPatientBtn: CheckboxButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
     var date : String?
@@ -37,13 +40,18 @@ class BookViewController: UIViewController,BookingProtocol {
     var dayName : String?
     var preseter : BookingPresenter?
     var labAddress : String?
+    var isDoctor = false
+    var doctorCost : String?
+    var profissionalTitle: String?
+    var doctorId : String?
+    var bookingForAnotherPatientCheck = "0"
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
         cornerRadiusAndShodow(view: timeView)
         cornerRadiusAndShodow(view: labNameAndSpeciltyVIew)
         cornerRadiusAndShodow(view: presonDetailsView)
-        
+        cornerRadiusAndShodow(view: costView)
         dayLbl.text = dayName
         labNameLbl.text = labName
         labServiceLbl.text = labService?.nameEn
@@ -51,6 +59,12 @@ class BookViewController: UIViewController,BookingProtocol {
         timeLbl.text = bookDate
         lacationNameLbl.text = labAddress
         preseter = BookingPresenter(view: self)
+        if isDoctor{
+            costView.isHidden = false
+            costLbl.text = doctorCost
+            labServiceLbl.text = profissionalTitle
+            bookingForAnotherPatientBtn.isEnabled = true
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -77,7 +91,12 @@ class BookViewController: UIViewController,BookingProtocol {
         let storyboard = UIStoryboard.init(name: "SuccessfulBooking", bundle:nil )
         let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
         successfulBookingViewController.labName = labName
+        if isDoctor{
         successfulBookingViewController.labService = labService
+        }else{
+            successfulBookingViewController.profissionalTitle = profissionalTitle
+
+        }
         successfulBookingViewController.labId = labId
         successfulBookingViewController.dayText = dayName
         successfulBookingViewController.labAddress = labAddress
@@ -108,8 +127,23 @@ class BookViewController: UIViewController,BookingProtocol {
             timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
         }
         print (date! + " " + timeWithoutAMOrPM!)
-        
+        if isDoctor{
+            preseter?.bookDoctor(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
+        }else{
         preseter?.bookLab(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
+        }}
+    
+}
+extension BookViewController: CheckboxButtonDelegate {
+    
+    func chechboxButtonDidSelect(_ button: CheckboxButton) {
+        bookingForAnotherPatientCheck = "1"
     }
+    
+    func chechboxButtonDidDeselect(_ button: CheckboxButton) {
+        bookingForAnotherPatientCheck = "0"
+
+    }
+    
     
 }

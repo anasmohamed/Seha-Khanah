@@ -36,6 +36,23 @@ class BookingPresenter {
         }
     }
     
+    func bookDoctor(name : String,email:String,phoneNumber:String,bookingDate : String,doctorId:String,checkbox:String) {
+        
+        view?.showIndicator()
+        bookingInteractor.labBooking(name: name, email: email, phoneNumber: phoneNumber, bookingDate: bookingDate, labId: doctorId, checkbox: checkbox){ (result,error)  in
+            if let error = error {
+                print("errrror\(error)")
+                self.view?.showError(error: error.localizedDescription)
+            } else {
+                if result != nil{
+                    self.reservationResponse = result!
+                    self.view?.bookingSuccess()
+                }
+                
+            }
+            
+        }
+    }
 //
 //    func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
 //        print(mostOrderedOffers.count)

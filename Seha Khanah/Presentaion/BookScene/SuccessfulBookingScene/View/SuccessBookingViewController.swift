@@ -23,10 +23,14 @@ class SuccessBookingViewController: UIViewController {
     var locationString : String?
     var labId: String?
     var labAddress: String?
+    var profissionalTitle: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         dayLbl.text = dayText
         labServiceLbl.text = labService?.nameEn
+        if labServiceLbl.text!.isEmpty{
+            labServiceLbl.text = profissionalTitle
+        }
         labNameLbl.text = labName
         locationLbl.text = labAddress
         // Do any additional setup after loading the view.

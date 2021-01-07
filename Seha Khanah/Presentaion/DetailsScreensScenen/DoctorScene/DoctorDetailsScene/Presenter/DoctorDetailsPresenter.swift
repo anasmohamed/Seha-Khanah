@@ -65,10 +65,23 @@ class DoctorDetailsPresenter {
     func getRatingsCount() -> Int {
         return (doctorDetails?.ratingsList.count)!
     }
+    func getDoctorCost() -> String {
+        return (doctorDetails?.price)!
+    }
+    func getDoctorAddress() -> String {
+        return (doctorDetails?.addressEn)!
+    }
     
-    
-    
-    
+    func getDoctorPhoto() -> String {
+        return (doctorDetails?.photo)!
+    }
+    func  getDoctorDate(index : Int) -> LabDate {
+        return doctorDates![index]
+    }
+    func getTimes(index:Int) -> [Time] {
+        return doctorDates![index].timesList
+        
+    }
     func configure(cell: BookingDatesCollectionViewCellProtocol, for index: Int) {
         let date = doctorDates![index]
         cell.configure(date:date)

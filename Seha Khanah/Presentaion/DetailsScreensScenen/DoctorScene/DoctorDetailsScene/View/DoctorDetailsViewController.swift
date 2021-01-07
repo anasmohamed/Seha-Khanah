@@ -56,6 +56,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         presenter.showDoctorDates(id: doctorId!)
     }
     func showDoctorDates() {
+        
         datesCollectionView.reloadData()
     }
     func showIndicator() {
@@ -76,7 +77,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
         profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
         aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
-        
+        cityNameLbl.text = doctorDetails.addressEn
         cornerRadiusAndShodow(view: doctorView)
         cornerRadiusAndShodow(view: aboutDoctorView)
         cornerRadiusAndShodow(view: ratingView)
