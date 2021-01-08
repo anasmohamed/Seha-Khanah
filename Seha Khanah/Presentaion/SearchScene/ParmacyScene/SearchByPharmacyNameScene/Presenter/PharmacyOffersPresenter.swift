@@ -42,7 +42,9 @@ class PharmacyOffersPresenter {
     public func pharmacyOffersCount() -> Int {
         return pharmacyOffers.count
     }
-    
+    func getPharmacyId(index:Int) -> String {
+        return pharmacyOffers[index].id!
+    }
     
     func configure(cell: PharmacyOfferTableViewCellViewProtocol, for index: Int) {
         print(pharmacyOffers.count)

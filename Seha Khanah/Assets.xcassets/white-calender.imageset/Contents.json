@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "228-2285034_calendar-icon-white-calendar-icon-white-transparent-hd.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

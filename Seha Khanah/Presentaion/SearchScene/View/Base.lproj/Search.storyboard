@@ -390,6 +390,7 @@
                         <segue destination="T31-ZY-ipD" kind="relationship" relationship="viewControllers" id="n99-ho-iac"/>
                         <segue destination="evy-qG-dir" kind="relationship" relationship="viewControllers" id="mvV-lR-rXW"/>
                         <segue destination="rcq-NQ-fKm" kind="relationship" relationship="viewControllers" id="X4W-58-Sqo"/>
+                        <segue destination="sZq-tW-s1m" kind="relationship" relationship="viewControllers" id="0ZJ-tP-wNV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyc-TL-BlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1145,9 +1146,44 @@
             </objects>
             <point key="canvasLocation" x="551" y="858"/>
         </scene>
+        <!--Appointments-->
+        <scene sceneID="lB5-ID-ehU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sZq-tW-s1m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar-1" id="bAL-Ya-unj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0B5-Ka-Smi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6UJ-Ia-iM4" kind="relationship" relationship="rootViewController" id="KAg-3Z-aPm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbj-T2-ZCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="1552"/>
+        </scene>
+        <!--AppointmentsMainViewController-->
+        <scene sceneID="wWA-z7-1Ir">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Appointments" referencedIdentifier="AppointmentsMainViewController" id="6UJ-Ia-iM4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XbR-Uy-SO2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVy-pH-ZYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="1552"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="750" height="1330"/>
+        <image name="calendar-1" width="29" height="30"/>
         <image name="doctor_ic" width="72" height="74"/>
         <image name="email-1" width="30" height="30"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>

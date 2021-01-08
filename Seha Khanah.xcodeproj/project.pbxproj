@@ -47,6 +47,13 @@
 		A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */; };
 		A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */; };
 		A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EBC258A394C00186693 /* NetworkingConstants.swift */; };
+		A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */; };
+		A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */; };
+		A843BBB025A87BE9006231F8 /* MyAppointmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A843BBAE25A87BE9006231F8 /* MyAppointmentsTableViewCell.xib */; };
+		A843BBB325A87D7D006231F8 /* MyOffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBB225A87D7D006231F8 /* MyOffersTableViewController.swift */; };
+		A843BBB525A87DD2006231F8 /* AppointmentsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBB425A87DD2006231F8 /* AppointmentsMainViewController.swift */; };
+		A843BBB725A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBB625A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift */; };
+		A843BBBB25A8A6F9006231F8 /* MyAppointmentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBBA25A8A6F9006231F8 /* MyAppointmentsInteractor.swift */; };
 		A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B462593F2BF005EB836 /* SearchForPharmaciesViewController.swift */; };
 		A8452B492593F806005EB836 /* SearchByPharmacyNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B482593F806005EB836 /* SearchByPharmacyNameViewController.swift */; };
 		A8452B4F2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8452B4E2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift */; };
@@ -128,9 +135,17 @@
 		A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86AF25875B2B00604E64 /* Assets.xcassets */; };
 		A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */; };
 		A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86BF25876E3E00604E64 /* Signup.storyboard */; };
+		A8B8E4CC25A8BF70002F8149 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E4CB25A8BF70002F8149 /* User.swift */; };
 		A8BFC9412594B33A002C90ED /* PharmacyOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */; };
 		A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */; };
 		A8BFC9452594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */; };
+		A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C8164525A72F9200690AE8 /* PharmacyDetails.storyboard */; };
+		A8C8164825A733DB00690AE8 /* PharamcyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */; };
+		A8C8164C25A73B0300690AE8 /* PharamcyDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164B25A73B0300690AE8 /* PharamcyDetailsInteractor.swift */; };
+		A8C8164E25A73BD700690AE8 /* PharmacyDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164D25A73BD700690AE8 /* PharmacyDetailsPresenter.swift */; };
+		A8C8165025A7403200690AE8 /* PharmacyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164F25A7403200690AE8 /* PharmacyDetails.swift */; };
+		A8C8165225A753C600690AE8 /* PharmacyDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8165125A753C600690AE8 /* PharmacyDetailsProtocol.swift */; };
+		A8C8165625A7CE1E00690AE8 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C8165525A7CE1E00690AE8 /* Appointments.storyboard */; };
 		A8C9E3E3259FC42C0085B806 /* RatingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9E3E1259FC42C0085B806 /* RatingCollectionViewCell.swift */; };
 		A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C9E3E2259FC42C0085B806 /* RatingCollectionViewCell.xib */; };
 		A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */; };
@@ -193,6 +208,13 @@
 		A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A83D6EBC258A394C00186693 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppintmentsTableViewController.swift; sourceTree = "<group>"; };
+		A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTableViewCell.swift; sourceTree = "<group>"; };
+		A843BBAE25A87BE9006231F8 /* MyAppointmentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
+		A843BBB225A87D7D006231F8 /* MyOffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewController.swift; sourceTree = "<group>"; };
+		A843BBB425A87DD2006231F8 /* AppointmentsMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsMainViewController.swift; sourceTree = "<group>"; };
+		A843BBB625A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTebleViewCellPrototol.swift; sourceTree = "<group>"; };
+		A843BBBA25A8A6F9006231F8 /* MyAppointmentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsInteractor.swift; sourceTree = "<group>"; };
 		A8452B462593F2BF005EB836 /* SearchForPharmaciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPharmaciesViewController.swift; sourceTree = "<group>"; };
 		A8452B482593F806005EB836 /* SearchByPharmacyNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByPharmacyNameViewController.swift; sourceTree = "<group>"; };
 		A8452B4E2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByPharmacyRegionViewController.swift; sourceTree = "<group>"; };
@@ -289,9 +311,17 @@
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC86B425875B2B00604E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AC86BF25876E3E00604E64 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		A8B8E4CB25A8BF70002F8149 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersPresenter.swift; sourceTree = "<group>"; };
 		A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersViewProtocol.swift; sourceTree = "<group>"; };
 		A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOfferTableViewCellViewProtocol.swift; sourceTree = "<group>"; };
+		A8C8164525A72F9200690AE8 /* PharmacyDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PharmacyDetails.storyboard; sourceTree = "<group>"; };
+		A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharamcyDetailsViewController.swift; sourceTree = "<group>"; };
+		A8C8164B25A73B0300690AE8 /* PharamcyDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharamcyDetailsInteractor.swift; sourceTree = "<group>"; };
+		A8C8164D25A73BD700690AE8 /* PharmacyDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailsPresenter.swift; sourceTree = "<group>"; };
+		A8C8164F25A7403200690AE8 /* PharmacyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetails.swift; sourceTree = "<group>"; };
+		A8C8165125A753C600690AE8 /* PharmacyDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailsProtocol.swift; sourceTree = "<group>"; };
+		A8C8165525A7CE1E00690AE8 /* Appointments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Appointments.storyboard; sourceTree = "<group>"; };
 		A8C9E3E1259FC42C0085B806 /* RatingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A8C9E3E2259FC42C0085B806 /* RatingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCollectionViewCellPrortocol.swift; sourceTree = "<group>"; };
@@ -598,6 +628,80 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		A843BBA725A87B31006231F8 /* MyAppointmentsScene */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBB925A8A6D8006231F8 /* Presenter */,
+				A843BBB825A8A6B8006231F8 /* Interactor */,
+				A843BBA925A87B5E006231F8 /* View */,
+			);
+			path = MyAppointmentsScene;
+			sourceTree = "<group>";
+		};
+		A843BBA825A87B49006231F8 /* MyOffersScene */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBB125A87D5C006231F8 /* View */,
+			);
+			path = MyOffersScene;
+			sourceTree = "<group>";
+		};
+		A843BBA925A87B5E006231F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBAC25A87BAD006231F8 /* MyAppointmentsTableViewCell */,
+				A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A843BBAC25A87BAD006231F8 /* MyAppointmentsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */,
+				A843BBAE25A87BE9006231F8 /* MyAppointmentsTableViewCell.xib */,
+				A843BBB625A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift */,
+			);
+			path = MyAppointmentsTableViewCell;
+			sourceTree = "<group>";
+		};
+		A843BBB125A87D5C006231F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBB225A87D7D006231F8 /* MyOffersTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A843BBB825A8A6B8006231F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBBA25A8A6F9006231F8 /* MyAppointmentsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A843BBB925A8A6D8006231F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A843BBBE25A8AECC006231F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A843BBBF25A8AEDC006231F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A8452B3D2593ECF9005EB836 /* ParmacyScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,13 +987,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A869A563259DFA510059C3C2 /* DetailsScreensScenen */ = {
+		A869A563259DFA510059C3C2 /* DetailsScreensScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8C8164325A728B900690AE8 /* PharmacyDetailsScene */,
 				A812A08425A399060039029B /* DoctorScene */,
 				A812A08325A398D10039029B /* LabScene */,
 			);
-			path = DetailsScreensScenen;
+			path = DetailsScreensScene;
 			sourceTree = "<group>";
 		};
 		A869A564259DFA6D0059C3C2 /* LabsDetailsScene */ = {
@@ -1056,6 +1161,8 @@
 				A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */,
 				A8CBF49525A5BFF5003A084F /* DoctorRatings.swift */,
 				A869D67925A660FF001D8886 /* DoctorDates.swift */,
+				A8C8164F25A7403200690AE8 /* PharmacyDetails.swift */,
+				A8B8E4CB25A8BF70002F8149 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1211,10 +1318,12 @@
 		A8AC86BB25876D2C00604E64 /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				A8C8165325A7CDF600690AE8 /* AppointmentsScene */,
 				A87533DC25A263E700ECF699 /* BookScene */,
-				A869A563259DFA510059C3C2 /* DetailsScreensScenen */,
+				A869A563259DFA510059C3C2 /* DetailsScreensScene */,
 				A860322B2596A17F003A7DA5 /* MoreScene */,
 				A83D6EAA258A206300186693 /* OffersScene */,
+				A8AC86BC25876D4F00604E64 /* AuthenticationScene */,
 				A8DBD8302588EE59001C203E /* SearchScene */,
 			);
 			path = Presentaion;
@@ -1223,7 +1332,7 @@
 		A8AC86BC25876D4F00604E64 /* AuthenticationScene */ = {
 			isa = PBXGroup;
 			children = (
-				A8AC86BE25876DB300604E64 /* Signup */,
+				A8AC86BE25876DB300604E64 /* SignupScene */,
 				A8AC86BD25876DA800604E64 /* Login */,
 			);
 			path = AuthenticationScene;
@@ -1232,17 +1341,19 @@
 		A8AC86BD25876DA800604E64 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A843BBBF25A8AEDC006231F8 /* Interactor */,
+				A843BBBE25A8AECC006231F8 /* Presenter */,
 				A82F34122587E429000A3591 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		A8AC86BE25876DB300604E64 /* Signup */ = {
+		A8AC86BE25876DB300604E64 /* SignupScene */ = {
 			isa = PBXGroup;
 			children = (
 				A82F34112587DC96000A3591 /* View */,
 			);
-			path = Signup;
+			path = SignupScene;
 			sourceTree = "<group>";
 		};
 		A8AC86C1258790CE00604E64 /* Common */ = {
@@ -1289,6 +1400,61 @@
 			path = interactor;
 			sourceTree = "<group>";
 		};
+		A8C8164325A728B900690AE8 /* PharmacyDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8164A25A7354200690AE8 /* Presenter */,
+				A8C8164925A7353800690AE8 /* Interactor */,
+				A8C8164425A72F7300690AE8 /* View */,
+			);
+			path = PharmacyDetailsScene;
+			sourceTree = "<group>";
+		};
+		A8C8164425A72F7300690AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8164525A72F9200690AE8 /* PharmacyDetails.storyboard */,
+				A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */,
+				A8C8165125A753C600690AE8 /* PharmacyDetailsProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8C8164925A7353800690AE8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8164B25A73B0300690AE8 /* PharamcyDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A8C8164A25A7354200690AE8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8164D25A73BD700690AE8 /* PharmacyDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8C8165325A7CDF600690AE8 /* AppointmentsScene */ = {
+			isa = PBXGroup;
+			children = (
+				A843BBA825A87B49006231F8 /* MyOffersScene */,
+				A843BBA725A87B31006231F8 /* MyAppointmentsScene */,
+				A8C8165425A7CE0500690AE8 /* View */,
+			);
+			path = AppointmentsScene;
+			sourceTree = "<group>";
+		};
+		A8C8165425A7CE0500690AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8165525A7CE1E00690AE8 /* Appointments.storyboard */,
+				A843BBB425A87DD2006231F8 /* AppointmentsMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A8DBD8302588EE59001C203E /* SearchScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -1307,7 +1473,6 @@
 				A8DBD8322588EF21001C203E /* MainViewController.swift */,
 				A8674A31259776180099E7CE /* Search.storyboard */,
 				A8DBD836258908B5001C203E /* SearchViewController.swift */,
-				A8AC86BC25876D4F00604E64 /* AuthenticationScene */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1405,7 +1570,9 @@
 				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
+				A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */,
 				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
+				A8C8165625A7CE1E00690AE8 /* Appointments.storyboard in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
@@ -1420,6 +1587,7 @@
 				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
 				A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */,
 				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
+				A843BBB025A87BE9006231F8 /* MyAppointmentsTableViewCell.xib in Resources */,
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
 				A806CAFF259E189900D1764C /* BookingDatesCollectionViewCell.xib in Resources */,
@@ -1477,6 +1645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */,
+				A843BBB325A87D7D006231F8 /* MyOffersTableViewController.swift in Sources */,
 				A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */,
 				A8A98C012598EB53000146FB /* ShowAllLabsVIewController.swift in Sources */,
 				A8452B532593F935005EB836 /* ShowAllPharmaciesViewController.swift in Sources */,
@@ -1487,6 +1656,7 @@
 				A806CB0D259E2D8600D1764C /* LabDetailsProtocol.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A8A7DD3D25950DDC007FBFE0 /* DropShadowView.swift in Sources */,
+				A8C8165225A753C600690AE8 /* PharmacyDetailsProtocol.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
 				A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */,
 				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
@@ -1494,8 +1664,10 @@
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
 				A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */,
 				A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */,
+				A843BBBB25A8A6F9006231F8 /* MyAppointmentsInteractor.swift in Sources */,
 				A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */,
 				A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */,
+				A843BBB725A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift in Sources */,
 				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */,
 				A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */,
@@ -1504,6 +1676,8 @@
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
+				A8B8E4CC25A8BF70002F8149 /* User.swift in Sources */,
+				A8C8164E25A73BD700690AE8 /* PharmacyDetailsPresenter.swift in Sources */,
 				A8A9B36E258CE3C6002DA9A0 /* OffersCategoriesViewProtocol.swift in Sources */,
 				A8708396259633FA002AC96C /* SearchByLabNamePresenter.swift in Sources */,
 				A8452B492593F806005EB836 /* SearchByPharmacyNameViewController.swift in Sources */,
@@ -1528,12 +1702,14 @@
 				A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */,
 				A8A9B36A258CE1B3002DA9A0 /* OffersCategoriesPresenter.swift in Sources */,
 				A806CB09259E2AA700D1764C /* LabDetailsPresenter.swift in Sources */,
+				A8C8164825A733DB00690AE8 /* PharamcyDetailsViewController.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
 				A8567731259247A30086CD78 /* SearchBySpecialtyInteractor.swift in Sources */,
 				A8965F452591145300C504BA /* CategoryTableViewController.swift in Sources */,
 				A870839125962F19002AC96C /* SearchByLabNameTableViewCellProtocol.swift in Sources */,
 				A8A8529B25972C9500E99A67 /* SettingsTableViewController.swift in Sources */,
 				A812A07925A323D70039029B /* BookingPresenter.swift in Sources */,
+				A8C8165025A7403200690AE8 /* PharmacyDetails.swift in Sources */,
 				A856772525921B640086CD78 /* SearchResultTableViewCell.swift in Sources */,
 				A80DD8D325A120AE00FD2CF1 /* LabServicesTableViewController.swift in Sources */,
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
@@ -1550,12 +1726,15 @@
 				A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */,
 				A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */,
 				A80DD8D925A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift in Sources */,
+				A843BBB525A87DD2006231F8 /* AppointmentsMainViewController.swift in Sources */,
 				A80DD8DD25A141C000FD2CF1 /* TimeCollectionViewCell.swift in Sources */,
+				A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */,
 				A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */,
 				A85E32822594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift in Sources */,
 				A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */,
 				A856771C2591F9B80086CD78 /* SearchByNameInteractor.swift in Sources */,
 				A85E32852594A40500842D0F /* PharmacyOffer.swift in Sources */,
+				A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */,
 				A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
@@ -1577,6 +1756,7 @@
 				A8A7DD4525951A98007FBFE0 /* AreasProtocol.swift in Sources */,
 				A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */,
 				A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */,
+				A8C8164C25A73B0300690AE8 /* PharamcyDetailsInteractor.swift in Sources */,
 				A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */,
 				A88C23E425936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift in Sources */,
 				A806CB05259E292D00D1764C /* LabDetails.swift in Sources */,

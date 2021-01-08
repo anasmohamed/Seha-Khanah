@@ -1,14 +1,14 @@
 //
-//  PharmacyOffer.swift
+//  PharmacyDetails.swift
 //  Seha Khanah
 //
-//  Created by Anas on 12/24/20.
-//  Copyright © 2020 Anas. All rights reserved.
+//  Created by Anas on 1/7/21.
+//  Copyright © 2021 Anas. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
-class PharmacyOffer: Codable {
+class PharmacyDetails: Codable {
     var photo: String?
     var titleEn: String?
     var titleAr: String?
@@ -22,9 +22,13 @@ class PharmacyOffer: Codable {
     var pharamcyNameEn: String?
     var aboutAr: String?
     var aboutEn: String?
-    var id:String?
+    var addressAr:String?
+    var addressEn:String?
+    
+    init(){
+        
+    }
     init?(withJSON data: JSON) {
-        self.id = data["id"].stringValue
         self.photo = data["featured"].stringValue
         self.titleEn = data["title_en"].stringValue
         self.titleAr = data["title_ar"].stringValue
@@ -38,7 +42,9 @@ class PharmacyOffer: Codable {
         self.pharamcyNameEn = data["pharmacy"]["pharmacy_name_en"].stringValue
         self.aboutAr = data["pharmacy"]["about_en"].stringValue
         self.aboutEn = data["pharmacy"]["about_ar"].stringValue
+        self.addressAr = data["pharmacy"]["address_ar"].stringValue
+        self.addressEn = data["pharmacy"]["address_en"].stringValue
 
-       
+        
     }
 }

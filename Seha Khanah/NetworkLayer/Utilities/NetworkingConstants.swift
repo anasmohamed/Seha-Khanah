@@ -39,8 +39,15 @@ class NetworkingConstants {
     static let showLabDetails = "api/laboratory/show/"
     static let showDoctorDetails = "api/doctor/show/"
     static let showDoctorDates = "api/dates/"
+    static let showPharmacyDetails = "api/pharmacy/offer/show/"
     
     
+    static let login = "api/login"
+    static let emailParameter = "email"
+    static let passwordParameter = "password"
+
+
+
     static let doctorReservation = "api/reservation"
     static let labReservation = "laboratory/reservation"
     

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Appointments Main View Controller-->
+        <scene sceneID="wxb-4l-h11">
+            <objects>
+                <viewController storyboardIdentifier="AppointmentsMainViewController" id="GkP-TP-wKW" customClass="AppointmentsMainViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ai-qJ-IJt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8w-9K-YxJ">
+                                <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                                <connections>
+                                    <segue destination="vGx-mI-d7h" kind="embed" id="pvF-ln-BHK"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-yK-GFD">
+                                <rect key="frame" x="142" y="58" width="130" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fs1-wv-3Xg"/>
+                                    <constraint firstAttribute="width" constant="130" id="dtP-XA-oRC"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControllDidTappedWithSegment:" destination="GkP-TP-wKW" eventType="valueChanged" id="zky-0M-60p"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcu-Rc-Luu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <segue destination="mtz-oT-UPP" kind="embed" id="krf-Bx-exO"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mcu-Rc-Luu" firstAttribute="top" secondItem="j3a-yK-GFD" secondAttribute="bottom" id="1GQ-pH-Jww"/>
+                            <constraint firstItem="Z1f-2M-LFa" firstAttribute="bottom" secondItem="Mcu-Rc-Luu" secondAttribute="bottom" id="IT0-NK-q3K"/>
+                            <constraint firstItem="j3a-yK-GFD" firstAttribute="top" secondItem="Z1f-2M-LFa" secondAttribute="top" constant="14" id="Lsz-VT-R4P"/>
+                            <constraint firstItem="Mcu-Rc-Luu" firstAttribute="leading" secondItem="Z1f-2M-LFa" secondAttribute="leading" id="RLO-xr-tzZ"/>
+                            <constraint firstItem="Z1f-2M-LFa" firstAttribute="trailing" secondItem="Mcu-Rc-Luu" secondAttribute="trailing" id="YSJ-Gq-eWe"/>
+                            <constraint firstItem="w8w-9K-YxJ" firstAttribute="top" secondItem="j3a-yK-GFD" secondAttribute="bottom" constant="9" id="iLd-7f-2kP"/>
+                            <constraint firstItem="Z1f-2M-LFa" firstAttribute="trailing" secondItem="w8w-9K-YxJ" secondAttribute="trailing" id="nPP-X1-514"/>
+                            <constraint firstItem="Z1f-2M-LFa" firstAttribute="bottom" secondItem="w8w-9K-YxJ" secondAttribute="bottom" id="pVL-zz-9xh"/>
+                            <constraint firstItem="w8w-9K-YxJ" firstAttribute="leading" secondItem="Z1f-2M-LFa" secondAttribute="leading" id="yMj-FE-3u6"/>
+                            <constraint firstItem="j3a-yK-GFD" firstAttribute="centerX" secondItem="Z1f-2M-LFa" secondAttribute="centerX" id="z8i-jL-rar"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z1f-2M-LFa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G0X-lv-v8n">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myAppointmentsView" destination="Mcu-Rc-Luu" id="DRr-6l-6HJ"/>
+                        <outlet property="myOffersView" destination="w8w-9K-YxJ" id="dtj-AW-9Mi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6L-Nx-EQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934.78260869565224" y="-1.3392857142857142"/>
+        </scene>
+        <!--My Offers Table View Controller-->
+        <scene sceneID="S2S-lK-RM7">
+            <objects>
+                <tableViewController id="mtz-oT-UPP" customClass="MyOffersTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MCd-Sk-Kv3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4Oc-4n-q89">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Oc-4n-q89" id="HBo-eV-7mg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.1529411765" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mtz-oT-UPP" id="0kq-rc-NgG"/>
+                            <outlet property="delegate" destination="mtz-oT-UPP" id="Qdn-a2-Nh2"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYO-UD-y1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="575"/>
+        </scene>
+        <!--My Appintments Table View Controller-->
+        <scene sceneID="cmB-cZ-ql8">
+            <objects>
+                <tableViewController id="vGx-mI-d7h" customClass="MyAppintmentsTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0pP-8O-NUL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Tgy-z8-dTO">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tgy-z8-dTO" id="ED2-eQ-7LR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vGx-mI-d7h" id="A34-BZ-3Wx"/>
+                            <outlet property="delegate" destination="vGx-mI-d7h" id="yRt-vn-UB1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CP3-Q5-uLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="645"/>
+        </scene>
+    </scenes>
+</document>
