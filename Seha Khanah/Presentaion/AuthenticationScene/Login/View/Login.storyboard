@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aQ0-GT-jTP">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,21 +13,21 @@
             <objects>
                 <viewController id="PgB-4O-OnJ" customClass="LoginViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogr-ri-yed">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="137-7R-8l0">
-                                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BZZ-jr-1y5">
-                                        <rect key="frame" x="105" y="25" width="110" height="130"/>
+                                        <rect key="frame" x="152" y="25" width="110" height="130"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="RPG-UD-PUi"/>
                                             <constraint firstAttribute="height" constant="130" id="Wwl-wM-Sqn"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-00-0Q0" userLabel="SocialStackView">
-                                        <rect key="frame" x="10" y="175" width="300" height="85"/>
+                                        <rect key="frame" x="57" y="175" width="300" height="85"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KAI-jZ-6yt">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
@@ -73,10 +73,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-2G-iGb" userLabel=":oginStackView">
-                                        <rect key="frame" x="20" y="412" width="280" height="90"/>
+                                        <rect key="frame" x="20" y="412" width="374" height="90"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Or Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-gX-KNf">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="mTG-4d-2K3"/>
                                                 </constraints>
@@ -84,26 +84,26 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-SX-3ZD">
-                                                <rect key="frame" x="0.0" y="50" width="280" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="374" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="578-NQ-LXJ">
-                                        <rect key="frame" x="148.33333333333334" y="285" width="23.666666666666657" height="20.333333333333314"/>
+                                        <rect key="frame" x="195.5" y="285" width="23.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcH-8n-eeA">
-                                        <rect key="frame" x="10" y="314" width="300" height="30"/>
+                                        <rect key="frame" x="57" y="314" width="300" height="30"/>
                                         <state key="normal" title="Create New Account">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-iU-XGu">
-                                        <rect key="frame" x="10" y="522" width="300" height="30"/>
+                                        <rect key="frame" x="57" y="522" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="TbZ-Jj-4Nz"/>
@@ -111,15 +111,18 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginBtnDidTapped:" destination="PgB-4O-OnJ" eventType="touchUpInside" id="Ib5-qk-A6x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W6-Nc-uRQ">
-                                        <rect key="frame" x="88" y="352" width="144" height="30"/>
+                                        <rect key="frame" x="135" y="352" width="144" height="30"/>
                                         <state key="normal" title="Terms And Condition">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-hW-cpS">
-                                        <rect key="frame" x="70.666666666666686" y="560" width="179" height="30"/>
+                                        <rect key="frame" x="117.5" y="560" width="179" height="30"/>
                                         <state key="normal" title="Did You Forget Password?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -163,7 +166,12 @@
                         <viewLayoutGuide key="safeArea" id="2fW-3y-fud"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Z20-Ej-rJS"/>
-                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="jo3-gX-KNf" id="GPb-sF-1Tv"/>
+                        <outlet property="loginBtn" destination="qaE-iU-XGu" id="QXF-7J-WOr"/>
+                        <outlet property="mainScrollViewBottomConstraint" destination="FP4-I6-FNd" id="IWk-Ig-qtl"/>
+                        <outlet property="passwordTextField" destination="7Dq-SX-3ZD" id="Zg7-Wz-I5J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1g-aH-p8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,7 +183,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aQ0-GT-jTP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d0W-8S-v8G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -190,8 +198,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Facebook_logo" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="Google_Logo" width="265.66665649414062" height="267.33334350585938"/>
-        <image name="logo" width="266.66665649414062" height="266.66665649414062"/>
+        <image name="Facebook_logo" width="33.5" height="33.5"/>
+        <image name="Google_Logo" width="265.5" height="267.5"/>
+        <image name="logo" width="266.5" height="266.5"/>
     </resources>
 </document>

@@ -9,12 +9,26 @@
 import Foundation
 import SwiftyJSON
 class User: Codable {
-    var photo: String?
-    var nameEn: String?
-    init?(withJSON data: JSON) {
+    var id: String?
+    var phoneNumber: String?
+    var email: String?
+    var genderId:String?
+    var name : String?
+    var birthday:String?
+    var token:String?
+    init() {
         
-        self.photo = data["featured"].stringValue
-        self.nameEn = data["name_en"].stringValue
+    }
+    init?(withJSON data: JSON) {
+        self.id = data["user"]["id"].stringValue
+        self.phoneNumber = data["user"]["phonenumber"].stringValue
+        self.email = data["user"]["email"].stringValue
+        self.genderId = data["user"]["gender_id"].stringValue
+        self.name = data["user"]["name"].stringValue
+        self.email = data["user"]["email"].stringValue
+        self.birthday = data["user"]["birthday"].stringValue
+        self.token = data["token"].stringValue
+
         
     }
 }
