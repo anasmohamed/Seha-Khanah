@@ -7,8 +7,7 @@ target 'Seha Khanah' do
 
   # Pods for Seha Khanah
     pod 'MBRadioCheckboxButton'
-    pod 'FacebookCore'
-    pod 'FacebookLogin'
+    pod 'FBSDKLoginKit'
     pod 'AACarousel'
     pod 'Alamofire', '~> 5.2'
     pod 'SwiftyJSON', '~> 4.0'

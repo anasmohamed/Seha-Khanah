@@ -10,13 +10,19 @@ import UIKit
 import CoreData
 import MOLH
 import UIKit
+import FBSDKCoreKit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
 
 
     var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        ApplicationDelegate.shared.application(
+                       application,
+                       didFinishLaunchingWithOptions: launchOptions
+                   )
+
         // Override point for customization after application launch.
         MOLHLanguage.setDefaultLanguage("en")
         MOLH.shared.activate(true)
@@ -26,6 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
 
         return true
     }
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+    ) -> Bool {
+
+        ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+            annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+        )
+
+    }
+
     
      func reset() {
            let rootViewController: UIWindow = ((UIApplication.shared.delegate?.window)!)!

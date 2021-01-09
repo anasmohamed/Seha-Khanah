@@ -45,6 +45,9 @@
                                                         <state key="normal" title="Login with Faceboo">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginWithFacebookBtnDidTapped:" destination="PgB-4O-OnJ" eventType="touchUpInside" id="uTu-cw-O0K"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
