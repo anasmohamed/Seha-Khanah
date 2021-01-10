@@ -11,7 +11,7 @@ import SwiftyJSON
 import Alamofire
 class RegisterInteractor {
     func register(email: String,
-                  password: String,name:String,phoneNumber:String,genderId:String,birthday:String,
+                  password: String,name:String,phoneNumber:Int,genderId:Int,birthday:String,
                  completionHandler: @escaping (User?, Error?) -> Void) {
           
           AF.request(SehaKhanahRouter.register(email: email, password: password, name: name, phonenumber: phoneNumber, genderId: genderId, birthday: birthday)).responseJSON {

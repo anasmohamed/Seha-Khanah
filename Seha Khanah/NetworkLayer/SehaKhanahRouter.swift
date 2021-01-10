@@ -31,7 +31,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case showPharmacyDetails(id:String)
     case login(email:String,passsword:String)
     case loginWithSocial(accessTocken:String,provider:String)
-    case register(email:String,password:String,name:String,phonenumber:String,genderId:String,birthday:String)
+    case register(email:String,password:String,name:String,phonenumber:Int,genderId:Int,birthday:String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -179,8 +179,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.loginWithSocialProviderParamter] = provider
         case let .register(email, password, name, phonenumber, genderId, birthday):
             params[NetworkingConstants.registerEmailParamter] = email
-            params[NetworkingConstants.registerNameParamter] = name
             params[NetworkingConstants.registerPasswordParamter] = password
+            params[NetworkingConstants.registerNameParamter] = name
+
             params[NetworkingConstants.registerPhoneNumberParamter] = phonenumber
             params[NetworkingConstants.registerGenderIdParamter] = genderId
             params[NetworkingConstants.registerBirthdayParamter] = birthday

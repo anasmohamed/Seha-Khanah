@@ -9,7 +9,10 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-
+   var cellTitles = ["Edit Profile".localized
+,"Edit Your Password".localized
+,"Change Language".localized
+]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Settings".localized
@@ -30,14 +33,14 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return cellTitles.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath)
         cell.accessoryType = .disclosureIndicator
-        cell.textLabel?.text = "Change Language".localized
+        cell.textLabel?.text = cellTitles[indexPath.row]
 
         return cell
     }

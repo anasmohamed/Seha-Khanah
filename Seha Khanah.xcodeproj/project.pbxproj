@@ -37,6 +37,9 @@
 		A818006425AB7D6900C750AE /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006325AB7D6900C750AE /* RegisterInteractor.swift */; };
 		A818006625AB7E2600C750AE /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006525AB7E2600C750AE /* RegisterPresenter.swift */; };
 		A818006825AB7E5000C750AE /* RegisterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006725AB7E5000C750AE /* RegisterProtocol.swift */; };
+		A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818006B25ABBE9100C750AE /* EditProfile.storyboard */; };
+		A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006D25ABC14800C750AE /* EditProfileViewController.swift */; };
+		A818007425ABC30100C750AE /* ForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818007325ABC30100C750AE /* ForgetPassword.storyboard */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
 		A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */; };
@@ -205,6 +208,9 @@
 		A818006325AB7D6900C750AE /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		A818006525AB7E2600C750AE /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		A818006725AB7E5000C750AE /* RegisterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocol.swift; sourceTree = "<group>"; };
+		A818006B25ABBE9100C750AE /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		A818006D25ABC14800C750AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		A818007325ABC30100C750AE /* ForgetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgetPassword.storyboard; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
 		A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+ImageSliderExtension.swift"; sourceTree = "<group>"; };
@@ -554,6 +560,55 @@
 				A818006325AB7D6900C750AE /* RegisterInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A818006925ABBE4A00C750AE /* EditProfileScene */ = {
+			isa = PBXGroup;
+			children = (
+				A818007025ABC15C00C750AE /* Interactor */,
+				A818006F25ABC15100C750AE /* Presenter */,
+				A818006A25ABBE7500C750AE /* View */,
+			);
+			path = EditProfileScene;
+			sourceTree = "<group>";
+		};
+		A818006A25ABBE7500C750AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A818006B25ABBE9100C750AE /* EditProfile.storyboard */,
+				A818006D25ABC14800C750AE /* EditProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A818006F25ABC15100C750AE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A818007025ABC15C00C750AE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A818007125ABC17F00C750AE /* ForgetPasswordScene */ = {
+			isa = PBXGroup;
+			children = (
+				A818007225ABC2BD00C750AE /* View */,
+			);
+			path = ForgetPasswordScene;
+			sourceTree = "<group>";
+		};
+		A818007225ABC2BD00C750AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A818007325ABC30100C750AE /* ForgetPassword.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A82EA354258F51DF00F30C61 /* Extenstions */ = {
@@ -1260,6 +1315,8 @@
 		A8A21C2E2596AFC9005191A3 /* SettingsScene */ = {
 			isa = PBXGroup;
 			children = (
+				A818007125ABC17F00C750AE /* ForgetPasswordScene */,
+				A818006925ABBE4A00C750AE /* EditProfileScene */,
 				A8A8529C2597307500E99A67 /* ChangeLanguageScene */,
 				A8A21C2F2596AFF5005191A3 /* View */,
 			);
@@ -1607,6 +1664,7 @@
 				A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */,
 				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
+				A818007425ABC30100C750AE /* ForgetPassword.storyboard in Resources */,
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */,
 				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
@@ -1620,6 +1678,7 @@
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,
+				A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A80DD8D125A120AE00FD2CF1 /* LabServices.storyboard in Resources */,
 				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
@@ -1716,6 +1775,7 @@
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
 				A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */,
 				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
+				A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */,
 				A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */,
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
 				A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */,

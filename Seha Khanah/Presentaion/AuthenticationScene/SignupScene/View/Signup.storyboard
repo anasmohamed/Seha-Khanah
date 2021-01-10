@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-DY-IVj">
-                                <rect key="frame" x="30" y="384" width="260" height="30"/>
+                                <rect key="frame" x="30" y="379" width="260" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="FsQ-Cu-lHo"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-cr-3Zt">
-                                <rect key="frame" x="8" y="71" width="304" height="275"/>
+                                <rect key="frame" x="8" y="71" width="304" height="270"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIF-0j-Jgz">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
@@ -47,7 +47,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Ovf-hz-FJf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qkH-xA-S9c">
                                         <rect key="frame" x="0.0" y="100" width="304" height="40"/>
@@ -55,7 +55,7 @@
                                             <constraint firstAttribute="height" constant="40" id="KMc-B3-VTL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MtX-bN-EUW">
                                         <rect key="frame" x="0.0" y="150" width="304" height="40"/>
@@ -63,7 +63,7 @@
                                             <constraint firstAttribute="height" constant="40" id="mV0-GG-fQz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-bR-HRQ">
                                         <rect key="frame" x="0.0" y="200" width="304" height="40"/>
@@ -73,21 +73,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-vd-C0P">
-                                        <rect key="frame" x="0.0" y="250" width="304" height="25"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-vd-C0P">
+                                        <rect key="frame" x="0.0" y="250" width="304" height="20"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxn-LH-hpx">
-                                                <rect key="frame" x="0.0" y="0.0" width="147" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="9zs-Gq-ukV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="25" id="Xe5-z7-LWT"/>
-                                                            <constraint firstAttribute="width" constant="25" id="xIk-xc-Xkn"/>
+                                                            <constraint firstAttribute="height" constant="20" id="Xe5-z7-LWT"/>
+                                                            <constraint firstAttribute="width" constant="20" id="xIk-xc-Xkn"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlY-DF-B4d">
-                                                        <rect key="frame" x="35" y="0.0" width="112" height="25"/>
+                                                        <rect key="frame" x="30" y="0.0" width="98" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -95,14 +95,14 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-LH-x1p">
-                                                <rect key="frame" x="157" y="0.0" width="147" height="25"/>
+                                                <rect key="frame" x="138" y="0.0" width="166" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-N5-jY3" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="25"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="20"/>
                                                         <state key="normal" title="Male"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uey-n0-RY0" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                        <rect key="frame" x="78.5" y="0.0" width="68.5" height="25"/>
+                                                        <rect key="frame" x="88" y="0.0" width="78" height="20"/>
                                                         <state key="normal" title="Female"/>
                                                     </button>
                                                 </subviews>
@@ -127,6 +127,8 @@
                     <connections>
                         <outlet property="dateTextField" destination="SYg-bR-HRQ" id="PyE-Bi-Fru"/>
                         <outlet property="emailTextField" destination="qkH-xA-S9c" id="KM6-X7-jtP"/>
+                        <outlet property="femaleRadioBtn" destination="Uey-n0-RY0" id="ES7-ne-i4v"/>
+                        <outlet property="maleRadioBtn" destination="ub5-N5-jY3" id="ATy-3c-F9e"/>
                         <outlet property="passwordTextField" destination="MtX-bN-EUW" id="4xj-tF-BEw"/>
                         <outlet property="phoneTextField" destination="to1-fq-U4e" id="vyH-AQ-q60"/>
                         <outlet property="userNameTextField" destination="JIF-0j-Jgz" id="0fP-12-ra9"/>

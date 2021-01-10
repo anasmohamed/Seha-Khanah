@@ -8,9 +8,14 @@
 
 import Foundation
 import UIKit
+import MBRadioCheckboxButton
 class RegisterViewController: UIViewController,RegisterProtocol {
     let datePicker = UIDatePicker()
     
+    @IBOutlet weak var femaleRadioBtn: RadioButton!
+    @IBOutlet weak var maleRadioBtn: RadioButton!
+    let genderRadioBtnsGroup = RadioButtonContainer()
+    var selectedGender = "1"
     @IBOutlet weak var userNameTextField: UITextField!
         {
         didSet {
@@ -58,6 +63,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         super.viewDidLoad()
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
+        setupLanguageBtns()
     }
     
     func showIndicator() {
@@ -84,6 +90,15 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         dateTextField.inputView = datePicker
         datePicker.datePickerMode = .date
     }
+    func setupLanguageBtns() {
+        genderRadioBtnsGroup.addButtons([maleRadioBtn, femaleRadioBtn])
+        genderRadioBtnsGroup.delegate = self
+        
+        genderRadioBtnsGroup.selectedButtons = [maleRadioBtn]
+        maleRadioBtn.style = .circle
+        femaleRadioBtn.style = .circle
+        
+    }
     @objc func doneBtnDidTapped()  {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -97,9 +112,36 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text,let bithday = dateTextField.text  else {
             return
         }
-        registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: "0", birthday: bithday)
+        guard phone.count == 11 else {
+            return
+        }
+        guard password.count > 6 else {
+            return
+        }
+            
+        registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: bithday)
         
     }
     
 }
 
+extension RegisterViewController: RadioButtonDelegate {
+    func radioButtonDidSelect(_ button: RadioButton) {
+        if button.titleLabel?.text == "male" || button.titleLabel?.text == ""
+        {
+            selectedGender = "1"
+            
+        }else{
+            selectedGender = "2"
+        }
+    }
+    
+    func radioButtonDidDeselect(_ button: RadioButton) {
+        
+    }
+    
+    
+    
+    
+    
+}
