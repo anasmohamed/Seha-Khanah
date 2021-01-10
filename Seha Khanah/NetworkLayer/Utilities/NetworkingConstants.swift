@@ -60,6 +60,15 @@ class NetworkingConstants {
     static let reservationCheckboxParameter = "checkbox"
     
     
+    static let loginWithSocial = "social"
+    
+    static let loginWithSocialAccessTockenParamter = "accessToken"
+    static let loginWithSocialProviderParamter = "provider"
+
+
+    
+
+    
     
     
     

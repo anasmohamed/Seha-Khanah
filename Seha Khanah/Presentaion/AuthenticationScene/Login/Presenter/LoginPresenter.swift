@@ -35,4 +35,23 @@ class LoginPresenter  {
             
         }
     }
+    func loginWithFacebook(accessTokcen: String,
+    provider: String) {
+        
+        view?.showIndicator()
+        loginInteractor.loginWithFacebook(accessTokcen: accessTokcen,
+        provider: provider){ (result,error)  in
+            if let error = error {
+                print("errrror\(error)")
+                self.view?.showError(error: error.localizedDescription)
+            } else {
+                if result != nil{
+                    self.user = result!
+                    self.view?.loginSuccess(user: self.user)
+                }
+                
+            }
+            
+        }
+    }
 }

@@ -30,7 +30,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case labReservation(name: String,email : String,phonenumber : String,bookingDate: String,labId : String,checkbox : String)
     case showPharmacyDetails(id:String)
     case login(email:String,passsword:String)
-    
+    case loginWithSocial(accessTocken:String,provider:String)
     
     var path: String {
         switch self {
@@ -70,6 +70,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.showPharmacyDetails
         case .login:
             return NetworkingConstants.login
+        case .loginWithSocial:
+            return NetworkingConstants.loginWithSocial
             
         }
     }
@@ -95,7 +97,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return .get
         case .doctorReservation,
              .labReservation,
-             .login:
+             .login,
+             .loginWithSocial:
             return .post
             
         }
@@ -168,7 +171,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .login(email, password):
             params[NetworkingConstants.emailParameter] = email
             params[NetworkingConstants.passwordParameter] = password
-
+            case let .loginWithSocial(accessTocken, provider):
+                      params[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
+                      params[NetworkingConstants.loginWithSocialProviderParamter] = provider
         default:
             print("Empty Paramter")
             
@@ -197,7 +202,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .getAllLabs,
              .doctorReservation,
              .labReservation,
-             .login:
+             .login,
+             .loginWithSocial:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

@@ -9,7 +9,10 @@
 import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
+import GoogleSignIn
 class LoginViewController: UIViewController ,LoginProtocol{
+    
+    @IBOutlet weak var signinWithGoogleBtn: UIButton!
     
     @IBOutlet weak var mainScrollViewBottomConstraint: NSLayoutConstraint!
     
@@ -28,8 +31,18 @@ class LoginViewController: UIViewController ,LoginProtocol{
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         facebookLoginButton.delegate = self
         facebookLoginButton.isHidden = true
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+
+        // Automatically sign in the user.
+
     }
     
+    @IBAction func signInWithGoogleBtnDidTapped(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signIn()
+
+        
+    }
     @IBAction func loginWithFacebookBtnDidTapped(_ sender: Any) {
         facebookLoginButton.sendActions(for: .touchUpInside)
         
@@ -100,6 +113,8 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
 }
 extension LoginViewController: LoginButtonDelegate {
+    
+    
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         getUserDataFromFacebook()
     }
@@ -107,13 +122,40 @@ extension LoginViewController: LoginButtonDelegate {
         print("User logged out")
     }
     func getUserDataFromFacebook() {
-        GraphRequest(graphPath: "me", parameters: ["fields": "first_name, picture, id"]).start { (connection, result, error) in
+        GraphRequest(graphPath: "me", parameters: ["fields": "first_name"]).start { (connection, result, error) in
             if let err = error { print(err.localizedDescription); return } else {
                 if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String {
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
+                    self.loginPresenter.loginWithFacebook(accessTokcen: AccessToken.current!.tokenString
+, provider: "facebook")
                     print(firstName, id, facebookProfileString)
+                    print("facebook id\(id)")
+
                 }
             }
         }
     }
+}
+extension LoginViewController :GIDSignInDelegate {
+    
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+          } else {
+            print("\(error.localizedDescription)")
+          }
+          return
+        }
+        // Perform any operations on signed in user here.
+        let userId = user.userID                  // For client-side use only!
+        let idToken = user.authentication.idToken // Safe to send to the server
+        let fullName = user.profile.name
+        let givenName = user.profile.givenName
+        let familyName = user.profile.familyName
+        let email = user.profile.email
+    }
+    
+    
 }

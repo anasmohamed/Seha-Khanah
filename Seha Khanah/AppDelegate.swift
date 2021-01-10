@@ -11,7 +11,7 @@ import CoreData
 import MOLH
 import UIKit
 import FBSDKCoreKit
-
+import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
 
@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
         MOLHLanguage.setDefaultLanguage("en")
         MOLH.shared.activate(true)
         UILabel.appearance().font = UIFont(name: "Sukar-Regular.ttf", size: 17)
+        GIDSignIn.sharedInstance().clientID = "151320045397-sotvam4tirfvpncfah1n2gjrlv1ak4gi.apps.googleusercontent.com"
        // self.window = UIWindow()
      //   self.window!.makeKeyAndVisible()
 
@@ -44,9 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
             sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
             annotation: options[UIApplication.OpenURLOptionsKey.annotation]
         )
+           return GIDSignIn.sharedInstance().handle(url)
 
     }
-
     
      func reset() {
            let rootViewController: UIWindow = ((UIApplication.shared.delegate?.window)!)!

@@ -21,6 +21,7 @@ target 'Seha Khanah' do
     pod 'moa', '~> 12.0'
     pod 'Auk', '~> 11.0'
     pod 'ReadMoreTextView'
+    pod 'GoogleSignIn'
 
 
 end
