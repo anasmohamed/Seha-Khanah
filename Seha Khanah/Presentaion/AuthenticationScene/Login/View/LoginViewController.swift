@@ -11,14 +11,13 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import GoogleSignIn
 class LoginViewController: UIViewController ,LoginProtocol{
-    
+    @IBOutlet weak var createNewAccountBtn: UIButton!
     @IBOutlet weak var signinWithGoogleBtn: UIButton!
-    
     @IBOutlet weak var mainScrollViewBottomConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    
     let facebookLoginButton = FBLoginButton(frame: .zero, permissions: [.publicProfile])
     var loginPresenter : LoginPresenter!
     override func viewDidLoad() {
@@ -33,16 +32,19 @@ class LoginViewController: UIViewController ,LoginProtocol{
         facebookLoginButton.isHidden = true
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
-
+        createNewAccountBtn.layer.cornerRadius = 5
+        createNewAccountBtn.layer.borderColor = UIColor.black.cgColor
+        createNewAccountBtn.layer.borderWidth = 1
         // Automatically sign in the user.
-
+        
     }
     
     @IBAction func signInWithGoogleBtnDidTapped(_ sender: Any) {
         GIDSignIn.sharedInstance()?.signIn()
-
+        
         
     }
+ 
     @IBAction func loginWithFacebookBtnDidTapped(_ sender: Any) {
         facebookLoginButton.sendActions(for: .touchUpInside)
         
@@ -98,6 +100,14 @@ class LoginViewController: UIViewController ,LoginProtocol{
         
     }
     
+    
+    @IBAction func createNewAccountBtnDidTapped(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "Signup", bundle: nil)
+        
+        let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        self.navigationController!.pushViewController(registerViewController, animated: true)
+    }
+    
     func keyboardWillShow(_ notification: Notification) {
         let userInfo = (notification as NSNotification).userInfo!
         let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
@@ -127,10 +137,10 @@ extension LoginViewController: LoginButtonDelegate {
                 if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String {
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
                     self.loginPresenter.loginWithFacebook(accessTokcen: AccessToken.current!.tokenString
-, provider: "facebook")
+                        , provider: "facebook")
                     print(firstName, id, facebookProfileString)
                     print("facebook id\(id)")
-
+                    
                 }
             }
         }
@@ -141,12 +151,12 @@ extension LoginViewController :GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
-          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-            print("The user has not signed in before or they have since signed out.")
-          } else {
-            print("\(error.localizedDescription)")
-          }
-          return
+            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                print("The user has not signed in before or they have since signed out.")
+            } else {
+                print("\(error.localizedDescription)")
+            }
+            return
         }
         // Perform any operations on signed in user here.
         let userId = user.userID                  // For client-side use only!

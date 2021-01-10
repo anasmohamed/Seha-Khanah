@@ -59,7 +59,14 @@ class NetworkingConstants {
     static let reservationLaboratoryIdParameter = "laboratory_id"
     static let reservationCheckboxParameter = "checkbox"
     
-    
+    static let register = "register"
+    static let registerEmailParamter = "email"
+    static let registerPasswordParamter = "password"
+    static let registerNameParamter = "name"
+    static let registerPhoneNumberParamter = "phonenumber"
+    static let registerGenderIdParamter = "gender_id"
+    static let registerBirthdayParamter = "birthday"
+
     static let loginWithSocial = "social"
     
     static let loginWithSocialAccessTockenParamter = "accessToken"

@@ -31,7 +31,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case showPharmacyDetails(id:String)
     case login(email:String,passsword:String)
     case loginWithSocial(accessTocken:String,provider:String)
-    
+    case register(email:String,password:String,name:String,phonenumber:String,genderId:String,birthday:String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -72,6 +72,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.login
         case .loginWithSocial:
             return NetworkingConstants.loginWithSocial
+        case .register:
+            return NetworkingConstants.register
             
         }
     }
@@ -98,7 +100,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case .doctorReservation,
              .labReservation,
              .login,
-             .loginWithSocial:
+             .loginWithSocial,
+             .register:
             return .post
             
         }
@@ -171,9 +174,17 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .login(email, password):
             params[NetworkingConstants.emailParameter] = email
             params[NetworkingConstants.passwordParameter] = password
-            case let .loginWithSocial(accessTocken, provider):
-                      params[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
-                      params[NetworkingConstants.loginWithSocialProviderParamter] = provider
+        case let .loginWithSocial(accessTocken, provider):
+            params[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
+            params[NetworkingConstants.loginWithSocialProviderParamter] = provider
+        case let .register(email, password, name, phonenumber, genderId, birthday):
+            params[NetworkingConstants.registerEmailParamter] = email
+            params[NetworkingConstants.registerNameParamter] = name
+            params[NetworkingConstants.registerPasswordParamter] = password
+            params[NetworkingConstants.registerPhoneNumberParamter] = phonenumber
+            params[NetworkingConstants.registerGenderIdParamter] = genderId
+            params[NetworkingConstants.registerBirthdayParamter] = birthday
+
         default:
             print("Empty Paramter")
             
@@ -203,7 +214,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .doctorReservation,
              .labReservation,
              .login,
-             .loginWithSocial:
+             .loginWithSocial,
+             .register:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)
@@ -227,9 +239,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             urlRequest = URLRequest(url: URL(string: showDoctorDatesUrlString + (doctorDatesparamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         case .showPharmacyDetails:
-           let showPharmacyDetailsUrlString = (urlRequest.url?.absoluteString)!
+            let showPharmacyDetailsUrlString = (urlRequest.url?.absoluteString)!
             
-           let showPharmacyDetaisParamString = params[NetworkingConstants.showPharmacyDetails]!
+            let showPharmacyDetaisParamString = params[NetworkingConstants.showPharmacyDetails]!
             urlRequest = URLRequest(url: URL(string: showPharmacyDetailsUrlString + (showPharmacyDetaisParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
