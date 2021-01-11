@@ -165,6 +165,9 @@
 		A8D1A22E25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */; };
 		A8D1A23025A3C6AA000DD0AD /* DoctorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */; };
 		A8D2E36125AB42CC003C8DA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D2E36025AB42CB003C8DA7 /* GoogleService-Info.plist */; };
+		A8D8621925AC97A20097ED93 /* EditUserProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621825AC97A20097ED93 /* EditUserProfileInteractor.swift */; };
+		A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621A25AC98970097ED93 /* EditUserProfilePresenter.swift */; };
+		A8D8621D25AC98CC0097ED93 /* EditUserProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */; };
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
@@ -352,6 +355,9 @@
 		A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsInteractor.swift; sourceTree = "<group>"; };
 		A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetails.swift; sourceTree = "<group>"; };
 		A8D2E36025AB42CB003C8DA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8D8621825AC97A20097ED93 /* EditUserProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileInteractor.swift; sourceTree = "<group>"; };
+		A8D8621A25AC98970097ED93 /* EditUserProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfilePresenter.swift; sourceTree = "<group>"; };
+		A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileProtocol.swift; sourceTree = "<group>"; };
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -577,6 +583,7 @@
 			children = (
 				A818006B25ABBE9100C750AE /* EditProfile.storyboard */,
 				A818006D25ABC14800C750AE /* EditProfileViewController.swift */,
+				A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -584,6 +591,7 @@
 		A818006F25ABC15100C750AE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A8D8621A25AC98970097ED93 /* EditUserProfilePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -591,6 +599,7 @@
 		A818007025ABC15C00C750AE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A8D8621825AC97A20097ED93 /* EditUserProfileInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -1829,6 +1838,7 @@
 				A812A07925A323D70039029B /* BookingPresenter.swift in Sources */,
 				A8C8165025A7403200690AE8 /* PharmacyDetails.swift in Sources */,
 				A856772525921B640086CD78 /* SearchResultTableViewCell.swift in Sources */,
+				A8D8621D25AC98CC0097ED93 /* EditUserProfileProtocol.swift in Sources */,
 				A80DD8D325A120AE00FD2CF1 /* LabServicesTableViewController.swift in Sources */,
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
 				A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */,
@@ -1858,6 +1868,7 @@
 				A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
+				A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */,
 				A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */,
 				A8A7DD3F2595190E007FBFE0 /* RegionInteractor.swift in Sources */,
 				A806CAFE259E189900D1764C /* BookingDatesCollectionViewCell.swift in Sources */,
@@ -1872,6 +1883,7 @@
 				A8A7DD4325951A49007FBFE0 /* RegionPresenter.swift in Sources */,
 				A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */,
 				A8C9E3E8259FC5C50085B806 /* LabRatings.swift in Sources */,
+				A8D8621925AC97A20097ED93 /* EditUserProfileInteractor.swift in Sources */,
 				A8CBF49825A5C56F003A084F /* DoctorDetailsProtocol.swift in Sources */,
 				A8A7DD4525951A98007FBFE0 /* AreasProtocol.swift in Sources */,
 				A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */,

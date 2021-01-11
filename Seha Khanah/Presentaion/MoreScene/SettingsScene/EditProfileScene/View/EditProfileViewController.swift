@@ -7,16 +7,28 @@
 //
 
 import UIKit
-
+import MBRadioCheckboxButton
 class EditProfileViewController: UIViewController {
-
+    @IBOutlet weak var dateOfBirthTextField: UITextField!
+    
+    @IBOutlet weak var femaleRadioBtn: RadioButton!
+    @IBOutlet weak var maleRadioBtn: RadioButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var mobileNumberTextField: UITextField!
+    @IBOutlet weak var fullNameTExtField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func saveEditesBtnDidTapped(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

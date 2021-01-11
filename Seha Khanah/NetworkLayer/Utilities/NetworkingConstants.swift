@@ -72,9 +72,13 @@ class NetworkingConstants {
     static let loginWithSocialAccessTockenParamter = "accessToken"
     static let loginWithSocialProviderParamter = "provider"
 
-    
-  
-    
+    static let updateUserProfile = "api/user/update"
+    static let updateUserProfileEmailParameter = "email"
+    static let updateUserProfileNameParameter = "name"
+    static let updateUserProfilePhoneNumberParameter = "phonenumber"
+    static let updateUserProfileGenderIdParameter = "gender_id"
+    static let updateUserProfileBirthdayParameter = "birthday"
+
     static let getUserToken = "oauth/token"
     static let getUserTokenGrantTypeParamter = "grant_type"
     static let getUserTokenClientIdParamter = "client_id"

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="Drf-xv-oFT">
             <objects>
-                <viewController id="iVU-5q-hsQ" sceneMemberID="viewController">
+                <viewController id="iVU-5q-hsQ" customClass="EditProfileViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cBX-Ff-Rr4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,6 +109,9 @@
                                         <state key="normal" title="Save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveEditesBtnDidTapped:" destination="iVU-5q-hsQ" eventType="touchUpInside" id="0C1-rH-ahy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -133,6 +136,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sV5-rX-J5O"/>
                     </view>
+                    <connections>
+                        <outlet property="dateOfBirthTextField" destination="Wjd-GK-JOy" id="e4E-dZ-4W8"/>
+                        <outlet property="emailTextField" destination="Ajw-zh-7zy" id="eHk-pr-IdJ"/>
+                        <outlet property="femaleRadioBtn" destination="nZd-uS-KAp" id="VWa-4f-EuT"/>
+                        <outlet property="fullNameTExtField" destination="bOY-jM-zZl" id="O0C-zA-RCJ"/>
+                        <outlet property="maleRadioBtn" destination="d5h-rY-i3U" id="D39-vO-sXk"/>
+                        <outlet property="mobileNumberTextField" destination="zo8-er-USD" id="uwZ-Bj-1cU"/>
+                        <outlet property="passwordTextField" destination="dWf-vh-nyu" id="ZYn-vy-9uX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eo-mO-Wdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

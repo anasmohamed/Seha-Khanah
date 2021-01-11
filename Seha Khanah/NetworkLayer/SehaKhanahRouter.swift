@@ -33,6 +33,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case loginWithSocial(accessTocken:String,provider:String)
     case register(email:String,password:String,name:String,phonenumber:Int,genderId:Int,birthday:String)
     case getUserToken(grantType: String,clientId:String,clientSecret:String,scope:String)
+    case updateUser(email:String,name:String,phoneNumber:String,genderId:Int,birthday:String)
+    
+    
     
     var path: String {
         switch self {
@@ -78,7 +81,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.register
         case .getUserToken:
             return NetworkingConstants.getUserToken
-            
+        case .updateUser:
+            return NetworkingConstants.updateUserProfile
+
         }
     }
     
@@ -106,7 +111,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .login,
              .loginWithSocial,
              .register,
-             .getUserToken:
+             .getUserToken,
+             .updateUser:
             return .post
             
         }
@@ -144,6 +150,13 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.getUserTokenClientIdParamter] = clientId
             body[NetworkingConstants.getUserTokenClientSecretParamter] = clientSecret
             body[NetworkingConstants.getUserTokenScopeParamter] = scope
+            
+        case let .updateUser(email, name, phoneNumber, genderId, birthday):
+            body[NetworkingConstants.updateUserProfileEmailParameter] = email
+            body[NetworkingConstants.updateUserProfileNameParameter] = name
+            body[NetworkingConstants.updateUserProfilePhoneNumberParameter] = phoneNumber
+            body[NetworkingConstants.updateUserProfileGenderIdParameter] = genderId
+            body[NetworkingConstants.updateUserProfileBirthdayParameter] = birthday
         default:
             print("Empty request body")
         }
@@ -231,7 +244,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .login,
              .loginWithSocial,
              .register,
-             .getUserToken:
+             .getUserToken,
+             .updateUser:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)
