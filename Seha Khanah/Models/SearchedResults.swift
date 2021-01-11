@@ -23,6 +23,8 @@ class SearchedResults:Codable {
     var waitingTime:String?
     var numberOfVisitor:String?
     var rating:String?
+    var addressAr : String?
+    var addressEn:String?
     var id: String?
     init?(withJSON data: JSON) {
         self.id = data["id"].stringValue
@@ -39,7 +41,9 @@ class SearchedResults:Codable {
         self.waitingTime = data["waiting_time"].stringValue
         self.numberOfVisitor = data["visitor_num"].stringValue
         self.rating = data["rating"].stringValue
-        
+        self.addressAr = data["address_ar"].stringValue
+        self.addressEn = data["address_en"].stringValue
+
         
     }
 }

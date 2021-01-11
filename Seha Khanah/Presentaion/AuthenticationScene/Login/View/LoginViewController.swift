@@ -36,6 +36,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
         createNewAccountBtn.layer.borderColor = UIColor.black.cgColor
         createNewAccountBtn.layer.borderWidth = 1
         // Automatically sign in the user.
+         loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
         
     }
     
@@ -126,6 +127,8 @@ extension LoginViewController: LoginButtonDelegate {
     
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+    
+       
         getUserDataFromFacebook()
     }
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
@@ -136,7 +139,7 @@ extension LoginViewController: LoginButtonDelegate {
             if let err = error { print(err.localizedDescription); return } else {
                 if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String {
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
-                    self.loginPresenter.loginWithFacebook(accessTokcen: AccessToken.current!.tokenString
+                    self.loginPresenter.loginWithFacebook(accessToken: AccessToken.current!.tokenString
                         , provider: "facebook")
                     print(firstName, id, facebookProfileString)
                     print("facebook id\(id)")

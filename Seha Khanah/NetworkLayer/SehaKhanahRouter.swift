@@ -32,6 +32,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case login(email:String,passsword:String)
     case loginWithSocial(accessTocken:String,provider:String)
     case register(email:String,password:String,name:String,phonenumber:Int,genderId:Int,birthday:String)
+    case getUserToken(grantType: String,clientId:String,clientSecret:String,scope:String)
+    
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -74,6 +76,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.loginWithSocial
         case .register:
             return NetworkingConstants.register
+        case .getUserToken:
+            return NetworkingConstants.getUserToken
             
         }
     }
@@ -101,7 +105,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .labReservation,
              .login,
              .loginWithSocial,
-             .register:
+             .register,
+             .getUserToken:
             return .post
             
         }
@@ -124,11 +129,21 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     var body: [String: Any] {
         
-        let body = [String:Any]()
+        var body = [String:Any]()
         
         switch self {
-            
-            
+        case let .register(email, password, name, phonenumber, genderId, birthday):
+            body[NetworkingConstants.registerEmailParamter] = email
+            body[NetworkingConstants.registerPasswordParamter] = password
+            body[NetworkingConstants.registerNameParamter] = name
+            body[NetworkingConstants.registerPhoneNumberParamter] = phonenumber
+            body[NetworkingConstants.registerGenderIdParamter] = genderId
+            body[NetworkingConstants.registerBirthdayParamter] = birthday
+        case let .getUserToken(grantType, clientId, clientSecret, scope):
+            body[NetworkingConstants.getUserTokenGrantTypeParamter] = grantType
+            body[NetworkingConstants.getUserTokenClientIdParamter] = clientId
+            body[NetworkingConstants.getUserTokenClientSecretParamter] = clientSecret
+            body[NetworkingConstants.getUserTokenScopeParamter] = scope
         default:
             print("Empty request body")
         }
@@ -177,15 +192,14 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .loginWithSocial(accessTocken, provider):
             params[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
             params[NetworkingConstants.loginWithSocialProviderParamter] = provider
-        case let .register(email, password, name, phonenumber, genderId, birthday):
-            params[NetworkingConstants.registerEmailParamter] = email
-            params[NetworkingConstants.registerPasswordParamter] = password
-            params[NetworkingConstants.registerNameParamter] = name
-
-            params[NetworkingConstants.registerPhoneNumberParamter] = phonenumber
-            params[NetworkingConstants.registerGenderIdParamter] = genderId
-            params[NetworkingConstants.registerBirthdayParamter] = birthday
-
+            
+            //        case let .getUserToken(grantType,clientId,clientSecret,scope):
+            //            params[NetworkingConstants.getUserTokenGrantTypeParamter] = grantType
+            //            params[NetworkingConstants.getUserTokenClientIdParamter] = clientId
+            //            params[NetworkingConstants.getUserTokenClientSecretParamter] = clientSecret
+            //            params[NetworkingConstants.getUserTokenScopeParamter] = scope
+            
+            
         default:
             print("Empty Paramter")
             
@@ -216,7 +230,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .labReservation,
              .login,
              .loginWithSocial,
-             .register:
+             .register,
+             .getUserToken:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

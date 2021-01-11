@@ -148,5 +148,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "register(email:password:name:phoneNumber:genderId:birthday:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3 - 7421ca07ffff93d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Seha_Khanah.RegisterInteractor.register(email: Swift.String, password: Swift.String, name: Swift.String, phoneNumber: Swift.Int, genderId: Swift.Int, birthday: Swift.String, completionHandler: (Swift.Optional&lt;Seha_Khanah.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Seha Khanah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3 - 84520f329e7dcb2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Seha_Khanah.RegisterInteractor.register(email: Swift.String, password: Swift.String, name: Swift.String, phoneNumber: Swift.Int, genderId: Swift.Int, birthday: Swift.String, completionHandler: (Swift.Optional&lt;Seha_Khanah.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Seha Khanah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "668">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAA7EBEA-4785-49E2-8CD8-B7A8E31A1FE3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/AuthenticationScene/SignupScene/View/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "registerBtnDidTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C77B47A-84F4-4010-A940-8DB0A06E04EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/AuthenticationScene/SignupScene/View/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "registerBtnDidTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

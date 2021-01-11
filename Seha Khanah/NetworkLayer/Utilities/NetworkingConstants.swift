@@ -24,7 +24,7 @@ class NetworkingConstants {
     static let getAreas = "api/areas"
     static let getAllLabs = "api/laboratories"
     
-    static let search = "sapi/earch"
+    static let search = "api/search"
     static let searchByNameParameter = "name"
     static let searchBySpecialtyParameter = "specialty"
     
@@ -72,11 +72,13 @@ class NetworkingConstants {
     static let loginWithSocialAccessTockenParamter = "accessToken"
     static let loginWithSocialProviderParamter = "provider"
 
+    
+  
+    
+    static let getUserToken = "oauth/token"
+    static let getUserTokenGrantTypeParamter = "grant_type"
+    static let getUserTokenClientIdParamter = "client_id"
+    static let getUserTokenClientSecretParamter = "client_secret"
+    static let getUserTokenScopeParamter = "scope"
 
-    
-
-    
-    
-    
-    
 }
