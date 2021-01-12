@@ -157,6 +157,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.updateUserProfilePhoneNumberParameter] = phoneNumber
             body[NetworkingConstants.updateUserProfileGenderIdParameter] = genderId
             body[NetworkingConstants.updateUserProfileBirthdayParameter] = birthday
+        case let .loginWithSocial(accessTocken, provider):
+            body[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
+            body[NetworkingConstants.loginWithSocialProviderParamter] = provider
         default:
             print("Empty request body")
         }
@@ -202,9 +205,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .login(email, password):
             params[NetworkingConstants.emailParameter] = email
             params[NetworkingConstants.passwordParameter] = password
-        case let .loginWithSocial(accessTocken, provider):
-            params[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
-            params[NetworkingConstants.loginWithSocialProviderParamter] = provider
+            
             
             //        case let .getUserToken(grantType,clientId,clientSecret,scope):
             //            params[NetworkingConstants.getUserTokenGrantTypeParamter] = grantType
@@ -250,7 +251,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .getUserToken,
                .updateUser:
             return try URLEncoding.default.encode(urlRequest, with: body)
-
+            
         case .showLabDetails:
             let showLabDetailsUrlString = (urlRequest.url?.absoluteString)!
             let labDetailsparamString = params[NetworkingConstants.showLabDetails]!

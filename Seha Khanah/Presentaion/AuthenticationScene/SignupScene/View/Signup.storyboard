@@ -111,14 +111,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5re-mv-wwl">
+                                <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9Gx-DY-IVj" firstAttribute="top" secondItem="nzs-cr-3Zt" secondAttribute="bottom" constant="38" id="8UQ-CE-Ns5"/>
+                            <constraint firstItem="5re-mv-wwl" firstAttribute="centerX" secondItem="wQj-Em-3ci" secondAttribute="centerX" id="QVY-X3-fJu"/>
                             <constraint firstItem="SIM-hD-v7z" firstAttribute="trailing" secondItem="9Gx-DY-IVj" secondAttribute="trailing" constant="30" id="QZY-Id-TJE"/>
                             <constraint firstItem="nzs-cr-3Zt" firstAttribute="top" secondItem="SIM-hD-v7z" secondAttribute="top" constant="27" id="YOv-K7-lex"/>
                             <constraint firstItem="SIM-hD-v7z" firstAttribute="trailing" secondItem="nzs-cr-3Zt" secondAttribute="trailing" constant="8" id="eNc-un-gfV"/>
                             <constraint firstItem="9Gx-DY-IVj" firstAttribute="leading" secondItem="SIM-hD-v7z" secondAttribute="leading" constant="30" id="jFC-7J-gUr"/>
+                            <constraint firstItem="5re-mv-wwl" firstAttribute="centerY" secondItem="wQj-Em-3ci" secondAttribute="centerY" id="nZP-wZ-LBR"/>
                             <constraint firstItem="nzs-cr-3Zt" firstAttribute="leading" secondItem="SIM-hD-v7z" secondAttribute="leading" constant="8" id="nwZ-6v-cpQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SIM-hD-v7z"/>
@@ -128,6 +134,7 @@
                         <outlet property="dateTextField" destination="SYg-bR-HRQ" id="PyE-Bi-Fru"/>
                         <outlet property="emailTextField" destination="qkH-xA-S9c" id="KM6-X7-jtP"/>
                         <outlet property="femaleRadioBtn" destination="Uey-n0-RY0" id="ES7-ne-i4v"/>
+                        <outlet property="indicator" destination="5re-mv-wwl" id="hN1-US-wzI"/>
                         <outlet property="maleRadioBtn" destination="ub5-N5-jY3" id="ATy-3c-F9e"/>
                         <outlet property="passwordTextField" destination="MtX-bN-EUW" id="4xj-tF-BEw"/>
                         <outlet property="phoneTextField" destination="to1-fq-U4e" id="vyH-AQ-q60"/>

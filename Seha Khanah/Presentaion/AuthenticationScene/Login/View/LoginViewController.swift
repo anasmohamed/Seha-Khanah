@@ -36,7 +36,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
         createNewAccountBtn.layer.borderColor = UIColor.black.cgColor
         createNewAccountBtn.layer.borderWidth = 1
         // Automatically sign in the user.
-        loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
+        
         
     }
     
@@ -95,9 +95,18 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
     func loginSuccess(user: User) {
         let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
-        
         let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        self.navigationController!.pushViewController(tabBarViewController, animated: true)
+        tabBarViewController.modalPresentationStyle = .fullScreen
+        self.present(tabBarViewController, animated: true, completion: nil)
+        UserDefaults.standard.set(true, forKey: "isUserLoggedin")
+
+        UserDefaults.standard.set(user.email, forKey: "email")
+        UserDefaults.standard.set(user.birthday, forKey: "birthday")
+        UserDefaults.standard.set(user.genderId, forKey: "genderId")
+        UserDefaults.standard.set(user.id, forKey: "id")
+        UserDefaults.standard.set(user.name, forKey: "name")
+        UserDefaults.standard.set(user.phoneNumber, forKey: "phoneNumber")
+        UserDefaults.standard.set(user.token, forKey: "token")
     }
     
     func showError(error: String) {
@@ -131,7 +140,7 @@ extension LoginViewController: LoginButtonDelegate {
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         
-        
+        loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
         getUserDataFromFacebook()
     }
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
@@ -142,7 +151,7 @@ extension LoginViewController: LoginButtonDelegate {
             if let err = error { print(err.localizedDescription); return } else {
                 if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String {
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
-                    self.loginPresenter.loginWithFacebook(accessToken: AccessToken.current!.tokenString
+                    self.loginPresenter.loginWithFacebook(accessToken:self.loginPresenter.returnAccessToken()
                         , provider: "facebook")
                     print(firstName, id, facebookProfileString)
                     print("facebook id\(id)")

@@ -12,6 +12,7 @@ import MBRadioCheckboxButton
 class RegisterViewController: UIViewController,RegisterProtocol {
     let datePicker = UIDatePicker()
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var femaleRadioBtn: RadioButton!
     @IBOutlet weak var maleRadioBtn: RadioButton!
     let genderRadioBtnsGroup = RadioButtonContainer()
@@ -67,22 +68,35 @@ class RegisterViewController: UIViewController,RegisterProtocol {
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
+
     }
     
     func resgiterSuccess(user: User) {
+        indicator.stopAnimating()
+
         let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
-        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar") 
-        self.navigationController!.pushViewController(tabBarViewController, animated: true)
-        
+        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        tabBarViewController.modalPresentationStyle = .fullScreen
+        self.present(tabBarViewController, animated: true, completion: nil)
+        UserDefaults.standard.set(true, forKey: "isUserLoggedin")
+        UserDefaults.standard.set(user.email, forKey: "email")
+        UserDefaults.standard.set(user.birthday, forKey: "birthday")
+        UserDefaults.standard.set(user.genderId, forKey: "genderId")
+        UserDefaults.standard.set(user.id, forKey: "id")
+        UserDefaults.standard.set(user.name, forKey: "name")
+        UserDefaults.standard.set(user.phoneNumber, forKey: "phoneNumber")
+        UserDefaults.standard.set(user.token, forKey: "token")
+
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
+        print("error message\(error)")
     }
     func createDatePicker()  {
         let toolBar = UIToolbar()

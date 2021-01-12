@@ -32,3 +32,22 @@ class User: Codable {
         
     }
 }
+class Message: Codable {
+       var phoneNumber: String?
+       var email: String?
+       var genderId:String?
+       var name : String?
+       var birthday:String?
+       init() {
+           
+       }
+       init?(withJSON data: JSON) {
+        self.phoneNumber = data["phonenumber"][0].stringValue
+           self.email = data["email"][0].stringValue
+           self.name = data["name"][0].stringValue
+           self.email = data["email"][0].stringValue
+           self.birthday = data["birthday"][0].stringValue
+
+           
+       }
+}

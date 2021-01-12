@@ -66,7 +66,7 @@ class LoginPresenter  {
                                           provider: provider){ (result,error)  in
                                             if let error = error {
                                                 print("errrror\(error)")
-                                                self.view?.showError(error: error.localizedDescription)
+                                                self.view?.showError(error: "Something Wrong Happend")
                                             } else {
                                                 if result != nil{
                                                     self.user = result!

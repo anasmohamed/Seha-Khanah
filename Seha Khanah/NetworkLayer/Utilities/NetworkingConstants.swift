@@ -67,7 +67,7 @@ class NetworkingConstants {
     static let registerGenderIdParamter = "gender_id"
     static let registerBirthdayParamter = "birthday"
 
-    static let loginWithSocial = "social"
+    static let loginWithSocial = "api/social"
     
     static let loginWithSocialAccessTockenParamter = "accessToken"
     static let loginWithSocialProviderParamter = "provider"
