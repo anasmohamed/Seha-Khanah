@@ -17,10 +17,10 @@ class RegisterPresenter {
            user = User()
        }
        
-    func register(email:String,password:String,name:String,phoneNumber:String,genderId:String,birthday:String) {
+    func register(email:String,password:String,name:String,phoneNumber:String,genderId:String,birthday:Date) {
            
            view?.showIndicator()
-        registerInteractor.register(email:email , password:password , name:name , phoneNumber:Int(phoneNumber)! , genderId: Int(genderId)!, birthday: birthday){ (result,error)  in
+        registerInteractor.register(email:email , password:password , name:name , phoneNumber:phoneNumber , genderId: Int(genderId)!, birthday: birthday){ (result,error)  in
                if let error = error {
                    print("errrror\(error)")
                    self.view?.showError(error: error.localizedDescription)

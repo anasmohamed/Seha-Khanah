@@ -75,6 +75,9 @@ class RegisterViewController: UIViewController,RegisterProtocol {
     }
     
     func resgiterSuccess(user: User) {
+        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar") 
+        self.navigationController!.pushViewController(tabBarViewController, animated: true)
         
     }
     
@@ -103,23 +106,28 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
-        
+        formatter.dateFormat = "yyyy-MM-dd"
+
         dateTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
-        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text,let bithday = dateTextField.text  else {
+        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text,let birthday = dateTextField.text  else {
             return
         }
-        guard phone.count == 11 else {
-            return
-        }
+//        guard phone.count == 11 else {
+//            return
+//        }
         guard password.count > 6 else {
             return
         }
-            
-        registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: bithday)
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let date = dateFormatter.date(from:birthday)!
+        print(date)
+        registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date)
         
     }
     
@@ -127,7 +135,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
 
 extension RegisterViewController: RadioButtonDelegate {
     func radioButtonDidSelect(_ button: RadioButton) {
-        if button.titleLabel?.text == "male" || button.titleLabel?.text == ""
+        if button.titleLabel?.text == "Male" || button.titleLabel?.text == "ذكر"
         {
             selectedGender = "1"
             

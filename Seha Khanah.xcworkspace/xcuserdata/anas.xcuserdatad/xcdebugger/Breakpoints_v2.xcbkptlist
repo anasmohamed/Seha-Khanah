@@ -20,14 +20,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A - 3cbfb8d3681839c0"
+                  uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A - 720db7865030e83f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Seha_Khanah.SearchByLabNamePresenter.searchForLabBy(araeId: Swift.String) -&gt; ()"
                   moduleName = "Seha Khanah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
+                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
@@ -35,14 +35,14 @@
                   offsetFromSymbolStart = "324">
                </Location>
                <Location
-                  uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A - 7c2a3c9d867b85bc"
+                  uuid = "E2246BC9-C8A4-419F-89B7-30A2D5E62C7A - 329833c8be535443"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Seha_Khanah.Lab&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Seha_Khanah.SearchByLabNamePresenter.searchForLabBy(araeId: Swift.String) -&gt; ()"
                   moduleName = "Seha Khanah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
+                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/SearchScene/LabsScene/SearchByLabNameScene/Presenter/SearchByLabNamePresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
@@ -152,7 +152,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Seha Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
@@ -164,29 +164,29 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3 - 7421ca07ffff93d"
+                  uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3 - ff7a0d9e98dc42df"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Seha_Khanah.RegisterInteractor.register(email: Swift.String, password: Swift.String, name: Swift.String, phoneNumber: Swift.Int, genderId: Swift.Int, birthday: Swift.String, completionHandler: (Swift.Optional&lt;Seha_Khanah.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "Seha_Khanah.RegisterInteractor.register(email: Swift.String, password: Swift.String, name: Swift.String, phoneNumber: Swift.String, genderId: Swift.Int, birthday: Foundation.Date, completionHandler: (Swift.Optional&lt;Seha_Khanah.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Seha Khanah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
+                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "231">
+                  offsetFromSymbolStart = "411">
                </Location>
                <Location
-                  uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3 - 84520f329e7dcb2d"
+                  uuid = "4B774441-6AA7-45E3-9667-040C91F1A3E3 - 5d4b39932c16e968"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Seha_Khanah.RegisterInteractor.register(email: Swift.String, password: Swift.String, name: Swift.String, phoneNumber: Swift.Int, genderId: Swift.Int, birthday: Swift.String, completionHandler: (Swift.Optional&lt;Seha_Khanah.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Seha_Khanah.RegisterInteractor.register(email: Swift.String, password: Swift.String, name: Swift.String, phoneNumber: Swift.String, genderId: Swift.Int, birthday: Foundation.Date, completionHandler: (Swift.Optional&lt;Seha_Khanah.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Seha Khanah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Learn%20By%20Doing/SehaKhanah/Seha%20Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
+                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/AuthenticationScene/SignupScene/Interactor/RegisterInteractor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -194,38 +194,6 @@
                   offsetFromSymbolStart = "668">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BAA7EBEA-4785-49E2-8CD8-B7A8E31A1FE3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/AuthenticationScene/SignupScene/View/RegisterViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "registerBtnDidTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4C77B47A-84F4-4010-A940-8DB0A06E04EC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/AuthenticationScene/SignupScene/View/RegisterViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "registerBtnDidTapped(_:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

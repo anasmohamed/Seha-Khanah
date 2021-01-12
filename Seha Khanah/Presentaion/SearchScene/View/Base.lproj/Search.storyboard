@@ -89,7 +89,7 @@
                                                                         <rect key="frame" x="15" y="10.333333333333316" width="24" height="24.666666666666671"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Pa-4hD">
-                                                                        <rect key="frame" x="48.666666666666686" y="15" width="128" height="15"/>
+                                                                        <rect key="frame" x="48.666666666666679" y="15" width="111.33333333333331" height="15"/>
                                                                         <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Specialty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-Gq-Fmx">
-                                                                        <rect key="frame" x="50" y="15" width="153" height="15"/>
+                                                                        <rect key="frame" x="50" y="15" width="133.33333333333334" height="15"/>
                                                                         <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -171,7 +171,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search For Pharmacies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0u-q4-2ho">
-                                                                        <rect key="frame" x="50.000000000000014" y="12.666666666666686" width="177.33333333333337" height="20"/>
+                                                                        <rect key="frame" x="50" y="11.666666666666686" width="154.33333333333334" height="22"/>
                                                                         <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -211,7 +211,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-rF-OlB">
-                                                                        <rect key="frame" x="50.000000000000007" y="12.666666666666686" width="111.66666666666669" height="20"/>
+                                                                        <rect key="frame" x="49.999999999999993" y="11.666666666666686" width="95.333333333333314" height="22"/>
                                                                         <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -389,8 +389,8 @@
                     <connections>
                         <segue destination="T31-ZY-ipD" kind="relationship" relationship="viewControllers" id="n99-ho-iac"/>
                         <segue destination="evy-qG-dir" kind="relationship" relationship="viewControllers" id="mvV-lR-rXW"/>
-                        <segue destination="rcq-NQ-fKm" kind="relationship" relationship="viewControllers" id="X4W-58-Sqo"/>
                         <segue destination="sZq-tW-s1m" kind="relationship" relationship="viewControllers" id="0ZJ-tP-wNV"/>
+                        <segue destination="rcq-NQ-fKm" kind="relationship" relationship="viewControllers" id="X4W-58-Sqo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyc-TL-BlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -987,7 +987,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUi-h2-Bpx">
-                                        <rect key="frame" x="23.33333333333335" y="70" width="103.66666666666669" height="30"/>
+                                        <rect key="frame" x="17.33333333333335" y="70" width="115.66666666666669" height="30"/>
                                         <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

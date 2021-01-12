@@ -36,7 +36,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
         createNewAccountBtn.layer.borderColor = UIColor.black.cgColor
         createNewAccountBtn.layer.borderWidth = 1
         // Automatically sign in the user.
-         loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
+        loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
         
     }
     
@@ -45,7 +45,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
         
         
     }
- 
+    
     @IBAction func loginWithFacebookBtnDidTapped(_ sender: Any) {
         facebookLoginButton.sendActions(for: .touchUpInside)
         
@@ -94,7 +94,10 @@ class LoginViewController: UIViewController ,LoginProtocol{
     }
     
     func loginSuccess(user: User) {
+        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
         
+        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        self.navigationController!.pushViewController(tabBarViewController, animated: true)
     }
     
     func showError(error: String) {
@@ -127,8 +130,8 @@ extension LoginViewController: LoginButtonDelegate {
     
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-    
-       
+        
+        
         getUserDataFromFacebook()
     }
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {

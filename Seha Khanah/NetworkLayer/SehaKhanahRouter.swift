@@ -31,7 +31,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case showPharmacyDetails(id:String)
     case login(email:String,passsword:String)
     case loginWithSocial(accessTocken:String,provider:String)
-    case register(email:String,password:String,name:String,phonenumber:Int,genderId:Int,birthday:String)
+    case register(email:String,password:String,name:String,phonenumber:String,genderId:Int,birthday:Date)
     case getUserToken(grantType: String,clientId:String,clientSecret:String,scope:String)
     case updateUser(email:String,name:String,phoneNumber:String,genderId:Int,birthday:String)
     
@@ -83,7 +83,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getUserToken
         case .updateUser:
             return NetworkingConstants.updateUserProfile
-
+            
         }
     }
     
@@ -240,15 +240,17 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchForLabByAreaId,
              .getAllLabs,
              .doctorReservation,
-             .labReservation,
-             .login,
-             .loginWithSocial,
-             .register,
-             .getUserToken,
-             .updateUser:
+             .labReservation:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)
+        case   .login,
+               .loginWithSocial,
+               .register,
+               .getUserToken,
+               .updateUser:
+            return try URLEncoding.default.encode(urlRequest, with: body)
+
         case .showLabDetails:
             let showLabDetailsUrlString = (urlRequest.url?.absoluteString)!
             let labDetailsparamString = params[NetworkingConstants.showLabDetails]!
