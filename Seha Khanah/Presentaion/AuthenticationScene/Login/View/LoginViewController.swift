@@ -80,7 +80,9 @@ class LoginViewController: UIViewController ,LoginProtocol{
             animations: { self.view.layoutIfNeeded() },
             completion: nil)
     }
-    
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)

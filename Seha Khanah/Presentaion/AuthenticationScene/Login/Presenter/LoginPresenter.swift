@@ -48,7 +48,6 @@ class LoginPresenter  {
             } else {
                 if result != nil{
                     self.accessToken = result!
-                    self.view?.loginSuccess(user: self.user)
                 }
                 
             }
