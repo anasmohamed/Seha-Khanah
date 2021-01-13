@@ -37,6 +37,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case booking
     case cancelBooking(id:String)
+    case resetPassword(email:String,userType:String,token:String,password:String,passwordConfirmation:String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -87,6 +88,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getUserBookings
         case .cancelBooking:
             return NetworkingConstants.cancelBooking
+        case .resetPassword:
+            return NetworkingConstants.resetPassword
+            
         }
     }
     
@@ -117,7 +121,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .loginWithSocial,
              .register,
              .getUserToken,
-             .updateUser:
+             .updateUser,
+             .resetPassword:
             return .post
             
         }
@@ -169,6 +174,14 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .login(email, password):
             body[NetworkingConstants.emailParameter] = email
             body[NetworkingConstants.passwordParameter] = password
+        case let .resetPassword(email,userType,token,password,passwordConfirmation):
+            
+            body[NetworkingConstants.emailResetPasswordParamter] = email
+            body[NetworkingConstants.userTypeResetPasswordParamter] = userType
+            body[NetworkingConstants.tokenResetPasswordParamter] = token
+            body[NetworkingConstants.passwordResetPasswordParamter] = password
+            body[NetworkingConstants.passwordConfirmationResetPasswordParamter] = passwordConfirmation
+            
         default:
             print("Empty request body")
         }
@@ -260,7 +273,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .loginWithSocial,
                .register,
                .getUserToken,
-               .updateUser:
+               .updateUser,
+               .resetPassword:
             return try URLEncoding.default.encode(urlRequest, with: body)
             
         case .showLabDetails:

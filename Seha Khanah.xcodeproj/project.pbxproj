@@ -39,7 +39,7 @@
 		A818006825AB7E5000C750AE /* RegisterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006725AB7E5000C750AE /* RegisterProtocol.swift */; };
 		A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818006B25ABBE9100C750AE /* EditProfile.storyboard */; };
 		A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006D25ABC14800C750AE /* EditProfileViewController.swift */; };
-		A818007425ABC30100C750AE /* ForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818007325ABC30100C750AE /* ForgetPassword.storyboard */; };
+		A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818007325ABC30100C750AE /* ResetPassword.storyboard */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
 		A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */; };
@@ -107,6 +107,10 @@
 		A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87533E025A26BB900ECF699 /* BookViewController.swift */; };
 		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
+		A88084DD25AF904A00A6EE84 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */; };
+		A88084E125AF913B00A6EE84 /* ResetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084E025AF913B00A6EE84 /* ResetPasswordPresenter.swift */; };
+		A88084E325AF916300A6EE84 /* ResetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084E225AF916300A6EE84 /* ResetPasswordInteractor.swift */; };
+		A88084E525AF975500A6EE84 /* ResetPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084E425AF975500A6EE84 /* ResetPasswordProtocol.swift */; };
 		A884DD77259A1610006D686B /* localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884DD76259A1610006D686B /* localized.swift */; };
 		A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */; };
 		A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A884DD81259A2110006D686B /* CallUs.storyboard */; };
@@ -216,7 +220,7 @@
 		A818006725AB7E5000C750AE /* RegisterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocol.swift; sourceTree = "<group>"; };
 		A818006B25ABBE9100C750AE /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
 		A818006D25ABC14800C750AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		A818007325ABC30100C750AE /* ForgetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgetPassword.storyboard; sourceTree = "<group>"; };
+		A818007325ABC30100C750AE /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
 		A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+ImageSliderExtension.swift"; sourceTree = "<group>"; };
@@ -291,6 +295,10 @@
 		A87533E025A26BB900ECF699 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
+		A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		A88084E025AF913B00A6EE84 /* ResetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPresenter.swift; sourceTree = "<group>"; };
+		A88084E225AF916300A6EE84 /* ResetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordInteractor.swift; sourceTree = "<group>"; };
+		A88084E425AF975500A6EE84 /* ResetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordProtocol.swift; sourceTree = "<group>"; };
 		A884DD76259A1610006D686B /* localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localized.swift; sourceTree = "<group>"; };
 		A884DD79259A2093006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HowTheAppWorks.storyboard; sourceTree = "<group>"; };
 		A884DD7C259A20A5006D686B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HowTheAppWorks.strings; sourceTree = "<group>"; };
@@ -615,6 +623,8 @@
 		A818007125ABC17F00C750AE /* ForgetPasswordScene */ = {
 			isa = PBXGroup;
 			children = (
+				A88084DF25AF911C00A6EE84 /* Interactor */,
+				A88084DE25AF911200A6EE84 /* Presenter */,
 				A818007225ABC2BD00C750AE /* View */,
 			);
 			path = ForgetPasswordScene;
@@ -623,7 +633,9 @@
 		A818007225ABC2BD00C750AE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A818007325ABC30100C750AE /* ForgetPassword.storyboard */,
+				A818007325ABC30100C750AE /* ResetPassword.storyboard */,
+				A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */,
+				A88084E425AF975500A6EE84 /* ResetPasswordProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1276,6 +1288,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A88084DE25AF911200A6EE84 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A88084E025AF913B00A6EE84 /* ResetPasswordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A88084DF25AF911C00A6EE84 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A88084E225AF916300A6EE84 /* ResetPasswordInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A88C23E02593564A002AA4F7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1684,7 +1712,7 @@
 				A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */,
 				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
-				A818007425ABC30100C750AE /* ForgetPassword.storyboard in Resources */,
+				A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */,
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */,
 				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
@@ -1801,6 +1829,8 @@
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
 				A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */,
 				A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */,
+				A88084E125AF913B00A6EE84 /* ResetPasswordPresenter.swift in Sources */,
+				A88084DD25AF904A00A6EE84 /* ResetPasswordViewController.swift in Sources */,
 				A843BBBB25A8A6F9006231F8 /* MyAppointmentsInteractor.swift in Sources */,
 				A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */,
 				A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */,
@@ -1830,6 +1860,7 @@
 				A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,
 				A8A7DD4125951960007FBFE0 /* Area.swift in Sources */,
+				A88084E525AF975500A6EE84 /* ResetPasswordProtocol.swift in Sources */,
 				A8452B4F2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift in Sources */,
 				A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */,
 				A851FD74259794A50036790B /* AboutAppViewController.swift in Sources */,
@@ -1880,6 +1911,7 @@
 				A85E32852594A40500842D0F /* PharmacyOffer.swift in Sources */,
 				A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */,
 				A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */,
+				A88084E325AF916300A6EE84 /* ResetPasswordInteractor.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
 				A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */,
