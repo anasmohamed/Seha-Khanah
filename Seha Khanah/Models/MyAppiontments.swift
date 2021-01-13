@@ -19,11 +19,10 @@ class MyAppiontments: Codable {
     init?(withJSON data: JSON) {
         
         self.id = data["id"].stringValue
-        self.clientId = data[""].stringValue
-        self.doctorId = data["id"].stringValue
-        self.bookingDate = data[""].stringValue
+        self.clientId = data["client_id"].stringValue
+        self.doctorId = data["doctor_id"].stringValue
+        self.bookingDate = data["booking_date"].stringValue
         self.statusId = data["name_en"].stringValue
-        self.id = data["id"].stringValue
         self.doctor = DoctorDetails(withJSON: data["doctor"])
         self.status = BookingStatus(withJSON: data["status"])
         

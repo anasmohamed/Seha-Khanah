@@ -3,12 +3,31 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "LabDetails.init(withJSON:):LabDetails.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "photo[&quot;featured&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyAppintmentsTableViewController.tableView(_:cellForRowAt:):MyAppintmentsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myAppointmentsPresenter.getMyAppointmentsCount()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "LabDetailsViewController.showLabDetails(labDetails:):LabDetailsViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "labPhotos?.append(photo[&quot;featured&quot;].stringValue)">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginPresenter.login(email:password:):LoginPresenter.swift">
       </ContextState>
       <ContextState
          contextName = "SehaKhanahRouter.asURLRequest():SehaKhanahRouter.swift">
@@ -22,12 +41,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LabDetails.init(withJSON:):LabDetails.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "photo[&quot;featured&quot;].stringValue">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "MyAppintmentsTableViewController.tableView(_:numberOfRowsInSection:):MyAppintmentsTableViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

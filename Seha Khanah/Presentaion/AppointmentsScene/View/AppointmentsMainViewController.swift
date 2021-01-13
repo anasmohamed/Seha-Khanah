@@ -17,16 +17,16 @@ class AppointmentsMainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-  
+    
     @IBAction func segmentControllDidTapped(segment:UISegmentedControl)
     {
         if segment.selectedSegmentIndex == 0 {
-                   myAppointmentsView.alpha = 1
-                   myOffersView.alpha = 0
-               } else {
-                   myAppointmentsView.alpha = 0
-                   myOffersView.alpha = 1
-               }
+            myAppointmentsView.alpha = 1
+            myOffersView.alpha = 0
+        } else {
+            myAppointmentsView.alpha = 0
+            myOffersView.alpha = 1
+        }
         
     }
     

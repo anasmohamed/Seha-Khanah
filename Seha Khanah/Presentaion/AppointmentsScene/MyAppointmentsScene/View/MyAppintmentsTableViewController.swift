@@ -14,10 +14,11 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
     var myAppointmentsPresenter : MyAppointmentsPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .black
         myAppointmentsPresenter = MyAppointmentsPresenter(view: self)
         myAppointmentsPresenter.getMyAppintments()
         setupTableView()
+        tableView.delegate = self
+        tableView.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -25,22 +26,22 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    
     // MARK: - Table view data source
     func setupTableView() {
-        myAppointmentsTableView.register(UINib(nibName: "MyAppointmentsTableViewCell", bundle: nil), forCellReuseIdentifier: "MyAppointmentsTableViewCell")
+        tableView.register(UINib(nibName: "MyAppointmentsTableViewCell", bundle: nil), forCellReuseIdentifier: "MyAppointmentsTableViewCell")
         
     }
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return myAppointmentsPresenter.getMyAppointmentsCount()
     }
     
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 290
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
         myAppointmentsPresenter.configure(cell: cell, for:indexPath.row)
@@ -102,7 +103,7 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
     }
     
     func getMyAppointmentsSuccess() {
-        myAppointmentsTableView.reloadData()
+        tableView.reloadData()
     }
     
     func showError(error: String) {
