@@ -36,8 +36,15 @@ class LoginViewController: UIViewController ,LoginProtocol{
         createNewAccountBtn.layer.borderColor = UIColor.black.cgColor
         createNewAccountBtn.layer.borderWidth = 1
         // Automatically sign in the user.
-        
-        
+        if isKeyPresentInUserDefaults(key: "isUserLoggedin"){
+            let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+            let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
+            tabBarViewController.modalPresentationStyle = .fullScreen
+            self.present(tabBarViewController, animated: true, completion: nil)
+        }
+     var token = UserDefaults.standard.string(forKey: "token")
+        print(token)
+
     }
     
     @IBAction func signInWithGoogleBtnDidTapped(_ sender: Any) {
@@ -101,7 +108,6 @@ class LoginViewController: UIViewController ,LoginProtocol{
         tabBarViewController.modalPresentationStyle = .fullScreen
         self.present(tabBarViewController, animated: true, completion: nil)
         UserDefaults.standard.set(true, forKey: "isUserLoggedin")
-
         UserDefaults.standard.set(user.email, forKey: "email")
         UserDefaults.standard.set(user.birthday, forKey: "birthday")
         UserDefaults.standard.set(user.genderId, forKey: "genderId")

@@ -25,11 +25,15 @@ class LoginPresenter  {
     func login(email:String,password:String) {
         
         view?.showIndicator()
-        loginInteractor.login(email: email, password: password){ (result,error)  in
+        loginInteractor.login(email: email, password: password){ (result,message,error)  in
             if let error = error {
                 print("errrror\(error)")
                 self.view?.showError(error: error.localizedDescription)
-            } else {
+            }else if let message = message{
+                self.view?.showError(error: message)
+
+            }
+            else {
                 if result != nil{
                     self.user = result!
                     self.view?.loginSuccess(user: self.user)

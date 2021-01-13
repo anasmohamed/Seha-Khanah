@@ -170,6 +170,9 @@
 		A8D8621D25AC98CC0097ED93 /* EditUserProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */; };
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
+		A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */; };
+		A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */; };
+		A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681725AF246400B91375 /* MyAppiontments.swift */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 		A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */; };
@@ -360,6 +363,9 @@
 		A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileProtocol.swift; sourceTree = "<group>"; };
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsPresenter.swift; sourceTree = SOURCE_ROOT; };
+		A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsProtocol.swift; sourceTree = "<group>"; };
+		A8E9681725AF246400B91375 /* MyAppiontments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppiontments.swift; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldIcon+Extension.swift"; sourceTree = "<group>"; };
 		A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Black.ttf"; sourceTree = "<group>"; };
@@ -747,6 +753,7 @@
 			children = (
 				A843BBAC25A87BAD006231F8 /* MyAppointmentsTableViewCell */,
 				A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */,
+				A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -780,6 +787,7 @@
 		A843BBB925A8A6D8006231F8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1261,6 +1269,7 @@
 				A869D67925A660FF001D8886 /* DoctorDates.swift */,
 				A8C8164F25A7403200690AE8 /* PharmacyDetails.swift */,
 				A8B8E4CB25A8BF70002F8149 /* User.swift */,
+				A8E9681725AF246400B91375 /* MyAppiontments.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1768,6 +1777,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */,
 				A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */,
 				A843BBB325A87D7D006231F8 /* MyOffersTableViewController.swift in Sources */,
 				A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */,
@@ -1798,6 +1808,7 @@
 				A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */,
 				A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */,
 				A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */,
+				A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */,
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
@@ -1856,6 +1867,7 @@
 				A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */,
 				A80DD8D925A1358D00FD2CF1 /* LabDayDatesCollectionViewController.swift in Sources */,
 				A843BBB525A87DD2006231F8 /* AppointmentsMainViewController.swift in Sources */,
+				A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */,
 				A80DD8DD25A141C000FD2CF1 /* TimeCollectionViewCell.swift in Sources */,
 				A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */,
 				A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */,

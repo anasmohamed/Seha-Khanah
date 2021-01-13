@@ -52,7 +52,7 @@ class RegisterInteractor {
                 let json = JSON(response.value)
                 
                 print(json)
-                if json["success"] == "true"{
+                if json["success"] == true{
                     let jsonUser = json["data"].object
                     print(jsonUser)
                     let user = User(withJSON: JSON(jsonUser))

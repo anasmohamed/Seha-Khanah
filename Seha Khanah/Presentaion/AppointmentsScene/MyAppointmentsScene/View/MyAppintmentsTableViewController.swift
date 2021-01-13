@@ -8,11 +8,14 @@
 
 import UIKit
 
-class MyAppintmentsTableViewController: UITableViewController {
+class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProtocol {
 
+    var myAppointmentsPresenter : MyAppointmentsPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .black
+        myAppointmentsPresenter = MyAppointmentsPresenter(view: self)
+        myAppointmentsPresenter.getMyAppintments()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -86,5 +89,20 @@ class MyAppintmentsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func showIndicator() {
+        
+    }
+    
+    func hideIndicator() {
+        
+    }
+    
+    func getMyAppointmentsSuccess() {
+        
+    }
+    
+    func showError(error: String) {
+        
+    }
+    
 }

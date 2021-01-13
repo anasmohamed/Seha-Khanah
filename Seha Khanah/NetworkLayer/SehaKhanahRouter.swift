@@ -35,7 +35,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case getUserToken(grantType: String,clientId:String,clientSecret:String,scope:String)
     case updateUser(email:String,name:String,phoneNumber:String,genderId:Int,birthday:String)
     
-    
+    case booking
     
     var path: String {
         switch self {
@@ -83,6 +83,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getUserToken
         case .updateUser:
             return NetworkingConstants.updateUserProfile
+        case .booking:
+            return NetworkingConstants.getUserBookings
             
         }
     }
@@ -104,7 +106,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showLabDetails,
              .showDoctorDetails,
              .showDoctorDates,
-             .showPharmacyDetails:
+             .showPharmacyDetails,
+             .booking:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -118,20 +121,21 @@ enum SehaKhanahRouter: URLRequestConvertible {
         }
     }
     
-    //    var httpHeaders: HTTPHeaders {
-    //
-    //        let httpHeaders = [String:String]()
-    //
-    //        switch self {
-    //            //        case .getOffers:
-    //            //            httpHeaders[NetworkingConstants.accept] = NetworkingConstants.contentTypeJSON
-    //        //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
-    //        default:
-    //            print("Empty request headers")
-    //        }
-    //
-    //        return httpHeaders
-    //    }
+    var httpHeaders: HTTPHeaders{
+        
+        var httpHeaders = HTTPHeaders()
+        
+        switch self {
+        case .booking:
+            let token = UserDefaults.standard.string(forKey: "token")
+            httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
+        //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
+        default:
+            print("Empty request headers")
+        }
+        
+        return httpHeaders
+    }
     
     var body: [String: Any] {
         
@@ -160,6 +164,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .loginWithSocial(accessTocken, provider):
             body[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
             body[NetworkingConstants.loginWithSocialProviderParamter] = provider
+        case let .login(email, password):
+            body[NetworkingConstants.emailParameter] = email
+            body[NetworkingConstants.passwordParameter] = password
         default:
             print("Empty request body")
         }
@@ -202,9 +209,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.reservationBookingDateParameter] = bookingDate
             params[NetworkingConstants.reservationDoctorIdParameter] = labId
             params[NetworkingConstants.reservationCheckboxParameter] = checkbox
-        case let .login(email, password):
-            params[NetworkingConstants.emailParameter] = email
-            params[NetworkingConstants.passwordParameter] = password
+            
             
             
             //        case let .getUserToken(grantType,clientId,clientSecret,scope):
@@ -228,6 +233,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         // URL Request Components
         var urlRequest = URLRequest(url: baseURL.appendingPathComponent(path))
         urlRequest.httpMethod = httpMethod.rawValue
+        urlRequest.headers = httpHeaders
         switch self {
         case .getOffersCategories,
              .getMostOrderedOffers,
@@ -241,7 +247,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchForLabByAreaId,
              .getAllLabs,
              .doctorReservation,
-             .labReservation:
+             .labReservation,
+             .booking:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

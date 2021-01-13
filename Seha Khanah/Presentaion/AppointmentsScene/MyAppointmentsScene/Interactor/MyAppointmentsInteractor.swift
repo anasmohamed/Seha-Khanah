@@ -10,9 +10,9 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 class MyAppointmentsInteractor {
-       func getAllLabs(
+       func getMyAppointments(
                    completionHandler: @escaping ([Lab]?, Error?) -> Void) {
-         AF.request(SehaKhanahRouter.getAllLabs).validate().responseJSON{
+        AF.request(SehaKhanahRouter.booking).validate().responseJSON{
              (response) in
              let result = response.result
              switch result {

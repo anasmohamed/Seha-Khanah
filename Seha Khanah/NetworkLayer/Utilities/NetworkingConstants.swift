@@ -85,4 +85,7 @@ class NetworkingConstants {
     static let getUserTokenClientSecretParamter = "client_secret"
     static let getUserTokenScopeParamter = "scope"
 
+    static let getUserBookings = "api/user/booking"
+
+    
 }
