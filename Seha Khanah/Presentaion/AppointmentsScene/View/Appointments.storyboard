@@ -124,6 +124,9 @@
                             <outlet property="delegate" destination="vGx-mI-d7h" id="yRt-vn-UB1"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="myAppointmentsTableView" destination="0pP-8O-NUL" id="8M3-wS-M2k"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CP3-Q5-uLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

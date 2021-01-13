@@ -8,5 +8,5 @@
 
 import Foundation
 protocol MyAppointmentsTebleViewCellPrototol {
-    func configure()
+    func configure(appintment:MyAppiontments)
 }

@@ -11,7 +11,7 @@ import SwiftyJSON
 import Alamofire
 class MyAppointmentsInteractor {
        func getMyAppointments(
-                   completionHandler: @escaping ([Lab]?, Error?) -> Void) {
+                   completionHandler: @escaping ([MyAppiontments]?, Error?) -> Void) {
         AF.request(SehaKhanahRouter.booking).validate().responseJSON{
              (response) in
              let result = response.result
@@ -19,17 +19,17 @@ class MyAppointmentsInteractor {
              case .success :
                  let json = JSON(response.value)
                  print(json)
-                 var labList = [Lab]()
-                 let labs = json["data"]["search"].arrayValue
+                 var myAppointmentsList = [MyAppiontments]()
+                 let myAppointments = json["data"]["booking"].arrayValue
                 
                  
-                 for lab in labs
+                 for myAppointment in myAppointments
                  {
-                     let data = Lab(withJSON: lab)
-                     labList.append(data!)
+                     let data = MyAppiontments(withJSON: myAppointment)
+                     myAppointmentsList.append(data!)
                      
                  }
-                 completionHandler(labList, nil)
+                 completionHandler(myAppointmentsList, nil)
              case .failure(let error):
                  completionHandler(nil, error)
              }

@@ -9,13 +9,13 @@
 import Foundation
 class MyAppointmentsPresenter {
     private let myAppointmentsInteractor:MyAppointmentsInteractor
-    
+    private var myAppointments: [MyAppiontments]
     private weak var view: MyAppointmentsProtocol?
     
     init(view: MyAppointmentsProtocol) {
         self.view = view
         self.myAppointmentsInteractor = MyAppointmentsInteractor()
-       
+        self.myAppointments = [MyAppiontments]()
     }
     
     func getMyAppintments() {
@@ -28,6 +28,7 @@ class MyAppointmentsPresenter {
             }
             else {
                 if result != nil{
+                    self.myAppointments = result!
                     print("get my bookings result \(result)")
                     self.view?.getMyAppointmentsSuccess()                }
                 
@@ -35,4 +36,16 @@ class MyAppointmentsPresenter {
             
         }
     }
+    
+    func getMyAppointmentsCount() -> Int {
+        return myAppointments.count
+    }
+    
+    
+    func configure(cell: MyAppointmentsTebleViewCellPrototol, for index: Int) {
+        let appointment = myAppointments[index]
+        cell.configure(appintment:appointment )
+    }
+    
 }
+

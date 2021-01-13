@@ -66,7 +66,9 @@ class OffersCategoriesPresenter {
             cell.configure(image: image, categoryName: nameEn)
         }
         
-    }}
+    }
+    
+}
 
 
 
