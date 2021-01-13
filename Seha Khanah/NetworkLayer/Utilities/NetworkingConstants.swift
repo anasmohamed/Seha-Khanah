@@ -86,6 +86,6 @@ class NetworkingConstants {
     static let getUserTokenScopeParamter = "scope"
 
     static let getUserBookings = "api/user/booking"
+    static let cancelBooking = "api/user/booking/cancle"
 
-    
 }

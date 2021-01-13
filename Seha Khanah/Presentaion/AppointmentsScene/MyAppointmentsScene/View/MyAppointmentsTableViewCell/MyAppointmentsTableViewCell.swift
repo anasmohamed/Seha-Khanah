@@ -29,7 +29,11 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     @IBOutlet weak var containerView: UIView!
     let locale = NSLocale.current.languageCode
     let cornerRadius : CGFloat = 25.0
-
+    var actionBlock: (() -> Void)? = nil
+    var mapStackViewActionBlock: (() -> Void)? = nil
+    var lat : String?
+    var longtiude : String?
+    var bookingId:String?
     override func awakeFromNib() {
         super.awakeFromNib()
         doctorPhoto.layer.cornerRadius = doctorPhoto.frame.width / 2
@@ -48,6 +52,14 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         
         mainView.layer.cornerRadius = cornerRadius
         mainView.clipsToBounds = true
+        
+        
+        
+        let cencelRequestTab = UITapGestureRecognizer(target: self, action: #selector(self.handleCancelRequestTab(_:)))
+        canelStackView.addGestureRecognizer(cencelRequestTab)
+        
+        let mapRequestTab = UITapGestureRecognizer(target: self, action: #selector(self.handleMapRequestTab(_:)))
+        markerStackView.addGestureRecognizer(mapRequestTab)
         // Initialization code
     }
     
@@ -56,9 +68,22 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         
         // Configure the view for the selected state
     }
+    @objc func handleCancelRequestTab(_ sender: UITapGestureRecognizer? = nil)
+    {
+        actionBlock?()
+        
+    }
+    @objc func handleMapRequestTab(_ sender: UITapGestureRecognizer? = nil)
+    {
+        mapStackViewActionBlock?()
+        
+    }
     func configure(appintment: MyAppiontments) {
+        bookingId = appintment.id
         dateTimeLbl.text = appintment.bookingDate
         doctorPhoto.kf.setImage(with: URL(string: (appintment.doctor?.photo)!))
+        lat = appintment.doctor!.lat
+        longtiude = appintment.doctor!.lng
         if locale == "en"
         {
             doctorNameLbl.text = (appintment.doctor?.doctorFirstNameEn)! + " " + (appintment.doctor?.doctorLastNameEn)!

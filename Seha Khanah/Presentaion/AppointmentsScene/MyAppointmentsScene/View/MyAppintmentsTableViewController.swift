@@ -32,7 +32,7 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
         tableView.register(UINib(nibName: "MyAppointmentsTableViewCell", bundle: nil), forCellReuseIdentifier: "MyAppointmentsTableViewCell")
         
     }
-
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -43,13 +43,37 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
         return 290
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
+        cell.actionBlock = {
+            print(indexPath.row)
+            self.myAppointmentsPresenter.cancelBooking(id: cell.bookingId!)
+        }
+        cell.mapStackViewActionBlock = {
+            self.openGoogleMap(lat: cell.lat!, lng: cell.longtiude!)
+        }
         myAppointmentsPresenter.configure(cell: cell, for:indexPath.row)
         
         return cell
     }
     
-    
+      
+    func openGoogleMap(lat:String,lng: String) {
+        let latDouble = Double(lat)
+        let longDouble = Double(lng)
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {  //if phone has an app
+            
+            if let url = URL(string: "comgooglemaps-x-callback://?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                UIApplication.shared.open(url, options: [:])
+            }}
+        else {
+            //Open in browser
+            if let urlDestination = URL.init(string: "https://www.google.co.in/maps/dir/?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                UIApplication.shared.open(urlDestination)
+            }
+        }
+        
+    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

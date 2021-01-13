@@ -33,6 +33,8 @@ class DoctorDetails: Codable {
     var doctorRatings = [JSON]()
     var vistorNumber: String?
     var waitingTime: String?
+    var lat : String?
+    var lng : String?
     init() {
         
     }
@@ -60,6 +62,8 @@ class DoctorDetails: Codable {
         self.vistorNumber = data["visitor_num"].stringValue
         self.waitingTime = data["waiting_time"].stringValue
         self.doctorRatings = data["ratings"].arrayValue
+        self.lat = data["lat"].stringValue
+        self.lng = data["lng"].stringValue
         for doctorRating in doctorRatings
         {
             let data = LabRatings(withJSON: doctorRating)

@@ -36,7 +36,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case updateUser(email:String,name:String,phoneNumber:String,genderId:Int,birthday:String)
     
     case booking
-    
+    case cancelBooking(id:String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -85,7 +85,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.updateUserProfile
         case .booking:
             return NetworkingConstants.getUserBookings
-            
+        case .cancelBooking:
+            return NetworkingConstants.cancelBooking
         }
     }
     
@@ -107,7 +108,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showDoctorDetails,
              .showDoctorDates,
              .showPharmacyDetails,
-             .booking:
+             .booking,
+             .cancelBooking:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -209,6 +211,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.reservationBookingDateParameter] = bookingDate
             params[NetworkingConstants.reservationDoctorIdParameter] = labId
             params[NetworkingConstants.reservationCheckboxParameter] = checkbox
+        case let .cancelBooking(id):
+            params[NetworkingConstants.cancelBooking] = id
             
             
             
@@ -283,6 +287,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             let showPharmacyDetaisParamString = params[NetworkingConstants.showPharmacyDetails]!
             urlRequest = URLRequest(url: URL(string: showPharmacyDetailsUrlString + (showPharmacyDetaisParamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .cancelBooking:
+            let cancelBookingUrlString = (urlRequest.url?.absoluteString)!
+            
+            let scancelBookingParamString = params[NetworkingConstants.cancelBooking]!
+            urlRequest = URLRequest(url: URL(string: cancelBookingUrlString + (scancelBookingParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }

@@ -26,8 +26,9 @@ class MyAppointmentsInteractor {
                  for myAppointment in myAppointments
                  {
                      let data = MyAppiontments(withJSON: myAppointment)
+                    if data?.status!.id == "1"{
                      myAppointmentsList.append(data!)
-                     
+                    }
                  }
                  completionHandler(myAppointmentsList, nil)
              case .failure(let error):
@@ -37,4 +38,31 @@ class MyAppointmentsInteractor {
          }
          
      }
+    func cancelBooking(id:String,
+                  completionHandler: @escaping (String?, Error?) -> Void) {
+       AF.request(SehaKhanahRouter.cancelBooking(id: id)).validate().responseJSON{
+            (response) in
+            let result = response.result
+            switch result {
+            case .success :
+                let json = JSON(response.value)
+                print(json)
+                
+                let statusMessage = json["success"]
+                if statusMessage == true{
+                    completionHandler(json["message"].stringValue, nil)
+
+                }else{
+                    completionHandler(json["message"].stringValue, nil)
+
+                }
+                
+              
+            case .failure(let error):
+                completionHandler(nil, error)
+            }
+            
+        }
+        
+    }
 }

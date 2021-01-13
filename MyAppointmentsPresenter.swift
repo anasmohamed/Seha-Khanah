@@ -37,6 +37,22 @@ class MyAppointmentsPresenter {
         }
     }
     
+    func cancelBooking(id:String) {
+        
+        view?.showIndicator()
+        myAppointmentsInteractor.cancelBooking(id:id){ (result,error)  in
+            if let error = error {
+                print("errrror\(error)")
+                self.view?.showError(error: error.localizedDescription)
+            }
+            else {
+                if result != nil{
+                    self.view?.getMyAppointmentsSuccess()
+
+                }
+            }
+        }
+    }
     func getMyAppointmentsCount() -> Int {
         return myAppointments.count
     }
@@ -44,7 +60,10 @@ class MyAppointmentsPresenter {
     
     func configure(cell: MyAppointmentsTebleViewCellPrototol, for index: Int) {
         let appointment = myAppointments[index]
-        cell.configure(appintment:appointment )
+        
+            cell.configure(appintment:appointment )
+            
+        
     }
     
 }
