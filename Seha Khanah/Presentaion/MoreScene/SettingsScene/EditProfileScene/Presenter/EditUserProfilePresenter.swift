@@ -17,7 +17,7 @@ class EditUserProfilePresenter {
         user = User()
     }
     
-    func editUserProfile(email:String,name:String,phoneNumber:String,genderId:String,birthday:String) {
+    func editUserProfile(email:String,name:String,phoneNumber:String,genderId:String,birthday:Date) {
         
         view?.showIndicator()
         editUserProfileInteractor.updateUserProfile(email:email , name:name , phoneNumber:phoneNumber , genderId: Int(genderId)!, birthday: birthday){ (result,error)  in

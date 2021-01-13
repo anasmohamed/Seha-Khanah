@@ -8,35 +8,109 @@
 
 import UIKit
 import MBRadioCheckboxButton
-class EditProfileViewController: UIViewController {
-    @IBOutlet weak var dateOfBirthTextField: UITextField!
+class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
     
+    
+    let datePicker = UIDatePicker()
+    let genderRadioBtnsGroup = RadioButtonContainer()
+    var selectedGender = "1"
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var dateOfBirthTextField: UITextField!
     @IBOutlet weak var femaleRadioBtn: RadioButton!
     @IBOutlet weak var maleRadioBtn: RadioButton!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
     @IBOutlet weak var fullNameTExtField: UITextField!
+    var editProfilePresenter : EditUserProfilePresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
+        editProfilePresenter = EditUserProfilePresenter(view: self)
+        createDatePicker()
+        setupLanguageBtns()
         
         
-        
-
         // Do any additional setup after loading the view.
     }
     
-
+    
     @IBAction func saveEditesBtnDidTapped(_ sender: Any) {
+        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = fullNameTExtField.text,let phone = mobileNumberTextField.text,let birthday = dateOfBirthTextField.text  else {
+            return
+        }
+        //        guard phone.count == 11 else {
+        //            return
+        //        }
+        guard password.count > 6 else {
+            return
+        }
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.date(from:birthday)!
+        print(date)
+        editProfilePresenter.editUserProfile(email: email, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showError(error: String) {
+        indicator.stopAnimating()
+        print("error message\(error)")
     }
-    */
-
+    func createDatePicker()  {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnDidTapped))
+        toolBar.setItems([doneBtn], animated: true)
+        dateOfBirthTextField.inputAccessoryView = toolBar
+        dateOfBirthTextField.inputView = datePicker
+        datePicker.datePickerMode = .date
+    }
+    func setupLanguageBtns() {
+        genderRadioBtnsGroup.addButtons([maleRadioBtn, femaleRadioBtn])
+        genderRadioBtnsGroup.delegate = self
+        
+        genderRadioBtnsGroup.selectedButtons = [maleRadioBtn]
+        maleRadioBtn.style = .circle
+        femaleRadioBtn.style = .circle
+        
+    }
+    @objc func doneBtnDidTapped()  {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        formatter.dateFormat = "yyyy-MM-dd"
+        
+        dateOfBirthTextField.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+    
+    
+    func showIndicator() {
+        
+    }
+    
+    func hideIndicator() {
+        
+    }
+    
+    func editProfileSuccess(user: User) {
+        
+    }
+    
+    
+}
+extension EditProfileViewController: RadioButtonDelegate {
+    func radioButtonDidSelect(_ button: RadioButton) {
+        if button.titleLabel?.text == "Male" || button.titleLabel?.text == "ذكر"
+        {
+            selectedGender = "1"
+            
+        }else{
+            selectedGender = "2"
+        }
+    }
+    
+    func radioButtonDidDeselect(_ button: RadioButton) {
+        
+    }
+    
 }

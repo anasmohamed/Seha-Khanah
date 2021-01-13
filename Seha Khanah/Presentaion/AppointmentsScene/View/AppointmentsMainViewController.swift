@@ -21,11 +21,12 @@ class AppointmentsMainViewController: UIViewController {
     @IBAction func segmentControllDidTapped(segment:UISegmentedControl)
     {
         if segment.selectedSegmentIndex == 0 {
-            myAppointmentsView.alpha = 1
-            myOffersView.alpha = 0
-        } else {
             myAppointmentsView.alpha = 0
             myOffersView.alpha = 1
+            
+        } else {
+            myAppointmentsView.alpha = 1
+            myOffersView.alpha = 0
         }
         
     }

@@ -33,7 +33,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case loginWithSocial(accessTocken:String,provider:String)
     case register(email:String,password:String,name:String,phonenumber:String,genderId:Int,birthday:Date)
     case getUserToken(grantType: String,clientId:String,clientSecret:String,scope:String)
-    case updateUser(email:String,name:String,phoneNumber:String,genderId:Int,birthday:String)
+    case updateUser(email:String,name:String,phoneNumber:String,genderId:Int,birthday:Date)
     
     case booking
     case cancelBooking(id:String)
@@ -128,7 +128,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var httpHeaders = HTTPHeaders()
         
         switch self {
-        case .booking:
+        case .booking,.updateUser:
             let token = UserDefaults.standard.string(forKey: "token")
             httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
         //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON

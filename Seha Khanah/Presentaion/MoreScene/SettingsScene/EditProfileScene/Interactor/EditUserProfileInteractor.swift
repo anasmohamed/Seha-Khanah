@@ -12,7 +12,7 @@ import SwiftyJSON
 class EditUserProfileInteractor {
     
     
-    func updateUserProfile(email: String, name: String, phoneNumber: String, genderId: Int, birthday: String,
+    func updateUserProfile(email: String, name: String, phoneNumber: String, genderId: Int, birthday: Date,
                            completionHandler: @escaping (User?, Error?) -> Void) {
         AF.request(SehaKhanahRouter.updateUser(email: email, name: name, phoneNumber: phoneNumber, genderId: genderId, birthday: birthday)).validate().responseJSON{
             (response) in

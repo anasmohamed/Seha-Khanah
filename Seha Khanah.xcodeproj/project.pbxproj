@@ -154,7 +154,6 @@
 		A8C8164E25A73BD700690AE8 /* PharmacyDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164D25A73BD700690AE8 /* PharmacyDetailsPresenter.swift */; };
 		A8C8165025A7403200690AE8 /* PharmacyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164F25A7403200690AE8 /* PharmacyDetails.swift */; };
 		A8C8165225A753C600690AE8 /* PharmacyDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8165125A753C600690AE8 /* PharmacyDetailsProtocol.swift */; };
-		A8C8165625A7CE1E00690AE8 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C8165525A7CE1E00690AE8 /* Appointments.storyboard */; };
 		A8C9E3E3259FC42C0085B806 /* RatingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9E3E1259FC42C0085B806 /* RatingCollectionViewCell.swift */; };
 		A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C9E3E2259FC42C0085B806 /* RatingCollectionViewCell.xib */; };
 		A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */; };
@@ -175,6 +174,7 @@
 		A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681725AF246400B91375 /* MyAppiontments.swift */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
+		A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */; };
 		A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */; };
 		A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */; };
 		A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD3BEF259CBD5D002B0C07 /* Font.swift */; };
@@ -346,7 +346,6 @@
 		A8C8164D25A73BD700690AE8 /* PharmacyDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailsPresenter.swift; sourceTree = "<group>"; };
 		A8C8164F25A7403200690AE8 /* PharmacyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetails.swift; sourceTree = "<group>"; };
 		A8C8165125A753C600690AE8 /* PharmacyDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailsProtocol.swift; sourceTree = "<group>"; };
-		A8C8165525A7CE1E00690AE8 /* Appointments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Appointments.storyboard; sourceTree = "<group>"; };
 		A8C9E3E1259FC42C0085B806 /* RatingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A8C9E3E2259FC42C0085B806 /* RatingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCollectionViewCellPrortocol.swift; sourceTree = "<group>"; };
@@ -368,6 +367,9 @@
 		A8E9681725AF246400B91375 /* MyAppiontments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppiontments.swift; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldIcon+Extension.swift"; sourceTree = "<group>"; };
+		A8F7C07A25AF6E1900075B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Appointments.storyboard; sourceTree = "<group>"; };
+		A8F7C07D25AF6E2A00075B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Appointments.strings; sourceTree = "<group>"; };
+		A8F7C07F25AF6E3500075B53 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Appointments.strings; sourceTree = "<group>"; };
 		A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Black.ttf"; sourceTree = "<group>"; };
 		A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Bold.ttf"; sourceTree = "<group>"; };
 		A8FD3BEF259CBD5D002B0C07 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -1561,7 +1563,7 @@
 		A8C8165425A7CE0500690AE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8C8165525A7CE1E00690AE8 /* Appointments.storyboard */,
+				A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */,
 				A843BBB425A87DD2006231F8 /* AppointmentsMainViewController.swift */,
 			);
 			path = View;
@@ -1686,7 +1688,7 @@
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */,
 				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
-				A8C8165625A7CE1E00690AE8 /* Appointments.storyboard in Resources */,
+				A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
@@ -1992,6 +1994,16 @@
 				A8674A24259748DE0099E7CE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8F7C07A25AF6E1900075B53 /* Base */,
+				A8F7C07D25AF6E2A00075B53 /* en */,
+				A8F7C07F25AF6E3500075B53 /* ar */,
+			);
+			name = Appointments.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -23,14 +23,14 @@
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-yK-GFD">
-                                <rect key="frame" x="142" y="58" width="130" height="31"/>
+                                <rect key="frame" x="77" y="58" width="260" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fs1-wv-3Xg"/>
-                                    <constraint firstAttribute="width" constant="130" id="dtP-XA-oRC"/>
+                                    <constraint firstAttribute="width" constant="260" id="dtP-XA-oRC"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="My Appointments"/>
+                                    <segment title="Offers"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentControllDidTappedWithSegment:" destination="GkP-TP-wKW" eventType="valueChanged" id="zky-0M-60p"/>
