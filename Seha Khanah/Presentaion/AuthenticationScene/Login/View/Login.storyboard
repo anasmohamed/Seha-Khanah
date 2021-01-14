@@ -11,7 +11,7 @@
         <!--Login-->
         <scene sceneID="OMj-Ub-07e">
             <objects>
-                <viewController id="PgB-4O-OnJ" customClass="LoginViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="PgB-4O-OnJ" customClass="LoginViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogr-ri-yed">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

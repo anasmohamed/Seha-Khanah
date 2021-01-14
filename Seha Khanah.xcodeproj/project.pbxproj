@@ -54,7 +54,6 @@
 		A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EBC258A394C00186693 /* NetworkingConstants.swift */; };
 		A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */; };
 		A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */; };
-		A843BBB025A87BE9006231F8 /* MyAppointmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A843BBAE25A87BE9006231F8 /* MyAppointmentsTableViewCell.xib */; };
 		A843BBB325A87D7D006231F8 /* MyOffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBB225A87D7D006231F8 /* MyOffersTableViewController.swift */; };
 		A843BBB525A87DD2006231F8 /* AppointmentsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBB425A87DD2006231F8 /* AppointmentsMainViewController.swift */; };
 		A843BBB725A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBB625A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift */; };
@@ -154,6 +153,7 @@
 		A8BFC9412594B33A002C90ED /* PharmacyOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */; };
 		A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */; };
 		A8BFC9452594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */; };
+		A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */; };
 		A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C8164525A72F9200690AE8 /* PharmacyDetails.storyboard */; };
 		A8C8164825A733DB00690AE8 /* PharamcyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */; };
 		A8C8164C25A73B0300690AE8 /* PharamcyDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164B25A73B0300690AE8 /* PharamcyDetailsInteractor.swift */; };
@@ -237,7 +237,6 @@
 		A83D6EBC258A394C00186693 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
 		A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppintmentsTableViewController.swift; sourceTree = "<group>"; };
 		A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTableViewCell.swift; sourceTree = "<group>"; };
-		A843BBAE25A87BE9006231F8 /* MyAppointmentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
 		A843BBB225A87D7D006231F8 /* MyOffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewController.swift; sourceTree = "<group>"; };
 		A843BBB425A87DD2006231F8 /* AppointmentsMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsMainViewController.swift; sourceTree = "<group>"; };
 		A843BBB625A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTebleViewCellPrototol.swift; sourceTree = "<group>"; };
@@ -358,6 +357,9 @@
 		A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersPresenter.swift; sourceTree = "<group>"; };
 		A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersViewProtocol.swift; sourceTree = "<group>"; };
 		A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOfferTableViewCellViewProtocol.swift; sourceTree = "<group>"; };
+		A8C7D21A25B0EDD000C24023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
+		A8C7D21D25B0EE0200C24023 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
+		A8C7D21F25B0EE0500C24023 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
 		A8C8164525A72F9200690AE8 /* PharmacyDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PharmacyDetails.storyboard; sourceTree = "<group>"; };
 		A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharamcyDetailsViewController.swift; sourceTree = "<group>"; };
 		A8C8164B25A73B0300690AE8 /* PharamcyDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharamcyDetailsInteractor.swift; sourceTree = "<group>"; };
@@ -786,7 +788,7 @@
 			isa = PBXGroup;
 			children = (
 				A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */,
-				A843BBAE25A87BE9006231F8 /* MyAppointmentsTableViewCell.xib */,
+				A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */,
 				A843BBB625A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift */,
 			);
 			path = MyAppointmentsTableViewCell;
@@ -1754,7 +1756,7 @@
 				A8D2E36125AB42CC003C8DA7 /* GoogleService-Info.plist in Resources */,
 				A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */,
 				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
-				A843BBB025A87BE9006231F8 /* MyAppointmentsTableViewCell.xib in Resources */,
+				A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */,
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
 				A806CAFF259E189900D1764C /* BookingDatesCollectionViewCell.xib in Resources */,
@@ -2078,6 +2080,16 @@
 				A8674A24259748DE0099E7CE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8C7D21A25B0EDD000C24023 /* Base */,
+				A8C7D21D25B0EE0200C24023 /* en */,
+				A8C7D21F25B0EE0500C24023 /* ar */,
+			);
+			name = MyAppointmentsTableViewCell.xib;
 			sourceTree = "<group>";
 		};
 		A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */ = {

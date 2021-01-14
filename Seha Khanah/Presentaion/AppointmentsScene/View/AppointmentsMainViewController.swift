@@ -27,14 +27,14 @@ class AppointmentsMainViewController: UIViewController {
         }
         if isUserLoggedIn == true
         {
-            noUserLoggedInStackView.isHidden = false
-            segmentCotrol.isHidden = true
+            noUserLoggedInStackView.isHidden = true
+            segmentCotrol.isHidden = false
             
         }else{
             myAppointmentsView.alpha = 0
             myOffersView.alpha = 0
-            segmentCotrol.isHidden = false
-            noUserLoggedInStackView.isHidden = true
+            segmentCotrol.isHidden = true
+            noUserLoggedInStackView.isHidden = false
         }
         // Do any additional setup after loading the view.
     }
