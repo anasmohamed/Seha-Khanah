@@ -15,6 +15,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     
     @IBOutlet weak var ratingView: UIView!
     @IBOutlet weak var datesCollectionView: UICollectionView!
+    @IBOutlet weak var goToLocationView: UIView!
     @IBOutlet weak var aboutDoctorTextView: ReadMoreTextView!
     
     @IBOutlet weak var aboutDoctorLbl: UILabel!
@@ -60,6 +61,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         cornerRadiusAndShodow(view: aboutDoctorView)
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: datesView)
+        cornerRadiusAndShodow(view: goToLocationView)
+
     }
     func showDoctorDates() {
         
@@ -120,12 +123,20 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     }
     @objc func moreOrLessLblDidTapped(_ sender: UITapGestureRecognizer? = nil)
     {
-        aboutDoctorLbl.numberOfLines = 0
-        aboutDoctorLbl.sizeToFit()
-        aboutDoctorViewHeight.constant = 200
-        cornerRadiusAndShodow(view: aboutDoctorView)
-        
-        
+        if moreAndLessLbl.text == "more" || moreAndLessLbl.text == "المزيد"{
+            aboutDoctorLbl.numberOfLines = 0
+            aboutDoctorLbl.sizeToFit()
+            print(aboutDoctorLbl.bounds.height)
+            aboutDoctorViewHeight.constant = aboutDoctorLbl.bounds.height + 80
+            cornerRadiusAndShodow(view: aboutDoctorView)
+            moreAndLessLbl.text = "less".localized
+        }else{
+            aboutDoctorLbl.numberOfLines = 1
+            aboutDoctorLbl.sizeToFit()
+            aboutDoctorViewHeight.constant = 110
+            cornerRadiusAndShodow(view: aboutDoctorView)
+            moreAndLessLbl.text = "more".localized
+        }
     }
     
 }

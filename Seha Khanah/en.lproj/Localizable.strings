@@ -21,6 +21,8 @@
 
 "More" = "More";
 
+"more" = "more";
+
 "Edit Your Password" = "Edit Your Password";
 
 "Edit Profile" = "Edit Profile";
@@ -36,3 +38,5 @@
 "Visitor" = "Visitor";
 
 " Seen" = " Seen";
+
+"less" = "less";
