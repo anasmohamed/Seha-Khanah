@@ -23,7 +23,7 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
     var labAddress: String?
     var profissionalTitle: String?
     let locale = NSLocale.current.languageCode
-
+    
     @IBOutlet weak var dayDateLbl: UILabel!
     @IBOutlet weak var dayDatesCollectionView: UICollectionView!
     @IBOutlet weak var dayDateView: UIView!
@@ -35,27 +35,27 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         if locale == "en"
         {
             dayDateLbl.text = (labDate?.dayEn)! + " " + (labDate?.date)!
-
+            
         }else{
             dayDateLbl.text = (labDate?.dayAr)! + " " + (labDate?.date)!
-
+            
         }
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         cornerRadiusAndShodow(view: dayDateView)
-
+        
     }
-      func cornerRadiusAndShodow(view:UIView)  {
-          view.layer.shadowColor = UIColor.black.cgColor
-          view.layer.shadowOpacity = 1
-          view.layer.shadowOffset = .zero
-          view.layer.shadowRadius = 5
-          view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-          view.layer.shouldRasterize = true
-          view.layer.rasterizationScale = UIScreen.main.scale
-          view.layer.cornerRadius = 10
-      }
+    func cornerRadiusAndShodow(view:UIView)  {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 5
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
+        view.layer.cornerRadius = 10
+    }
     /*
      // MARK: - Navigation
      
@@ -97,7 +97,14 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         bookViewController.bookDate = times![indexPath.row].time
         bookViewController.date = labDate?.date
         bookViewController.labId = labId
-        bookViewController.dayName = labDate?.dayEn
+        if locale == "en"
+        {        bookViewController.dayName = labDate?.dayEn
+            
+            
+        }else{
+            bookViewController.dayName = labDate?.dayAr
+            
+        }
         bookViewController.labAddress = labAddress
         bookViewController.isDoctor = isDoctor!
         bookViewController.doctorCost = doctorCost

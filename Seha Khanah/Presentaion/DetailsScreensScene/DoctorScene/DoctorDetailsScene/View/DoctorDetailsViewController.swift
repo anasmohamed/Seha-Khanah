@@ -83,18 +83,21 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         numberOfSeenLbl.text = doctorDetails.vistorNumber! + " Seen".localized
         doctorImageView.kf.setImage(with: URL(string: doctorDetails.photo!))
         numberOfRaitings.text = "Overall Rating From ".localized + doctorDetails.vistorNumber! + "Visitor".localized
-        doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
-        profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
+       
         
         
         if locale == "en"
         {
             aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
-            
+             doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
             cityNameLbl.text = doctorDetails.addressEn
+            profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
+
             
         }else
         {
+            profissionalTitleLbl.text = doctorDetails.profissionalTitleAr
+             doctorNameLbl.text = doctorDetails.doctorFirstNameAr! + " " + doctorDetails.doctorLastNameAr!
             aboutDoctorLbl.text = doctorDetails.aboutDoctorAr
             cityNameLbl.text = doctorDetails.addressAr
             

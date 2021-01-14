@@ -51,7 +51,7 @@ class BookViewController: UIViewController,BookingProtocol {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
         
-        dayLbl.text = dayName
+        dayLbl.text = dayName! + " " + date!
         labNameLbl.text = labName
         if locale == "en"
         {
