@@ -46,7 +46,7 @@ class BookViewController: UIViewController,BookingProtocol {
     var doctorId : String?
     var bookingForAnotherPatientCheck = "0"
     let locale = NSLocale.current.languageCode
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
@@ -56,10 +56,10 @@ class BookViewController: UIViewController,BookingProtocol {
         if locale == "en"
         {
             labServiceLbl.text = labService?.nameEn
-
+            
         }else{
             labServiceLbl.text = labService?.nameAr
-
+            
         }
         labImageView.kf.setImage(with: URL(string: labPhoto!))
         timeLbl.text = bookDate
@@ -104,10 +104,10 @@ class BookViewController: UIViewController,BookingProtocol {
         let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
         successfulBookingViewController.labName = labName
         if isDoctor{
-        successfulBookingViewController.labService = labService
+            successfulBookingViewController.labService = labService
         }else{
             successfulBookingViewController.profissionalTitle = profissionalTitle
-
+            
         }
         successfulBookingViewController.labId = labId
         successfulBookingViewController.dayText = dayName
@@ -129,6 +129,10 @@ class BookViewController: UIViewController,BookingProtocol {
      */
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
         print (date! + timeLbl.text!)
+        guard let emailText = emailTextField.text,let mobileText = mobileNumberTextField.text,let nameText = fullNameTextField.text  else {
+            return
+        }
+        
         var timeWithoutAMOrPM : String?
         if  (timeLbl.text?.contains("am"))!
         {
@@ -142,7 +146,7 @@ class BookViewController: UIViewController,BookingProtocol {
         if isDoctor{
             preseter?.bookDoctor(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
         }else{
-        preseter?.bookLab(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
+            preseter?.bookLab(name:nameText , email: emailText, phoneNumber:mobileText , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
         }}
     
 }
@@ -154,7 +158,7 @@ extension BookViewController: CheckboxButtonDelegate {
     
     func chechboxButtonDidDeselect(_ button: CheckboxButton) {
         bookingForAnotherPatientCheck = "0"
-
+        
     }
     
     
