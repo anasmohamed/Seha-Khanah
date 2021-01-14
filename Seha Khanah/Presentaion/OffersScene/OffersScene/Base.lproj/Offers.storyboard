@@ -27,15 +27,16 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqS-kv-9VW">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLu-Dd-5W7" customClass="AACarousel" customModule="AACarousel">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kao-xI-gJU">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="e3Z-qm-x0F"/>
+                                                    <constraint firstAttribute="height" constant="130" id="NB6-qt-hLf"/>
                                                 </constraints>
-                                            </view>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="82D-dh-KTM"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="N9X-BN-2i6"/>
+                                            </scrollView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-vh-ykG">
-                                                <rect key="frame" x="0.0" y="227" width="414" height="270"/>
+                                                <rect key="frame" x="0.0" y="204.5" width="414" height="270"/>
                                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="270" id="lNr-s1-ztM"/>
@@ -44,7 +45,7 @@
                                                 <cells/>
                                             </collectionView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-US-lln">
-                                                <rect key="frame" x="0.0" y="541.5" width="414" height="354.5"/>
+                                                <rect key="frame" x="0.0" y="519" width="414" height="377"/>
                                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pwm-p5-vyk">
@@ -58,19 +59,19 @@
                                                 </prototypes>
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most Ordered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haV-SW-SbG">
-                                                <rect key="frame" x="20" y="507" width="104" height="24.5"/>
+                                                <rect key="frame" x="20" y="484.5" width="104" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-aU-ELi">
-                                                <rect key="frame" x="20" y="180" width="152" height="27"/>
+                                                <rect key="frame" x="20" y="160" width="152" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-GP-Fkq">
-                                                <rect key="frame" x="338" y="175" width="66" height="37"/>
+                                                <rect key="frame" x="338" y="154" width="66" height="37"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                                 <state key="normal" title="Show All"/>
                                             </button>
@@ -80,19 +81,18 @@
                                             <constraint firstItem="9cI-vh-ykG" firstAttribute="top" secondItem="5ZH-aU-ELi" secondAttribute="bottom" constant="20" id="0It-Ea-eP5"/>
                                             <constraint firstItem="k5D-US-lln" firstAttribute="top" secondItem="haV-SW-SbG" secondAttribute="bottom" constant="10" id="7uP-VT-QSc"/>
                                             <constraint firstAttribute="trailing" secondItem="9cI-vh-ykG" secondAttribute="trailing" id="Agx-nQ-PfI"/>
-                                            <constraint firstItem="oLu-Dd-5W7" firstAttribute="leading" secondItem="BqS-kv-9VW" secondAttribute="leading" id="G1N-EH-TBN"/>
-                                            <constraint firstItem="oLu-Dd-5W7" firstAttribute="top" secondItem="BqS-kv-9VW" secondAttribute="top" id="IPt-0D-iVb"/>
+                                            <constraint firstItem="kao-xI-gJU" firstAttribute="top" secondItem="BqS-kv-9VW" secondAttribute="top" id="Cd4-Qi-WpS"/>
+                                            <constraint firstAttribute="trailing" secondItem="kao-xI-gJU" secondAttribute="trailing" constant="20" symbolic="YES" id="G8q-Qx-99v"/>
                                             <constraint firstAttribute="bottom" secondItem="k5D-US-lln" secondAttribute="bottom" id="N6q-vK-BRT"/>
                                             <constraint firstItem="5ZH-aU-ELi" firstAttribute="leading" secondItem="BqS-kv-9VW" secondAttribute="leading" constant="20" id="NiI-GH-FUn"/>
-                                            <constraint firstAttribute="trailing" secondItem="oLu-Dd-5W7" secondAttribute="trailing" id="Rxa-iF-b4s"/>
                                             <constraint firstItem="haV-SW-SbG" firstAttribute="top" secondItem="9cI-vh-ykG" secondAttribute="bottom" constant="10" id="Vgb-zh-ceo"/>
                                             <constraint firstAttribute="trailing" secondItem="k5D-US-lln" secondAttribute="trailing" id="bEd-Ad-rCc"/>
                                             <constraint firstItem="haV-SW-SbG" firstAttribute="leading" secondItem="BqS-kv-9VW" secondAttribute="leading" constant="20" id="d9Q-Xx-cao"/>
                                             <constraint firstItem="9cI-vh-ykG" firstAttribute="leading" secondItem="BqS-kv-9VW" secondAttribute="leading" id="df5-OC-nqA"/>
-                                            <constraint firstItem="OmU-GP-Fkq" firstAttribute="top" secondItem="oLu-Dd-5W7" secondAttribute="bottom" constant="25" id="hlt-LB-gj1"/>
+                                            <constraint firstItem="kao-xI-gJU" firstAttribute="leading" secondItem="BqS-kv-9VW" secondAttribute="leading" id="gI0-ft-cDh"/>
+                                            <constraint firstItem="5ZH-aU-ELi" firstAttribute="top" secondItem="kao-xI-gJU" secondAttribute="bottom" constant="30" id="lOt-qj-Vda"/>
                                             <constraint firstItem="k5D-US-lln" firstAttribute="leading" secondItem="BqS-kv-9VW" secondAttribute="leading" id="pSL-6J-kqj"/>
                                             <constraint firstAttribute="trailing" secondItem="OmU-GP-Fkq" secondAttribute="trailing" constant="10" id="pTT-xW-9mi"/>
-                                            <constraint firstItem="5ZH-aU-ELi" firstAttribute="top" secondItem="oLu-Dd-5W7" secondAttribute="bottom" constant="30" id="uAt-xZ-JcK"/>
                                             <constraint firstItem="OmU-GP-Fkq" firstAttribute="centerY" secondItem="5ZH-aU-ELi" secondAttribute="centerY" id="ya4-WQ-bsD"/>
                                         </constraints>
                                     </view>
@@ -120,7 +120,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Offers" id="iql-5T-GfB"/>
                     <connections>
-                        <outlet property="imageSlider" destination="oLu-Dd-5W7" id="iC1-Tg-wat"/>
+                        <outlet property="imageSlider" destination="kao-xI-gJU" id="zAY-Fp-qPG"/>
                         <outlet property="mostOrderOffersTableView" destination="k5D-US-lln" id="FUS-Op-KmQ"/>
                         <outlet property="mostOrderedOffersTableView" destination="k5D-US-lln" id="KTE-bh-LwI"/>
                         <outlet property="offersCategoriesCollectionView" destination="9cI-vh-ykG" id="qq8-pD-ohn"/>

@@ -10,6 +10,7 @@ import Foundation
 extension OffersViewController :OffersCategorisViewProtocol{
     func getOffersCategorisSuccess() {
         offersCategoriesCollectionView.reloadData()
+        
     }
     
     func showIndicator() {

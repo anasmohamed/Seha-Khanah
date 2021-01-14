@@ -11,10 +11,13 @@ import SwiftyJSON
 class OffersCategory:Codable  {
     var photo: String?
     var nameEn: String?
+    var nameAr : String?
     init?(withJSON data: JSON) {
         
         self.photo = data["featured"].stringValue
         self.nameEn = data["name_en"].stringValue
+        self.nameAr = data["name_ar"].stringValue
+
         
     }
 }

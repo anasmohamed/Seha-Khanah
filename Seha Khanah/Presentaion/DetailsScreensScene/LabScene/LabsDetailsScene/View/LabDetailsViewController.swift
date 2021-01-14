@@ -35,9 +35,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         super.viewDidLoad()
         labDetailsPresenter = LabDetailsPresenter(view: self)
         labDetailsPresenter.showLabDetails(id: labId!)
-        cornerRadiusAndShodow(view: datesView)
-        cornerRadiusAndShodow(view: ratingView)
-        cornerRadiusAndShodow(view: goToLocationView)
+        
 
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
@@ -45,6 +43,12 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         ratingCollectionView.delegate = self
         ratingCollectionView.dataSource = self
         setupCollectionView()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cornerRadiusAndShodow(view: datesView)
+        cornerRadiusAndShodow(view: ratingView)
+        cornerRadiusAndShodow(view: goToLocationView)
     }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.black.cgColor

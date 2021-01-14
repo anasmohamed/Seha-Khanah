@@ -10,6 +10,7 @@ import UIKit
 
 class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate{
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var searchBySpecialtyBar: UISearchBar!
     @IBOutlet weak var searchBySpecialtyResultTableView: UITableView!
     @IBOutlet weak var noDataFoundStackView: UIStackView!

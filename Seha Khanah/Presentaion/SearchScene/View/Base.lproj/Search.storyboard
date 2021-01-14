@@ -314,6 +314,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="O8O-vq-JCF">
+                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                             <searchBar contentMode="redraw" placeholder="Search By Doctor Name" translatesAutoresizingMaskIntoConstraints="NO" id="PaK-NP-IfZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -360,17 +364,20 @@
                             <constraint firstItem="ema-6Y-3Ec" firstAttribute="centerX" secondItem="G0A-5v-JWP" secondAttribute="centerX" id="Bib-3J-HzQ"/>
                             <constraint firstItem="Sah-DF-4dy" firstAttribute="top" secondItem="PaK-NP-IfZ" secondAttribute="bottom" id="N1B-7P-ojB"/>
                             <constraint firstItem="PaK-NP-IfZ" firstAttribute="top" secondItem="G0A-5v-JWP" secondAttribute="top" id="NpF-Tx-Wp5"/>
+                            <constraint firstItem="O8O-vq-JCF" firstAttribute="centerY" secondItem="ohe-Qb-YzB" secondAttribute="centerY" id="S81-uC-auT"/>
                             <constraint firstItem="Sah-DF-4dy" firstAttribute="leading" secondItem="G0A-5v-JWP" secondAttribute="leading" id="TpL-2q-1Rf"/>
                             <constraint firstItem="Sah-DF-4dy" firstAttribute="bottom" secondItem="G0A-5v-JWP" secondAttribute="bottom" constant="34" id="a7i-40-sYH"/>
                             <constraint firstItem="ema-6Y-3Ec" firstAttribute="centerY" secondItem="G0A-5v-JWP" secondAttribute="centerY" id="c75-tK-XGF"/>
                             <constraint firstItem="PaK-NP-IfZ" firstAttribute="leading" secondItem="G0A-5v-JWP" secondAttribute="leading" id="cXA-RH-Bg4"/>
                             <constraint firstItem="G0A-5v-JWP" firstAttribute="trailing" secondItem="Sah-DF-4dy" secondAttribute="trailing" id="uXO-Eu-o3z"/>
+                            <constraint firstItem="O8O-vq-JCF" firstAttribute="centerX" secondItem="ohe-Qb-YzB" secondAttribute="centerX" id="wRd-rf-DeZ"/>
                             <constraint firstItem="G0A-5v-JWP" firstAttribute="trailing" secondItem="PaK-NP-IfZ" secondAttribute="trailing" id="yFB-5J-87q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G0A-5v-JWP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="2Q8-er-26V"/>
                     <connections>
+                        <outlet property="indicator" destination="O8O-vq-JCF" id="A8C-Of-ubN"/>
                         <outlet property="noDataFoundStackView" destination="ema-6Y-3Ec" id="PPL-Cx-HJp"/>
                         <outlet property="searchBar" destination="PaK-NP-IfZ" id="yP7-op-Mb9"/>
                         <outlet property="searchByNameResultsTableView" destination="Sah-DF-4dy" id="JDB-a6-VKc"/>
@@ -408,6 +415,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-wQ-U4K">
+                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qTm-nm-vGZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -481,7 +492,9 @@
                             <constraint firstItem="dwd-4j-vqR" firstAttribute="trailing" secondItem="qTm-nm-vGZ" secondAttribute="trailing" id="6ba-qY-Rb6"/>
                             <constraint firstItem="z9s-nQ-vYf" firstAttribute="bottom" secondItem="dwd-4j-vqR" secondAttribute="bottom" constant="34" id="6pQ-h9-kCK"/>
                             <constraint firstItem="dwd-4j-vqR" firstAttribute="trailing" secondItem="z9s-nQ-vYf" secondAttribute="trailing" id="6vR-fH-ixP"/>
+                            <constraint firstItem="Wvi-wQ-U4K" firstAttribute="centerX" secondItem="l8q-YN-3Dg" secondAttribute="centerX" id="AK2-Ze-DzW"/>
                             <constraint firstItem="o0O-JT-roX" firstAttribute="centerY" secondItem="dwd-4j-vqR" secondAttribute="centerY" id="IM4-xj-stX"/>
+                            <constraint firstItem="Wvi-wQ-U4K" firstAttribute="centerY" secondItem="l8q-YN-3Dg" secondAttribute="centerY" id="InC-1U-KCL"/>
                             <constraint firstItem="z9s-nQ-vYf" firstAttribute="leading" secondItem="dwd-4j-vqR" secondAttribute="leading" id="azA-QX-EYl"/>
                             <constraint firstItem="o0O-JT-roX" firstAttribute="centerX" secondItem="dwd-4j-vqR" secondAttribute="centerX" id="vJp-Oy-2Os"/>
                             <constraint firstItem="qTm-nm-vGZ" firstAttribute="leading" secondItem="dwd-4j-vqR" secondAttribute="leading" id="vXN-CL-kjx"/>
@@ -490,6 +503,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="3Bn-wE-i2M"/>
                     <connections>
+                        <outlet property="indicator" destination="Wvi-wQ-U4K" id="S2W-IW-c6K"/>
                         <outlet property="noDataFoundStackView" destination="o0O-JT-roX" id="JbI-1d-hXe"/>
                         <outlet property="searchBySpecialtyBar" destination="qTm-nm-vGZ" id="qap-gr-ACn"/>
                         <outlet property="searchBySpecialtyResultTableView" destination="z9s-nQ-vYf" id="nMv-nW-RYS"/>
@@ -871,32 +885,44 @@
             <point key="canvasLocation" x="2539" y="2510"/>
         </scene>
         <!--Search By Pharmacy Region View Controller-->
-        <scene sceneID="0UD-yX-euS">
+        <scene sceneID="U6R-Yb-Axg">
             <objects>
-                <tableViewController storyboardIdentifier="SearchByPharmacyRegionViewController" id="hge-Kw-5dh" customClass="SearchByPharmacyRegionViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D2H-JQ-C2o">
+                <viewController storyboardIdentifier="SearchByPharmacyRegionViewController" id="kQg-2w-fbs" customClass="SearchByPharmacyRegionViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pze-Lm-23T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-zm-o6u">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eMK-t3-i6H">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eMK-t3-i6H" id="O2I-f2-T6m">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oqI-Xo-f1g">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oqI-Xo-f1g" id="7Oi-Qn-X4J">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hge-Kw-5dh" id="X3Y-do-3G5"/>
-                            <outlet property="delegate" destination="hge-Kw-5dh" id="hwa-7r-hJI"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FLC-n4-0cK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="VSK-zm-o6u" firstAttribute="leading" secondItem="b0p-z8-hUN" secondAttribute="leading" id="NIt-rZ-cTM"/>
+                            <constraint firstItem="VSK-zm-o6u" firstAttribute="top" secondItem="b0p-z8-hUN" secondAttribute="top" id="VEE-PK-y3L"/>
+                            <constraint firstItem="b0p-z8-hUN" firstAttribute="trailing" secondItem="VSK-zm-o6u" secondAttribute="trailing" id="VHE-hS-Reu"/>
+                            <constraint firstItem="b0p-z8-hUN" firstAttribute="bottom" secondItem="VSK-zm-o6u" secondAttribute="bottom" id="qag-72-3o4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b0p-z8-hUN"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="VSK-zm-o6u" id="Sk4-Ce-Il6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8P-Ou-UBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6260.8695652173919" y="1006.4732142857142"/>
+            <point key="canvasLocation" x="6686" y="938"/>
         </scene>
         <!--Show All Pharmacies View Controller-->
         <scene sceneID="p2P-cC-cw7">

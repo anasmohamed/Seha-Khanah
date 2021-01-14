@@ -10,6 +10,13 @@ import Foundation
 import UIKit
 extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostOrderedOffersViewProtocol{
     func getMostOrderedOffersSuccess() {
+//       imageSlider.auk.settings.contentMode = .scaleAspectFill
+//               for image in labDetails.labPhotos
+//               {
+//                   labImages.auk.show(url: image)
+//                   
+//               }
+//               imageSlider.auk.startAutoScroll(delaySeconds: 3)
         mostOrderOffersTableView.reloadData()
     }
     func setupMostOrderedOffersTableView() {

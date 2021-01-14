@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Search By Category"; ObjectID = "5ZH-aU-ELi"; */
-"5ZH-aU-ELi.text" = "";
+"5ZH-aU-ELi.text" = "بحث بالفئة";
 
 /* Class = "UIButton"; normalTitle = "Show All"; ObjectID = "OmU-GP-Fkq"; */
 "OmU-GP-Fkq.normalTitle" = "شاهد الكل";

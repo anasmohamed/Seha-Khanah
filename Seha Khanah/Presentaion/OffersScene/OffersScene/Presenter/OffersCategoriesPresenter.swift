@@ -11,6 +11,7 @@ class OffersCategoriesPresenter {
     private let offersInteractor:OffersInteractor
     private var offers: [OffersCategory]
     private weak var view: OffersCategorisViewProtocol?
+    let locale = NSLocale.current.languageCode
     init(view: OffersCategorisViewProtocol) {
         self.view = view
         self.offersInteractor = OffersInteractor()
@@ -60,10 +61,18 @@ class OffersCategoriesPresenter {
             
             
             guard let image = offerCategory.photo,
-                let nameEn = offerCategory.nameEn
+                let nameEn = offerCategory.nameEn,
+                let nameAr = offerCategory.nameAr
                 else { return }
-            
-            cell.configure(image: image, categoryName: nameEn)
+            if locale == "en"
+            {
+                cell.configure(image: image, categoryName: nameEn)
+                
+            }else
+            {            cell.configure(image: image, categoryName: nameAr)
+                
+                
+            }
         }
         
     }

@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol {
+class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSource,UITableViewDelegate,AreasProtocol {
     
     
     
+    @IBOutlet weak var tableView: UITableView!
     var regionPresenter: RegionPresenter!
     var searchForLab = false
     var searchForDoctor = false
@@ -20,17 +21,19 @@ class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         regionPresenter = RegionPresenter(view: self)
         regionPresenter.getAreas()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "AllRegionsCell")
         
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return regionPresenter.areasCount()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if searchForLab{
             
             
@@ -49,7 +52,7 @@ class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol 
             self.navigationController!.pushViewController(searchByPharmacyNameViewController, animated: true)
         }
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllRegionsCell", for: indexPath)
         if locale == "en"
         {

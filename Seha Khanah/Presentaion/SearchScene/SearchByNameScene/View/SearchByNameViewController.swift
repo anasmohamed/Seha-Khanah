@@ -10,6 +10,7 @@ import UIKit
 
 class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate,SearchViewProtocol,UISearchBarDelegate {
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     
     @IBOutlet weak var searchByNameResultsTableView: UITableView!

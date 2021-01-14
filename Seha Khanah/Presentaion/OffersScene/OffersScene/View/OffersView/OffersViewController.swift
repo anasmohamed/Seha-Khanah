@@ -11,9 +11,9 @@ import AACarousel
 class OffersViewController: UIViewController {
     
     
+    @IBOutlet weak var imageSlider: UIScrollView!
     @IBOutlet weak var mostOrderOffersTableView: UITableView!
 
-    @IBOutlet weak var imageSlider: AACarousel!
     @IBOutlet weak var offersCategoriesCollectionView: UICollectionView!
     @IBOutlet weak var mostOrderedOffersTableView: UITableView!
     
@@ -35,17 +35,7 @@ class OffersViewController: UIViewController {
         mostOrderedOffersPresenter = MostOrderedOffersPresenter(view: self)
         setupCollectionView()
         setupMostOrderedOffersTableView()
-        let pathArray = ["http://www.gettyimages.ca/gi-resources/images/Embed/new/embed2.jpg",
-                         "https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg",
-                         "https://imgct2.aeplcdn.com/img/800x600/car-data/big/honda-amaze-image-12749.png",
-                         "http://www.conversion-uplift.co.uk/wp-content/uploads/2016/09/Lamborghini-Huracan-Image-672x372.jpg",
-                         "very-large-flamingo"]
-        titleArray = ["picture 1","picture 2","picture 3","picture 4","picture 5"]
-        imageSlider.delegate = self
-        imageSlider.setCarouselData(paths: pathArray,  describedTitle: titleArray, isAutoScroll: true, timer: 5.0, defaultImage: "defaultImage")
-        //optional methods
-        imageSlider.setCarouselOpaque(layer: false, describedTitle: false, pageIndicator: false)
-        imageSlider.setCarouselLayout(displayStyle: 3, pageIndicatorPositon: 2, pageIndicatorColor: nil, describedTitleColor: nil, layerColor: nil)
+       
         
         presenter.getOffersCategories()
         mostOrderedOffersPresenter.getMostOrderedOffers()
