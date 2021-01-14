@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable  {
         // Override point for customization after application launch.
         MOLHLanguage.setDefaultLanguage("en")
         MOLH.shared.activate(true)
-        UILabel.appearance().font = UIFont(name: "Sukar-Regular.ttf", size: 17)
+      
         GIDSignIn.sharedInstance().clientID = "151320045397-sotvam4tirfvpncfah1n2gjrlv1ak4gi.apps.googleusercontent.com"
        // self.window = UIWindow()
      //   self.window!.makeKeyAndVisible()

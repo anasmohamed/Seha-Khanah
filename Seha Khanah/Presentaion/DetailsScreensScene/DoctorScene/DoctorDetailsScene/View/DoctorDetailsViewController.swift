@@ -33,6 +33,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var profissionalTitleLbl: UILabel!
     @IBOutlet weak var numberOfSeenLbl: UILabel!
     @IBOutlet weak var doctorImageView: UIImageView!
+    let locale = NSLocale.current.languageCode
+    
     var doctorId : String?
     var presenter : DoctorDetailsPresenter!
     override func viewDidLoad() {
@@ -54,6 +56,10 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.showDoctorDates(id: doctorId!)
+        cornerRadiusAndShodow(view: doctorView)
+        cornerRadiusAndShodow(view: aboutDoctorView)
+        cornerRadiusAndShodow(view: ratingView)
+        cornerRadiusAndShodow(view: datesView)
     }
     func showDoctorDates() {
         
@@ -71,20 +77,31 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         watingTimeLbl.text = doctorDetails.waitingTime
         costLbl.text = doctorDetails.price
         totalRating.rating = Double(doctorDetails.rating!)!
-        numberOfSeenLbl.text = doctorDetails.vistorNumber! + " Seen"
+        numberOfSeenLbl.text = doctorDetails.vistorNumber! + " Seen".localized
         doctorImageView.kf.setImage(with: URL(string: doctorDetails.photo!))
-        numberOfRaitings.text = "Overall Rating From " + doctorDetails.vistorNumber! + "Visitor"
+        numberOfRaitings.text = "Overall Rating From ".localized + doctorDetails.vistorNumber! + "Visitor".localized
         doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
         profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
-        aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
-        cityNameLbl.text = doctorDetails.addressEn
-        cornerRadiusAndShodow(view: doctorView)
-        cornerRadiusAndShodow(view: aboutDoctorView)
-        cornerRadiusAndShodow(view: ratingView)
-        cornerRadiusAndShodow(view: datesView)
-
+        
+        
+        if locale == "en"
+        {
+            aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
+            
+            cityNameLbl.text = doctorDetails.addressEn
+            
+        }else
+        {
+            aboutDoctorLbl.text = doctorDetails.aboutDoctorAr
+            
+            cityNameLbl.text = doctorDetails.addressAr
+            
+        }
+        
+        
         ratingsCollectionView.reloadData()
     }
+    
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.gray.cgColor
         view.layer.shadowOpacity = 1
@@ -104,7 +121,11 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     }
     @objc func moreOrLessLblDidTapped(_ sender: UITapGestureRecognizer? = nil)
     {
+        aboutDoctorLbl.numberOfLines = 0
+        aboutDoctorLbl.sizeToFit()
         aboutDoctorViewHeight.constant = 200
+        cornerRadiusAndShodow(view: aboutDoctorView)
+        
         
     }
     

@@ -49,6 +49,7 @@ PODS:
   - SDWebImage/Core (5.9.3)
   - SwiftyJSON (4.3.0)
   - Swinject (2.7.1)
+  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - AACarousel
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - SDWebImage (~> 5.0)
   - SwiftyJSON (~> 4.0)
   - Swinject
+  - TTTAttributedLabel
 
 SPEC REPOS:
   trunk:
@@ -89,6 +91,7 @@ SPEC REPOS:
     - SDWebImage
     - SwiftyJSON
     - Swinject
+    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   AACarousel: e0dbd2d3153c56c36df8aa282553f20fc88e132b
@@ -110,7 +113,8 @@ SPEC CHECKSUMS:
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: b1638a75e6dcdc3deb9d672ee674037cdc3cd1f9
+PODFILE CHECKSUM: 2c158ea1187d5bd1454dbe74ffea5e0de1cdcba4
 
 COCOAPODS: 1.9.3

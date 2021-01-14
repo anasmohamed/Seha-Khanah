@@ -22,6 +22,7 @@ target 'Seha Khanah' do
     pod 'Auk', '~> 11.0'
     pod 'ReadMoreTextView'
     pod 'GoogleSignIn'
+    pod 'TTTAttributedLabel'
 
 
 end

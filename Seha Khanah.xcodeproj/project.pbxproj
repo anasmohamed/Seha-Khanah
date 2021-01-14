@@ -32,7 +32,6 @@
 		A812A07B25A324B00039029B /* BookingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07A25A324B00039029B /* BookingProtocol.swift */; };
 		A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */; };
 		A812A08225A345E10039029B /* SuccessBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A08125A345E10039029B /* SuccessBookingViewController.swift */; };
-		A812A08A25A3998A0039029B /* DoctorDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A812A08925A3998A0039029B /* DoctorDetails.storyboard */; };
 		A812A08C25A399DC0039029B /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */; };
 		A818006425AB7D6900C750AE /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006325AB7D6900C750AE /* RegisterInteractor.swift */; };
 		A818006625AB7E2600C750AE /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006525AB7E2600C750AE /* RegisterPresenter.swift */; };
@@ -107,6 +106,7 @@
 		A8761D7725B04FAB00280BE7 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8761D7525B04FAB00280BE7 /* MoreTableViewCell.xib */; };
 		A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8761D7A25B06F9700280BE7 /* BookNow.storyboard */; };
 		A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8761D8125B071D300280BE7 /* SearchResultTableViewCell.xib */; };
+		A8761D8625B08FD700280BE7 /* DoctorDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8761D8825B08FD700280BE7 /* DoctorDetails.storyboard */; };
 		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
 		A88084DD25AF904A00A6EE84 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */; };
@@ -215,7 +215,6 @@
 		A812A07A25A324B00039029B /* BookingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingProtocol.swift; sourceTree = "<group>"; };
 		A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuccessfulBooking.storyboard; sourceTree = "<group>"; };
 		A812A08125A345E10039029B /* SuccessBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBookingViewController.swift; sourceTree = "<group>"; };
-		A812A08925A3998A0039029B /* DoctorDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DoctorDetails.storyboard; sourceTree = "<group>"; };
 		A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
 		A818006325AB7D6900C750AE /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		A818006525AB7E2600C750AE /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
@@ -301,6 +300,9 @@
 		A8761D8025B071D300280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		A8761D8325B071DD00280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
 		A8761D8525B071E100280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
+		A8761D8725B08FD700280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DoctorDetails.storyboard; sourceTree = "<group>"; };
+		A8761D8A25B08FE300280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
+		A8761D8C25B08FE700280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
 		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
 		A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -553,7 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				A869D67625A65F9A001D8886 /* Extensions */,
-				A812A08925A3998A0039029B /* DoctorDetails.storyboard */,
+				A8761D8825B08FD700280BE7 /* DoctorDetails.storyboard */,
 				A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */,
 				A8CBF49725A5C56F003A084F /* DoctorDetailsProtocol.swift */,
 			);
@@ -1721,7 +1723,7 @@
 			files = (
 				A85E32832594A12100842D0F /* SearchByPharmacyNameTableViewCell.xib in Resources */,
 				A83D6EB3258A2E6000186693 /* MostOrderedOffersTableViewCell.xib in Resources */,
-				A812A08A25A3998A0039029B /* DoctorDetails.storyboard in Resources */,
+				A8761D8625B08FD700280BE7 /* DoctorDetails.storyboard in Resources */,
 				A851FD76259794F80036790B /* AboutApp.storyboard in Resources */,
 				A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */,
 				A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */,
@@ -2018,6 +2020,16 @@
 				A8761D8525B071E100280BE7 /* ar */,
 			);
 			name = SearchResultTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		A8761D8825B08FD700280BE7 /* DoctorDetails.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8761D8725B08FD700280BE7 /* Base */,
+				A8761D8A25B08FE300280BE7 /* en */,
+				A8761D8C25B08FE700280BE7 /* ar */,
+			);
+			name = DoctorDetails.storyboard;
 			sourceTree = "<group>";
 		};
 		A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */ = {
