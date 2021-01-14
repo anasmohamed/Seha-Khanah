@@ -1,0 +1,33 @@
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "72g-8w-oav"; */
+"72g-8w-oav.placeholder" = "Full Name";
+
+/* Class = "UIButton"; normalTitle = "BOOK"; ObjectID = "8we-Bb-POu"; */
+"8we-Bb-POu.normalTitle" = "BOOK";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9xk-gj-LPI"; */
+"9xk-gj-LPI.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "CTA-jg-wue"; */
+"CTA-jg-wue.placeholder" = "E-mail";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LsS-I0-Dyu"; */
+"LsS-I0-Dyu.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "MKb-m7-sOx"; */
+"MKb-m7-sOx.placeholder" = "Mobile Number";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "New-XZ-EFR"; */
+"New-XZ-EFR.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YVs-WP-s3v"; */
+"YVs-WP-s3v.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YxI-y5-irk"; */
+"YxI-y5-irk.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Zsj-nu-Mtz"; */
+"Zsj-nu-Mtz.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "I Am Booking For Another Patient"; ObjectID = "xUh-aD-er3"; */
+"xUh-aD-er3.normalTitle" = "I Am Booking For Another Patient";

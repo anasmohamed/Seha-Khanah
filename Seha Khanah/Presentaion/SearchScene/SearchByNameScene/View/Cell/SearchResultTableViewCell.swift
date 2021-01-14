@@ -45,10 +45,10 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
     
     func configure(result:SearchedResults) {
         doctorPhoto.kf.setImage(with: URL(string: result.photo!))
-        watingTimeLbl.text = "Waiting Time:" + result.waitingTime!
-        costLbl.text = "Cost:" + result.price!
+        watingTimeLbl.text = "Waiting Time:".localized + result.waitingTime!
+        costLbl.text = "Cost:".localized + result.price!
         
-        numberOfVotes.text = result.numberOfVisitor
+        numberOfVotes.text = result.numberOfVisitor! + "visitor".localized
         rating.rating = Double(result.rating!)!
         if locale == "en"
         {

@@ -78,7 +78,6 @@
 		A8567731259247A30086CD78 /* SearchBySpecialtyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8567730259247A30086CD78 /* SearchBySpecialtyInteractor.swift */; };
 		A856773325924BBA0086CD78 /* SearchBySpecialtyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856773225924BBA0086CD78 /* SearchBySpecialtyViewController.swift */; };
 		A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856773425924D8D0086CD78 /* SearchBySpecialtyPresenter.swift */; };
-		A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8567737259272320086CD78 /* SearchResultTableViewCell.xib */; };
 		A85E32822594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E32802594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift */; };
 		A85E32832594A12100842D0F /* SearchByPharmacyNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85E32812594A12100842D0F /* SearchByPharmacyNameTableViewCell.xib */; };
 		A85E32852594A40500842D0F /* PharmacyOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E32842594A40500842D0F /* PharmacyOffer.swift */; };
@@ -103,10 +102,11 @@
 		A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870839225963336002AC96C /* SearchByLabNameInteractor.swift */; };
 		A8708396259633FA002AC96C /* SearchByLabNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */; };
 		A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */; };
-		A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87533DE25A267A500ECF699 /* BookNow.storyboard */; };
 		A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87533E025A26BB900ECF699 /* BookViewController.swift */; };
 		A8761D7625B04FAB00280BE7 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8761D7425B04FAB00280BE7 /* MoreTableViewCell.swift */; };
 		A8761D7725B04FAB00280BE7 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8761D7525B04FAB00280BE7 /* MoreTableViewCell.xib */; };
+		A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8761D7A25B06F9700280BE7 /* BookNow.storyboard */; };
+		A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8761D8125B071D300280BE7 /* SearchResultTableViewCell.xib */; };
 		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
 		A88084DD25AF904A00A6EE84 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */; };
@@ -261,7 +261,6 @@
 		A8567730259247A30086CD78 /* SearchBySpecialtyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyInteractor.swift; sourceTree = "<group>"; };
 		A856773225924BBA0086CD78 /* SearchBySpecialtyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyViewController.swift; sourceTree = "<group>"; };
 		A856773425924D8D0086CD78 /* SearchBySpecialtyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyPresenter.swift; sourceTree = "<group>"; };
-		A8567737259272320086CD78 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		A85E32802594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByPharmacyNameTableViewCell.swift; sourceTree = "<group>"; };
 		A85E32812594A12100842D0F /* SearchByPharmacyNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchByPharmacyNameTableViewCell.xib; sourceTree = "<group>"; };
 		A85E32842594A40500842D0F /* PharmacyOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffer.swift; sourceTree = "<group>"; };
@@ -293,10 +292,15 @@
 		A870839225963336002AC96C /* SearchByLabNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameInteractor.swift; sourceTree = "<group>"; };
 		A8708395259633FA002AC96C /* SearchByLabNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNamePresenter.swift; sourceTree = "<group>"; };
 		A87083982596344E002AC96C /* SearchByLabNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameProtocol.swift; sourceTree = "<group>"; };
-		A87533DE25A267A500ECF699 /* BookNow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookNow.storyboard; sourceTree = "<group>"; };
 		A87533E025A26BB900ECF699 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		A8761D7425B04FAB00280BE7 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		A8761D7525B04FAB00280BE7 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		A8761D7925B06F9700280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BookNow.storyboard; sourceTree = "<group>"; };
+		A8761D7C25B06FA000280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BookNow.strings; sourceTree = "<group>"; };
+		A8761D7E25B06FA200280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookNow.strings; sourceTree = "<group>"; };
+		A8761D8025B071D300280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		A8761D8325B071DD00280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
+		A8761D8525B071E100280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
 		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
 		A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -999,7 +1003,7 @@
 			children = (
 				A856772425921B640086CD78 /* SearchResultTableViewCell.swift */,
 				A856772625921C260086CD78 /* SearchedResultsTableViewCellView.swift */,
-				A8567737259272320086CD78 /* SearchResultTableViewCell.xib */,
+				A8761D8125B071D300280BE7 /* SearchResultTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1243,7 +1247,7 @@
 		A87533DD25A264FB00ECF699 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A87533DE25A267A500ECF699 /* BookNow.storyboard */,
+				A8761D7A25B06F9700280BE7 /* BookNow.storyboard */,
 				A87533E025A26BB900ECF699 /* BookViewController.swift */,
 				A812A07A25A324B00039029B /* BookingProtocol.swift */,
 			);
@@ -1722,8 +1726,8 @@
 				A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */,
 				A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */,
 				A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */,
-				A8567739259272320086CD78 /* SearchResultTableViewCell.xib in Resources */,
-				A87533DF25A267A500ECF699 /* BookNow.storyboard in Resources */,
+				A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */,
+				A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */,
 				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
 				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
 				A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */,
@@ -1994,6 +1998,26 @@
 				A85FE00D259951C500528BB1 /* en */,
 			);
 			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
+		A8761D7A25B06F9700280BE7 /* BookNow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8761D7925B06F9700280BE7 /* Base */,
+				A8761D7C25B06FA000280BE7 /* en */,
+				A8761D7E25B06FA200280BE7 /* ar */,
+			);
+			name = BookNow.storyboard;
+			sourceTree = "<group>";
+		};
+		A8761D8125B071D300280BE7 /* SearchResultTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8761D8025B071D300280BE7 /* Base */,
+				A8761D8325B071DD00280BE7 /* en */,
+				A8761D8525B071E100280BE7 /* ar */,
+			);
+			name = SearchResultTableViewCell.xib;
 			sourceTree = "<group>";
 		};
 		A884DD7A259A2093006D686B /* HowTheAppWorks.storyboard */ = {

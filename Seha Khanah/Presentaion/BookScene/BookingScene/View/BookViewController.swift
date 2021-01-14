@@ -45,6 +45,8 @@ class BookViewController: UIViewController,BookingProtocol {
     var profissionalTitle: String?
     var doctorId : String?
     var bookingForAnotherPatientCheck = "0"
+    let locale = NSLocale.current.languageCode
+
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
@@ -54,7 +56,14 @@ class BookViewController: UIViewController,BookingProtocol {
         cornerRadiusAndShodow(view: costView)
         dayLbl.text = dayName
         labNameLbl.text = labName
-        labServiceLbl.text = labService?.nameEn
+        if locale == "en"
+        {
+            labServiceLbl.text = labService?.nameEn
+
+        }else{
+            labServiceLbl.text = labService?.nameAr
+
+        }
         labImageView.kf.setImage(with: URL(string: labPhoto!))
         timeLbl.text = bookDate
         lacationNameLbl.text = labAddress
