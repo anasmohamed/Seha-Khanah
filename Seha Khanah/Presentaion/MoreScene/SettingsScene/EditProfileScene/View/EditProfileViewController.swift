@@ -27,8 +27,6 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         editProfilePresenter = EditUserProfilePresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
-        
-        
         dateOfBirthTextField.text = UserDefaults.standard.string(forKey: "birthday")
         fullNameTExtField.text = UserDefaults.standard.string(forKey: "name")
         emailTextField.text = UserDefaults.standard.string(forKey: "email")
@@ -43,7 +41,7 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         guard  let email = emailTextField.text, let userName = fullNameTExtField.text,let phone = mobileNumberTextField.text,let birthday = dateOfBirthTextField.text  else {
             return
         }
-        guard phone.count == 14 else {
+        guard phone.count == 13 else {
             return
         }
         
