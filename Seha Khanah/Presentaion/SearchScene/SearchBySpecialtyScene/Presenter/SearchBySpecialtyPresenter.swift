@@ -64,7 +64,9 @@ class SearchBySpecialtyPresenter {
     public func searchResultCount() -> Int {
         return searchedResults.count
     }
-    
+    func getSpecialtyId(index:Int) -> String {
+        return searchedResults[index].id!
+    }
     
     func configure(cell: SearchBySpeialtyTableViewCellView, for index: Int) {
         print(searchedResults.count)

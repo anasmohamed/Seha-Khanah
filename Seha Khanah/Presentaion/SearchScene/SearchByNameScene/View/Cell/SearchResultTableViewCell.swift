@@ -52,13 +52,13 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         rating.rating = Double(result.rating!)!
         if locale == "en"
         {
-            doctorNameLbl.text = result.firstNameEn!  + result.lastNameEn!
+            doctorNameLbl.text = result.firstNameEn!  + " " + result.lastNameEn!
             aboutDoctorLbl.text = result.aboutDoctorEn
             profissionalTitleEnLbl.text = result.profissionalTitleEn
             addressLbl.text = result.addressEn
             
         }else{
-            doctorNameLbl.text = result.firstNameAr!  + result.lastNameAr!
+            doctorNameLbl.text = result.firstNameAr!  + " " + result.lastNameAr!
             aboutDoctorLbl.text = result.aboutDoctorAr
             profissionalTitleEnLbl.text = result.profissionalTitleAr
             addressLbl.text = result.addressAr

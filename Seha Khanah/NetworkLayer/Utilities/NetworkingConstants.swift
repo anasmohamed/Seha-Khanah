@@ -95,5 +95,11 @@ class NetworkingConstants {
     static let passwordResetPasswordParamter = "password"
     static let passwordConfirmationResetPasswordParamter = "password_confirmation"
 
+    
+    static let searchByAreaAndSpecialty = "api/search"
+    static let searchByAreaAndSpecialtyNameParamter = "name"
+    static let searchByAreaAndSpecialtyAreaIdParamter = "area_id"
+    static let searchByAreaAndSepecialtyIdParamter = "specialty_id"
+    
 
 }

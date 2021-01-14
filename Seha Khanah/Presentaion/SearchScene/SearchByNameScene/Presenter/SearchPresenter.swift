@@ -39,6 +39,29 @@ class SearchPresenter {
             
         }
     }
+    
+    func searchBy(areaId:String,specialtyId:String) {
+         
+         view?.showIndicator()
+        searchInteractor.searchByAreaAndSepcialty(areaId: areaId, sepcialtyId: specialtyId){ (result,error)  in
+             if let error = error {
+                 print("errrror\(error)")
+                 self.view?.showError(error: error.localizedDescription)
+             } else {
+                 if result != nil{
+                     print("final result\(result?.count)")
+                     if (result!.count == 0)
+                     {self.view?.showNoDataFoundImage()
+                         
+                     }else{
+                         self.searchedResults = result!
+                         self.view?.searchResults()
+                     }}
+                 
+             }
+             
+         }
+     }
     public func searchResultCount() -> Int {
         return searchedResults.count
     }

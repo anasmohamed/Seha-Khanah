@@ -38,6 +38,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case booking
     case cancelBooking(id:String)
     case resetPassword(email:String,userType:String,token:String,password:String,passwordConfirmation:String)
+    
+    case searchByAreaAndSpecialty(areaId:String,specialtyId:String)
+    
+    
+    
+    
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -90,6 +96,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.cancelBooking
         case .resetPassword:
             return NetworkingConstants.resetPassword
+        case .searchByAreaAndSpecialty:
+            return NetworkingConstants.searchByAreaAndSpecialty
+            
             
         }
     }
@@ -113,7 +122,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showDoctorDates,
              .showPharmacyDetails,
              .booking,
-             .cancelBooking:
+             .cancelBooking,
+             .searchByAreaAndSpecialty:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -227,7 +237,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .cancelBooking(id):
             params[NetworkingConstants.cancelBooking] = id
             
-            
+        case let .searchByAreaAndSpecialty(areaid,specialtyId):
+            params[NetworkingConstants.searchByAreaAndSpecialtyAreaIdParamter] = areaid
+            params[NetworkingConstants.searchByAreaAndSepecialtyIdParamter] = specialtyId
+
             
             //        case let .getUserToken(grantType,clientId,clientSecret,scope):
             //            params[NetworkingConstants.getUserTokenGrantTypeParamter] = grantType
@@ -265,7 +278,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .getAllLabs,
              .doctorReservation,
              .labReservation,
-             .booking:
+             .booking,
+             .searchByAreaAndSpecialty:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

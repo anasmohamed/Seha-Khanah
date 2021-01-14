@@ -14,18 +14,22 @@ class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol 
     
     var regionPresenter: RegionPresenter!
     var searchForLab = false
+    var searchForDoctor = false
+    var sepcialtyId : String?
+    let locale = NSLocale.current.languageCode
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         regionPresenter = RegionPresenter(view: self)
         regionPresenter.getAreas()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "AllRegionsCell")
-
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return regionPresenter.areasCount()
     }
-  
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if searchForLab{
             
@@ -33,15 +37,28 @@ class SearchByPharmacyRegionViewController: UITableViewController,AreasProtocol 
             let searchByLabNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByLabNameViewController") as! SearchByLabNameViewController
             searchByLabNameViewController.areaId = regionPresenter.getAreaIdAt(index: indexPath.row)
             self.navigationController!.pushViewController(searchByLabNameViewController, animated: true)
-        }else{
+        }else if (searchForDoctor){
+            let searchByNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByNameViewController") as! SearchByNameViewController
+            searchByNameViewController.areaId = regionPresenter.getAreaIdAt(index: indexPath.row)
+            searchByNameViewController.sepcialtyId = sepcialtyId
+            self.navigationController!.pushViewController(searchByNameViewController, animated: true)
+        }
+        else {
             let searchByPharmacyNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByPharmacyNameViewController") as! SearchByPharmacyNameViewController
             searchByPharmacyNameViewController.searchByAreaId = true
-                      self.navigationController!.pushViewController(searchByPharmacyNameViewController, animated: true)
+            self.navigationController!.pushViewController(searchByPharmacyNameViewController, animated: true)
         }
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllRegionsCell", for: indexPath)
-        cell.textLabel?.text = regionPresenter.getAreasList()[indexPath.row].areaNameEn
+        if locale == "en"
+        {
+            cell.textLabel?.text = regionPresenter.getAreasList()[indexPath.row].areaNameEn
+            
+        }else{
+            cell.textLabel?.text = regionPresenter.getAreasList()[indexPath.row].areaNameAr
+            
+        }
         
         return cell
     }

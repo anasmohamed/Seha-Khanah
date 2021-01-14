@@ -23,7 +23,7 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
         searchBySpecialtyResultTableView.delegate = self
         searchBySpecialtyResultTableView.dataSource = self
         searchBySpecialtyPresenter = SearchBySpecialtyPresenter(view: self)
-//        setupTableView()
+        //        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,15 +31,28 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
         searchBySpecialtyPresenter.getAllspecialty()
     }
     
-//    func setupTableView() {
-//         searchBySpecialtyResultTableView.register(UINib(nibName: "SearchBySpcialtyTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchBySpcialtyTableViewCell")
-//
-//     }
+    //    func setupTableView() {
+    //         searchBySpecialtyResultTableView.register(UINib(nibName: "SearchBySpcialtyTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchBySpcialtyTableViewCell")
+    //
+    //     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchBySpecialtyPresenter.searchResultCount()
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+//
+//        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
+//        showDoctorDetailsViewController.doctorId = searchedResultsPresenter.getDoctorId(index: indexPath.row)
+//        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+        
+        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+
+        let searchByRegionViewController = storyboard.instantiateViewController(withIdentifier: "SearchByPharmacyRegionViewController") as! SearchByPharmacyRegionViewController
+               searchByRegionViewController.searchForDoctor = true
+        searchByRegionViewController.sepcialtyId = searchBySpecialtyPresenter.getSpecialtyId(index: indexPath.row)
+               self.navigationController!.pushViewController(searchByRegionViewController, animated: true)
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchBySpcialtyTableViewCell", for: indexPath) as! SearchBySpcialtyTableViewCell
         searchBySpecialtyPresenter.configure(cell: cell, for: indexPath.row)
