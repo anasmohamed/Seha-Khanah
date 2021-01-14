@@ -14,11 +14,15 @@ class SettingsTableViewController: UITableViewController {
         ,"Change Language".localized
     ]
     var cellTitles = ["Change Language".localized]
+    var cellImagesWithRegisterdUser = ["user","lock","changelanguage"]
+    var cellImages = ["changelanguage"]
+    
     var isUserLoggedIn = false
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Settings".localized
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
+        setupTableView()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -32,7 +36,10 @@ class SettingsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
+    func setupTableView() {
+        tableView.register(UINib(nibName: "MoreTableViewCell", bundle: nil), forCellReuseIdentifier: "MoreTableViewCell")
+        
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if isUserLoggedIn{
@@ -43,12 +50,14 @@ class SettingsTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MoreTableViewCell", for: indexPath) as! MoreTableViewCell
         cell.accessoryType = .disclosureIndicator
         if isUserLoggedIn {
-            cell.textLabel?.text = cellTitlesWithRegisterdUser[indexPath.row]
+            cell.titleLbl?.text = cellTitlesWithRegisterdUser[indexPath.row]
+            cell.iconImageView?.image = UIImage(named:cellImagesWithRegisterdUser[indexPath.row])
         }else{
-            cell.textLabel?.text = cellTitles[indexPath.row]
+            cell.titleLbl?.text = cellTitles[indexPath.row]
+            cell.iconImageView?.image = UIImage(named:cellImages[indexPath.row])
             
         }
         return cell
@@ -56,13 +65,15 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
-            self.navigationController!.pushViewController(languageChangeViewController, animated: true)
-        case 1:
             let languageChangeViewController = UIStoryboard.init(name: "EditProfile", bundle: nil).instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
             self.navigationController!.pushViewController(languageChangeViewController, animated: true)
-        case 2:
+            
+        case 1:
             let languageChangeViewController = UIStoryboard.init(name: "ResetPassword", bundle: nil).instantiateViewController(withIdentifier: "ResetPasswordViewController") as! ResetPasswordViewController
+            self.navigationController!.pushViewController(languageChangeViewController, animated: true)
+        case 2:
+            
+            let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
             self.navigationController!.pushViewController(languageChangeViewController, animated: true)
         default:
             break
