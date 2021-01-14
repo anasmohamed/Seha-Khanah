@@ -10,16 +10,38 @@ import UIKit
 
 class AppointmentsMainViewController: UIViewController {
     
+    @IBOutlet weak var exitArrowImage: UIImageView!
+    @IBOutlet weak var noUserLoggedInStackView: UIStackView!
+    @IBOutlet weak var segmentCotrol: UISegmentedControl!
     @IBOutlet weak var myAppointmentsView: UIView!
-    
+    var isUserLoggedIn = false
     @IBOutlet weak var myOffersView: UIView!
+    let locale = NSLocale.current.languageCode
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
+        if locale == "ar"
+        {
+            exitArrowImage.image = exitArrowImage.image?.flipIfNeeded()
+        }
+        if isUserLoggedIn == true
+        {
+            noUserLoggedInStackView.isHidden = false
+            segmentCotrol.isHidden = true
+            
+        }else{
+            myAppointmentsView.alpha = 0
+            myOffersView.alpha = 0
+            segmentCotrol.isHidden = false
+            noUserLoggedInStackView.isHidden = true
+        }
         // Do any additional setup after loading the view.
     }
     
     @IBAction func segmentControllDidTapped(segment:UISegmentedControl)
     {
+        
         if segment.selectedSegmentIndex == 0 {
             myAppointmentsView.alpha = 0
             myOffersView.alpha = 1
