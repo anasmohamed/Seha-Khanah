@@ -48,6 +48,7 @@ class BookingInteractor {
                 let json = JSON(response.value)
                 print(json)
                 let bookingResponse = json["data"]["booking"]
+                
                 let bookResult = ReservationResponse(withJSON: bookingResponse)
                 
                 completionHandler(bookResult, nil)

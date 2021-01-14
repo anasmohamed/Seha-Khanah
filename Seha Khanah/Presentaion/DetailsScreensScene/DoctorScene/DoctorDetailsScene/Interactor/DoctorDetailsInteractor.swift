@@ -100,8 +100,9 @@ class DoctorDetailsInteractor {
                 for date in doctorDates
                 {
                     let data = LabDate(withJSON: date)
+                    if data!.status == "1"{
                     dooctorDatesList.append(data!)
-                    
+                    }
                 }
                 completionHandler(dooctorDatesList, nil)
             case .failure(let error):

@@ -36,7 +36,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-Pl-s3f">
-                                        <rect key="frame" x="60" y="10" width="175" height="81.5"/>
+                                        <rect key="frame" x="60" y="10" width="295" height="81.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTW-Rd-x8Q">
                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="24.5"/>
@@ -55,7 +55,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH1-A3-dyo">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH1-A3-dyo">
                                                 <rect key="frame" x="0.0" y="28.5" width="42" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -203,6 +203,7 @@
                                     <constraint firstAttribute="bottom" secondItem="VpZ-wF-fyT" secondAttribute="bottom" constant="10" id="LDr-SZ-Pwn"/>
                                     <constraint firstItem="VpZ-wF-fyT" firstAttribute="top" secondItem="6l1-Pl-s3f" secondAttribute="bottom" constant="10" id="Vts-me-2BV"/>
                                     <constraint firstItem="VpZ-wF-fyT" firstAttribute="leading" secondItem="MeX-eH-Jua" secondAttribute="leading" id="e0N-MB-tFZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6l1-Pl-s3f" secondAttribute="trailing" constant="5" id="hiG-sa-Bov"/>
                                     <constraint firstAttribute="trailing" secondItem="VpZ-wF-fyT" secondAttribute="trailing" id="tJA-au-QNI"/>
                                     <constraint firstItem="4ho-Ob-72s" firstAttribute="leading" secondItem="MeX-eH-Jua" secondAttribute="leading" constant="10" id="zTc-2o-PCy"/>
                                 </constraints>

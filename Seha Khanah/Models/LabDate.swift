@@ -14,6 +14,7 @@ class LabDate: Codable {
     var dayEn: String?
     var startTime: String?
     var endTime: String?
+    var status: String?
     var timesList = [Time]()
     init?(withJSON data: JSON) {
         
@@ -22,7 +23,9 @@ class LabDate: Codable {
         self.date = data["date"].stringValue
         self.startTime = data["start_time"].stringValue
         self.endTime = data["end_time"].stringValue
+        self.status = data["status"].stringValue
         let times = data["times"].arrayValue
+        
         for time in times
         {
             let data = Time(withJSON: time)
