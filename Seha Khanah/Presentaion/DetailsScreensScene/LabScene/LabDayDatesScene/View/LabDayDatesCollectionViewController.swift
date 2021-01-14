@@ -22,7 +22,9 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
     var labId: String?
     var labAddress: String?
     var profissionalTitle: String?
+    let locale = NSLocale.current.languageCode
 
+    @IBOutlet weak var dayDateLbl: UILabel!
     @IBOutlet weak var dayDatesCollectionView: UICollectionView!
     @IBOutlet weak var dayDateView: UIView!
     override func viewDidLoad() {
@@ -30,9 +32,30 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         
         dayDatesCollectionView.delegate = self
         dayDatesCollectionView.dataSource = self
-        
+        if locale == "en"
+        {
+            dayDateLbl.text = labDate?.dayEn + " " + labDate?.date
+
+        }else{
+            dayDateLbl.text = labDate?.dayAr + " " + labDate?.date
+
+        }
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cornerRadiusAndShodow(view: dayDateView)
+
+    }
+      func cornerRadiusAndShodow(view:UIView)  {
+          view.layer.shadowColor = UIColor.black.cgColor
+          view.layer.shadowOpacity = 1
+          view.layer.shadowOffset = .zero
+          view.layer.shadowRadius = 5
+          view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+          view.layer.shouldRasterize = true
+          view.layer.rasterizationScale = UIScreen.main.scale
+          view.layer.cornerRadius = 10
+      }
     /*
      // MARK: - Navigation
      

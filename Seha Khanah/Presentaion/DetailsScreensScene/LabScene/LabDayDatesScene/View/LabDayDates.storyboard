@@ -23,14 +23,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-yX-e3A">
-                                <rect key="frame" x="10" y="44" width="394" height="50"/>
+                                <rect key="frame" x="10" y="64" width="394" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCW-gg-tLe">
+                                        <rect key="frame" x="176" y="14.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="aCW-gg-tLe" firstAttribute="centerX" secondItem="i1s-yX-e3A" secondAttribute="centerX" id="70D-DA-gXr"/>
                                     <constraint firstAttribute="height" constant="50" id="c5k-B8-5IX"/>
+                                    <constraint firstItem="aCW-gg-tLe" firstAttribute="centerY" secondItem="i1s-yX-e3A" secondAttribute="centerY" id="zIj-G7-MMy"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="87J-z5-DUx">
-                                <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="727"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kng-7t-059">
                                     <size key="itemSize" width="128" height="128"/>
@@ -68,7 +78,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="i1s-yX-e3A" firstAttribute="top" secondItem="vB7-sL-bTS" secondAttribute="top" id="0M9-TT-bHO"/>
+                            <constraint firstItem="i1s-yX-e3A" firstAttribute="top" secondItem="vB7-sL-bTS" secondAttribute="top" constant="20" id="0M9-TT-bHO"/>
                             <constraint firstItem="vB7-sL-bTS" firstAttribute="trailing" secondItem="i1s-yX-e3A" secondAttribute="trailing" constant="10" id="NYn-zi-fy3"/>
                             <constraint firstItem="i1s-yX-e3A" firstAttribute="leading" secondItem="vB7-sL-bTS" secondAttribute="leading" constant="10" id="PrK-02-PVc"/>
                             <constraint firstItem="87J-z5-DUx" firstAttribute="top" secondItem="i1s-yX-e3A" secondAttribute="bottom" constant="21" id="Uqq-0k-lbp"/>
@@ -79,6 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="vB7-sL-bTS"/>
                     </view>
                     <connections>
+                        <outlet property="dayDateLbl" destination="aCW-gg-tLe" id="Afv-CY-Kd4"/>
                         <outlet property="dayDateView" destination="i1s-yX-e3A" id="5p6-ts-RKe"/>
                         <outlet property="dayDatesCollectionView" destination="87J-z5-DUx" id="3dx-au-uR8"/>
                     </connections>
