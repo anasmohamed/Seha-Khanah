@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ResetPasswordViewController: UIViewController {
+class ResetPasswordViewController: UIViewController,ResetPasswordProtocol {
+
+    
     @IBOutlet weak var passwordsView: UIView!
     @IBOutlet weak var newPasswordTextField: UITextField!
     @IBOutlet weak var oldPasswordTextField: UITextField!
-    var resetPasswordPresenter : resetPasswordPresenter!
+    var resetPasswordPresenter : ResetPasswordPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
         cornerRadiusAndShodow(view: passwordsView)
@@ -31,7 +33,29 @@ class ResetPasswordViewController: UIViewController {
         view.layer.cornerRadius = 5
     }
     @IBAction func saveChangesBtnDidTapped(_ sender: Any) {
-        resetPasswordPresenter.resetPassword()
+        guard let oldPassword = oldPasswordTextField.text,let newPassword = newPasswordTextField.text else {
+            return
+        }
+        let email = UserDefaults.standard.string(forKey: "email")
+        let userType = UserDefaults.standard.string(forKey: "genderId")
+        let token = UserDefaults.standard.string(forKey: "token")
+        
+        resetPasswordPresenter.resetPassword(email:email!,userType: userType!,token: token!,password: oldPassword,passwordConfirmation: newPassword)
+    }
+    func showIndicator() {
+        
+    }
+    
+    func hideIndicator() {
+        
+    }
+    
+    func resetPasswordSuccess(user: User) {
+        
+    }
+    
+    func showError(error: String) {
+        
     }
     /*
      // MARK: - Navigation

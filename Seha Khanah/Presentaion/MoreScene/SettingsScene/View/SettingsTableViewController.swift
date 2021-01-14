@@ -62,7 +62,7 @@ class SettingsTableViewController: UITableViewController {
             let languageChangeViewController = UIStoryboard.init(name: "EditProfile", bundle: nil).instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
             self.navigationController!.pushViewController(languageChangeViewController, animated: true)
         case 2:
-            let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
+            let languageChangeViewController = UIStoryboard.init(name: "ResetPassword", bundle: nil).instantiateViewController(withIdentifier: "ResetPasswordViewController") as! ResetPasswordViewController
             self.navigationController!.pushViewController(languageChangeViewController, animated: true)
         default:
             break

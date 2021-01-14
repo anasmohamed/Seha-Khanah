@@ -17,7 +17,7 @@ class ResetPasswordPresenter {
         user = User()
     }
     
-    func editUserProfile(email:String,userType:String,token:String,password:String,passwordConfirmation:String) {
+    func resetPassword(email:String,userType:String,token:String,password:String,passwordConfirmation:String) {
         view?.showIndicator()
         resetPasswordInteractor.resetPassword(email:email , userType:userType , token:token , password:password , passwordConfirmation: passwordConfirmation){
             (result,error)  in
@@ -33,6 +33,6 @@ class ResetPasswordPresenter {
                 
             }
         }
-        \
+        
     }
 }
