@@ -64,8 +64,8 @@ extension DoctorDetailsViewController : UICollectionViewDelegate,UICollectionVie
             return CGSize(width: width, height: height)
         }else
         {
-            width = 170
-            height = 150
+            width = 200
+            height = 200
             
             return CGSize(width: width, height: height)
         }

@@ -93,7 +93,6 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         }else
         {
             aboutDoctorLbl.text = doctorDetails.aboutDoctorAr
-            
             cityNameLbl.text = doctorDetails.addressAr
             
         }
