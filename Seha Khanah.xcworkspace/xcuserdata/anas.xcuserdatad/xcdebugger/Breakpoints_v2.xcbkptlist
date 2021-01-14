@@ -478,8 +478,8 @@
             filePath = "Seha Khanah/Presentaion/AppointmentsScene/MyAppointmentsScene/View/MyAppointmentsTableViewCell/MyAppointmentsTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "configure(appintment:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -494,8 +494,8 @@
             filePath = "Seha Khanah/Presentaion/AppointmentsScene/MyAppointmentsScene/View/MyAppointmentsTableViewCell/MyAppointmentsTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "configure(appintment:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -504,22 +504,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "651EE704-5448-42A2-9CFB-95FD83591FFA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/AppointmentsScene/MyAppointmentsScene/View/MyAppointmentsTableViewCell/MyAppointmentsTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "configure(appintment:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EFC5A0D8-AEF5-494C-92B0-606CD34BA76A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -535,6 +519,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "EFC5A0D8-AEF5-494C-92B0-606CD34BA76A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Seha Khanah/Presentaion/AppointmentsScene/MyAppointmentsScene/View/MyAppointmentsTableViewCell/MyAppointmentsTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "configure(appintment:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "4F57FFAD-30BB-4B04-8833-B4DA11E483CE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -542,8 +542,8 @@
             filePath = "Seha Khanah/Presentaion/AppointmentsScene/MyAppointmentsScene/View/MyAppointmentsTableViewCell/MyAppointmentsTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "configure(appintment:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -558,8 +558,8 @@
             filePath = "Seha Khanah/Presentaion/AppointmentsScene/MyAppointmentsScene/View/MyAppointmentsTableViewCell/MyAppointmentsTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "configure(appintment:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -10,16 +10,14 @@ import UIKit
 
 class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPrototol {
     
+    @IBOutlet weak var cancelView: UIImageView!
     @IBOutlet weak var bellView: UIView!
     @IBOutlet weak var doctorTitleUnderPhoneIconLbl: UILabel!
     @IBOutlet weak var doctorAddressLbl: UILabel!
     @IBOutlet weak var doctorTitleLbl: UILabel!
     @IBOutlet weak var dateTimeLbl: UILabel!
-    @IBOutlet weak var helpStackView: UIStackView!
     @IBOutlet weak var mabMarkerView: UIView!
-    @IBOutlet weak var canelStackView: UIStackView!
     @IBOutlet weak var markerPhoto: UIImageView!
-    @IBOutlet weak var markerStackView: UIStackView!
     @IBOutlet weak var bellPhoto: UIImageView!
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
@@ -56,10 +54,10 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         
         
         let cencelRequestTab = UITapGestureRecognizer(target: self, action: #selector(self.handleCancelRequestTab(_:)))
-        canelStackView.addGestureRecognizer(cencelRequestTab)
+        cancelView.addGestureRecognizer(cencelRequestTab)
         
         let mapRequestTab = UITapGestureRecognizer(target: self, action: #selector(self.handleMapRequestTab(_:)))
-        markerStackView.addGestureRecognizer(mapRequestTab)
+        mabMarkerView.addGestureRecognizer(mapRequestTab)
         // Initialization code
     }
     

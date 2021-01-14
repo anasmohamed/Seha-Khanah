@@ -8,16 +8,19 @@
 
 import UIKit
 
-class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProtocol {
+class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MyAppointmentsProtocol {
     @IBOutlet var myAppointmentsTableView: UITableView!
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var tableView: UITableView!
     var myAppointmentsPresenter : MyAppointmentsPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
         myAppointmentsPresenter = MyAppointmentsPresenter(view: self)
         myAppointmentsPresenter.getMyAppintments()
         setupTableView()
-       
+        tableView.delegate = self
+        tableView.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -33,15 +36,15 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
     }
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return myAppointmentsPresenter.getMyAppointmentsCount()
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 290
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
         cell.actionBlock = {
@@ -118,19 +121,22 @@ class MyAppintmentsTableViewController: UITableViewController,MyAppointmentsProt
      }
      */
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
     }
     
     func getMyAppointmentsSuccess() {
+        indicator.stopAnimating()
+
         tableView.reloadData()
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
+
     }
     
 }
