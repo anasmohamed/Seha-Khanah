@@ -10,15 +10,18 @@ import UIKit
 
 class MoreTableViewController: UITableViewController {
     var settingsTitles = ["Settings".localized,"Call US".localized,"About the App".localized,"How The App Works".localized,"Login".localized]
-    var settingsImages = ["gear","","","",""]
+    var settingsImages = ["gear","phone-26","ask-question","undo","exit"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "More".localized
-
+        setupTableView()
     }
     
     // MARK: - Table view data source
-    
+    func setupTableView() {
+           tableView.register(UINib(nibName: "MoreTableViewCell", bundle: nil), forCellReuseIdentifier: "MoreTableViewCell")
+           
+       }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -31,11 +34,12 @@ class MoreTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MoreTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MoreTableViewCell", for: indexPath) as! MoreTableViewCell
         if indexPath.row != 4{
             cell.accessoryType = .disclosureIndicator
         }
-        cell.textLabel!.text = settingsTitles[indexPath.row]
+        cell.titleLbl.text = settingsTitles[indexPath.row]
+        cell.iconImageView.image = UIImage(named:settingsImages[indexPath.row])
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
