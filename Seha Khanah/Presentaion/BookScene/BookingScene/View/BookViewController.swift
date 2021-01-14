@@ -50,10 +50,7 @@ class BookViewController: UIViewController,BookingProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
-        cornerRadiusAndShodow(view: timeView)
-        cornerRadiusAndShodow(view: labNameAndSpeciltyVIew)
-        cornerRadiusAndShodow(view: presonDetailsView)
-        cornerRadiusAndShodow(view: costView)
+        
         dayLbl.text = dayName
         labNameLbl.text = labName
         if locale == "en"
@@ -76,7 +73,13 @@ class BookViewController: UIViewController,BookingProtocol {
         }
         // Do any additional setup after loading the view.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cornerRadiusAndShodow(view: timeView)
+        cornerRadiusAndShodow(view: labNameAndSpeciltyVIew)
+        cornerRadiusAndShodow(view: presonDetailsView)
+        cornerRadiusAndShodow(view: costView)
+    }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 1

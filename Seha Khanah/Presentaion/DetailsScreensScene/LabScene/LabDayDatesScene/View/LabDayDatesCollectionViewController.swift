@@ -34,10 +34,10 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         dayDatesCollectionView.dataSource = self
         if locale == "en"
         {
-            dayDateLbl.text = labDate?.dayEn + " " + labDate?.date
+            dayDateLbl.text = (labDate?.dayEn)! + " " + (labDate?.date)!
 
         }else{
-            dayDateLbl.text = labDate?.dayAr + " " + labDate?.date
+            dayDateLbl.text = (labDate?.dayAr)! + " " + (labDate?.date)!
 
         }
     }
