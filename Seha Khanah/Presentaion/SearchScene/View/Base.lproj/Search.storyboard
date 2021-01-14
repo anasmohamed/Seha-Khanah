@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
         <array key="Sukar-Regular.ttf">
             <string>Sukar-Regular</string>
         </array>
@@ -89,8 +92,8 @@
                                                                         <rect key="frame" x="15" y="10.333333333333316" width="24" height="24.666666666666671"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Pa-4hD">
-                                                                        <rect key="frame" x="48.666666666666679" y="15" width="111.33333333333331" height="15"/>
-                                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                                        <rect key="frame" x="48.666666666666693" y="15" width="120.66666666666669" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -130,8 +133,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Specialty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-Gq-Fmx">
-                                                                        <rect key="frame" x="50" y="15" width="133.33333333333334" height="15"/>
-                                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                                        <rect key="frame" x="50" y="15" width="142.66666666666666" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -171,8 +174,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search For Pharmacies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0u-q4-2ho">
-                                                                        <rect key="frame" x="50" y="11.666666666666686" width="154.33333333333334" height="22"/>
-                                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                                        <rect key="frame" x="49.999999999999986" y="11" width="167.66666666666663" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -211,8 +214,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-rF-OlB">
-                                                                        <rect key="frame" x="49.999999999999993" y="11.666666666666686" width="95.333333333333314" height="22"/>
-                                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                                        <rect key="frame" x="50.000000000000007" y="11" width="104.66666666666669" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -405,7 +408,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search By Doctor Name" translatesAutoresizingMaskIntoConstraints="NO" id="qTm-nm-vGZ">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qTm-nm-vGZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -564,8 +567,8 @@
                                                         <rect key="frame" x="15" y="10.000000000000002" width="24" height="24.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Pharmacy Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l8-bn-Qoz">
-                                                        <rect key="frame" x="49" y="11.333333333333314" width="182" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                        <rect key="frame" x="48.999999999999986" y="11" width="196.66666666666663" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -601,8 +604,8 @@
                                                         <rect key="frame" x="15" y="10.000000000000002" width="24" height="24.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6O-TD-bwl">
-                                                        <rect key="frame" x="49" y="12.333333333333313" width="134.66666666666666" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="49" y="11" width="128.66666666666666" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -642,8 +645,8 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MY-sG-hJC">
-                                                        <rect key="frame" x="50" y="11.333333333333314" width="59" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                        <rect key="frame" x="50" y="10.999999999999943" width="62" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -740,8 +743,8 @@
                                                         <rect key="frame" x="15" y="10.000000000000002" width="24" height="24.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Uo-xF-Hnk">
-                                                        <rect key="frame" x="48.999999999999993" y="11.333333333333314" width="111.33333333333331" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                        <rect key="frame" x="49" y="11.666666666666627" width="113" height="21.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -777,8 +780,8 @@
                                                         <rect key="frame" x="15" y="10.000000000000002" width="24" height="24.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTh-qt-48S">
-                                                        <rect key="frame" x="49.000000000000007" y="11.333333333333314" width="118.66666666666669" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                        <rect key="frame" x="49" y="11" width="128.66666666666666" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -817,8 +820,8 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAS-X1-KI3">
-                                                        <rect key="frame" x="50" y="11.333333333333314" width="59" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                        <rect key="frame" x="50" y="11" width="62" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -958,7 +961,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search By Doctor Name" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-Bu-MUa">
+                            <searchBar contentMode="redraw" placeholder="Search By Pharmacy Name" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-Bu-MUa">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -1032,7 +1035,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search By Doctor Name" translatesAutoresizingMaskIntoConstraints="NO" id="0YY-Ud-VKo">
+                            <searchBar contentMode="redraw" placeholder="Search By Lab Name" translatesAutoresizingMaskIntoConstraints="NO" id="0YY-Ud-VKo">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>

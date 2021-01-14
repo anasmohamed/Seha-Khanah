@@ -1,9 +1,9 @@
 
 /* Class = "UILabel"; text = "Search By Name"; ObjectID = "0Uo-xF-Hnk"; */
-"0Uo-xF-Hnk.text" = "بحث بأسم الطبيب";
+"0Uo-xF-Hnk.text" = "بحث باسم المختبر";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "0YY-Ud-VKo"; */
-"0YY-Ud-VKo.placeholder" = "بحث بأسم الطبيب";
+"0YY-Ud-VKo.placeholder" = "ابحث بأسم المختبر";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "2Q8-er-26V"; */
 "2Q8-er-26V.title" = "البحث";
@@ -15,7 +15,7 @@
 "3Bn-wE-i2M.title" = "البحث";
 
 /* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "6cG-gx-7uz"; */
-"6cG-gx-7uz.text" = "لان صحتك تهمنا";
+"FZK-xw-gEX.text" = "لان صحتك تهمنا";
 
 
 /* Class = "UILabel"; text = "Show All"; ObjectID = "9MY-sG-hJC"; */
@@ -28,13 +28,13 @@
 "FT1-K4-xjq.text" = "لان صحتك تهمنا";
 
 /* Class = "UILabel"; text = "Search By Lab"; ObjectID = "FoZ-dg-g9r"; */
-"FoZ-dg-g9r.text" = "بحث بأسم المختبر";
+"n5v-rF-OlB.text" = "بحث بأسم المختبر";
 
 /* Class = "UITabBarItem"; title = "Search"; ObjectID = "H9r-VO-dzN"; */
 "H9r-VO-dzN.title" = "بحث";
 //
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "OLO-Bu-MUa"; */
-"OLO-Bu-MUa.placeholder" = "بحث بأسم الطبيب";
+"OLO-Bu-MUa.placeholder" = "ابحث بأسم الصيدلية";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "PaK-NP-IfZ"; */
 "PaK-NP-IfZ.placeholder" = "بحث بأسم الطبيب";
@@ -72,16 +72,16 @@
 "jIa-oN-Wij.text" = "العنوان";
 
 /* Class = "UILabel"; text = "Search By Specialty"; ObjectID = "kxd-Oz-RLF"; */
-"kxd-Oz-RLF.text" = "بحث حسب التخصص";
+"T5A-Gq-Fmx.text" = "بحث حسب التخصص";
 
 /* Class = "UILabel"; text = "Search For Pharmacies"; ObjectID = "l1L-NK-776"; */
-"l1L-NK-776.text" = "بحث عن الصيدليات";
+"j0u-q4-2ho.text" = "بحث عن الصيدليات";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "qTm-nm-vGZ"; */
 "qTm-nm-vGZ.placeholder" = "بحث بأسم الطبيب";
 
 /* Class = "UILabel"; text = "Search By Name"; ObjectID = "qyv-Iy-wQ4"; */
-"qyv-Iy-wQ4.text" = "بحث بأسم الطبيب";
+"32f-Pa-4hD.text" = "بحث بأسم الطبيب";
 
 "FJK-vh-Rq4.title" = "المزيد";
 
