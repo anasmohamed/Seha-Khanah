@@ -18,7 +18,6 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     @IBOutlet weak var femaleRadioBtn: RadioButton!
     @IBOutlet weak var maleRadioBtn: RadioButton!
-    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
     @IBOutlet weak var fullNameTExtField: UITextField!
@@ -30,20 +29,24 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         setupLanguageBtns()
         
         
+        dateOfBirthTextField.text = UserDefaults.standard.string(forKey: "birthday")
+        fullNameTExtField.text = UserDefaults.standard.string(forKey: "name")
+        emailTextField.text = UserDefaults.standard.string(forKey: "email")
+        mobileNumberTextField.text = UserDefaults.standard.string(forKey:"phoneNumber")
+        selectedGender = UserDefaults.standard.string(forKey:"genderId" )!
+        
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func saveEditesBtnDidTapped(_ sender: Any) {
-        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = fullNameTExtField.text,let phone = mobileNumberTextField.text,let birthday = dateOfBirthTextField.text  else {
+        guard  let email = emailTextField.text, let userName = fullNameTExtField.text,let phone = mobileNumberTextField.text,let birthday = dateOfBirthTextField.text  else {
             return
         }
-        //        guard phone.count == 11 else {
-        //            return
-        //        }
-        guard password.count > 6 else {
+        guard phone.count == 14 else {
             return
         }
+        
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
         dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -67,8 +70,13 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
     func setupLanguageBtns() {
         genderRadioBtnsGroup.addButtons([maleRadioBtn, femaleRadioBtn])
         genderRadioBtnsGroup.delegate = self
-        
-        genderRadioBtnsGroup.selectedButtons = [maleRadioBtn]
+        if selectedGender == "1" {
+            genderRadioBtnsGroup.selectedButtons = [maleRadioBtn]
+            
+        }else{
+            genderRadioBtnsGroup.selectedButtons = [femaleRadioBtn]
+            
+        }
         maleRadioBtn.style = .circle
         femaleRadioBtn.style = .circle
         
@@ -85,15 +93,19 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
     
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func editProfileSuccess(user: User) {
-        
+        indicator.stopAnimating()
+        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        tabBarViewController.modalPresentationStyle = .fullScreen
+        self.present(tabBarViewController, animated: true, completion: nil)
     }
     
     

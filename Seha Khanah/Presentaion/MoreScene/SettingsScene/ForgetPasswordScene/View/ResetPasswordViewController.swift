@@ -17,11 +17,18 @@ class ResetPasswordViewController: UIViewController,ResetPasswordProtocol {
     var resetPasswordPresenter : ResetPasswordPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
-        cornerRadiusAndShodow(view: passwordsView)
         resetPasswordPresenter = ResetPasswordPresenter(view:self)
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cornerRadiusAndShodow(view: passwordsView)
+
+    }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.gray.cgColor
         view.layer.shadowOpacity = 1
