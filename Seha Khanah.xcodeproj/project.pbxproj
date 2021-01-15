@@ -17,6 +17,9 @@
 		A806CB09259E2AA700D1764C /* LabDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB08259E2AA700D1764C /* LabDetailsPresenter.swift */; };
 		A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */; };
 		A806CB0D259E2D8600D1764C /* LabDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB0C259E2D8600D1764C /* LabDetailsProtocol.swift */; };
+		A807E8B625B1BF7E009C5CDA /* Slider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A807E8B525B1BF7E009C5CDA /* Slider.storyboard */; };
+		A807E8B825B1C259009C5CDA /* LogoutSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A807E8B725B1C259009C5CDA /* LogoutSliderViewController.swift */; };
+		A807E8B925B1CA84009C5CDA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A807E8BB25B1CA84009C5CDA /* Login.storyboard */; };
 		A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A912597BA75003F414A /* AboutAppPresenter.swift */; };
 		A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A932597BA98003F414A /* AboutAppProtocol.swift */; };
 		A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */; };
@@ -43,7 +46,6 @@
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
 		A82EA35A258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */; };
 		A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA35B258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift */; };
-		A82F34142587E463000A3591 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82F34132587E463000A3591 /* Login.storyboard */; };
 		A82F34162587E489000A3591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F34152587E489000A3591 /* LoginViewController.swift */; };
 		A83CB062258B4DBA00207BDC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83CB061258B4DBA00207BDC /* State.swift */; };
 		A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */; };
@@ -201,6 +203,11 @@
 		A806CB08259E2AA700D1764C /* LabDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsPresenter.swift; sourceTree = "<group>"; };
 		A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsViewController.swift; sourceTree = "<group>"; };
 		A806CB0C259E2D8600D1764C /* LabDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetailsProtocol.swift; sourceTree = "<group>"; };
+		A807E8B525B1BF7E009C5CDA /* Slider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Slider.storyboard; sourceTree = "<group>"; };
+		A807E8B725B1C259009C5CDA /* LogoutSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutSliderViewController.swift; sourceTree = "<group>"; };
+		A807E8BA25B1CA84009C5CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		A807E8BD25B1CA8E009C5CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Login.strings; sourceTree = "<group>"; };
+		A807E8BF25B1CA93009C5CDA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Login.strings; sourceTree = "<group>"; };
 		A8094A912597BA75003F414A /* AboutAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		A8094A932597BA98003F414A /* AboutAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppProtocol.swift; sourceTree = "<group>"; };
 		A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTheAppWorksViewController.swift; sourceTree = "<group>"; };
@@ -227,7 +234,6 @@
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
 		A82EA359258F53F900F30C61 /* OffersViewController+ImageSliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+ImageSliderExtension.swift"; sourceTree = "<group>"; };
 		A82EA35B258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+MostOrdersOffesTableView.swift"; sourceTree = "<group>"; };
-		A82F34132587E463000A3591 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A82F34152587E489000A3591 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A83CB061258B4DBA00207BDC /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehaKhanahRouter.swift; sourceTree = "<group>"; };
@@ -446,6 +452,23 @@
 				A8C9E3E5259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift */,
 			);
 			path = RatingCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A807E8B225B1BF34009C5CDA /* LogoutSliderScene */ = {
+			isa = PBXGroup;
+			children = (
+				A807E8B425B1BF59009C5CDA /* View */,
+			);
+			path = LogoutSliderScene;
+			sourceTree = "<group>";
+		};
+		A807E8B425B1BF59009C5CDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A807E8B525B1BF7E009C5CDA /* Slider.storyboard */,
+				A807E8B725B1C259009C5CDA /* LogoutSliderViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A8094A952597C49B003F414A /* HowTheAppWorksScene */ = {
@@ -678,7 +701,7 @@
 		A82F34122587E429000A3591 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A82F34132587E463000A3591 /* Login.storyboard */,
+				A807E8BB25B1CA84009C5CDA /* Login.storyboard */,
 				A82F34152587E489000A3591 /* LoginViewController.swift */,
 				A8B8E4CF25A8C498002F8149 /* LoginProtocol.swift */,
 			);
@@ -1497,6 +1520,7 @@
 		A8AC86BC25876D4F00604E64 /* AuthenticationScene */ = {
 			isa = PBXGroup;
 			children = (
+				A807E8B225B1BF34009C5CDA /* LogoutSliderScene */,
 				A8AC86BE25876DB300604E64 /* SignupScene */,
 				A8AC86BD25876DA800604E64 /* Login */,
 			);
@@ -1749,13 +1773,14 @@
 				A884DD86259A2BB0006D686B /* ChangeLanguage.storyboard in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
 				A8674A26259749060099E7CE /* Offers.storyboard in Resources */,
+				A807E8B625B1BF7E009C5CDA /* Slider.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,
 				A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */,
 				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
 				A80DD8D125A120AE00FD2CF1 /* LabServices.storyboard in Resources */,
-				A82F34142587E463000A3591 /* Login.storyboard in Resources */,
+				A807E8B925B1CA84009C5CDA /* Login.storyboard in Resources */,
 				A8D2E36125AB42CC003C8DA7 /* GoogleService-Info.plist in Resources */,
 				A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */,
 				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
@@ -1952,6 +1977,7 @@
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
 				A8A852A1259730E900E99A67 /* ChangeLanguageViewController.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
+				A807E8B825B1C259009C5CDA /* LogoutSliderViewController.swift in Sources */,
 				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
 				A8C9E3E3259FC42C0085B806 /* RatingCollectionViewCell.swift in Sources */,
 				A8A7DD4325951A49007FBFE0 /* RegionPresenter.swift in Sources */,
@@ -1979,6 +2005,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A807E8BB25B1CA84009C5CDA /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A807E8BA25B1CA84009C5CDA /* Base */,
+				A807E8BD25B1CA8E009C5CDA /* en */,
+				A807E8BF25B1CA93009C5CDA /* ar */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
 		A8674A22259748890099E7CE /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

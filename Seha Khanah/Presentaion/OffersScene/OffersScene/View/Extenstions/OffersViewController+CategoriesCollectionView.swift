@@ -21,12 +21,15 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
         return presenter.getOffersCategoriesCount() - 1
         
     }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OfferCategoriesCollectionViewCell.identifier, for: indexPath) as! OfferCategoriesCollectionViewCell
+        cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+
         presenter.configure(cell: cell, for: indexPath.row,section:indexPath.section)
         return cell
     }

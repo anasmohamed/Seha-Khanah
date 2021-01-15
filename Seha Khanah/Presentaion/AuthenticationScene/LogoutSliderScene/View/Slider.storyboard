@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Logout Slider View Controller-->
+        <scene sceneID="s9y-rE-FDK">
+            <objects>
+                <viewController storyboardIdentifier="LogoutSliderViewController" id="7eB-ek-BpO" customClass="LogoutSliderViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vja-f6-5vz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-AG-9Jb" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="40" y="303" width="334" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="uOs-Ye-qKr"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lkt-AC-q47">
+                                <rect key="frame" x="20" y="793" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwq-IP-9RL">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                                        <state key="normal" title="تسجيل دخول"/>
+                                        <connections>
+                                            <action selector="loginBtnDidTapped:" destination="7eB-ek-BpO" eventType="touchUpInside" id="Nj8-Vi-o7x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLM-ad-nev">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                        <state key="normal" title="أحجز الاَن">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bookNowBtnDidTapped:" destination="7eB-ek-BpO" eventType="touchUpInside" id="6Qx-Sa-A9d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ntl-UK-oux"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerX" secondItem="wh2-mC-BrC" secondAttribute="centerX" id="GZP-cr-UX7"/>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="40" id="NMg-yc-vTe"/>
+                            <constraint firstItem="Lkt-AC-q47" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="20" id="Pfm-pE-9P3"/>
+                            <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="Lkt-AC-q47" secondAttribute="trailing" constant="20" id="X4k-bt-XrC"/>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerY" secondItem="wh2-mC-BrC" secondAttribute="centerY" id="b7u-7j-GSc"/>
+                            <constraint firstItem="wh2-mC-BrC" firstAttribute="bottom" secondItem="Lkt-AC-q47" secondAttribute="bottom" constant="29" id="c6c-6z-Klk"/>
+                            <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" constant="40" id="uNN-Qj-0MP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wh2-mC-BrC"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="zwq-IP-9RL" id="VTd-8F-lCv"/>
+                        <outlet property="sliderImageVIew" destination="eNb-AG-9Jb" id="Exx-ml-Fus"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-0t-WpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349" y="-287"/>
+        </scene>
+    </scenes>
+</document>

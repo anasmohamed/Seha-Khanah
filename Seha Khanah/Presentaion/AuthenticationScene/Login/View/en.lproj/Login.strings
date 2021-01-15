@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Terms And Condition"; ObjectID = "0W6-Nc-uRQ"; */
+"0W6-Nc-uRQ.normalTitle" = "Terms And Condition";
+
+/* Class = "UIButton"; normalTitle = "Login with Faceboo"; ObjectID = "3fT-I6-aCS"; */
+"3fT-I6-aCS.normalTitle" = "Login with Facebook";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "578-NQ-LXJ"; */
+"578-NQ-LXJ.text" = "OR";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "7Dq-SX-3ZD"; */
+"7Dq-SX-3ZD.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Did You Forget Password?"; ObjectID = "8eK-hW-cpS"; */
+"8eK-hW-cpS.normalTitle" = "Did You Forget Password?";
+
+/* Class = "UIButton"; normalTitle = "Login with Google"; ObjectID = "TsU-cj-Hnh"; */
+"TsU-cj-Hnh.normalTitle" = "Login with Google";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "Z20-Ej-rJS"; */
+"Z20-Ej-rJS.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Create New Account"; ObjectID = "ZcH-8n-eeA"; */
+"ZcH-8n-eeA.normalTitle" = "Create New Account";
+
+/* Class = "UITextField"; placeholder = "E-Mail Or Mobile Number"; ObjectID = "jo3-gX-KNf"; */
+"jo3-gX-KNf.placeholder" = "E-Mail Or Mobile Number";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "qaE-iU-XGu"; */
+"qaE-iU-XGu.normalTitle" = "Login";

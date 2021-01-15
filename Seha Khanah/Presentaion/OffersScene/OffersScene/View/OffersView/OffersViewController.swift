@@ -40,6 +40,8 @@ class OffersViewController: UIViewController {
         presenter.getOffersCategories()
         mostOrderedOffersPresenter.getMostOrderedOffers()
         collectionViewLayoutInsets()
+        offersCategoriesCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+        //in cellForItemAtIndexPath
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

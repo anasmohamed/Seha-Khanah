@@ -67,8 +67,8 @@ class MoreTableViewController: UITableViewController {
             let howTheAppWorksViewController = UIStoryboard.init(name: "HowTheAppWorks", bundle: nil).instantiateViewController(withIdentifier: "HowTheAppWorksViewController") as! HowTheAppWorksViewController
             self.navigationController!.pushViewController(howTheAppWorksViewController, animated: true)
         case 4:
-            let aboutAppViewController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            self.navigationController!.pushViewController(aboutAppViewController, animated: true)
+            let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
+            self.present(logoutSliderViewController, animated: true)
             
             UserDefaults.standard.removeObject(forKey: "isUserLoggedin")
             UserDefaults.standard.removeObject(forKey: "email")

@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Terms And Condition"; ObjectID = "0W6-Nc-uRQ"; */
+"0W6-Nc-uRQ.normalTitle" = "الشروط والقوانين";
+
+/* Class = "UIButton"; normalTitle = "Login with Faceboo"; ObjectID = "3fT-I6-aCS"; */
+"3fT-I6-aCS.normalTitle" = "متابعة بحساب فيسبوك";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "578-NQ-LXJ"; */
+"578-NQ-LXJ.text" = "أو";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "7Dq-SX-3ZD"; */
+"7Dq-SX-3ZD.placeholder" = "رمز الدخول";
+
+/* Class = "UIButton"; normalTitle = "Did You Forget Password?"; ObjectID = "8eK-hW-cpS"; */
+"8eK-hW-cpS.normalTitle" = "هل نسيت كلمة المرور؟";
+
+/* Class = "UIButton"; normalTitle = "Login with Google"; ObjectID = "TsU-cj-Hnh"; */
+"TsU-cj-Hnh.normalTitle" = "متابعة بحساب جوجل";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "Z20-Ej-rJS"; */
+"Z20-Ej-rJS.title" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Create New Account"; ObjectID = "ZcH-8n-eeA"; */
+"ZcH-8n-eeA.normalTitle" = "إنشاء حساب جديد";
+
+/* Class = "UITextField"; placeholder = "E-Mail Or Mobile Number"; ObjectID = "jo3-gX-KNf"; */
+"jo3-gX-KNf.placeholder" = "البريد الإلكترونى أو رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "qaE-iU-XGu"; */
+"qaE-iU-XGu.normalTitle" = "تسجيل الدخول";
