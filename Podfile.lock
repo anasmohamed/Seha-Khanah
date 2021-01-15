@@ -43,14 +43,13 @@ PODS:
   - MBRadioCheckboxButton (2.0)
   - moa (12.0.0)
   - MOLH (1.4.1)
+  - ReachabilitySwift (5.0.0)
   - ReadMoreTextView (3.0.1)
   - SDWebImage (5.9.3):
     - SDWebImage/Core (= 5.9.3)
   - SDWebImage/Core (5.9.3)
-  - SlidingText (1.0.3)
   - SwiftyJSON (4.3.0)
   - Swinject (2.7.1)
-  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - AACarousel
@@ -65,12 +64,11 @@ DEPENDENCIES:
   - MBRadioCheckboxButton
   - moa (~> 12.0)
   - MOLH
+  - ReachabilitySwift
   - ReadMoreTextView
   - SDWebImage (~> 5.0)
-  - SlidingText
   - SwiftyJSON (~> 4.0)
   - Swinject
-  - TTTAttributedLabel
 
 SPEC REPOS:
   trunk:
@@ -89,12 +87,11 @@ SPEC REPOS:
     - MBRadioCheckboxButton
     - moa
     - MOLH
+    - ReachabilitySwift
     - ReadMoreTextView
     - SDWebImage
-    - SlidingText
     - SwiftyJSON
     - Swinject
-    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   AACarousel: e0dbd2d3153c56c36df8aa282553f20fc88e132b
@@ -112,13 +109,12 @@ SPEC CHECKSUMS:
   MBRadioCheckboxButton: 6e2a2cdc441e292e45b64c4e65eb8fc1fc05eef2
   moa: e2346f12de6c65bbca4d103950d45db9e46785ef
   MOLH: 9ea6c0390f5963b2df9827ae64035fbc8598b092
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
-  SlidingText: cb865d931ec6aa60fe690ad6fe9fb4fccfcfc5a1
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
-  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 5540d70e645ff00c0f04b3a8cb2d042ecc49b8a0
+PODFILE CHECKSUM: 14fc98f047ce951c81fff179b8d7207de8d406e4
 
 COCOAPODS: 1.9.3

@@ -14,13 +14,19 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var myAppointmentsPresenter : MyAppointmentsPresenter!
+    var isUserLoggedIn = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myAppointmentsPresenter = MyAppointmentsPresenter(view: self)
-        myAppointmentsPresenter.getMyAppintments()
-        setupTableView()
-        tableView.delegate = self
-        tableView.dataSource = self
+        isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
+        if isUserLoggedIn {
+            myAppointmentsPresenter.getMyAppintments()
+            setupTableView()
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -36,15 +42,15 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     }
     
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return myAppointmentsPresenter.getMyAppointmentsCount()
     }
     
-     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 290
     }
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
         cell.actionBlock = {
@@ -59,7 +65,7 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         return cell
     }
     
-      
+    
     func openGoogleMap(lat:String,lng: String) {
         let latDouble = Double(lat)
         let longDouble = Double(lng)
@@ -130,13 +136,13 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     
     func getMyAppointmentsSuccess() {
         indicator.stopAnimating()
-
+        
         tableView.reloadData()
     }
     
     func showError(error: String) {
         indicator.stopAnimating()
-
+        
     }
     
 }

@@ -63,20 +63,32 @@ class SettingsTableViewController: UITableViewController {
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            let languageChangeViewController = UIStoryboard.init(name: "EditProfile", bundle: nil).instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
-            self.navigationController!.pushViewController(languageChangeViewController, animated: true)
-            
-        case 1:
-            let languageChangeViewController = UIStoryboard.init(name: "ResetPassword", bundle: nil).instantiateViewController(withIdentifier: "ResetPasswordViewController") as! ResetPasswordViewController
-            self.navigationController!.pushViewController(languageChangeViewController, animated: true)
-        case 2:
-            
-            let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
-            self.navigationController!.pushViewController(languageChangeViewController, animated: true)
-        default:
-            break
+        if isUserLoggedIn{
+            switch indexPath.row {
+            case 0:
+                let languageChangeViewController = UIStoryboard.init(name: "EditProfile", bundle: nil).instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
+                self.navigationController!.pushViewController(languageChangeViewController, animated: true)
+                
+            case 1:
+                let languageChangeViewController = UIStoryboard.init(name: "ResetPassword", bundle: nil).instantiateViewController(withIdentifier: "ResetPasswordViewController") as! ResetPasswordViewController
+                self.navigationController!.pushViewController(languageChangeViewController, animated: true)
+            case 2:
+                
+                let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
+                self.navigationController!.pushViewController(languageChangeViewController, animated: true)
+            default:
+                break
+            }
+        }else{
+            switch indexPath.row {
+            case 0:
+               let languageChangeViewController = UIStoryboard.init(name: "ChangeLanguage", bundle: nil).instantiateViewController(withIdentifier: "ChangeLanguageViewController") as! ChangeLanguageViewController
+                              self.navigationController!.pushViewController(languageChangeViewController, animated: true)
+                
+                
+            default:
+                break;
+            }
         }
         if indexPath.row == 0{
             

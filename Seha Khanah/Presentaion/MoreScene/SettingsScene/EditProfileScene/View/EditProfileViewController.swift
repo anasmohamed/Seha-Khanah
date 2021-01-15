@@ -27,6 +27,7 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         editProfilePresenter = EditUserProfilePresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
+        
         dateOfBirthTextField.text = UserDefaults.standard.string(forKey: "birthday")
         fullNameTExtField.text = UserDefaults.standard.string(forKey: "name")
         emailTextField.text = UserDefaults.standard.string(forKey: "email")
