@@ -78,7 +78,12 @@ class LogoutSliderViewController: UIViewController {
         
         let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
         let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.navigationController?.presentingViewController?.present(loginViewController, animated:true , completion: nil)
+
+        let navigationController = UINavigationController.init(rootViewController: loginViewController)
+        navigationController.modalPresentationStyle = .fullScreen
+
+        self.present(navigationController, animated: true, completion: nil)
+//        self.navigationController?.presentingViewController?.present(loginViewController, animated:true , completion: nil)
 //        self.navigationController!.pushViewController(loginViewController, animated: true)
         
     }

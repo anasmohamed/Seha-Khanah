@@ -70,7 +70,7 @@ class MoreTableViewController: UITableViewController {
             let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
             logoutSliderViewController.modalPresentationStyle = .fullScreen
 
-            self.present(logoutSliderViewController, animated: true)
+            self.navigationController!.present(logoutSliderViewController, animated: true)
             
             UserDefaults.standard.removeObject(forKey: "isUserLoggedin")
             UserDefaults.standard.removeObject(forKey: "email")
