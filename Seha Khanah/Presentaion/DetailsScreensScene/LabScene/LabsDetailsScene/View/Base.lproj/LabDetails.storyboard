@@ -63,7 +63,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyX-DT-6zg" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="10" y="212.5" width="100" height="10"/>
+                                                <rect key="frame" x="30" y="212.5" width="100" height="10"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="cJ4-Q1-NC0"/>
@@ -183,7 +183,7 @@
                                             <constraint firstItem="uUx-FL-shQ" firstAttribute="leading" secondItem="GEa-Z0-dFv" secondAttribute="leading" constant="20" id="4fZ-kN-f8g"/>
                                             <constraint firstAttribute="trailing" secondItem="Vyx-MR-TiH" secondAttribute="trailing" id="9ba-ZX-tjF"/>
                                             <constraint firstItem="VyX-DT-6zg" firstAttribute="top" secondItem="FX4-zO-Mgw" secondAttribute="bottom" constant="10" id="A1e-n0-3Qi"/>
-                                            <constraint firstItem="VyX-DT-6zg" firstAttribute="leading" secondItem="FX4-zO-Mgw" secondAttribute="leading" id="Csm-EB-1ZA"/>
+                                            <constraint firstItem="VyX-DT-6zg" firstAttribute="leading" secondItem="FX4-zO-Mgw" secondAttribute="leading" constant="20" id="Csm-EB-1ZA"/>
                                             <constraint firstItem="uUx-FL-shQ" firstAttribute="top" secondItem="VyX-DT-6zg" secondAttribute="bottom" constant="40" id="Cyd-HI-g2f"/>
                                             <constraint firstItem="EgQ-IT-imd" firstAttribute="trailing" secondItem="uUx-FL-shQ" secondAttribute="trailing" id="F1Q-mj-sO0"/>
                                             <constraint firstItem="zUe-k7-yYR" firstAttribute="top" secondItem="Vyx-MR-TiH" secondAttribute="bottom" constant="12" id="JE1-wK-1fY"/>

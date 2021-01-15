@@ -13,6 +13,8 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
     
     @IBOutlet weak var locationLbl: UILabel!
     
+    @IBOutlet weak var moreOrLessBtn: UIButton!
+    @IBOutlet weak var infoHeightConstarin: NSLayoutConstraint!
     @IBOutlet weak var pharmacyPhoto: UIImageView!
     @IBOutlet weak var pharmacyInfoLbl: UILabel!
     @IBOutlet weak var serviceProviderView: UIView!
@@ -80,4 +82,20 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
         
     }
     
+    @IBAction func moreOrLessBtnDidTapped(_ sender: Any) {
+        if moreOrLessBtn.titleLabel!.text == "more" || moreOrLessBtn.titleLabel!.text == "المزيد"{
+                   pharmacyInfoLbl.numberOfLines = 0
+                   pharmacyInfoLbl.sizeToFit()
+                   infoHeightConstarin.constant = infoView.bounds.height + 80
+                   cornerRadiusAndShodow(view: infoView)
+                   moreOrLessBtn.titleLabel!.text = "less".localized
+               }else{
+                   pharmacyInfoLbl.numberOfLines = 1
+                   pharmacyInfoLbl.sizeToFit()
+                   infoHeightConstarin.constant = 110
+                   cornerRadiusAndShodow(view: infoView)
+                   moreOrLessBtn.titleLabel!.text = "more".localized
+               }
+        
+    }
 }

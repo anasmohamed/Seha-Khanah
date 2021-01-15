@@ -40,8 +40,8 @@ class PharmacyDetails: Codable {
         self.doctorLastNameAr = data["pharmacy"]["lastName_ar"].stringValue
         self.pharmacyNameAr = data["pharmacy"]["pharmacy_name_ar"].stringValue
         self.pharamcyNameEn = data["pharmacy"]["pharmacy_name_en"].stringValue
-        self.aboutAr = data["pharmacy"]["about_en"].stringValue
-        self.aboutEn = data["pharmacy"]["about_ar"].stringValue
+        self.aboutAr = data["pharmacy"]["about_ar"].stringValue
+        self.aboutEn = data["pharmacy"]["about_en"].stringValue
         self.addressAr = data["pharmacy"]["address_ar"].stringValue
         self.addressEn = data["pharmacy"]["address_en"].stringValue
 
