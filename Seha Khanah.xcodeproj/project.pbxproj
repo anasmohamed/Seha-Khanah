@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
 		A806CAFE259E189900D1764C /* BookingDatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */; };
-		A806CAFF259E189900D1764C /* BookingDatesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A806CAFD259E189900D1764C /* BookingDatesCollectionViewCell.xib */; };
 		A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */; };
 		A806CB03259E1E5800D1764C /* LabDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB02259E1E5800D1764C /* LabDate.swift */; };
 		A806CB05259E292D00D1764C /* LabDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB04259E292D00D1764C /* LabDetails.swift */; };
@@ -90,13 +89,11 @@
 		A8674A2F259776180099E7CE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A31259776180099E7CE /* Search.storyboard */; };
 		A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674A3C259777110099E7CE /* CallUsViewController.swift */; };
 		A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */; };
-		A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A869A568259DFB290059C3C2 /* LabDetails.storyboard */; };
 		A869D67825A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */; };
 		A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D67925A660FF001D8886 /* DoctorDates.swift */; };
 		A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */; };
 		A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */; };
 		A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */; };
-		A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A870838A2596279F002AC96C /* SearchByLabNameTableViewCell.xib */; };
 		A870838F25962C4C002AC96C /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870838E25962C4C002AC96C /* Lab.swift */; };
 		A870839125962F19002AC96C /* SearchByLabNameTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870839025962F19002AC96C /* SearchByLabNameTableViewCellProtocol.swift */; };
 		A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870839225963336002AC96C /* SearchByLabNameInteractor.swift */; };
@@ -181,6 +178,9 @@
 		A8E8171925B2220F00DE29A6 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8171825B2220F00DE29A6 /* Favorite.storyboard */; };
 		A8E8171B25B2232900DE29A6 /* FavoirteContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */; };
 		A8E8172125B2253500DE29A6 /* FavoriteDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */; };
+		A8E8172225B22E6F00DE29A6 /* LabDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8172425B22E6F00DE29A6 /* LabDetails.storyboard */; };
+		A8E8172925B2393800DE29A6 /* BookingDatesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E8172B25B2393800DE29A6 /* BookingDatesCollectionViewCell.xib */; };
+		A8E8173025B23AEA00DE29A6 /* SearchByLabNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E8173225B23AEA00DE29A6 /* SearchByLabNameTableViewCell.xib */; };
 		A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */; };
 		A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */; };
 		A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681725AF246400B91375 /* MyAppiontments.swift */; };
@@ -198,7 +198,6 @@
 		4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.debug.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.debug.xcconfig"; sourceTree = "<group>"; };
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDatesCollectionViewCell.swift; sourceTree = "<group>"; };
-		A806CAFD259E189900D1764C /* BookingDatesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingDatesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDatesCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
 		A806CB02259E1E5800D1764C /* LabDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDate.swift; sourceTree = "<group>"; };
 		A806CB04259E292D00D1764C /* LabDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDetails.swift; sourceTree = "<group>"; };
@@ -288,13 +287,11 @@
 		A8674A33259776240099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Search.strings; sourceTree = "<group>"; };
 		A8674A3C259777110099E7CE /* CallUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
 		A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
-		A869A568259DFB290059C3C2 /* LabDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LabDetails.storyboard; sourceTree = "<group>"; };
 		A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoctorDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
 		A869D67925A660FF001D8886 /* DoctorDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDates.swift; sourceTree = "<group>"; };
 		A870838225960F17002AC96C /* SearchForAllLabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForAllLabsViewController.swift; sourceTree = "<group>"; };
 		A8708386259626C3002AC96C /* SearchByLabNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameViewController.swift; sourceTree = "<group>"; };
 		A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameTableViewCell.swift; sourceTree = "<group>"; };
-		A870838A2596279F002AC96C /* SearchByLabNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchByLabNameTableViewCell.xib; sourceTree = "<group>"; };
 		A870838E25962C4C002AC96C /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
 		A870839025962F19002AC96C /* SearchByLabNameTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameTableViewCellProtocol.swift; sourceTree = "<group>"; };
 		A870839225963336002AC96C /* SearchByLabNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByLabNameInteractor.swift; sourceTree = "<group>"; };
@@ -396,6 +393,15 @@
 		A8E8171825B2220F00DE29A6 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
 		A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoirteContainerViewController.swift; sourceTree = "<group>"; };
 		A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsViewController.swift; sourceTree = "<group>"; };
+		A8E8172325B22E6F00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LabDetails.storyboard; sourceTree = "<group>"; };
+		A8E8172625B22E8500DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LabDetails.strings; sourceTree = "<group>"; };
+		A8E8172825B22E8900DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LabDetails.strings; sourceTree = "<group>"; };
+		A8E8172A25B2393800DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookingDatesCollectionViewCell.xib; sourceTree = "<group>"; };
+		A8E8172D25B2394400DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BookingDatesCollectionViewCell.strings; sourceTree = "<group>"; };
+		A8E8172F25B2394800DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookingDatesCollectionViewCell.strings; sourceTree = "<group>"; };
+		A8E8173125B23AEA00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchByLabNameTableViewCell.xib; sourceTree = "<group>"; };
+		A8E8173425B23AF200DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
+		A8E8173625B23AF700DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsPresenter.swift; sourceTree = SOURCE_ROOT; };
 		A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsProtocol.swift; sourceTree = "<group>"; };
 		A8E9681725AF246400B91375 /* MyAppiontments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppiontments.swift; sourceTree = "<group>"; };
@@ -444,7 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */,
-				A806CAFD259E189900D1764C /* BookingDatesCollectionViewCell.xib */,
+				A8E8172B25B2393800DE29A6 /* BookingDatesCollectionViewCell.xib */,
 				A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */,
 			);
 			path = BookingDatesCollectionViewCell;
@@ -1176,7 +1182,7 @@
 			children = (
 				A8693E18259F66C500285921 /* Extensions */,
 				A806CAF9259E182100D1764C /* Cells */,
-				A869A568259DFB290059C3C2 /* LabDetails.storyboard */,
+				A8E8172425B22E6F00DE29A6 /* LabDetails.storyboard */,
 				A806CB0A259E2AC900D1764C /* LabDetailsViewController.swift */,
 				A806CB0C259E2D8600D1764C /* LabDetailsProtocol.swift */,
 			);
@@ -1241,7 +1247,7 @@
 			isa = PBXGroup;
 			children = (
 				A87083892596279F002AC96C /* SearchByLabNameTableViewCell.swift */,
-				A870838A2596279F002AC96C /* SearchByLabNameTableViewCell.xib */,
+				A8E8173225B23AEA00DE29A6 /* SearchByLabNameTableViewCell.xib */,
 				A870839025962F19002AC96C /* SearchByLabNameTableViewCellProtocol.swift */,
 			);
 			path = Cell;
@@ -1813,7 +1819,7 @@
 				A851FD76259794F80036790B /* AboutApp.storyboard in Resources */,
 				A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */,
 				A884DD7F259A2110006D686B /* CallUs.storyboard in Resources */,
-				A870838C2596279F002AC96C /* SearchByLabNameTableViewCell.xib in Resources */,
+				A8E8173025B23AEA00DE29A6 /* SearchByLabNameTableViewCell.xib in Resources */,
 				A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */,
 				A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */,
 				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
@@ -1821,7 +1827,7 @@
 				A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */,
 				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A8C8164625A72F9300690AE8 /* PharmacyDetails.storyboard in Resources */,
-				A869A569259DFB290059C3C2 /* LabDetails.storyboard in Resources */,
+				A8E8172225B22E6F00DE29A6 /* LabDetails.storyboard in Resources */,
 				A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */,
 				A8761D7725B04FAB00280BE7 /* MoreTableViewCell.xib in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
@@ -1845,7 +1851,7 @@
 				A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */,
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
-				A806CAFF259E189900D1764C /* BookingDatesCollectionViewCell.xib in Resources */,
+				A8E8172925B2393800DE29A6 /* BookingDatesCollectionViewCell.xib in Resources */,
 				A80DD8D725A1327300FD2CF1 /* LabDayDates.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2190,6 +2196,36 @@
 				A8C7D21F25B0EE0500C24023 /* ar */,
 			);
 			name = MyAppointmentsTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		A8E8172425B22E6F00DE29A6 /* LabDetails.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E8172325B22E6F00DE29A6 /* Base */,
+				A8E8172625B22E8500DE29A6 /* en */,
+				A8E8172825B22E8900DE29A6 /* ar */,
+			);
+			name = LabDetails.storyboard;
+			sourceTree = "<group>";
+		};
+		A8E8172B25B2393800DE29A6 /* BookingDatesCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E8172A25B2393800DE29A6 /* Base */,
+				A8E8172D25B2394400DE29A6 /* en */,
+				A8E8172F25B2394800DE29A6 /* ar */,
+			);
+			name = BookingDatesCollectionViewCell.xib;
+			sourceTree = "<group>";
+		};
+		A8E8173225B23AEA00DE29A6 /* SearchByLabNameTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E8173125B23AEA00DE29A6 /* Base */,
+				A8E8173425B23AF200DE29A6 /* en */,
+				A8E8173625B23AF700DE29A6 /* ar */,
+			);
+			name = SearchByLabNameTableViewCell.xib;
 			sourceTree = "<group>";
 		};
 		A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */ = {

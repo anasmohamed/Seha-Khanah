@@ -21,17 +21,17 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
     @IBOutlet weak var containerView: DropShadowView!
     let locale = NSLocale.current.languageCode
     
-    let cornerRadius : CGFloat = 25.0
+    let cornerRadius : CGFloat = 10.0
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        bookNowBtn.layer.cornerRadius = 10
+        bookNowBtn.layer.cornerRadius = 5
         accountPhoto.layer.cornerRadius = accountPhoto.frame.width / 2
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
         containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        containerView.layer.shadowRadius = 15.0
+        containerView.layer.shadowRadius = 5.0
         containerView.layer.shadowOpacity = 0.9
         
         
