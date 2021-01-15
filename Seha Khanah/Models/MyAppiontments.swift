@@ -22,7 +22,7 @@ class MyAppiontments: Codable {
         self.clientId = data["client_id"].stringValue
         self.doctorId = data["doctor_id"].stringValue
         self.bookingDate = data["booking_date"].stringValue
-        self.statusId = data["name_en"].stringValue
+        self.statusId = data["status_id"].stringValue
         self.doctor = DoctorDetails(withJSON: data["doctor"])
         self.status = BookingStatus(withJSON: data["status"])
         

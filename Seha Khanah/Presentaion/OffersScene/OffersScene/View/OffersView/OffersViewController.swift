@@ -39,6 +39,7 @@ class OffersViewController: UIViewController {
         
         presenter.getOffersCategories()
         mostOrderedOffersPresenter.getMostOrderedOffers()
+        mostOrderedOffersPresenter.getMostOrderedOffersImage()
         collectionViewLayoutInsets()
         offersCategoriesCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         //in cellForItemAtIndexPath

@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostOrderedOffersViewProtocol{
     func getMostOrderedOffersImageSuccess(images: [MostOrderedOffersImage]) {
+        imageSlider.auk.settings.contentMode = .scaleAspectFit
+
         if locale == "en"
         {
             for image in images

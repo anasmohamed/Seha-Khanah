@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-AG-9Jb" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="40" y="303" width="334" height="300"/>
+                                <rect key="frame" x="40" y="325" width="334" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="uOs-Ye-qKr"/>
@@ -55,7 +55,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uI-Gf-XPR" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="40" y="173" width="334" height="130"/>
+                                <rect key="frame" x="40" y="195" width="334" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="j4x-Wj-Yqa"/>
@@ -92,10 +92,12 @@
         <!--Navigation Controller-->
         <scene sceneID="Emv-m3-PTw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1pK-V6-fH1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1pK-V6-fH1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="esu-Zm-caJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
