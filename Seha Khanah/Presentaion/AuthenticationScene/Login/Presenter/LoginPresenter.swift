@@ -61,11 +61,11 @@ class LoginPresenter  {
     func returnAccessToken() -> String {
         return accessToken!
     }
-    func loginWithFacebook(accessToken: String,
+    func loginWithSocial(accessToken: String,
                            provider: String) {
         
         view?.showIndicator()
-        loginInteractor.loginWithFacebook(accessTokcen: accessToken,
+        loginInteractor.loginWithSocial(accessTokcen: accessToken,
                                           provider: provider){ (result,error)  in
                                             if let error = error {
                                                 print("errrror\(error)")

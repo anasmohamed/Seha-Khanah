@@ -26,7 +26,7 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: UIView!
     let locale = NSLocale.current.languageCode
-    let cornerRadius : CGFloat = 25.0
+    let cornerRadius : CGFloat = 10.0
     var actionBlock: (() -> Void)? = nil
     var mapStackViewActionBlock: (() -> Void)? = nil
     var lat : String?
@@ -43,9 +43,9 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         mabMarkerView.layer.borderWidth = 1
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        containerView.layer.shadowRadius = 15.0
-        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+        containerView.layer.shadowRadius = 10.0
+        containerView.layer.shadowOpacity = 0.7
         
         
         mainView.layer.cornerRadius = cornerRadius

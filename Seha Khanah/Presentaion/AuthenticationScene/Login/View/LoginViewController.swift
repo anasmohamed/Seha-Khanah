@@ -12,6 +12,7 @@ import FBSDKCoreKit
 import GoogleSignIn
 class LoginViewController: UIViewController ,LoginProtocol{
     @IBOutlet weak var createNewAccountBtn: UIButton!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var signinWithGoogleBtn: UIButton!
     @IBOutlet weak var mainScrollViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginBtn: UIButton!
@@ -42,12 +43,13 @@ class LoginViewController: UIViewController ,LoginProtocol{
             tabBarViewController.modalPresentationStyle = .fullScreen
             self.present(tabBarViewController, animated: true, completion: nil)
         }
-     var token = UserDefaults.standard.string(forKey: "token")
+        var token = UserDefaults.standard.string(forKey: "token")
         print(token)
-
+        
     }
     
     @IBAction func signInWithGoogleBtnDidTapped(_ sender: Any) {
+        loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
         GIDSignIn.sharedInstance()?.signIn()
         
         
@@ -95,14 +97,16 @@ class LoginViewController: UIViewController ,LoginProtocol{
         view.endEditing(true)
     }
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
+
     }
     
     func loginSuccess(user: User) {
+        indicator.stopAnimating()
         let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
         let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
         tabBarViewController.modalPresentationStyle = .fullScreen
@@ -118,7 +122,8 @@ class LoginViewController: UIViewController ,LoginProtocol{
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
+
     }
     
     
@@ -159,7 +164,7 @@ extension LoginViewController: LoginButtonDelegate {
             if let err = error { print(err.localizedDescription); return } else {
                 if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String {
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
-                    self.loginPresenter.loginWithFacebook(accessToken:self.loginPresenter.returnAccessToken()
+                    self.loginPresenter.loginWithSocial(accessToken:self.loginPresenter.returnAccessToken()
                         , provider: "facebook")
                     print(firstName, id, facebookProfileString)
                     print("facebook id\(id)")
@@ -181,13 +186,11 @@ extension LoginViewController :GIDSignInDelegate {
             }
             return
         }
-        // Perform any operations on signed in user here.
-        let userId = user.userID                  // For client-side use only!
-        let idToken = user.authentication.idToken // Safe to send to the server
-        let fullName = user.profile.name
-        let givenName = user.profile.givenName
-        let familyName = user.profile.familyName
-        let email = user.profile.email
+        self.loginPresenter.loginWithSocial(accessToken:self.loginPresenter.returnAccessToken()
+            , provider: "google")
+     
+        
+        
     }
     
     

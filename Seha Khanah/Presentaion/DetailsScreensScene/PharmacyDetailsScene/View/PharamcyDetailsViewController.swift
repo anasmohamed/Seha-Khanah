@@ -40,15 +40,15 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
         cornerRadiusAndShodow(view: infoView)
         cornerRadiusAndShodow(view: pharmacyNameView)
         cornerRadiusAndShodow(view: goToLocationView)
-
+        
     }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.gray.cgColor
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 3
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-        view.layer.shouldRasterize = true
+//        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+//        view.layer.shouldRasterize = false
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 5
     }
@@ -84,18 +84,20 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
     
     @IBAction func moreOrLessBtnDidTapped(_ sender: Any) {
         if moreOrLessBtn.titleLabel!.text == "more" || moreOrLessBtn.titleLabel!.text == "المزيد"{
-                   pharmacyInfoLbl.numberOfLines = 0
-                   pharmacyInfoLbl.sizeToFit()
-                   infoHeightConstarin.constant = infoView.bounds.height + 80
-                   cornerRadiusAndShodow(view: infoView)
-                   moreOrLessBtn.titleLabel!.text = "less".localized
-               }else{
-                   pharmacyInfoLbl.numberOfLines = 1
-                   pharmacyInfoLbl.sizeToFit()
-                   infoHeightConstarin.constant = 110
-                   cornerRadiusAndShodow(view: infoView)
-                   moreOrLessBtn.titleLabel!.text = "more".localized
-               }
+            pharmacyInfoLbl.numberOfLines = 0
+            pharmacyInfoLbl.sizeToFit()
+            infoHeightConstarin.constant = pharmacyInfoLbl.bounds.height + 80
+            moreOrLessBtn.setTitle("less".localized, for: .normal)
+            cornerRadiusAndShodow(view: infoView)
+
+        }else{
+            pharmacyInfoLbl.numberOfLines = 1
+            pharmacyInfoLbl.sizeToFit()
+            infoHeightConstarin.constant = 120
+            cornerRadiusAndShodow(view: infoView)
+            moreOrLessBtn.setTitle("more".localized, for: .normal)
+            
+        }
         
     }
 }

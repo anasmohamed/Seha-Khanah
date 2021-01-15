@@ -32,7 +32,8 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
     }
     
     func getMostOrderedOffersSuccess() {
-        
+        indicator.stopAnimating()
+
         mostOrderOffersTableView.reloadData()
     }
     func setupMostOrderedOffersTableView() {

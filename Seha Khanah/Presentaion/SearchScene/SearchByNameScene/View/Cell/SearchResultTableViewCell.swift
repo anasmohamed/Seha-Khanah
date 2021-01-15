@@ -23,18 +23,18 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
     @IBOutlet weak var numberOfVotes: UILabel!
     @IBOutlet weak var rating: CosmosView!
     @IBOutlet weak var profissionalTitleEnLbl: UILabel!
-    let cornerRadius : CGFloat = 25.0
+    let cornerRadius : CGFloat = 10.0
     let locale = NSLocale.current.languageCode
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        doctorPhoto.layer.cornerRadius = doctorPhoto.frame.width / 2
         bookBtn.layer.cornerRadius = 5
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        containerView.layer.shadowRadius = 15.0
-        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+        containerView.layer.shadowRadius = 10.0
+        containerView.layer.shadowOpacity = 0.7
         
         
         mainView.layer.cornerRadius = cornerRadius
@@ -48,7 +48,7 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         watingTimeLbl.text = "Waiting Time:".localized + result.waitingTime!
         costLbl.text = "Cost:".localized + result.price!
         
-        numberOfVotes.text = result.numberOfVisitor! + "visitor".localized
+        numberOfVotes.text = result.numberOfVisitor! + " " + "visitor".localized
         rating.rating = Double(result.rating!)!
         if locale == "en"
         {

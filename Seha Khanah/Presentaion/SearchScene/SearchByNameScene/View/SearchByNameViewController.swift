@@ -31,7 +31,10 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        searchedResultsPresenter.searchBy(areaId: areaId!, specialtyId:sepcialtyId!)
+        guard let areaId = areaId,let sepcialtyId = sepcialtyId  else {
+            return
+        }
+        searchedResultsPresenter.searchBy(areaId: areaId, specialtyId:sepcialtyId)
     }
     func setupTableView() {
         searchByNameResultsTableView.register(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchResultTableViewCell")

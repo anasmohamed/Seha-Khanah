@@ -21,7 +21,7 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
     var leftInset: CGFloat = 0
     var bottomInset: CGFloat = 0
     var rightInset: CGFloat = 0
-    let cornerRadius : CGFloat = 25.0
+    let cornerRadius : CGFloat = 10.0
     let locale = NSLocale.current.languageCode
     
     @IBOutlet weak var backView: UIView!
@@ -35,9 +35,9 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        containerView.layer.shadowRadius = 15.0
-        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        containerView.layer.shadowRadius = 5.0
+        containerView.layer.shadowOpacity = 0.8
         
         
         backView.layer.cornerRadius = cornerRadius

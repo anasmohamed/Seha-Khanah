@@ -10,6 +10,7 @@ import UIKit
 import AACarousel
 class OffersViewController: UIViewController {
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var imageSlider: UIScrollView!
     @IBOutlet weak var mostOrderOffersTableView: UITableView!

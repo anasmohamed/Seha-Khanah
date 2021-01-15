@@ -21,6 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KYd-ys-INW">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="As4-d4-vZY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
@@ -121,6 +126,7 @@
                     <navigationItem key="navigationItem" title="Offers" id="iql-5T-GfB"/>
                     <connections>
                         <outlet property="imageSlider" destination="kao-xI-gJU" id="zAY-Fp-qPG"/>
+                        <outlet property="indicator" destination="KYd-ys-INW" id="A8g-88-EzI"/>
                         <outlet property="mostOrderOffersTableView" destination="k5D-US-lln" id="FUS-Op-KmQ"/>
                         <outlet property="mostOrderedOffersTableView" destination="k5D-US-lln" id="KTE-bh-LwI"/>
                         <outlet property="offersCategoriesCollectionView" destination="9cI-vh-ykG" id="qq8-pD-ohn"/>

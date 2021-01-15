@@ -111,7 +111,7 @@ class LoginInteractor {
             }
         }
     }
-    func loginWithFacebook(accessTokcen: String,
+    func loginWithSocial(accessTokcen: String,
                            provider: String,
                            completionHandler: @escaping (User?, Error?) -> Void) {
         

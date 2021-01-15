@@ -14,13 +14,16 @@ extension OffersViewController :OffersCategorisViewProtocol{
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
+
     }
     func showError(error: String) {
+        indicator.stopAnimating()
+
         print("error \(error)")
     }
     

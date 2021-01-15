@@ -21,6 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="K2v-XI-veX">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="137-7R-8l0">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
@@ -31,8 +36,8 @@
                                             <constraint firstAttribute="height" constant="130" id="Wwl-wM-Sqn"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-00-0Q0" userLabel="SocialStackView">
-                                        <rect key="frame" x="57" y="175" width="300" height="85"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-00-0Q0" userLabel="SocialStackView">
+                                        <rect key="frame" x="57" y="175" width="300" height="90"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KAI-jZ-6yt">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
@@ -58,17 +63,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rw4-X5-TKd">
-                                                <rect key="frame" x="0.0" y="45" width="300" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="300" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-Xh-cAd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="UeV-MZ-OxE"/>
-                                                            <constraint firstAttribute="width" constant="40" id="mG7-kb-p2h"/>
+                                                            <constraint firstAttribute="width" constant="30" id="mG7-kb-p2h"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsU-cj-Hnh">
-                                                        <rect key="frame" x="45" y="0.0" width="255" height="40"/>
+                                                        <rect key="frame" x="35" y="0.0" width="265" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <state key="normal" title="Login with Google">
@@ -86,7 +91,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-2G-iGb" userLabel=":oginStackView">
-                                        <rect key="frame" x="20" y="421" width="374" height="90"/>
+                                        <rect key="frame" x="20" y="426" width="374" height="90"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Or Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-gX-KNf">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -104,13 +109,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="578-NQ-LXJ">
-                                        <rect key="frame" x="196" y="285" width="22.5" height="21.5"/>
+                                        <rect key="frame" x="196" y="290" width="22.5" height="21.5"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcH-8n-eeA">
-                                        <rect key="frame" x="57" y="315" width="300" height="34"/>
+                                        <rect key="frame" x="57" y="320" width="300" height="34"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <state key="normal" title="Create New Account">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,7 +125,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-iU-XGu">
-                                        <rect key="frame" x="57" y="531" width="300" height="35"/>
+                                        <rect key="frame" x="57" y="536" width="300" height="35"/>
                                         <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="TbZ-Jj-4Nz"/>
@@ -134,14 +139,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W6-Nc-uRQ">
-                                        <rect key="frame" x="137.5" y="357" width="139" height="34"/>
+                                        <rect key="frame" x="137.5" y="362" width="139" height="34"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <state key="normal" title="Terms And Condition">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-hW-cpS">
-                                        <rect key="frame" x="117.5" y="574" width="179" height="30"/>
+                                        <rect key="frame" x="117.5" y="579" width="179" height="30"/>
                                         <state key="normal" title="Did You Forget Password?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -188,6 +193,7 @@
                     <connections>
                         <outlet property="createNewAccountBtn" destination="ZcH-8n-eeA" id="vvJ-Vb-67f"/>
                         <outlet property="emailTextField" destination="jo3-gX-KNf" id="GPb-sF-1Tv"/>
+                        <outlet property="indicator" destination="K2v-XI-veX" id="36H-zS-64J"/>
                         <outlet property="loginBtn" destination="qaE-iU-XGu" id="QXF-7J-WOr"/>
                         <outlet property="mainScrollViewBottomConstraint" destination="FP4-I6-FNd" id="IWk-Ig-qtl"/>
                         <outlet property="passwordTextField" destination="7Dq-SX-3ZD" id="Zg7-Wz-I5J"/>
