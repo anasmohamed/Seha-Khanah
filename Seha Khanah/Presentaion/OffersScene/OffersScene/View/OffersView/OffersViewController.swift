@@ -21,7 +21,7 @@ class OffersViewController: UIViewController {
     var mostOrderedOffersPresenter : MostOrderedOffersPresenter!
     var presenter: OffersCategoriesPresenter!
     var titleArray = [String]()
-    
+    var locale = NSLocale.current.languageCode
     override func viewDidLoad() {
         super.viewDidLoad()
         offersCategoriesCollectionView.delegate = self

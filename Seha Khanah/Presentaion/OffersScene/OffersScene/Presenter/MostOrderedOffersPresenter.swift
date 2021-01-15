@@ -10,11 +10,14 @@ import Foundation
 class MostOrderedOffersPresenter {
     private let offersInteractor:OffersInteractor
     private var mostOrderedOffers: [MostOrderedOffers]
+    private var mostOrderedOffersImages: [MostOrderedOffersImage]
+
     private weak var view: MostOrderedOffersViewProtocol?
     init(view: MostOrderedOffersViewProtocol) {
         self.view = view
         self.offersInteractor = OffersInteractor()
         mostOrderedOffers = [MostOrderedOffers]()
+        mostOrderedOffersImages = [MostOrderedOffersImage]()
     }
     
     func getMostOrderedOffers() {
@@ -34,6 +37,23 @@ class MostOrderedOffersPresenter {
             
         }
     }
+    func getMostOrderedOffersImage() {
+           
+           view?.showIndicator()
+           offersInteractor.offerSlidShow{ (result,error)  in
+               if let error = error {
+                   print("errrror\(error)")
+                   self.view?.showError(error: error.localizedDescription)
+               } else {
+                   if result != nil{
+                       self.mostOrderedOffersImages = result!
+                    self.view?.getMostOrderedOffersImageSuccess(images:self.mostOrderedOffersImages)
+                   }
+                   
+               }
+               
+           }
+       }
     public func getMostOrderedOfferCount() -> Int {
         return mostOrderedOffers.count
     }

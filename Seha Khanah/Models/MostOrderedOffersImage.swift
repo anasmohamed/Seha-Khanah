@@ -10,9 +10,13 @@ import Foundation
 import SwiftyJSON
 class MostOrderedOffersImage: Codable {
     var id :String?
-    var image:String?
+    var imageEn:String?
+    var imageAr:String?
+
     init(withJson data:JSON) {
         self.id = data["id"].stringValue
-        self.image = data["featured"].stringValue
+        self.imageEn = data["featured_en"].stringValue
+        self.imageAr = data["featured_ar"].stringValue
+
     }
 }

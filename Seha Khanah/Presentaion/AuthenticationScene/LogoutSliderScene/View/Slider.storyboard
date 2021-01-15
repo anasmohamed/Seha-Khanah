@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1pK-V6-fH1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -54,19 +54,12 @@
                                     <constraint firstAttribute="height" constant="40" id="ntl-UK-oux"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uI-Gf-XPR" customClass="SlidingText" customModule="SlidingText">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uI-Gf-XPR" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="40" y="173" width="334" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="j4x-Wj-Yqa"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="labelTexts" value="dfasdfasdf'|n'fasdfasdf"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGestures" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="timeToSlide">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -84,15 +77,34 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wh2-mC-BrC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9B6-Cj-sOr"/>
                     <connections>
                         <outlet property="bookNowBtn" destination="RLM-ad-nev" id="CDf-y2-k1t"/>
                         <outlet property="loginBtn" destination="zwq-IP-9RL" id="VTd-8F-lCv"/>
                         <outlet property="sliderImageVIew" destination="eNb-AG-9Jb" id="Exx-ml-Fus"/>
+                        <outlet property="textSlideShow" destination="4uI-Gf-XPR" id="POw-7P-hXs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-0t-WpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-349" y="-287"/>
+            <point key="canvasLocation" x="560.86956521739137" y="-287.27678571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Emv-m3-PTw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1pK-V6-fH1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="esu-Zm-caJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7eB-ek-BpO" kind="relationship" relationship="rootViewController" id="RWW-Eq-Bba"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0G-rw-N4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349.27536231884062" y="-287.27678571428572"/>
         </scene>
     </scenes>
 </document>

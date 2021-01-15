@@ -9,14 +9,28 @@
 import Foundation
 import UIKit
 extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostOrderedOffersViewProtocol{
+    func getMostOrderedOffersImageSuccess(images: [MostOrderedOffersImage]) {
+        if locale == "en"
+        {
+            for image in images
+            {
+                imageSlider.auk.show(url: image.imageEn!)
+                
+            }
+        }
+        else{
+            for image in images
+            {
+                imageSlider.auk.show(url: image.imageAr!)
+                
+            }
+        }
+        
+        imageSlider.auk.startAutoScroll(delaySeconds: 3)
+    }
+    
     func getMostOrderedOffersSuccess() {
-//       imageSlider.auk.settings.contentMode = .scaleAspectFill
-//               for image in labDetails.labPhotos
-//               {
-//                   labImages.auk.show(url: image)
-//                   
-//               }
-//               imageSlider.auk.startAutoScroll(delaySeconds: 3)
+        
         mostOrderOffersTableView.reloadData()
     }
     func setupMostOrderedOffersTableView() {
@@ -30,12 +44,12 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MostOrderedOffersTableViewCell", for: indexPath) as! MostOrderedOffersTableViewCell
         cell.leftInset = 20
-          cell.rightInset = 20
+        cell.rightInset = 20
         mostOrderedOffersPresenter.configure(cell: cell, for: indexPath.row)
-               return cell
+        return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 270
     }
-   
+    
 }

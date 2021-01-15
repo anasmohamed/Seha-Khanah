@@ -40,7 +40,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case resetPassword(email:String,userType:String,token:String,password:String,passwordConfirmation:String)
     
     case searchByAreaAndSpecialty(areaId:String,specialtyId:String)
-    
+    case offerSlidShow
     
     
     
@@ -99,7 +99,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case .searchByAreaAndSpecialty:
             return NetworkingConstants.searchByAreaAndSpecialty
             
-            
+        case .offerSlidShow:
+            return NetworkingConstants.offerSlideShow
         }
     }
     
@@ -123,7 +124,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showPharmacyDetails,
              .booking,
              .cancelBooking,
-             .searchByAreaAndSpecialty:
+             .searchByAreaAndSpecialty,
+             .offerSlidShow:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -279,7 +281,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .doctorReservation,
              .labReservation,
              .booking,
-             .searchByAreaAndSpecialty:
+             .searchByAreaAndSpecialty,
+             .offerSlidShow:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

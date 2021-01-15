@@ -31,11 +31,11 @@ class MostOrderedOffers {
         self.discount = data["discount"].stringValue
         self.coverImage = data["images"][0]["featured"].stringValue
         self.rating = data["rating"].stringValue
-        let images = data["images"].arrayValue
-        for image in images{
-            let data = MostOrderedOffersImage(withJson: image)
-            imagesList?.append(data)
-        }
+//        let images = data["images"].arrayValue
+//        for image in images{
+//            let data = MostOrderedOffersImage(withJson: image)
+//            imagesList?.append(data)
+//        }
         print(coverImage)
     }
 }

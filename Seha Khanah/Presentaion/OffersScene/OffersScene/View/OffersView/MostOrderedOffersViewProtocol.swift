@@ -11,5 +11,7 @@ protocol MostOrderedOffersViewProtocol: class {
     func showIndicator()
     func hideIndicator()
     func getMostOrderedOffersSuccess()
+    func getMostOrderedOffersImageSuccess(images:[MostOrderedOffersImage])
+
     func showError(error: String)
 }
