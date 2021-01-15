@@ -54,20 +54,38 @@
                                     <constraint firstAttribute="height" constant="40" id="ntl-UK-oux"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uI-Gf-XPR" customClass="SlidingText" customModule="SlidingText">
+                                <rect key="frame" x="40" y="173" width="334" height="130"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="j4x-Wj-Yqa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelTexts" value="dfasdfasdf'|n'fasdfasdf"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableGestures" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeToSlide">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="top" secondItem="4uI-Gf-XPR" secondAttribute="bottom" id="8Ag-LF-u0f"/>
                             <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerX" secondItem="wh2-mC-BrC" secondAttribute="centerX" id="GZP-cr-UX7"/>
                             <constraint firstItem="eNb-AG-9Jb" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="40" id="NMg-yc-vTe"/>
                             <constraint firstItem="Lkt-AC-q47" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="20" id="Pfm-pE-9P3"/>
                             <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="Lkt-AC-q47" secondAttribute="trailing" constant="20" id="X4k-bt-XrC"/>
+                            <constraint firstItem="4uI-Gf-XPR" firstAttribute="leading" secondItem="eNb-AG-9Jb" secondAttribute="leading" id="Z6E-hJ-cPM"/>
                             <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerY" secondItem="wh2-mC-BrC" secondAttribute="centerY" id="b7u-7j-GSc"/>
                             <constraint firstItem="wh2-mC-BrC" firstAttribute="bottom" secondItem="Lkt-AC-q47" secondAttribute="bottom" constant="29" id="c6c-6z-Klk"/>
+                            <constraint firstItem="4uI-Gf-XPR" firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" id="dCh-g8-DA5"/>
                             <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" constant="40" id="uNN-Qj-0MP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wh2-mC-BrC"/>
                     </view>
                     <connections>
+                        <outlet property="bookNowBtn" destination="RLM-ad-nev" id="CDf-y2-k1t"/>
                         <outlet property="loginBtn" destination="zwq-IP-9RL" id="VTd-8F-lCv"/>
                         <outlet property="sliderImageVIew" destination="eNb-AG-9Jb" id="Exx-ml-Fus"/>
                     </connections>

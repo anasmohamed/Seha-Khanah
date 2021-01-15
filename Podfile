@@ -23,6 +23,7 @@ target 'Seha Khanah' do
     pod 'ReadMoreTextView'
     pod 'GoogleSignIn'
     pod 'TTTAttributedLabel'
+    pod 'SlidingText'
 
 
 end

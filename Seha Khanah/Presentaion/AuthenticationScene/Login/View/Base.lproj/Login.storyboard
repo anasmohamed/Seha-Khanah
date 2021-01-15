@@ -57,18 +57,18 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rw4-X5-TKd">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rw4-X5-TKd">
                                                 <rect key="frame" x="0.0" y="45" width="300" height="40"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-Xh-cAd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="18"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-Xh-cAd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="UeV-MZ-OxE"/>
                                                             <constraint firstAttribute="width" constant="40" id="mG7-kb-p2h"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsU-cj-Hnh">
-                                                        <rect key="frame" x="0.0" y="23" width="300" height="17"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsU-cj-Hnh">
+                                                        <rect key="frame" x="45" y="0.0" width="255" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <state key="normal" title="Login with Google">
@@ -223,7 +223,7 @@
     </scenes>
     <resources>
         <image name="Facebook_logo" width="33.5" height="33.5"/>
-        <image name="google.png" width="18" height="18"/>
+        <image name="Google_Logo" width="265.5" height="267.5"/>
         <image name="logo" width="266.5" height="266.5"/>
     </resources>
 </document>

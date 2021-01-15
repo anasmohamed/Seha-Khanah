@@ -12,6 +12,7 @@ import ImageSlideshow
 class LogoutSliderViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     
+    @IBOutlet weak var bookNowBtn: UIButton!
     @IBOutlet weak var sliderImageVIew: ImageSlideshow!
     let localSource = [BundleImageSource(imageString: "slider_1"), BundleImageSource(imageString: "slider_2"), BundleImageSource(imageString: "slider_3"), BundleImageSource(imageString: "slider_4")]
     override func viewDidLoad() {
@@ -19,6 +20,8 @@ class LogoutSliderViewController: UIViewController {
         loginBtn.layer.cornerRadius = 10
         loginBtn.layer.borderColor = UIColor.blue.cgColor
         loginBtn.layer.borderWidth = 2
+        
+        bookNowBtn.layer.cornerRadius = 10
         sliderImageVIew.slideshowInterval = 5.0
         sliderImageVIew.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         sliderImageVIew.contentScaleMode = UIViewContentMode.scaleAspectFill
@@ -34,6 +37,7 @@ class LogoutSliderViewController: UIViewController {
         
         // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
         sliderImageVIew.setImageInputs(localSource)
+        
         // Do any additional setup after loading the view.
     }
     
