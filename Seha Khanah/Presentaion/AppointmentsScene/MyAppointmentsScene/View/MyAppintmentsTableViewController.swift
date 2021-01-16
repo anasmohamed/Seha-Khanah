@@ -18,6 +18,7 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Appointments".localized
         myAppointmentsPresenter = MyAppointmentsPresenter(view: self)
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
         if isUserLoggedIn {

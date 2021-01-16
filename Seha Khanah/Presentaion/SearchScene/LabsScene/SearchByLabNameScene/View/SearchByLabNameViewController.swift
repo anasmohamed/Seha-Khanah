@@ -11,6 +11,7 @@ import UIKit
 class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,UISearchBarDelegate,SearchByLabNameProtocol {
     
     @IBOutlet weak var searchByLabNameBar: UISearchBar!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var searchByLabNameTableView: UITableView!
     @IBOutlet weak var noDataFoundStackView: UIStackView!
     
@@ -76,19 +77,23 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
+
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
+
         
     }
     
     func showNoDataFoundImage() {
+        indicator.stopAnimating()
+
         searchByLabNameTableView.reloadData()
         
         noDataFoundStackView.isHidden = false
@@ -98,6 +103,8 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     
     
     func labsResults() {
+        indicator.stopAnimating()
+
         searchByLabNameTableView.reloadData()
         
     }

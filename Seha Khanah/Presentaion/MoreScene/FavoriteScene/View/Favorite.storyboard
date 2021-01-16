@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8We-TW-m6e">
-                                <rect key="frame" x="77" y="44" width="260" height="32"/>
+                                <rect key="frame" x="77" y="54" width="260" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="uDI-o3-jWM"/>
                                 </constraints>
@@ -30,13 +30,13 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I58-7T-NEI">
-                                <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                                <rect key="frame" x="0.0" y="85" width="414" height="777"/>
                                 <connections>
                                     <segue destination="UYh-Ql-Rlp" kind="embed" id="Zcx-1W-0K9"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt1-N6-yau">
-                                <rect key="frame" x="0.0" y="83" width="414" height="779"/>
+                                <rect key="frame" x="0.0" y="93" width="414" height="769"/>
                                 <connections>
                                     <segue destination="VhG-FR-LRn" kind="embed" id="WAx-UJ-jOV"/>
                                 </connections>
@@ -46,7 +46,7 @@
                         <constraints>
                             <constraint firstItem="Tt1-N6-yau" firstAttribute="trailing" secondItem="ICj-7A-GcR" secondAttribute="trailing" id="1d4-7k-Y1L"/>
                             <constraint firstItem="ICj-7A-GcR" firstAttribute="bottom" secondItem="I58-7T-NEI" secondAttribute="bottom" id="244-ea-Mxr"/>
-                            <constraint firstItem="8We-TW-m6e" firstAttribute="top" secondItem="ICj-7A-GcR" secondAttribute="top" id="A38-Sy-RkP"/>
+                            <constraint firstItem="8We-TW-m6e" firstAttribute="top" secondItem="ICj-7A-GcR" secondAttribute="top" constant="10" id="A38-Sy-RkP"/>
                             <constraint firstItem="Tt1-N6-yau" firstAttribute="top" secondItem="8We-TW-m6e" secondAttribute="bottom" constant="8" id="Pw7-kf-lio"/>
                             <constraint firstItem="I58-7T-NEI" firstAttribute="top" secondItem="8We-TW-m6e" secondAttribute="bottom" id="ZvO-5Y-Wds"/>
                             <constraint firstItem="ICj-7A-GcR" firstAttribute="trailing" secondItem="I58-7T-NEI" secondAttribute="trailing" id="cxY-IN-W5n"/>
@@ -72,7 +72,7 @@
             <objects>
                 <viewController id="VhG-FR-LRn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ea-0E-mFR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="779"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="p1f-dn-UjN"/>
@@ -87,15 +87,15 @@
             <objects>
                 <viewController id="UYh-Ql-Rlp" customClass="FavoriteDoctorsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mfw-Co-wdA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-ir-DqO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="787"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-oz-Pbq">
-                                <rect key="frame" x="128" y="304.5" width="158.5" height="178.5"/>
+                                <rect key="frame" x="128" y="299.5" width="158.5" height="178.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="bru-b4-w12">
                                         <rect key="frame" x="4" y="0.0" width="150" height="150"/>
@@ -122,6 +122,7 @@
                             <constraint firstItem="dyS-ir-DqO" firstAttribute="top" secondItem="mfw-Co-wdA" secondAttribute="top" id="nBT-ut-q59"/>
                             <constraint firstItem="bTc-oz-Pbq" firstAttribute="centerY" secondItem="mfw-Co-wdA" secondAttribute="centerY" id="oEc-wc-c4Y"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="b2p-vM-Ha6"/>
                     </view>
                     <connections>
                         <outlet property="favortieDoctorsTableView" destination="dyS-ir-DqO" id="XzV-Js-m3A"/>

@@ -10,6 +10,7 @@ import UIKit
 
 class ShowAllPharmaciesViewController: UITableViewController,PharmacyOffersViewProtocol {
 
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     var pharmacyOffersPresenter: PharmacyOffersPresenter!
     @IBOutlet weak var noDataFoundStackView: UIStackView!
 
