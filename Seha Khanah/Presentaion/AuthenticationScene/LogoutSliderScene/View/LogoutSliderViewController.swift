@@ -80,6 +80,7 @@ class LogoutSliderViewController: UIViewController {
         let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
         let navigationController = UINavigationController.init(rootViewController: loginViewController)
+     
         navigationController.modalPresentationStyle = .fullScreen
 
         self.present(navigationController, animated: true, completion: nil)
