@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Sukar-Regular.ttf">
-            <string>Sukar-Regular</string>
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
         </array>
     </customFonts>
     <objects>
@@ -23,19 +23,19 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IET-bG-uQz">
-                        <rect key="frame" x="0.0" y="0.0" width="124" height="93"/>
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="81"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sI-JK-KY6">
-                        <rect key="frame" x="44.5" y="92" width="35.5" height="22"/>
-                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                        <rect key="frame" x="42.5" y="86" width="39.5" height="23"/>
+                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="7sI-JK-KY6" secondAttribute="bottom" id="3Cu-Cl-Obi"/>
-                <constraint firstItem="7sI-JK-KY6" firstAttribute="top" secondItem="IET-bG-uQz" secondAttribute="bottom" constant="-1" id="7vi-z1-7t7"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="7sI-JK-KY6" secondAttribute="bottom" constant="5" id="3Cu-Cl-Obi"/>
+                <constraint firstItem="7sI-JK-KY6" firstAttribute="top" secondItem="IET-bG-uQz" secondAttribute="bottom" constant="5" id="7vi-z1-7t7"/>
                 <constraint firstItem="IET-bG-uQz" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="8ET-af-Y6e"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="IET-bG-uQz" secondAttribute="top" constant="44" id="IoX-Tm-bxU"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="IET-bG-uQz" secondAttribute="trailing" id="gPH-Qk-zPj"/>

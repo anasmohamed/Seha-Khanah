@@ -41,7 +41,7 @@ class MostOrderedOffers {
         self.coverImage = data["images"][0]["featured"].stringValue
         self.rating = data["rating"].stringValue
         self.addressAr = data["doctor"]["total_address_ar"].stringValue
-        self.addressAr = data["doctor"]["total_address_en"].stringValue
+        self.addressEn = data["doctor"]["total_address_en"].stringValue
 
         //        let images = data["images"].arrayValue
         //        for image in images{
