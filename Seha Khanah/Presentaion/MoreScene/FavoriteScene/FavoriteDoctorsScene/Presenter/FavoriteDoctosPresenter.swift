@@ -17,7 +17,7 @@ class FavoriteDoctosPresenter {
         doctorDetails = [DoctorDetails]()
     }
     
-    func showDoctorBy(id:String) {
+    func showDoctorBy(id:String,count:Int) {
         
         view?.showIndicator()
         favoriteDoctorsInteractor.showDoctorDetails(id:id){ (result,error)  in
@@ -28,9 +28,9 @@ class FavoriteDoctosPresenter {
                 if result != nil{
                     
                     self.doctorDetails.append(result!)
-                    
-                    self.view?.getFavoriteDoctorsSuccess()
-                }
+                    if self.doctorDetails.count == count{
+                        self.view?.getFavoriteDoctorsSuccess()
+                    }}
                 
             }
             

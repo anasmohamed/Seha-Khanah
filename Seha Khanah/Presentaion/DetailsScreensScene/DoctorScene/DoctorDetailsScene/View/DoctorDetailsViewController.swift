@@ -54,6 +54,9 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         ratingsCollectionView.delegate = self
         ratingsCollectionView.dataSource = self
         setupCollectionView()
+        if isAddToFavoriteBtnTapped{
+             addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -152,15 +155,14 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
        
         if isAddToFavoriteBtnTapped{
             arrayOfSavedIds = arrayOfSavedIds?.filter(){$0 != doctorId}
-            UserDefaults.standard.set(arrayOfSavedIds, forKey: "doctorIds")
-
-            
+            UserDefaults.standard.set(arrayOfSavedIds, forKey: "arrayOfSavedIds")
             isAddToFavoriteBtnTapped = false
+            addDoctorToFavoriteBtn.setImage(UIImage(named: "hart_border"), for: .normal)
 
         }else{
             isAddToFavoriteBtnTapped = true
             arrayOfSavedIds?.append(doctorId!)
-            UserDefaults.standard.set(arrayOfSavedIds, forKey: "doctorId")
+            UserDefaults.standard.set(arrayOfSavedIds, forKey: "arrayOfSavedIds")
             addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
 
         }

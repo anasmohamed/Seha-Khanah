@@ -18,8 +18,14 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         favoriteDoctorPresenter = FavoriteDoctosPresenter(view: self)
+        favortieDoctorsTableView.delegate = self
+        favortieDoctorsTableView.dataSource = self
+        setupTableView() 
+        let savedDoctorsIdsArray = UserDefaults.standard.stringArray(forKey: "doctorIds") ?? [String]()
+        for doctorId in savedDoctorsIdsArray{
+            favoriteDoctorPresenter.showDoctorBy(id: doctorId,count: savedDoctorsIdsArray.count)
+        }
         
-        favoriteDoctorPresenter.showDoctorBy(id: )
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,7 +33,8 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath) as! SearchResultTableViewCell
+        favoriteDoctorPresenter.configure(cell: cell, for: indexPath.row)
         return cell
     }
     
