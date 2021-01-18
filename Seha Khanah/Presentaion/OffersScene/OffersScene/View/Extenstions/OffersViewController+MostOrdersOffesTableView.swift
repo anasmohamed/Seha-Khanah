@@ -52,7 +52,7 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 270
+        return 300
     }
     
 }
