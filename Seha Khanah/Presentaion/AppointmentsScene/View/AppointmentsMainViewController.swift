@@ -36,6 +36,9 @@ class AppointmentsMainViewController: UIViewController {
             segmentCotrol.isHidden = true
             noUserLoggedInStackView.isHidden = false
         }
+        
+         let goToLoginViewTab  = UITapGestureRecognizer(target: self, action: #selector(self.handleGoToLoginTap(_:)))
+        noUserLoggedInStackView.addGestureRecognizer(goToLoginViewTab)
         // Do any additional setup after loading the view.
     }
     
@@ -53,6 +56,15 @@ class AppointmentsMainViewController: UIViewController {
         
     }
     
+    
+       @objc func handleGoToLoginTap(_ sender: UITapGestureRecognizer? = nil) {
+        let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
+           let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! SearchByLabNameViewController
+           
+           self.navigationController!.pushViewController(loginViewController, animated: true)
+           
+       }
+       
     /*
      // MARK: - Navigation
      

@@ -11,6 +11,7 @@ import Cosmos
 import Kingfisher
 class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellView {
     
+    
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: UIView!
@@ -62,8 +63,31 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
             aboutDoctorLbl.text = result.aboutDoctorAr
             profissionalTitleEnLbl.text = result.profissionalTitleAr
             addressLbl.text = result.addressAr
-
+            
         }
     }
+    func configureWithDoctorDetails(resultDoctorDetails: DoctorDetails) {
+        doctorPhoto.kf.setImage(with: URL(string: resultDoctorDetails.photo!))
+        watingTimeLbl.text = "Waiting Time:".localized + resultDoctorDetails.waitingTime!
+        costLbl.text = "Cost:".localized + resultDoctorDetails.price!
+        
+        numberOfVotes.text = resultDoctorDetails.vistorNumber! + " " + "visitor".localized
+        rating.rating = Double(resultDoctorDetails.rating!)!
+        if locale == "en"
+        {
+            doctorNameLbl.text = resultDoctorDetails.doctorFirstNameEn!  + " " + resultDoctorDetails.doctorLastNameEn!
+            aboutDoctorLbl.text = resultDoctorDetails.aboutDoctorEn
+            profissionalTitleEnLbl.text = resultDoctorDetails.profissionalTitleEn
+            addressLbl.text = resultDoctorDetails.addressEn
+            
+        }else{
+            doctorNameLbl.text = resultDoctorDetails.doctorFirstNameAr!  + " " + resultDoctorDetails.doctorLastNameAr!
+            aboutDoctorLbl.text = resultDoctorDetails.aboutDoctorAr
+            profissionalTitleEnLbl.text = resultDoctorDetails.profissionalTitleAr
+            addressLbl.text = resultDoctorDetails.addressAr
+            
+        }
+    }
+    
     
 }

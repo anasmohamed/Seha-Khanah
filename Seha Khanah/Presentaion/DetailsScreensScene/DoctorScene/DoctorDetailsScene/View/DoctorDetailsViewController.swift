@@ -35,6 +35,9 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var numberOfSeenLbl: UILabel!
     @IBOutlet weak var doctorImageView: UIImageView!
     let locale = NSLocale.current.languageCode
+    var isAddToFavoriteBtnTapped = false
+    var arrayOfSavedIds: [String]?
+    @IBOutlet weak var addDoctorToFavoriteBtn: UIButton!
     
     var doctorId : String?
     var presenter : DoctorDetailsPresenter!
@@ -141,5 +144,28 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
             moreAndLessLbl.text = "more".localized
         }
     }
+    
+    
+    @IBAction func addDoctorToFavoriteBtnDidTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        arrayOfSavedIds = defaults.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
+       
+        if isAddToFavoriteBtnTapped{
+            arrayOfSavedIds = arrayOfSavedIds?.filter(){$0 != doctorId}
+            UserDefaults.standard.set(arrayOfSavedIds, forKey: "doctorIds")
+
+            
+            isAddToFavoriteBtnTapped = false
+
+        }else{
+            isAddToFavoriteBtnTapped = true
+            arrayOfSavedIds?.append(doctorId!)
+            UserDefaults.standard.set(arrayOfSavedIds, forKey: "doctorId")
+            addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
+
+        }
+
+    }
+    
     
 }

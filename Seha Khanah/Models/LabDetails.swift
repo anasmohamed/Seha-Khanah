@@ -23,6 +23,8 @@ class LabDetails: Codable {
     var aboutEn: String?
     var addressEn: String?
     var addressAr: String?
+    var latitude:String?
+    var logitude:String?
     var rating: String?
     var dates : LabDate?
     var labDates = [JSON]()
@@ -48,6 +50,8 @@ class LabDetails: Codable {
         self.rating = data["rating"].stringValue
         self.labDates = data["dates"].arrayValue
         self.labRatings = data["ratings"].arrayValue
+        self.latitude = data["lat"].stringValue
+        self.logitude = data["lng"].stringValue
         let labPhotosList = data["laboratory_photos"].arrayValue
         let labServices = data["laboratory_services"].arrayValue
         for labPhoto in labPhotosList

@@ -8,26 +8,65 @@
 
 import UIKit
 
-class FavoriteDoctorsViewController: UIViewController {
+class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,FavoriteDoctorProtocol{
+    
+    
     @IBOutlet weak var noFavortieDoctorsStackView: UIStackView!
     @IBOutlet weak var favortieDoctorsTableView: UITableView!
     
-    
+    var favoriteDoctorPresenter: FavoriteDoctosPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        favoriteDoctorPresenter = FavoriteDoctosPresenter(view: self)
+        
+        favoriteDoctorPresenter.showDoctorBy(id: )
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return favoriteDoctorPresenter.returnDoctorCount()
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath)
+        return cell
+    }
+    
+    func setupTableView() {
+        favortieDoctorsTableView.register(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchResultTableViewCell")
+        
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 320
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+        
+        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
+        
+        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+    }
+    
+    
+    func showIndicator() {
+        
+    }
+    
+    func hideIndicator() {
+        
+    }
+    
+    func getFavoriteDoctorsSuccess() {
+        favortieDoctorsTableView.reloadData()
+    }
+    
+    func showError(error: String) {
+        
+    }
+    
+    func showNoDataFoundImage() {
+        
+    }
+    
+    
 }

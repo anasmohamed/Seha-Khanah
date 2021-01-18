@@ -27,7 +27,8 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     var labDetailsPresenter : LabDetailsPresenter!
     var titleArray = [String]()
     let locale = NSLocale.current.languageCode
-
+    var latitude :String?
+    var longitude :String?
     @IBOutlet weak var goToLocationView: UIView!
     @IBOutlet weak var contentView: UIView!
     var labId : String?
@@ -36,14 +37,39 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         labDetailsPresenter = LabDetailsPresenter(view: self)
         labDetailsPresenter.showLabDetails(id: labId!)
         
-
+        
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
         
         ratingCollectionView.delegate = self
         ratingCollectionView.dataSource = self
         setupCollectionView()
+        let goToLocationTap = UITapGestureRecognizer(target: self, action: #selector(self.handleGoToLocationTab(_:)))
+        
+        goToLocationView.addGestureRecognizer(goToLocationTap)
+        
     }
+    
+    @objc func handleGoToLocationTab(_ sender: UITapGestureRecognizer? = nil) {
+     
+        openGoogleMap(lat: latitude ?? "", lng: longitude ?? "")
+    }
+    func openGoogleMap(lat:String,lng: String) {
+             let latDouble = Double(lat)
+             let longDouble = Double(lng)
+             if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {  //if phone has an app
+                 
+                 if let url = URL(string: "comgooglemaps-x-callback://?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                     UIApplication.shared.open(url, options: [:])
+                 }}
+             else {
+                 //Open in browser
+                 if let urlDestination = URL.init(string: "https://www.google.co.in/maps/dir/?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                     UIApplication.shared.open(urlDestination)
+                 }
+             }
+             
+         }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         cornerRadiusAndShodow(view: datesView)
@@ -60,6 +86,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 10
     }
+    
     
     func showIndicator() {
         
@@ -85,7 +112,8 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
             labAdderss.text = labDetails.addressAr
         }
         rating.rating = Double(labDetails.rating!)!
-        
+        latitude = labDetails.latitude
+        longitude = labDetails.logitude
         datesCollectionView.reloadData()
         ratingCollectionView.reloadData()
     }

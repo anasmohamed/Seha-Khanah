@@ -34,7 +34,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
 	<string>464227631635586</string>
 	<key>FacebookDisplayName</key>
@@ -78,7 +78,14 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+        <key>item 0</key>
+        <string>Sukar-Black.ttf</string>
+        <key>item 1</key>
+        <string>Sukar-Bold.ttf</string>
+        <key>item 2</key>
+        <string>A-Google.ttf</string>
+        <key>item 3</key>
+        <string>Sukar-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -101,13 +108,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>item 0</key>
-	<string>Sukar-Black.ttf</string>
-	<key>item 1</key>
-	<string>Sukar-Bold.ttf</string>
-	<key>item 2</key>
-	<string>A-Google.ttf</string>
-	<key>item 3</key>
-	<string>Sukar-Regular.ttf</string>
+	
 </dict>
 </plist>

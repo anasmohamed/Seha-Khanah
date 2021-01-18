@@ -91,7 +91,7 @@
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Fa5-ck-j9Y">
                                                                         <rect key="frame" x="15" y="10.333333333333316" width="24" height="24.666666666666671"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Pa-4hD">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Pa-4hD">
                                                                         <rect key="frame" x="48.666666666666693" y="15" width="120.66666666666669" height="15"/>
                                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -242,7 +242,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="Tba-zX-yvp"/>
                                                     <constraint firstAttribute="height" constant="50" id="vbR-h0-PNj"/>
                                                 </constraints>
-                                                <state key="normal" image="email-1"/>
+                                                <state key="normal" image="email-4"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="20"/>
@@ -1244,7 +1244,7 @@
         <image name="background" width="750" height="1330"/>
         <image name="calendar-1" width="29" height="30"/>
         <image name="doctor_ic" width="72" height="74"/>
-        <image name="email-1" width="30" height="30"/>
+        <image name="email-4" width="24" height="24"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="hom_row" width="72" height="74"/>
         <image name="lab_ic" width="72" height="74"/>

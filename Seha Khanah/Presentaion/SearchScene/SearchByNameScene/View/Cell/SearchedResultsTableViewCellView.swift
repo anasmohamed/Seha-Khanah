@@ -9,4 +9,5 @@
 import Foundation
 protocol SearchedResultsTableViewCellView:class {
     func configure(result:SearchedResults)
+    func configureWithDoctorDetails(resultDoctorDetails:DoctorDetails)
 }
