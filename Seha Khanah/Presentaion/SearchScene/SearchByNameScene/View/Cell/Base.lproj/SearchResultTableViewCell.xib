@@ -191,7 +191,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdU-4a-pAA">
-                                        <rect key="frame" x="145" y="74.5" width="34.5" height="20"/>
+                                        <rect key="frame" x="150" y="77" width="34.5" height="20"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -200,7 +200,6 @@
                                 <color key="backgroundColor" white="0.96257885856807501" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="pJg-Ce-mJx" firstAttribute="top" secondItem="mH1-A3-dyo" secondAttribute="bottom" constant="9" id="1cF-n7-YJ1"/>
-                                    <constraint firstItem="EdU-4a-pAA" firstAttribute="centerY" secondItem="pJg-Ce-mJx" secondAttribute="centerY" id="4mg-lZ-RxG"/>
                                     <constraint firstItem="mH1-A3-dyo" firstAttribute="leading" secondItem="OTW-Rd-x8Q" secondAttribute="leading" id="K3h-uW-5b0"/>
                                     <constraint firstItem="EdU-4a-pAA" firstAttribute="leading" secondItem="pJg-Ce-mJx" secondAttribute="trailing" constant="15" id="KY0-hz-KRu"/>
                                     <constraint firstAttribute="bottom" secondItem="VpZ-wF-fyT" secondAttribute="bottom" constant="10" id="LDr-SZ-Pwn"/>

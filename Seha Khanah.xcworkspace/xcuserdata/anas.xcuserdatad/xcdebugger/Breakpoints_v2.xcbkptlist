@@ -551,22 +551,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F20BA0C4-8A18-471F-8396-2D5714712AA1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/OffersScene/View/Extenstions/OffersViewController+MostOrdersOffesTableView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getMostOrderedOffersImageSuccess(images:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F6EA8AA6-35FC-48DD-91F3-E89F915696BC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -593,86 +577,6 @@
             startingLineNumber = "100"
             endingLineNumber = "100"
             landmarkName = "moreOrLessBtnDidTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EF26ED41-7C7A-40AE-8240-BCD987D2FC7B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/DetailsScreensScene/DoctorScene/DoctorDetailsScene/View/DoctorDetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EF26ED41-7C7A-40AE-8240-BCD987D2FC7B - 767d25956073d0a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Seha_Khanah.DoctorDetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Seha Khanah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/DetailsScreensScene/DoctorScene/DoctorDetailsScene/View/DoctorDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "2957">
-               </Location>
-               <Location
-                  uuid = "EF26ED41-7C7A-40AE-8240-BCD987D2FC7B - d23f18e1d3943c70"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; Swift.Bool in Seha_Khanah.DoctorDetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Seha Khanah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/DetailsScreensScene/DoctorScene/DoctorDetailsScene/View/DoctorDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5592F24C-14AC-4E90-B911-2B4571313CD8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/DetailsScreensScene/DoctorScene/DoctorDetailsScene/View/DoctorDetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "07A9FBE7-2644-4C42-823A-A6FB13CA4D76"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/DetailsScreensScene/DoctorScene/DoctorDetailsScene/View/DoctorDetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
