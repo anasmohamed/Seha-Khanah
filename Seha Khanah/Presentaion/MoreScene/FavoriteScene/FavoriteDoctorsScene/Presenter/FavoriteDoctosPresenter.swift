@@ -30,7 +30,12 @@ class FavoriteDoctosPresenter {
                     self.doctorDetails.append(result!)
                     if self.doctorDetails.count == count{
                         self.view?.getFavoriteDoctorsSuccess()
-                    }}
+                    }
+                    
+                }else if count == 0{
+                    self.view?.showNoDataFoundImage()
+                }
+                
                 
             }
             

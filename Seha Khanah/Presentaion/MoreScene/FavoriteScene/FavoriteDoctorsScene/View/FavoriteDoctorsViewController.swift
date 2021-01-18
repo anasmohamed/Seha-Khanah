@@ -64,15 +64,18 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func getFavoriteDoctorsSuccess() {
+        noFavortieDoctorsStackView.isHidden = true
+
         favortieDoctorsTableView.reloadData()
     }
     
     func showError(error: String) {
-        
+        noFavortieDoctorsStackView.isHidden = false
+
     }
     
     func showNoDataFoundImage() {
-        
+        noFavortieDoctorsStackView.isHidden = false
     }
     
     

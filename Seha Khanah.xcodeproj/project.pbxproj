@@ -104,6 +104,10 @@
 		A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8761D7A25B06F9700280BE7 /* BookNow.storyboard */; };
 		A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8761D8125B071D300280BE7 /* SearchResultTableViewCell.xib */; };
 		A8761D8625B08FD700280BE7 /* DoctorDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8761D8825B08FD700280BE7 /* DoctorDetails.storyboard */; };
+		A877D27025B622E800248E95 /* FavoriteOffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D26F25B622E800248E95 /* FavoriteOffersTableViewController.swift */; };
+		A877D27225B6231500248E95 /* FavoriteOffesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D27125B6231500248E95 /* FavoriteOffesProtocol.swift */; };
+		A877D27425B6234E00248E95 /* FavoriteOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D27325B6234E00248E95 /* FavoriteOffersPresenter.swift */; };
+		A877D27625B6236B00248E95 /* FavoriteOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D27525B6236B00248E95 /* FavoriteOffersInteractor.swift */; };
 		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
 		A88084DD25AF904A00A6EE84 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */; };
@@ -311,6 +315,10 @@
 		A8761D8725B08FD700280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DoctorDetails.storyboard; sourceTree = "<group>"; };
 		A8761D8A25B08FE300280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
 		A8761D8C25B08FE700280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
+		A877D26F25B622E800248E95 /* FavoriteOffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffersTableViewController.swift; sourceTree = "<group>"; };
+		A877D27125B6231500248E95 /* FavoriteOffesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffesProtocol.swift; sourceTree = "<group>"; };
+		A877D27325B6234E00248E95 /* FavoriteOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffersPresenter.swift; sourceTree = "<group>"; };
+		A877D27525B6236B00248E95 /* FavoriteOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffersInteractor.swift; sourceTree = "<group>"; };
 		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
 		A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -1329,6 +1337,41 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		A877D26B25B621DA00248E95 /* FavoriteOffersScene */ = {
+			isa = PBXGroup;
+			children = (
+				A877D26E25B6221000248E95 /* Interactor */,
+				A877D26D25B6220700248E95 /* Presenter */,
+				A877D26C25B6220100248E95 /* View */,
+			);
+			path = FavoriteOffersScene;
+			sourceTree = "<group>";
+		};
+		A877D26C25B6220100248E95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A877D26F25B622E800248E95 /* FavoriteOffersTableViewController.swift */,
+				A877D27125B6231500248E95 /* FavoriteOffesProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A877D26D25B6220700248E95 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A877D27325B6234E00248E95 /* FavoriteOffersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A877D26E25B6221000248E95 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A877D27525B6236B00248E95 /* FavoriteOffersInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A87D28D7258C173700B7957F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1692,6 +1735,7 @@
 		A8E8171425B221D900DE29A6 /* FavoriteScene */ = {
 			isa = PBXGroup;
 			children = (
+				A877D26B25B621DA00248E95 /* FavoriteOffersScene */,
 				A8E8171C25B224FB00DE29A6 /* FavoriteDoctorsScene */,
 				A8E8171525B221EA00DE29A6 /* View */,
 			);
@@ -1972,6 +2016,7 @@
 				A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */,
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
+				A877D27025B622E800248E95 /* FavoriteOffersTableViewController.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8B8E4CC25A8BF70002F8149 /* User.swift in Sources */,
 				A8C8164E25A73BD700690AE8 /* PharmacyDetailsPresenter.swift in Sources */,
@@ -2016,6 +2061,7 @@
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
 				A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */,
 				A806CB07259E2A9400D1764C /* LabDetailsInteractor.swift in Sources */,
+				A877D27625B6236B00248E95 /* FavoriteOffersInteractor.swift in Sources */,
 				A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */,
 				A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */,
 				A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */,
@@ -2042,6 +2088,7 @@
 				A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */,
 				A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */,
 				A88084E325AF916300A6EE84 /* ResetPasswordInteractor.swift in Sources */,
+				A877D27425B6234E00248E95 /* FavoriteOffersPresenter.swift in Sources */,
 				A8572DDC25B5FFC400B10276 /* FavoriteDoctorProtocol.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
@@ -2067,6 +2114,7 @@
 				A8CBF49825A5C56F003A084F /* DoctorDetailsProtocol.swift in Sources */,
 				A8A7DD4525951A98007FBFE0 /* AreasProtocol.swift in Sources */,
 				A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */,
+				A877D27225B6231500248E95 /* FavoriteOffesProtocol.swift in Sources */,
 				A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */,
 				A8C8164C25A73B0300690AE8 /* PharamcyDetailsInteractor.swift in Sources */,
 				A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */,
