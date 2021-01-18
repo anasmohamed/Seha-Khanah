@@ -12,7 +12,7 @@ import Alamofire
 class FavoriteOffersInteractor {
     func showDoctorDetails(id : String,
                              completionHandler: @escaping (DoctorDetails?, Error?) -> Void) {
-          AF.request(SehaKhanahRouter.showDoctorDetails(id: id)).validate().responseJSON{
+          AF.request(SehaKhanahRouter.showOffer(id: id)).validate().responseJSON{
               (response) in
               if let response = response.data {
                   print("Response Data: \(response)")

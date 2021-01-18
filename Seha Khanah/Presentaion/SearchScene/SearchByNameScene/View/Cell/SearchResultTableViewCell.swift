@@ -33,9 +33,9 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         bookBtn.layer.cornerRadius = 5
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+        containerView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         containerView.layer.shadowRadius = 10.0
-        containerView.layer.shadowOpacity = 0.7
+        containerView.layer.shadowOpacity = 0.9
         
         
         mainView.layer.cornerRadius = cornerRadius

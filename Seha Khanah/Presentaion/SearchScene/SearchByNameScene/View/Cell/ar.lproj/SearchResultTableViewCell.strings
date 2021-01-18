@@ -1,5 +1,4 @@
 
-/* Class = "UIButton"; normalTitle = "Book Now"; ObjectID = "ABZ-mb-lXh"; */
 "ABZ-mb-lXh.normalTitle" = "احجز الاَن";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "EdU-4a-pAA"; */
@@ -10,7 +9,6 @@
 
 /* Class = "UILabel"; text = "Doctor:"; ObjectID = "Obv-nw-z16"; */
 "Obv-nw-z16.text" = "دكتور:";
-
 /* Class = "UILabel"; text = "Label"; ObjectID = "UB3-sm-q1R"; */
 "UB3-sm-q1R.text" = "Label";
 
