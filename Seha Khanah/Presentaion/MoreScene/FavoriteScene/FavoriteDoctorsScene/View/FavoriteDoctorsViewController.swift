@@ -20,8 +20,8 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
         favoriteDoctorPresenter = FavoriteDoctosPresenter(view: self)
         favortieDoctorsTableView.delegate = self
         favortieDoctorsTableView.dataSource = self
-        setupTableView() 
-        let savedDoctorsIdsArray = UserDefaults.standard.stringArray(forKey: "doctorIds") ?? [String]()
+        setupTableView()
+        let savedDoctorsIdsArray = UserDefaults.standard.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
         for doctorId in savedDoctorsIdsArray{
             favoriteDoctorPresenter.showDoctorBy(id: doctorId,count: savedDoctorsIdsArray.count)
         }

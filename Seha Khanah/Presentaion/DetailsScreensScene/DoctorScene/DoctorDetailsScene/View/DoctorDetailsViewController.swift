@@ -36,7 +36,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var doctorImageView: UIImageView!
     let locale = NSLocale.current.languageCode
     var isAddToFavoriteBtnTapped = false
-    var arrayOfSavedIds: [String]?
+    var arrayOfSavedIds = [String]()
     @IBOutlet weak var addDoctorToFavoriteBtn: UIButton!
     
     var doctorId : String?
@@ -54,7 +54,9 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         ratingsCollectionView.delegate = self
         ratingsCollectionView.dataSource = self
         setupCollectionView()
-        if isAddToFavoriteBtnTapped{
+        arrayOfSavedIds = UserDefaults.standard.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
+
+        if (arrayOfSavedIds.contains(where: {$0 == doctorId})){
              addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
         }
         
@@ -153,15 +155,13 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         let defaults = UserDefaults.standard
         arrayOfSavedIds = defaults.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
        
-        if isAddToFavoriteBtnTapped{
-            arrayOfSavedIds = arrayOfSavedIds?.filter(){$0 != doctorId}
+        if (arrayOfSavedIds.contains(doctorId!)){
+            arrayOfSavedIds = arrayOfSavedIds.filter(){$0 != doctorId}
             UserDefaults.standard.set(arrayOfSavedIds, forKey: "arrayOfSavedIds")
-            isAddToFavoriteBtnTapped = false
             addDoctorToFavoriteBtn.setImage(UIImage(named: "hart_border"), for: .normal)
 
         }else{
-            isAddToFavoriteBtnTapped = true
-            arrayOfSavedIds?.append(doctorId!)
+            arrayOfSavedIds.append(doctorId!)
             UserDefaults.standard.set(arrayOfSavedIds, forKey: "arrayOfSavedIds")
             addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
 
