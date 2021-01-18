@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1xl-b4-zng"; */
+"1xl-b4-zng.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4Vy-k2-wlA"; */
+"4Vy-k2-wlA.text" = "Label";
+
+/* Class = "UILabel"; text = "Doctor: "; ObjectID = "CeL-Eh-HaA"; */
+"CeL-Eh-HaA.text" = "دكتور: ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NFe-lK-Uwj"; */
+"NFe-lK-Uwj.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Book Now"; ObjectID = "c4N-Jv-wEn"; */
+"c4N-Jv-wEn.normalTitle" = "احجز الان";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eTm-rj-QYL"; */
+"eTm-rj-QYL.text" = "Label";
+
+/* Class = "UILabel"; text = " Discount 40%  "; ObjectID = "hRk-oK-2Br"; */
+"hRk-oK-2Br.text" = " Discount 40%  ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "y9G-4S-OuH"; */
+"y9G-4S-OuH.text" = "Label";

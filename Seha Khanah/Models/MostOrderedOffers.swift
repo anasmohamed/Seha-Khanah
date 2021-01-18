@@ -17,7 +17,13 @@ class MostOrderedOffers {
     var coverImage: String?
     var doctorFristNameEn: String?
     var doctorLastNameEn:String?
+    var doctorFristNameAr: String?
+    var doctorLastNameAr:String?
+    var deviceNameAr:String?
+    var deviceNameEn:String?
     var rating: String?
+    var addressAr:String?
+    var addressEn:String?
     var imagesList : [MostOrderedOffersImage]?
     init?(withJSON data: JSON) {
         
@@ -26,16 +32,22 @@ class MostOrderedOffers {
         self.doctorLastNameEn = data["doctor"]["lastName_en"].stringValue
         self.titleEn = data["title_en"].stringValue
         self.titleAr = data["title_ar"].stringValue
-
+        self.doctorFristNameAr = data["doctor"]["firstName_ar"].stringValue
+        self.doctorLastNameAr = data["doctor"]["lastName_ar"].stringValue
+        self.deviceNameAr = data["device_name_ar"].stringValue
+        self.deviceNameEn = data["device_name_en"].stringValue
         self.price = data["price"].stringValue
         self.discount = data["discount"].stringValue
         self.coverImage = data["images"][0]["featured"].stringValue
         self.rating = data["rating"].stringValue
-//        let images = data["images"].arrayValue
-//        for image in images{
-//            let data = MostOrderedOffersImage(withJson: image)
-//            imagesList?.append(data)
-//        }
+        self.addressAr = data["doctor"]["total_address_ar"].stringValue
+        self.addressAr = data["doctor"]["total_address_en"].stringValue
+
+        //        let images = data["images"].arrayValue
+        //        for image in images{
+        //            let data = MostOrderedOffersImage(withJson: image)
+        //            imagesList?.append(data)
+        //        }
         print(coverImage)
     }
 }

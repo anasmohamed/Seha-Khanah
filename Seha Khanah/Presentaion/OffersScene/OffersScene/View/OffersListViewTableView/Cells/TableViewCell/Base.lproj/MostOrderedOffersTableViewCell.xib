@@ -56,15 +56,20 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="EsY-Dt-D9M" userLabel="RatingStackView">
-                                        <rect key="frame" x="10" y="250" width="120" height="45"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="EsY-Dt-D9M" userLabel="RatingStackView">
+                                        <rect key="frame" x="10" y="251" width="84" height="44"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-sk-Us5" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="23.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="19.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-7l-OHo">
-                                                <rect key="frame" x="0.0" y="23.5" width="84" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="22.5" width="84" height="21.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9G-4S-OuH">
                                                         <rect key="frame" x="0.0" y="0.0" width="37" height="21.5"/>
@@ -82,8 +87,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-8q-msR">
-                                        <rect key="frame" x="10" y="192.5" width="42" height="47.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-8q-msR">
+                                        <rect key="frame" x="10" y="195.5" width="42" height="50.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-b4-zng">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="24.5"/>
@@ -92,7 +97,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTm-rj-QYL">
-                                                <rect key="frame" x="0.0" y="24.5" width="42" height="23"/>
+                                                <rect key="frame" x="0.0" y="27.5" width="42" height="23"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -100,13 +105,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-k2-wlA">
-                                        <rect key="frame" x="135.5" y="161" width="37" height="21.5"/>
+                                        <rect key="frame" x="140.5" y="164" width="37" height="21.5"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Doctor: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeL-Eh-HaA">
-                                        <rect key="frame" x="80" y="161" width="52.5" height="21.5"/>
+                                        <rect key="frame" x="85" y="164" width="52.5" height="21.5"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -129,16 +134,16 @@
                                     <constraint firstItem="a74-JG-yn7" firstAttribute="leading" secondItem="chS-io-yIP" secondAttribute="leading" constant="25" id="HAH-RK-eDs"/>
                                     <constraint firstAttribute="bottom" secondItem="c4N-Jv-wEn" secondAttribute="bottom" constant="10" id="HxY-qE-qfx"/>
                                     <constraint firstItem="JDQ-84-yKz" firstAttribute="top" secondItem="chS-io-yIP" secondAttribute="top" id="O2T-Dz-AIB"/>
-                                    <constraint firstItem="CeL-Eh-HaA" firstAttribute="leading" secondItem="a74-JG-yn7" secondAttribute="trailing" constant="5" id="P6S-RY-X55"/>
+                                    <constraint firstItem="CeL-Eh-HaA" firstAttribute="leading" secondItem="a74-JG-yn7" secondAttribute="trailing" constant="10" id="P6S-RY-X55"/>
                                     <constraint firstItem="JDQ-84-yKz" firstAttribute="leading" secondItem="chS-io-yIP" secondAttribute="leading" id="RCc-xh-uH4"/>
                                     <constraint firstAttribute="bottom" secondItem="EsY-Dt-D9M" secondAttribute="bottom" constant="10" id="TkJ-Im-lF2"/>
                                     <constraint firstItem="dP3-8q-msR" firstAttribute="leading" secondItem="chS-io-yIP" secondAttribute="leading" constant="10" id="cpU-hO-0TL"/>
                                     <constraint firstItem="hRk-oK-2Br" firstAttribute="trailing" secondItem="JDQ-84-yKz" secondAttribute="trailing" id="eM5-LQ-H9r"/>
                                     <constraint firstItem="EsY-Dt-D9M" firstAttribute="leading" secondItem="dP3-8q-msR" secondAttribute="leading" id="iwU-wI-ZUg"/>
                                     <constraint firstItem="4Vy-k2-wlA" firstAttribute="leading" secondItem="CeL-Eh-HaA" secondAttribute="trailing" constant="3" id="iz4-lE-U0C"/>
-                                    <constraint firstItem="EsY-Dt-D9M" firstAttribute="top" secondItem="dP3-8q-msR" secondAttribute="bottom" constant="10" id="mY9-H0-B2p"/>
+                                    <constraint firstItem="EsY-Dt-D9M" firstAttribute="top" secondItem="dP3-8q-msR" secondAttribute="bottom" constant="5" id="mY9-H0-B2p"/>
                                     <constraint firstItem="a74-JG-yn7" firstAttribute="bottom" secondItem="JDQ-84-yKz" secondAttribute="bottom" constant="20" id="nwV-50-4G7"/>
-                                    <constraint firstItem="4Vy-k2-wlA" firstAttribute="top" secondItem="JDQ-84-yKz" secondAttribute="bottom" constant="7" id="zqg-Me-8ab"/>
+                                    <constraint firstItem="4Vy-k2-wlA" firstAttribute="top" secondItem="JDQ-84-yKz" secondAttribute="bottom" constant="10" id="zqg-Me-8ab"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -162,11 +167,11 @@
             <connections>
                 <outlet property="bookNowBtn" destination="c4N-Jv-wEn" id="mRe-zB-n9W"/>
                 <outlet property="containerView" destination="zGb-Je-2WA" id="NSu-9n-FWm"/>
+                <outlet property="deviceNameLbl" destination="eTm-rj-QYL" id="S5a-dc-RtN"/>
                 <outlet property="discountLbl" destination="hRk-oK-2Br" id="9qP-fC-Y5C"/>
                 <outlet property="doctorNameLbl" destination="4Vy-k2-wlA" id="Vwq-DK-aVn"/>
                 <outlet property="doctorPhotoImageVIew" destination="a74-JG-yn7" id="mfk-Qf-gTQ"/>
                 <outlet property="mainView" destination="chS-io-yIP" id="JT4-6C-clI"/>
-                <outlet property="offerDetailsLbl" destination="eTm-rj-QYL" id="9aw-G2-xK6"/>
                 <outlet property="offerNameLbl" destination="1xl-b4-zng" id="lF3-PX-XVm"/>
                 <outlet property="offerPhotoImageIView" destination="JDQ-84-yKz" id="P0w-97-7qo"/>
                 <outlet property="offerRating" destination="kT6-sk-Us5" id="Bty-7F-dvk"/>
