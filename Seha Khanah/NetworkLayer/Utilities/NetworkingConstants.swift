@@ -102,5 +102,6 @@ class NetworkingConstants {
     static let searchByAreaAndSepecialtyIdParamter = "specialty_id"
     
     static let offerSlideShow = "api/offer/slideshow"
+    static let showOffer = "api/offers/"
 
 }

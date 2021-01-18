@@ -41,7 +41,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case searchByAreaAndSpecialty(areaId:String,specialtyId:String)
     case offerSlidShow
-    
+    case showOffer(id:String)
     
     
     var path: String {
@@ -101,6 +101,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
         case .offerSlidShow:
             return NetworkingConstants.offerSlideShow
+            
+        case .showOffer:
+            return NetworkingConstants.showOffer
         }
     }
     
@@ -125,7 +128,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .booking,
              .cancelBooking,
              .searchByAreaAndSpecialty,
-             .offerSlidShow:
+             .offerSlidShow,
+             .showOffer:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -238,11 +242,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.reservationCheckboxParameter] = checkbox
         case let .cancelBooking(id):
             params[NetworkingConstants.cancelBooking] = id
-            
+        case let .showOffer(id):
+            params[NetworkingConstants.cancelBooking] = id
         case let .searchByAreaAndSpecialty(areaid,specialtyId):
             params[NetworkingConstants.searchByAreaAndSpecialtyAreaIdParamter] = areaid
             params[NetworkingConstants.searchByAreaAndSepecialtyIdParamter] = specialtyId
-
+            
             
             //        case let .getUserToken(grantType,clientId,clientSecret,scope):
             //            params[NetworkingConstants.getUserTokenGrantTypeParamter] = grantType
@@ -324,6 +329,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             let scancelBookingParamString = params[NetworkingConstants.cancelBooking]!
             urlRequest = URLRequest(url: URL(string: cancelBookingUrlString + (scancelBookingParamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .showOffer:
+            let showOfferUrlString = (urlRequest.url?.absoluteString)!
+            
+            let showOfferParamString = params[NetworkingConstants.showOffer]!
+            urlRequest = URLRequest(url: URL(string: showOfferUrlString + (showOfferParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }
