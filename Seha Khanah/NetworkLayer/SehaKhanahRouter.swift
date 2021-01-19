@@ -43,6 +43,11 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case offerSlidShow
     case showOffer(id:String)
     
+    case getOffresForSpacificCategory(id:String)
+    
+    
+    
+    
     
     var path: String {
         switch self {
@@ -104,6 +109,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
         case .showOffer:
             return NetworkingConstants.showOffer
+        case .getOffresForSpacificCategory:
+            return NetworkingConstants.getOffersForSpacificCategory
         }
     }
     
@@ -129,7 +136,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .cancelBooking,
              .searchByAreaAndSpecialty,
              .offerSlidShow,
-             .showOffer:
+             .showOffer,
+             .getOffresForSpacificCategory:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -221,6 +229,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .showLabDetails(id):
             params[NetworkingConstants.showLabDetails] = id
         case let .showDoctorDetails(id):
+            params[NetworkingConstants.showDoctorDetails] = id
+        case let .getOffresForSpacificCategory(id):
             params[NetworkingConstants.showDoctorDetails] = id
         case let .showDoctorDates(id):
             params[NetworkingConstants.showDoctorDates] = id
@@ -335,6 +345,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             let showOfferParamString = params[NetworkingConstants.showOffer]!
             urlRequest = URLRequest(url: URL(string: showOfferUrlString + (showOfferParamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .getOffresForSpacificCategory:
+            let getOffresForSpacificCategoryUrlString = (urlRequest.url?.absoluteString)!
+            
+            let sgetOffresForSpacificCategoryParamString = params[NetworkingConstants.getOffersForSpacificCategory]!
+            urlRequest = URLRequest(url: URL(string: getOffresForSpacificCategoryUrlString + (sgetOffresForSpacificCategoryParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }

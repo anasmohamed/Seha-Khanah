@@ -45,6 +45,11 @@
 		A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */; };
 		A828400F25B754A0000F6B19 /* AllCategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */; };
 		A828401125B7561C000F6B19 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828401025B7561C000F6B19 /* SubCategory.swift */; };
+		A828402225B77B89000F6B19 /* OffersForSpecificCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A828402125B77B89000F6B19 /* OffersForSpecificCategory.storyboard */; };
+		A828402425B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828402325B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift */; };
+		A828402625B77DA2000F6B19 /* OffersForSpcificCategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828402525B77DA2000F6B19 /* OffersForSpcificCategoryInteractor.swift */; };
+		A828402825B77DDF000F6B19 /* OffersForSpcificCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828402725B77DDF000F6B19 /* OffersForSpcificCategoryPresenter.swift */; };
+		A828402A25B77E0E000F6B19 /* OffersForSpcificCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828402925B77E0E000F6B19 /* OffersForSpcificCategoryProtocol.swift */; };
 		A82EA356258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */; };
 		A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */; };
 		A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EA35B258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift */; };
@@ -248,6 +253,11 @@
 		A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesPresenter.swift; sourceTree = "<group>"; };
 		A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesProtocol.swift; sourceTree = "<group>"; };
 		A828401025B7561C000F6B19 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		A828402125B77B89000F6B19 /* OffersForSpecificCategory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OffersForSpecificCategory.storyboard; sourceTree = "<group>"; };
+		A828402325B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersForSpcificCategoryTableViewController.swift; sourceTree = "<group>"; };
+		A828402525B77DA2000F6B19 /* OffersForSpcificCategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersForSpcificCategoryInteractor.swift; sourceTree = "<group>"; };
+		A828402725B77DDF000F6B19 /* OffersForSpcificCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersForSpcificCategoryPresenter.swift; sourceTree = "<group>"; };
+		A828402925B77E0E000F6B19 /* OffersForSpcificCategoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersForSpcificCategoryProtocol.swift; sourceTree = "<group>"; };
 		A82EA355258F522400F30C61 /* OffersViewController+CategoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+CategoriesCollectionView.swift"; sourceTree = "<group>"; };
 		A82EA357258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+OffersCategoriesProtocolViewExtenstion.swift"; sourceTree = "<group>"; };
 		A82EA35B258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OffersViewController+MostOrdersOffesTableView.swift"; sourceTree = "<group>"; };
@@ -737,8 +747,37 @@
 		A828401D25B77B1B000F6B19 /* OfferForSpacificCategoryScene */ = {
 			isa = PBXGroup;
 			children = (
+				A828402025B77B60000F6B19 /* Interactor */,
+				A828401F25B77B58000F6B19 /* Presenter */,
+				A828401E25B77B50000F6B19 /* View */,
 			);
 			path = OfferForSpacificCategoryScene;
+			sourceTree = "<group>";
+		};
+		A828401E25B77B50000F6B19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A828402125B77B89000F6B19 /* OffersForSpecificCategory.storyboard */,
+				A828402325B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift */,
+				A828402925B77E0E000F6B19 /* OffersForSpcificCategoryProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A828401F25B77B58000F6B19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A828402725B77DDF000F6B19 /* OffersForSpcificCategoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A828402025B77B60000F6B19 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A828402525B77DA2000F6B19 /* OffersForSpcificCategoryInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A82EA354258F51DF00F30C61 /* Extenstions */ = {
@@ -1949,6 +1988,7 @@
 				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 				A8963B7225B4F64300449E7B /* A-Google.ttf in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
+				A828402225B77B89000F6B19 /* OffersForSpecificCategory.storyboard in Resources */,
 				A8E8172925B2393800DE29A6 /* BookingDatesCollectionViewCell.xib in Resources */,
 				A80DD8D725A1327300FD2CF1 /* LabDayDates.storyboard in Resources */,
 			);
@@ -2022,6 +2062,7 @@
 			files = (
 				A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */,
 				A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */,
+				A828402425B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift in Sources */,
 				A843BBB325A87D7D006231F8 /* MyOffersTableViewController.swift in Sources */,
 				A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */,
 				A8A98C012598EB53000146FB /* ShowAllLabsVIewController.swift in Sources */,
@@ -2101,6 +2142,7 @@
 				A856772525921B640086CD78 /* SearchResultTableViewCell.swift in Sources */,
 				A8D8621D25AC98CC0097ED93 /* EditUserProfileProtocol.swift in Sources */,
 				A80DD8D325A120AE00FD2CF1 /* LabServicesTableViewController.swift in Sources */,
+				A828402A25B77E0E000F6B19 /* OffersForSpcificCategoryProtocol.swift in Sources */,
 				A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */,
 				A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */,
 				A806CB07259E2A9400D1764C /* LabDetailsInteractor.swift in Sources */,
@@ -2136,6 +2178,7 @@
 				A877D27425B6234E00248E95 /* FavoriteOffersPresenter.swift in Sources */,
 				A8572DDC25B5FFC400B10276 /* FavoriteDoctorProtocol.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
+				A828402825B77DDF000F6B19 /* OffersForSpcificCategoryPresenter.swift in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
 				A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */,
 				A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */,
@@ -2147,6 +2190,7 @@
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
 				A8E8172125B2253500DE29A6 /* FavoriteDoctorsViewController.swift in Sources */,
 				A8A852A1259730E900E99A67 /* ChangeLanguageViewController.swift in Sources */,
+				A828402625B77DA2000F6B19 /* OffersForSpcificCategoryInteractor.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
 				A807E8B825B1C259009C5CDA /* LogoutSliderViewController.swift in Sources */,
 				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
