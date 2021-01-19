@@ -11,14 +11,14 @@ class OffersForSpcificCategoryPresenter {
     private let offersInteractor:OffersForSpcificCategoryInteractor
     private var mostOrderedOffers: [MostOrderedOffers]
     
-    private weak var view: MostOrderedOffersViewProtocol?
-    init(view: MostOrderedOffersViewProtocol) {
+    private weak var view: OffersForSpcificCategoryProtocol?
+    init(view: OffersForSpcificCategoryProtocol) {
         self.view = view
         self.offersInteractor = OffersForSpcificCategoryInteractor()
         mostOrderedOffers = [MostOrderedOffers]()
     }
     
-    func getMostOrderedOffers(id:String) {
+    func getOffersForSpcificCategory(id:String) {
         
         view?.showIndicator()
         offersInteractor.getOffersForSpcificCategory(id: id){ (result,error)  in
@@ -28,11 +28,23 @@ class OffersForSpcificCategoryPresenter {
             } else {
                 if result != nil{
                     self.mostOrderedOffers = result!
-                    self.view?.getMostOrderedOffersSuccess()
+                    self.view?.getOffersForSpcificCategorySuccess()
                 }
                 
             }
             
         }
     }
+    public func getOffersForSpcificCategoryCount() -> Int {
+          return mostOrderedOffers.count
+      }
+      
+      func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
+          print(mostOrderedOffers.count)
+          if mostOrderedOffers.count > 0{
+              let mostOrderedOffer = mostOrderedOffers[index]
+              cell.configure(mostOrderedOffer: mostOrderedOffer)
+          }
+          
+      }
 }

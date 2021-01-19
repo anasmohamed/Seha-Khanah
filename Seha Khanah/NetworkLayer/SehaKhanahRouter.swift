@@ -231,7 +231,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .showDoctorDetails(id):
             params[NetworkingConstants.showDoctorDetails] = id
         case let .getOffresForSpacificCategory(id):
-            params[NetworkingConstants.showDoctorDetails] = id
+            params[NetworkingConstants.getOffersForSpacificCategory] = id
         case let .showDoctorDates(id):
             params[NetworkingConstants.showDoctorDates] = id
         case let .showPharmacyDetails(id):
@@ -349,8 +349,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case .getOffresForSpacificCategory:
             let getOffresForSpacificCategoryUrlString = (urlRequest.url?.absoluteString)!
             
-            let sgetOffresForSpacificCategoryParamString = params[NetworkingConstants.getOffersForSpacificCategory]!
-            urlRequest = URLRequest(url: URL(string: getOffresForSpacificCategoryUrlString + (sgetOffresForSpacificCategoryParamString as! String))!)
+            let getOffresForSpacificCategoryParamString = params[NetworkingConstants.getOffersForSpacificCategory]!
+            urlRequest = URLRequest(url: URL(string: getOffresForSpacificCategoryUrlString + (getOffresForSpacificCategoryParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }

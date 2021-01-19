@@ -16,7 +16,7 @@ class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesPro
         super.viewDidLoad()
         presenter = AllCategoriesPresenter(view:self)
         presenter.getOffersCategories()
-       
+        
         // Do any additional setup after loading the view.
     }
     override func numberOfRows(in tableView: UITableView) -> Int {
@@ -81,14 +81,18 @@ class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesPro
         super.tableView(tableView, didSelectRow: row)
     }
     override func tableView(_ tableView: UITableView, cellForSubrow subrow: Int, inRow row: Int, indexPath: IndexPath) -> UITableViewCell {
-         
-         
-         let cell = tableView.dequeueReusableCell(withIdentifier: "SubCategoryCell", for: indexPath)
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SubCategoryCell", for: indexPath)
         cell.textLabel?.text = presenter.getOffersSubCategoryName(index: row, subIndex: subrow)
-         
-         return cell
-     }
+        
+        return cell
+    }
     override func tableView(_ tableView: UITableView, didSelectSubrow subrow: Int, inRow row: Int) {
+        
+        let offersForSpcificCategoryTableViewController = UIStoryboard.init(name: "OffersForSpecificCategory", bundle: nil).instantiateViewController(withIdentifier: "OffersForSpcificCategoryTableViewController") as! OffersForSpcificCategoryTableViewController
+        offersForSpcificCategoryTableViewController.id = presenter.getOfferSubCategoriesId(index: row, subIndex: subrow)
+        self.navigationController!.pushViewController(offersForSpcificCategoryTableViewController, animated: true)
         
     }
     

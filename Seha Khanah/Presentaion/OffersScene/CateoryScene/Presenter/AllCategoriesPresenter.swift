@@ -42,6 +42,10 @@ class AllCategoriesPresenter {
     public func getOffersCategoriesCount() -> Int {
         return offers.count
     }
+    func getOfferSubCategoriesId(index:Int,subIndex:Int) -> String {
+        return offers[index].subCategoriesList[subIndex].id!
+
+    }
     func getOffersCategoryName(index:Int) -> String {
         if locale == "en"
         {
