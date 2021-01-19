@@ -23,5 +23,5 @@ target 'Seha Khanah' do
     pod 'ReadMoreTextView'
     pod 'GoogleSignIn'
     pod 'ReachabilitySwift'
-
+    pod 'DropDownTableView/Swift'
 end

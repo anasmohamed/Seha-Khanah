@@ -12,12 +12,19 @@ class OffersCategory:Codable  {
     var photo: String?
     var nameEn: String?
     var nameAr : String?
+    var open = false
+    var subCategoriesList : [SubCategory]?
     init?(withJSON data: JSON) {
         
         self.photo = data["featured"].stringValue
         self.nameEn = data["name_en"].stringValue
         self.nameAr = data["name_ar"].stringValue
-
+        let subCategories = data["subcategories"].arrayValue
+        for subCategory in subCategories{
+            let data = SubCategory(withJSON: subCategory)
+            subCategoriesList?.append(data!)
+            
+        }
         
     }
 }

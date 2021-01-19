@@ -49,18 +49,7 @@ class ChangeLanguageViewController: UIViewController {
         
     }
     @IBAction func saveBtnDidTapped(_ sender: Any) {
-        //        Localize.setCurrentLanguage("ar")
-        //
-        //        let languageString  = choosenLangeuageLbl.text == "English" ? "en" : "ar"
-        //        MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == languageString ? "ar" : "en")
-        //
-        
-//        let selectedLanguage: Languages = choosenLangeuageLbl.text == "English" ? .en : .ar
-//
-//
-//        LanguageManager.shared.setLanguage(language: selectedLanguage)
-//
-//
+    
         
         if LocalizationSystem.sharedInstance.getLanguage() == "ar" {
                   LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")

@@ -9,6 +9,7 @@ PODS:
   - Auk (11.0.0):
     - moa
   - Cosmos (23.0.0)
+  - DropDownTableView/Swift (0.8)
   - FBSDKCoreKit (8.2.0):
     - FBSDKCoreKit/Basics (= 8.2.0)
     - FBSDKCoreKit/Core (= 8.2.0)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Auk (~> 11.0)
   - Cosmos (~> 23.0)
+  - DropDownTableView/Swift
   - FBSDKLoginKit
   - GoogleSignIn
   - ImageSlideshow (~> 1.9.0)
@@ -77,6 +79,7 @@ SPEC REPOS:
     - AppAuth
     - Auk
     - Cosmos
+    - DropDownTableView
     - FBSDKCoreKit
     - FBSDKLoginKit
     - GoogleSignIn
@@ -99,6 +102,7 @@ SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   Auk: 7cc533252e2caaaa36b2be19c0b799f6057c365a
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DropDownTableView: a63d799db42693503b8a94346a34659eb1c6f88a
   FBSDKCoreKit: 4afd6ff53d8133a433dbcda44451c9498f8c6ce4
   FBSDKLoginKit: 7181765f2524d7ebf82d9629066c8e6caafc99d0
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
@@ -115,6 +119,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 14fc98f047ce951c81fff179b8d7207de8d406e4
+PODFILE CHECKSUM: e0ac4e637af47a07d163ed4267c465ff26d9d672
 
 COCOAPODS: 1.9.3
