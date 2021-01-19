@@ -9,7 +9,13 @@
 import UIKit
 import Cosmos
 class OfferDetailsViewController: UIViewController {
-
+    @IBOutlet weak var doctorTitleLbl: UILabel!
+    
+    @IBOutlet weak var doctorNameLbl: UILabel!
+    @IBOutlet weak var ratingsCollectionView: UICollectionView!
+    @IBOutlet weak var infoLbl: UILabel!
+    @IBOutlet weak var moreOrLessBtn: UIButton!
+    @IBOutlet weak var datesCollectionView: UICollectionView!
     
     @IBOutlet weak var serivceProviderInfoView: UIView!
     @IBOutlet weak var discountLbl: UILabel!
@@ -29,14 +35,8 @@ class OfferDetailsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    @IBAction func moreOrLessBtnDidTapped(_ sender: Any) {
     }
-    */
-
+    
 }

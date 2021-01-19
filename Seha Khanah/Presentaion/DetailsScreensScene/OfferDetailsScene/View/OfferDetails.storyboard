@@ -205,6 +205,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR6-hI-eo9">
                                                 <rect key="frame" x="10" y="68" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="moreOrLessBtnDidTapped:" destination="fit-3l-ekp" eventType="touchUpInside" id="nV4-Vb-B7k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -323,15 +326,21 @@
                     </view>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
+                        <outlet property="datesCollectionView" destination="8K4-uq-urt" id="iGv-Ek-fBB"/>
                         <outlet property="datesView" destination="sY7-20-oFE" id="GX6-uO-yOe"/>
                         <outlet property="deviceTitleLbl" destination="gB4-LJ-3Xd" id="7c4-mf-dvG"/>
                         <outlet property="discountLbl" destination="9OT-oP-BXa" id="2qx-rj-qFL"/>
+                        <outlet property="doctorNameLbl" destination="BpS-NI-VXJ" id="UW0-Dv-8Zo"/>
+                        <outlet property="doctorTitleLbl" destination="bfe-hf-NYF" id="epa-J9-BnA"/>
                         <outlet property="imageSlideShow" destination="xjd-3l-Fi0" id="Zg5-b9-YEa"/>
+                        <outlet property="infoLbl" destination="2fJ-QT-yOb" id="PEq-xQ-AcS"/>
                         <outlet property="infoView" destination="BEB-25-7FB" id="b8w-QO-1wT"/>
+                        <outlet property="moreOrLessBtn" destination="gR6-hI-eo9" id="EkJ-eg-GHL"/>
                         <outlet property="offerTitleLbl" destination="Ohb-Jt-6FA" id="BOL-fc-Ta1"/>
                         <outlet property="priceLbl" destination="h5F-P6-kXe" id="7xI-v9-o8m"/>
                         <outlet property="rating" destination="V8S-tV-6Ut" id="ZHE-s8-afl"/>
                         <outlet property="ratingView" destination="0ae-9N-yBg" id="QDf-2T-YKr"/>
+                        <outlet property="ratingsCollectionView" destination="ZDV-bd-iHi" id="xbv-Vw-4PI"/>
                         <outlet property="serivceProviderInfoView" destination="Vyd-vU-PBl" id="WOS-3l-EMb"/>
                     </connections>
                 </viewController>

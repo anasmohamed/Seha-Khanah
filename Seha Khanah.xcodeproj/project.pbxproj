@@ -168,6 +168,9 @@
 		A8BFC9412594B33A002C90ED /* PharmacyOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */; };
 		A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */; };
 		A8BFC9452594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */; };
+		A8C1BCA525B7A0FA00E4CD05 /* OfferDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCA425B7A0FA00E4CD05 /* OfferDetailsInteractor.swift */; };
+		A8C1BCA725B7A13900E4CD05 /* OfferDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCA625B7A13900E4CD05 /* OfferDetailsPresenter.swift */; };
+		A8C1BCA925B7A18B00E4CD05 /* OfferDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCA825B7A18B00E4CD05 /* OfferDetails.swift */; };
 		A8C2E72C25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */; };
 		A8C2E72E25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */; };
 		A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */; };
@@ -400,6 +403,9 @@
 		A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersPresenter.swift; sourceTree = "<group>"; };
 		A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersViewProtocol.swift; sourceTree = "<group>"; };
 		A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOfferTableViewCellViewProtocol.swift; sourceTree = "<group>"; };
+		A8C1BCA425B7A0FA00E4CD05 /* OfferDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsInteractor.swift; sourceTree = "<group>"; };
+		A8C1BCA625B7A13900E4CD05 /* OfferDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsPresenter.swift; sourceTree = "<group>"; };
+		A8C1BCA825B7A18B00E4CD05 /* OfferDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetails.swift; sourceTree = "<group>"; };
 		A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsInteractor.swift; sourceTree = "<group>"; };
 		A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctosPresenter.swift; sourceTree = "<group>"; };
 		A8C7D21A25B0EDD000C24023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
@@ -806,6 +812,7 @@
 		A828402D25B78852000F6B19 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A8C1BCA625B7A13900E4CD05 /* OfferDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -813,6 +820,7 @@
 		A828402E25B7885C000F6B19 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A8C1BCA425B7A0FA00E4CD05 /* OfferDetailsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -1509,6 +1517,7 @@
 				A8E9681725AF246400B91375 /* MyAppiontments.swift */,
 				A8C7D22025B1015800C24023 /* MostOrderedOffersImage.swift */,
 				A828401025B7561C000F6B19 /* SubCategory.swift */,
+				A8C1BCA825B7A18B00E4CD05 /* OfferDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2136,6 +2145,7 @@
 				A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */,
 				A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */,
 				A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */,
+				A8C1BCA925B7A18B00E4CD05 /* OfferDetails.swift in Sources */,
 				A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */,
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
@@ -2233,6 +2243,7 @@
 				A828402625B77DA2000F6B19 /* OffersForSpcificCategoryInteractor.swift in Sources */,
 				A8A9B372258CEEA3002DA9A0 /* OffersViewController.swift in Sources */,
 				A807E8B825B1C259009C5CDA /* LogoutSliderViewController.swift in Sources */,
+				A8C1BCA725B7A13900E4CD05 /* OfferDetailsPresenter.swift in Sources */,
 				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
 				A8C9E3E3259FC42C0085B806 /* RatingCollectionViewCell.swift in Sources */,
 				A8C2E72E25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift in Sources */,
@@ -2253,6 +2264,7 @@
 				A87533E125A26BB900ECF699 /* BookViewController.swift in Sources */,
 				A812A08225A345E10039029B /* SuccessBookingViewController.swift in Sources */,
 				A818006625AB7E2600C750AE /* RegisterPresenter.swift in Sources */,
+				A8C1BCA525B7A0FA00E4CD05 /* OfferDetailsInteractor.swift in Sources */,
 				A818006425AB7D6900C750AE /* RegisterInteractor.swift in Sources */,
 				A8C9E3E6259FC4530085B806 /* RatingCollectionViewCellPrortocol.swift in Sources */,
 				A869D67825A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift in Sources */,

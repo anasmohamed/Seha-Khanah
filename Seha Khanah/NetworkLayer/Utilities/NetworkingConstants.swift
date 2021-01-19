@@ -103,7 +103,8 @@ class NetworkingConstants {
     
     static let offerSlideShow = "api/offer/slideshow"
     static let showOffer = "api/offers/"
-    
+    static let showOfferDetails = "api/offers/"
+
     static let getOffersForSpacificCategory = "api/offer-subcategory/"
 
 }
