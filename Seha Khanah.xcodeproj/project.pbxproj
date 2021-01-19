@@ -734,6 +734,13 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A828401D25B77B1B000F6B19 /* OfferForSpacificCategoryScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OfferForSpacificCategoryScene;
+			sourceTree = "<group>";
+		};
 		A82EA354258F51DF00F30C61 /* Extenstions */ = {
 			isa = PBXGroup;
 			children = (
@@ -767,6 +774,7 @@
 		A83D6EAA258A206300186693 /* OffersScene */ = {
 			isa = PBXGroup;
 			children = (
+				A828401D25B77B1B000F6B19 /* OfferForSpacificCategoryScene */,
 				A8965F462591160A00C504BA /* OffersScene */,
 				A8965F422591135E00C504BA /* CateoryScene */,
 			);

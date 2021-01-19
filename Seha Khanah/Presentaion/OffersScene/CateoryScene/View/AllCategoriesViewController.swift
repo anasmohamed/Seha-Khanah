@@ -88,6 +88,9 @@ class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesPro
          
          return cell
      }
+    override func tableView(_ tableView: UITableView, didSelectSubrow subrow: Int, inRow row: Int) {
+        
+    }
     
     //    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     //        return presenter.getOfferSubCategoriesCount(index: section)
