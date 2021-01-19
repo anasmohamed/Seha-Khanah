@@ -29,6 +29,8 @@ class DoctorDetails: Codable {
     var aboutDoctorEn:String?
     var prefixTitleAr: String?
     var prefixTitleEn: String?
+    var area: Area?
+    var specialty : Specialty?
     var ratingsList = [LabRatings]()
     var doctorRatings = [JSON]()
     var vistorNumber: String?
@@ -70,4 +72,19 @@ class DoctorDetails: Codable {
             self.ratingsList.append(data!)
         }
     }
+}
+class Specialty: Codable {
+    var icon: String?
+    var id : String?
+    var nameEn: String?
+    var nameAr: String?
+    var property: String?
+    init?(withJSON data: JSON) {
+        self.id = data["id"].stringValue
+        self.icon = data["icon"].stringValue
+        self.nameAr = data["name_ar"].stringValue
+        self.nameEn = data["name_en"].stringValue
+        self.property = data["property"].stringValue
+    }
+    
 }
