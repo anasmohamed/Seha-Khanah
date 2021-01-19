@@ -15,7 +15,7 @@ class OffersViewController: UIViewController {
     
     @IBOutlet weak var imageSlider: UIScrollView!
     @IBOutlet weak var mostOrderOffersTableView: UITableView!
-
+    
     @IBOutlet weak var offersCategoriesCollectionView: UICollectionView!
     @IBOutlet weak var mostOrderedOffersTableView: UITableView!
     
@@ -37,7 +37,7 @@ class OffersViewController: UIViewController {
         mostOrderedOffersPresenter = MostOrderedOffersPresenter(view: self)
         setupCollectionView()
         setupMostOrderedOffersTableView()
-       
+        
         
         presenter.getOffersCategories()
         mostOrderedOffersPresenter.getMostOrderedOffers()
@@ -51,4 +51,10 @@ class OffersViewController: UIViewController {
         
     }
     
+    @IBAction func showAllCategoriesBtnDidTapped(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "AllCategories", bundle: nil)
+        let loginViewController = storyboard.instantiateViewController(withIdentifier: "AllCategoriesViewController") as! AllCategoriesViewController
+        
+        self.navigationController!.pushViewController(loginViewController, animated: true)
+    }
 }

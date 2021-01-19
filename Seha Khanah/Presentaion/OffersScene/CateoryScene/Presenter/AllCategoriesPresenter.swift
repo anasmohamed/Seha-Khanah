@@ -37,7 +37,7 @@ class AllCategoriesPresenter {
         }
     }
     func getOfferSubCategoriesCount(index:Int) -> Int {
-        return offers[index].subCategoriesList!.count
+        return offers[index].subCategoriesList.count 
     }
     public func getOffersCategoriesCount() -> Int {
         return offers.count
@@ -48,7 +48,16 @@ class AllCategoriesPresenter {
             return offers[index].nameEn!
         }else{
             return offers[index].nameAr!
-
+            
+        }
+    }
+    func getOffersSubCategoryName(index:Int,subIndex:Int) -> String {
+        if locale == "en"
+        {
+            return offers[index].subCategoriesList[subIndex].nameEn!
+        }else{
+            return offers[index].subCategoriesList[subIndex].nameAr!
+            
         }
     }
 }

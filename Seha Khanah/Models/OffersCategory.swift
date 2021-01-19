@@ -13,7 +13,7 @@ class OffersCategory:Codable  {
     var nameEn: String?
     var nameAr : String?
     var open = false
-    var subCategoriesList : [SubCategory]?
+    var subCategoriesList = [SubCategory]()
     init?(withJSON data: JSON) {
         
         self.photo = data["featured"].stringValue
@@ -22,7 +22,7 @@ class OffersCategory:Codable  {
         let subCategories = data["subcategories"].arrayValue
         for subCategory in subCategories{
             let data = SubCategory(withJSON: subCategory)
-            subCategoriesList?.append(data!)
+            subCategoriesList.append(data!)
             
         }
         

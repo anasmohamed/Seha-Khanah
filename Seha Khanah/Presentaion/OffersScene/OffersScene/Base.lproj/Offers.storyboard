@@ -75,6 +75,9 @@
                                         <rect key="frame" x="338" y="193" width="66" height="37"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                         <state key="normal" title="Show All"/>
+                                        <connections>
+                                            <action selector="showAllCategoriesBtnDidTapped:" destination="4aL-22-4yU" eventType="touchUpInside" id="e8c-c7-nm8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
