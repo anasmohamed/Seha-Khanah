@@ -33,6 +33,9 @@ class OfferDetails: Codable {
     var labPhotos = [String]()
     var labServicesList = [LabServices]()
     var labRatings = [JSON]()
+    init() {
+        
+    }
     init?(withJSON data: JSON) {
         
         self.photo = data["featured"].stringValue
