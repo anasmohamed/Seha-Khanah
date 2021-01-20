@@ -17,7 +17,7 @@
         <!--Offer Details View Controller-->
         <scene sceneID="6v3-rg-Xyk">
             <objects>
-                <viewController id="fit-3l-ekp" customClass="OfferDetailsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OfferDetailsViewController" id="fit-3l-ekp" customClass="OfferDetailsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C0j-h0-nV6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

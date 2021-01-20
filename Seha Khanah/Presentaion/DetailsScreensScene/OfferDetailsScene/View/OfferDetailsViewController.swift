@@ -10,7 +10,6 @@ import UIKit
 import Cosmos
 class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var infoViewHeightConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var doctorTitleLbl: UILabel!
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var ratingsCollectionView: UICollectionView!
@@ -28,6 +27,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var datesView: UIView!
     @IBOutlet weak var imageSlideShow: UIScrollView!
     @IBOutlet weak var ratingView: UIView!
+    var id : String?
     var presenter : OfferDetailsPresenter!
     var locale = NSLocale.current.languageCode
     override func viewDidLoad() {
@@ -37,6 +37,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         ratingsCollectionView.dataSource = self
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
+        presenter.showDoctorDetails(id: id!)
         // Do any additional setup after loading the view.
     }
     
