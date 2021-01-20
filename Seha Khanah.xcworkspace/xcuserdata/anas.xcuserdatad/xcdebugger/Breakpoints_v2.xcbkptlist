@@ -759,193 +759,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "02A1C0C9-9FDE-4C05-BF74-E13003C3EC37"
+            uuid = "DCCB2919-F152-4B1B-8DBA-170F49FE4683"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
+            filePath = "Seha Khanah/Presentaion/DetailsScreensScene/OfferDetailsScene/View/OfferDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "tableView(_:didSelectRow:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "02A1C0C9-9FDE-4C05-BF74-E13003C3EC37 - a93a2d4000beac50"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Seha_Khanah.AllCategoriesViewController.tableView(_: __C.UITableView, didSelectRow: Swift.Int) -&gt; ()"
-                  moduleName = "Seha Khanah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "202">
-               </Location>
-               <Location
-                  uuid = "02A1C0C9-9FDE-4C05-BF74-E13003C3EC37 - a93a2d4000beac50"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Seha_Khanah.AllCategoriesViewController.tableView(_: __C.UITableView, didSelectRow: Swift.Int) -&gt; ()"
-                  moduleName = "Seha Khanah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anas/Desktop/Seha-Khanah/Seha%20Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "252">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3BA0CDDB-081E-4240-A1A2-383DF4C88E21"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "tableView(_:didSelectRow:)"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "showOfferDetails(offerDetails:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "12AEA96C-5208-4F1B-8BC1-80D98C0D072C"
+            uuid = "06843233-EF18-4442-B935-3AC33B240A60"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
+            filePath = "Seha Khanah/Presentaion/DetailsScreensScene/OfferDetailsScene/View/OfferDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "tableView(_:didSelectRow:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "showOfferDetails(offerDetails:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E52AC6A4-0AC1-4A2A-849A-90F09765CADC"
+            uuid = "9D6E3C3C-73B1-4E5F-BC74-7A02C8C85043"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
+            filePath = "Seha Khanah/Presentaion/DetailsScreensScene/OfferDetailsScene/View/OfferDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "tableView(_:didSelectRow:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "showOfferDetails(offerDetails:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "346E64B0-DD57-4AC3-B2AF-3ACBD11943CA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "tableView(_:didSelectRow:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D772EFAC-55F4-4384-BFCA-560CF12CAD26"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "tableView(_:didSelectRow:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F5408FD2-584E-4169-8E3D-7ED037765B9F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "tableView(_:didSelectRow:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "517EA481-128E-46D9-9B83-120EF6FD9EFC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "tableView(_:didSelectRow:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F9B29FBE-E53B-46B6-8C8A-4C3DC8CC7AA4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "tableView(_:numberOfSubrowsInRow:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BD61CEDD-35F7-4DB2-9994-2385A5B13C10"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Seha Khanah/Presentaion/OffersScene/CateoryScene/View/AllCategoriesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "showSubrowsInRow"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

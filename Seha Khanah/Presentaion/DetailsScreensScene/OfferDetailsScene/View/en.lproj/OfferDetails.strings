@@ -12,7 +12,7 @@
 "KHU-Mb-UlG.text" = "Info";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "LCl-1P-o3w"; */
-"LCl-1P-o3w.text" = "Label";
+"LCl-1P-o3w.text" = "Entering The Specified Reservation Time";
 
 /* Class = "UILabel"; text = "Service Provider Info"; ObjectID = "OFx-WZ-2IH"; */
 "OFx-WZ-2IH.text" = "Service Provider Info";
@@ -33,7 +33,7 @@
 "gB4-LJ-3Xd.text" = "Label";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gR6-hI-eo9"; */
-"gR6-hI-eo9.normalTitle" = "Button";
+"gR6-hI-eo9.normalTitle" = "more";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "h5F-P6-kXe"; */
 "h5F-P6-kXe.text" = "Label";

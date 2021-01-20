@@ -96,15 +96,17 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
             deviceTitleLbl.text = offerDetails.deviceNameEn
             doctorNameLbl.text = (offerDetails.doctor?.doctorFirstNameEn)! + " " + (offerDetails.doctor?.doctorLastNameEn)!
             doctorTitleLbl.text = offerDetails.doctor?.prefixTitleEn
-            
+
         }else{
             offerTitleLbl.text = offerDetails.titleNameAr
             deviceTitleLbl.text = offerDetails.deviceNameAr
             doctorNameLbl.text = (offerDetails.doctor?.doctorFirstNameAr)! + " " + (offerDetails.doctor?.doctorLastNameAr)!
             doctorTitleLbl.text = offerDetails.doctor?.prefixTitleAr
             infoLbl.text = offerDetails.descriptionAr
-            
+
         }
+        datesCollectionView.reloadData()
+        ratingsCollectionView.reloadData()
     }
     
     func cornerRadiusAndShodow(view:UIView)  {

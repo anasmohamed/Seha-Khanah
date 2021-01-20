@@ -37,8 +37,14 @@ class OfferDetails: Codable {
         
     }
     init?(withJSON data: JSON) {
-        
+        self.deviceNameAr = data["device_name_ar"].stringValue
+        self.deviceNameEn = data["device_name_en"].stringValue
+        self.titleNameAr = data["title_ar"].stringValue
+        self.titleNameEn = data["title_en"].stringValue
+        self.priceAfterDiscount = data["price_after_discount"].stringValue
         self.photo = data["featured"].stringValue
+        self.descriptionAr = data["description_ar"].stringValue
+        self.deviceNameEn = data["description_en"].stringValue
         self.id = data["id"].stringValue
         self.price = data["price"].stringValue
         self.discount = data["discount"].stringValue
