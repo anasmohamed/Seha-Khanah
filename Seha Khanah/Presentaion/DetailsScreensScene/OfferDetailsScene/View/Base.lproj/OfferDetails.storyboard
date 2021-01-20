@@ -360,6 +360,7 @@
                         <outlet property="deviceTitleLbl" destination="gB4-LJ-3Xd" id="7c4-mf-dvG"/>
                         <outlet property="discountLbl" destination="9OT-oP-BXa" id="2qx-rj-qFL"/>
                         <outlet property="discountPrecentageLbl" destination="rUZ-Qz-z3J" id="Eb7-EY-VQM"/>
+                        <outlet property="doctorImageView" destination="kBQ-dP-khr" id="i04-ki-TKY"/>
                         <outlet property="doctorNameLbl" destination="BpS-NI-VXJ" id="UW0-Dv-8Zo"/>
                         <outlet property="doctorTitleLbl" destination="bfe-hf-NYF" id="epa-J9-BnA"/>
                         <outlet property="imageSlideShow" destination="xjd-3l-Fi0" id="Zg5-b9-YEa"/>

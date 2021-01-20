@@ -9,9 +9,10 @@
 import UIKit
 import Cosmos
 import Auk
-
+import Kingfisher
 class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var infoViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var doctorImageView: UIImageView!
     @IBOutlet weak var doctorTitleLbl: UILabel!
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var ratingsCollectionView: UICollectionView!
@@ -40,6 +41,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
         presenter.showDoctorDetails(id: id!)
+        doctorImageView.layer.cornerRadius = doctorImageView.frame.width / 2
         // Do any additional setup after loading the view.
     }
     
@@ -88,7 +90,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         discountLbl.text = offerDetails.priceAfterDiscount
         rating.rating = Double(offerDetails.rating!)!
         discountPrecentageLbl.text = "Discount ".localized + offerDetails.discount! + "%"
-        
+        doctorImageView.kf.setImage(with: URL(string: (offerDetails.doctor?.photo)!))
         if locale == "en"
         {
             infoLbl.text = offerDetails.descriptionEn
@@ -110,14 +112,14 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     }
     
     func cornerRadiusAndShodow(view:UIView)  {
-        view.layer.shadowColor = UIColor.gray.cgColor
-        view.layer.shadowOpacity = 1
-        view.layer.shadowOffset = .zero
-        view.layer.shadowRadius = 3
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-        view.layer.shouldRasterize = true
-        view.layer.rasterizationScale = UIScreen.main.scale
-        view.layer.cornerRadius = 5
+      view.layer.shadowColor = UIColor.gray.cgColor
+                view.layer.shadowOpacity = 1
+                view.layer.shadowOffset = .zero
+                view.layer.shadowRadius = 3
+        //        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        //        view.layer.shouldRasterize = false
+                view.layer.rasterizationScale = UIScreen.main.scale
+                view.layer.cornerRadius = 5
     }
     func showError(error: String) {
         
