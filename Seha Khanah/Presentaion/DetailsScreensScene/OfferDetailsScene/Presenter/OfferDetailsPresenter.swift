@@ -30,7 +30,7 @@ class OfferDetailsPresenter {
                        
                        
                        self.offerDetails = result!
-                    self.view?.showOfferDetails(doctorDetails: self.offerDetails)
+                    self.view?.showOfferDetails(doctorDetails: self.offerDetails!)
                    }
                    
                }

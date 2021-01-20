@@ -10,7 +10,7 @@ import Foundation
 protocol OfferDetailsProtocol:class {
     func showIndicator()
       func hideIndicator()
-      func showOfferDetails(doctorDetails: OfferDetails)
+      func showOfferDetails(offerDetails: OfferDetails)
       func showError(error: String)
       func showNoDataFoundImage()
       func showDoctorDates()
