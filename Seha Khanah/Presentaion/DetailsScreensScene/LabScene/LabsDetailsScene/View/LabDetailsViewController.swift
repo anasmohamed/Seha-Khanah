@@ -77,14 +77,14 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         cornerRadiusAndShodow(view: goToLocationView)
     }
     func cornerRadiusAndShodow(view:UIView)  {
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 1
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowOpacity = 7
         view.layer.shadowOffset = .zero
-        view.layer.shadowRadius = 5
+        view.layer.shadowRadius = 3
         view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
         view.layer.shouldRasterize = true
         view.layer.rasterizationScale = UIScreen.main.scale
-        view.layer.cornerRadius = 10
+        view.layer.cornerRadius = 6
     }
     
     

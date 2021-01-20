@@ -54,7 +54,7 @@ extension LabDetailsViewController : UICollectionViewDelegate,UICollectionViewDa
         if collectionView == datesCollectionView{
             
             // First section
-            width = 170
+            width = 130
             height = 200
             return CGSize(width: width, height: height)
         }else
