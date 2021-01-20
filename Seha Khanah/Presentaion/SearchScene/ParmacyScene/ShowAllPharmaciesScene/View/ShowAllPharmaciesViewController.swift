@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ShowAllPharmaciesViewController: UITableViewController,PharmacyOffersViewProtocol {
+class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,PharmacyOffersViewProtocol {
 
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     var pharmacyOffersPresenter: PharmacyOffersPresenter!
     @IBOutlet weak var noDataFoundStackView: UIStackView!
 
-      override func viewDidLoad() {
+    @IBOutlet weak var tableView: UITableView!
+    override func viewDidLoad() {
           super.viewDidLoad()
          
           pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
           setupTableView()
         pharmacyOffersPresenter.getPharmacyOffers()
+        tableView.delegate = self
+        tableView.dataSource = self
+        
       }
       
       
@@ -29,13 +33,13 @@ class ShowAllPharmaciesViewController: UITableViewController,PharmacyOffersViewP
           
       }
       
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
           return pharmacyOffersPresenter.pharmacyOffersCount()
       }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
           return 280
       }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let storyboard = UIStoryboard.init(name: "PharmacyDetails", bundle: nil)
         
@@ -43,7 +47,7 @@ class ShowAllPharmaciesViewController: UITableViewController,PharmacyOffersViewP
         showPharmacyDetailsViewController.pharmacyId = pharmacyOffersPresenter.getPharmacyId(index: indexPath.row)
         self.navigationController!.pushViewController(showPharmacyDetailsViewController, animated: true)
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByPharmacyNameTableViewCell", for: indexPath) as! SearchByPharmacyNameTableViewCell
         
           pharmacyOffersPresenter.configure(cell: cell, for: indexPath.row)

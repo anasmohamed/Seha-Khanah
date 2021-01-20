@@ -973,6 +973,7 @@
                     </view>
                     <connections>
                         <outlet property="indicator" destination="u2K-7P-i7l" id="87I-oO-Mx3"/>
+                        <outlet property="tableView" destination="nLr-E4-jYC" id="ofE-vU-Dc1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIb-zR-3gR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
