@@ -33,7 +33,10 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = OfferDetailsPresenter(view: self)
-        
+        ratingsCollectionView.delegate = self
+        ratingsCollectionView.dataSource = self
+        datesCollectionView.delegate = self
+        datesCollectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
