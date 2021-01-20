@@ -43,6 +43,7 @@ class OfferDetails: Codable {
         self.price = data["price"].stringValue
         self.discount = data["discount"].stringValue
         self.dateFrom = data["date_from"].stringValue
+        self.rating = data["rating"].stringValue
         self.dateTo = data["date_to"].stringValue
         self.doctor = DoctorDetails(withJSON: data["doctor"])
         let images = data["images"].arrayValue

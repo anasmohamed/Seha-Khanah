@@ -54,7 +54,7 @@ class OffersForSpcificCategoryTableViewController: UITableViewController,OffersF
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let offerDetailsViewController = UIStoryboard.init(name: "OfferDetails", bundle: nil).instantiateViewController(withIdentifier: "OfferDetailsViewController") as! OfferDetailsViewController
-        offerDetailsViewController.id = id
+        offerDetailsViewController.id = presenter.getOfferId(index: indexPath.row)
             self.navigationController!.pushViewController(offerDetailsViewController, animated: true)
     }
     func showIndicator() {

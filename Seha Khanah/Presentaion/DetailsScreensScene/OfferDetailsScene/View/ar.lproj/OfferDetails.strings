@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2fJ-QT-yOb"; */
+"2fJ-QT-yOb.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9OT-oP-BXa"; */
+"9OT-oP-BXa.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BpS-NI-VXJ"; */
+"BpS-NI-VXJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Info"; ObjectID = "KHU-Mb-UlG"; */
+"KHU-Mb-UlG.text" = "معلومات";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LCl-1P-o3w"; */
+"LCl-1P-o3w.text" = "Label";
+
+/* Class = "UILabel"; text = "Service Provider Info"; ObjectID = "OFx-WZ-2IH"; */
+"OFx-WZ-2IH.text" = "بيانات مقدم الخدمة";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ohb-Jt-6FA"; */
+"Ohb-Jt-6FA.text" = "Label";
+
+/* Class = "UILabel"; text = "Doctor"; ObjectID = "bfe-hf-NYF"; */
+"bfe-hf-NYF.text" = "دكتور:";
+
+/* Class = "UILabel"; text = "Booking Dates"; ObjectID = "cWv-OR-kST"; */
+"cWv-OR-kST.text" = "مواعيد الحجز";
+
+/* Class = "UILabel"; text = "Doctor:"; ObjectID = "eYK-uv-Nk4"; */
+"eYK-uv-Nk4.text" = "دكتور:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gB4-LJ-3Xd"; */
+"gB4-LJ-3Xd.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gR6-hI-eo9"; */
+"gR6-hI-eo9.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "h5F-P6-kXe"; */
+"h5F-P6-kXe.text" = "Label";
+
+/* Class = "UILabel"; text = "Ratings"; ObjectID = "kMv-kN-ixV"; */
+"kMv-kN-ixV.text" = "التقييمات";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "rUZ-Qz-z3J"; */
+"rUZ-Qz-z3J.text" = "خصم";

@@ -24,9 +24,10 @@ class MostOrderedOffers {
     var rating: String?
     var addressAr:String?
     var addressEn:String?
+    var id :String?
     var imagesList : [MostOrderedOffersImage]?
     init?(withJSON data: JSON) {
-        
+        self.id = data["id"].stringValue
         self.doctorPhoto = data["doctor"]["featured"].stringValue
         self.doctorFristNameEn = data["doctor"]["firstName_en"].stringValue
         self.doctorLastNameEn = data["doctor"]["lastName_en"].stringValue

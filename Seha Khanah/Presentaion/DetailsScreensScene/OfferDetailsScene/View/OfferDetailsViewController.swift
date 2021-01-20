@@ -8,6 +8,8 @@
 
 import UIKit
 import Cosmos
+import Auk
+
 class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var infoViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var doctorTitleLbl: UILabel!
@@ -75,6 +77,13 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     }
     
     func showOfferDetails(offerDetails: OfferDetails) {
+        imageSlideShow.auk.settings.contentMode = .scaleAspectFill
+        for image in offerDetails.imagesList
+        {
+            imageSlideShow.auk.show(url: image)
+            
+        }
+        imageSlideShow.auk.startAutoScroll(delaySeconds: 3)
         priceLbl.text = offerDetails.price
         discountLbl.text = offerDetails.priceAfterDiscount
         rating.rating = Double(offerDetails.rating!)!

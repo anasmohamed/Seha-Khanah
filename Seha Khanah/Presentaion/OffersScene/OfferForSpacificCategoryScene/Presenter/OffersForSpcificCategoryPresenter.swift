@@ -36,15 +36,17 @@ class OffersForSpcificCategoryPresenter {
         }
     }
     public func getOffersForSpcificCategoryCount() -> Int {
-          return mostOrderedOffers.count
-      }
-      
-      func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
-          print(mostOrderedOffers.count)
-          if mostOrderedOffers.count > 0{
-              let mostOrderedOffer = mostOrderedOffers[index]
-              cell.configure(mostOrderedOffer: mostOrderedOffer)
-          }
-          
-      }
+        return mostOrderedOffers.count
+    }
+    func getOfferId(index:Int) -> String{
+        return mostOrderedOffers[index].id!
+    }
+    func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
+        print(mostOrderedOffers.count)
+        if mostOrderedOffers.count > 0{
+            let mostOrderedOffer = mostOrderedOffers[index]
+            cell.configure(mostOrderedOffer: mostOrderedOffer)
+        }
+        
+    }
 }
