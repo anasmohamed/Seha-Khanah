@@ -28,9 +28,11 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var datesView: UIView!
     @IBOutlet weak var imageSlideShow: UIScrollView!
     @IBOutlet weak var ratingView: UIView!
+    var presenter : OfferDetailsPresenter!
     var locale = NSLocale.current.languageCode
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = OfferDetailsPresenter(view: self)
         
         // Do any additional setup after loading the view.
     }

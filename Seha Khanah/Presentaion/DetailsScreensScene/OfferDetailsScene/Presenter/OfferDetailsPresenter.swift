@@ -30,12 +30,18 @@ class OfferDetailsPresenter {
                        
                        
                        self.offerDetails = result!
-                    self.view?.showOfferDetails(doctorDetails: self.offerDetails!)
+                    self.view?.showOfferDetails(offerDetails: self.offerDetails!)
                    }
                    
                }
                
            }
        }
+    func getDates() -> [LabDate] {
+        return offerDetails!.datesList
+    }
+    func getRatings() -> [LabRatings] {
+        return offerDetails!.ratingsList
+    }
        
 }
