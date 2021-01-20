@@ -27,7 +27,23 @@
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjd-3l-Fi0">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Discount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUZ-Qz-z3J">
+                                                <rect key="frame" x="309" y="150" width="100" height="30"/>
+                                                <color key="backgroundColor" red="0.90588235289999997" green="0.1529411765" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ids-l0-9Io"/>
+                                                    <constraint firstAttribute="width" constant="100" id="nP8-TB-qQ1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="rUZ-Qz-z3J" secondAttribute="trailing" id="6HS-zW-c5u"/>
+                                            <constraint firstAttribute="bottom" secondItem="rUZ-Qz-z3J" secondAttribute="bottom" id="Gr6-GR-q1b"/>
+                                            <constraint firstItem="rUZ-Qz-z3J" firstAttribute="bottom" secondItem="CMS-RN-kBK" secondAttribute="bottom" id="Me3-Ic-ft8"/>
                                             <constraint firstAttribute="height" constant="180" id="wSR-26-cnY"/>
                                         </constraints>
                                         <viewLayoutGuide key="contentLayoutGuide" id="ny6-hk-UM6"/>
@@ -330,11 +346,13 @@
                         <outlet property="datesView" destination="sY7-20-oFE" id="GX6-uO-yOe"/>
                         <outlet property="deviceTitleLbl" destination="gB4-LJ-3Xd" id="7c4-mf-dvG"/>
                         <outlet property="discountLbl" destination="9OT-oP-BXa" id="2qx-rj-qFL"/>
+                        <outlet property="discountPrecentageLbl" destination="rUZ-Qz-z3J" id="Eb7-EY-VQM"/>
                         <outlet property="doctorNameLbl" destination="BpS-NI-VXJ" id="UW0-Dv-8Zo"/>
                         <outlet property="doctorTitleLbl" destination="bfe-hf-NYF" id="epa-J9-BnA"/>
                         <outlet property="imageSlideShow" destination="xjd-3l-Fi0" id="Zg5-b9-YEa"/>
                         <outlet property="infoLbl" destination="2fJ-QT-yOb" id="PEq-xQ-AcS"/>
                         <outlet property="infoView" destination="BEB-25-7FB" id="b8w-QO-1wT"/>
+                        <outlet property="infoViewHeightConstraint" destination="LeP-pX-ikT" id="BPY-Nv-hyX"/>
                         <outlet property="moreOrLessBtn" destination="gR6-hI-eo9" id="EkJ-eg-GHL"/>
                         <outlet property="offerTitleLbl" destination="Ohb-Jt-6FA" id="BOL-fc-Ta1"/>
                         <outlet property="priceLbl" destination="h5F-P6-kXe" id="7xI-v9-o8m"/>

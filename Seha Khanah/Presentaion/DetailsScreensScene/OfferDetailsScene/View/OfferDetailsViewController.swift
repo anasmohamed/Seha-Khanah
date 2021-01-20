@@ -9,12 +9,14 @@
 import UIKit
 import Cosmos
 class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
+    @IBOutlet weak var infoViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var doctorTitleLbl: UILabel!
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var ratingsCollectionView: UICollectionView!
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var moreOrLessBtn: UIButton!
+    @IBOutlet weak var discountPrecentageLbl: UILabel!
     @IBOutlet weak var datesCollectionView: UICollectionView!
     @IBOutlet weak var serivceProviderInfoView: UIView!
     @IBOutlet weak var discountLbl: UILabel!
@@ -33,9 +35,30 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         // Do any additional setup after loading the view.
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cornerRadiusAndShodow(view: infoView)
+        cornerRadiusAndShodow(view: datesView)
+        cornerRadiusAndShodow(view: ratingView)
+        cornerRadiusAndShodow(view: serivceProviderInfoView)
+    }
     
     @IBAction func moreOrLessBtnDidTapped(_ sender: Any) {
+        if moreOrLessBtn.titleLabel!.text == "more" || moreOrLessBtn.titleLabel!.text == "المزيد"{
+            infoLbl.numberOfLines = 0
+            infoLbl.sizeToFit()
+            infoViewHeightConstraint.constant = infoLbl.bounds.height + 80
+            moreOrLessBtn.setTitle("less".localized, for: .normal)
+            cornerRadiusAndShodow(view: infoView)
+            
+        }else{
+            infoLbl.numberOfLines = 1
+            infoLbl.sizeToFit()
+            infoViewHeightConstraint.constant = 120
+            cornerRadiusAndShodow(view: infoView)
+            moreOrLessBtn.setTitle("more".localized, for: .normal)
+            
+        }
     }
     func showIndicator() {
         
@@ -49,7 +72,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         priceLbl.text = offerDetails.price
         discountLbl.text = offerDetails.priceAfterDiscount
         rating.rating = Double(offerDetails.rating!)!
-        
+        discountPrecentageLbl.text = "Discount ".localized + offerDetails.discount! + "%"
         
         if locale == "en"
         {
@@ -65,10 +88,20 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
             doctorNameLbl.text = (offerDetails.doctor?.doctorFirstNameAr)! + " " + (offerDetails.doctor?.doctorLastNameAr)!
             doctorTitleLbl.text = offerDetails.doctor?.prefixTitleAr
             infoLbl.text = offerDetails.descriptionAr
-
+            
         }
     }
     
+    func cornerRadiusAndShodow(view:UIView)  {
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 3
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
+        view.layer.cornerRadius = 5
+    }
     func showError(error: String) {
         
     }
