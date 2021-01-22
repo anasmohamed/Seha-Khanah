@@ -210,6 +210,7 @@
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 		A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */; };
+		A8FC8D8925BB710F007EA14D /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FC8D8825BB710F007EA14D /* Verification.storyboard */; };
 		A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */; };
 		A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */; };
 		A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD3BEF259CBD5D002B0C07 /* Font.swift */; };
@@ -464,6 +465,7 @@
 		A8F7C07A25AF6E1900075B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Appointments.storyboard; sourceTree = "<group>"; };
 		A8F7C07D25AF6E2A00075B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Appointments.strings; sourceTree = "<group>"; };
 		A8F7C07F25AF6E3500075B53 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Appointments.strings; sourceTree = "<group>"; };
+		A8FC8D8825BB710F007EA14D /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
 		A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Black.ttf"; sourceTree = "<group>"; };
 		A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Bold.ttf"; sourceTree = "<group>"; };
 		A8FD3BEF259CBD5D002B0C07 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -1716,6 +1718,7 @@
 		A8AC86BC25876D4F00604E64 /* AuthenticationScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC8D8425BB70CD007EA14D /* VerficationScene */,
 				A807E8B225B1BF34009C5CDA /* LogoutSliderScene */,
 				A8AC86BE25876DB300604E64 /* SignupScene */,
 				A8AC86BD25876DA800604E64 /* Login */,
@@ -1927,6 +1930,38 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A8FC8D8425BB70CD007EA14D /* VerficationScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC8D8725BB70ED007EA14D /* Interactor */,
+				A8FC8D8625BB70E2007EA14D /* Presenter */,
+				A8FC8D8525BB70DC007EA14D /* View */,
+			);
+			path = VerficationScene;
+			sourceTree = "<group>";
+		};
+		A8FC8D8525BB70DC007EA14D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC8D8825BB710F007EA14D /* Verification.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8FC8D8625BB70E2007EA14D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8FC8D8725BB70ED007EA14D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A8FD3BEC259CBD2D002B0C07 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -2035,6 +2070,7 @@
 				A8674A26259749060099E7CE /* Offers.storyboard in Resources */,
 				A877D28325B6562C00248E95 /* AllCategories.storyboard in Resources */,
 				A807E8B625B1BF7E009C5CDA /* Slider.storyboard in Resources */,
+				A8FC8D8925BB710F007EA14D /* Verification.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,

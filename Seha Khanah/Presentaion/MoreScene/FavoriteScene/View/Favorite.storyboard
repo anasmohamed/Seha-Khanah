@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Favoirte Container View Controller-->
         <scene sceneID="zqb-nQ-vG9">
@@ -22,8 +27,8 @@
                                     <constraint firstAttribute="width" constant="260" id="uDI-o3-jWM"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Doctors"/>
+                                    <segment title="Offers"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentControllDidTappedWithSegment:" destination="xCR-ao-xYY" eventType="valueChanged" id="QjC-rR-oGc"/>
@@ -67,16 +72,50 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorite Offers Table View Controller-->
         <scene sceneID="lk9-VN-YHe">
             <objects>
-                <viewController id="VhG-FR-LRn" sceneMemberID="viewController">
+                <viewController id="VhG-FR-LRn" customClass="FavoriteOffersTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ea-0E-mFR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lWz-hE-khO">
+                                <rect key="frame" x="127" y="295" width="150" height="181"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-PU-vA9">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="VRJ-Wb-XCY"/>
+                                            <constraint firstAttribute="width" constant="150" id="Xkk-xr-i2W"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Favortite Offers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHR-5M-2tn">
+                                        <rect key="frame" x="8" y="158" width="134.5" height="23"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-vP-OkC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cdb-vP-OkC" firstAttribute="top" secondItem="p1f-dn-UjN" secondAttribute="top" id="DCi-m3-2SG"/>
+                            <constraint firstItem="p1f-dn-UjN" firstAttribute="bottom" secondItem="cdb-vP-OkC" secondAttribute="bottom" id="GxH-jg-HBJ"/>
+                            <constraint firstItem="cdb-vP-OkC" firstAttribute="leading" secondItem="p1f-dn-UjN" secondAttribute="leading" id="hJB-94-Msg"/>
+                            <constraint firstItem="p1f-dn-UjN" firstAttribute="trailing" secondItem="cdb-vP-OkC" secondAttribute="trailing" id="uNf-f7-rtR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="p1f-dn-UjN"/>
                     </view>
+                    <connections>
+                        <outlet property="favortieOffersTableView" destination="cdb-vP-OkC" id="5wd-ef-hme"/>
+                        <outlet property="noFavortieOffersStackView" destination="lWz-hE-khO" id="1Ep-KW-Llc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxE-ne-5K7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,18 +134,18 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-oz-Pbq">
-                                <rect key="frame" x="128" y="299.5" width="158.5" height="178.5"/>
+                                <rect key="frame" x="132" y="298" width="150" height="181"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="bru-b4-w12">
-                                        <rect key="frame" x="4" y="0.0" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="CbD-oX-oR6"/>
                                             <constraint firstAttribute="height" constant="150" id="qei-Ne-6SG"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Favortite Doctors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="368-uq-67c">
-                                        <rect key="frame" x="0.0" y="158" width="158.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="2" y="158" width="146.5" height="23"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>

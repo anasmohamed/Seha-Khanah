@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kv6-EM-srX">
+            <objects>
+                <viewController id="io0-bC-xwz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C5d-nN-DI3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="0wd-wj-f8W">
+                                <rect key="frame" x="147" y="65" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="AWP-vJ-DDF"/>
+                                    <constraint firstAttribute="width" constant="120" id="aIs-SY-vy6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The confirmation code will be sent in an SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-pE-BYE">
+                                <rect key="frame" x="10" y="202" width="338" height="24.5"/>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Confirmation Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-VZ-hio">
+                                <rect key="frame" x="10" y="268.5" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vzZ-sd-hbr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jrw-Dh-JFZ">
+                                <rect key="frame" x="65.5" y="346" width="283" height="39"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XT4-ar-SrP">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="39"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="19"/>
+                                        <state key="normal" title="try again">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The SMS was not received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uA-ml-Mzg">
+                                        <rect key="frame" x="81" y="0.0" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-7c-PeN">
+                                <rect key="frame" x="20" y="427" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kVf-DI-HtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-7f-TLa">
+                                <rect key="frame" x="0.0" y="485" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fpa-oA-bTg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jrw-Dh-JFZ" firstAttribute="centerX" secondItem="Zwg-To-cjA" secondAttribute="centerX" id="6sM-qS-xig"/>
+                            <constraint firstItem="Zwg-To-cjA" firstAttribute="trailing" secondItem="47Z-7f-TLa" secondAttribute="trailing" id="8QZ-h8-azC"/>
+                            <constraint firstItem="eqb-VZ-hio" firstAttribute="leading" secondItem="Zwg-To-cjA" secondAttribute="leading" constant="10" id="Ie0-Kw-FBe"/>
+                            <constraint firstItem="tgq-pE-BYE" firstAttribute="top" secondItem="0wd-wj-f8W" secondAttribute="bottom" constant="17" id="Lpe-DD-Qhc"/>
+                            <constraint firstItem="2vH-7c-PeN" firstAttribute="leading" secondItem="Zwg-To-cjA" secondAttribute="leading" constant="20" id="SsW-sc-Xyy"/>
+                            <constraint firstItem="47Z-7f-TLa" firstAttribute="leading" secondItem="Zwg-To-cjA" secondAttribute="leading" id="XCX-7I-2Nn"/>
+                            <constraint firstItem="47Z-7f-TLa" firstAttribute="top" secondItem="2vH-7c-PeN" secondAttribute="bottom" constant="8" id="Xdu-ac-lTJ"/>
+                            <constraint firstItem="0wd-wj-f8W" firstAttribute="centerX" secondItem="Zwg-To-cjA" secondAttribute="centerX" id="YsY-jg-u5U"/>
+                            <constraint firstItem="tgq-pE-BYE" firstAttribute="leading" secondItem="Zwg-To-cjA" secondAttribute="leading" constant="10" id="ZJA-8O-0of"/>
+                            <constraint firstItem="0wd-wj-f8W" firstAttribute="top" secondItem="Zwg-To-cjA" secondAttribute="top" constant="21" id="bPs-RE-fcx"/>
+                            <constraint firstItem="eqb-VZ-hio" firstAttribute="top" secondItem="tgq-pE-BYE" secondAttribute="bottom" constant="42" id="buk-Ip-jaA"/>
+                            <constraint firstItem="Zwg-To-cjA" firstAttribute="trailing" secondItem="eqb-VZ-hio" secondAttribute="trailing" constant="10" id="fjI-eW-EzD"/>
+                            <constraint firstItem="jrw-Dh-JFZ" firstAttribute="top" secondItem="eqb-VZ-hio" secondAttribute="bottom" constant="37.5" id="gYU-dl-u0n"/>
+                            <constraint firstItem="2vH-7c-PeN" firstAttribute="top" secondItem="jrw-Dh-JFZ" secondAttribute="bottom" constant="42" id="tSM-qx-PZq"/>
+                            <constraint firstItem="Zwg-To-cjA" firstAttribute="trailing" secondItem="2vH-7c-PeN" secondAttribute="trailing" constant="20" id="ubc-5Y-kBm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zwg-To-cjA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0F-RO-W7v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email" width="341.5" height="341.5"/>
+    </resources>
+</document>
