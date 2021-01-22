@@ -318,7 +318,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sah-DF-4dy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sah-DF-4dy">
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -390,7 +390,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ne1-eL-fck">
             <objects>
-                <tabBarController storyboardIdentifier="TabBar" id="Syd-4a-Kv4" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Syd-4a-Kv4" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g8x-Qo-nIo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -438,7 +438,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70t-LU-TyK">
-                                                    <rect key="frame" x="68" y="24.666666666666671" width="35.666666666666657" height="22"/>
+                                                    <rect key="frame" x="68" y="25.666666666666671" width="41.666666666666657" height="20"/>
                                                     <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -513,11 +513,11 @@
             </objects>
             <point key="canvasLocation" x="4057.971014492754" y="276.5625"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Search-->
         <scene sceneID="vxo-ka-7xi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T31-ZY-ipD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="search" id="H9r-VO-dzN"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="H9r-VO-dzN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cdY-NR-xfe">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1182,11 +1182,11 @@
             </objects>
             <point key="canvasLocation" x="551" y="165"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--More-->
         <scene sceneID="lYB-go-xUc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcq-NQ-fKm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="3fN-iN-2Oh"/>
+                    <tabBarItem key="tabBarItem" title="More" id="3fN-iN-2Oh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FJK-vh-Rq4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

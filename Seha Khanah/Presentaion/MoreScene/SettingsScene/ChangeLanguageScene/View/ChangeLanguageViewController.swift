@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Localize
 import MBRadioCheckboxButton
-import MOLH
+
 class ChangeLanguageViewController: UIViewController {
     
     @IBOutlet weak var choosenLangeuageLbl: UILabel!
@@ -23,7 +24,8 @@ class ChangeLanguageViewController: UIViewController {
         super.viewDidLoad()
         saveBtn.layer.cornerRadius = 10
         self.navigationItem.title = "Change Language".localized
-        
+              
+
         // corner radius
         chosenLanguageView.layer.cornerRadius = 10
         
@@ -50,17 +52,19 @@ class ChangeLanguageViewController: UIViewController {
     }
     @IBAction func saveBtnDidTapped(_ sender: Any) {
     
-        
-        if LocalizationSystem.sharedInstance.getLanguage() == "ar" {
-                  LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
-                  UIView.appearance().semanticContentAttribute = .forceLeftToRight
-              } else {
-                  LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
-                  UIView.appearance().semanticContentAttribute = .forceRightToLeft
-              }
-        MOLH.reset()
+        Localize.update(language: "ar")
+//       if LocalizationSystem.sharedInstance.getLanguage() == "ar" {
+//            LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
+//            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+//        } else {
+//            LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
+//            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+//        }
+//
+//        MOLH.setLanguageTo(LocalizationSystem.sharedInstance.getLanguage())
+//        MOLH.reset()
     }
-    
+  
 }
 extension ChangeLanguageViewController: RadioButtonDelegate {
     func radioButtonDidSelect(_ button: RadioButton) {

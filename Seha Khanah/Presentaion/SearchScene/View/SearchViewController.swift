@@ -23,10 +23,10 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var emailBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
-        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
-        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
-        arrowImageFour.image = arrowImageFour.image?.flipIfNeeded()
+//        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
+//        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
+//        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
+//        arrowImageFour.image = arrowImageFour.image?.flipIfNeeded()
         emailBtn.layer.cornerRadius = emailBtn.frame.width / 2
         let searchByNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByNameTab(_:)))
         let searchBySpecialtyTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchBySpecialtyTab(_:)))

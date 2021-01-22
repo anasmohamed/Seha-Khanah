@@ -32,7 +32,10 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var ratingView: UIView!
     var id : String?
     var presenter : OfferDetailsPresenter!
+    var arrayOfSavedOffersIds = [String]()
+
     var locale = NSLocale.current.languageCode
+    @IBOutlet weak var addToFavoriteBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = OfferDetailsPresenter(view: self)
@@ -98,28 +101,45 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
             deviceTitleLbl.text = offerDetails.deviceNameEn
             doctorNameLbl.text = (offerDetails.doctor?.doctorFirstNameEn)! + " " + (offerDetails.doctor?.doctorLastNameEn)!
             doctorTitleLbl.text = offerDetails.doctor?.prefixTitleEn
-
+            
         }else{
             offerTitleLbl.text = offerDetails.titleNameAr
             deviceTitleLbl.text = offerDetails.deviceNameAr
             doctorNameLbl.text = (offerDetails.doctor?.doctorFirstNameAr)! + " " + (offerDetails.doctor?.doctorLastNameAr)!
             doctorTitleLbl.text = offerDetails.doctor?.prefixTitleAr
             infoLbl.text = offerDetails.descriptionAr
-
+            
         }
         datesCollectionView.reloadData()
         ratingsCollectionView.reloadData()
     }
     
+    @IBAction func addToFavoriteBtnDidTapped(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        arrayOfSavedOffersIds = defaults.stringArray(forKey: "arrayOfSavedOffersIds") ?? [String]()
+        
+        if (arrayOfSavedOffersIds.contains(id!)){
+            arrayOfSavedOffersIds = arrayOfSavedOffersIds.filter(){$0 != id}
+            UserDefaults.standard.set(arrayOfSavedOffersIds, forKey: "arrayOfSavedOffersIds")
+            addToFavoriteBtn.setImage(UIImage(named: "hart_border"), for: .normal)
+            
+        }else{
+            arrayOfSavedOffersIds.append(id!)
+            UserDefaults.standard.set(arrayOfSavedOffersIds, forKey: "arrayOfSavedOffersIds")
+            addToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
+            
+        }
+    }
     func cornerRadiusAndShodow(view:UIView)  {
-      view.layer.shadowColor = UIColor.gray.cgColor
-                view.layer.shadowOpacity = 1
-                view.layer.shadowOffset = .zero
-                view.layer.shadowRadius = 3
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 3
         //        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
         //        view.layer.shouldRasterize = false
-                view.layer.rasterizationScale = UIScreen.main.scale
-                view.layer.cornerRadius = 5
+        view.layer.rasterizationScale = UIScreen.main.scale
+        view.layer.cornerRadius = 5
     }
     func showError(error: String) {
         

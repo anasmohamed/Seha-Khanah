@@ -32,7 +32,6 @@
 		A812A07725A3205E0039029B /* ReservationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07625A3205E0039029B /* ReservationResponse.swift */; };
 		A812A07925A323D70039029B /* BookingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07825A323D70039029B /* BookingPresenter.swift */; };
 		A812A07B25A324B00039029B /* BookingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A07A25A324B00039029B /* BookingProtocol.swift */; };
-		A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */; };
 		A812A08225A345E10039029B /* SuccessBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A08125A345E10039029B /* SuccessBookingViewController.swift */; };
 		A812A08C25A399DC0039029B /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */; };
 		A818006425AB7D6900C750AE /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006325AB7D6900C750AE /* RegisterInteractor.swift */; };
@@ -93,8 +92,6 @@
 		A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */; };
 		A8674A20259748890099E7CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A22259748890099E7CE /* Localizable.strings */; };
 		A8674A26259749060099E7CE /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A28259749060099E7CE /* Offers.storyboard */; };
-		A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A2D259749F60099E7CE /* InfoPlist.strings */; };
-		A8674A2F259776180099E7CE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A31259776180099E7CE /* Search.storyboard */; };
 		A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674A3C259777110099E7CE /* CallUsViewController.swift */; };
 		A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */; };
 		A869D67825A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */; };
@@ -138,6 +135,9 @@
 		A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */; };
 		A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */; };
 		A8963B7225B4F64300449E7B /* A-Google.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8C9E3E9259FCD6E0085B806 /* A-Google.ttf */; };
+		A89B33FA25B9DF26004B27DD /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89B33F625B9DE86004B27DD /* Search.storyboard */; };
+		A89B340A25BA1CEF004B27DD /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B340925BA1CEF004B27DD /* BundleExtension.swift */; };
+		A89B340B25BA38ED004B27DD /* SuccessfulBooking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89B340D25BA38ED004B27DD /* SuccessfulBooking.storyboard */; };
 		A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A21C312596B10D005191A3 /* Settings.storyboard */; };
 		A8A7DD3D25950DDC007FBFE0 /* DropShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */; };
 		A8A7DD3F2595190E007FBFE0 /* RegionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7DD3E2595190E007FBFE0 /* RegionInteractor.swift */; };
@@ -155,7 +155,6 @@
 		A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A325875B2600604E64 /* AppDelegate.swift */; };
 		A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A525875B2600604E64 /* SceneDelegate.swift */; };
 		A8AC86A825875B2600604E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A725875B2600604E64 /* ViewController.swift */; };
-		A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86A925875B2600604E64 /* Main.storyboard */; };
 		A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */; };
 		A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86AF25875B2B00604E64 /* Assets.xcassets */; };
 		A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */; };
@@ -247,7 +246,6 @@
 		A812A07625A3205E0039029B /* ReservationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationResponse.swift; sourceTree = "<group>"; };
 		A812A07825A323D70039029B /* BookingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPresenter.swift; sourceTree = "<group>"; };
 		A812A07A25A324B00039029B /* BookingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingProtocol.swift; sourceTree = "<group>"; };
-		A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuccessfulBooking.storyboard; sourceTree = "<group>"; };
 		A812A08125A345E10039029B /* SuccessBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBookingViewController.swift; sourceTree = "<group>"; };
 		A812A08B25A399DC0039029B /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
 		A818006325AB7D6900C750AE /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
@@ -304,19 +302,14 @@
 		A85E32802594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByPharmacyNameTableViewCell.swift; sourceTree = "<group>"; };
 		A85E32842594A40500842D0F /* PharmacyOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffer.swift; sourceTree = "<group>"; };
 		A85E32862594ADBD00842D0F /* PharmacyOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersInteractor.swift; sourceTree = "<group>"; };
-		A85FE00D259951C500528BB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Search.strings; sourceTree = "<group>"; };
 		A860322C2596A1BC003A7DA5 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		A8674A21259748890099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A8674A23259748DD0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		A8674A24259748DE0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A8674A25259748DE0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A8674A27259749060099E7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Offers.storyboard; sourceTree = "<group>"; };
 		A8674A2A259749190099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Offers.strings; sourceTree = "<group>"; };
 		A8674A2C259749230099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Offers.strings; sourceTree = "<group>"; };
-		A8674A2D259749F60099E7CE /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		A8674A30259776180099E7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
-		A8674A33259776240099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Search.strings; sourceTree = "<group>"; };
 		A8674A3C259777110099E7CE /* CallUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
 		A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
 		A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoctorDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
@@ -373,6 +366,13 @@
 		A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffers.swift; sourceTree = "<group>"; };
 		A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersTableViewCellView.swift; sourceTree = "<group>"; };
 		A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersViewProtocol.swift; sourceTree = "<group>"; };
+		A89B33F725B9DE86004B27DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		A89B33F925B9DE9B004B27DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		A89B33FE25B9E7EF004B27DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		A89B340925BA1CEF004B27DD /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		A89B340C25BA38ED004B27DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SuccessfulBooking.storyboard; sourceTree = "<group>"; };
+		A89B340F25BA38F3004B27DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
+		A89B341125BA395E004B27DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
 		A8A21C312596B10D005191A3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropShadowView.swift; sourceTree = "<group>"; };
 		A8A7DD3E2595190E007FBFE0 /* RegionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionInteractor.swift; sourceTree = "<group>"; };
@@ -391,7 +391,6 @@
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A725875B2600604E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8AC86AA25875B2600604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8AC86AD25875B2600604E64 /* Seha_Khanah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Seha_Khanah.xcdatamodel; sourceTree = "<group>"; };
 		A8AC86AF25875B2B00604E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -611,7 +610,7 @@
 		A812A07E25A340010039029B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A812A07F25A3401C0039029B /* SuccessfulBooking.storyboard */,
+				A89B340D25BA38ED004B27DD /* SuccessfulBooking.storyboard */,
 				A812A08125A345E10039029B /* SuccessBookingViewController.swift */,
 			);
 			path = View;
@@ -1691,13 +1690,11 @@
 				A8D2E36025AB42CB003C8DA7 /* GoogleService-Info.plist */,
 				A8AC86A525875B2600604E64 /* SceneDelegate.swift */,
 				A8AC86A725875B2600604E64 /* ViewController.swift */,
-				A8AC86A925875B2600604E64 /* Main.storyboard */,
 				A8AC86AF25875B2B00604E64 /* Assets.xcassets */,
 				A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */,
 				A8AC86B425875B2B00604E64 /* Info.plist */,
 				A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */,
 				A8674A22259748890099E7CE /* Localizable.strings */,
-				A8674A2D259749F60099E7CE /* InfoPlist.strings */,
 			);
 			path = "Seha Khanah";
 			sourceTree = "<group>";
@@ -1754,6 +1751,7 @@
 				A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */,
 				A884DD76259A1610006D686B /* localized.swift */,
 				A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */,
+				A89B340925BA1CEF004B27DD /* BundleExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1860,8 +1858,8 @@
 		A8DBD8312588EE6A001C203E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A89B33F625B9DE86004B27DD /* Search.storyboard */,
 				A8DBD8322588EF21001C203E /* MainViewController.swift */,
-				A8674A31259776180099E7CE /* Search.storyboard */,
 				A8DBD836258908B5001C203E /* SearchViewController.swift */,
 			);
 			path = View;
@@ -2020,16 +2018,15 @@
 				A8E8173025B23AEA00DE29A6 /* SearchByLabNameTableViewCell.xib in Resources */,
 				A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */,
 				A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */,
-				A812A08025A3401C0039029B /* SuccessfulBooking.storyboard in Resources */,
-				A8674A2F259776180099E7CE /* Search.storyboard in Resources */,
+				A89B340B25BA38ED004B27DD /* SuccessfulBooking.storyboard in Resources */,
 				A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */,
-				A8674A2E259749F60099E7CE /* InfoPlist.strings in Resources */,
 				A8E8173725B23C9600DE29A6 /* PharmacyDetails.storyboard in Resources */,
 				A8E87B4C25B8D5C100867430 /* OfferDetails.storyboard in Resources */,
 				A8E8172225B22E6F00DE29A6 /* LabDetails.storyboard in Resources */,
 				A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */,
 				A8761D7725B04FAB00280BE7 /* MoreTableViewCell.xib in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
+				A89B33FA25B9DF26004B27DD /* Search.storyboard in Resources */,
 				A8E8171925B2220F00DE29A6 /* Favorite.storyboard in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
@@ -2049,7 +2046,6 @@
 				A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */,
 				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
 				A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */,
-				A8AC86AB25875B2600604E64 /* Main.storyboard in Resources */,
 				A8963B7225B4F64300449E7B /* A-Google.ttf in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
 				A828402225B77B89000F6B19 /* OffersForSpecificCategory.storyboard in Resources */,
@@ -2147,6 +2143,7 @@
 				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
 				A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */,
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
+				A89B340A25BA1CEF004B27DD /* BundleExtension.swift in Sources */,
 				A869D67A25A660FF001D8886 /* DoctorDates.swift in Sources */,
 				A8952A7F259005F00095B7BD /* MostOrderedOffers.swift in Sources */,
 				A88084E125AF913B00A6EE84 /* ResetPasswordPresenter.swift in Sources */,
@@ -2322,16 +2319,6 @@
 			name = Offers.storyboard;
 			sourceTree = "<group>";
 		};
-		A8674A31259776180099E7CE /* Search.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8674A30259776180099E7CE /* Base */,
-				A8674A33259776240099E7CE /* ar */,
-				A85FE00D259951C500528BB1 /* en */,
-			);
-			name = Search.storyboard;
-			sourceTree = "<group>";
-		};
 		A8761D7A25B06F9700280BE7 /* BookNow.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2402,13 +2389,24 @@
 			name = ChangeLanguage.storyboard;
 			sourceTree = "<group>";
 		};
-		A8AC86A925875B2600604E64 /* Main.storyboard */ = {
+		A89B33F625B9DE86004B27DD /* Search.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A8AC86AA25875B2600604E64 /* Base */,
-				A8674A23259748DD0099E7CE /* ar */,
+				A89B33F725B9DE86004B27DD /* Base */,
+				A89B33F925B9DE9B004B27DD /* en */,
+				A89B33FE25B9E7EF004B27DD /* ar */,
 			);
-			name = Main.storyboard;
+			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
+		A89B340D25BA38ED004B27DD /* SuccessfulBooking.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A89B340C25BA38ED004B27DD /* Base */,
+				A89B340F25BA38F3004B27DD /* en */,
+				A89B341125BA395E004B27DD /* ar */,
+			);
+			name = SuccessfulBooking.storyboard;
 			sourceTree = "<group>";
 		};
 		A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */ = {
@@ -2554,7 +2552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2609,7 +2607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

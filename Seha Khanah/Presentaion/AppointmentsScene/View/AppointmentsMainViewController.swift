@@ -21,10 +21,10 @@ class AppointmentsMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
-        if locale == "ar"
-        {
-            exitArrowImage.image = exitArrowImage.image?.flipIfNeeded()
-        }
+//        if locale == "ar"
+//        {
+//            exitArrowImage.image = exitArrowImage.image?.flipIfNeeded()
+//        }
         if isUserLoggedIn == true
         {
             noUserLoggedInStackView.isHidden = true

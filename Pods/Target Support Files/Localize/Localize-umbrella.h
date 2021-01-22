@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double MOLHVersionNumber;
-FOUNDATION_EXPORT const unsigned char MOLHVersionString[];
+FOUNDATION_EXPORT double LocalizeVersionNumber;
+FOUNDATION_EXPORT const unsigned char LocalizeVersionString[];
 

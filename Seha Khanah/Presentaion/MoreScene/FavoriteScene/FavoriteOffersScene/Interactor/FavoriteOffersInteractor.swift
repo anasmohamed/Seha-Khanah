@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 class FavoriteOffersInteractor {
-    func showDoctorDetails(id : String,
+    func showOfferDetails(id : String,
                              completionHandler: @escaping (DoctorDetails?, Error?) -> Void) {
           AF.request(SehaKhanahRouter.showOffer(id: id)).validate().responseJSON{
               (response) in

@@ -9,6 +9,7 @@
 import UIKit
 import Cosmos
 import Kingfisher
+import Localize
 class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewCellView {
     
     
@@ -51,7 +52,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         
         mainView.layer.cornerRadius = cornerRadius
         mainView.clipsToBounds = true
-        
+       
     }
     
     override func layoutMarginsDidChange() {
@@ -82,7 +83,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         self.contentView.frame = self.frame.inset(by: UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5))
         
     }
-    func configure(mostOrderedOffer: MostOrderedOffers) {
+     func configure(mostOrderedOffer: MostOrderedOffers) {
         offerPhotoImageIView.kf.setImage(with: URL(string: mostOrderedOffer.coverImage!))
         doctorPhotoImageVIew.kf.setImage(with: URL(string: mostOrderedOffer.doctorPhoto!))
         if locale == "en"

@@ -8,28 +8,28 @@
 
 import Foundation
 class FavoriteOffersPresenter {
-    private let favoriteDoctorsInteractor:FavoriteDoctorsInteractor
-       private var doctorDetails: [DoctorDetails]
-       private weak var view: FavoriteDoctorProtocol?
-       init(view: FavoriteDoctorProtocol) {
+    private let favoriteOffersInteractor:FavoriteOffersInteractor
+       private var offersDetails: [OfferDetails]
+       private weak var view: FavoriteOffesProtocol?
+       init(view: FavoriteOffesProtocol) {
            self.view = view
-           self.favoriteDoctorsInteractor = FavoriteDoctorsInteractor()
-           doctorDetails = [DoctorDetails]()
+           self.favoriteOffersInteractor = FavoriteOffersInteractor()
+           offersDetails = [OfferDetails]()
        }
        
        func showDoctorBy(id:String,count:Int) {
            
            view?.showIndicator()
-           favoriteDoctorsInteractor.showDoctorDetails(id:id){ (result,error)  in
+           favoriteOffersInteractor.showOfferDetails(id:id){ (result,error)  in
                if let error = error {
                    print("errrror\(error)")
                    self.view?.showError(error: error.localizedDescription)
                } else {
                    if result != nil{
                        
-                       self.doctorDetails.append(result!)
-                       if self.doctorDetails.count == count{
-                           self.view?.getFavoriteDoctorsSuccess()
+                       self.offersDetails.append(result!)
+                       if self.offersDetails.count == count{
+                        self.view?.getFavoriteOffersSuccess()
                        }
                        
                    }else if count == 0{
@@ -42,7 +42,7 @@ class FavoriteOffersPresenter {
            }
        }
        func returnDoctorCount() -> Int {
-           return doctorDetails.count
+           return offersDetails.count
        }
        func configure(cell: SearchedResultsTableViewCellView, for index: Int) {
            

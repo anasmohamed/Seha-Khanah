@@ -10,6 +10,10 @@ import UIKit
 
 protocol FavoriteOffesProtocol: class {
 
-
+    func showIndicator()
+    func hideIndicator()
+    func getFavoriteOffersSuccess()
+    func showError(error: String)
+    func showNoDataFoundImage()
 
 }

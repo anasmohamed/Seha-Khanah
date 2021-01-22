@@ -2,8 +2,8 @@
 /* Class = "UILabel"; text = "Search By Name"; ObjectID = "0Uo-xF-Hnk"; */
 "0Uo-xF-Hnk.text" = "Search By Name";
 
-/* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "0YY-Ud-VKo"; */
-"0YY-Ud-VKo.placeholder" = "Search By Doctor Name";
+/* Class = "UISearchBar"; placeholder = "Search By Lab Name"; ObjectID = "0YY-Ud-VKo"; */
+"0YY-Ud-VKo.placeholder" = "Search By Lab Name";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "2Q8-er-26V"; */
 "2Q8-er-26V.title" = "Search";
@@ -11,11 +11,11 @@
 /* Class = "UILabel"; text = "Search By Pharmacy Name"; ObjectID = "2l8-bn-Qoz"; */
 "2l8-bn-Qoz.text" = "Search By Pharmacy Name";
 
+/* Class = "UILabel"; text = "Search By Name"; ObjectID = "32f-Pa-4hD"; */
+"32f-Pa-4hD.text" = "Search By Name";
+
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "3Bn-wE-i2M"; */
 "3Bn-wE-i2M.title" = "Search";
-
-/* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "6cG-gx-7uz"; */
-"6cG-gx-7uz.text" = "We Care About Your Health";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "70t-LU-TyK"; */
 "70t-LU-TyK.text" = "Label";
@@ -26,17 +26,11 @@
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "DeU-xL-yid"; */
 "DeU-xL-yid.title" = "Search";
 
-/* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "FT1-K4-xjq"; */
-"FT1-K4-xjq.text" = "We Care About Your Health";
+/* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "FZK-xw-gEX"; */
+"FZK-xw-gEX.text" = "We Care About Your Health";
 
-/* Class = "UILabel"; text = "Search By Lab"; ObjectID = "FoZ-dg-g9r"; */
-"FoZ-dg-g9r.text" = "Search By Lab";
-
-/* Class = "UITabBarItem"; title = "Search"; ObjectID = "H9r-VO-dzN"; */
-"H9r-VO-dzN.title" = "Search";
-
-/* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "OLO-Bu-MUa"; */
-"OLO-Bu-MUa.placeholder" = "Search By Doctor Name";
+/* Class = "UISearchBar"; placeholder = "Search By Pharmacy Name"; ObjectID = "OLO-Bu-MUa"; */
+"OLO-Bu-MUa.placeholder" = "Search By Pharmacy Name";
 
 /* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "PaK-NP-IfZ"; */
 "PaK-NP-IfZ.placeholder" = "Search By Doctor Name";
@@ -44,8 +38,11 @@
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "SeF-pO-OO0"; */
 "SeF-pO-OO0.text" = "No Data Found";
 
-/* Class = "UITabBarItem"; title = "Item"; ObjectID = "U4H-wZ-NQU"; */
-"U4H-wZ-NQU.title" = "Item";
+/* Class = "UILabel"; text = "Search By Specialty"; ObjectID = "T5A-Gq-Fmx"; */
+"T5A-Gq-Fmx.text" = "Search By Specialty";
+
+/* Class = "UITabBarItem"; title = "Offers"; ObjectID = "U4H-wZ-NQU"; */
+"U4H-wZ-NQU.title" = "Offers";
 
 /* Class = "UILabel"; text = "Show All"; ObjectID = "UAS-X1-KI3"; */
 "UAS-X1-KI3.text" = "Show All";
@@ -53,11 +50,11 @@
 /* Class = "UILabel"; text = "Search By Region"; ObjectID = "WTh-qt-48S"; */
 "WTh-qt-48S.text" = "Search By Region";
 
-/* Class = "UILabel"; text = "We Care About Your Health"; ObjectID = "adV-QM-K1j"; */
-"adV-QM-K1j.text" = "We Care About Your Health";
-
 /* Class = "UILabel"; text = "Search By Region"; ObjectID = "b6O-TD-bwl"; */
 "b6O-TD-bwl.text" = "Search By Region";
+
+/* Class = "UITabBarItem"; title = "Appointments"; ObjectID = "bAL-Ya-unj"; */
+"bAL-Ya-unj.title" = "Appointments";
 
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "chF-bm-z1u"; */
 "chF-bm-z1u.text" = "No Data Found";
@@ -71,19 +68,13 @@
 /* Class = "UILabel"; text = "No Data Found"; ObjectID = "gUi-h2-Bpx"; */
 "gUi-h2-Bpx.text" = "No Data Found";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "jIa-oN-Wij"; */
-"jIa-oN-Wij.text" = "Title";
+/* Class = "UILabel"; text = "Search For Pharmacies"; ObjectID = "j0u-q4-2ho"; */
+"j0u-q4-2ho.text" = "Search For Pharmacies";
 
-/* Class = "UILabel"; text = "Search By Specialty"; ObjectID = "kxd-Oz-RLF"; */
-"kxd-Oz-RLF.text" = "Search By Specialty";
+/* Class = "UILabel"; text = "Search By Lab"; ObjectID = "n5v-rF-OlB"; */
+"n5v-rF-OlB.text" = "Search By Lab";
 
-/* Class = "UILabel"; text = "Search For Pharmacies"; ObjectID = "l1L-NK-776"; */
-"l1L-NK-776.text" = "Search For Pharmacies";
 
-/* Class = "UISearchBar"; placeholder = "Search By Doctor Name"; ObjectID = "qTm-nm-vGZ"; */
-"qTm-nm-vGZ.placeholder" = "Search By Doctor Name";
+"3fN-iN-2Oh.title" = "more";
 
-/* Class = "UILabel"; text = "Search By Name"; ObjectID = "qyv-Iy-wQ4"; */
-"qyv-Iy-wQ4.text" = "Search By Name";
-
-"FJK-vh-Rq4.title" = "More";
+"H9r-VO-dzN.title" = "Search";
