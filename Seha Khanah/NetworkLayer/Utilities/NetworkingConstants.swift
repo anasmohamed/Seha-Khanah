@@ -45,9 +45,9 @@ class NetworkingConstants {
     static let login = "api/login"
     static let emailParameter = "email"
     static let passwordParameter = "password"
-
-
-
+    
+    
+    
     static let doctorReservation = "api/reservation"
     static let labReservation = "laboratory/reservation"
     
@@ -66,25 +66,25 @@ class NetworkingConstants {
     static let registerPhoneNumberParamter = "phonenumber"
     static let registerGenderIdParamter = "gender_id"
     static let registerBirthdayParamter = "birthday"
-
+    
     static let loginWithSocial = "api/social"
     
     static let loginWithSocialAccessTockenParamter = "accessToken"
     static let loginWithSocialProviderParamter = "provider"
-
+    
     static let updateUserProfile = "api/user/update"
     static let updateUserProfileEmailParameter = "email"
     static let updateUserProfileNameParameter = "name"
     static let updateUserProfilePhoneNumberParameter = "phonenumber"
     static let updateUserProfileGenderIdParameter = "gender_id"
     static let updateUserProfileBirthdayParameter = "birthday"
-
+    
     static let getUserToken = "oauth/token"
     static let getUserTokenGrantTypeParamter = "grant_type"
     static let getUserTokenClientIdParamter = "client_id"
     static let getUserTokenClientSecretParamter = "client_secret"
     static let getUserTokenScopeParamter = "scope"
-
+    
     static let getUserBookings = "api/user/booking"
     static let cancelBooking = "api/user/booking/cancle"
     
@@ -94,7 +94,7 @@ class NetworkingConstants {
     static let tokenResetPasswordParamter = "token"
     static let passwordResetPasswordParamter = "password"
     static let passwordConfirmationResetPasswordParamter = "password_confirmation"
-
+    
     
     static let searchByAreaAndSpecialty = "api/search"
     static let searchByAreaAndSpecialtyNameParamter = "name"
@@ -104,12 +104,17 @@ class NetworkingConstants {
     static let offerSlideShow = "api/offer/slideshow"
     static let showOffer = "api/offers/"
     static let showOfferDetails = "api/offers/"
-
+    
     static let getOffersForSpacificCategory = "api/offer-subcategory/"
     
     
     static let sendMessage = "api/send-message"
     static let sendMessagePhoneNumberPrameter = "phonenumber"
     static let sendMessageUserTypePrameter = "user_type"
+    
+    static let verifyUser = "api/verify-user"
+    static let verifyUserPhoneNumberPrameter = "phonenumber"
+    static let verifyUserUserTypePrameter = "user_type"
+    static let verifyUserCodePrameter = "code"
 
 }

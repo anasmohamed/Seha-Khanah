@@ -48,6 +48,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case sendMessage(phonenumber:String,userType:String)
     
+    case verifyUser(phonenumber:String,userType:String,code:Int)
     
     
     
@@ -117,6 +118,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.showOfferDetails
         case .sendMessage:
             return NetworkingConstants.sendMessage
+        case .verifyUser:
+            return NetworkingConstants.verifyUser
         }
     }
     
@@ -154,7 +157,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .getUserToken,
              .updateUser,
              .resetPassword,
-             .sendMessage:
+             .sendMessage,
+             .verifyUser:
             return .post
             
         }
@@ -216,7 +220,11 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .sendMessage(phonenumber, userType):
             body[NetworkingConstants.sendMessagePhoneNumberPrameter] = phonenumber
             body[NetworkingConstants.sendMessageUserTypePrameter] = userType
-            
+        case let .verifyUser(phonenumber, userType, code):
+            body[NetworkingConstants.verifyUserPhoneNumberPrameter] = phonenumber
+            body[NetworkingConstants.verifyUserUserTypePrameter] = userType
+            body[NetworkingConstants.verifyUserCodePrameter] = code
+
         default:
             print("Empty request body")
         }
@@ -320,7 +328,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .getUserToken,
                .updateUser,
                .resetPassword,
-               .sendMessage:
+               .sendMessage,
+               .verifyUser:
             return try URLEncoding.default.encode(urlRequest, with: body)
             
         case .showLabDetails:

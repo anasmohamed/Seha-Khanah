@@ -62,10 +62,10 @@ class VerificationPhoneNumberInteractor {
         }
     }
     func verifyUser(phoneNumber: String,
-                    userType: String,code : Stirng,
+                    userType: String,code : Int,
                      completionHandler: @escaping (String?, Error?) -> Void) {
            
-           AF.request(SehaKhanahRouter.sendMessage(phonenumber: phoneNumber, userType: userType)).responseJSON {
+        AF.request(SehaKhanahRouter.verifyUser(phonenumber: phoneNumber, userType: userType, code:code )).responseJSON {
                (response) in
                
                if let response = response.data {
