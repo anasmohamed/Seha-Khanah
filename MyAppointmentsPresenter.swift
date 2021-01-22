@@ -23,7 +23,7 @@ class MyAppointmentsPresenter {
         view?.showIndicator()
         myAppointmentsInteractor.getMyAppointments(){ (result,error)  in
             if let error = error {
-                print("errrror\(error)")
+                print("errrror  \(error)")
                 self.view?.showError(error: error.localizedDescription)
             }
             else {

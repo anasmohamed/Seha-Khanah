@@ -215,6 +215,9 @@
 		A8FC8D8D25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D8C25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift */; };
 		A8FC8D8F25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D8E25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift */; };
 		A8FC8D9125BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D9025BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift */; };
+		A8FC8D9725BB8C21007EA14D /* UserOffersReservationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D9625BB8C21007EA14D /* UserOffersReservationsInteractor.swift */; };
+		A8FC8D9925BB8C54007EA14D /* UserOffersReservationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D9825BB8C54007EA14D /* UserOffersReservationsPresenter.swift */; };
+		A8FC8D9B25BB8C85007EA14D /* UserOffersReservationsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D9A25BB8C85007EA14D /* UserOffersReservationsProtocol.swift */; };
 		A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */; };
 		A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */; };
 		A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD3BEF259CBD5D002B0C07 /* Font.swift */; };
@@ -474,6 +477,9 @@
 		A8FC8D8C25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberPresenter.swift; sourceTree = "<group>"; };
 		A8FC8D8E25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberInteractor.swift; sourceTree = "<group>"; };
 		A8FC8D9025BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberProtocol.swift; sourceTree = "<group>"; };
+		A8FC8D9625BB8C21007EA14D /* UserOffersReservationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOffersReservationsInteractor.swift; sourceTree = "<group>"; };
+		A8FC8D9825BB8C54007EA14D /* UserOffersReservationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOffersReservationsPresenter.swift; sourceTree = "<group>"; };
+		A8FC8D9A25BB8C85007EA14D /* UserOffersReservationsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOffersReservationsProtocol.swift; sourceTree = "<group>"; };
 		A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Black.ttf"; sourceTree = "<group>"; };
 		A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Bold.ttf"; sourceTree = "<group>"; };
 		A8FD3BEF259CBD5D002B0C07 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -959,6 +965,8 @@
 		A843BBA825A87B49006231F8 /* MyOffersScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC8D9525BB8BFC007EA14D /* Interactor */,
+				A8FC8D9425BB8BF1007EA14D /* Presenter */,
 				A843BBB125A87D5C006231F8 /* View */,
 			);
 			path = MyOffersScene;
@@ -988,6 +996,7 @@
 			isa = PBXGroup;
 			children = (
 				A843BBB225A87D7D006231F8 /* MyOffersTableViewController.swift */,
+				A8FC8D9A25BB8C85007EA14D /* UserOffersReservationsProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1974,6 +1983,22 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A8FC8D9425BB8BF1007EA14D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC8D9825BB8C54007EA14D /* UserOffersReservationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8FC8D9525BB8BFC007EA14D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8FC8D9625BB8C21007EA14D /* UserOffersReservationsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A8FD3BEC259CBD2D002B0C07 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -2213,6 +2238,7 @@
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
 				A877D27025B622E800248E95 /* FavoriteOffersTableViewController.swift in Sources */,
+				A8FC8D9725BB8C21007EA14D /* UserOffersReservationsInteractor.swift in Sources */,
 				A83CB062258B4DBA00207BDC /* State.swift in Sources */,
 				A8B8E4CC25A8BF70002F8149 /* User.swift in Sources */,
 				A8C8164E25A73BD700690AE8 /* PharmacyDetailsPresenter.swift in Sources */,
@@ -2294,6 +2320,7 @@
 				A8572DDC25B5FFC400B10276 /* FavoriteDoctorProtocol.swift in Sources */,
 				A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */,
 				A828402825B77DDF000F6B19 /* OffersForSpcificCategoryPresenter.swift in Sources */,
+				A8FC8D9925BB8C54007EA14D /* UserOffersReservationsPresenter.swift in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
 				A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */,
 				A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */,
@@ -2322,6 +2349,7 @@
 				A8A7DD4525951A98007FBFE0 /* AreasProtocol.swift in Sources */,
 				A8452B472593F2BF005EB836 /* SearchForPharmaciesViewController.swift in Sources */,
 				A877D27225B6231500248E95 /* FavoriteOffesProtocol.swift in Sources */,
+				A8FC8D9B25BB8C85007EA14D /* UserOffersReservationsProtocol.swift in Sources */,
 				A870838B2596279F002AC96C /* SearchByLabNameTableViewCell.swift in Sources */,
 				A8C8164C25A73B0300690AE8 /* PharamcyDetailsInteractor.swift in Sources */,
 				A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */,

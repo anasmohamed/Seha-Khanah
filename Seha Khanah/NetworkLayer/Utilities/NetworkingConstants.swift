@@ -117,4 +117,7 @@ class NetworkingConstants {
     static let verifyUserUserTypePrameter = "user_type"
     static let verifyUserCodePrameter = "code"
 
+    static let userOffersReservations = "api/user/offer/booking"
+    
+
 }

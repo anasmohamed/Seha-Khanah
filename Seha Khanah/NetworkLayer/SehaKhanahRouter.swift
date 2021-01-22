@@ -49,7 +49,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case sendMessage(phonenumber:String,userType:String)
     
     case verifyUser(phonenumber:String,userType:String,code:Int)
-    
+    case userOffersReservations
     
     
     var path: String {
@@ -106,10 +106,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.resetPassword
         case .searchByAreaAndSpecialty:
             return NetworkingConstants.searchByAreaAndSpecialty
-            
         case .offerSlidShow:
             return NetworkingConstants.offerSlideShow
-            
         case .showOffer:
             return NetworkingConstants.showOffer
         case .getOffresForSpacificCategory:
@@ -120,6 +118,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.sendMessage
         case .verifyUser:
             return NetworkingConstants.verifyUser
+        case .userOffersReservations:
+            return NetworkingConstants.userOffersReservations
         }
     }
     
@@ -147,7 +147,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .offerSlidShow,
              .showOffer,
              .getOffresForSpacificCategory,
-             .showOfferDetails:
+             .showOfferDetails,
+             .userOffersReservations:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -169,7 +170,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var httpHeaders = HTTPHeaders()
         
         switch self {
-        case .booking,.updateUser:
+        case .booking,.updateUser,.userOffersReservations:
             let token = UserDefaults.standard.string(forKey: "token")
             httpHeaders.add(name: "Authorization", value: "Bearer \(token)")
         //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
@@ -318,7 +319,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .labReservation,
              .booking,
              .searchByAreaAndSpecialty,
-             .offerSlidShow:
+             .offerSlidShow,
+             .userOffersReservations:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)

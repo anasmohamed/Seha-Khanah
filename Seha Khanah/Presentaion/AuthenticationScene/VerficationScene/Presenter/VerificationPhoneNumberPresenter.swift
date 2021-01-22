@@ -48,7 +48,7 @@ class VerificationPhoneNumberPresenter {
             } else {
                 if result != nil{
                     if Int(result!) == 200{
-                        self.view?.sendMessageSuccuess(message: "SMS send successfully")
+                        self.view?.verifyUserSuccuess(message: "user verified successfully")
                     }else{
                         self.view?.showError(error: "Somthing Wrong Happend".localized)
                         
