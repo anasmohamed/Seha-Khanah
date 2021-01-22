@@ -82,7 +82,13 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         let storyboard = UIStoryboard.init(name: "Verification", bundle: nil)
         let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "VerificationPhoneNumberViewController")
         self.navigationController?.pushViewController(verificationPhoneNumberViewConroller, animated: true)
-     
+        UserDefaults.standard.set(user.email, forKey: "email")
+        UserDefaults.standard.set(user.birthday, forKey: "birthday")
+        UserDefaults.standard.set(user.genderId, forKey: "genderId")
+        UserDefaults.standard.set(user.id, forKey: "id")
+        UserDefaults.standard.set(user.name, forKey: "name")
+        UserDefaults.standard.set(user.phoneNumber, forKey: "phoneNumber")
+        UserDefaults.standard.set(user.token, forKey: "token")
         
     }
     
