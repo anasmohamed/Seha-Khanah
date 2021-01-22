@@ -48,6 +48,6 @@ class FavoriteOffersPresenter {
            
            let offer = offersDetails[index]
            
-        cell.configure(mostOrderedOffer:offer)
+        cell.configureWithOfferDetails(offerDetails: offer)
        }
 }

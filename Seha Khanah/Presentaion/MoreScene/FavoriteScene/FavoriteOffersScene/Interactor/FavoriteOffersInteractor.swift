@@ -11,7 +11,7 @@ import SwiftyJSON
 import Alamofire
 class FavoriteOffersInteractor {
     func showOfferDetails(id : String,
-                             completionHandler: @escaping (DoctorDetails?, Error?) -> Void) {
+                             completionHandler: @escaping (OfferDetails?, Error?) -> Void) {
           AF.request(SehaKhanahRouter.showOffer(id: id)).validate().responseJSON{
               (response) in
               if let response = response.data {
@@ -48,7 +48,7 @@ class FavoriteOffersInteractor {
                   let json = JSON(response.value)
                   print(json)
                   let doctorDetails = json["data"]
-                  let data = DoctorDetails(withJSON: doctorDetails)
+                  let data = OfferDetails(withJSON: doctorDetails)
                   completionHandler(data, nil)
               case .failure(let error):
                   completionHandler(nil, error)

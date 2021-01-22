@@ -11,7 +11,7 @@ import Cosmos
 import Kingfisher
 import Localize
 class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewCellView {
-  
+    
     
     
     @IBOutlet weak var offerPhotoImageIView: UIImageView!
@@ -53,7 +53,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         
         mainView.layer.cornerRadius = cornerRadius
         mainView.clipsToBounds = true
-       
+        
     }
     
     override func layoutMarginsDidChange() {
@@ -63,28 +63,28 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     override func layoutSubviews() {
         // cell rounded section
         super.layoutSubviews()
-//        self.layer.cornerRadius = 15.0
-//        self.layer.borderWidth = 5.0
-//        self.layer.borderColor = UIColor.clear.cgColor
-//        self.layer.masksToBounds = true
-//
-//        // cell shadow section
-//        self.contentView.layer.cornerRadius = 15.0
-//        self.contentView.layer.borderWidth = 5.0
-//        self.contentView.layer.borderColor = UIColor.clear.cgColor
-//        self.contentView.layer.masksToBounds = true
-//        self.layer.shadowColor = UIColor.white.cgColor
-//        self.layer.shadowOffset = CGSize(width: 0, height: 0.0)
-//        self.layer.shadowRadius = 6.0
-//        self.layer.shadowOpacity = 0.6
-//        self.layer.cornerRadius = 15.0
-//        self.layer.masksToBounds = false
-//        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
+        //        self.layer.cornerRadius = 15.0
+        //        self.layer.borderWidth = 5.0
+        //        self.layer.borderColor = UIColor.clear.cgColor
+        //        self.layer.masksToBounds = true
+        //
+        //        // cell shadow section
+        //        self.contentView.layer.cornerRadius = 15.0
+        //        self.contentView.layer.borderWidth = 5.0
+        //        self.contentView.layer.borderColor = UIColor.clear.cgColor
+        //        self.contentView.layer.masksToBounds = true
+        //        self.layer.shadowColor = UIColor.white.cgColor
+        //        self.layer.shadowOffset = CGSize(width: 0, height: 0.0)
+        //        self.layer.shadowRadius = 6.0
+        //        self.layer.shadowOpacity = 0.6
+        //        self.layer.cornerRadius = 15.0
+        //        self.layer.masksToBounds = false
+        //        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
         
         self.contentView.frame = self.frame.inset(by: UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5))
         
     }
-     func configure(mostOrderedOffer: MostOrderedOffers) {
+    func configure(mostOrderedOffer: MostOrderedOffers) {
         offerPhotoImageIView.kf.setImage(with: URL(string: mostOrderedOffer.coverImage!))
         doctorPhotoImageVIew.kf.setImage(with: URL(string: mostOrderedOffer.doctorPhoto!))
         if locale == "en"
@@ -94,10 +94,10 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
             deviceNameLbl.text = mostOrderedOffer.deviceNameEn
         }else
         {
-           offerNameLbl.text = mostOrderedOffer.titleAr
+            offerNameLbl.text = mostOrderedOffer.titleAr
             doctorNameLbl.text = mostOrderedOffer.doctorFristNameAr! + " " + mostOrderedOffer.doctorLastNameAr! + "-" + mostOrderedOffer.addressAr!
             deviceNameLbl.text = mostOrderedOffer.deviceNameAr
-
+            
         }
         
         //    saleLbl.text = mostOrderedOffer.nameEn
@@ -110,31 +110,39 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         saleLbl.text = String(Double(mostOrderedOffer.price!)! * Double(mostOrderedOffer.discount!)! / 100)
     }
     func configureWithOfferDetails(offerDetails: OfferDetails) {
+        let doctorFirstNameAr = (offerDetails.doctor?.doctorFirstNameAr!)! + " "
+        let doctorFirstNameEn = (offerDetails.doctor?.doctorFirstNameEn!)! + " "
+        let doctorNameEn = doctorFirstNameEn + (offerDetails.doctor?.doctorLastNameEn)!
+        let doctorNameAr = doctorFirstNameAr +
+            offerDetails.doctor!.doctorLastNameAr!
         offerPhotoImageIView.kf.setImage(with: URL(string: offerDetails.coverPhoto!))
         doctorPhotoImageVIew.kf.setImage(with: URL(string: (offerDetails.doctor?.photo!)!))
-           if locale == "en"
-           {
+        if locale == "en"
+        {
             offerNameLbl.text = offerDetails.titleNameEn
-            doctorNameLbl.text = offerDetails.doctor?.doctorFirstNameEn! + " " + offerDetails.doctor.doctorLastNameEn! + "-" + offerDetails.doctor.addressEn!
-               deviceNameLbl.text = offerDetails.deviceNameEn
-           }else
-           {
-              offerNameLbl.text = offerDetails.titleNameAr
-            doctorNameLbl.text = offerDetails.doctor.doctorFristNameAr! + " " + offerDetails.doctor.doctorLastNameAr! + "-" + offerDetails.doctor.addressAr!
-               deviceNameLbl.text = offerDetails.deviceNameAr
-
-           }
-           
-           //    saleLbl.text = mostOrderedOffer.nameEn
-           
-           let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: offerDetails.price!)
-           attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
-           discountLbl.text = "Discount ".localized + offerDetails.discount! + "%"
-           offerRating.rating = Double(offerDetails.rating!)!
-           priceLbl.attributedText = attributeString
-           saleLbl.text = String(Double(offerDetails.price!)! * Double(mostOrderedOffer.discount!)! / 100)
-      }
-      
+            doctorNameLbl.text = doctorNameEn + "-" + offerDetails.doctor!.addressEn!
+            deviceNameLbl.text = offerDetails.deviceNameEn
+        }else
+        {
+            offerNameLbl.text = offerDetails.titleNameAr
+            
+            doctorNameLbl.text = doctorNameAr + "-" +
+                offerDetails.doctor!.addressAr!
+            
+            deviceNameLbl.text = offerDetails.deviceNameAr
+            
+        }
+        
+        //    saleLbl.text = mostOrderedOffer.nameEn
+        
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: offerDetails.price!)
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        discountLbl.text = "Discount ".localized + offerDetails.discount! + "%"
+        offerRating.rating = Double(offerDetails.rating!)!
+        priceLbl.attributedText = attributeString
+        saleLbl.text = String(Double(offerDetails.price!)! * Double(offerDetails.discount!)! / 100)
+    }
+    
     
 }
 
