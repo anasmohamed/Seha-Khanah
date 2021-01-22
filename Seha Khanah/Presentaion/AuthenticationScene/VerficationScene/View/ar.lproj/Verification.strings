@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "2vH-7c-PeN"; */
+"2vH-7c-PeN.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "The SMS was not received"; ObjectID = "3uA-ml-Mzg"; */
+"3uA-ml-Mzg.text" = "لم يتم إرسال الرسالة";
+
+/* Class = "UIButton"; normalTitle = "try again"; ObjectID = "XT4-ar-SrP"; */
+"XT4-ar-SrP.normalTitle" = "أعد المحاولة";
+
+/* Class = "UITextField"; placeholder = "Enter Confirmation Code"; ObjectID = "eqb-VZ-hio"; */
+"eqb-VZ-hio.placeholder" = "أدخل رمز التأكيد";
+
+/* Class = "UILabel"; text = "The confirmation code will be sent in an SMS"; ObjectID = "tgq-pE-BYE"; */
+"tgq-pE-BYE.text" = "سيتم إرسال رمز التأكيد فى رسالة قصيرة";
