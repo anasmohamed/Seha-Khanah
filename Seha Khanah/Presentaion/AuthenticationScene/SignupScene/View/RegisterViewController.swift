@@ -80,7 +80,8 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         indicator.stopAnimating()
         
         let storyboard = UIStoryboard.init(name: "Verification", bundle: nil)
-        let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "VerificationPhoneNumberViewController")
+        let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "VerificationPhoneNumberViewController") as! VerificationPhoneNumberViewController
+        verificationPhoneNumberViewConroller.phoneNumber = phoneTextField.text
         self.navigationController?.pushViewController(verificationPhoneNumberViewConroller, animated: true)
         UserDefaults.standard.set(user.email, forKey: "email")
         UserDefaults.standard.set(user.birthday, forKey: "birthday")
@@ -134,13 +135,16 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         guard password.count > 6 else {
             return
         }
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let date = dateFormatter.date(from:birthday)!
-        print(date)
-        registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date)
-        
+        if !birthday.isEmpty{
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let date = dateFormatter.date(from:birthday)!
+            print(date)
+            registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date)
+        }else{
+            
+        }
     }
     
 }

@@ -11,5 +11,7 @@ protocol VerificationPhoneNumberProtocol:class {
     func showIndicator()
     func hideIndicator()
     func sendMessageSuccuess(message:String)
+    func verifyUserSuccuess(message:String)
+
     func showError(error: String)
 }

@@ -10,7 +10,6 @@ import UIKit
 
 class VerificationPhoneNumberViewController: UIViewController ,VerificationPhoneNumberProtocol{
     
-    
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var confirmationCodeTextField: UITextField!
     var presenter : VerificationPhoneNumberPresenter!
@@ -42,10 +41,8 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
     
     func sendMessageSuccuess(message: String) {
         indicator.stopAnimating()
-        UserDefaults.standard.set(true, forKey: "isUserLoggedin")
-        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
-        let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        self.navigationController?.pushViewController(verificationPhoneNumberViewConroller, animated: true)
+        
+        
         print(message)
     }
     
@@ -53,6 +50,16 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
         indicator.stopAnimating()
         
     }
+    func verifyUserSuccuess(message: String) {
+        indicator.stopAnimating()
+
+        UserDefaults.standard.set(true, forKey: "isUserLoggedin")
+        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+        let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        self.present(verificationPhoneNumberViewConroller, animated: true,completion: nil)
+    }
+    
+    
     
     
 }
