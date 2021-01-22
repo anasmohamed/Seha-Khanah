@@ -106,5 +106,10 @@ class NetworkingConstants {
     static let showOfferDetails = "api/offers/"
 
     static let getOffersForSpacificCategory = "api/offer-subcategory/"
+    
+    
+    static let sendMessage = "api/send-message"
+    static let sendMessagePhoneNumberPrameter = "phonenumber"
+    static let sendMessageUserTypePrameter = "user_type"
 
 }

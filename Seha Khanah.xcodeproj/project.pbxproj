@@ -211,6 +211,10 @@
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 		A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */; };
 		A8FC8D8925BB710F007EA14D /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FC8D8825BB710F007EA14D /* Verification.storyboard */; };
+		A8FC8D8B25BB76B6007EA14D /* VerificationPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D8A25BB76B6007EA14D /* VerificationPhoneNumberViewController.swift */; };
+		A8FC8D8D25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D8C25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift */; };
+		A8FC8D8F25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D8E25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift */; };
+		A8FC8D9125BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC8D9025BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift */; };
 		A8FD3BF1259CBD5F002B0C07 /* Sukar-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */; };
 		A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */; };
 		A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD3BEF259CBD5D002B0C07 /* Font.swift */; };
@@ -466,6 +470,10 @@
 		A8F7C07D25AF6E2A00075B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Appointments.strings; sourceTree = "<group>"; };
 		A8F7C07F25AF6E3500075B53 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Appointments.strings; sourceTree = "<group>"; };
 		A8FC8D8825BB710F007EA14D /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
+		A8FC8D8A25BB76B6007EA14D /* VerificationPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		A8FC8D8C25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberPresenter.swift; sourceTree = "<group>"; };
+		A8FC8D8E25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberInteractor.swift; sourceTree = "<group>"; };
+		A8FC8D9025BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberProtocol.swift; sourceTree = "<group>"; };
 		A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Black.ttf"; sourceTree = "<group>"; };
 		A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Bold.ttf"; sourceTree = "<group>"; };
 		A8FD3BEF259CBD5D002B0C07 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -1944,6 +1952,8 @@
 			isa = PBXGroup;
 			children = (
 				A8FC8D8825BB710F007EA14D /* Verification.storyboard */,
+				A8FC8D8A25BB76B6007EA14D /* VerificationPhoneNumberViewController.swift */,
+				A8FC8D9025BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1951,6 +1961,7 @@
 		A8FC8D8625BB70E2007EA14D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC8D8C25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1958,6 +1969,7 @@
 		A8FC8D8725BB70ED007EA14D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A8FC8D8E25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -2171,6 +2183,7 @@
 				A8761D7625B04FAB00280BE7 /* MoreTableViewCell.swift in Sources */,
 				A8C1BCAB25B7A86D00E4CD05 /* OfferDetailsProtocol.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
+				A8FC8D8D25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift in Sources */,
 				A8A7DD3D25950DDC007FBFE0 /* DropShadowView.swift in Sources */,
 				A8C8165225A753C600690AE8 /* PharmacyDetailsProtocol.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
@@ -2219,6 +2232,8 @@
 				A8A7DD4125951960007FBFE0 /* Area.swift in Sources */,
 				A88084E525AF975500A6EE84 /* ResetPasswordProtocol.swift in Sources */,
 				A8452B4F2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift in Sources */,
+				A8FC8D9125BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift in Sources */,
+				A8FC8D8B25BB76B6007EA14D /* VerificationPhoneNumberViewController.swift in Sources */,
 				A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */,
 				A851FD74259794A50036790B /* AboutAppViewController.swift in Sources */,
 				A818006825AB7E5000C750AE /* RegisterProtocol.swift in Sources */,
@@ -2297,6 +2312,7 @@
 				A856771E2592067B0086CD78 /* SearchPresenter.swift in Sources */,
 				A8C9E3E3259FC42C0085B806 /* RatingCollectionViewCell.swift in Sources */,
 				A8C2E72E25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift in Sources */,
+				A8FC8D8F25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift in Sources */,
 				A8A7DD4325951A49007FBFE0 /* RegionPresenter.swift in Sources */,
 				A8708387259626C3002AC96C /* SearchByLabNameViewController.swift in Sources */,
 				A8C9E3E8259FC5C50085B806 /* LabRatings.swift in Sources */,

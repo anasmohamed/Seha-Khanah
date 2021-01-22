@@ -45,7 +45,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case getOffresForSpacificCategory(id:String)
     case showOfferDetails(id:String)
-
+    
+    case sendMessage(phonenumber:String,userType:String)
     
     
     
@@ -114,6 +115,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.getOffersForSpacificCategory
         case .showOfferDetails:
             return NetworkingConstants.showOfferDetails
+        case .sendMessage:
+            return NetworkingConstants.sendMessage
         }
     }
     
@@ -150,7 +153,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .register,
              .getUserToken,
              .updateUser,
-             .resetPassword:
+             .resetPassword,
+             .sendMessage:
             return .post
             
         }
@@ -209,6 +213,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.tokenResetPasswordParamter] = token
             body[NetworkingConstants.passwordResetPasswordParamter] = password
             body[NetworkingConstants.passwordConfirmationResetPasswordParamter] = passwordConfirmation
+        case let .sendMessage(phonenumber, userType):
+            body[NetworkingConstants.sendMessagePhoneNumberPrameter] = phonenumber
+            body[NetworkingConstants.sendMessageUserTypePrameter] = userType
             
         default:
             print("Empty request body")
@@ -240,8 +247,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.showDoctorDates] = id
         case let .showPharmacyDetails(id):
             params[NetworkingConstants.showPharmacyDetails] = id
-            case let .showOfferDetails(id):
-                       params[NetworkingConstants.showOfferDetails] = id
+        case let .showOfferDetails(id):
+            params[NetworkingConstants.showOfferDetails] = id
         case let .doctorReservation(name, email, phonenumber, bookingDate, doctorId, checkbox):
             params[NetworkingConstants.reservationNameParameter] = name
             params[NetworkingConstants.reservationEmailParameter] = email
@@ -312,7 +319,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .register,
                .getUserToken,
                .updateUser,
-               .resetPassword:
+               .resetPassword,
+               .sendMessage:
             return try URLEncoding.default.encode(urlRequest, with: body)
             
         case .showLabDetails:
@@ -358,12 +366,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             let getOffresForSpacificCategoryParamString = params[NetworkingConstants.getOffersForSpacificCategory]!
             urlRequest = URLRequest(url: URL(string: getOffresForSpacificCategoryUrlString + (getOffresForSpacificCategoryParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
-            case .showOfferDetails:
-                       let showOfferDetailsUrlString = (urlRequest.url?.absoluteString)!
-                       
-                       let showOfferDetailsParamString = params[NetworkingConstants.showOfferDetails]!
-                       urlRequest = URLRequest(url: URL(string: showOfferDetailsUrlString + (showOfferDetailsParamString as! String))!)
-                       return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .showOfferDetails:
+            let showOfferDetailsUrlString = (urlRequest.url?.absoluteString)!
+            
+            let showOfferDetailsParamString = params[NetworkingConstants.showOfferDetails]!
+            urlRequest = URLRequest(url: URL(string: showOfferDetailsUrlString + (showOfferDetailsParamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }
 }
