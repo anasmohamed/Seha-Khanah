@@ -11,6 +11,7 @@ import Cosmos
 import Kingfisher
 import Localize
 class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewCellView {
+  
     
     
     @IBOutlet weak var offerPhotoImageIView: UIImageView!
@@ -107,12 +108,33 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         offerRating.rating = Double(mostOrderedOffer.rating!)!
         priceLbl.attributedText = attributeString
         saleLbl.text = String(Double(mostOrderedOffer.price!)! * Double(mostOrderedOffer.discount!)! / 100)
-        
-        
-        
-        
-        
     }
+    func configureWithOfferDetails(offerDetails: OfferDetails) {
+        offerPhotoImageIView.kf.setImage(with: URL(string: offerDetails.coverPhoto!))
+        doctorPhotoImageVIew.kf.setImage(with: URL(string: (offerDetails.doctor?.photo!)!))
+           if locale == "en"
+           {
+            offerNameLbl.text = offerDetails.titleNameEn
+            doctorNameLbl.text = offerDetails.doctor?.doctorFirstNameEn! + " " + offerDetails.doctor.doctorLastNameEn! + "-" + offerDetails.doctor.addressEn!
+               deviceNameLbl.text = offerDetails.deviceNameEn
+           }else
+           {
+              offerNameLbl.text = offerDetails.titleNameAr
+            doctorNameLbl.text = offerDetails.doctor.doctorFristNameAr! + " " + offerDetails.doctor.doctorLastNameAr! + "-" + offerDetails.doctor.addressAr!
+               deviceNameLbl.text = offerDetails.deviceNameAr
+
+           }
+           
+           //    saleLbl.text = mostOrderedOffer.nameEn
+           
+           let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: offerDetails.price!)
+           attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+           discountLbl.text = "Discount ".localized + offerDetails.discount! + "%"
+           offerRating.rating = Double(offerDetails.rating!)!
+           priceLbl.attributedText = attributeString
+           saleLbl.text = String(Double(offerDetails.price!)! * Double(mostOrderedOffer.discount!)! / 100)
+      }
+      
     
 }
 

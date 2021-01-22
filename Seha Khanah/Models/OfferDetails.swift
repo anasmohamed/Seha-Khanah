@@ -27,6 +27,7 @@ class OfferDetails: Codable {
     var rating: String?
     var priceDiscount:String?
     var priceAfterDiscount:String?
+    var coverPhoto : String?
     var imagesList = [String]()
     var datesList = [LabDate]()
     var labDates = [JSON]()
@@ -53,6 +54,7 @@ class OfferDetails: Codable {
         self.dateTo = data["date_to"].stringValue
         self.doctor = DoctorDetails(withJSON: data["doctor"])
         let images = data["images"].arrayValue
+        self.coverPhoto = data["images"][0].stringValue
         let ratings = data["ratings"].arrayValue
         for image in images
         {

@@ -9,4 +9,6 @@
 import Foundation
 protocol MostOrderedOffersTableViewCellView:class {
     func configure(mostOrderedOffer : MostOrderedOffers)
+    func configureWithOfferDetails(offerDetails : OfferDetails)
+
 }

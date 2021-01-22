@@ -44,10 +44,10 @@ class FavoriteOffersPresenter {
        func returnDoctorCount() -> Int {
            return offersDetails.count
        }
-       func configure(cell: SearchedResultsTableViewCellView, for index: Int) {
+       func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
            
-           let searchedResult = doctorDetails[index]
+           let offer = offersDetails[index]
            
-           cell.configureWithDoctorDetails(resultDoctorDetails:searchedResult)
+        cell.configure(mostOrderedOffer:offer)
        }
 }
