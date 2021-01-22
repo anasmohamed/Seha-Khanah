@@ -29,6 +29,7 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
     }
     
     @IBAction func tryAgainBtnDidTapped(_ sender: Any) {
+        presenter.verifyPhoneNumber(phoneNumber: phoneNumber!, userType:"client")
     }
     
     func showIndicator() {

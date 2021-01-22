@@ -29,6 +29,8 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     let cornerRadius : CGFloat = 10.0
     var actionBlock: (() -> Void)? = nil
     var mapStackViewActionBlock: (() -> Void)? = nil
+    var helpRequestActionBlock: (() -> Void)? = nil
+
     var lat : String?
     var longtiude : String?
     var bookingId:String?
@@ -58,6 +60,8 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         
         let mapRequestTab = UITapGestureRecognizer(target: self, action: #selector(self.handleMapRequestTab(_:)))
         mabMarkerView.addGestureRecognizer(mapRequestTab)
+        let helpRequestTab = UITapGestureRecognizer(target: self, action: #selector(self.handleHelpRequestTab(_:)))
+        bellView.addGestureRecognizer(helpRequestTab)
         // Initialization code
     }
     
@@ -74,6 +78,11 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     @objc func handleMapRequestTab(_ sender: UITapGestureRecognizer? = nil)
     {
         mapStackViewActionBlock?()
+        
+    }
+    @objc func handleHelpRequestTab(_ sender: UITapGestureRecognizer? = nil)
+    {
+        helpRequestActionBlock?()
         
     }
     func configure(appintment: MyAppiontments) {

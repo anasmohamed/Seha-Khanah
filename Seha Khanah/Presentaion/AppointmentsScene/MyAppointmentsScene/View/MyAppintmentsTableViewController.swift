@@ -61,6 +61,11 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         cell.mapStackViewActionBlock = {
             self.openGoogleMap(lat: cell.lat!, lng: cell.longtiude!)
         }
+        cell.helpRequestActionBlock = {
+            let storyboard = UIStoryboard.init(name: "CallUs", bundle:nil )
+            let callUsViewController = storyboard.instantiateViewController(withIdentifier: "CallUsViewController") as! CallUsViewController
+            self.navigationController!.pushViewController(callUsViewController, animated: true)
+        }
         myAppointmentsPresenter.configure(cell: cell, for:indexPath.row)
         
         return cell
