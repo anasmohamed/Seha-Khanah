@@ -27,6 +27,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var numberOfRaitings: UILabel!
     
+    @IBOutlet weak var leftArrowView: UIView!
     @IBOutlet weak var numberOfVisitorsLbl: PaddingLabel!
     @IBOutlet weak var cityNameLbl: UILabel!
     @IBOutlet weak var moreAndLessLbl: UILabel!
@@ -40,12 +41,14 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     let locale = NSLocale.current.languageCode
     var isAddToFavoriteBtnTapped = false
     var arrayOfSavedIds = [String]()
+    @IBOutlet weak var rightArrowView: UIView!
     @IBOutlet weak var addDoctorToFavoriteBtn: UIButton!
     
     var doctorId : String?
     var presenter : DoctorDetailsPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
+        leftArrowView.transform =  CGAffineTransform(scaleX: 1, y: -1)
         presenter = DoctorDetailsPresenter(view:self)
         presenter.showDoctorDetails(id: doctorId!)
         aboutDoctorLbl.numberOfLines = 1
@@ -77,7 +80,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: goToLocationView)
-        
+        cornerRadiusAndShodow(view: leftArrowView)
+        cornerRadiusAndShodow(view: rightArrowView)
     }
     func showDoctorDates() {
         
