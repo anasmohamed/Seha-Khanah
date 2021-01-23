@@ -20,7 +20,8 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
     @IBOutlet weak var labPhoto: UIImageView!
     @IBOutlet weak var containerView: DropShadowView!
     let locale = NSLocale.current.languageCode
-    
+    var bookBtnActionBlock: (() -> Void)? = nil
+
     let cornerRadius : CGFloat = 10.0
     
     override func awakeFromNib() {
@@ -54,4 +55,7 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
         }
     }
     
+    @IBAction func bookBtnDidTapped(_ sender: Any) {
+        bookBtnActionBlock?()
+    }
 }

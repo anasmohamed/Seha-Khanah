@@ -54,16 +54,18 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard.init(name: "LabDetails", bundle: nil)
         
-        let showLabsDetailsViewController = storyboard.instantiateViewController(withIdentifier: "LabDetailsViewController") as! LabDetailsViewController
-        showLabsDetailsViewController.labId = labPresenter.getLabId(index: indexPath.row)
-        self.navigationController!.pushViewController(showLabsDetailsViewController, animated: true)
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByLabNameTableViewCell", for: indexPath) as! SearchByLabNameTableViewCell
-        
+        cell.bookBtnActionBlock = {
+            let storyboard = UIStoryboard.init(name: "LabDetails", bundle: nil)
+            
+            let showLabsDetailsViewController = storyboard.instantiateViewController(withIdentifier: "LabDetailsViewController") as! LabDetailsViewController
+            showLabsDetailsViewController.labId = self.labPresenter.getLabId(index: indexPath.row)
+            self.navigationController!.pushViewController(showLabsDetailsViewController, animated: true)
+        }
         labPresenter.configure(cell: cell, for: indexPath.row)
         
         return cell
