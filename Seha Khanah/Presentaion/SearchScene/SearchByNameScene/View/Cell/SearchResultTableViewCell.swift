@@ -26,7 +26,8 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
     @IBOutlet weak var profissionalTitleEnLbl: UILabel!
     let cornerRadius : CGFloat = 10.0
     let locale = NSLocale.current.languageCode
-    
+    var bookBtnActionBlock: (() -> Void)? = nil
+
     override func awakeFromNib() {
         super.awakeFromNib()
         doctorPhoto.layer.cornerRadius = doctorPhoto.frame.width / 2
@@ -65,6 +66,10 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
             addressLbl.text = result.addressAr
             
         }
+    }
+    
+    @IBAction func bookBtnDidTapped(_ sender: Any) {
+        bookBtnActionBlock?()
     }
     func configureWithDoctorDetails(resultDoctorDetails: DoctorDetails) {
         doctorPhoto.kf.setImage(with: URL(string: resultDoctorDetails.photo!))

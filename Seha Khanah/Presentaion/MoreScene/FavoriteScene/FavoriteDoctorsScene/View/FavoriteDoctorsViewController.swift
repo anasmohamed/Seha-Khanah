@@ -34,6 +34,13 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath) as! SearchResultTableViewCell
+        cell.bookBtnActionBlock = {
+            let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+               
+               let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
+            showDoctorDetailsViewController.doctorId = self.favoriteDoctorPresenter.getDoctorId(index: indexPath.row)
+               self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+        }
         favoriteDoctorPresenter.configure(cell: cell, for: indexPath.row)
         return cell
     }
@@ -47,11 +54,7 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
-        
-        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
-        showDoctorDetailsViewController.doctorId = favoriteDoctorPresenter.getDoctorId(index: indexPath.row)
-        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+   
     }
     
     

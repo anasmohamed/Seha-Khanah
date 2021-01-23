@@ -52,15 +52,17 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
         return searchedResultsPresenter.searchResultCount()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
         
-        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
-        showDoctorDetailsViewController.doctorId = searchedResultsPresenter.getDoctorId(index: indexPath.row)
-        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath) as! SearchResultTableViewCell
-        
+        cell.bookBtnActionBlock = {
+             let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+               
+               let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
+            showDoctorDetailsViewController.doctorId = self.searchedResultsPresenter.getDoctorId(index: indexPath.row)
+               self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+           }
         searchedResultsPresenter.configure(cell: cell, for: indexPath.row)
         return cell
     }
