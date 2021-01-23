@@ -40,6 +40,7 @@
 		A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818006B25ABBE9100C750AE /* EditProfile.storyboard */; };
 		A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006D25ABC14800C750AE /* EditProfileViewController.swift */; };
 		A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818007325ABC30100C750AE /* ResetPassword.storyboard */; };
+		A81BDB4E25BCB65E002B84E1 /* UILabel+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */; };
 		A828400B25B7508F000F6B19 /* AllCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */; };
 		A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */; };
 		A828400F25B754A0000F6B19 /* AllCategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */; };
@@ -267,6 +268,7 @@
 		A818006B25ABBE9100C750AE /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
 		A818006D25ABC14800C750AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A818007325ABC30100C750AE /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
+		A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Padding.swift"; sourceTree = "<group>"; };
 		A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesInteractor.swift; sourceTree = "<group>"; };
 		A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesPresenter.swift; sourceTree = "<group>"; };
 		A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesProtocol.swift; sourceTree = "<group>"; };
@@ -1787,6 +1789,7 @@
 				A884DD76259A1610006D686B /* localized.swift */,
 				A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */,
 				A89B340925BA1CEF004B27DD /* BundleExtension.swift */,
+				A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2245,6 +2248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81BDB4E25BCB65E002B84E1 /* UILabel+Padding.swift in Sources */,
 				A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */,
 				A870838325960F17002AC96C /* SearchForAllLabsViewController.swift in Sources */,
 				A828402425B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift in Sources */,

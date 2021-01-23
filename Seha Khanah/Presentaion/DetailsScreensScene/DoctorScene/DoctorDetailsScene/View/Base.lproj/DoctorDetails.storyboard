@@ -50,7 +50,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="cQa-ih-HgC"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grz-kM-yg5">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grz-kM-yg5" customClass="PaddingLabel" customModule="Seha_Khanah" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="125" width="34.5" height="20"/>
                                                         <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
@@ -449,8 +449,8 @@
                         <outlet property="doctorView" destination="2Nk-La-Wj4" id="fn2-fa-dco"/>
                         <outlet property="goToLocationView" destination="UKf-Oe-ezg" id="V0V-le-15F"/>
                         <outlet property="moreAndLessLbl" destination="GY0-p9-dqM" id="Fge-ey-6k7"/>
-                        <outlet property="numberOfRaitings" destination="grz-kM-yg5" id="FsY-32-Zmi"/>
                         <outlet property="numberOfSeenLbl" destination="gr6-pp-Vkj" id="yij-Ah-Xkg"/>
+                        <outlet property="numberOfVisitorsLbl" destination="grz-kM-yg5" id="ZB5-0N-r5Q"/>
                         <outlet property="profissionalTitleLbl" destination="Dkf-gD-Y8k" id="dYV-PZ-Cvj"/>
                         <outlet property="ratingView" destination="8Qv-TJ-aw1" id="hr4-dP-8CI"/>
                         <outlet property="ratingsCollectionView" destination="8hr-WN-GVE" id="m3M-9c-wBi"/>

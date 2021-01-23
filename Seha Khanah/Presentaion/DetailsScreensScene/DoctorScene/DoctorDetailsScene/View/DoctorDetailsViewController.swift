@@ -27,6 +27,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var numberOfRaitings: UILabel!
     
+    @IBOutlet weak var numberOfVisitorsLbl: PaddingLabel!
     @IBOutlet weak var cityNameLbl: UILabel!
     @IBOutlet weak var moreAndLessLbl: UILabel!
     @IBOutlet weak var aboutDoctorViewHeight: NSLayoutConstraint!
@@ -51,7 +52,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         doctorImageView.layer.cornerRadius = doctorImageView.frame.width / 2
         doctorImageView.layer.borderColor = UIColor.gray.cgColor
         doctorImageView.layer.borderWidth = 1
-    
+        
         let moreOrLessTap = UITapGestureRecognizer(target: self, action:#selector(moreOrLessLblDidTapped(_:)))
         
         moreAndLessLbl.addGestureRecognizer(moreOrLessTap)
@@ -61,9 +62,9 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         ratingsCollectionView.dataSource = self
         setupCollectionView()
         arrayOfSavedIds = UserDefaults.standard.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
-
+        
         if (arrayOfSavedIds.contains(where: {$0 == doctorId})){
-             addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
+            addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
         }
         
         // Do any additional setup after loading the view.
@@ -76,7 +77,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: goToLocationView)
-
+        
     }
     func showDoctorDates() {
         
@@ -96,22 +97,23 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         totalRating.rating = Double(doctorDetails.rating!)!
         numberOfSeenLbl.text = doctorDetails.vistorNumber! + " Seen".localized
         doctorImageView.kf.setImage(with: URL(string: doctorDetails.photo!))
-        numberOfRaitings.text = " Overall Rating From ".localized + doctorDetails.vistorNumber! + "Visitor ".localized 
-       
-        
-        
+        //        numberOfRaitings.text = " Overall Rating From ".localized + doctorDetails.vistorNumber! + " Visitor ".localized
+        numberOfVisitorsLbl.layer.cornerRadius = 5.0
+        numberOfVisitorsLbl.clipsToBounds = true
+        numberOfVisitorsLbl.text =  " Overall Rating From ".localized + doctorDetails.vistorNumber! + " Visitor ".localized
+        numberOfVisitorsLbl.padding(2, 2, 2, 2)
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
-             doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
+            doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!
             cityNameLbl.text = doctorDetails.addressEn
             profissionalTitleLbl.text = doctorDetails.profissionalTitleEn
-
+            
             
         }else
         {
             profissionalTitleLbl.text = doctorDetails.profissionalTitleAr
-             doctorNameLbl.text = doctorDetails.doctorFirstNameAr! + " " + doctorDetails.doctorLastNameAr!
+            doctorNameLbl.text = doctorDetails.doctorFirstNameAr! + " " + doctorDetails.doctorLastNameAr!
             aboutDoctorLbl.text = doctorDetails.aboutDoctorAr
             cityNameLbl.text = doctorDetails.addressAr
             
@@ -160,19 +162,19 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBAction func addDoctorToFavoriteBtnDidTapped(_ sender: Any) {
         let defaults = UserDefaults.standard
         arrayOfSavedIds = defaults.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
-       
+        
         if (arrayOfSavedIds.contains(doctorId!)){
             arrayOfSavedIds = arrayOfSavedIds.filter(){$0 != doctorId}
             UserDefaults.standard.set(arrayOfSavedIds, forKey: "arrayOfSavedIds")
             addDoctorToFavoriteBtn.setImage(UIImage(named: "hart_border"), for: .normal)
-
+            
         }else{
             arrayOfSavedIds.append(doctorId!)
             UserDefaults.standard.set(arrayOfSavedIds, forKey: "arrayOfSavedIds")
             addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
-
+            
         }
-
+        
     }
     
     
