@@ -172,6 +172,7 @@
 		A8C1BCAB25B7A86D00E4CD05 /* OfferDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCAA25B7A86D00E4CD05 /* OfferDetailsProtocol.swift */; };
 		A8C2E72C25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */; };
 		A8C2E72E25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */; };
+		A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C4B61C25BC3ABA00E92BB3 /* Favorite.storyboard */; };
 		A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */; };
 		A8C7D22125B1015800C24023 /* MostOrderedOffersImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7D22025B1015800C24023 /* MostOrderedOffersImage.swift */; };
 		A8C8164825A733DB00690AE8 /* PharamcyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */; };
@@ -195,7 +196,6 @@
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8E3788725B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */; };
-		A8E8171925B2220F00DE29A6 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8171825B2220F00DE29A6 /* Favorite.storyboard */; };
 		A8E8171B25B2232900DE29A6 /* FavoirteContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */; };
 		A8E8172125B2253500DE29A6 /* FavoriteDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */; };
 		A8E8172225B22E6F00DE29A6 /* LabDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8172425B22E6F00DE29A6 /* LabDetails.storyboard */; };
@@ -417,6 +417,9 @@
 		A8C1BCAA25B7A86D00E4CD05 /* OfferDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsProtocol.swift; sourceTree = "<group>"; };
 		A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsInteractor.swift; sourceTree = "<group>"; };
 		A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctosPresenter.swift; sourceTree = "<group>"; };
+		A8C4B61B25BC3ABA00E92BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorite.storyboard; sourceTree = "<group>"; };
+		A8C4B61E25BC3AD200E92BB3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Favorite.strings; sourceTree = "<group>"; };
+		A8C4B62025BC3AD800E92BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Favorite.strings; sourceTree = "<group>"; };
 		A8C7D21A25B0EDD000C24023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
 		A8C7D21D25B0EE0200C24023 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
 		A8C7D21F25B0EE0500C24023 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
@@ -443,7 +446,6 @@
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfferDetails+DateAndRatingCollectionViewExtenstion.swift"; sourceTree = "<group>"; };
-		A8E8171825B2220F00DE29A6 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
 		A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoirteContainerViewController.swift; sourceTree = "<group>"; };
 		A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsViewController.swift; sourceTree = "<group>"; };
 		A8E8172325B22E6F00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LabDetails.storyboard; sourceTree = "<group>"; };
@@ -1908,7 +1910,7 @@
 		A8E8171525B221EA00DE29A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8E8171825B2220F00DE29A6 /* Favorite.storyboard */,
+				A8C4B61C25BC3ABA00E92BB3 /* Favorite.storyboard */,
 				A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */,
 			);
 			path = View;
@@ -2101,7 +2103,7 @@
 				A8761D7725B04FAB00280BE7 /* MoreTableViewCell.xib in Resources */,
 				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A89B33FA25B9DF26004B27DD /* Search.storyboard in Resources */,
-				A8E8171925B2220F00DE29A6 /* Favorite.storyboard in Resources */,
+				A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
 				A884DD86259A2BB0006D686B /* ChangeLanguage.storyboard in Resources */,
@@ -2498,6 +2500,16 @@
 				A8674A24259748DE0099E7CE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8C4B61C25BC3ABA00E92BB3 /* Favorite.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8C4B61B25BC3ABA00E92BB3 /* Base */,
+				A8C4B61E25BC3AD200E92BB3 /* ar */,
+				A8C4B62025BC3AD800E92BB3 /* en */,
+			);
+			name = Favorite.storyboard;
 			sourceTree = "<group>";
 		};
 		A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */ = {

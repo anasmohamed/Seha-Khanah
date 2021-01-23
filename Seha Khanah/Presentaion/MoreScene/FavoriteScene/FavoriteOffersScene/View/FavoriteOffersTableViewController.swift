@@ -22,7 +22,7 @@ class FavoriteOffersTableViewController: UIViewController,UITableViewDelegate,UI
         favortieOffersTableView.delegate = self
         favortieOffersTableView.dataSource = self
         setupTableView()
-        let savedDoctorsIdsArray = UserDefaults.standard.stringArray(forKey: "arrayOfSavedIds") ?? [String]()
+        let savedDoctorsIdsArray = UserDefaults.standard.stringArray(forKey: "arrayOfSavedOffersIds") ?? [String]()
         for doctorId in savedDoctorsIdsArray{
             favoriteOffersPresenter.showDoctorBy(id: doctorId,count: savedDoctorsIdsArray.count)
         }
@@ -48,11 +48,11 @@ class FavoriteOffersTableViewController: UIViewController,UITableViewDelegate,UI
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+        let storyboard = UIStoryboard.init(name: "OfferDetails", bundle: nil)
         
-        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
-        
-        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+        let showOfferDetailsViewController = storyboard.instantiateViewController(withIdentifier: "OfferDetailsViewController") as! OfferDetailsViewController
+        showOfferDetailsViewController.id = favoriteOffersPresenter.getOfferId(index: indexPath.row)
+        self.navigationController!.pushViewController(showOfferDetailsViewController, animated: true)
     }
     
     

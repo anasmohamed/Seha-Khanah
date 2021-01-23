@@ -50,7 +50,7 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
         let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
         
         let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
-        
+        showDoctorDetailsViewController.doctorId = favoriteDoctorPresenter.getDoctorId(index: indexPath.row)
         self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
     }
     

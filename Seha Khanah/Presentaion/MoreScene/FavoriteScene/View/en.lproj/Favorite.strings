@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "No Favortite Doctors"; ObjectID = "368-uq-67c"; */
+"368-uq-67c.text" = "No Favortite Doctors";
+
+/* Class = "UISegmentedControl"; 8We-TW-m6e.segmentTitles[0] = "Doctors"; ObjectID = "8We-TW-m6e"; */
+"8We-TW-m6e.segmentTitles[0]" = "Doctors";
+
+/* Class = "UISegmentedControl"; 8We-TW-m6e.segmentTitles[1] = "Offers"; ObjectID = "8We-TW-m6e"; */
+"8We-TW-m6e.segmentTitles[1]" = "Offers";
+
+/* Class = "UILabel"; text = "No Favortite Offers"; ObjectID = "yHR-5M-2tn"; */
+"yHR-5M-2tn.text" = "No Favortite Offers";

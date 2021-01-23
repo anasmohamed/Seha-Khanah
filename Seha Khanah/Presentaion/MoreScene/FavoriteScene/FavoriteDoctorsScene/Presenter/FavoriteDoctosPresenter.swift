@@ -44,6 +44,9 @@ class FavoriteDoctosPresenter {
     func returnDoctorCount() -> Int {
         return doctorDetails.count
     }
+    func getDoctorId(index:Int) -> String {
+        return doctorDetails[index].id!
+    }
     func configure(cell: SearchedResultsTableViewCellView, for index: Int) {
         
         let searchedResult = doctorDetails[index]

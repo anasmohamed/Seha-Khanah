@@ -80,8 +80,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lWz-hE-khO">
-                                <rect key="frame" x="127" y="295" width="150" height="181"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-vP-OkC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lWz-hE-khO">
+                                <rect key="frame" x="132" y="294" width="150" height="181"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-PU-vA9">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -98,17 +102,15 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-vP-OkC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cdb-vP-OkC" firstAttribute="top" secondItem="p1f-dn-UjN" secondAttribute="top" id="DCi-m3-2SG"/>
                             <constraint firstItem="p1f-dn-UjN" firstAttribute="bottom" secondItem="cdb-vP-OkC" secondAttribute="bottom" id="GxH-jg-HBJ"/>
+                            <constraint firstItem="lWz-hE-khO" firstAttribute="centerY" secondItem="3Ea-0E-mFR" secondAttribute="centerY" id="Qjo-dD-jSc"/>
                             <constraint firstItem="cdb-vP-OkC" firstAttribute="leading" secondItem="p1f-dn-UjN" secondAttribute="leading" id="hJB-94-Msg"/>
                             <constraint firstItem="p1f-dn-UjN" firstAttribute="trailing" secondItem="cdb-vP-OkC" secondAttribute="trailing" id="uNf-f7-rtR"/>
+                            <constraint firstItem="lWz-hE-khO" firstAttribute="centerX" secondItem="3Ea-0E-mFR" secondAttribute="centerX" id="wD0-WJ-eDO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p1f-dn-UjN"/>
                     </view>
