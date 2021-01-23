@@ -47,6 +47,7 @@ class MoreTableViewController: UITableViewController {
         if isUserLoggedIn{
             if indexPath.row == 5
             {
+            
                 cell.titleLbl.text = "Log out".localized
             }
             if indexPath.row != 5{

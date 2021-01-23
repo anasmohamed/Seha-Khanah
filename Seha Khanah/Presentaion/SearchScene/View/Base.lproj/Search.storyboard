@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="1368.1159420289855" y="67.633928571428569"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Main-->
         <scene sceneID="l5d-EJ-kah">
             <objects>
                 <viewController storyboardIdentifier="SearchViewController" id="OKn-8L-Dt0" customClass="SearchViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
@@ -289,7 +289,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b7a-ry-rbR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rEl-SG-JbZ"/>
+                    <navigationItem key="navigationItem" title="Main" id="rEl-SG-JbZ"/>
                     <connections>
                         <outlet property="arrowImageFour" destination="gDk-cS-brV" id="Rae-jN-Kt6"/>
                         <outlet property="arrowImageOne" destination="ISy-jf-rYk" id="hL6-Oq-hKl"/>
@@ -760,8 +760,8 @@
                                                         <rect key="frame" x="15" y="10.000000000000002" width="24" height="24.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Uo-xF-Hnk">
-                                                        <rect key="frame" x="49" y="11.666666666666627" width="113" height="21.333333333333329"/>
-                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                                        <rect key="frame" x="49.000000000000007" y="11" width="120.66666666666669" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>

@@ -43,8 +43,13 @@ class ChangeLanguageViewController: UIViewController {
     func setupLanguageBtns() {
         languageBtnsGroup.addButtons([englishRadioButton, arabicRadioButton])
         languageBtnsGroup.delegate = self
-        
-        languageBtnsGroup.selectedButtons = [englishRadioButton]
+        if MOLHLanguage.currentAppleLanguage() == "en"
+        {
+            languageBtnsGroup.selectedButtons = [englishRadioButton]
+        }else{
+            languageBtnsGroup.selectedButtons = [arabicRadioButton]
+            
+        }
         englishRadioButton.style = .square
         arabicRadioButton.style = .square
         
@@ -54,13 +59,11 @@ class ChangeLanguageViewController: UIViewController {
         if choosenLangeuageLbl.text == "English"
         {
             MOLH.setLanguageTo("en")
-            UIView.appearance().semanticContentAttribute = .forceLeftToRight
         }else{
             MOLH.setLanguageTo("ar")
-            UIView.appearance().semanticContentAttribute = .forceRightToLeft
             
         }
-     
+        
         MOLH.reset()
     }
     

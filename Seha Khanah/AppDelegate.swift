@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable   {
       UINavigationBar.appearance().tintColor = UIColor.white
       UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         GIDSignIn.sharedInstance().clientID = "151320045397-sotvam4tirfvpncfah1n2gjrlv1ak4gi.apps.googleusercontent.com"
-   MOLHLanguage.setDefaultLanguage("ar")
+        MOLHLanguage.setDefaultLanguage("ar")
         MOLH.shared.activate(true)
         MOLH.shared.specialKeyWords = ["Cancel","Done"]
         reset()

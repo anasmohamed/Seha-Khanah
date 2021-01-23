@@ -23,10 +23,10 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var emailBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
-//        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
-//        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
-//        arrowImageFour.image = arrowImageFour.image?.flipIfNeeded()
+        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
+        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
+        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
+        arrowImageFour.image = arrowImageFour.image?.flipIfNeeded()
         emailBtn.layer.cornerRadius = emailBtn.frame.width / 2
         let searchByNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByNameTab(_:)))
         let searchBySpecialtyTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchBySpecialtyTab(_:)))
@@ -43,12 +43,13 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.items?[1].title = "Offers".localized
-        
+        self.navigationItem.title = "Main".localized
+
     }
     @objc func handleSearchByNameTab(_ sender: UITapGestureRecognizer? = nil) {
         
         let searchByNameViewController = storyboard?.instantiateViewController(withIdentifier: "SearchByNameViewController") as! SearchByNameViewController
-        
+       
         self.navigationController!.pushViewController(searchByNameViewController, animated: true)
         
     }

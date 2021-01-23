@@ -21,9 +21,9 @@ class SearchForAllLabsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
-//        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
-//        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
+        arrowImageOne.image = arrowImageOne.image?.flipIfNeeded()
+        arrowImageTwo.image = arrowImageTwo.image?.flipIfNeeded()
+        arrowImageThree.image = arrowImageThree.image?.flipIfNeeded()
         let searchByLabNameTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByLabNameTab(_:)))
         let searchByRegionTab = UITapGestureRecognizer(target: self, action: #selector(self.handleSearchByRegionTab(_:)))
         let showAllPharmaciesTab = UITapGestureRecognizer(target: self, action: #selector(self.handleShowAllLabsTab(_:)))
@@ -38,6 +38,7 @@ class SearchForAllLabsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationItem.title = "Search For Labs".localized
     }
     
     @objc func handleSearchByLabNameTab(_ sender: UITapGestureRecognizer? = nil) {

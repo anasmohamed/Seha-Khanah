@@ -1,10 +1,10 @@
 /* 
-  Localizable.strings
-  Seha Khanah
-
-  Created by Anas on 12/26/20.
-  Copyright © 2020 Anas. All rights reserved.
-*/
+ Localizable.strings
+ Seha Khanah
+ 
+ Created by Anas on 12/26/20.
+ Copyright © 2020 Anas. All rights reserved.
+ */
 "Offers" = "Offers";
 
 "Change Language" = "Change Language";
@@ -46,5 +46,15 @@
 "Favorite" = "Favorite";
 
 "Discount " = "Discount ";
+
 "Visitor " = "Visitor ";
+
 " Visitor " = " Visitor ";
+
+"Main" = "Main";
+
+"Choose Specialty" = "Choose Specialty";
+
+"Search For Pharmacies"; = "Search For Pharmacies";
+
+"Search For Labs" = "Search For Labs";

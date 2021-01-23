@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MOLH
 class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate,SearchViewProtocol,UISearchBarDelegate {
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
@@ -31,6 +31,7 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+     
         
     }
     override func viewDidAppear(_ animated: Bool) {
