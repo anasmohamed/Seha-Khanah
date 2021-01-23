@@ -27,6 +27,11 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
         
         setupTableView()
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if areaId != nil{
             labPresenter.searchForLabBy(araeId: areaId!)
         }
@@ -35,8 +40,6 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
             labPresenter.getAllLabs()
         }
     }
-    
-    
     
     func setupTableView() {
         searchByLabNameTableView.register(UINib(nibName: "SearchByLabNameTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchByLabNameTableViewCell")
@@ -82,18 +85,18 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     
     func hideIndicator() {
         indicator.stopAnimating()
-
+        
     }
     
     func showError(error: String) {
         indicator.stopAnimating()
-
+        
         
     }
     
     func showNoDataFoundImage() {
         indicator.stopAnimating()
-
+        
         searchByLabNameTableView.reloadData()
         
         noDataFoundStackView.isHidden = false
@@ -104,7 +107,7 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     
     func labsResults() {
         indicator.stopAnimating()
-
+        
         searchByLabNameTableView.reloadData()
         
     }

@@ -39,9 +39,6 @@ class OffersViewController: UIViewController {
         setupMostOrderedOffersTableView()
         
         
-        presenter.getOffersCategories()
-        mostOrderedOffersPresenter.getMostOrderedOffers()
-        mostOrderedOffersPresenter.getMostOrderedOffersImage()
         collectionViewLayoutInsets()
         offersCategoriesCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         //in cellForItemAtIndexPath
@@ -49,6 +46,9 @@ class OffersViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        presenter.getOffersCategories()
+        mostOrderedOffersPresenter.getMostOrderedOffers()
+        mostOrderedOffersPresenter.getMostOrderedOffersImage()
     }
     
     @IBAction func showAllCategoriesBtnDidTapped(_ sender: Any) {

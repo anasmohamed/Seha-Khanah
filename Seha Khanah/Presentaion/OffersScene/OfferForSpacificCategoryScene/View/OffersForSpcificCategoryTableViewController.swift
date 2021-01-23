@@ -17,13 +17,17 @@ class OffersForSpcificCategoryTableViewController: UITableViewController,OffersF
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = OffersForSpcificCategoryPresenter(view:self)
-        presenter.getOffersForSpcificCategory(id: id!)
-        setupTableView() 
+        setupTableView()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.getOffersForSpcificCategory(id: id!)
+
     }
     func setupTableView() {
            tableView.register(UINib(nibName: "MostOrderedOffersTableViewCell", bundle: nil), forCellReuseIdentifier: "MostOrderedOffersTableViewCell")

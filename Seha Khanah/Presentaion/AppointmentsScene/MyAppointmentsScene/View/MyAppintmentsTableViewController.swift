@@ -21,12 +21,9 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         self.navigationItem.title = "Appointments".localized
         myAppointmentsPresenter = MyAppointmentsPresenter(view: self)
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
-        if isUserLoggedIn {
-            myAppointmentsPresenter.getMyAppintments()
-            setupTableView()
-            tableView.delegate = self
-            tableView.dataSource = self
-        }
+        setupTableView()
+        tableView.delegate = self
+        tableView.dataSource = self
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,7 +31,13 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if isUserLoggedIn {
+            myAppointmentsPresenter.getMyAppintments()
+            
+        }
+    }
     
     // MARK: - Table view data source
     func setupTableView() {

@@ -23,13 +23,10 @@ class MyOffersTableViewController: UIViewController,UITableViewDataSource,UITabl
         
         presenter = UserOffersReservationsPresenter(view:self)
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
-        if isUserLoggedIn {
-            presenter.getMyOffers()
-            setupTableView()
-            tableView.delegate = self
-            tableView.dataSource = self
-        }
         
+        setupTableView()
+        tableView.delegate = self
+        tableView.dataSource = self
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -37,7 +34,13 @@ class MyOffersTableViewController: UIViewController,UITableViewDataSource,UITabl
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if isUserLoggedIn {
+            presenter.getMyOffers()
+            
+        }
+    }
     // MARK: - Table view data source
     func setupTableView() {
         tableView.register(UINib(nibName: "MyAppointmentsTableViewCell", bundle: nil), forCellReuseIdentifier: "MyAppointmentsTableViewCell")
