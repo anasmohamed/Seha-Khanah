@@ -50,7 +50,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case verifyUser(phonenumber:String,userType:String,code:Int)
     case userOffersReservations
-    
+    case offersForSpecificCategory(id:String)
     
     var path: String {
         switch self {
@@ -120,6 +120,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.verifyUser
         case .userOffersReservations:
             return NetworkingConstants.userOffersReservations
+        case .offersForSpecificCategory:
+            return NetworkingConstants.offersForSpecificCategory
         }
     }
     
@@ -148,7 +150,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showOffer,
              .getOffresForSpacificCategory,
              .showOfferDetails,
-             .userOffersReservations:
+             .userOffersReservations,
+             .offersForSpecificCategory:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -227,7 +230,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.verifyUserPhoneNumberPrameter] = phonenumber
             body[NetworkingConstants.verifyUserUserTypePrameter] = userType
             body[NetworkingConstants.verifyUserCodePrameter] = code
-
+            
         default:
             print("Empty request body")
         }
@@ -260,6 +263,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.showPharmacyDetails] = id
         case let .showOfferDetails(id):
             params[NetworkingConstants.showOfferDetails] = id
+        case let .offersForSpecificCategory(id):
+            params[NetworkingConstants.offersForSpecificCategory] = id
         case let .doctorReservation(name, email, phonenumber, bookingDate, doctorId, checkbox):
             params[NetworkingConstants.reservationNameParameter] = name
             params[NetworkingConstants.reservationEmailParameter] = email
@@ -384,6 +389,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             let showOfferDetailsParamString = params[NetworkingConstants.showOfferDetails]!
             urlRequest = URLRequest(url: URL(string: showOfferDetailsUrlString + (showOfferDetailsParamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .offersForSpecificCategory:
+            let offersForSpecificCategoryUrlString = (urlRequest.url?.absoluteString)!
+            
+            let soffersForSpecificCategoryParamString = params[NetworkingConstants.offersForSpecificCategory]!
+            urlRequest = URLRequest(url: URL(string: offersForSpecificCategoryUrlString + (soffersForSpecificCategoryParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         }
     }

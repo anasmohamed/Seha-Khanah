@@ -43,7 +43,9 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mostOrderedOffersPresenter.getMostOrderedOfferCount()
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MostOrderedOffersTableViewCell", for: indexPath) as! MostOrderedOffersTableViewCell
         cell.leftInset = 20

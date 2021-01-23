@@ -119,5 +119,7 @@ class NetworkingConstants {
 
     static let userOffersReservations = "api/user/offer/booking"
     
+    static let offersForSpecificCategory = "api/offer-category/"
+
 
 }

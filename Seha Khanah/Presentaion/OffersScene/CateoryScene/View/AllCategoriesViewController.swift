@@ -10,7 +10,7 @@ import UIKit
 import DropDownTableView
 class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesProtocol{
     
-    
+    var isShowAll = false
     var presenter : AllCategoriesPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesPro
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.getOffersCategories()
-
+        
     }
     override func numberOfRows(in tableView: UITableView) -> Int {
         return presenter.getOffersCategoriesCount()

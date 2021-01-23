@@ -173,6 +173,11 @@
 		A8C2E72C25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */; };
 		A8C2E72E25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */; };
 		A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C4B61C25BC3ABA00E92BB3 /* Favorite.storyboard */; };
+		A8C4B62425BC550B00E92BB3 /* OfferSubCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C4B62325BC550B00E92BB3 /* OfferSubCategory.storyboard */; };
+		A8C4B62625BC593900E92BB3 /* OfferSubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62525BC593900E92BB3 /* OfferSubCategoryViewController.swift */; };
+		A8C4B62A25BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62925BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift */; };
+		A8C4B62C25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62B25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift */; };
+		A8C4B62E25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62D25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift */; };
 		A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C7D21B25B0EDD000C24023 /* MyAppointmentsTableViewCell.xib */; };
 		A8C7D22125B1015800C24023 /* MostOrderedOffersImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C7D22025B1015800C24023 /* MostOrderedOffersImage.swift */; };
 		A8C8164825A733DB00690AE8 /* PharamcyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */; };
@@ -420,6 +425,11 @@
 		A8C4B61B25BC3ABA00E92BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorite.storyboard; sourceTree = "<group>"; };
 		A8C4B61E25BC3AD200E92BB3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Favorite.strings; sourceTree = "<group>"; };
 		A8C4B62025BC3AD800E92BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Favorite.strings; sourceTree = "<group>"; };
+		A8C4B62325BC550B00E92BB3 /* OfferSubCategory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfferSubCategory.storyboard; sourceTree = "<group>"; };
+		A8C4B62525BC593900E92BB3 /* OfferSubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryViewController.swift; sourceTree = "<group>"; };
+		A8C4B62925BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryInteractor.swift; sourceTree = "<group>"; };
+		A8C4B62B25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryPresenter.swift; sourceTree = "<group>"; };
+		A8C4B62D25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryProtocol.swift; sourceTree = "<group>"; };
 		A8C7D21A25B0EDD000C24023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
 		A8C7D21D25B0EE0200C24023 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
 		A8C7D21F25B0EE0500C24023 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
@@ -885,6 +895,7 @@
 		A83D6EAA258A206300186693 /* OffersScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8C4B62125BC54C000E92BB3 /* OfferSubCategoriesScene */,
 				A828401D25B77B1B000F6B19 /* OfferForSpacificCategoryScene */,
 				A8965F462591160A00C504BA /* OffersScene */,
 				A8965F422591135E00C504BA /* CateoryScene */,
@@ -1812,6 +1823,42 @@
 			path = interactor;
 			sourceTree = "<group>";
 		};
+		A8C4B62125BC54C000E92BB3 /* OfferSubCategoriesScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8C4B62825BC59C100E92BB3 /* Interactor */,
+				A8C4B62725BC59B700E92BB3 /* Presenter */,
+				A8C4B62225BC54E900E92BB3 /* View */,
+			);
+			path = OfferSubCategoriesScene;
+			sourceTree = "<group>";
+		};
+		A8C4B62225BC54E900E92BB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C4B62325BC550B00E92BB3 /* OfferSubCategory.storyboard */,
+				A8C4B62525BC593900E92BB3 /* OfferSubCategoryViewController.swift */,
+				A8C4B62D25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8C4B62725BC59B700E92BB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8C4B62B25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8C4B62825BC59C100E92BB3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8C4B62925BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A8C8164325A728B900690AE8 /* PharmacyDetailsScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -2125,6 +2172,7 @@
 				A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */,
 				A8963B7225B4F64300449E7B /* A-Google.ttf in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
+				A8C4B62425BC550B00E92BB3 /* OfferSubCategory.storyboard in Resources */,
 				A828402225B77B89000F6B19 /* OffersForSpecificCategory.storyboard in Resources */,
 				A8E8172925B2393800DE29A6 /* BookingDatesCollectionViewCell.xib in Resources */,
 				A80DD8D725A1327300FD2CF1 /* LabDayDates.storyboard in Resources */,
@@ -2218,6 +2266,7 @@
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
 				A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */,
 				A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */,
+				A8C4B62E25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift in Sources */,
 				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
 				A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */,
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
@@ -2239,6 +2288,7 @@
 				A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */,
 				A8C1BCA925B7A18B00E4CD05 /* OfferDetails.swift in Sources */,
 				A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */,
+				A8C4B62C25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift in Sources */,
 				A88C23DF2593547A002AA4F7 /* SearchBySpecialtyModel.swift in Sources */,
 				A8D1A22C25A3C2A5000DD0AD /* DoctorDetailsPresenter.swift in Sources */,
 				A877D27025B622E800248E95 /* FavoriteOffersTableViewController.swift in Sources */,
@@ -2277,6 +2327,7 @@
 				A806CB09259E2AA700D1764C /* LabDetailsPresenter.swift in Sources */,
 				A8C8164825A733DB00690AE8 /* PharamcyDetailsViewController.swift in Sources */,
 				A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */,
+				A8C4B62625BC593900E92BB3 /* OfferSubCategoryViewController.swift in Sources */,
 				A8567731259247A30086CD78 /* SearchBySpecialtyInteractor.swift in Sources */,
 				A870839125962F19002AC96C /* SearchByLabNameTableViewCellProtocol.swift in Sources */,
 				A828400B25B7508F000F6B19 /* AllCategoriesInteractor.swift in Sources */,
@@ -2295,6 +2346,7 @@
 				A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */,
 				A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */,
 				A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */,
+				A8C4B62A25BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift in Sources */,
 				A851FD7A25979CB00036790B /* AboutApp.swift in Sources */,
 				A806CB03259E1E5800D1764C /* LabDate.swift in Sources */,
 				A8D1A23025A3C6AA000DD0AD /* DoctorDetails.swift in Sources */,
