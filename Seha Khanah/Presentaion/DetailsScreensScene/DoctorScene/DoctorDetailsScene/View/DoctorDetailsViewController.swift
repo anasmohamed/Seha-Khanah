@@ -48,6 +48,10 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         presenter = DoctorDetailsPresenter(view:self)
         presenter.showDoctorDetails(id: doctorId!)
         aboutDoctorLbl.numberOfLines = 1
+        doctorImageView.layer.cornerRadius = doctorImageView.frame.width / 2
+        doctorImageView.layer.borderColor = UIColor.gray.cgColor
+        doctorImageView.layer.borderWidth = 1
+    
         let moreOrLessTap = UITapGestureRecognizer(target: self, action:#selector(moreOrLessLblDidTapped(_:)))
         
         moreAndLessLbl.addGestureRecognizer(moreOrLessTap)
@@ -92,7 +96,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         totalRating.rating = Double(doctorDetails.rating!)!
         numberOfSeenLbl.text = doctorDetails.vistorNumber! + " Seen".localized
         doctorImageView.kf.setImage(with: URL(string: doctorDetails.photo!))
-        numberOfRaitings.text = "Overall Rating From ".localized + doctorDetails.vistorNumber! + "Visitor".localized
+        numberOfRaitings.text = " Overall Rating From ".localized + doctorDetails.vistorNumber! + "Visitor ".localized 
        
         
         

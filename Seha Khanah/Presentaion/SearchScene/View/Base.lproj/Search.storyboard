@@ -517,7 +517,7 @@
         <scene sceneID="vxo-ka-7xi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T31-ZY-ipD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="H9r-VO-dzN"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-1" id="H9r-VO-dzN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cdY-NR-xfe">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1186,7 +1186,7 @@
         <scene sceneID="lYB-go-xUc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcq-NQ-fKm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" id="3fN-iN-2Oh"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="3fN-iN-2Oh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FJK-vh-Rq4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1250,8 +1250,10 @@
         <image name="hom_row" width="72" height="74"/>
         <image name="lab_ic" width="72" height="74"/>
         <image name="logo" width="266.66665649414062" height="266.66665649414062"/>
+        <image name="more" width="24" height="24"/>
         <image name="pharmaci_ic" width="72" height="74"/>
         <image name="search" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="search-1" width="30" height="30"/>
         <image name="search_ic" width="24" height="24.666666030883789"/>
         <image name="tag" width="30" height="30"/>
     </resources>
