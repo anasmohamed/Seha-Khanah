@@ -24,13 +24,13 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8w-9K-YxJ">
                                 <rect key="frame" x="0.0" y="97" width="414" height="765"/>
                                 <connections>
-                                    <segue destination="da6-VD-nmN" kind="embed" id="MI7-R1-KkB"/>
+                                    <segue destination="2A3-lJ-HpR" kind="embed" id="GaC-x6-bHI"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcu-Rc-Luu">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <connections>
-                                    <segue destination="pNT-HW-E6d" kind="embed" id="Ko4-qK-ccz"/>
+                                    <segue destination="cNn-7Y-BWw" kind="embed" id="nY1-mx-zV9"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-yK-GFD">
@@ -102,72 +102,26 @@
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="-1.3392857142857142"/>
         </scene>
-        <!--My Offers Table View Controller-->
-        <scene sceneID="FBV-7M-KdW">
-            <objects>
-                <viewController storyboardIdentifier="MyOffersTableViewController" id="da6-VD-nmN" customClass="MyOffersTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V1v-oq-UdA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="DqE-dC-bNl">
-                                <rect key="frame" x="188.5" y="364" width="37" height="37"/>
-                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cB4-rC-mQb">
-                                <rect key="frame" x="0.0" y="44" width="414" height="721"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyAppointmentsTableViewCell" id="GQP-2K-zFt">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQP-2K-zFt" id="Q3F-UN-rdU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="DqE-dC-bNl" firstAttribute="centerX" secondItem="V1v-oq-UdA" secondAttribute="centerX" id="01f-93-WYB"/>
-                            <constraint firstItem="DqE-dC-bNl" firstAttribute="centerY" secondItem="V1v-oq-UdA" secondAttribute="centerY" id="YIj-JI-CQm"/>
-                            <constraint firstItem="cB4-rC-mQb" firstAttribute="top" secondItem="E1a-bK-LKp" secondAttribute="top" id="cih-j7-rvc"/>
-                            <constraint firstItem="E1a-bK-LKp" firstAttribute="bottom" secondItem="cB4-rC-mQb" secondAttribute="bottom" id="lPs-3s-NbV"/>
-                            <constraint firstItem="E1a-bK-LKp" firstAttribute="trailing" secondItem="cB4-rC-mQb" secondAttribute="trailing" id="sRI-AP-ky8"/>
-                            <constraint firstItem="cB4-rC-mQb" firstAttribute="leading" secondItem="E1a-bK-LKp" secondAttribute="leading" id="w7o-lN-Of4"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="E1a-bK-LKp"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="cB4-rC-mQb" id="FPL-J2-scz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="257-IC-dyl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1706" y="687"/>
-        </scene>
         <!--My Appintments Table View Controller-->
-        <scene sceneID="Kqi-h2-PO3">
+        <scene sceneID="F3n-A0-h18">
             <objects>
-                <viewController storyboardIdentifier="MyAppintmentsTableViewController" id="pNT-HW-E6d" customClass="MyAppintmentsTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t4Y-3L-cub">
+                <viewController storyboardIdentifier="MyAppintmentsTableViewController" id="cNn-7Y-BWw" customClass="MyAppintmentsTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w9m-tI-9vf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="yG2-SX-dyD">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-CL-gmM">
                                 <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
-                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1im-tg-zRo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ysc-NG-GPh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="730"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyAppointmentsTableViewCell" id="auD-2q-wgI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uFW-OJ-nLE">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="auD-2q-wgI" id="fK8-Z2-kD9">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uFW-OJ-nLE" id="9Yc-Bg-azb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -177,23 +131,70 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1im-tg-zRo" firstAttribute="top" secondItem="Wlb-eR-MAu" secondAttribute="top" id="2KE-3V-8cv"/>
-                            <constraint firstItem="yG2-SX-dyD" firstAttribute="centerX" secondItem="t4Y-3L-cub" secondAttribute="centerX" id="63d-ma-OTY"/>
-                            <constraint firstItem="Wlb-eR-MAu" firstAttribute="bottom" secondItem="1im-tg-zRo" secondAttribute="bottom" id="9Px-1W-cxh"/>
-                            <constraint firstItem="yG2-SX-dyD" firstAttribute="centerY" secondItem="t4Y-3L-cub" secondAttribute="centerY" id="STP-RL-gRg"/>
-                            <constraint firstItem="1im-tg-zRo" firstAttribute="leading" secondItem="Wlb-eR-MAu" secondAttribute="leading" id="X1x-hJ-Ilt"/>
-                            <constraint firstItem="Wlb-eR-MAu" firstAttribute="trailing" secondItem="1im-tg-zRo" secondAttribute="trailing" id="XGd-Mx-MGj"/>
+                            <constraint firstItem="Ysc-NG-GPh" firstAttribute="trailing" secondItem="noT-zv-rTj" secondAttribute="trailing" id="Drg-DM-V6o"/>
+                            <constraint firstItem="Ysc-NG-GPh" firstAttribute="leading" secondItem="noT-zv-rTj" secondAttribute="leading" id="Kw7-8G-al0"/>
+                            <constraint firstItem="noT-zv-rTj" firstAttribute="bottom" secondItem="Ysc-NG-GPh" secondAttribute="bottom" id="PMQ-9c-Let"/>
+                            <constraint firstItem="Ysc-NG-GPh" firstAttribute="top" secondItem="noT-zv-rTj" secondAttribute="top" id="bBh-ft-MwC"/>
+                            <constraint firstItem="Lk4-CL-gmM" firstAttribute="centerY" secondItem="w9m-tI-9vf" secondAttribute="centerY" id="dQO-hI-JJ4"/>
+                            <constraint firstItem="Lk4-CL-gmM" firstAttribute="centerX" secondItem="w9m-tI-9vf" secondAttribute="centerX" id="g6M-m5-qCx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Wlb-eR-MAu"/>
+                        <viewLayoutGuide key="safeArea" id="noT-zv-rTj"/>
                     </view>
                     <connections>
-                        <outlet property="indicator" destination="yG2-SX-dyD" id="Uvg-nf-unW"/>
-                        <outlet property="tableView" destination="1im-tg-zRo" id="hh3-Cp-NeL"/>
+                        <outlet property="indicator" destination="Lk4-CL-gmM" id="gHu-cg-vga"/>
+                        <outlet property="tableView" destination="Ysc-NG-GPh" id="8RH-AA-LGU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDQ-kY-ndK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a05-Cf-4Xs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="691"/>
+            <point key="canvasLocation" x="-41" y="690"/>
+        </scene>
+        <!--My Offers Table View Controller-->
+        <scene sceneID="FKO-1i-4g4">
+            <objects>
+                <viewController storyboardIdentifier="MyOffersTableViewController" id="2A3-lJ-HpR" customClass="MyOffersTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M2e-WK-dhY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Job-Gw-Lsb">
+                                <rect key="frame" x="188.5" y="364" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gLB-qX-QWY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="721"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Hc0-bi-OIn">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hc0-bi-OIn" id="XAg-Sl-HpT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Job-Gw-Lsb" firstAttribute="centerX" secondItem="M2e-WK-dhY" secondAttribute="centerX" id="9c6-5M-5ir"/>
+                            <constraint firstItem="6wB-Qm-Vfo" firstAttribute="bottom" secondItem="gLB-qX-QWY" secondAttribute="bottom" id="Nkq-y7-c92"/>
+                            <constraint firstItem="6wB-Qm-Vfo" firstAttribute="trailing" secondItem="gLB-qX-QWY" secondAttribute="trailing" id="aPQ-Kj-ZF4"/>
+                            <constraint firstItem="gLB-qX-QWY" firstAttribute="leading" secondItem="6wB-Qm-Vfo" secondAttribute="leading" id="h7u-f8-RgN"/>
+                            <constraint firstItem="Job-Gw-Lsb" firstAttribute="centerY" secondItem="M2e-WK-dhY" secondAttribute="centerY" id="oaV-qQ-RZa"/>
+                            <constraint firstItem="gLB-qX-QWY" firstAttribute="top" secondItem="6wB-Qm-Vfo" secondAttribute="top" id="rRP-xP-uQ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6wB-Qm-Vfo"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="Job-Gw-Lsb" id="Oru-Ww-Rja"/>
+                        <outlet property="tableView" destination="gLB-qX-QWY" id="Crf-yD-vEK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3b-BC-AsJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="687"/>
         </scene>
     </scenes>
     <resources>

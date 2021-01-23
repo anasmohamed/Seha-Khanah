@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MOLH
 class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,PharmacyOffersViewProtocol {
 
     @IBOutlet weak var indicator: UIActivityIndicatorView!
@@ -28,6 +28,14 @@ class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITa
       
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if UserDefaults.standard.string(forKey: "lang") == "ar"
+        {
+            MOLH.setLanguageTo("ar")
+        }else{
+            MOLH.setLanguageTo("en")
+
+        }
+        
         pharmacyOffersPresenter.getPharmacyOffers()
 
     }

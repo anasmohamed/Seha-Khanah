@@ -9,7 +9,6 @@
 import UIKit
 import Cosmos
 import Kingfisher
-import Localize
 class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewCellView {
     
     

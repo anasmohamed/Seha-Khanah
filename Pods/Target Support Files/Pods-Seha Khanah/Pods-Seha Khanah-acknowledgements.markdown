@@ -834,11 +834,11 @@ SOFTWARE.
 
 
 
-## Localize
+## MBRadioCheckboxButton
 
 MIT License
 
-Copyright (c) 2016
+Copyright (c) 2018 Swifty-iOS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -859,11 +859,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## MBRadioCheckboxButton
+## MOLH
 
 MIT License
 
-Copyright (c) 2018 Swifty-iOS
+Copyright (c) 2017 Moath othman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

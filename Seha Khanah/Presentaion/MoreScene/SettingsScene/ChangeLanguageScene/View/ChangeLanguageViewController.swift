@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Localize
 import MBRadioCheckboxButton
-
+import MOLH
 class ChangeLanguageViewController: UIViewController {
     
     @IBOutlet weak var choosenLangeuageLbl: UILabel!
@@ -24,8 +23,8 @@ class ChangeLanguageViewController: UIViewController {
         super.viewDidLoad()
         saveBtn.layer.cornerRadius = 10
         self.navigationItem.title = "Change Language".localized
-              
-
+        
+        
         // corner radius
         chosenLanguageView.layer.cornerRadius = 10
         
@@ -51,20 +50,40 @@ class ChangeLanguageViewController: UIViewController {
         
     }
     @IBAction func saveBtnDidTapped(_ sender: Any) {
-    
-        Localize.update(language: "ar")
-//       if LocalizationSystem.sharedInstance.getLanguage() == "ar" {
-//            LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
-//            UIView.appearance().semanticContentAttribute = .forceLeftToRight
-//        } else {
-//            LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
-//            UIView.appearance().semanticContentAttribute = .forceRightToLeft
-//        }
-//
-//        MOLH.setLanguageTo(LocalizationSystem.sharedInstance.getLanguage())
-//        MOLH.reset()
+        
+        //        if choosenLangeuageLbl.text == "English"
+        //        {
+        //            MOLH.setLanguageTo("en")
+        //            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        //            UserDefaults.standard.set("en", forKey: "lang")
+        //        }else{
+        //            UserDefaults.standard.set("ar", forKey: "lang")
+        //            MOLH.setLanguageTo("ar")
+        //            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        //
+        //        }
+        if choosenLangeuageLbl.text == "English"
+        {
+            LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        }else{
+            LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        }
+        
+        
+      
+        //
+        //        if  {
+        //             LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
+        //             UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        //         } else {
+        //             LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
+        //             UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        //         }
+        MOLH.reset()
     }
-  
+    
 }
 extension ChangeLanguageViewController: RadioButtonDelegate {
     func radioButtonDidSelect(_ button: RadioButton) {

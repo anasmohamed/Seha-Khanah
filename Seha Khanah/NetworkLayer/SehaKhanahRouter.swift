@@ -172,7 +172,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
         switch self {
         case .booking,.updateUser,.userOffersReservations:
             let token = UserDefaults.standard.string(forKey: "token")
-            httpHeaders.add(name: "Authorization", value: "Bearer \(token)")
+            print("token \(token)")
+            httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
+            httpHeaders.add(name: "Content-Type", value:"application/X-Access-Token")
         //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
         default:
             print("Empty request headers")

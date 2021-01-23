@@ -11,8 +11,9 @@ import CoreData
 import UIKit
 import FBSDKCoreKit
 import GoogleSignIn
+import MOLH
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate  {
+class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable   {
 
 
     var window: UIWindow?
@@ -27,7 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
       UINavigationBar.appearance().tintColor = UIColor.white
       UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         GIDSignIn.sharedInstance().clientID = "151320045397-sotvam4tirfvpncfah1n2gjrlv1ak4gi.apps.googleusercontent.com"
-   
+   MOLHLanguage.setDefaultLanguage("ar")
+        MOLH.shared.activate(true)
+        MOLH.shared.specialKeyWords = ["Cancel","Done"]
+        reset()
         return true
     }
     func application(
@@ -46,7 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
 
     }
     
-
+    func reset() {
+        let rootViewController: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+        let story = UIStoryboard(name: "Search", bundle: nil)
+        rootViewController.rootViewController = story.instantiateViewController(withIdentifier: "TabBar")
+    }
 
 //    // MARK: UISceneSession Lifecycle
 //

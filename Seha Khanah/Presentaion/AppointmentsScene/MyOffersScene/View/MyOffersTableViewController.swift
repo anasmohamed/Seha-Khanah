@@ -10,6 +10,7 @@ import UIKit
 
 class MyOffersTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate ,UserOffersReservationsProtocol{
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     
     
@@ -70,20 +71,28 @@ class MyOffersTableViewController: UIViewController,UITableViewDataSource,UITabl
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
     }
     
-    func getMyOffersSuccess() {
+    func getMyAppointmentsSuccess() {
         
     }
     
     func showError(error: String) {
+        indicator.stopAnimating()
         
     }
+    func getMyOffersSuccess() {
+        indicator.stopAnimating()
+        
+        tableView.reloadData()
+    }
+    
+    
     
     
 }

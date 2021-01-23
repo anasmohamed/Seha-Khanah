@@ -15,7 +15,7 @@ target 'Seha Khanah' do
     pod 'SDWebImage', '~> 5.0'
     pod 'Kingfisher', '~> 5.0'
     pod 'Cosmos', '~> 23.0'
-#    pod 'MOLH'
+    pod 'MOLH'
     pod 'ImageSlideshow', '~> 1.9.0'
     pod "ImageSlideshow/Kingfisher"
     pod 'moa', '~> 12.0'
@@ -25,6 +25,6 @@ target 'Seha Khanah' do
     pod 'ReachabilitySwift'
     pod 'DropDownTableView/Swift'
 #    pod 'Localize-Swift', '~> 3.2'
-    pod 'Localize' , '~> 2.3.0'
+#    pod 'Localize' , '~> 2.3.0'
 
 end

@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "058D00F65CC7C4F903019DA4D54C0FE2"
-               BuildableName = "Localize.framework"
-               BlueprintName = "Localize"
+               BlueprintIdentifier = "13E17D11090C69C55E1CC5C52E359A6A"
+               BuildableName = "MOLH.framework"
+               BlueprintName = "MOLH"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
