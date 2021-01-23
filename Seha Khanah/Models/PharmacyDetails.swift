@@ -24,6 +24,8 @@ class PharmacyDetails: Codable {
     var aboutEn: String?
     var addressAr:String?
     var addressEn:String?
+    var lat : String?
+    var lng:String?
     
     init(){
         
@@ -44,6 +46,8 @@ class PharmacyDetails: Codable {
         self.aboutEn = data["pharmacy"]["about_en"].stringValue
         self.addressAr = data["pharmacy"]["address_ar"].stringValue
         self.addressEn = data["pharmacy"]["address_en"].stringValue
+        self.lat = data["pharmacy"]["lat"].stringValue
+        self.lng = data["pharmacy"]["lng"].stringValue
 
         
     }

@@ -45,6 +45,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var addDoctorToFavoriteBtn: UIButton!
     
     var doctorId : String?
+    var lat : String?
+    var lng:String?
     var presenter : DoctorDetailsPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +71,9 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         if (arrayOfSavedIds.contains(where: {$0 == doctorId})){
             addDoctorToFavoriteBtn.setImage(UIImage(named: "heart_solid"), for: .normal)
         }
+        let goToLocationTap = UITapGestureRecognizer(target: self, action: #selector(self.handleGoToLocationTab(_:)))
         
+        goToLocationView.addGestureRecognizer(goToLocationTap)
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -94,10 +98,31 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     func hideIndicator() {
         
     }
-    
+    @objc func handleGoToLocationTab(_ sender: UITapGestureRecognizer? = nil) {
+        
+        openGoogleMap(lat: lat ?? "", lng: lng ?? "")
+    }
+    func openGoogleMap(lat:String,lng: String) {
+        let latDouble = Double(lat)
+        let longDouble = Double(lng)
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {  //if phone has an app
+            
+            if let url = URL(string: "comgooglemaps-x-callback://?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                UIApplication.shared.open(url, options: [:])
+            }}
+        else {
+            //Open in browser
+            if let urlDestination = URL.init(string: "https://www.google.co.in/maps/dir/?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                UIApplication.shared.open(urlDestination)
+            }
+        }
+        
+    }
     func showDoctorDetails(doctorDetails: DoctorDetails) {
         watingTimeLbl.text = doctorDetails.waitingTime
         costLbl.text = doctorDetails.price
+        lat = doctorDetails.lat
+        lng = doctorDetails.lng
         totalRating.rating = Double(doctorDetails.rating!)!
         numberOfSeenLbl.text = doctorDetails.vistorNumber! + " Seen".localized
         doctorImageView.kf.setImage(with: URL(string: doctorDetails.photo!))
