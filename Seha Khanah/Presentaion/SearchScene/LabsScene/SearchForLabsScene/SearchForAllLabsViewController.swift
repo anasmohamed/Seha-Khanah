@@ -36,7 +36,9 @@ class SearchForAllLabsViewController: UIViewController {
     
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
     @objc func handleSearchByLabNameTab(_ sender: UITapGestureRecognizer? = nil) {
         

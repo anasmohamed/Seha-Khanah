@@ -24,11 +24,14 @@ class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         regionPresenter = RegionPresenter(view: self)
-        regionPresenter.getAreas()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "AllRegionsCell")
         
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        regionPresenter.getAreas()
+
+    }
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return regionPresenter.areasCount()
     }

@@ -29,6 +29,10 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
         setupTableView()
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         guard let areaId = areaId,let sepcialtyId = sepcialtyId  else {

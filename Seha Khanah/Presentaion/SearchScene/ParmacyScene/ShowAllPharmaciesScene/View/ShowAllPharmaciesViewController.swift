@@ -20,14 +20,17 @@ class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITa
          
           pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
           setupTableView()
-        pharmacyOffersPresenter.getPharmacyOffers()
         tableView.delegate = self
         tableView.dataSource = self
         
       }
       
       
-      
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        pharmacyOffersPresenter.getPharmacyOffers()
+
+    }
       func setupTableView() {
           tableView.register(UINib(nibName: "SearchByPharmacyNameTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchByPharmacyNameTableViewCell")
           

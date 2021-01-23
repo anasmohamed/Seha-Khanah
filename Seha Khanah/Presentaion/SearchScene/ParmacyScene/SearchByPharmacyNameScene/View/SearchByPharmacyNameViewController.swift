@@ -25,14 +25,17 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
         searchByPharmacyNameTableView.dataSource = self
         pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
         setupTableView()
-        if searchByAreaId
-        {pharmacyOffersPresenter.getPharmacyOffers()
-            
-        }
+        
     }
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if searchByAreaId
+        {
+            pharmacyOffersPresenter.getPharmacyOffers()
+        }
+    }
     func setupTableView() {
         searchByPharmacyNameTableView.register(UINib(nibName: "SearchByPharmacyNameTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchByPharmacyNameTableViewCell")
         
