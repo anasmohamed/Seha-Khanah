@@ -45,7 +45,10 @@ class OfferSubCategoryPresenter {
             
         }
     }
-
+    func getOffersSubCategoryId(index:Int)-> String
+    {
+        return offers[index].id!
+    }
     func getOffersSubCategoryCount() -> Int {
         return offers.count
     }

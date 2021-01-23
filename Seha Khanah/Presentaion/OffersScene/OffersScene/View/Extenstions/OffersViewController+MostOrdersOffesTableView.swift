@@ -11,7 +11,7 @@ import UIKit
 extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostOrderedOffersViewProtocol{
     func getMostOrderedOffersImageSuccess(images: [MostOrderedOffersImage]) {
         imageSlider.auk.settings.contentMode = .scaleAspectFill
-
+        
         if locale == "en"
         {
             for image in images
@@ -33,7 +33,7 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
     
     func getMostOrderedOffersSuccess() {
         indicator.stopAnimating()
-
+        
         mostOrderOffersTableView.reloadData()
     }
     func setupMostOrderedOffersTableView() {
@@ -44,7 +44,9 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
         return mostOrderedOffersPresenter.getMostOrderedOfferCount()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let offerDetailsViewController = UIStoryboard.init(name: "OfferDetails", bundle: nil).instantiateViewController(withIdentifier: "OfferDetailsViewController") as! OfferDetailsViewController
+        offerDetailsViewController.id = presenter.getOfferId(index: indexPath.row)
+        self.navigationController!.pushViewController(offerDetailsViewController, animated: true)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MostOrderedOffersTableViewCell", for: indexPath) as! MostOrderedOffersTableViewCell

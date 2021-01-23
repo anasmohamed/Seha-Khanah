@@ -29,7 +29,7 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OfferCategoriesCollectionViewCell.identifier, for: indexPath) as! OfferCategoriesCollectionViewCell
         cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-
+        
         presenter.configure(cell: cell, for: indexPath.row,section:indexPath.section)
         return cell
     }
@@ -53,21 +53,25 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if section == 1{
-       return UIEdgeInsets(top: 20, left: 5, bottom: 50, right: 5)
+            return UIEdgeInsets(top: 20, left: 5, bottom: 50, right: 5)
         }else{
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-
+            
         }
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let offerSubCategoryViewController = UIStoryboard.init(name: "OfferSubCategory", bundle: nil).instantiateViewController(withIdentifier: "OfferSubCategoryViewController") as! OfferSubCategoryViewController
+        offerSubCategoryViewController.id = presenter.getOfferId(index: indexPath.row)
+        self.navigationController!.pushViewController(offerSubCategoryViewController, animated: true)
+    }
     func collectionViewLayoutInsets()  {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-//             layout.sectionInset = UIEdgeInsets(top: 10, left: 100, bottom: 30, right: 100)
-    
+        //             layout.sectionInset = UIEdgeInsets(top: 10, left: 100, bottom: 30, right: 100)
+        
         layout.scrollDirection = .horizontal
-//        layout.itemSize = CGSize(width: 90, height: 90)
-             layout.minimumInteritemSpacing = 10
-             layout.minimumLineSpacing = 10
-             offersCategoriesCollectionView.collectionViewLayout = layout
+        //        layout.itemSize = CGSize(width: 90, height: 90)
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
+        offersCategoriesCollectionView.collectionViewLayout = layout
     }
 }

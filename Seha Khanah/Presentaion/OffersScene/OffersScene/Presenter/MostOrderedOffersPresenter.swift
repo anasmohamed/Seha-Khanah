@@ -59,6 +59,7 @@ class MostOrderedOffersPresenter {
         return mostOrderedOffers.count
     }
     
+    
     func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
         print(mostOrderedOffers.count)
         if mostOrderedOffers.count > 0{

@@ -9,7 +9,7 @@
 import UIKit
 
 class OfferSubCategoryViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource,OfferSubCategoryProtocol{
- 
+    
     
     
     var presenter : OfferSubCategoryPresenter!
@@ -29,7 +29,9 @@ class OfferSubCategoryViewController: UIViewController ,UITableViewDelegate,UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let offersForSpcificCategoryTableViewController = UIStoryboard.init(name: "OffersForSpecificCategory", bundle: nil).instantiateViewController(withIdentifier: "OffersForSpcificCategoryTableViewController") as! OffersForSpcificCategoryTableViewController
+        offersForSpcificCategoryTableViewController.id = presenter.getOffersSubCategoryId(index: indexPath.row)
+        self.navigationController!.pushViewController(offersForSpcificCategoryTableViewController, animated: true)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.getOffersSubCategoryCount()
@@ -41,20 +43,20 @@ class OfferSubCategoryViewController: UIViewController ,UITableViewDelegate,UITa
         return cell
     }
     func showIndicator() {
-         
-     }
-     
-     func hideIndicator() {
-         
-     }
-     
-     func getOffersSubCategorySuccess() {
+        
+    }
+    
+    func hideIndicator() {
+        
+    }
+    
+    func getOffersSubCategorySuccess() {
         tableView.reloadData()
-     }
-     
-     func showError(error: String) {
-         
-     }
-     
-
+    }
+    
+    func showError(error: String) {
+        
+    }
+    
+    
 }

@@ -13,9 +13,10 @@ class OffersCategory:Codable  {
     var nameEn: String?
     var nameAr : String?
     var open = false
+    var id :String?
     var subCategoriesList = [SubCategory]()
     init?(withJSON data: JSON) {
-        
+        self.id = data["id"].stringValue
         self.photo = data["featured"].stringValue
         self.nameEn = data["name_en"].stringValue
         self.nameAr = data["name_ar"].stringValue
