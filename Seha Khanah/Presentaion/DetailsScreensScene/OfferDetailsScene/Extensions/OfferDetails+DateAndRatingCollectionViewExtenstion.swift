@@ -29,8 +29,10 @@ extension OfferDetailsViewController :  UICollectionViewDelegate,UICollectionVie
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: "LabDayDates", bundle:nil )
         let labDayDatesViewController = storyboard.instantiateViewController(withIdentifier: "LabDayDatesViewController") as! LabDayDatesViewController
-       
-        self.navigationController!.pushViewController(labDayDatesViewController, animated: true)
+        labDayDatesViewController.times = presenter.getTimes(index: indexPath.row)
+        labDayDatesViewController.labName = offerTitleLbl.text
+        labDayDatesViewController.labPhoto = presenter.getOfferPhoto()
+           self.navigationController!.pushViewController(labDayDatesViewController, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == datesCollectionView{

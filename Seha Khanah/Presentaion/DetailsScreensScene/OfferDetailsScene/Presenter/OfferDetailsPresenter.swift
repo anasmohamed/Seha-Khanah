@@ -43,7 +43,12 @@ class OfferDetailsPresenter {
     func getRatings() -> [LabRatings] {
         return offerDetails!.ratingsList
     }
-    
+    func getOfferPhoto() -> String {
+        return (offerDetails?.photo)!
+    }
+    func getTimes(index:Int) -> [Time] {
+        return offerDetails!.datesList[index].timesList
+    }
     func configure(cell: BookingDatesCollectionViewCellProtocol, for index: Int) {
         let date = offerDetails?.datesList[index]
         cell.configure(date:date!)
