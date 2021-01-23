@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 private let reuseIdentifier = "TimeCollectionViewCell"
 
@@ -32,7 +33,7 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         
         dayDatesCollectionView.delegate = self
         dayDatesCollectionView.dataSource = self
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             dayDateLbl.text = (labDate?.dayEn)! + " " + (labDate?.date)!
             
@@ -97,7 +98,7 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
         bookViewController.bookDate = times![indexPath.row].time
         bookViewController.date = labDate?.date
         bookViewController.labId = labId
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {        bookViewController.dayName = labDate?.dayEn
             
             

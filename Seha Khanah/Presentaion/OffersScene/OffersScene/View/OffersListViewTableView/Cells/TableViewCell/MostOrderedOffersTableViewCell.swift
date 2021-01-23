@@ -9,6 +9,8 @@
 import UIKit
 import Cosmos
 import Kingfisher
+import MOLH
+
 class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewCellView {
     
     
@@ -86,7 +88,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     func configure(mostOrderedOffer: MostOrderedOffers) {
         offerPhotoImageIView.kf.setImage(with: URL(string: mostOrderedOffer.coverImage!))
         doctorPhotoImageVIew.kf.setImage(with: URL(string: mostOrderedOffer.doctorPhoto!))
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             offerNameLbl.text = mostOrderedOffer.titleEn
             doctorNameLbl.text = mostOrderedOffer.doctorFristNameEn! + " " + mostOrderedOffer.doctorLastNameEn! + "-" + mostOrderedOffer.addressEn!
@@ -116,7 +118,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
             offerDetails.doctor!.doctorLastNameAr!
         offerPhotoImageIView.kf.setImage(with: URL(string: offerDetails.coverPhoto!))
         doctorPhotoImageVIew.kf.setImage(with: URL(string: (offerDetails.doctor?.photo!)!))
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             offerNameLbl.text = offerDetails.titleNameEn
             doctorNameLbl.text = doctorNameEn + "-" + offerDetails.doctor!.addressEn!

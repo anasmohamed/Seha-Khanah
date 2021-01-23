@@ -51,36 +51,16 @@ class ChangeLanguageViewController: UIViewController {
     }
     @IBAction func saveBtnDidTapped(_ sender: Any) {
         
-        //        if choosenLangeuageLbl.text == "English"
-        //        {
-        //            MOLH.setLanguageTo("en")
-        //            UIView.appearance().semanticContentAttribute = .forceLeftToRight
-        //            UserDefaults.standard.set("en", forKey: "lang")
-        //        }else{
-        //            UserDefaults.standard.set("ar", forKey: "lang")
-        //            MOLH.setLanguageTo("ar")
-        //            UIView.appearance().semanticContentAttribute = .forceRightToLeft
-        //
-        //        }
         if choosenLangeuageLbl.text == "English"
         {
-            LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
-            UIView.appearance().semanticContentAttribute = .forceRightToLeft
-        }else{
-            LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
+            MOLH.setLanguageTo("en")
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        }else{
+            MOLH.setLanguageTo("ar")
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            
         }
-        
-        
-      
-        //
-        //        if  {
-        //             LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
-        //             UIView.appearance().semanticContentAttribute = .forceLeftToRight
-        //         } else {
-        //             LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
-        //             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-        //         }
+     
         MOLH.reset()
     }
     

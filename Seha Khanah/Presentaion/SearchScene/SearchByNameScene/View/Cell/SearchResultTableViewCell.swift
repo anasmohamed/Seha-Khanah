@@ -9,6 +9,7 @@
 import UIKit
 import Cosmos
 import Kingfisher
+import MOLH
 class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellView {
     
     
@@ -52,7 +53,7 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         
         numberOfVotes.text = result.numberOfVisitor! + " " + "visitor".localized
         rating.rating = Double(result.rating!)!
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = result.firstNameEn!  + " " + result.lastNameEn!
             aboutDoctorLbl.text = result.aboutDoctorEn
@@ -78,7 +79,7 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
         
         numberOfVotes.text = resultDoctorDetails.vistorNumber! + " " + "visitor".localized
         rating.rating = Double(resultDoctorDetails.rating!)!
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = resultDoctorDetails.doctorFirstNameEn!  + " " + resultDoctorDetails.doctorLastNameEn!
             aboutDoctorLbl.text = resultDoctorDetails.aboutDoctorEn

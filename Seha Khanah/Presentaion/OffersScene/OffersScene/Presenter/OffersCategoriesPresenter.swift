@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import MOLH
+
 class OffersCategoriesPresenter {
     private let offersInteractor:OffersInteractor
     private var offers: [OffersCategory]
@@ -66,7 +68,7 @@ class OffersCategoriesPresenter {
                 let nameEn = offerCategory.nameEn,
                 let nameAr = offerCategory.nameAr
                 else { return }
-            if locale == "en"
+            if  MOLHLanguage.currentAppleLanguage() == "en"
             {
                 cell.configure(image: image, categoryName: nameEn)
                 

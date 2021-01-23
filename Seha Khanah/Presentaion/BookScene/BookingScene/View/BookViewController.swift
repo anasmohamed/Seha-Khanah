@@ -8,6 +8,8 @@
 
 import UIKit
 import MBRadioCheckboxButton
+import MOLH
+
 class BookViewController: UIViewController,BookingProtocol {
     
     @IBOutlet weak var costView: UIView!
@@ -53,7 +55,7 @@ class BookViewController: UIViewController,BookingProtocol {
         
         dayLbl.text = dayName! + " " + date!
         labNameLbl.text = labName
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             labServiceLbl.text = labService?.nameEn
             

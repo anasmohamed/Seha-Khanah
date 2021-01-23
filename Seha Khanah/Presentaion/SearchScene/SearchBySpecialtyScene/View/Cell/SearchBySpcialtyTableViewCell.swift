@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import Kingfisher
+import MOLH
+
 class SearchBySpcialtyTableViewCell: UITableViewCell,SearchBySpeialtyTableViewCellView{
     
     @IBOutlet weak var spcialtyImageView: UIImageView!
@@ -18,7 +20,7 @@ class SearchBySpcialtyTableViewCell: UITableViewCell,SearchBySpeialtyTableViewCe
  
     func configure(result:SearchBySpecialtyModel){
         spcialtyImageView.kf.setImage(with: URL(string: result.photo!))
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             spcialtyTitleLbl.text = result.nameEn
 

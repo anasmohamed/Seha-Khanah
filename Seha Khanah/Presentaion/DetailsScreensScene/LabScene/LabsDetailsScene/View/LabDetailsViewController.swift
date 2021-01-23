@@ -10,6 +10,8 @@ import UIKit
 import AACarousel
 import Cosmos
 import Auk
+import MOLH
+
 class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -104,7 +106,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
             
         }
         labImages.auk.startAutoScroll(delaySeconds: 3)
-        if locale == "en"{
+        if  MOLHLanguage.currentAppleLanguage() == "en"{
             labName.text = labDetails.labNameEn
             labAdderss.text = labDetails.addressEn
         }else{

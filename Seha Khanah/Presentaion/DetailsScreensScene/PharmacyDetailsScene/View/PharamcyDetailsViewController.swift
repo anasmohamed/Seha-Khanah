@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
     @IBOutlet weak var goToLocationView: UIView!
@@ -62,7 +63,7 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
     
     func getPharmacyDetailsSuccess(pharmacy: PharmacyDetails) {
         pharmacyPhoto.kf.setImage(with: (URL(string: pharmacy.photo!)))
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             pharmacyInfoLbl.text = pharmacy.aboutEn
             pharmacyNameLbl.text = pharmacy.pharamcyNameEn

@@ -8,6 +8,8 @@
 
 import UIKit
 import Cosmos
+import MOLH
+
 import ReadMoreTextView
 class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var datesView: UIView!
@@ -94,7 +96,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
        
         
         
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             aboutDoctorLbl.text = doctorDetails.aboutDoctorEn
              doctorNameLbl.text = doctorDetails.doctorFirstNameEn! +  doctorDetails.doctorLastNameEn!

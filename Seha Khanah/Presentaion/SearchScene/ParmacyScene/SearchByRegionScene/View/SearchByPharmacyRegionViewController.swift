@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSource,UITableViewDelegate,AreasProtocol {
     
@@ -57,7 +58,7 @@ class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSour
     }
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllRegionsCell", for: indexPath)
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             cell.textLabel?.text = regionPresenter.getAreasList()[indexPath.row].areaNameEn
             

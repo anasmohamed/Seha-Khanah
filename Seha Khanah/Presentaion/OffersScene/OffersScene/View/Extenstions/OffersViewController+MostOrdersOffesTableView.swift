@@ -8,11 +8,13 @@
 
 import Foundation
 import UIKit
+import MOLH
+
 extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostOrderedOffersViewProtocol{
     func getMostOrderedOffersImageSuccess(images: [MostOrderedOffersImage]) {
         imageSlider.auk.settings.contentMode = .scaleAspectFill
         
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             for image in images
             {

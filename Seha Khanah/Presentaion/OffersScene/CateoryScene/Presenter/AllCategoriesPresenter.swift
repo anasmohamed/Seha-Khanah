@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import MOLH
+
 class AllCategoriesPresenter {
     private let allCategoriesInteractor:AllCategoriesInteractor
     private var offers: [OffersCategory]
@@ -47,7 +49,7 @@ class AllCategoriesPresenter {
 
     }
     func getOffersCategoryName(index:Int) -> String {
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             return offers[index].nameEn!
         }else{
@@ -56,7 +58,7 @@ class AllCategoriesPresenter {
         }
     }
     func getOffersSubCategoryName(index:Int,subIndex:Int) -> String {
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             return offers[index].subCategoriesList[subIndex].nameEn!
         }else{

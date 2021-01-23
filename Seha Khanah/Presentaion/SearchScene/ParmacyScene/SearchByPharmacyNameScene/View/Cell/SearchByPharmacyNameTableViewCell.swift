@@ -8,6 +8,8 @@
 
 import UIKit
 import Kingfisher
+import MOLH
+
 class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewCellViewProtocol {
     
     @IBOutlet weak var containerView: DropShadowView!
@@ -50,7 +52,7 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
         pharmacyPhoto.kf.setImage(with: URL(string: offer.pharmacyPhoto!))
         priceLbl.text = offer.price
 
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             pharmacyNameLbl.text = offer.pharamcyNameEn
             typeLbl.text = offer.titleEn

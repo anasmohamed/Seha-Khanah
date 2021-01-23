@@ -10,6 +10,8 @@ import UIKit
 import Cosmos
 import Auk
 import Kingfisher
+import MOLH
+
 class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var infoViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var doctorImageView: UIImageView!
@@ -94,7 +96,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         rating.rating = Double(offerDetails.rating!)!
         discountPrecentageLbl.text = "Discount ".localized + offerDetails.discount! + "%"
         doctorImageView.kf.setImage(with: URL(string: (offerDetails.doctor?.photo)!))
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             infoLbl.text = offerDetails.descriptionEn
             offerTitleLbl.text = offerDetails.titleNameEn

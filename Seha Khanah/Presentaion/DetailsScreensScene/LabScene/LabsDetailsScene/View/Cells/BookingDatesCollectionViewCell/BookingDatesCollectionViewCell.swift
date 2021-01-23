@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollectionViewCellProtocol{
   
@@ -50,7 +51,7 @@ class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollecti
         startHourLbl.text = date.startTime
         endHourLbl.text = date.endTime
         dateLbl.text = date.date
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             dayLbl.text = date.dayEn
             

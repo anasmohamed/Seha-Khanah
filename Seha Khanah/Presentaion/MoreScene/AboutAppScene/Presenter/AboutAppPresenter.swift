@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import MOLH
+
 class AboutAppPresenter {
     private let aboutAppInteractor:AboutAppInteractor
      private var aboutApp: [AboutApp]
@@ -42,7 +44,7 @@ class AboutAppPresenter {
          
      public func getAboutAppText() -> String
      {
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             return aboutApp[0].aboutAppEn!
 

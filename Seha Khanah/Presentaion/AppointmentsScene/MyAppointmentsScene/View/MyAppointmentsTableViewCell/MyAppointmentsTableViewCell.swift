@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPrototol {
     
@@ -91,7 +92,7 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         doctorPhoto.kf.setImage(with: URL(string: (appintment.doctor?.photo)!))
         lat = appintment.doctor!.lat
         longtiude = appintment.doctor!.lng
-        if locale == "en"
+        if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = (appintment.doctor?.doctorFirstNameEn)! + " " + (appintment.doctor?.doctorLastNameEn)!
             doctorTitleLbl.text = appintment.doctor?.profissionalTitleEn

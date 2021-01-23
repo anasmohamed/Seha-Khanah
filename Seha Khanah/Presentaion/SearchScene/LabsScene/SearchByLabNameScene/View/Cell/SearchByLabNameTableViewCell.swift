@@ -8,6 +8,7 @@
 
 import UIKit
 import Cosmos
+import MOLH
 class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCellProtocol {
     
     
@@ -28,7 +29,9 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
         super.awakeFromNib()
         bookNowBtn.layer.cornerRadius = 5
         accountPhoto.layer.cornerRadius = accountPhoto.frame.width / 2
-        
+         print(  MOLHLanguage.currentAppleLanguage())
+        print(  locale)
+
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
         containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
@@ -46,7 +49,7 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
         ratingView.rating = Double(lab.rating!)!
         labPhoto.kf.setImage(with: URL(string:lab.photo!))
         accountPhoto.kf.setImage(with: URL(string:lab.photo!))
-        if locale == "en"{
+        if MOLHLanguage.currentAppleLanguage() == "en"{
             labName.text = lab.labNameEn
             addressLbl.text = lab.addressEn
         }else{
