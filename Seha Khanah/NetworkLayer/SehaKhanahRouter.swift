@@ -230,6 +230,20 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.verifyUserPhoneNumberPrameter] = phonenumber
             body[NetworkingConstants.verifyUserUserTypePrameter] = userType
             body[NetworkingConstants.verifyUserCodePrameter] = code
+        case let .labReservation(name, email, phonenumber, bookingDate, labId, checkbox):
+            body[NetworkingConstants.reservationNameParameter] = name
+            body[NetworkingConstants.reservationEmailParameter] = email
+            body[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
+            body[NetworkingConstants.reservationBookingDateParameter] = bookingDate
+            body[NetworkingConstants.reservationDoctorIdParameter] = labId
+            body[NetworkingConstants.reservationCheckboxParameter] = checkbox
+        case let .doctorReservation(name, email, phonenumber, bookingDate, doctorId, checkbox):
+            body[NetworkingConstants.reservationNameParameter] = name
+            body[NetworkingConstants.reservationEmailParameter] = email
+            body[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
+            body[NetworkingConstants.reservationBookingDateParameter] = bookingDate
+            body[NetworkingConstants.reservationDoctorIdParameter] = doctorId
+            body[NetworkingConstants.reservationCheckboxParameter] = checkbox
             
         default:
             print("Empty request body")
@@ -265,20 +279,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.showOfferDetails] = id
         case let .offersForSpecificCategory(id):
             params[NetworkingConstants.offersForSpecificCategory] = id
-        case let .doctorReservation(name, email, phonenumber, bookingDate, doctorId, checkbox):
-            params[NetworkingConstants.reservationNameParameter] = name
-            params[NetworkingConstants.reservationEmailParameter] = email
-            params[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
-            params[NetworkingConstants.reservationBookingDateParameter] = bookingDate
-            params[NetworkingConstants.reservationDoctorIdParameter] = doctorId
-            params[NetworkingConstants.reservationCheckboxParameter] = checkbox
-        case let .labReservation(name, email, phonenumber, bookingDate, labId, checkbox):
-            params[NetworkingConstants.reservationNameParameter] = name
-            params[NetworkingConstants.reservationEmailParameter] = email
-            params[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
-            params[NetworkingConstants.reservationBookingDateParameter] = bookingDate
-            params[NetworkingConstants.reservationDoctorIdParameter] = labId
-            params[NetworkingConstants.reservationCheckboxParameter] = checkbox
+            
         case let .cancelBooking(id):
             params[NetworkingConstants.cancelBooking] = id
         case let .showOffer(id):

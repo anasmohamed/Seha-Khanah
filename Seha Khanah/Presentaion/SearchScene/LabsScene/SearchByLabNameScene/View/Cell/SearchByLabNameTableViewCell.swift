@@ -29,14 +29,15 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
         super.awakeFromNib()
         bookNowBtn.layer.cornerRadius = 5
         accountPhoto.layer.cornerRadius = accountPhoto.frame.width / 2
-         print(  MOLHLanguage.currentAppleLanguage())
-        print(  locale)
+        accountPhoto.layer.borderWidth = 1
+        accountPhoto.layer.borderColor = UIColor.black.cgColor
+         
 
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        containerView.layer.shadowRadius = 5.0
-        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        containerView.layer.shadowRadius = 3.0
+        containerView.layer.shadowOpacity = 0.5
         
         
         backView.layer.cornerRadius = cornerRadius

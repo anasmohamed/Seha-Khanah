@@ -57,9 +57,9 @@ class BookingInteractor {
             }
             
         }}
-    func doctorBooking(name : String,email:String,phoneNumber:String,bookingDate : String,labId:String,checkbox:String,
+    func doctorBooking(name : String,email:String,phoneNumber:String,bookingDate : String,doctorId:String,checkbox:String,
                        completionHandler: @escaping (ReservationResponse?, Error?) -> Void) {
-        AF.request(SehaKhanahRouter.doctorReservation(name: name, email: email, phonenumber: phoneNumber, bookingDate: bookingDate, doctorId: labId, checkbox: checkbox)).validate().responseJSON{
+        AF.request(SehaKhanahRouter.doctorReservation(name: name, email: email, phonenumber: phoneNumber, bookingDate: bookingDate, doctorId: doctorId, checkbox: checkbox)).validate().responseJSON{
                (response) in
                if let response = response.data {
                               print("Response Data: \(response)")

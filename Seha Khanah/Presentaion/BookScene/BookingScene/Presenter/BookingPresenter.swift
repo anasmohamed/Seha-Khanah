@@ -39,7 +39,7 @@ class BookingPresenter {
     func bookDoctor(name : String,email:String,phoneNumber:String,bookingDate : String,doctorId:String,checkbox:String) {
         
         view?.showIndicator()
-        bookingInteractor.labBooking(name: name, email: email, phoneNumber: phoneNumber, bookingDate: bookingDate, labId: doctorId, checkbox: checkbox){ (result,error)  in
+        bookingInteractor.doctorBooking(name: name, email: email, phoneNumber: phoneNumber, bookingDate: bookingDate, doctorId: doctorId, checkbox: checkbox){ (result,error)  in
             if let error = error {
                 print("errrror\(error)")
                 self.view?.showError(error: error.localizedDescription)

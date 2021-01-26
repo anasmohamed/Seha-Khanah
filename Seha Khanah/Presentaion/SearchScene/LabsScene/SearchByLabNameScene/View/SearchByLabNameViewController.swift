@@ -66,7 +66,7 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByLabNameTableViewCell", for: indexPath) as! SearchByLabNameTableViewCell
         cell.bookBtnActionBlock = {
-            navigationToDetailsViewController(index: indexPath.row)
+            self.navigationToDetailsViewController(index: indexPath.row)
         }
         labPresenter.configure(cell: cell, for: indexPath.row)
         

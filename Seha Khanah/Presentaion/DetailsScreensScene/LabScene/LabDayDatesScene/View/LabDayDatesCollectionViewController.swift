@@ -14,7 +14,7 @@ private let reuseIdentifier = "TimeCollectionViewCell"
 class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
     var times : [Time]?
     var labDate : LabDate?
-    var isDoctor: Bool?
+    var isDoctor: Bool = false
     var doctorCost: String?
     var labDetails : LabDetails?
     var labName : String?
@@ -98,7 +98,7 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
             
         }
         bookViewController.labAddress = labAddress
-        bookViewController.isDoctor = isDoctor!
+        bookViewController.isDoctor = isDoctor
         bookViewController.doctorCost = doctorCost
         bookViewController.profissionalTitle = profissionalTitle
         self.navigationController!.pushViewController(bookViewController, animated: true)

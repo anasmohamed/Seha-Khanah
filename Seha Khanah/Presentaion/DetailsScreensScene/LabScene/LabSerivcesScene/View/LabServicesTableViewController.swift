@@ -47,6 +47,7 @@ class LabServicesTableViewController: UITableViewController {
         labDayDatesViewController.labService = labService![indexPath.row]
         labDayDatesViewController.labDate = labDate
         labDayDatesViewController.labId = labId
+        
         labDayDatesViewController.labAddress = labAddress
         self.navigationController!.pushViewController(labDayDatesViewController, animated: true)
     }
