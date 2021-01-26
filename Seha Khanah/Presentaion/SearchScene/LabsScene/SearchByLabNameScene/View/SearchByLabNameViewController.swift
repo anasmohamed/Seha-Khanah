@@ -30,7 +30,7 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
         //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
         //tap.cancelsTouchesInView = false
         
-        view.addGestureRecognizer(tap)
+//        view.addGestureRecognizer(tap)
         setupTableView()
         
         
@@ -60,23 +60,25 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        navigationToDetailsViewController(index: indexPath.row)
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchByLabNameTableViewCell", for: indexPath) as! SearchByLabNameTableViewCell
         cell.bookBtnActionBlock = {
-            let storyboard = UIStoryboard.init(name: "LabDetails", bundle: nil)
-            
-            let showLabsDetailsViewController = storyboard.instantiateViewController(withIdentifier: "LabDetailsViewController") as! LabDetailsViewController
-            showLabsDetailsViewController.labId = self.labPresenter.getLabId(index: indexPath.row)
-            self.navigationController!.pushViewController(showLabsDetailsViewController, animated: true)
+            navigationToDetailsViewController(index: indexPath.row)
         }
         labPresenter.configure(cell: cell, for: indexPath.row)
         
         return cell
     }
-    
+    func navigationToDetailsViewController(index:Int)  {
+           let storyboard = UIStoryboard.init(name: "LabDetails", bundle: nil)
+                 
+                 let showLabsDetailsViewController = storyboard.instantiateViewController(withIdentifier: "LabDetailsViewController") as! LabDetailsViewController
+                 showLabsDetailsViewController.labId = self.labPresenter.getLabId(index: index)
+                 self.navigationController!.pushViewController(showLabsDetailsViewController, animated: true)
+    }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         //        labPresenter.getPharmacyOffers()
         labPresenter.searchByLab(name: searchText)

@@ -56,6 +56,12 @@ class BookViewController: UIViewController,BookingProtocol {
         labImageView.layer.borderWidth = 1
         dayLbl.text = dayName! + " " + date!
         labNameLbl.text = labName
+        
+        
+        fullNameTextField.text = UserDefaults.standard.string(forKey: "name")
+        emailTextField.text = UserDefaults.standard.string(forKey: "email")
+        mobileNumberTextField.text = UserDefaults.standard.string(forKey:"phoneNumber")
+        
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             labServiceLbl.text = labService?.nameEn
@@ -95,7 +101,7 @@ class BookViewController: UIViewController,BookingProtocol {
         view.layer.cornerRadius = 10
     }
     func showIndicator() {
-     
+        
     }
     
     func hideIndicator() {
@@ -103,33 +109,33 @@ class BookViewController: UIViewController,BookingProtocol {
     }
     
     func bookingSuccess() {
-         let storyboard = UIStoryboard.init(name: "SuccessfulBooking", bundle:nil )
+        let storyboard = UIStoryboard.init(name: "SuccessfulBooking", bundle:nil )
         if isDoctor
         {
-             let successfulBookingDoctorViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingDoctorViewController") as! SuccessBookingDoctorViewController
+            let successfulBookingDoctorViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingDoctorViewController") as! SuccessBookingDoctorViewController
             successfulBookingDoctorViewController.doctorName = labName
             successfulBookingDoctorViewController.address = labAddress
             successfulBookingDoctorViewController.time =  bookDate
             successfulBookingDoctorViewController.date = dayName
             successfulBookingDoctorViewController.price = doctorCost
-             self.navigationController!.pushViewController(successfulBookingDoctorViewController, animated: true)
+            self.navigationController!.pushViewController(successfulBookingDoctorViewController, animated: true)
         }else{
-             let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
+            let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
             successfulBookingViewController.labName = labName
             successfulBookingViewController.labId = labId
-                  successfulBookingViewController.dayText = dayName
-                  successfulBookingViewController.labAddress = labAddress
-                  self.navigationController!.pushViewController(successfulBookingViewController, animated: true)
+            successfulBookingViewController.dayText = dayName
+            successfulBookingViewController.labAddress = labAddress
+            self.navigationController!.pushViewController(successfulBookingViewController, animated: true)
         }
-       
-       
-//        if isDoctor{
-//            successfulBookingViewController.labService = labService
-//        }else{
-//            successfulBookingViewController.profissionalTitle = profissionalTitle
-//
-//        }
-      
+        
+        
+        //        if isDoctor{
+        //            successfulBookingViewController.labService = labService
+        //        }else{
+        //            successfulBookingViewController.profissionalTitle = profissionalTitle
+        //
+        //        }
+        
     }
     
     func showError(error: String) {
