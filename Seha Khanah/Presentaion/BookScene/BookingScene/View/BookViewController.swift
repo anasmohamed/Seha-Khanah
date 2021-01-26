@@ -52,7 +52,8 @@ class BookViewController: UIViewController,BookingProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
-        
+        labImageView.layer.borderColor = UIColor.gray.cgColor
+        labImageView.layer.borderWidth = 1
         dayLbl.text = dayName! + " " + date!
         labNameLbl.text = labName
         if  MOLHLanguage.currentAppleLanguage() == "en"
@@ -78,9 +79,10 @@ class BookViewController: UIViewController,BookingProtocol {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         cornerRadiusAndShodow(view: timeView)
-        cornerRadiusAndShodow(view: labNameAndSpeciltyVIew)
-        cornerRadiusAndShodow(view: presonDetailsView)
-        cornerRadiusAndShodow(view: costView)
+        timeView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        labNameAndSpeciltyVIew.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        presonDetailsView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        costView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
     }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.black.cgColor
@@ -93,7 +95,7 @@ class BookViewController: UIViewController,BookingProtocol {
         view.layer.cornerRadius = 10
     }
     func showIndicator() {
-        
+     
     }
     
     func hideIndicator() {
@@ -101,20 +103,33 @@ class BookViewController: UIViewController,BookingProtocol {
     }
     
     func bookingSuccess() {
-        
-        let storyboard = UIStoryboard.init(name: "SuccessfulBooking", bundle:nil )
-        let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
-        successfulBookingViewController.labName = labName
-        if isDoctor{
-            successfulBookingViewController.labService = labService
+         let storyboard = UIStoryboard.init(name: "SuccessfulBooking", bundle:nil )
+        if isDoctor
+        {
+             let successfulBookingDoctorViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingDoctorViewController") as! SuccessBookingDoctorViewController
+            successfulBookingDoctorViewController.doctorName = labName
+            successfulBookingDoctorViewController.address = labAddress
+            successfulBookingDoctorViewController.time =  bookDate
+            successfulBookingDoctorViewController.date = dayName
+            successfulBookingDoctorViewController.price = doctorCost
+             self.navigationController!.pushViewController(successfulBookingDoctorViewController, animated: true)
         }else{
-            successfulBookingViewController.profissionalTitle = profissionalTitle
-            
+             let successfulBookingViewController = storyboard.instantiateViewController(withIdentifier: "SuccessBookingViewController") as! SuccessBookingViewController
+            successfulBookingViewController.labName = labName
+            successfulBookingViewController.labId = labId
+                  successfulBookingViewController.dayText = dayName
+                  successfulBookingViewController.labAddress = labAddress
+                  self.navigationController!.pushViewController(successfulBookingViewController, animated: true)
         }
-        successfulBookingViewController.labId = labId
-        successfulBookingViewController.dayText = dayName
-        successfulBookingViewController.labAddress = labAddress
-        self.navigationController!.pushViewController(successfulBookingViewController, animated: true)
+       
+       
+//        if isDoctor{
+//            successfulBookingViewController.labService = labService
+//        }else{
+//            successfulBookingViewController.profissionalTitle = profissionalTitle
+//
+//        }
+      
     }
     
     func showError(error: String) {

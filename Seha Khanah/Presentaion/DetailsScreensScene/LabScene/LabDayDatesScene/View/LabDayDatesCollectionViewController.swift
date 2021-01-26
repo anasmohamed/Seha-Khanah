@@ -42,21 +42,12 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
             
         }
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        cornerRadiusAndShodow(view: dayDateView)
-        
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        dayDateView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
     }
-    func cornerRadiusAndShodow(view:UIView)  {
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 1
-        view.layer.shadowOffset = .zero
-        view.layer.shadowRadius = 5
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-        view.layer.shouldRasterize = true
-        view.layer.rasterizationScale = UIScreen.main.scale
-        view.layer.cornerRadius = 10
-    }
+  
     /*
      // MARK: - Navigation
      

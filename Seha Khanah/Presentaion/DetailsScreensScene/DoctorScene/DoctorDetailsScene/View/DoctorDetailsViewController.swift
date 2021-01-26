@@ -85,17 +85,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         goToLocationView.addGestureRecognizer(goToLocationTap)
         // Do any additional setup after loading the view.
     }
-    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true,view:UIView) {
-        view.layer.masksToBounds = false
-        view.layer.shadowColor = color.cgColor
-        view.layer.shadowOpacity = opacity
-        view.layer.shadowOffset = offSet
-        view.layer.shadowRadius = radius
-        
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-        view.layer.shouldRasterize = true
-        view.layer.rasterizationScale = scale ? UIScreen.main.scale : 1
-    }
+  
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.showDoctorDates(id: doctorId!)

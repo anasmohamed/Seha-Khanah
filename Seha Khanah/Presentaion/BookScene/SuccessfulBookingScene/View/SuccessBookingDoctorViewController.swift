@@ -1,39 +1,37 @@
 //
-//  SuccessBookingViewController.swift
+//  SuccessBookingDoctorViewController.swift
 //  Seha Khanah
 //
-//  Created by Anas on 1/4/21.
+//  Created by Anas on 1/26/21.
 //  Copyright © 2021 Anas. All rights reserved.
 //
 
 import UIKit
 
-class SuccessBookingViewController: UIViewController {
+class SuccessBookingDoctorViewController: UIViewController {
     
-    @IBOutlet weak var successBtn: UIButton!
-    @IBOutlet weak var locationLbl: UILabel!
-    @IBOutlet weak var dayLbl: UILabel!
-    @IBOutlet weak var labServiceLbl: UILabel!
-    @IBOutlet weak var labNameLbl: UILabel!
+    @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var doctorNameLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var timeLbl: UILabel!
+    
     
     
     @IBOutlet weak var successView: UIView!
-    var labName: String?
-    var dayText: String?
-    var labService: LabServices?
-    var locationString : String?
-    var labId: String?
-    var labAddress: String?
-    var profissionalTitle: String?
+    
+    var doctorName : String?
+    var time: String?
+    var date : String?
+    var address : String?
+    var price : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        dayLbl.text = dayText
-        labServiceLbl.text = labService?.nameEn
-        if labServiceLbl.text!.isEmpty{
-            labServiceLbl.text = profissionalTitle
-        }
-        labNameLbl.text = labName
-        locationLbl.text = labAddress
+        addressLbl.text = address
+        timeLbl.text = time
+        dateLbl.text = date
+        priceLbl.text = price
+        doctorNameLbl.text = doctorName
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -41,12 +39,13 @@ class SuccessBookingViewController: UIViewController {
         successView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
     }
     
-    
-    @IBAction func successBtnDidTapped(_ sender: Any) {
+    @IBAction func appointmentsBtnDidTapped(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Search", bundle:nil )
         let tabBar = storyboard.instantiateViewController(withIdentifier: "TabBar")
         self.navigationController!.pushViewController(tabBar, animated: true)
+        
     }
+    
     /*
      // MARK: - Navigation
      

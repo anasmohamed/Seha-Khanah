@@ -202,6 +202,7 @@
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8E3788725B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */; };
+		A8E4D18C25C07A4F005660EA /* SuccessBookingDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */; };
 		A8E8171B25B2232900DE29A6 /* FavoirteContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */; };
 		A8E8172125B2253500DE29A6 /* FavoriteDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */; };
 		A8E8172225B22E6F00DE29A6 /* LabDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8172425B22E6F00DE29A6 /* LabDetails.storyboard */; };
@@ -458,6 +459,7 @@
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfferDetails+DateAndRatingCollectionViewExtenstion.swift"; sourceTree = "<group>"; };
+		A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBookingDoctorViewController.swift; sourceTree = "<group>"; };
 		A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoirteContainerViewController.swift; sourceTree = "<group>"; };
 		A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsViewController.swift; sourceTree = "<group>"; };
 		A8E8172325B22E6F00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LabDetails.storyboard; sourceTree = "<group>"; };
@@ -644,6 +646,7 @@
 			children = (
 				A89B340D25BA38ED004B27DD /* SuccessfulBooking.storyboard */,
 				A812A08125A345E10039029B /* SuccessBookingViewController.swift */,
+				A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2387,6 +2390,7 @@
 				A8A7DD3F2595190E007FBFE0 /* RegionInteractor.swift in Sources */,
 				A806CAFE259E189900D1764C /* BookingDatesCollectionViewCell.swift in Sources */,
 				A8BFC9412594B33A002C90ED /* PharmacyOffersPresenter.swift in Sources */,
+				A8E4D18C25C07A4F005660EA /* SuccessBookingDoctorViewController.swift in Sources */,
 				A870838F25962C4C002AC96C /* Lab.swift in Sources */,
 				A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */,
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
