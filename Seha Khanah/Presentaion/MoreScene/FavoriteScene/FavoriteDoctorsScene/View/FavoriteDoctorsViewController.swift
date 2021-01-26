@@ -35,16 +35,18 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath) as! SearchResultTableViewCell
         cell.bookBtnActionBlock = {
-            let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
-               
-               let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
-            showDoctorDetailsViewController.doctorId = self.favoriteDoctorPresenter.getDoctorId(index: indexPath.row)
-               self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+            self.navigateToDetailsViewController(index:indexPath.row)
         }
         favoriteDoctorPresenter.configure(cell: cell, for: indexPath.row)
         return cell
     }
-    
+    func navigateToDetailsViewController(index:Int)  {
+        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+        
+        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
+        showDoctorDetailsViewController.doctorId = self.favoriteDoctorPresenter.getDoctorId(index: index)
+        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+    }
     func setupTableView() {
         favortieDoctorsTableView.register(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchResultTableViewCell")
         
@@ -54,7 +56,8 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-   
+        self.navigateToDetailsViewController(index:indexPath.row)
+
     }
     
     
@@ -68,13 +71,13 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     
     func getFavoriteDoctorsSuccess() {
         noFavortieDoctorsStackView.isHidden = true
-
+        
         favortieDoctorsTableView.reloadData()
     }
     
     func showError(error: String) {
         noFavortieDoctorsStackView.isHidden = false
-
+        
     }
     
     func showNoDataFoundImage() {

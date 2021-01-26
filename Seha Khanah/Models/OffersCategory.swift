@@ -8,7 +8,8 @@
 
 import Foundation
 import SwiftyJSON
-class OffersCategory:Codable  {
+
+class OffersCategory:Codable {
     var photo: String?
     var nameEn: String?
     var nameAr : String?

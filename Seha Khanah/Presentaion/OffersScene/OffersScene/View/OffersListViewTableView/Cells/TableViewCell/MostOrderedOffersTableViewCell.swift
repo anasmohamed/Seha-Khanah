@@ -27,11 +27,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     @IBOutlet weak var priceLbl: UILabel!
     
     
-    var topInset: CGFloat = 30
-    var leftInset: CGFloat = 30
-    var bottomInset: CGFloat = 0
-    var rightInset: CGFloat = 30
-    
+  
     @IBOutlet weak var deviceNameLbl: UILabel!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: DropShadowView!
@@ -57,10 +53,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         
     }
     
-    override func layoutMarginsDidChange() {
-        super.layoutMarginsDidChange()
-        self.layoutMargins = UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
-    }
+
     override func layoutSubviews() {
         // cell rounded section
         super.layoutSubviews()

@@ -27,11 +27,18 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
         searchByNameResultsTableView.delegate = self
         searchByNameResultsTableView.dataSource = self
         setupTableView()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+       // view.addGestureRecognizer(tap)
+        setupTableView()
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-     
+        
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -46,28 +53,31 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 320
+        return 300
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("number ofr rows\(searchedResultsPresenter.searchResultCount())")
         return searchedResultsPresenter.searchResultCount()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigateToDetailsViewController(index :indexPath.row)
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell", for: indexPath) as! SearchResultTableViewCell
         cell.bookBtnActionBlock = {
-             let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
-               
-               let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
-            showDoctorDetailsViewController.doctorId = self.searchedResultsPresenter.getDoctorId(index: indexPath.row)
-               self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
-           }
+            self.navigateToDetailsViewController(index :indexPath.row)
+        }
         searchedResultsPresenter.configure(cell: cell, for: indexPath.row)
         return cell
     }
-    
+    func navigateToDetailsViewController(index :Int)  {
+        let storyboard = UIStoryboard.init(name: "DoctorDetails", bundle: nil)
+        
+        let showDoctorDetailsViewController = storyboard.instantiateViewController(withIdentifier: "DoctorDetailsViewController") as! DoctorDetailsViewController
+        showDoctorDetailsViewController.doctorId = self.searchedResultsPresenter.getDoctorId(index: index)
+        self.navigationController!.pushViewController(showDoctorDetailsViewController, animated: true)
+    }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchedResultsPresenter.searchBy(name: searchText)
         searchByNameResultsTableView.reloadData()
@@ -100,5 +110,11 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     func showError(error: String) {
         
     }
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     
 }

@@ -24,7 +24,13 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
         searchByLabNameTableView.delegate = self
         searchByLabNameTableView.dataSource = self
         labPresenter = SearchByLabNamePresenter(view: self)
+        //Looks for single or multiple taps.
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
         setupTableView()
         
         
@@ -104,7 +110,11 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
         noDataFoundStackView.isHidden = false
     }
     
-    
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     
     func labsResults() {

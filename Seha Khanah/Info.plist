@@ -78,14 +78,14 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-        <key>item 0</key>
-        <string>Sukar-Black.ttf</string>
-        <key>item 1</key>
-        <string>Sukar-Bold.ttf</string>
-        <key>item 2</key>
-        <string>A-Google.ttf</string>
-        <key>item 3</key>
-        <string>Sukar-Regular.ttf</string>
+		<string>item 0</string>
+		<string>Sukar-Black.ttf</string>
+		<string>item 1</string>
+		<string>Sukar-Bold.ttf</string>
+		<string>item 2</string>
+		<string>A-Google.ttf</string>
+		<string>item 3</string>
+		<string>Sukar-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -108,6 +108,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	
 </dict>
 </plist>
