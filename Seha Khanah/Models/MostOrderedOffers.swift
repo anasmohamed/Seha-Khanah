@@ -28,6 +28,7 @@ class MostOrderedOffers {
     var totalAddressAr: String?
     var totalAddressEn : String?
     var imagesList : [MostOrderedOffersImage]?
+    var priceAfterDiscount :String?
     init?(withJSON data: JSON) {
         self.id = data["id"].stringValue
         self.doctorPhoto = data["doctor"]["featured"].stringValue
@@ -47,7 +48,7 @@ class MostOrderedOffers {
         self.addressEn = data["doctor"]["address_en"].stringValue
         self.totalAddressAr = data["doctor"]["total_address_ar"].stringValue
         self.totalAddressEn = data["doctor"]["total_address_en"].stringValue
-
+        self.priceAfterDiscount = data["price_after_discount"].stringValue
         //        let images = data["images"].arrayValue
         //        for image in images{
         //            let data = MostOrderedOffersImage(withJson: image)

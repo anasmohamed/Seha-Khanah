@@ -93,6 +93,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         imageSlideShow.auk.startAutoScroll(delaySeconds: 3)
         priceLbl.text = offerDetails.price
         discountLbl.text = offerDetails.priceAfterDiscount
+        
         rating.rating = Double(offerDetails.rating!)!
         discountPrecentageLbl.text = "Discount ".localized + offerDetails.discount! + "%"
         doctorImageView.kf.setImage(with: URL(string: (offerDetails.doctor?.photo)!))

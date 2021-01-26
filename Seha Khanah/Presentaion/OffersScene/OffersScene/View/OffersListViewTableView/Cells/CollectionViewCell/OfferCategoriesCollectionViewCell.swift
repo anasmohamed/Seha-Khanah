@@ -29,10 +29,11 @@ class OfferCategoriesCollectionViewCell: UICollectionViewCell,OffersCategorisCel
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+    //    containerView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         containerView.layer.shadowRadius = 3.0
         containerView.layer.shadowOpacity = 0.5
-        
+        containerView.layer.shadowPath = UIBezierPath(roundedRect:containerView.bounds, cornerRadius:containerView.layer.cornerRadius).cgPath
+
         mainView.layer.cornerRadius = cornerRadius
         mainView.clipsToBounds = true
     }

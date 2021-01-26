@@ -58,7 +58,9 @@ class MostOrderedOffersPresenter {
     public func getMostOrderedOfferCount() -> Int {
         return mostOrderedOffers.count
     }
-    
+    func getOfferId(index:Int) -> String {
+        return mostOrderedOffers[index].id!
+    }
     
     func configure(cell: MostOrderedOffersTableViewCellView, for index: Int) {
         print(mostOrderedOffers.count)

@@ -47,7 +47,7 @@ extension OffersViewController : UITableViewDelegate,UITableViewDataSource,MostO
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let offerDetailsViewController = UIStoryboard.init(name: "OfferDetails", bundle: nil).instantiateViewController(withIdentifier: "OfferDetailsViewController") as! OfferDetailsViewController
-        offerDetailsViewController.id = presenter.getOfferId(index: indexPath.row)
+        offerDetailsViewController.id = mostOrderedOffersPresenter.getOfferId(index: indexPath.row)
         self.navigationController!.pushViewController(offerDetailsViewController, animated: true)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

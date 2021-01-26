@@ -36,7 +36,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="pnv-2t-eRi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>

@@ -15,33 +15,34 @@ class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollecti
    
     
     
+    @IBOutlet weak var containerView: DropShadowView!
     
     
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var mainView: UIView!
+    
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var dayLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var startHourLbl: UILabel!
     @IBOutlet weak var endHourLbl: UILabel!
     @IBOutlet weak var bookNowBtn: UIButton!
-    let cornerRadius : CGFloat = 10.0
+    let cornerRadius : CGFloat = 5.0
     let locale = NSLocale.current.languageCode
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        bookNowBtn.layer.cornerRadius = 5
+//        bookNowBtn.layer.cornerRadius = 5
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         containerView.layer.shadowRadius = 5.0
         containerView.layer.shadowOpacity = 0.9
         
         
-        backView.layer.cornerRadius = cornerRadius
-        backView.clipsToBounds = true
+        mainView.layer.cornerRadius = cornerRadius
+        mainView.clipsToBounds = true
     }
     
     

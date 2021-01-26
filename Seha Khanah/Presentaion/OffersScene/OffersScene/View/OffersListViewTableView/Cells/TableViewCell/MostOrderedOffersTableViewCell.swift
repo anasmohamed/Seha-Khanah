@@ -77,7 +77,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         discountLbl.text = "Discount ".localized + mostOrderedOffer.discount! + "%"
         offerRating.rating = Double(mostOrderedOffer.rating!)!
         priceLbl.attributedText = attributeString
-        saleLbl.text = String(Double(mostOrderedOffer.price!)! * Double(mostOrderedOffer.discount!)! / 100)
+        saleLbl.text = mostOrderedOffer.priceAfterDiscount
     }
     func configureWithOfferDetails(offerDetails: OfferDetails) {
         let doctorFirstNameAr = (offerDetails.doctor?.doctorFirstNameAr!)! + " "
@@ -110,7 +110,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
         discountLbl.text = "Discount ".localized + offerDetails.discount! + "%"
         offerRating.rating = Double(offerDetails.rating!)!
         priceLbl.attributedText = attributeString
-        saleLbl.text = String(Double(offerDetails.price!)! * Double(offerDetails.discount!)! / 100)
+        saleLbl.text = offerDetails.priceAfterDiscount
     }
     
     

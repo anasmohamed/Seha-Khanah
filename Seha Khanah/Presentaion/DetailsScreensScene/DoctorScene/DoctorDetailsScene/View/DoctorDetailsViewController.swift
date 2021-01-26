@@ -27,6 +27,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var numberOfRaitings: UILabel!
     
+    
     @IBOutlet weak var leftArrowView: UIView!
     @IBOutlet weak var numberOfVisitorsLbl: PaddingLabel!
     @IBOutlet weak var cityNameLbl: UILabel!
@@ -44,13 +45,21 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var rightArrowView: UIView!
     @IBOutlet weak var addDoctorToFavoriteBtn: UIButton!
     
+    @IBOutlet weak var rightArrowImage: UIImageView!
+    @IBOutlet weak var leftArrowImage: UIImageView!
     var doctorId : String?
     var lat : String?
     var lng:String?
     var presenter : DoctorDetailsPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
-        leftArrowView.transform =  CGAffineTransform(scaleX: 1, y: -1)
+        rightArrowView.transform =  CGAffineTransform(scaleX: 1, y: -1)
+        if MOLHLanguage.currentAppleLanguage() == "ar"
+        {
+            leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
+            rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
+            
+        }
         presenter = DoctorDetailsPresenter(view:self)
         presenter.showDoctorDetails(id: doctorId!)
         aboutDoctorLbl.numberOfLines = 1
@@ -76,6 +85,17 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         goToLocationView.addGestureRecognizer(goToLocationTap)
         // Do any additional setup after loading the view.
     }
+    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true,view:UIView) {
+        view.layer.masksToBounds = false
+        view.layer.shadowColor = color.cgColor
+        view.layer.shadowOpacity = opacity
+        view.layer.shadowOffset = offSet
+        view.layer.shadowRadius = radius
+        
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.showDoctorDates(id: doctorId!)
@@ -84,8 +104,10 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: goToLocationView)
-        cornerRadiusAndShodow(view: leftArrowView)
-        cornerRadiusAndShodow(view: rightArrowView)
+        rightArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        leftArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        //        cornerRadiusAndShodowForArrows(view: leftArrowView)
+        //        cornerRadiusAndShodowForArrows(view: rightArrowView)
     }
     func showDoctorDates() {
         
@@ -162,6 +184,11 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 5
     }
+    func cornerRadiusAndShodowForArrows(view:UIView)  {
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.cornerRadius = 3
+    }
     func showError(error: String) {
         
     }
@@ -207,4 +234,32 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     }
     
     
+}
+extension UIView {
+    
+    // OUTPUT 1
+    func dropShadow(scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: -1, height: 1)
+        layer.shadowRadius = 1
+        
+        layer.shadowPath = UIBezierPath(rect: bounds).cgPath
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+    }
+    
+    // OUTPUT 2
+    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = color.cgColor
+        layer.shadowOpacity = opacity
+        layer.shadowOffset = offSet
+        layer.shadowRadius = radius
+        
+        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+    }
 }
