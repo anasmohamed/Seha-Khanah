@@ -31,7 +31,7 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     @IBOutlet weak var deviceNameLbl: UILabel!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: DropShadowView!
-    let cornerRadius : CGFloat = 10.0
+    let cornerRadius : CGFloat = 5.0
     let locale = NSLocale.current.languageCode
     static let identifier = "MostOrderedOffersTableViewCell"
     static func nib() ->UINib{
@@ -39,14 +39,14 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor.init(displayP3Red: 248/255, green: 248/255, blue: 248/255, alpha: 1.0)
         doctorPhotoImageVIew.layer.cornerRadius = doctorPhotoImageVIew.frame.size.width / 2
-        bookNowBtn.layer.cornerRadius = 5
-        
+        bookNowBtn.layer.cornerRadius = 6
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        containerView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         containerView.layer.shadowRadius = 5.0
-        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowOpacity = 0.5
         
         mainView.layer.cornerRadius = cornerRadius
         mainView.clipsToBounds = true
@@ -54,30 +54,6 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     }
     
 
-    override func layoutSubviews() {
-        // cell rounded section
-        super.layoutSubviews()
-        //        self.layer.cornerRadius = 15.0
-        //        self.layer.borderWidth = 5.0
-        //        self.layer.borderColor = UIColor.clear.cgColor
-        //        self.layer.masksToBounds = true
-        //
-        //        // cell shadow section
-        //        self.contentView.layer.cornerRadius = 15.0
-        //        self.contentView.layer.borderWidth = 5.0
-        //        self.contentView.layer.borderColor = UIColor.clear.cgColor
-        //        self.contentView.layer.masksToBounds = true
-        //        self.layer.shadowColor = UIColor.white.cgColor
-        //        self.layer.shadowOffset = CGSize(width: 0, height: 0.0)
-        //        self.layer.shadowRadius = 6.0
-        //        self.layer.shadowOpacity = 0.6
-        //        self.layer.cornerRadius = 15.0
-        //        self.layer.masksToBounds = false
-        //        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
-        
-        self.contentView.frame = self.frame.inset(by: UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5))
-        
-    }
     func configure(mostOrderedOffer: MostOrderedOffers) {
         offerPhotoImageIView.kf.setImage(with: URL(string: mostOrderedOffer.coverImage!))
         doctorPhotoImageVIew.kf.setImage(with: URL(string: mostOrderedOffer.doctorPhoto!))

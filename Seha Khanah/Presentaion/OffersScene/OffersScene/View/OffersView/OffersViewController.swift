@@ -40,7 +40,7 @@ class OffersViewController: UIViewController {
         setupMostOrderedOffersTableView()
         
         
-        collectionViewLayoutInsets()
+//        collectionViewLayoutInsets()
         offersCategoriesCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         //in cellForItemAtIndexPath
     }

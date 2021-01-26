@@ -25,6 +25,8 @@ class MostOrderedOffers {
     var addressAr:String?
     var addressEn:String?
     var id :String?
+    var totalAddressAr: String?
+    var totalAddressEn : String?
     var imagesList : [MostOrderedOffersImage]?
     init?(withJSON data: JSON) {
         self.id = data["id"].stringValue
@@ -41,8 +43,10 @@ class MostOrderedOffers {
         self.discount = data["discount"].stringValue
         self.coverImage = data["images"][0]["featured"].stringValue
         self.rating = data["rating"].stringValue
-        self.addressAr = data["doctor"]["total_address_ar"].stringValue
-        self.addressEn = data["doctor"]["total_address_en"].stringValue
+        self.addressAr = data["doctor"]["address_ar"].stringValue
+        self.addressEn = data["doctor"]["address_en"].stringValue
+        self.totalAddressAr = data["doctor"]["total_address_ar"].stringValue
+        self.totalAddressEn = data["doctor"]["total_address_en"].stringValue
 
         //        let images = data["images"].arrayValue
         //        for image in images{
