@@ -11,7 +11,7 @@ import SwiftyJSON
 import Alamofire
 class OffersForSpcificCategoryInteractor {
     func getOffersForSpcificCategory(id : String,
-                           completionHandler: @escaping ([MostOrderedOffers]?, Error?) -> Void) {
+                                     completionHandler: @escaping ([MostOrderedOffers]?, Error?) -> Void) {
         AF.request(SehaKhanahRouter.getOffresForSpacificCategory(id: id)).validate().responseJSON{
             (response) in
             if let response = response.data {
@@ -47,16 +47,21 @@ class OffersForSpcificCategoryInteractor {
             case .success :
                 let json = JSON(response.value)
                 print(json)
-                var offersCategoriesList = [MostOrderedOffers]()
-                let offersCategories = json["data"].arrayValue
-                
-                for offer in offersCategories
-                {
-                    let data = MostOrderedOffers(withJSON: offer)
-                    offersCategoriesList.append(data!)
+                if json["success"] == true{
+                    var offersCategoriesList = [MostOrderedOffers]()
+                    let offersCategories = json["data"].arrayValue
+                    
+                    for offer in offersCategories
+                    {
+                        let data = MostOrderedOffers(withJSON: offer)
+                        offersCategoriesList.append(data!)
+                        
+                    }
+                    completionHandler(offersCategoriesList,nil)
+                }else{
+                    completionHandler(nil,nil)
                     
                 }
-                completionHandler(offersCategoriesList, nil)
             case .failure(let error):
                 completionHandler(nil, error)
             }

@@ -17,6 +17,10 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ratingView: UIView!
     
+    @IBOutlet weak var leftArrowImage: UIImageView!
+    @IBOutlet weak var rightArrowView: UIView!
+    @IBOutlet weak var rightArrowImage: UIImageView!
+    @IBOutlet weak var leftArrowView: UIView!
     @IBOutlet weak var ratingCollectionView: UICollectionView!
     @IBOutlet weak var labImages: UIScrollView!
     
@@ -38,7 +42,12 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         super.viewDidLoad()
         labDetailsPresenter = LabDetailsPresenter(view: self)
         labDetailsPresenter.showLabDetails(id: labId!)
-        
+        if MOLHLanguage.currentAppleLanguage() == "ar"
+        {
+            leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
+            rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
+            
+        }
         
         datesCollectionView.delegate = self
         datesCollectionView.dataSource = self
@@ -53,30 +62,32 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     }
     
     @objc func handleGoToLocationTab(_ sender: UITapGestureRecognizer? = nil) {
-     
+        
         openGoogleMap(lat: latitude ?? "", lng: longitude ?? "")
     }
     func openGoogleMap(lat:String,lng: String) {
-             let latDouble = Double(lat)
-             let longDouble = Double(lng)
-             if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {  //if phone has an app
-                 
-                 if let url = URL(string: "comgooglemaps-x-callback://?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
-                     UIApplication.shared.open(url, options: [:])
-                 }}
-             else {
-                 //Open in browser
-                 if let urlDestination = URL.init(string: "https://www.google.co.in/maps/dir/?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
-                     UIApplication.shared.open(urlDestination)
-                 }
-             }
-             
-         }
+        let latDouble = Double(lat)
+        let longDouble = Double(lng)
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {  //if phone has an app
+            
+            if let url = URL(string: "comgooglemaps-x-callback://?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                UIApplication.shared.open(url, options: [:])
+            }}
+        else {
+            //Open in browser
+            if let urlDestination = URL.init(string: "https://www.google.co.in/maps/dir/?saddr=&daddr=\(latDouble),\(longDouble)&directionsmode=driving") {
+                UIApplication.shared.open(urlDestination)
+            }
+        }
+        
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: goToLocationView)
+        leftArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        rightArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
     }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.gray.cgColor

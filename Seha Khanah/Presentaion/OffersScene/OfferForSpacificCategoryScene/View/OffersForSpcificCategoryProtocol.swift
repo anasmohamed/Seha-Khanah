@@ -12,4 +12,5 @@ protocol OffersForSpcificCategoryProtocol:class {
     func hideIndicator()
     func getOffersForSpcificCategorySuccess()
     func showError(error: String)
+    func noDataFound()
 }

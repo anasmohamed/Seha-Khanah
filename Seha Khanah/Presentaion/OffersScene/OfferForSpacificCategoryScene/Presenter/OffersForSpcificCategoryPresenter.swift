@@ -25,7 +25,9 @@ class OffersForSpcificCategoryPresenter {
             if let error = error {
                 print("errrror\(error)")
                 self.view?.showError(error: error.localizedDescription)
-            } else {
+            } else if error == nil && result == nil {
+                self.view?.noDataFound()
+            }else{
                 if result != nil{
                     self.mostOrderedOffers = result!
                     self.view?.getOffersForSpcificCategorySuccess()

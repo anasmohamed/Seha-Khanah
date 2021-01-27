@@ -61,7 +61,9 @@ class LabDetails: Codable {
         for date in labDates
         {
             self.dates = LabDate(withJSON: date)
+            if self.dates?.status == "1"{
             self.datesList.append(dates!)
+            }
         }
         for labRating in labRatings
         {

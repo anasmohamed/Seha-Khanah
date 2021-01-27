@@ -50,30 +50,38 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
             height = (collectionView.frame.size.height / 2)
             return CGSize(width: width, height: height)
         }
-       
-
+        
+        
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        if section == 1{
-//            return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-//        }else{
-//            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//
-//        }
-//    }
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    //        if section == 1{
+    //            return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+    //        }else{
+    //            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    //
+    //        }
+    //    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let offerSubCategoryViewController = UIStoryboard.init(name: "OffersForSpecificCategory", bundle: nil).instantiateViewController(withIdentifier: "OffersForSpcificCategoryTableViewController") as! OffersForSpcificCategoryTableViewController
-        offerSubCategoryViewController.id = presenter.getOfferId(index: indexPath.row)
+        print("section \(indexPath.section)")
+        if indexPath.section == 0{
+            offerSubCategoryViewController.id = presenter.getOfferId(index: indexPath.row)
+        }
+        else{
+            offerSubCategoryViewController.id = presenter.getOfferId(index: indexPath.row + 1)
+            
+        }
+        print(presenter.getOfferId(index: indexPath.row))
         self.navigationController!.pushViewController(offerSubCategoryViewController, animated: true)
     }
-//    func collectionViewLayoutInsets()  {
-//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-//                     layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-//        
-//        layout.scrollDirection = .horizontal
-//        //        layout.itemSize = CGSize(width: 90, height: 90)
-//        layout.minimumInteritemSpacing = 5
-//        layout.minimumLineSpacing = 5
-//        offersCategoriesCollectionView.collectionViewLayout = layout
-//    }
+    //    func collectionViewLayoutInsets()  {
+    //        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+    //                     layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    //
+    //        layout.scrollDirection = .horizontal
+    //        //        layout.itemSize = CGSize(width: 90, height: 90)
+    //        layout.minimumInteritemSpacing = 5
+    //        layout.minimumLineSpacing = 5
+    //        offersCategoriesCollectionView.collectionViewLayout = layout
+    //    }
 }

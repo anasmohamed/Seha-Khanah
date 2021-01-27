@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Register Now-->
         <scene sceneID="KnF-0w-Itu">
@@ -17,12 +22,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-DY-IVj">
-                                <rect key="frame" x="30" y="379" width="260" height="30"/>
+                                <rect key="frame" x="30" y="379" width="260" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="FsQ-Cu-lHo"/>
+                                    <constraint firstAttribute="height" constant="40" id="FsQ-Cu-lHo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                 <state key="normal" title="REGISTER NOW">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -38,7 +43,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="hcT-EG-vSS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="to1-fq-U4e">
@@ -46,7 +51,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Ovf-hz-FJf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qkH-xA-S9c">
@@ -54,7 +59,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="KMc-B3-VTL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MtX-bN-EUW">
@@ -62,7 +67,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="mV0-GG-fQz"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-bR-HRQ">
@@ -70,14 +75,14 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="m1X-js-AAm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-vd-C0P">
                                         <rect key="frame" x="0.0" y="250" width="304" height="20"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxn-LH-hpx">
-                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="9zs-Gq-ukV">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -87,22 +92,24 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlY-DF-B4d">
-                                                        <rect key="frame" x="30" y="0.0" width="75.5" height="20"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="30" y="0.0" width="69.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-LH-x1p">
-                                                <rect key="frame" x="115.5" y="0.0" width="188.5" height="20"/>
+                                                <rect key="frame" x="109.5" y="0.0" width="194.5" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-N5-jY3" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="89" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="92" height="20"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <state key="normal" title="Male"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uey-n0-RY0" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                        <rect key="frame" x="99" y="0.0" width="89.5" height="20"/>
+                                                        <rect key="frame" x="102" y="0.0" width="92.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <state key="normal" title="Female"/>
                                                     </button>
                                                 </subviews>

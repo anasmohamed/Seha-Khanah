@@ -14,7 +14,7 @@ class LabDate: Codable {
     var dayEn: String?
     var startTime: String?
     var endTime: String?
-    var status: String?
+    var status :String?
     var timesList = [Time]()
     init?(withJSON data: JSON) {
         

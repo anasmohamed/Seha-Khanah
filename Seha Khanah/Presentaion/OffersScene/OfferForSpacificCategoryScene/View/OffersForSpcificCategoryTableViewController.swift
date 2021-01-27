@@ -9,8 +9,12 @@
 import UIKit
 
 class OffersForSpcificCategoryTableViewController:UIViewController, UITableViewDelegate,UITableViewDataSource,OffersForSpcificCategoryProtocol {
- 
+  
     
+    @IBOutlet weak var noResultsStackView: UIStackView!
+    
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
     var presenter : OffersForSpcificCategoryPresenter!
@@ -21,7 +25,7 @@ class OffersForSpcificCategoryTableViewController:UIViewController, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         setupTableView()
-        
+        noResultsStackView.isHidden = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,7 +35,7 @@ class OffersForSpcificCategoryTableViewController:UIViewController, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.getOffersForSpcificCategory(id: id!)
-
+          
     }
     func setupTableView() {
            tableView.register(UINib(nibName: "MostOrderedOffersTableViewCell", bundle: nil), forCellReuseIdentifier: "MostOrderedOffersTableViewCell")
@@ -66,20 +70,31 @@ class OffersForSpcificCategoryTableViewController:UIViewController, UITableViewD
             self.navigationController!.pushViewController(offerDetailsViewController, animated: true)
     }
     func showIndicator() {
-         
+        indicator.startAnimating()
      }
      
      func hideIndicator() {
-         
+        indicator.stopAnimating()
      }
      
      func getOffersForSpcificCategorySuccess() {
         tableView.reloadData()
+        indicator.stopAnimating()
+        noResultsStackView.isHidden = true
+
      }
      
      func showError(error: String) {
-         
+         indicator.stopAnimating()
+        noResultsStackView.isHidden = false
+
      }
+    func noDataFound() {
+        indicator.stopAnimating()
+
+          noResultsStackView.isHidden = false
+
+      }
      
     /*
     // Override to support conditional editing of the table view.

@@ -20,7 +20,6 @@ class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollecti
     
     @IBOutlet weak var mainView: UIView!
     
-    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var dayLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var startHourLbl: UILabel!

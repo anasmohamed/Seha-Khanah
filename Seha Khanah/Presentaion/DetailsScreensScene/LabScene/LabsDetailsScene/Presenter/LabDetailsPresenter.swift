@@ -53,7 +53,7 @@ class LabDetailsPresenter {
     }
     
     func configure(cell: BookingDatesCollectionViewCellProtocol, for index: Int) {
-        cell.configure(date: (labDetails?.dates)!)
+        cell.configure(date: (labDetails?.datesList[index])!)
     }
     func configure(cell: RatingCollectionViewCellPrortocol, for index: Int) {
         let labRating = labDetails?.ratingsList[index]
