@@ -10,7 +10,11 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import GoogleSignIn
+import SwiftyJSON
+
 class LoginViewController: UIViewController ,LoginProtocol{
+    
+    
     @IBOutlet weak var createNewAccountBtn: UIButton!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var signinWithGoogleBtn: UIButton!
@@ -19,7 +23,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
-    let facebookLoginButton = FBLoginButton(frame: .zero, permissions: [.publicProfile])
+    let facebookLoginButton = FBLoginButton(frame: .zero, permissions: [.publicProfile,.email])
     var loginPresenter : LoginPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +49,9 @@ class LoginViewController: UIViewController ,LoginProtocol{
         }
         var token = UserDefaults.standard.string(forKey: "token")
         print(token)
+        loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
+        
+        
         
     }
     
@@ -102,30 +109,36 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
     func hideIndicator() {
         indicator.stopAnimating()
-
+        
+    }
+    func getAccessTokenSuccess(accessToken: String) {
+        UserDefaults.standard.set(accessToken, forKey: "accessToken")
     }
     
+    
     func loginSuccess(user: User) {
-        indicator.stopAnimating()
-        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
-        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        tabBarViewController.modalPresentationStyle = .fullScreen
-        self.present(tabBarViewController, animated: true, completion: nil)
-        UserDefaults.standard.set(true, forKey: "isUserLoggedin")
-        UserDefaults.standard.set(user.email, forKey: "email")
-        UserDefaults.standard.set(user.birthday, forKey: "birthday")
-        UserDefaults.standard.set(user.genderId, forKey: "genderId")
-        UserDefaults.standard.set(user.id, forKey: "id")
-        UserDefaults.standard.set(user.name, forKey: "name")
-        UserDefaults.standard.set(user.phoneNumber, forKey: "phoneNumber")
-        UserDefaults.standard.set(user.token, forKey: "token")
+       loginSuccessNavigation(user:user)
     }
     
     func showError(error: String) {
         indicator.stopAnimating()
-
+        
     }
-    
+    func loginSuccessNavigation(user:User)  {
+        indicator.stopAnimating()
+               let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+               let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
+               tabBarViewController.modalPresentationStyle = .fullScreen
+               self.present(tabBarViewController, animated: true, completion: nil)
+               UserDefaults.standard.set(true, forKey: "isUserLoggedin")
+               UserDefaults.standard.set(user.email, forKey: "email")
+               UserDefaults.standard.set(user.birthday, forKey: "birthday")
+               UserDefaults.standard.set(user.genderId, forKey: "genderId")
+               UserDefaults.standard.set(user.id, forKey: "id")
+               UserDefaults.standard.set(user.name, forKey: "name")
+               UserDefaults.standard.set(user.phoneNumber, forKey: "phoneNumber")
+               UserDefaults.standard.set(user.token, forKey: "token")
+    }
     
     @IBAction func createNewAccountBtnDidTapped(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Signup", bundle: nil)
@@ -144,6 +157,17 @@ class LoginViewController: UIViewController ,LoginProtocol{
         mainScrollViewBottomConstraint.constant = 0
     }
     
+    func showErrorWithSocial(error: String) {
+        print(error)
+        let storyboard = UIStoryboard.init(name: "Signup", bundle: nil)
+        
+        let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        self.navigationController!.pushViewController(registerViewController, animated: true)
+    }
+    
+    func loginSuccessWithFacebook(user: User) {
+        loginSuccessNavigation(user:user)
+    }
     
     
     
@@ -152,20 +176,22 @@ extension LoginViewController: LoginButtonDelegate {
     
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        
-        loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
         getUserDataFromFacebook()
     }
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("User logged out")
     }
     func getUserDataFromFacebook() {
-        GraphRequest(graphPath: "me", parameters: ["fields": "first_name"]).start { (connection, result, error) in
+     
+        let requestedFields = "email, first_name, last_name"
+        GraphRequest.init(graphPath: "me", parameters: ["fields":requestedFields]).start { (connection, result, error) -> Void in
             if let err = error { print(err.localizedDescription); return } else {
-                if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String {
+                if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String, let email = fields["email"] as? String{
+                    print("token\(AccessToken.current!.tokenString)")
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
-                    self.loginPresenter.loginWithSocial(accessToken:self.loginPresenter.returnAccessToken()
+                    self.loginPresenter.loginWithSocial(accessToken:"medooking@gmail.com"
                         , provider: "facebook")
+                    print("email \(email)")
                     print(firstName, id, facebookProfileString)
                     print("facebook id\(id)")
                     
@@ -173,7 +199,9 @@ extension LoginViewController: LoginButtonDelegate {
             }
         }
     }
+    
 }
+
 extension LoginViewController :GIDSignInDelegate {
     
     
@@ -188,7 +216,7 @@ extension LoginViewController :GIDSignInDelegate {
         }
         self.loginPresenter.loginWithSocial(accessToken:self.loginPresenter.returnAccessToken()
             , provider: "google")
-     
+        
         
         
     }

@@ -62,7 +62,7 @@ extension OffersViewController :UICollectionViewDelegate,UICollectionViewDataSou
 //        }
 //    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let offerSubCategoryViewController = UIStoryboard.init(name: "OfferSubCategory", bundle: nil).instantiateViewController(withIdentifier: "OfferSubCategoryViewController") as! OfferSubCategoryViewController
+        let offerSubCategoryViewController = UIStoryboard.init(name: "OffersForSpecificCategory", bundle: nil).instantiateViewController(withIdentifier: "OffersForSpcificCategoryTableViewController") as! OffersForSpcificCategoryTableViewController
         offerSubCategoryViewController.id = presenter.getOfferId(index: indexPath.row)
         self.navigationController!.pushViewController(offerSubCategoryViewController, animated: true)
     }

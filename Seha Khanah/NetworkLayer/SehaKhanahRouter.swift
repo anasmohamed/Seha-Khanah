@@ -175,9 +175,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
         switch self {
         case .booking,.updateUser,.userOffersReservations:
             let token = UserDefaults.standard.string(forKey: "token")
-            print("token \(token)")
             httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
             httpHeaders.add(name: "Content-Type", value:"application/X-Access-Token")
+        case .loginWithSocial:
+            let accesstoken = UserDefaults.standard.string(forKey: "accessToken")
+            httpHeaders.add(name: "Authorization", value: "Bearer \(accesstoken!)")
+            httpHeaders.add(name: "Content-Type", value:"aapplication/x-www-form-urlencoded")
         //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
         default:
             print("Empty request headers")
@@ -211,8 +214,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.updateUserProfileGenderIdParameter] = genderId
             body[NetworkingConstants.updateUserProfileBirthdayParameter] = birthday
         case let .loginWithSocial(accessTocken, provider):
-            body[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
+            
             body[NetworkingConstants.loginWithSocialProviderParamter] = provider
+            body[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
         case let .login(email, password):
             body[NetworkingConstants.emailParameter] = email
             body[NetworkingConstants.passwordParameter] = password
@@ -244,7 +248,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.reservationBookingDateParameter] = bookingDate
             body[NetworkingConstants.reservationDoctorIdParameter] = doctorId
             body[NetworkingConstants.reservationCheckboxParameter] = checkbox
+        case let .loginWithSocial(accessTocken, provider):
             
+            body[NetworkingConstants.loginWithSocialProviderParamter] = provider
+            body[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
         default:
             print("Empty request body")
         }
@@ -328,19 +335,22 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .booking,
              .searchByAreaAndSpecialty,
              .offerSlidShow,
+             
              .userOffersReservations:
             
             
             return try URLEncoding.default.encode(urlRequest, with: params)
         case   .login,
-               .loginWithSocial,
+               
                .register,
                .getUserToken,
                .updateUser,
                .resetPassword,
                .sendMessage,
+               .loginWithSocial,
                .verifyUser:
-            return try URLEncoding.default.encode(urlRequest, with: body)
+            
+            return try URLEncoding.default.encode(urlRequest, with:body)
             
         case .showLabDetails:
             let showLabDetailsUrlString = (urlRequest.url?.absoluteString)!
@@ -397,6 +407,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             let soffersForSpecificCategoryParamString = params[NetworkingConstants.offersForSpecificCategory]!
             urlRequest = URLRequest(url: URL(string: offersForSpecificCategoryUrlString + (soffersForSpecificCategoryParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
+       
         }
     }
 }

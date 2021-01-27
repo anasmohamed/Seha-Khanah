@@ -8,16 +8,20 @@
 
 import UIKit
 
-class OffersForSpcificCategoryTableViewController: UITableViewController,OffersForSpcificCategoryProtocol {
+class OffersForSpcificCategoryTableViewController:UIViewController, UITableViewDelegate,UITableViewDataSource,OffersForSpcificCategoryProtocol {
  
     
+    @IBOutlet weak var tableView: UITableView!
     
     var presenter : OffersForSpcificCategoryPresenter!
     var id :String?
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = OffersForSpcificCategoryPresenter(view:self)
+        tableView.delegate = self
+        tableView.dataSource = self
         setupTableView()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,28 +39,28 @@ class OffersForSpcificCategoryTableViewController: UITableViewController,OffersF
        }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return presenter.getOffersForSpcificCategoryCount()
     }
 
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 320
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MostOrderedOffersTableViewCell", for: indexPath) as! MostOrderedOffersTableViewCell
         presenter.configure(cell: cell, for: indexPath.row)
 
 
         return cell
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let offerDetailsViewController = UIStoryboard.init(name: "OfferDetails", bundle: nil).instantiateViewController(withIdentifier: "OfferDetailsViewController") as! OfferDetailsViewController
         offerDetailsViewController.id = presenter.getOfferId(index: indexPath.row)
             self.navigationController!.pushViewController(offerDetailsViewController, animated: true)

@@ -12,4 +12,7 @@ protocol LoginProtocol:class {
     func hideIndicator()
     func loginSuccess(user:User)
     func showError(error: String)
+    func showErrorWithSocial(error:String)
+    func loginSuccessWithFacebook(user:User)
+    func getAccessTokenSuccess(accessToken:String) 
 }

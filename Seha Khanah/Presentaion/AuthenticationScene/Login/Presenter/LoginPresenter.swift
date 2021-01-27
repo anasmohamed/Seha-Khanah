@@ -31,7 +31,7 @@ class LoginPresenter  {
                 self.view?.showError(error: error.localizedDescription)
             }else if let message = message{
                 self.view?.showError(error: message)
-
+                
             }
             else {
                 if result != nil{
@@ -52,6 +52,7 @@ class LoginPresenter  {
             } else {
                 if result != nil{
                     self.accessToken = result!
+                    self.view?.getAccessTokenSuccess(accessToken:self.accessToken!)
                 }
                 
             }
@@ -62,18 +63,18 @@ class LoginPresenter  {
         return accessToken!
     }
     func loginWithSocial(accessToken: String,
-                           provider: String) {
+                         provider: String) {
         
         view?.showIndicator()
         loginInteractor.loginWithSocial(accessTokcen: accessToken,
-                                          provider: provider){ (result,error)  in
+                                        provider: provider){ (result,error)  in
                                             if let error = error {
                                                 print("errrror\(error)")
-                                                self.view?.showError(error: "Something Wrong Happend")
+                                                self.view?.showErrorWithSocial(error: "Something Wrong Happend")
                                             } else {
                                                 if result != nil{
                                                     self.user = result!
-                                                    self.view?.loginSuccess(user: self.user)
+                                                    self.view?.loginSuccessWithFacebook(user: self.user)
                                                 }
                                                 
                                             }
