@@ -24,6 +24,10 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var discountPrecentageLbl: PaddingLabel!
     @IBOutlet weak var moreOrLessBtn: UIButton!
     
+    @IBOutlet weak var leftArrowImage: UIImageView!
+    @IBOutlet weak var rightArrowView: UIView!
+    @IBOutlet weak var rightArrowImage: UIImageView!
+    @IBOutlet weak var leftArrowView: UIView!
     @IBOutlet weak var datesCollectionView: UICollectionView!
     @IBOutlet weak var serivceProviderInfoView: UIView!
     @IBOutlet weak var discountLbl: UILabel!
@@ -50,7 +54,13 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         datesCollectionView.dataSource = self
         presenter.showDoctorDetails(id: id!)
         doctorImageView.layer.cornerRadius = doctorImageView.frame.width / 2
-        setupCollectionView() 
+        setupCollectionView()
+        if MOLHLanguage.currentAppleLanguage() == "ar"
+        {
+            leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
+            rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
+            
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -60,6 +70,8 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: serivceProviderInfoView)
+        rightArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        leftArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
     }
     
     @IBAction func moreOrLessBtnDidTapped(_ sender: Any) {
