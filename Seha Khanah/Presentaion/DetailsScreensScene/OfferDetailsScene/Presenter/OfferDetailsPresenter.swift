@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MOLH
 class OfferDetailsPresenter {
     private let offerDetailsInteractor:OfferDetailsInteractor
        private var offerDetails: OfferDetails?
@@ -44,10 +45,32 @@ class OfferDetailsPresenter {
         return offerDetails!.ratingsList
     }
     func getOfferPhoto() -> String {
-        return (offerDetails?.photo)!
+        return (offerDetails?.doctor?.photo)!
     }
     func getTimes(index:Int) -> [Time] {
         return offerDetails!.datesList[index].timesList
+    }
+    func getOfferId(index:Int) -> String {
+        return (offerDetails?.id)!
+    }
+    func getOfferCost() -> String {
+        return (offerDetails?.priceAfterDiscount)!
+    }
+    func getDoctorTitle() -> String {
+        if MOLHLanguage.currentAppleLanguage() == "ar"{
+            return (offerDetails?.doctor?.prefixTitleAr)!
+        }else{
+            return (offerDetails?.doctor?.prefixTitleEn)!
+
+        }
+    }
+    func getAddress() -> String {
+        if MOLHLanguage.currentAppleLanguage() == "ar"{
+            return (offerDetails?.doctor?.addressAr)!
+        }else{
+            return (offerDetails?.doctor?.addressEn)!
+
+        }
     }
     func configure(cell: BookingDatesCollectionViewCellProtocol, for index: Int) {
         let date = offerDetails?.datesList[index]

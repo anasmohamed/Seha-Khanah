@@ -45,13 +45,14 @@ class OfferDetails: Codable {
         self.priceAfterDiscount = data["price_after_discount"].stringValue
         self.photo = data["featured"].stringValue
         self.descriptionAr = data["description_ar"].stringValue
-        self.deviceNameEn = data["description_en"].stringValue
+        self.descriptionEn = data["description_en"].stringValue
         self.id = data["id"].stringValue
         self.price = data["price"].stringValue
         self.discount = data["discount"].stringValue
         self.dateFrom = data["date_from"].stringValue
         self.rating = data["rating"].stringValue
         self.dateTo = data["date_to"].stringValue
+        self.labDates = data["dates"].arrayValue
         self.doctor = DoctorDetails(withJSON: data["doctor"])
         let images = data["images"].arrayValue
         self.coverPhoto = data["images"][0].stringValue
@@ -64,7 +65,9 @@ class OfferDetails: Codable {
         for date in labDates
         {
             let data = LabDate(withJSON: date)
+            if data?.status == "1" {
             self.datesList.append(data!)
+            }
         }
         for rating in ratings
         {

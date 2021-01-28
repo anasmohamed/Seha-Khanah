@@ -48,6 +48,7 @@ class OffersViewController: UIViewController {
         
         presenter.getOffersCategories()
         mostOrderedOffersPresenter.getMostOrderedOffers()
+        mostOrderedOffersPresenter.getMostOrderedOffersImage()
     }
     
     @IBAction func showAllCategoriesBtnDidTapped(_ sender: Any) {

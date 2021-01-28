@@ -37,7 +37,7 @@
                                         <viewLayoutGuide key="frameLayoutGuide" id="N9X-BN-2i6"/>
                                     </scrollView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-vh-ykG">
-                                        <rect key="frame" x="0.0" y="229" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="226" width="414" height="250"/>
                                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="lNr-s1-ztM"/>
@@ -51,7 +51,7 @@
                                         <cells/>
                                     </collectionView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-US-lln">
-                                        <rect key="frame" x="0.0" y="523.5" width="414" height="332"/>
+                                        <rect key="frame" x="0.0" y="517.5" width="414" height="332"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pwm-p5-vyk">
@@ -66,21 +66,23 @@
                                         </prototypes>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most Ordered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haV-SW-SbG">
-                                        <rect key="frame" x="20" y="489" width="104" height="24.5"/>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="20" y="486" width="91.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-aU-ELi">
-                                        <rect key="frame" x="20" y="193" width="152" height="24.5"/>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="20" y="193" width="134" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-GP-Fkq">
-                                        <rect key="frame" x="338" y="193" width="66" height="37"/>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
-                                        <state key="normal" title="Show All"/>
+                                        <rect key="frame" x="345" y="187" width="59" height="34"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <state key="normal" title="Show All">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="showAllCategoriesBtnDidTapped:" destination="4aL-22-4yU" eventType="touchUpInside" id="e8c-c7-nm8"/>
                                         </connections>
@@ -89,7 +91,6 @@
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="0.28421619450934582" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="OmU-GP-Fkq" secondAttribute="trailing" constant="10" id="30V-i7-93h"/>
-                                    <constraint firstItem="OmU-GP-Fkq" firstAttribute="top" secondItem="kao-xI-gJU" secondAttribute="bottom" constant="18" id="4yf-8a-Xkt"/>
                                     <constraint firstItem="5ZH-aU-ELi" firstAttribute="leading" secondItem="As4-d4-vZY" secondAttribute="leading" constant="20" id="F0d-dp-3qA"/>
                                     <constraint firstItem="5ZH-aU-ELi" firstAttribute="top" secondItem="kao-xI-gJU" secondAttribute="bottom" constant="18" id="I2e-jb-VVs"/>
                                     <constraint firstAttribute="trailing" secondItem="k5D-US-lln" secondAttribute="trailing" id="Mar-ol-e50"/>
@@ -103,6 +104,7 @@
                                     <constraint firstItem="kao-xI-gJU" firstAttribute="centerX" secondItem="As4-d4-vZY" secondAttribute="centerX" id="gaw-cS-VBk"/>
                                     <constraint firstItem="9cI-vh-ykG" firstAttribute="top" secondItem="5ZH-aU-ELi" secondAttribute="bottom" constant="11.5" id="jNW-3k-DEh"/>
                                     <constraint firstItem="haV-SW-SbG" firstAttribute="leading" secondItem="As4-d4-vZY" secondAttribute="leading" constant="20" id="k1L-dr-WV9"/>
+                                    <constraint firstItem="OmU-GP-Fkq" firstAttribute="centerY" secondItem="5ZH-aU-ELi" secondAttribute="centerY" id="lou-F2-uNT"/>
                                     <constraint firstItem="k5D-US-lln" firstAttribute="height" secondItem="As4-d4-vZY" secondAttribute="height" multiplier="0.370536" id="nom-8E-y3v"/>
                                     <constraint firstItem="kao-xI-gJU" firstAttribute="top" secondItem="As4-d4-vZY" secondAttribute="top" id="rx3-Lw-8ff"/>
                                     <constraint firstItem="haV-SW-SbG" firstAttribute="top" secondItem="9cI-vh-ykG" secondAttribute="bottom" constant="10" id="xyg-rX-tPs"/>

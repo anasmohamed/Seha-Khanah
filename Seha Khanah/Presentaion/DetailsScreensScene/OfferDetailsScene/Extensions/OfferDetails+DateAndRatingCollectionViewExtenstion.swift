@@ -32,6 +32,13 @@ extension OfferDetailsViewController :  UICollectionViewDelegate,UICollectionVie
         labDayDatesViewController.times = presenter.getTimes(index: indexPath.row)
         labDayDatesViewController.labName = offerTitleLbl.text
         labDayDatesViewController.labPhoto = presenter.getOfferPhoto()
+        labDayDatesViewController.labName = doctorNameLbl.text
+        labDayDatesViewController.labDate = presenter.getDates()[indexPath.row]
+        labDayDatesViewController.labId = presenter.getOfferId(index: indexPath.row)
+        labDayDatesViewController.isDoctor = true
+        labDayDatesViewController.doctorCost = presenter.getOfferCost()
+        labDayDatesViewController.profissionalTitle = presenter.getDoctorTitle()
+        labDayDatesViewController.labAddress = presenter.getAddress()
            self.navigationController!.pushViewController(labDayDatesViewController, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -54,8 +61,8 @@ extension OfferDetailsViewController :  UICollectionViewDelegate,UICollectionVie
         if collectionView == datesCollectionView{
             
             // First section
-            width = 200
-            height = 150
+            width = 130
+            height = 200
             return CGSize(width: width, height: height)
         }else
         {

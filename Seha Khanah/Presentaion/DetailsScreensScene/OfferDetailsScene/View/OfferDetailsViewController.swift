@@ -15,12 +15,15 @@ import MOLH
 class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     @IBOutlet weak var infoViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var doctorImageView: UIImageView!
+    @IBOutlet weak var ratingsCollectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var datesCollectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var doctorTitleLbl: UILabel!
     @IBOutlet weak var doctorNameLbl: UILabel!
     @IBOutlet weak var ratingsCollectionView: UICollectionView!
     @IBOutlet weak var infoLbl: UILabel!
+    @IBOutlet weak var discountPrecentageLbl: PaddingLabel!
     @IBOutlet weak var moreOrLessBtn: UIButton!
-    @IBOutlet weak var discountPrecentageLbl: UILabel!
+    
     @IBOutlet weak var datesCollectionView: UICollectionView!
     @IBOutlet weak var serivceProviderInfoView: UIView!
     @IBOutlet weak var discountLbl: UILabel!
@@ -35,7 +38,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     var id : String?
     var presenter : OfferDetailsPresenter!
     var arrayOfSavedOffersIds = [String]()
-
+    
     var locale = NSLocale.current.languageCode
     @IBOutlet weak var addToFavoriteBtn: UIButton!
     override func viewDidLoad() {
@@ -47,6 +50,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         datesCollectionView.dataSource = self
         presenter.showDoctorDetails(id: id!)
         doctorImageView.layer.cornerRadius = doctorImageView.frame.width / 2
+        setupCollectionView() 
         // Do any additional setup after loading the view.
     }
     
@@ -91,11 +95,12 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
             
         }
         imageSlideShow.auk.startAutoScroll(delaySeconds: 3)
-        priceLbl.text = offerDetails.price
+        priceLbl.attributedText = (offerDetails.price! + " IQD").strikeThrough()
         discountLbl.text = offerDetails.priceAfterDiscount
         
         rating.rating = Double(offerDetails.rating!)!
         discountPrecentageLbl.text = "Discount ".localized + offerDetails.discount! + "%"
+        discountPrecentageLbl.padding(2, 2, 2, 2)
         doctorImageView.kf.setImage(with: URL(string: (offerDetails.doctor?.photo)!))
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
@@ -115,6 +120,14 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         }
         datesCollectionView.reloadData()
         ratingsCollectionView.reloadData()
+        if presenter.getDates().count == 0
+        {
+            datesCollectionViewHeightConstraint.constant = 80
+        }
+        if presenter.getRatings().count == 0
+        {
+            ratingsCollectionViewHeightConstraint.constant = 80
+        }
     }
     
     @IBAction func addToFavoriteBtnDidTapped(_ sender: Any) {
@@ -156,4 +169,14 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         
     }
     
+}
+extension String {
+    func strikeThrough() -> NSAttributedString {
+        let attributeString =  NSMutableAttributedString(string: self)
+        attributeString.addAttribute(
+            NSAttributedString.Key.strikethroughStyle,
+            value: NSUnderlineStyle.single.rawValue,
+            range:NSMakeRange(0,attributeString.length))
+        return attributeString
+    }
 }
