@@ -300,6 +300,7 @@
                     <connections>
                         <outlet property="contentView" destination="GEa-Z0-dFv" id="oGy-KE-uyd"/>
                         <outlet property="datesCollectionView" destination="ACh-N7-WrA" id="ZjH-61-kDx"/>
+                        <outlet property="datesCollectionViewHeightConstraint" destination="Voe-vb-l0K" id="pb0-sP-gxC"/>
                         <outlet property="datesView" destination="uUx-FL-shQ" id="BDW-r9-BT0"/>
                         <outlet property="goToLocationView" destination="SDe-uh-5OF" id="E0K-sk-4NI"/>
                         <outlet property="labAdderss" destination="4al-No-Ava" id="O2Q-ud-Pfh"/>
@@ -309,7 +310,8 @@
                         <outlet property="leftArrowView" destination="OBe-fk-FWA" id="Aft-QW-fKS"/>
                         <outlet property="rating" destination="VyX-DT-6zg" id="b80-jy-b8H"/>
                         <outlet property="ratingCollectionView" destination="en5-Sb-hbU" id="VSz-ps-Y5B"/>
-                        <outlet property="ratingView" destination="EgQ-IT-imd" id="p5g-5q-Vuy"/>
+                        <outlet property="ratingView" destination="EgQ-IT-imd" id="hs5-BM-lfF"/>
+                        <outlet property="ratingsCollectionViewHeightConstraint" destination="OIf-m3-bJi" id="bFg-Y9-6HT"/>
                         <outlet property="rightArrowImage" destination="5iv-la-NLy" id="tf4-Su-D0Z"/>
                         <outlet property="rightArrowView" destination="VES-JL-0CR" id="yk3-cE-SlF"/>
                         <outlet property="scrollView" destination="kbc-ma-8Km" id="xPy-Jc-Q6V"/>

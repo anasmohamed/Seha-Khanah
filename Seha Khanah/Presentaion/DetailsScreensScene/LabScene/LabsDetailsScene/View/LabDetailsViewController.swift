@@ -13,10 +13,12 @@ import Auk
 import MOLH
 
 class LabDetailsViewController: UIViewController, LabDetailsProtocol {
+    @IBOutlet weak var datesCollectionViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ratingView: UIView!
     
+    @IBOutlet weak var ratingsCollectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var leftArrowImage: UIImageView!
     @IBOutlet weak var rightArrowView: UIView!
     @IBOutlet weak var rightArrowImage: UIImageView!
@@ -129,6 +131,14 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         longitude = labDetails.logitude
         datesCollectionView.reloadData()
         ratingCollectionView.reloadData()
+        if labDetailsPresenter.getDatesCount() == 0
+        {
+            datesCollectionViewHeightConstraint.constant = 80
+        }
+        if labDetailsPresenter.getRatingsCount() == 0
+        {
+            ratingsCollectionViewHeightConstraint.constant = 80
+        }
     }
     
     func showError(error: String) {

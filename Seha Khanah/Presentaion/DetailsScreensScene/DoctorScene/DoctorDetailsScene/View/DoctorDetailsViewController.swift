@@ -20,6 +20,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var goToLocationView: UIView!
     @IBOutlet weak var aboutDoctorTextView: ReadMoreTextView!
     
+    @IBOutlet weak var ratingsCollectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var aboutDoctorLbl: UILabel!
     @IBOutlet weak var doctorView: UIView!
     
@@ -44,6 +45,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     var arrayOfSavedIds = [String]()
     @IBOutlet weak var rightArrowView: UIView!
     @IBOutlet weak var addDoctorToFavoriteBtn: UIButton!
+    @IBOutlet weak var datesCollectionViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var rightArrowImage: UIImageView!
     @IBOutlet weak var leftArrowImage: UIImageView!
@@ -85,7 +87,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         goToLocationView.addGestureRecognizer(goToLocationTap)
         // Do any additional setup after loading the view.
     }
-  
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.showDoctorDates(id: doctorId!)
@@ -162,6 +164,14 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         
         
         ratingsCollectionView.reloadData()
+        if presenter.getDoctorDatesCount() == 0
+        {
+            datesCollectionViewHeightConstraint.constant = 80
+        }
+        if presenter.getRatingsCount() == 0
+        {
+            ratingsCollectionViewHeightConstraint.constant = 80
+        }
     }
     
     func cornerRadiusAndShodow(view:UIView)  {
