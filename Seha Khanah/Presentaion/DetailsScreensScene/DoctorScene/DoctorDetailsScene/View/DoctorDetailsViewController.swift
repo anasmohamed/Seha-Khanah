@@ -104,6 +104,10 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     func showDoctorDates() {
         
         datesCollectionView.reloadData()
+        if presenter.getDoctorDatesCount() == 0
+        {
+            datesCollectionViewHeightConstraint.constant = 80
+        }
     }
     func showIndicator() {
         
@@ -162,12 +166,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
             
         }
         
-        
         ratingsCollectionView.reloadData()
-        if presenter.getDoctorDatesCount() == 0
-        {
-            datesCollectionViewHeightConstraint.constant = 80
-        }
+        
         if presenter.getRatingsCount() == 0
         {
             ratingsCollectionViewHeightConstraint.constant = 80
