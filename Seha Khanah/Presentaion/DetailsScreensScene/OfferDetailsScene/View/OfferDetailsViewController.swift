@@ -60,6 +60,8 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
             leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
             rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
             
+//            goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
+            
         }
         // Do any additional setup after loading the view.
     }

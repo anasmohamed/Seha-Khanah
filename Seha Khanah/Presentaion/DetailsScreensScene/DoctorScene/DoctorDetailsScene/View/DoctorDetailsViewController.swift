@@ -40,6 +40,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var profissionalTitleLbl: UILabel!
     @IBOutlet weak var numberOfSeenLbl: UILabel!
     @IBOutlet weak var doctorImageView: UIImageView!
+    @IBOutlet weak var goToLocationArrowImage: UIImageView!
     let locale = NSLocale.current.languageCode
     var isAddToFavoriteBtnTapped = false
     var arrayOfSavedIds = [String]()
@@ -60,6 +61,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         {
             leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
             rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
+            
+            goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
             
         }
         presenter = DoctorDetailsPresenter(view:self)

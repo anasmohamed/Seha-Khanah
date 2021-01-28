@@ -11,6 +11,7 @@ import MOLH
 
 class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
     @IBOutlet weak var goToLocationView: UIView!
+    @IBOutlet weak var goToLocationArrowImage: UIImageView!
     
     @IBOutlet weak var locationLbl: UILabel!
     
@@ -35,7 +36,10 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
         let goToLocationTap = UITapGestureRecognizer(target: self, action: #selector(self.handleGoToLocationTab(_:)))
         
         goToLocationView.addGestureRecognizer(goToLocationTap)
-        
+        if MOLHLanguage.currentAppleLanguage() == "ar"
+        {
+            goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -121,7 +125,7 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
         }else{
             pharmacyInfoLbl.numberOfLines = 1
             pharmacyInfoLbl.sizeToFit()
-            infoHeightConstarin.constant = 120
+            infoHeightConstarin.constant = 125
             cornerRadiusAndShodow(view: infoView)
             moreOrLessBtn.setTitle("more".localized, for: .normal)
             

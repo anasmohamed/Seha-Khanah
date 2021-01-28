@@ -334,8 +334,8 @@
             filePath = "Seha Khanah/Presentaion/DetailsScreensScene/PharmacyDetailsScene/View/PharamcyDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "moreOrLessBtnDidTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -25,9 +25,9 @@ class RatingCollectionViewCell: UICollectionViewCell,RatingCollectionViewCellPro
         
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        containerView.layer.shadowRadius = 5.0
-        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        containerView.layer.shadowRadius = 2.0
+        containerView.layer.shadowOpacity = 0.5
         
         backView.layer.cornerRadius = cornerRadius
         backView.clipsToBounds = true

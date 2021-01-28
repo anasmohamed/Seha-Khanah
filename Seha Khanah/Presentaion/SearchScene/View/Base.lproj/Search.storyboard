@@ -45,10 +45,10 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12g-WY-dYO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="629"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-tE-qri">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="629"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-Vu-uVf">
                                                 <rect key="frame" x="55" y="40" width="210" height="150"/>
@@ -89,7 +89,7 @@
                                                                         <rect key="frame" x="15" y="10.5" width="24" height="24.5"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Pa-4hD">
-                                                                        <rect key="frame" x="48.5" y="15" width="113" height="15"/>
+                                                                        <rect key="frame" x="48.5" y="14" width="113" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -98,7 +98,6 @@
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="ISy-jf-rYk" secondAttribute="trailing" id="9mQ-uv-wof"/>
-                                                                    <constraint firstItem="32f-Pa-4hD" firstAttribute="top" secondItem="lEc-0K-B8a" secondAttribute="top" constant="15" id="Adl-43-Hwx"/>
                                                                     <constraint firstItem="Fa5-ck-j9Y" firstAttribute="leading" secondItem="lEc-0K-B8a" secondAttribute="leading" constant="15" id="CaN-Mk-ZWC"/>
                                                                     <constraint firstItem="32f-Pa-4hD" firstAttribute="centerY" secondItem="Fa5-ck-j9Y" secondAttribute="centerY" id="LZV-VJ-BrN"/>
                                                                     <constraint firstItem="ISy-jf-rYk" firstAttribute="centerY" secondItem="lEc-0K-B8a" secondAttribute="centerY" id="PF2-tn-DqQ"/>
@@ -130,7 +129,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Specialty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-Gq-Fmx">
-                                                                        <rect key="frame" x="50" y="15" width="135" height="15"/>
+                                                                        <rect key="frame" x="50" y="14" width="135" height="17.5"/>
                                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -140,7 +139,6 @@
                                                                 <constraints>
                                                                     <constraint firstItem="qmD-dK-eCw" firstAttribute="centerY" secondItem="dyG-jg-pOK" secondAttribute="centerY" id="ApI-RQ-Znb"/>
                                                                     <constraint firstItem="T5A-Gq-Fmx" firstAttribute="leading" secondItem="hHg-Qj-TVt" secondAttribute="trailing" constant="10" id="EGu-za-iJR"/>
-                                                                    <constraint firstItem="T5A-Gq-Fmx" firstAttribute="top" secondItem="dyG-jg-pOK" secondAttribute="top" constant="15" id="XEo-P0-XlA"/>
                                                                     <constraint firstAttribute="trailing" secondItem="qmD-dK-eCw" secondAttribute="trailing" id="ZWx-0Z-IOx"/>
                                                                     <constraint firstItem="hHg-Qj-TVt" firstAttribute="centerY" secondItem="dyG-jg-pOK" secondAttribute="centerY" id="eRb-Tw-PWZ"/>
                                                                     <constraint firstItem="hHg-Qj-TVt" firstAttribute="leading" secondItem="dyG-jg-pOK" secondAttribute="leading" constant="10" id="sTC-QU-U2e"/>
@@ -1204,7 +1202,7 @@
                     <tabBarItem key="tabBarItem" title="Appointments" image="calendar-1" id="bAL-Ya-unj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0B5-Ka-Smi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1237,7 +1235,7 @@
         <image name="calendar-1" width="29" height="30"/>
         <image name="doctor_ic" width="72" height="74"/>
         <image name="email-4" width="24" height="24"/>
-        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="envelope.fill" catalog="system" width="32" height="32"/>
         <image name="hom_row" width="72" height="74"/>
         <image name="lab_ic" width="72" height="74"/>
         <image name="logo" width="266.5" height="266.5"/>

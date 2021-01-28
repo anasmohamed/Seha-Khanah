@@ -28,118 +28,118 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4z-Zp-bJG">
                                 <rect key="frame" x="0.0" y="0.0" width="399" height="303"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="44F-2l-rGm">
-                                        <rect key="frame" x="91" y="171" width="124" height="23"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacy:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLG-PG-JaT">
-                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="23"/>
-                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz0-Wc-4mU">
-                                                <rect key="frame" x="84.5" y="0.0" width="39.5" height="23"/>
-                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-qS-nQ5">
+                                        <rect key="frame" x="0.0" y="0.0" width="399" height="167.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w5J-Yb-aB1">
+                                        <rect key="frame" x="25" y="147.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="GqA-bC-B4a"/>
+                                            <constraint firstAttribute="height" constant="50" id="Zmu-GZ-EN3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacy:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLG-PG-JaT">
+                                        <rect key="frame" x="91" y="177.5" width="65" height="18.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="5x3-FB-tZ4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz0-Wc-4mU">
+                                        <rect key="frame" x="158" y="177.5" width="236" height="20"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxN-du-xCK">
-                                        <rect key="frame" x="20" y="205" width="39.5" height="23"/>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                        <rect key="frame" x="20" y="207.5" width="32" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="13"/>
                                         <color key="textColor" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7so-sG-weL">
-                                        <rect key="frame" x="67.5" y="206" width="325.5" height="21"/>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7so-sG-weL">
+                                        <rect key="frame" x="60" y="207.5" width="334" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="13"/>
                                         <color key="textColor" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F5Y-44-8AE">
-                                        <rect key="frame" x="20" y="237" width="88.5" height="23"/>
+                                        <rect key="frame" x="20" y="235" width="78.5" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaR-6I-8Ru">
-                                                <rect key="frame" x="0.0" y="0.0" width="41" height="23"/>
-                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="20"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                 <color key="textColor" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-Lp-axX">
-                                                <rect key="frame" x="49" y="0.0" width="39.5" height="23"/>
-                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                                <rect key="frame" x="44" y="0.0" width="34.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                 <color key="textColor" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="evW-Fc-y5N">
-                                        <rect key="frame" x="20" y="270" width="135.5" height="23"/>
+                                        <rect key="frame" x="20" y="265" width="122" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fP-Iu-Jpp">
-                                                <rect key="frame" x="0.0" y="1.5" width="20" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="QRc-B5-WVC"/>
-                                                    <constraint firstAttribute="height" constant="20" id="dZZ-h6-UaJ"/>
+                                                    <constraint firstAttribute="height" constant="20" id="TuR-EL-Ldg"/>
+                                                    <constraint firstAttribute="width" constant="20" id="g6B-xt-kWv"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go To Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-ja-szz">
-                                                <rect key="frame" x="28" y="0.0" width="107.5" height="23"/>
-                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                                <rect key="frame" x="28" y="0.0" width="94" height="20"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-qS-nQ5">
-                                        <rect key="frame" x="0.0" y="0.0" width="399" height="151"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w5J-Yb-aB1">
-                                        <rect key="frame" x="31" y="131" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="09B-Mt-kR2"/>
-                                            <constraint firstAttribute="width" constant="50" id="dEb-pH-HA1"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="44F-2l-rGm" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="20" id="4d2-6S-9Yx"/>
-                                    <constraint firstItem="F5Y-44-8AE" firstAttribute="top" secondItem="MxN-du-xCK" secondAttribute="bottom" constant="9" id="5bv-xs-tKz"/>
-                                    <constraint firstItem="w5J-Yb-aB1" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="-20" id="6Es-cw-jP0"/>
-                                    <constraint firstItem="MxN-du-xCK" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" constant="20" id="7gi-xZ-01X"/>
-                                    <constraint firstItem="TOW-qS-nQ5" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" id="95z-KR-82k"/>
-                                    <constraint firstItem="F5Y-44-8AE" firstAttribute="top" secondItem="7so-sG-weL" secondAttribute="bottom" constant="10" id="Gp1-cH-9qX"/>
-                                    <constraint firstItem="MxN-du-xCK" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="54" id="IKp-qQ-QLJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="TOW-qS-nQ5" secondAttribute="trailing" id="ISW-Mp-TpT"/>
-                                    <constraint firstItem="evW-Fc-y5N" firstAttribute="leading" secondItem="F5Y-44-8AE" secondAttribute="leading" id="KgS-NV-qaK"/>
-                                    <constraint firstItem="evW-Fc-y5N" firstAttribute="top" secondItem="F5Y-44-8AE" secondAttribute="bottom" constant="10" id="Lfe-bk-xRh"/>
-                                    <constraint firstItem="44F-2l-rGm" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" constant="91" id="UrB-bw-WqN"/>
-                                    <constraint firstItem="7so-sG-weL" firstAttribute="leading" secondItem="MxN-du-xCK" secondAttribute="trailing" constant="8" id="WM2-MQ-qGp"/>
-                                    <constraint firstItem="F5Y-44-8AE" firstAttribute="leading" secondItem="MxN-du-xCK" secondAttribute="leading" id="fYR-CD-NVk"/>
-                                    <constraint firstItem="TOW-qS-nQ5" firstAttribute="top" secondItem="i4z-Zp-bJG" secondAttribute="top" id="jC4-qu-1Xf"/>
-                                    <constraint firstItem="7so-sG-weL" firstAttribute="top" secondItem="Qz0-Wc-4mU" secondAttribute="bottom" constant="12" id="l2W-BH-Pkr"/>
-                                    <constraint firstAttribute="bottom" secondItem="evW-Fc-y5N" secondAttribute="bottom" constant="10" id="qEV-2e-akh"/>
-                                    <constraint firstItem="w5J-Yb-aB1" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" constant="31" id="sg2-gq-DpL"/>
-                                    <constraint firstAttribute="trailing" secondItem="7so-sG-weL" secondAttribute="trailing" constant="6" id="zLU-jC-gxQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qz0-Wc-4mU" secondAttribute="trailing" constant="5" id="3hj-PQ-JQZ"/>
+                                    <constraint firstItem="Qz0-Wc-4mU" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="10" id="5SD-nf-AZF"/>
+                                    <constraint firstItem="w5J-Yb-aB1" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" constant="25" id="5UV-Qr-wrg"/>
+                                    <constraint firstItem="Qz0-Wc-4mU" firstAttribute="leading" secondItem="WLG-PG-JaT" secondAttribute="trailing" constant="2" id="6ot-wc-BTt"/>
+                                    <constraint firstAttribute="bottom" secondItem="evW-Fc-y5N" secondAttribute="bottom" constant="18" id="7Gz-f3-fv1"/>
+                                    <constraint firstAttribute="trailing" secondItem="TOW-qS-nQ5" secondAttribute="trailing" id="8Q4-Xx-jfA"/>
+                                    <constraint firstItem="WLG-PG-JaT" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="10" id="Dlc-Vc-9zR"/>
+                                    <constraint firstAttribute="trailing" secondItem="7so-sG-weL" secondAttribute="trailing" constant="5" id="F7I-5a-6mi"/>
+                                    <constraint firstItem="MxN-du-xCK" firstAttribute="top" secondItem="w5J-Yb-aB1" secondAttribute="bottom" constant="10" id="HBw-iH-v8D"/>
+                                    <constraint firstItem="evW-Fc-y5N" firstAttribute="top" secondItem="F5Y-44-8AE" secondAttribute="bottom" constant="10" id="Qe4-oY-ELh"/>
+                                    <constraint firstItem="w5J-Yb-aB1" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="-20" id="Yl0-eu-um0"/>
+                                    <constraint firstItem="F5Y-44-8AE" firstAttribute="top" secondItem="MxN-du-xCK" secondAttribute="bottom" constant="9" id="aYB-zy-mlN"/>
+                                    <constraint firstItem="evW-Fc-y5N" firstAttribute="leading" secondItem="F5Y-44-8AE" secondAttribute="leading" id="aft-jH-b8s"/>
+                                    <constraint firstItem="7so-sG-weL" firstAttribute="top" secondItem="Qz0-Wc-4mU" secondAttribute="bottom" constant="10" id="fNn-oz-IQd"/>
+                                    <constraint firstItem="WLG-PG-JaT" firstAttribute="leading" secondItem="w5J-Yb-aB1" secondAttribute="trailing" constant="16" id="jYV-nB-ohT"/>
+                                    <constraint firstItem="TOW-qS-nQ5" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" id="mhx-cm-E6Q"/>
+                                    <constraint firstItem="F5Y-44-8AE" firstAttribute="leading" secondItem="MxN-du-xCK" secondAttribute="leading" id="nkA-ey-j4B"/>
+                                    <constraint firstItem="7so-sG-weL" firstAttribute="leading" secondItem="MxN-du-xCK" secondAttribute="trailing" constant="8" id="ryH-RK-7Eb"/>
+                                    <constraint firstItem="TOW-qS-nQ5" firstAttribute="top" secondItem="i4z-Zp-bJG" secondAttribute="top" id="v9E-yU-VMT"/>
+                                    <constraint firstItem="MxN-du-xCK" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" constant="20" id="wZP-HZ-vEY"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i4z-Zp-bJG" firstAttribute="leading" secondItem="7BF-JQ-Kzv" secondAttribute="leading" id="2ZO-va-nHf"/>
-                            <constraint firstAttribute="bottom" secondItem="i4z-Zp-bJG" secondAttribute="bottom" id="7Kl-Lt-3hI"/>
-                            <constraint firstItem="i4z-Zp-bJG" firstAttribute="top" secondItem="7BF-JQ-Kzv" secondAttribute="top" id="lbP-Ue-TQh"/>
-                            <constraint firstAttribute="trailing" secondItem="i4z-Zp-bJG" secondAttribute="trailing" id="rYY-ca-Iby"/>
+                            <constraint firstAttribute="bottom" secondItem="i4z-Zp-bJG" secondAttribute="bottom" id="a6n-Xl-1Zj"/>
+                            <constraint firstItem="i4z-Zp-bJG" firstAttribute="top" secondItem="7BF-JQ-Kzv" secondAttribute="top" id="t1i-sT-dp6"/>
+                            <constraint firstItem="i4z-Zp-bJG" firstAttribute="leading" secondItem="7BF-JQ-Kzv" secondAttribute="leading" id="vDH-wl-aJt"/>
+                            <constraint firstAttribute="trailing" secondItem="i4z-Zp-bJG" secondAttribute="trailing" id="xIe-iX-vcz"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="7BF-JQ-Kzv" secondAttribute="trailing" constant="10" id="KLb-5c-O4j"/>
-                    <constraint firstItem="7BF-JQ-Kzv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WTG-hn-xQl"/>
-                    <constraint firstAttribute="bottom" secondItem="7BF-JQ-Kzv" secondAttribute="bottom" constant="10" id="YiQ-Cs-tS3"/>
-                    <constraint firstItem="7BF-JQ-Kzv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iKx-HO-1la"/>
+                    <constraint firstItem="7BF-JQ-Kzv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iUT-JP-jkS"/>
+                    <constraint firstItem="7BF-JQ-Kzv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pf6-lJ-Cxp"/>
+                    <constraint firstAttribute="trailing" secondItem="7BF-JQ-Kzv" secondAttribute="trailing" constant="10" id="q0n-Gx-SSd"/>
+                    <constraint firstAttribute="bottom" secondItem="7BF-JQ-Kzv" secondAttribute="bottom" constant="10" id="xKd-p3-AeC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -15,6 +15,7 @@ import MOLH
 class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     @IBOutlet weak var datesCollectionViewHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var goToLocationArrowImage: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var ratingView: UIView!
     
@@ -48,6 +49,8 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         {
             leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
             rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
+            
+            goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
             
         }
         
