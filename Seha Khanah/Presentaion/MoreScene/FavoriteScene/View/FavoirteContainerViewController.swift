@@ -19,7 +19,6 @@ class FavoirteContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
-        
         if isUserLoggedIn == true
         {
             

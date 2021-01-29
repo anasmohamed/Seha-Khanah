@@ -29,7 +29,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         {
         didSet {
             phoneTextField.tintColor = UIColor.lightGray
-            phoneTextField.setIcon(UIImage(named: "phone")!)
+            phoneTextField.setIcon(UIImage(named: "phone-call-2")!)
         }
     }
     
@@ -37,7 +37,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         {
         didSet {
             emailTextField.tintColor = UIColor.lightGray
-            emailTextField.setIcon(UIImage(named: "email")!)
+            emailTextField.setIcon(UIImage(named: "email-6")!)
         }
     }
     
@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         {
         didSet {
             passwordTextField.tintColor = UIColor.lightGray
-            passwordTextField.setIcon(UIImage(named: "lock")!)
+            passwordTextField.setIcon(UIImage(named: "padlock-3")!)
         }
     }
     
@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         {
         didSet {
             dateTextField.tintColor = UIColor.lightGray
-            dateTextField.setIcon(UIImage(named: "calendar")!)
+            dateTextField.setIcon(UIImage(named: "calendar-3")!)
         }
     }
     

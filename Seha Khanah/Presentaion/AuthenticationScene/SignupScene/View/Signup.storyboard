@@ -84,7 +84,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxn-LH-hpx">
                                                 <rect key="frame" x="0.0" y="0.0" width="99.5" height="20"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="9zs-Gq-ukV">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="couple-users-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="9zs-Gq-ukV">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="Xe5-z7-LWT"/>
@@ -158,7 +158,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPX-hM-Utx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dlw-yn-01G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.29411764705882354" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -176,6 +176,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="users" width="183.5" height="183.5"/>
+        <image name="couple-users-silhouette" width="16" height="16"/>
     </resources>
 </document>
