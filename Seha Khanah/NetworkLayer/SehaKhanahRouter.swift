@@ -239,7 +239,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.reservationEmailParameter] = email
             body[NetworkingConstants.reservationPhonenumberParameter] = phonenumber
             body[NetworkingConstants.reservationBookingDateParameter] = bookingDate
-            body[NetworkingConstants.reservationDoctorIdParameter] = labId
+            body[NetworkingConstants.reservationLaboratoryIdParameter] = labId
             body[NetworkingConstants.reservationCheckboxParameter] = checkbox
         case let .doctorReservation(name, email, phonenumber, bookingDate, doctorId, checkbox):
             body[NetworkingConstants.reservationNameParameter] = name
@@ -330,8 +330,6 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .aboutUs,
              .searchForLabByAreaId,
              .getAllLabs,
-             .doctorReservation,
-             .labReservation,
              .booking,
              .searchByAreaAndSpecialty,
              .offerSlidShow,
@@ -348,6 +346,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .resetPassword,
                .sendMessage,
                .loginWithSocial,
+               .labReservation,
+               .doctorReservation,
                .verifyUser:
             
             return try URLEncoding.default.encode(urlRequest, with:body)

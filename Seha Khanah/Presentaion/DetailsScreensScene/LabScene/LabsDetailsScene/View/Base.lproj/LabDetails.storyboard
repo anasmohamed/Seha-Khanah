@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-Z0-dFv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="841"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-MR-TiH">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
@@ -43,16 +43,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FX4-zO-Mgw">
-                                                <rect key="frame" x="10" y="175" width="114.5" height="26"/>
+                                                <rect key="frame" x="10" y="175" width="106.5" height="23"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npt-gD-kwt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="26"/>
-                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="23"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <color key="textColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4al-No-Ava">
-                                                        <rect key="frame" x="77.5" y="0.0" width="37" height="26"/>
+                                                        <rect key="frame" x="69.5" y="0.0" width="37" height="23"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyX-DT-6zg" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="10" y="211" width="100" height="10"/>
+                                                <rect key="frame" x="10" y="208" width="100" height="10"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="cJ4-Q1-NC0"/>
@@ -73,9 +73,9 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUx-FL-shQ">
-                                                <rect key="frame" x="20" y="261" width="374" height="300"/>
+                                                <rect key="frame" x="20" y="258" width="374" height="300"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-wW-R6y">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-wW-R6y">
                                                         <rect key="frame" x="10" y="10" width="131" height="30"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-calender" translatesAutoresizingMaskIntoConstraints="NO" id="M9w-L3-Jjb">
@@ -86,7 +86,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Dates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si7-cS-eMs">
-                                                                <rect key="frame" x="40" y="0.0" width="91" height="20"/>
+                                                                <rect key="frame" x="40" y="5" width="91" height="20"/>
                                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -167,7 +167,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgQ-IT-imd">
-                                                <rect key="frame" x="20" y="581" width="374" height="200"/>
+                                                <rect key="frame" x="20" y="578" width="374" height="200"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jvx-Oa-Wza">
                                                         <rect key="frame" x="10" y="10" width="66" height="20"/>

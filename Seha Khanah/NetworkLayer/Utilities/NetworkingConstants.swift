@@ -49,7 +49,7 @@ class NetworkingConstants {
     
     
     static let doctorReservation = "api/reservation"
-    static let labReservation = "laboratory/reservation"
+    static let labReservation = "api/laboratory/reservation"
     
     static let reservationNameParameter = "name"
     static let reservationEmailParameter = "email"

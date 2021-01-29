@@ -29,9 +29,6 @@ class SuccessBookingViewController: UIViewController {
         super.viewDidLoad()
         dayLbl.text = dayText
         labServiceLbl.text = labService?.nameEn
-        if labServiceLbl.text!.isEmpty{
-            labServiceLbl.text = profissionalTitle
-        }
         labNameLbl.text = labName
         locationLbl.text = labAddress
         // Do any additional setup after loading the view.

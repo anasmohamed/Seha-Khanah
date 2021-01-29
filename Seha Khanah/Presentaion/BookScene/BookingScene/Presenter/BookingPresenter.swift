@@ -47,6 +47,9 @@ class BookingPresenter {
                 if result != nil{
                     self.reservationResponse = result!
                     self.view?.bookingSuccess()
+                }else{
+                    self.view?.showError(error: "Date Requird".localized)
+
                 }
                 
             }

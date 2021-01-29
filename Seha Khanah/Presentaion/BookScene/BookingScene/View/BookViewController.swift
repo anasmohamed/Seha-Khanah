@@ -167,7 +167,7 @@ class BookViewController: UIViewController,BookingProtocol {
         }
         print (date! + " " + timeWithoutAMOrPM!)
         if isDoctor{
-            preseter?.bookDoctor(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
+            preseter?.bookDoctor(name:nameText , email: emailText, phoneNumber:mobileText , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
         }else{
             preseter?.bookLab(name:nameText , email: emailText, phoneNumber:mobileText , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
         }}
