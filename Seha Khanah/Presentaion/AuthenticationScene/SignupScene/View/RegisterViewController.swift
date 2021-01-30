@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MBRadioCheckboxButton
+import Toast_Swift
 class RegisterViewController: UIViewController,RegisterProtocol {
     let datePicker = UIDatePicker()
     
@@ -17,6 +18,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
     @IBOutlet weak var maleRadioBtn: RadioButton!
     let genderRadioBtnsGroup = RadioButtonContainer()
     var selectedGender = "1"
+    var date : Date? = nil
     @IBOutlet weak var userNameTextField: UITextField!
         {
         didSet {
@@ -65,6 +67,10 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
+        passwordTextField.text = "123qwe123"
+        emailTextField.text = "anaswe@gmail.com"
+        userNameTextField.text = "anas"
+        phoneTextField.text = "+9647906734016"
     }
     
     func showIndicator() {
@@ -96,6 +102,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
     func showError(error: String) {
         indicator.stopAnimating()
         print("error message\(error)")
+        self.view.makeToast(error, duration: 3.0, position: .top)
     }
     func createDatePicker()  {
         let toolBar = UIToolbar()
@@ -104,6 +111,8 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         toolBar.setItems([doneBtn], animated: true)
         dateTextField.inputAccessoryView = toolBar
         dateTextField.inputView = datePicker
+        datePicker.locale = Locale(identifier: "en_US")
+
         datePicker.datePickerMode = .date
     }
     func setupLanguageBtns() {
@@ -120,31 +129,34 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         formatter.dateFormat = "yyyy-MM-dd"
+        formatter.locale = Locale(identifier: "en_US")
         
+        date = datePicker.date
         dateTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
     
     @IBAction func registerBtnDidTapped(_ sender: Any) {
-        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text,let birthday = dateTextField.text  else {
+        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text else {
             return
         }
         //        guard phone.count == 11 else {
         //            return
         //        }
         guard password.count > 6 else {
+            self.view.makeToast("Please Enter Password More Than 6 character", duration: 3.0, position: .top)
+            
             return
         }
-        if !birthday.isEmpty{
-            let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-            let date = dateFormatter.date(from:birthday)!
-            print(date)
-            registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date)
+       
+        if dateTextField.text!.isEmpty {
+            self.view.makeToast("Please Enter Password More Than 6 character", duration: 3.0, position: .bottom)
+            return
         }else{
-            
+            registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date!)
+        
         }
+        
     }
     
 }

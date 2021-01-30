@@ -3,52 +3,24 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "SehaKhanahRouter.asURLRequest():SehaKhanahRouter.swift">
+         contextName = "RegisterViewController.doneBtnDidTapped():RegisterViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "path">
+               value = "datePicker.date">
             </PersistentString>
             <PersistentString
-               value = "params">
+               value = "formatter.string(from: datePicker.date)">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SehaKhanahRouter.httpHeaders.getter:SehaKhanahRouter.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in LoginPresenter.login(email:password:):LoginPresenter.swift">
-      </ContextState>
-      <ContextState
-         contextName = "LoginInteractor.loginWithSocial(accessTokcen:provider:completionHandler:):LoginInteractor.swift">
-      </ContextState>
-      <ContextState
-         contextName = "LabDate.init(withJSON:):LabDate.swift">
-      </ContextState>
-      <ContextState
-         contextName = "MyAppintmentsTableViewController.tableView(_:numberOfRowsInSection:):MyAppintmentsTableViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "OffersViewController.collectionView(_:didSelectItemAt:):OffersViewController+CategoriesCollectionView.swift">
-         <PersistentStrings>
             <PersistentString
-               value = "presenter.getOfferId(index: indexPath.row)">
+               value = "formatter.date(from: formatter.string(from: datePicker.date))!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MyAppintmentsTableViewController.viewDidLoad():MyAppintmentsTableViewController.swift">
+         contextName = "LabDetailsViewController.showLabDetails(labDetails:):LabDetailsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "UserDefaults.standard.string(forKey: &quot;token&quot;)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MyAppintmentsTableViewController.tableView(_:cellForRowAt:):MyAppintmentsTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "myAppointmentsPresenter.getMyAppointmentsCount()">
+               value = "labPhotos?.append(photo[&quot;featured&quot;].stringValue)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -61,10 +33,72 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LabDetailsViewController.showLabDetails(labDetails:):LabDetailsViewController.swift">
+         contextName = "AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LabDate.init(withJSON:):LabDate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SehaKhanahRouter.httpHeaders.getter:SehaKhanahRouter.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyAppintmentsTableViewController.viewDidLoad():MyAppintmentsTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "labPhotos?.append(photo[&quot;featured&quot;].stringValue)">
+               value = "UserDefaults.standard.string(forKey: &quot;token&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginPresenter.login(email:password:):LoginPresenter.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyAppintmentsTableViewController.tableView(_:numberOfRowsInSection:):MyAppintmentsTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SehaKhanahRouter.asURLRequest():SehaKhanahRouter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "path">
+            </PersistentString>
+            <PersistentString
+               value = "params">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RegisterViewController.registerBtnDidTapped(_:):RegisterViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "let date = dateFormatter.date(from:birthday)!">
+            </PersistentString>
+            <PersistentString
+               value = "dateFormatter.string(from: date)">
+            </PersistentString>
+            <PersistentString
+               value = "dateFormatter.date(from:birthday)!">
+            </PersistentString>
+            <PersistentString
+               value = "date">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginInteractor.loginWithSocial(accessTokcen:provider:completionHandler:):LoginInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OffersViewController.collectionView(_:didSelectItemAt:):OffersViewController+CategoriesCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "presenter.getOfferId(index: indexPath.row)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyAppintmentsTableViewController.tableView(_:cellForRowAt:):MyAppintmentsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myAppointmentsPresenter.getMyAppointmentsCount()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

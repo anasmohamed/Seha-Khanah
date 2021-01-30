@@ -25,6 +25,7 @@ extension OffersViewController :OffersCategorisViewProtocol{
     func showError(error: String) {
         indicator.stopAnimating()
         self.view.isUserInteractionEnabled = true
+        self.view.makeToast(error, duration: 3.0, position: .top)
 
         print("error \(error)")
     }
