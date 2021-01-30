@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "REGISTER NOW"; ObjectID = "9Gx-DY-IVj"; */
+"9Gx-DY-IVj.normalTitle" = "سجل الاَن";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "JIF-0j-Jgz"; */
+"JIF-0j-Jgz.placeholder" = "الأسم بالكامل";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "MtX-bN-EUW"; */
+"MtX-bN-EUW.placeholder" = "رمز الدخول";
+
+/* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "SYg-bR-HRQ"; */
+"SYg-bR-HRQ.placeholder" = "تاريخ الميلاد";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "TlY-DF-B4d"; */
+"TlY-DF-B4d.text" = "الجنس";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "Uey-n0-RY0"; */
+"Uey-n0-RY0.normalTitle" = "أنثى";
+
+/* Class = "UINavigationItem"; title = "Register Now"; ObjectID = "hwl-Cj-wVN"; */
+"hwl-Cj-wVN.title" = "سجل الاَن";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "qkH-xA-S9c"; */
+"qkH-xA-S9c.placeholder" = "البريد الإلكترونى";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "to1-fq-U4e"; */
+"to1-fq-U4e.placeholder" = "رقم التليفون بدون ..0";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "ub5-N5-jY3"; */
+"ub5-N5-jY3.normalTitle" = "ذكر";

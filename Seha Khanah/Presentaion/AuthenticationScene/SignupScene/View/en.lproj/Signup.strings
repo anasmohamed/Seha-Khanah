@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "REGISTER NOW"; ObjectID = "9Gx-DY-IVj"; */
+"9Gx-DY-IVj.normalTitle" = "REGISTER NOW";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "JIF-0j-Jgz"; */
+"JIF-0j-Jgz.placeholder" = "Full Name";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "MtX-bN-EUW"; */
+"MtX-bN-EUW.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "SYg-bR-HRQ"; */
+"SYg-bR-HRQ.placeholder" = "Date Of Birth";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "TlY-DF-B4d"; */
+"TlY-DF-B4d.text" = "Gender";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "Uey-n0-RY0"; */
+"Uey-n0-RY0.normalTitle" = "Female";
+
+/* Class = "UINavigationItem"; title = "Register Now"; ObjectID = "hwl-Cj-wVN"; */
+"hwl-Cj-wVN.title" = "Register Now";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "qkH-xA-S9c"; */
+"qkH-xA-S9c.placeholder" = "E-mail";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "to1-fq-U4e"; */
+"to1-fq-U4e.placeholder" = "Mobile Number";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "ub5-N5-jY3"; */
+"ub5-N5-jY3.normalTitle" = "Male";

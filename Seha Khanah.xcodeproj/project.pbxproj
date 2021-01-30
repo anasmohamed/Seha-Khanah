@@ -159,7 +159,6 @@
 		A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */; };
 		A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86AF25875B2B00604E64 /* Assets.xcassets */; };
 		A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */; };
-		A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86BF25876E3E00604E64 /* Signup.storyboard */; };
 		A8B8E4CC25A8BF70002F8149 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E4CB25A8BF70002F8149 /* User.swift */; };
 		A8B8E4CE25A8C376002F8149 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E4CD25A8C376002F8149 /* LoginInteractor.swift */; };
 		A8B8E4D025A8C498002F8149 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E4CF25A8C498002F8149 /* LoginProtocol.swift */; };
@@ -167,6 +166,7 @@
 		A8BFC9412594B33A002C90ED /* PharmacyOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */; };
 		A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */; };
 		A8BFC9452594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */; };
+		A8C0B2F425C57C370053FA0D /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C0B2F625C57C370053FA0D /* Signup.storyboard */; };
 		A8C1BCA525B7A0FA00E4CD05 /* OfferDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCA425B7A0FA00E4CD05 /* OfferDetailsInteractor.swift */; };
 		A8C1BCA725B7A13900E4CD05 /* OfferDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCA625B7A13900E4CD05 /* OfferDetailsPresenter.swift */; };
 		A8C1BCA925B7A18B00E4CD05 /* OfferDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1BCA825B7A18B00E4CD05 /* OfferDetails.swift */; };
@@ -413,7 +413,6 @@
 		A8AC86AF25875B2B00604E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC86B425875B2B00604E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8AC86BF25876E3E00604E64 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		A8B8E4CB25A8BF70002F8149 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8B8E4CD25A8C376002F8149 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A8B8E4CF25A8C498002F8149 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
@@ -421,6 +420,9 @@
 		A8BFC9402594B33A002C90ED /* PharmacyOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersPresenter.swift; sourceTree = "<group>"; };
 		A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersViewProtocol.swift; sourceTree = "<group>"; };
 		A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOfferTableViewCellViewProtocol.swift; sourceTree = "<group>"; };
+		A8C0B2F525C57C370053FA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Signup.storyboard; sourceTree = "<group>"; };
+		A8C0B2F825C57C5D0053FA0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Signup.strings; sourceTree = "<group>"; };
+		A8C0B2FA25C57C650053FA0D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Signup.strings; sourceTree = "<group>"; };
 		A8C1BCA425B7A0FA00E4CD05 /* OfferDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsInteractor.swift; sourceTree = "<group>"; };
 		A8C1BCA625B7A13900E4CD05 /* OfferDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsPresenter.swift; sourceTree = "<group>"; };
 		A8C1BCA825B7A18B00E4CD05 /* OfferDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetails.swift; sourceTree = "<group>"; };
@@ -883,7 +885,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F299882587AE7000A6BB35 /* RegisterViewController.swift */,
-				A8AC86BF25876E3E00604E64 /* Signup.storyboard */,
+				A8C0B2F625C57C370053FA0D /* Signup.storyboard */,
 				A818006725AB7E5000C750AE /* RegisterProtocol.swift */,
 			);
 			path = View;
@@ -2171,7 +2173,7 @@
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,
 				A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */,
-				A8AC86C025876E3F00604E64 /* Signup.storyboard in Resources */,
+				A8C0B2F425C57C370053FA0D /* Signup.storyboard in Resources */,
 				A80DD8D125A120AE00FD2CF1 /* LabServices.storyboard in Resources */,
 				A807E8B925B1CA84009C5CDA /* Login.storyboard in Resources */,
 				A8D2E36125AB42CC003C8DA7 /* GoogleService-Info.plist in Resources */,
@@ -2572,6 +2574,16 @@
 				A8674A24259748DE0099E7CE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8C0B2F625C57C370053FA0D /* Signup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8C0B2F525C57C370053FA0D /* Base */,
+				A8C0B2F825C57C5D0053FA0D /* en */,
+				A8C0B2FA25C57C650053FA0D /* ar */,
+			);
+			name = Signup.storyboard;
 			sourceTree = "<group>";
 		};
 		A8C4B61C25BC3ABA00E92BB3 /* Favorite.storyboard */ = {

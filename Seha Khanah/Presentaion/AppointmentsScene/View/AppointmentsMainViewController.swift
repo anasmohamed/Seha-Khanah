@@ -37,7 +37,8 @@ class AppointmentsMainViewController: UIViewController {
             segmentCotrol.isHidden = true
             noUserLoggedInStackView.isHidden = false
         }
-        
+        let font = UIFont(name: "AGOOGLE", size: 12.0)
+        segmentCotrol.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
          let goToLoginViewTab  = UITapGestureRecognizer(target: self, action: #selector(self.handleGoToLoginTap(_:)))
         noUserLoggedInStackView.addGestureRecognizer(goToLoginViewTab)
         // Do any additional setup after loading the view.
@@ -76,4 +77,9 @@ class AppointmentsMainViewController: UIViewController {
      }
      */
     
+}
+extension UISegmentedControl{
+    func changeTitleFont(newFontName:String?, newFontSize:CGFloat?){
+       
+    }
 }
