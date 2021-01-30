@@ -31,14 +31,15 @@ class OffersViewController: UIViewController {
         
         mostOrderOffersTableView.delegate = self
         mostOrderedOffersTableView.dataSource = self
-        
+        self.view.isUserInteractionEnabled = false
         
         presenter = OffersCategoriesPresenter(view : self)
         mostOrderedOffersPresenter = MostOrderedOffersPresenter(view: self)
         setupCollectionView()
         setupMostOrderedOffersTableView()
         
-        
+        self.navigationItem.title = "Offers".localized
+
 //        collectionViewLayoutInsets()
         offersCategoriesCollectionView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         //in cellForItemAtIndexPath

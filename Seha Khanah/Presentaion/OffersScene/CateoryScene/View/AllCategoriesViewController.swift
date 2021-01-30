@@ -15,13 +15,21 @@ class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesPro
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AllCategoriesPresenter(view:self)
-        
+        let backButton = UIBarButtonItem(
+            title: "Offers".localized,
+              style: UIBarButtonItem.Style.plain,
+              target: nil,
+              action: nil
+        );
+
+        self.navigationController!.navigationBar.topItem!.backBarButtonItem = backButton;
         // Do any additional setup after loading the view.
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.getOffersCategories()
-        
+
     }
     override func numberOfRows(in tableView: UITableView) -> Int {
         return presenter.getOffersCategoriesCount()

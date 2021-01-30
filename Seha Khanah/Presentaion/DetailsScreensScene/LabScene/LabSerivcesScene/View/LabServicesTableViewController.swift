@@ -18,7 +18,8 @@ class LabServicesTableViewController: UITableViewController {
     var labAddress: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "Select Test Type".localized
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         

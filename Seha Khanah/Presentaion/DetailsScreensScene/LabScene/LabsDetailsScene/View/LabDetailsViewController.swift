@@ -86,11 +86,13 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         }
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        cornerRadiusAndShodow(view: datesView)
-        cornerRadiusAndShodow(view: ratingView)
-        cornerRadiusAndShodow(view: goToLocationView)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Lab Details".localized
+        datesView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        ratingView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        goToLocationView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+      
         leftArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
         rightArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
     }

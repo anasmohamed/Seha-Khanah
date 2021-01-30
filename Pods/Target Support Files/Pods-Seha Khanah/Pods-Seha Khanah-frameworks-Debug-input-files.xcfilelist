@@ -18,4 +18,5 @@ ${BUILT_PRODUCTS_DIR}/ReadMoreTextView/ReadMoreTextView.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
 ${BUILT_PRODUCTS_DIR}/moa/moa.framework

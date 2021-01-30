@@ -56,7 +56,8 @@ class BookViewController: UIViewController,BookingProtocol {
         labImageView.layer.borderWidth = 1
         dayLbl.text = dayName! + " " + date!
         labNameLbl.text = labName
-        
+        self.navigationItem.title = "Booking Order".localized
+
         
         fullNameTextField.text = UserDefaults.standard.string(forKey: "name")
         emailTextField.text = UserDefaults.standard.string(forKey: "email")

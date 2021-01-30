@@ -42,7 +42,7 @@ class OffersCategoriesPresenter {
         return offers.count
     }
     func getOfferId(index:Int) -> String {
-        return offers[index].id!
+        return offers[index].id ?? "0"
     }
     
     func configure(cell: OffersCategorisCellView, for index: Int,section:Int) {

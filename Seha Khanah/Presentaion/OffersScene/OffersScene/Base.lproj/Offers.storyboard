@@ -16,15 +16,11 @@
         <!--Offers-->
         <scene sceneID="Mah-V5-YqD">
             <objects>
-                <viewController restorationIdentifier="OffersViewController" storyboardIdentifier="OffersViewController" automaticallyAdjustsScrollViewInsets="NO" id="4aL-22-4yU" customClass="OffersViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OffersViewController" automaticallyAdjustsScrollViewInsets="NO" id="4aL-22-4yU" customClass="OffersViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Czu-aJ-Mt5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KYd-ys-INW">
-                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
-                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As4-d4-vZY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
@@ -112,15 +108,19 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="DdQ-7L-xBS"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="hQs-61-T76"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KYd-ys-INW">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="As4-d4-vZY" firstAttribute="leading" secondItem="Czu-aJ-Mt5" secondAttribute="leading" id="AgC-rd-U8c"/>
                             <constraint firstItem="As4-d4-vZY" firstAttribute="top" secondItem="Czu-aJ-Mt5" secondAttribute="top" id="BGf-FZ-3gb"/>
-                            <constraint firstItem="As4-d4-vZY" firstAttribute="centerY" secondItem="KYd-ys-INW" secondAttribute="centerY" id="FNI-1X-kPk"/>
                             <constraint firstAttribute="trailing" secondItem="As4-d4-vZY" secondAttribute="trailing" id="SMs-vP-Ii0"/>
+                            <constraint firstItem="KYd-ys-INW" firstAttribute="centerX" secondItem="Czu-aJ-Mt5" secondAttribute="centerX" id="UMI-Fv-bDq"/>
                             <constraint firstAttribute="bottom" secondItem="As4-d4-vZY" secondAttribute="bottom" id="oVc-wK-yQi"/>
-                            <constraint firstItem="As4-d4-vZY" firstAttribute="centerX" secondItem="KYd-ys-INW" secondAttribute="centerX" id="qrF-1b-t1W"/>
+                            <constraint firstItem="KYd-ys-INW" firstAttribute="centerY" secondItem="Czu-aJ-Mt5" secondAttribute="centerY" id="wR6-SE-5fc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JeF-lG-Obh"/>
                     </view>
@@ -165,7 +165,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tlz-dk-M2V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1717" y="70"/>
+            <point key="canvasLocation" x="1788" y="70"/>
         </scene>
     </scenes>
 </document>

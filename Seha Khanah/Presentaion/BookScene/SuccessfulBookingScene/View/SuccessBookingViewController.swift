@@ -36,13 +36,16 @@ class SuccessBookingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         successView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        self.navigationItem.title = "Thanks".localized
+        
     }
     
     
     @IBAction func successBtnDidTapped(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Search", bundle:nil )
         let tabBar = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        self.navigationController!.pushViewController(tabBar, animated: true)
+        tabBar.modalPresentationStyle = .fullScreen
+        self.present(tabBar, animated: true)
     }
     /*
      // MARK: - Navigation

@@ -24,7 +24,7 @@ target 'Seha Khanah' do
     pod 'GoogleSignIn'
     pod 'ReachabilitySwift'
     pod 'DropDownTableView/Swift'
-#    pod 'Localize-Swift', '~> 3.2'
-#    pod 'Localize' , '~> 2.3.0'
+    pod 'Toast-Swift', '~> 5.0.1'
+
 
 end

@@ -10,7 +10,8 @@ import Foundation
 extension OffersViewController :OffersCategorisViewProtocol{
     func getOffersCategorisSuccess() {
         offersCategoriesCollectionView.reloadData()
-        
+        self.view.isUserInteractionEnabled = true
+
     }
     
     func showIndicator() {
@@ -23,6 +24,7 @@ extension OffersViewController :OffersCategorisViewProtocol{
     }
     func showError(error: String) {
         indicator.stopAnimating()
+        self.view.isUserInteractionEnabled = true
 
         print("error \(error)")
     }

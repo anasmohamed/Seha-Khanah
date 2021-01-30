@@ -101,6 +101,8 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         cornerRadiusAndShodow(view: goToLocationView)
         rightArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
         leftArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        self.navigationItem.title = "Doctor Details".localized
+
         //        cornerRadiusAndShodowForArrows(view: leftArrowView)
         //        cornerRadiusAndShodowForArrows(view: rightArrowView)
     }

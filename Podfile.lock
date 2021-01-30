@@ -51,6 +51,7 @@ PODS:
   - SDWebImage/Core (5.9.3)
   - SwiftyJSON (4.3.0)
   - Swinject (2.7.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - AACarousel
@@ -71,6 +72,7 @@ DEPENDENCIES:
   - SDWebImage (~> 5.0)
   - SwiftyJSON (~> 4.0)
   - Swinject
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -95,6 +97,7 @@ SPEC REPOS:
     - SDWebImage
     - SwiftyJSON
     - Swinject
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   AACarousel: e0dbd2d3153c56c36df8aa282553f20fc88e132b
@@ -118,7 +121,8 @@ SPEC CHECKSUMS:
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 559f7bd97cf0ef9dec4e70196dd067ce063c4fe8
+PODFILE CHECKSUM: ff9ba635ad6cb5cffd2f3f5cd165919d4aea0cda
 
 COCOAPODS: 1.9.3
