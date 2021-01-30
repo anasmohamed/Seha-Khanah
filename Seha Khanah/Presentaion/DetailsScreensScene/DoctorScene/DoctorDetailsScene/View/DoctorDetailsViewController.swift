@@ -91,16 +91,15 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         presenter.showDoctorDates(id: doctorId!)
         cornerRadiusAndShodow(view: doctorView)
         cornerRadiusAndShodow(view: aboutDoctorView)
         cornerRadiusAndShodow(view: ratingView)
         cornerRadiusAndShodow(view: datesView)
         cornerRadiusAndShodow(view: goToLocationView)
-        rightArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
-        leftArrowView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+      
         self.navigationItem.title = "Doctor Details".localized
 
         //        cornerRadiusAndShodowForArrows(view: leftArrowView)
@@ -184,8 +183,6 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 3
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
-        view.layer.shouldRasterize = true
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 5
     }
@@ -208,6 +205,7 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
             aboutDoctorLbl.sizeToFit()
             print(aboutDoctorLbl.bounds.height)
             aboutDoctorViewHeight.constant = aboutDoctorLbl.bounds.height + 80
+            
             cornerRadiusAndShodow(view: aboutDoctorView)
             moreAndLessLbl.text = "less".localized
         }else{
