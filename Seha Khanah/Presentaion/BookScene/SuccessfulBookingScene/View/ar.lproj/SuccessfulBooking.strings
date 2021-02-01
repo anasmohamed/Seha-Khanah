@@ -6,7 +6,7 @@
 "2YR-WM-fpe.text" = "Label";
 
 /* Class = "UIButton"; normalTitle = "Success"; ObjectID = "3RS-xD-HRl"; */
-"3RS-xD-HRl.normalTitle" = "Success";
+"3RS-xD-HRl.normalTitle" = "تم حجزك بنجاح";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "LmF-sk-geU"; */
 "LmF-sk-geU.text" = "Label";

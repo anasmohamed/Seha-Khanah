@@ -55,7 +55,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         {
         didSet {
             dateTextField.tintColor = UIColor.lightGray
-            dateTextField.setIcon(UIImage(named: "calendar-3")!)
+            dateTextField.setIcon(UIImage(named: "calendar-2")!)
         }
     }
     
@@ -67,10 +67,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
-        passwordTextField.text = "123qwe123"
-        emailTextField.text = "anaswe@gmail.com"
-        userNameTextField.text = "anas"
-        phoneTextField.text = "+9647906734016"
+      
     }
     
     func showIndicator() {

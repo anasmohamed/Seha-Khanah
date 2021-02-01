@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Sukar-Regular.ttf">
-            <string>Sukar-Regular</string>
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
         </array>
     </customFonts>
     <scenes>
@@ -28,9 +28,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-5c-OQf">
-                                                <rect key="frame" x="132.5" y="19" width="35.5" height="22"/>
-                                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="130.5" y="18.5" width="39.5" height="23"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -43,16 +43,16 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-R0-H4V">
-                                        <rect key="frame" x="58.5" y="120" width="183" height="22"/>
+                                        <rect key="frame" x="56" y="120" width="188" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-M9-bTS" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="22"/>
-                                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="22"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <state key="normal" title="English"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSD-Oh-2d0" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="131" y="0.0" width="52" height="22"/>
-                                                <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                                <rect key="frame" x="132" y="0.0" width="56" height="22"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <state key="normal" title="عربى"/>
                                             </button>
                                         </subviews>
@@ -64,7 +64,7 @@
                                             <constraint firstAttribute="height" constant="60" id="R4v-74-JdJ"/>
                                             <constraint firstAttribute="width" constant="250" id="fTx-4f-GSN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Sukar-Regular" family="Sukar" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <state key="normal" title="Save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>

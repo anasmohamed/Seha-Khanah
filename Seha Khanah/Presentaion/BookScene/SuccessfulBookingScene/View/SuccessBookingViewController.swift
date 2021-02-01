@@ -35,7 +35,7 @@ class SuccessBookingViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        successView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
+        successView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 1, height: 1), radius: 5, scale: true)
         self.navigationItem.title = "Thanks".localized
         
     }
