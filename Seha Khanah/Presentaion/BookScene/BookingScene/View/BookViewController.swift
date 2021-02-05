@@ -9,7 +9,7 @@
 import UIKit
 import MBRadioCheckboxButton
 import MOLH
-
+import Toast_Swift
 class BookViewController: UIViewController,BookingProtocol {
     
     @IBOutlet weak var costView: UIView!
@@ -56,8 +56,8 @@ class BookViewController: UIViewController,BookingProtocol {
         labImageView.layer.borderWidth = 1
         dayLbl.text = dayName! + " " + date!
         labNameLbl.text = labName
-        self.navigationItem.title = "Booking Order".localized
-
+        self.navigationItem.title = "Order".localized
+        
         
         fullNameTextField.text = UserDefaults.standard.string(forKey: "name")
         emailTextField.text = UserDefaults.standard.string(forKey: "email")
@@ -153,25 +153,33 @@ class BookViewController: UIViewController,BookingProtocol {
      */
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
         print (date! + timeLbl.text!)
-        guard let emailText = emailTextField.text,let mobileText = mobileNumberTextField.text,let nameText = fullNameTextField.text  else {
-            return
+        if !emailTextField.text!.isEmpty && !mobileNumberTextField.text!.isEmpty && !fullNameTextField.text!.isEmpty{
+            var timeWithoutAMOrPM : String?
+            if  (timeLbl.text?.contains("am"))!
+            {
+                timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
+                
+            }else
+            {
+                timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
+            }
+            print (date! + " " + timeWithoutAMOrPM!)
+            if isDoctor{
+                preseter?.bookDoctor(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
+            }else{
+                preseter?.bookLab(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
+            }
+            
+        }
+            
+        else {
+            
+            self.view.makeToast("Enter Missing Data".localized, duration: 3.0, position: .bottom)
+            
+            
         }
         
-        var timeWithoutAMOrPM : String?
-        if  (timeLbl.text?.contains("am"))!
-        {
-            timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
-            
-        }else
-        {
-            timeWithoutAMOrPM = timeLbl.text!.replacingOccurrences(of: "am", with: "", options: NSString.CompareOptions.literal, range:nil)
-        }
-        print (date! + " " + timeWithoutAMOrPM!)
-        if isDoctor{
-            preseter?.bookDoctor(name:nameText , email: emailText, phoneNumber:mobileText , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
-        }else{
-            preseter?.bookLab(name:nameText , email: emailText, phoneNumber:mobileText , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
-        }}
+    }
     
 }
 extension BookViewController: CheckboxButtonDelegate {

@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Seha Khanah
 
@@ -67,12 +67,13 @@
 
 "Doctor Details" = "تفاصيل الطبيب";
 
-"Booking Dates" = "مواعيد الحجز";
+"Dates" = "المواعيد";
 
-"Booking Order" = "طلب الحجز";
+"Order" = "الطلب";
 
 "Thanks" = "شكرا";
 
 "Lab Details" = "بيانات المختبر";
 
-"Select Test Type" = "اختر نوع التحليل";
+"Test Type" = "نوع التحليل";
+"

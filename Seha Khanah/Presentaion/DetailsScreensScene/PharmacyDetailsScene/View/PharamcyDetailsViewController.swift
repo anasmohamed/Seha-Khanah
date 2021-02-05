@@ -40,7 +40,7 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
         {
             goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
         }
-        
+        self.navigationItem.title = "Details".localized
         // Do any additional setup after loading the view.
     }
     @objc func handleGoToLocationTab(_ sender: UITapGestureRecognizer? = nil) {

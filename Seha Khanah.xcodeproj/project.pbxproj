@@ -37,9 +37,7 @@
 		A818006425AB7D6900C750AE /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006325AB7D6900C750AE /* RegisterInteractor.swift */; };
 		A818006625AB7E2600C750AE /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006525AB7E2600C750AE /* RegisterPresenter.swift */; };
 		A818006825AB7E5000C750AE /* RegisterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006725AB7E5000C750AE /* RegisterProtocol.swift */; };
-		A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818006B25ABBE9100C750AE /* EditProfile.storyboard */; };
 		A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006D25ABC14800C750AE /* EditProfileViewController.swift */; };
-		A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A818007325ABC30100C750AE /* ResetPassword.storyboard */; };
 		A81BDB4E25BCB65E002B84E1 /* UILabel+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */; };
 		A828400B25B7508F000F6B19 /* AllCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */; };
 		A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */; };
@@ -58,7 +56,6 @@
 		A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */; };
 		A83D6EB2258A2E6000186693 /* MostOrderedOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB0258A2E6000186693 /* MostOrderedOffersTableViewCell.swift */; };
 		A83D6EB7258A322500186693 /* OfferCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */; };
-		A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */; };
 		A83D6EBD258A394C00186693 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D6EBC258A394C00186693 /* NetworkingConstants.swift */; };
 		A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */; };
 		A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */; };
@@ -90,7 +87,6 @@
 		A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E32862594ADBD00842D0F /* PharmacyOffersInteractor.swift */; };
 		A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A860322C2596A1BC003A7DA5 /* More.storyboard */; };
 		A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */; };
-		A8674A20259748890099E7CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8674A22259748890099E7CE /* Localizable.strings */; };
 		A8674A26259749060099E7CE /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8674A28259749060099E7CE /* Offers.storyboard */; };
 		A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8674A3C259777110099E7CE /* CallUsViewController.swift */; };
 		A8693E1A259F66F500285921 /* LabDetails+DatesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */; };
@@ -115,7 +111,6 @@
 		A877D27425B6234E00248E95 /* FavoriteOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D27325B6234E00248E95 /* FavoriteOffersPresenter.swift */; };
 		A877D27625B6236B00248E95 /* FavoriteOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D27525B6236B00248E95 /* FavoriteOffersInteractor.swift */; };
 		A877D27B25B64DDF00248E95 /* MostOrderedOffersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A877D27D25B64DDF00248E95 /* MostOrderedOffersTableViewCell.xib */; };
-		A877D28325B6562C00248E95 /* AllCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A877D28225B6562C00248E95 /* AllCategories.storyboard */; };
 		A877D28525B656B200248E95 /* AllCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877D28425B656B200248E95 /* AllCategoriesViewController.swift */; };
 		A8793D2D259A8BFA00061417 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */; };
 		A87D28D9258C176B00B7957F /* OffersCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D28D8258C176B00B7957F /* OffersCategory.swift */; };
@@ -174,7 +169,6 @@
 		A8C2E72C25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */; };
 		A8C2E72E25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */; };
 		A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C4B61C25BC3ABA00E92BB3 /* Favorite.storyboard */; };
-		A8C4B62425BC550B00E92BB3 /* OfferSubCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C4B62325BC550B00E92BB3 /* OfferSubCategory.storyboard */; };
 		A8C4B62625BC593900E92BB3 /* OfferSubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62525BC593900E92BB3 /* OfferSubCategoryViewController.swift */; };
 		A8C4B62A25BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62925BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift */; };
 		A8C4B62C25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4B62B25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift */; };
@@ -196,6 +190,7 @@
 		A8D1A22E25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */; };
 		A8D1A23025A3C6AA000DD0AD /* DoctorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */; };
 		A8D2E36125AB42CC003C8DA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D2E36025AB42CB003C8DA7 /* GoogleService-Info.plist */; };
+		A8D5999E25CB61D3008E4AAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D599A025CB61D3008E4AAF /* Localizable.strings */; };
 		A8D8621925AC97A20097ED93 /* EditUserProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621825AC97A20097ED93 /* EditUserProfileInteractor.swift */; };
 		A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621A25AC98970097ED93 /* EditUserProfilePresenter.swift */; };
 		A8D8621D25AC98CC0097ED93 /* EditUserProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */; };
@@ -214,6 +209,11 @@
 		A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */; };
 		A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */; };
 		A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681725AF246400B91375 /* MyAppiontments.swift */; };
+		A8EDCA2425CAADA7001AC6B9 /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDCA2625CAADA7001AC6B9 /* ResetPassword.storyboard */; };
+		A8EDCA2925CAAF3B001AC6B9 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDCA2B25CAAF3B001AC6B9 /* EditProfile.storyboard */; };
+		A8EF48D725CCBC85000CBC2F /* AllCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EF48D925CCBC85000CBC2F /* AllCategories.storyboard */; };
+		A8EF48E025CCBCFD000CBC2F /* OfferSubCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EF48E225CCBCFD000CBC2F /* OfferSubCategory.storyboard */; };
+		A8EF48E725CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF48E925CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 		A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */; };
@@ -246,8 +246,6 @@
 		A807E8B525B1BF7E009C5CDA /* Slider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Slider.storyboard; sourceTree = "<group>"; };
 		A807E8B725B1C259009C5CDA /* LogoutSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutSliderViewController.swift; sourceTree = "<group>"; };
 		A807E8BA25B1CA84009C5CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
-		A807E8BD25B1CA8E009C5CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Login.strings; sourceTree = "<group>"; };
-		A807E8BF25B1CA93009C5CDA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Login.strings; sourceTree = "<group>"; };
 		A8094A912597BA75003F414A /* AboutAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		A8094A932597BA98003F414A /* AboutAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppProtocol.swift; sourceTree = "<group>"; };
 		A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTheAppWorksViewController.swift; sourceTree = "<group>"; };
@@ -266,9 +264,7 @@
 		A818006325AB7D6900C750AE /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		A818006525AB7E2600C750AE /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		A818006725AB7E5000C750AE /* RegisterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocol.swift; sourceTree = "<group>"; };
-		A818006B25ABBE9100C750AE /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
 		A818006D25ABC14800C750AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		A818007325ABC30100C750AE /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
 		A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Padding.swift"; sourceTree = "<group>"; };
 		A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesInteractor.swift; sourceTree = "<group>"; };
 		A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesPresenter.swift; sourceTree = "<group>"; };
@@ -287,7 +283,6 @@
 		A83CB065258B63BC00207BDC /* SehaKhanahRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehaKhanahRouter.swift; sourceTree = "<group>"; };
 		A83D6EB0258A2E6000186693 /* MostOrderedOffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersTableViewCell.swift; sourceTree = "<group>"; };
 		A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
-		A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A83D6EBC258A394C00186693 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
 		A843BBAA25A87BA0006231F8 /* MyAppintmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppintmentsTableViewController.swift; sourceTree = "<group>"; };
 		A843BBAD25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTableViewCell.swift; sourceTree = "<group>"; };
@@ -319,12 +314,7 @@
 		A85E32862594ADBD00842D0F /* PharmacyOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersInteractor.swift; sourceTree = "<group>"; };
 		A860322C2596A1BC003A7DA5 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		A860322F2596A3D2003A7DA5 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
-		A8674A21259748890099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A8674A24259748DE0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		A8674A25259748DE0099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A8674A27259749060099E7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Offers.storyboard; sourceTree = "<group>"; };
-		A8674A2A259749190099E7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Offers.strings; sourceTree = "<group>"; };
-		A8674A2C259749230099E7CE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Offers.strings; sourceTree = "<group>"; };
 		A8674A3C259777110099E7CE /* CallUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
 		A8693E19259F66F500285921 /* LabDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
 		A869D67725A65FEC001D8886 /* DoctorDetails+DatesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoctorDetails+DatesCollectionView.swift"; sourceTree = "<group>"; };
@@ -341,22 +331,13 @@
 		A8761D7425B04FAB00280BE7 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		A8761D7525B04FAB00280BE7 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
 		A8761D7925B06F9700280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BookNow.storyboard; sourceTree = "<group>"; };
-		A8761D7C25B06FA000280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BookNow.strings; sourceTree = "<group>"; };
-		A8761D7E25B06FA200280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookNow.strings; sourceTree = "<group>"; };
 		A8761D8025B071D300280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		A8761D8725B08FD700280BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DoctorDetails.storyboard; sourceTree = "<group>"; };
-		A8761D8A25B08FE300280BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
-		A8761D8C25B08FE700280BE7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
 		A877D26F25B622E800248E95 /* FavoriteOffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffersTableViewController.swift; sourceTree = "<group>"; };
 		A877D27125B6231500248E95 /* FavoriteOffesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffesProtocol.swift; sourceTree = "<group>"; };
 		A877D27325B6234E00248E95 /* FavoriteOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffersPresenter.swift; sourceTree = "<group>"; };
 		A877D27525B6236B00248E95 /* FavoriteOffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteOffersInteractor.swift; sourceTree = "<group>"; };
-		A877D27825B62F4100248E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
-		A877D27A25B62F4800248E95 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
 		A877D27C25B64DDF00248E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MostOrderedOffersTableViewCell.xib; sourceTree = "<group>"; };
-		A877D27F25B64DE400248E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MostOrderedOffersTableViewCell.strings; sourceTree = "<group>"; };
-		A877D28125B64DE700248E95 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MostOrderedOffersTableViewCell.strings; sourceTree = "<group>"; };
-		A877D28225B6562C00248E95 /* AllCategories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllCategories.storyboard; sourceTree = "<group>"; };
 		A877D28425B656B200248E95 /* AllCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesViewController.swift; sourceTree = "<group>"; };
 		A8793D2C259A8BFA00061417 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		A87D28D8258C176B00B7957F /* OffersCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategory.swift; sourceTree = "<group>"; };
@@ -366,31 +347,19 @@
 		A88084E425AF975500A6EE84 /* ResetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordProtocol.swift; sourceTree = "<group>"; };
 		A884DD76259A1610006D686B /* localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localized.swift; sourceTree = "<group>"; };
 		A884DD79259A2093006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HowTheAppWorks.storyboard; sourceTree = "<group>"; };
-		A884DD7C259A20A5006D686B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HowTheAppWorks.strings; sourceTree = "<group>"; };
-		A884DD7E259A20A8006D686B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HowTheAppWorks.strings; sourceTree = "<group>"; };
 		A884DD80259A2110006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CallUs.storyboard; sourceTree = "<group>"; };
-		A884DD83259A2118006D686B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CallUs.strings; sourceTree = "<group>"; };
-		A884DD85259A211D006D686B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CallUs.strings; sourceTree = "<group>"; };
 		A884DD87259A2BB0006D686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChangeLanguage.storyboard; sourceTree = "<group>"; };
-		A884DD8A259A2BBA006D686B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ChangeLanguage.strings; sourceTree = "<group>"; };
-		A884DD8C259A2BBE006D686B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ChangeLanguage.strings; sourceTree = "<group>"; };
 		A88C23DE2593547A002AA4F7 /* SearchBySpecialtyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpecialtyModel.swift; sourceTree = "<group>"; };
 		A88C23E1259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpcialtyTableViewCell.swift; sourceTree = "<group>"; };
 		A88C23E325936186002AA4F7 /* SearchBySpeialtyTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBySpeialtyTableViewCellView.swift; sourceTree = "<group>"; };
 		A8919DCB25C2264A007F18DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OffersForSpecificCategory.storyboard; sourceTree = "<group>"; };
-		A8919DCE25C2269D007F18DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OffersForSpecificCategory.strings; sourceTree = "<group>"; };
-		A8919DD025C2273F007F18DC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OffersForSpecificCategory.strings; sourceTree = "<group>"; };
 		A8952A7C259004090095B7BD /* MostOrderedOffersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersPresenter.swift; sourceTree = "<group>"; };
 		A8952A7E259005F00095B7BD /* MostOrderedOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffers.swift; sourceTree = "<group>"; };
 		A8952A80259008360095B7BD /* MostOrderedOffersTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersTableViewCellView.swift; sourceTree = "<group>"; };
 		A8952A822590092B0095B7BD /* MostOrderedOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersViewProtocol.swift; sourceTree = "<group>"; };
 		A89B33F725B9DE86004B27DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
-		A89B33F925B9DE9B004B27DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		A89B33FE25B9E7EF004B27DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		A89B340925BA1CEF004B27DD /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		A89B340C25BA38ED004B27DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SuccessfulBooking.storyboard; sourceTree = "<group>"; };
-		A89B340F25BA38F3004B27DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
-		A89B341125BA395E004B27DD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
 		A8A21C312596B10D005191A3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropShadowView.swift; sourceTree = "<group>"; };
 		A8A7DD3E2595190E007FBFE0 /* RegionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionInteractor.swift; sourceTree = "<group>"; };
@@ -421,8 +390,6 @@
 		A8BFC9422594B3AE002C90ED /* PharmacyOffersViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOffersViewProtocol.swift; sourceTree = "<group>"; };
 		A8BFC9442594B4F6002C90ED /* PharmacyOfferTableViewCellViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyOfferTableViewCellViewProtocol.swift; sourceTree = "<group>"; };
 		A8C0B2F525C57C370053FA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Signup.storyboard; sourceTree = "<group>"; };
-		A8C0B2F825C57C5D0053FA0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Signup.strings; sourceTree = "<group>"; };
-		A8C0B2FA25C57C650053FA0D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Signup.strings; sourceTree = "<group>"; };
 		A8C1BCA425B7A0FA00E4CD05 /* OfferDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsInteractor.swift; sourceTree = "<group>"; };
 		A8C1BCA625B7A13900E4CD05 /* OfferDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsPresenter.swift; sourceTree = "<group>"; };
 		A8C1BCA825B7A18B00E4CD05 /* OfferDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetails.swift; sourceTree = "<group>"; };
@@ -430,16 +397,11 @@
 		A8C2E72B25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsInteractor.swift; sourceTree = "<group>"; };
 		A8C2E72D25B5D07D00D0A831 /* FavoriteDoctosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctosPresenter.swift; sourceTree = "<group>"; };
 		A8C4B61B25BC3ABA00E92BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorite.storyboard; sourceTree = "<group>"; };
-		A8C4B61E25BC3AD200E92BB3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Favorite.strings; sourceTree = "<group>"; };
-		A8C4B62025BC3AD800E92BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Favorite.strings; sourceTree = "<group>"; };
-		A8C4B62325BC550B00E92BB3 /* OfferSubCategory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfferSubCategory.storyboard; sourceTree = "<group>"; };
 		A8C4B62525BC593900E92BB3 /* OfferSubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryViewController.swift; sourceTree = "<group>"; };
 		A8C4B62925BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryInteractor.swift; sourceTree = "<group>"; };
 		A8C4B62B25BC5A2400E92BB3 /* OfferSubCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryPresenter.swift; sourceTree = "<group>"; };
 		A8C4B62D25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSubCategoryProtocol.swift; sourceTree = "<group>"; };
 		A8C7D21A25B0EDD000C24023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyAppointmentsTableViewCell.xib; sourceTree = "<group>"; };
-		A8C7D21D25B0EE0200C24023 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
-		A8C7D21F25B0EE0500C24023 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
 		A8C7D22025B1015800C24023 /* MostOrderedOffersImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostOrderedOffersImage.swift; sourceTree = "<group>"; };
 		A8C8164725A733DB00690AE8 /* PharamcyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharamcyDetailsViewController.swift; sourceTree = "<group>"; };
 		A8C8164B25A73B0300690AE8 /* PharamcyDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharamcyDetailsInteractor.swift; sourceTree = "<group>"; };
@@ -457,6 +419,9 @@
 		A8D1A22D25A3C2C4000DD0AD /* DoctorDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsInteractor.swift; sourceTree = "<group>"; };
 		A8D1A22F25A3C6AA000DD0AD /* DoctorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetails.swift; sourceTree = "<group>"; };
 		A8D2E36025AB42CB003C8DA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8D5999F25CB61D3008E4AAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A8D599A125CB625B008E4AAF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A8D599A325CB6315008E4AAF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Search.strings; sourceTree = "<group>"; };
 		A8D8621825AC97A20097ED93 /* EditUserProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileInteractor.swift; sourceTree = "<group>"; };
 		A8D8621A25AC98970097ED93 /* EditUserProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfilePresenter.swift; sourceTree = "<group>"; };
 		A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileProtocol.swift; sourceTree = "<group>"; };
@@ -467,31 +432,49 @@
 		A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoirteContainerViewController.swift; sourceTree = "<group>"; };
 		A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsViewController.swift; sourceTree = "<group>"; };
 		A8E8172325B22E6F00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LabDetails.storyboard; sourceTree = "<group>"; };
-		A8E8172625B22E8500DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LabDetails.strings; sourceTree = "<group>"; };
-		A8E8172825B22E8900DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LabDetails.strings; sourceTree = "<group>"; };
 		A8E8172A25B2393800DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookingDatesCollectionViewCell.xib; sourceTree = "<group>"; };
-		A8E8172D25B2394400DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BookingDatesCollectionViewCell.strings; sourceTree = "<group>"; };
-		A8E8172F25B2394800DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookingDatesCollectionViewCell.strings; sourceTree = "<group>"; };
 		A8E8173125B23AEA00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchByLabNameTableViewCell.xib; sourceTree = "<group>"; };
 		A8E8173425B23AF200DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
-		A8E8173625B23AF700DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8E8173825B23C9600DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PharmacyDetails.storyboard; sourceTree = "<group>"; };
-		A8E8173B25B23CA200DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PharmacyDetails.strings; sourceTree = "<group>"; };
-		A8E8173D25B23CAB00DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/PharmacyDetails.strings; sourceTree = "<group>"; };
 		A8E8173F25B24A5500DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchByPharmacyNameTableViewCell.xib; sourceTree = "<group>"; };
 		A8E8174225B24A5F00DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchByPharmacyNameTableViewCell.strings; sourceTree = "<group>"; };
-		A8E8174425B24A6400DE29A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByPharmacyNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8E87B4D25B8D5C100867430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OfferDetails.storyboard; sourceTree = "<group>"; };
-		A8E87B5025B8D5CE00867430 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OfferDetails.strings; sourceTree = "<group>"; };
-		A8E87B5225B8D5D400867430 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OfferDetails.strings; sourceTree = "<group>"; };
 		A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsPresenter.swift; sourceTree = SOURCE_ROOT; };
 		A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsProtocol.swift; sourceTree = "<group>"; };
 		A8E9681725AF246400B91375 /* MyAppiontments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppiontments.swift; sourceTree = "<group>"; };
+		A8EDCA2525CAADA7001AC6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ResetPassword.storyboard; sourceTree = "<group>"; };
+		A8EDCA2A25CAAF3B001AC6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditProfile.storyboard; sourceTree = "<group>"; };
+		A8EF48D225CCB91B000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Login.strings; sourceTree = "<group>"; };
+		A8EF48D425CCBBBA000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Signup.strings; sourceTree = "<group>"; };
+		A8EF48D625CCBC54000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Verification.strings; sourceTree = "<group>"; };
+		A8EF48D825CCBC85000CBC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AllCategories.storyboard; sourceTree = "<group>"; };
+		A8EF48DB25CCBC8F000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/AllCategories.strings; sourceTree = "<group>"; };
+		A8EF48DD25CCBCA0000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Offers.strings; sourceTree = "<group>"; };
+		A8EF48DF25CCBCD1000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OffersForSpecificCategory.strings; sourceTree = "<group>"; };
+		A8EF48E125CCBCFD000CBC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OfferSubCategory.storyboard; sourceTree = "<group>"; };
+		A8EF48E425CCBD05000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OfferSubCategory.strings; sourceTree = "<group>"; };
+		A8EF48E625CCBD23000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MostOrderedOffersTableViewCell.strings; sourceTree = "<group>"; };
+		A8EF48E825CCBD91000CBC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OfferCategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		A8EF48EB25CCBD98000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OfferCategoriesCollectionViewCell.strings; sourceTree = "<group>"; };
+		A8EF48ED25CCBDC5000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Favorite.strings; sourceTree = "<group>"; };
+		A8EF48EF25CCBE66000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HowTheAppWorks.strings; sourceTree = "<group>"; };
+		A8EF48F125CCBE9D000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CallUs.strings; sourceTree = "<group>"; };
+		A8EF48F325CCBECA000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ResetPassword.strings; sourceTree = "<group>"; };
+		A8EF48F525CCBF19000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/EditProfile.strings; sourceTree = "<group>"; };
+		A8EF48F725CCBF5D000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ChangeLanguage.strings; sourceTree = "<group>"; };
+		A8EF48F925CCBF9C000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OfferDetails.strings; sourceTree = "<group>"; };
+		A8EF48FB25CCBFD8000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/PharmacyDetails.strings; sourceTree = "<group>"; };
+		A8EF48FD25CCC056000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/DoctorDetails.strings; sourceTree = "<group>"; };
+		A8EF48FF25CCC098000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LabDetails.strings; sourceTree = "<group>"; };
+		A8EF490125CCC0DF000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookingDatesCollectionViewCell.strings; sourceTree = "<group>"; };
+		A8EF490325CCC1AE000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Appointments.strings; sourceTree = "<group>"; };
+		A8EF490525CCC1F6000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MyAppointmentsTableViewCell.strings; sourceTree = "<group>"; };
+		A8EF490725CCC40A000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
+		A8EF490925CCC870000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookNow.strings; sourceTree = "<group>"; };
+		A8EF490B25CCC8B7000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldIcon+Extension.swift"; sourceTree = "<group>"; };
 		A8F7C07A25AF6E1900075B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Appointments.storyboard; sourceTree = "<group>"; };
-		A8F7C07D25AF6E2A00075B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Appointments.strings; sourceTree = "<group>"; };
-		A8F7C07F25AF6E3500075B53 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Appointments.strings; sourceTree = "<group>"; };
 		A8FC8D8A25BB76B6007EA14D /* VerificationPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		A8FC8D8C25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberPresenter.swift; sourceTree = "<group>"; };
 		A8FC8D8E25BB77C3007EA14D /* VerificationPhoneNumberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneNumberInteractor.swift; sourceTree = "<group>"; };
@@ -500,8 +483,6 @@
 		A8FC8D9825BB8C54007EA14D /* UserOffersReservationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOffersReservationsPresenter.swift; sourceTree = "<group>"; };
 		A8FC8D9A25BB8C85007EA14D /* UserOffersReservationsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOffersReservationsProtocol.swift; sourceTree = "<group>"; };
 		A8FC8DA325BB9BAC007EA14D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Verification.storyboard; sourceTree = "<group>"; };
-		A8FC8DA625BB9BBD007EA14D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Verification.strings; sourceTree = "<group>"; };
-		A8FC8DA825BB9BC6007EA14D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Verification.strings; sourceTree = "<group>"; };
 		A8FD3BED259CBD5B002B0C07 /* Sukar-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Black.ttf"; sourceTree = "<group>"; };
 		A8FD3BEE259CBD5B002B0C07 /* Sukar-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sukar-Bold.ttf"; sourceTree = "<group>"; };
 		A8FD3BEF259CBD5D002B0C07 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -739,7 +720,7 @@
 		A818006A25ABBE7500C750AE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A818006B25ABBE9100C750AE /* EditProfile.storyboard */,
+				A8EDCA2B25CAAF3B001AC6B9 /* EditProfile.storyboard */,
 				A818006D25ABC14800C750AE /* EditProfileViewController.swift */,
 				A8D8621C25AC98CC0097ED93 /* EditUserProfileProtocol.swift */,
 			);
@@ -775,7 +756,7 @@
 		A818007225ABC2BD00C750AE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A818007325ABC30100C750AE /* ResetPassword.storyboard */,
+				A8EDCA2625CAADA7001AC6B9 /* ResetPassword.storyboard */,
 				A88084DC25AF904A00A6EE84 /* ResetPasswordViewController.swift */,
 				A88084E425AF975500A6EE84 /* ResetPasswordProtocol.swift */,
 			);
@@ -944,7 +925,7 @@
 			children = (
 				A8A9B36F258CE9E3002DA9A0 /* OffersCategoriesCellView.swift */,
 				A83D6EB5258A322500186693 /* OfferCategoriesCollectionViewCell.swift */,
-				A83D6EB6258A322500186693 /* OfferCategoriesCollectionViewCell.xib */,
+				A8EF48E925CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -1631,7 +1612,7 @@
 		A8965F472591163A00C504BA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A877D28225B6562C00248E95 /* AllCategories.storyboard */,
+				A8EF48D925CCBC85000CBC2F /* AllCategories.storyboard */,
 				A877D28425B656B200248E95 /* AllCategoriesViewController.swift */,
 				A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */,
 			);
@@ -1737,7 +1718,7 @@
 				A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */,
 				A8AC86B425875B2B00604E64 /* Info.plist */,
 				A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */,
-				A8674A22259748890099E7CE /* Localizable.strings */,
+				A8D599A025CB61D3008E4AAF /* Localizable.strings */,
 			);
 			path = "Seha Khanah";
 			sourceTree = "<group>";
@@ -1846,7 +1827,7 @@
 		A8C4B62225BC54E900E92BB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8C4B62325BC550B00E92BB3 /* OfferSubCategory.storyboard */,
+				A8EF48E225CCBCFD000CBC2F /* OfferSubCategory.storyboard */,
 				A8C4B62525BC593900E92BB3 /* OfferSubCategoryViewController.swift */,
 				A8C4B62D25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift */,
 			);
@@ -2152,13 +2133,14 @@
 				A8761D7F25B071D300280BE7 /* SearchResultTableViewCell.xib in Resources */,
 				A8761D7825B06F9700280BE7 /* BookNow.storyboard in Resources */,
 				A89B340B25BA38ED004B27DD /* SuccessfulBooking.storyboard in Resources */,
-				A818007425ABC30100C750AE /* ResetPassword.storyboard in Resources */,
+				A8EDCA2425CAADA7001AC6B9 /* ResetPassword.storyboard in Resources */,
 				A8E8173725B23C9600DE29A6 /* PharmacyDetails.storyboard in Resources */,
 				A8E87B4C25B8D5C100867430 /* OfferDetails.storyboard in Resources */,
+				A8D5999E25CB61D3008E4AAF /* Localizable.strings in Resources */,
 				A8E8172225B22E6F00DE29A6 /* LabDetails.storyboard in Resources */,
 				A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */,
 				A8761D7725B04FAB00280BE7 /* MoreTableViewCell.xib in Resources */,
-				A83D6EB8258A322500186693 /* OfferCategoriesCollectionViewCell.xib in Resources */,
+				A8EF48E725CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A89B33FA25B9DF26004B27DD /* Search.storyboard in Resources */,
 				A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
@@ -2166,23 +2148,22 @@
 				A884DD86259A2BB0006D686B /* ChangeLanguage.storyboard in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
 				A8674A26259749060099E7CE /* Offers.storyboard in Resources */,
-				A877D28325B6562C00248E95 /* AllCategories.storyboard in Resources */,
+				A8EF48D725CCBC85000CBC2F /* AllCategories.storyboard in Resources */,
 				A807E8B625B1BF7E009C5CDA /* Slider.storyboard in Resources */,
 				A8FC8DA225BB9BAC007EA14D /* Verification.storyboard in Resources */,
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,
-				A818006C25ABBE9100C750AE /* EditProfile.storyboard in Resources */,
+				A8EDCA2925CAAF3B001AC6B9 /* EditProfile.storyboard in Resources */,
 				A8C0B2F425C57C370053FA0D /* Signup.storyboard in Resources */,
 				A80DD8D125A120AE00FD2CF1 /* LabServices.storyboard in Resources */,
 				A807E8B925B1CA84009C5CDA /* Login.storyboard in Resources */,
 				A8D2E36125AB42CC003C8DA7 /* GoogleService-Info.plist in Resources */,
 				A8C9E3E4259FC42C0085B806 /* RatingCollectionViewCell.xib in Resources */,
-				A8674A20259748890099E7CE /* Localizable.strings in Resources */,
 				A8C7D21925B0EDD000C24023 /* MyAppointmentsTableViewCell.xib in Resources */,
 				A8963B7225B4F64300449E7B /* A-Google.ttf in Resources */,
 				A8A21C322596B10D005191A3 /* Settings.storyboard in Resources */,
-				A8C4B62425BC550B00E92BB3 /* OfferSubCategory.storyboard in Resources */,
+				A8EF48E025CCBCFD000CBC2F /* OfferSubCategory.storyboard in Resources */,
 				A8919DCA25C2264A007F18DC /* OffersForSpecificCategory.storyboard in Resources */,
 				A8E8172925B2393800DE29A6 /* BookingDatesCollectionViewCell.xib in Resources */,
 				A80DD8D725A1327300FD2CF1 /* LabDayDates.storyboard in Resources */,
@@ -2442,27 +2423,16 @@
 			isa = PBXVariantGroup;
 			children = (
 				A807E8BA25B1CA84009C5CDA /* Base */,
-				A807E8BD25B1CA8E009C5CDA /* en */,
-				A807E8BF25B1CA93009C5CDA /* ar */,
+				A8EF48D225CCB91B000CBC2F /* ar */,
 			);
 			name = Login.storyboard;
-			sourceTree = "<group>";
-		};
-		A8674A22259748890099E7CE /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8674A21259748890099E7CE /* en */,
-				A8674A25259748DE0099E7CE /* ar */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A8674A28259749060099E7CE /* Offers.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A8674A27259749060099E7CE /* Base */,
-				A8674A2A259749190099E7CE /* en */,
-				A8674A2C259749230099E7CE /* ar */,
+				A8EF48DD25CCBCA0000CBC2F /* ar */,
 			);
 			name = Offers.storyboard;
 			sourceTree = "<group>";
@@ -2471,8 +2441,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8761D7925B06F9700280BE7 /* Base */,
-				A8761D7C25B06FA000280BE7 /* en */,
-				A8761D7E25B06FA200280BE7 /* ar */,
+				A8EF490925CCC870000CBC2F /* ar */,
 			);
 			name = BookNow.storyboard;
 			sourceTree = "<group>";
@@ -2481,8 +2450,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8761D8025B071D300280BE7 /* Base */,
-				A877D27825B62F4100248E95 /* en */,
-				A877D27A25B62F4800248E95 /* ar */,
+				A8EF490725CCC40A000CBC2F /* ar */,
 			);
 			name = SearchResultTableViewCell.xib;
 			sourceTree = "<group>";
@@ -2491,8 +2459,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8761D8725B08FD700280BE7 /* Base */,
-				A8761D8A25B08FE300280BE7 /* en */,
-				A8761D8C25B08FE700280BE7 /* ar */,
+				A8EF48FD25CCC056000CBC2F /* ar */,
 			);
 			name = DoctorDetails.storyboard;
 			sourceTree = "<group>";
@@ -2501,8 +2468,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A877D27C25B64DDF00248E95 /* Base */,
-				A877D27F25B64DE400248E95 /* en */,
-				A877D28125B64DE700248E95 /* ar */,
+				A8EF48E625CCBD23000CBC2F /* ar */,
 			);
 			name = MostOrderedOffersTableViewCell.xib;
 			sourceTree = "<group>";
@@ -2511,8 +2477,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A884DD79259A2093006D686B /* Base */,
-				A884DD7C259A20A5006D686B /* en */,
-				A884DD7E259A20A8006D686B /* ar */,
+				A8EF48EF25CCBE66000CBC2F /* ar */,
 			);
 			name = HowTheAppWorks.storyboard;
 			sourceTree = "<group>";
@@ -2521,8 +2486,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A884DD80259A2110006D686B /* Base */,
-				A884DD83259A2118006D686B /* en */,
-				A884DD85259A211D006D686B /* ar */,
+				A8EF48F125CCBE9D000CBC2F /* ar */,
 			);
 			name = CallUs.storyboard;
 			sourceTree = "<group>";
@@ -2531,8 +2495,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A884DD87259A2BB0006D686B /* Base */,
-				A884DD8A259A2BBA006D686B /* en */,
-				A884DD8C259A2BBE006D686B /* ar */,
+				A8EF48F725CCBF5D000CBC2F /* ar */,
 			);
 			name = ChangeLanguage.storyboard;
 			sourceTree = "<group>";
@@ -2541,8 +2504,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8919DCB25C2264A007F18DC /* Base */,
-				A8919DCE25C2269D007F18DC /* en */,
-				A8919DD025C2273F007F18DC /* ar */,
+				A8EF48DF25CCBCD1000CBC2F /* ar */,
 			);
 			name = OffersForSpecificCategory.storyboard;
 			sourceTree = "<group>";
@@ -2551,8 +2513,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A89B33F725B9DE86004B27DD /* Base */,
-				A89B33F925B9DE9B004B27DD /* en */,
-				A89B33FE25B9E7EF004B27DD /* ar */,
+				A8D599A325CB6315008E4AAF /* ar */,
 			);
 			name = Search.storyboard;
 			sourceTree = "<group>";
@@ -2561,8 +2522,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A89B340C25BA38ED004B27DD /* Base */,
-				A89B340F25BA38F3004B27DD /* en */,
-				A89B341125BA395E004B27DD /* ar */,
+				A8EF490B25CCC8B7000CBC2F /* ar */,
 			);
 			name = SuccessfulBooking.storyboard;
 			sourceTree = "<group>";
@@ -2571,7 +2531,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8AC86B225875B2B00604E64 /* Base */,
-				A8674A24259748DE0099E7CE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2580,8 +2539,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8C0B2F525C57C370053FA0D /* Base */,
-				A8C0B2F825C57C5D0053FA0D /* en */,
-				A8C0B2FA25C57C650053FA0D /* ar */,
+				A8EF48D425CCBBBA000CBC2F /* ar */,
 			);
 			name = Signup.storyboard;
 			sourceTree = "<group>";
@@ -2590,8 +2548,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8C4B61B25BC3ABA00E92BB3 /* Base */,
-				A8C4B61E25BC3AD200E92BB3 /* ar */,
-				A8C4B62025BC3AD800E92BB3 /* en */,
+				A8EF48ED25CCBDC5000CBC2F /* ar */,
 			);
 			name = Favorite.storyboard;
 			sourceTree = "<group>";
@@ -2600,18 +2557,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8C7D21A25B0EDD000C24023 /* Base */,
-				A8C7D21D25B0EE0200C24023 /* en */,
-				A8C7D21F25B0EE0500C24023 /* ar */,
+				A8EF490525CCC1F6000CBC2F /* ar */,
 			);
 			name = MyAppointmentsTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		A8D599A025CB61D3008E4AAF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D5999F25CB61D3008E4AAF /* en */,
+				A8D599A125CB625B008E4AAF /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A8E8172425B22E6F00DE29A6 /* LabDetails.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A8E8172325B22E6F00DE29A6 /* Base */,
-				A8E8172625B22E8500DE29A6 /* en */,
-				A8E8172825B22E8900DE29A6 /* ar */,
+				A8EF48FF25CCC098000CBC2F /* ar */,
 			);
 			name = LabDetails.storyboard;
 			sourceTree = "<group>";
@@ -2620,8 +2584,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8E8172A25B2393800DE29A6 /* Base */,
-				A8E8172D25B2394400DE29A6 /* en */,
-				A8E8172F25B2394800DE29A6 /* ar */,
+				A8EF490125CCC0DF000CBC2F /* ar */,
 			);
 			name = BookingDatesCollectionViewCell.xib;
 			sourceTree = "<group>";
@@ -2631,7 +2594,6 @@
 			children = (
 				A8E8173125B23AEA00DE29A6 /* Base */,
 				A8E8173425B23AF200DE29A6 /* en */,
-				A8E8173625B23AF700DE29A6 /* ar */,
 			);
 			name = SearchByLabNameTableViewCell.xib;
 			sourceTree = "<group>";
@@ -2640,8 +2602,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8E8173825B23C9600DE29A6 /* Base */,
-				A8E8173B25B23CA200DE29A6 /* en */,
-				A8E8173D25B23CAB00DE29A6 /* ar */,
+				A8EF48FB25CCBFD8000CBC2F /* ar */,
 			);
 			name = PharmacyDetails.storyboard;
 			sourceTree = "<group>";
@@ -2651,7 +2612,6 @@
 			children = (
 				A8E8173F25B24A5500DE29A6 /* Base */,
 				A8E8174225B24A5F00DE29A6 /* en */,
-				A8E8174425B24A6400DE29A6 /* ar */,
 			);
 			name = SearchByPharmacyNameTableViewCell.xib;
 			sourceTree = "<group>";
@@ -2660,18 +2620,61 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8E87B4D25B8D5C100867430 /* Base */,
-				A8E87B5025B8D5CE00867430 /* ar */,
-				A8E87B5225B8D5D400867430 /* en */,
+				A8EF48F925CCBF9C000CBC2F /* ar */,
 			);
 			name = OfferDetails.storyboard;
+			sourceTree = "<group>";
+		};
+		A8EDCA2625CAADA7001AC6B9 /* ResetPassword.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EDCA2525CAADA7001AC6B9 /* Base */,
+				A8EF48F325CCBECA000CBC2F /* ar */,
+			);
+			name = ResetPassword.storyboard;
+			sourceTree = "<group>";
+		};
+		A8EDCA2B25CAAF3B001AC6B9 /* EditProfile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EDCA2A25CAAF3B001AC6B9 /* Base */,
+				A8EF48F525CCBF19000CBC2F /* ar */,
+			);
+			name = EditProfile.storyboard;
+			sourceTree = "<group>";
+		};
+		A8EF48D925CCBC85000CBC2F /* AllCategories.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EF48D825CCBC85000CBC2F /* Base */,
+				A8EF48DB25CCBC8F000CBC2F /* ar */,
+			);
+			name = AllCategories.storyboard;
+			sourceTree = "<group>";
+		};
+		A8EF48E225CCBCFD000CBC2F /* OfferSubCategory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EF48E125CCBCFD000CBC2F /* Base */,
+				A8EF48E425CCBD05000CBC2F /* ar */,
+			);
+			name = OfferSubCategory.storyboard;
+			sourceTree = "<group>";
+		};
+		A8EF48E925CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EF48E825CCBD91000CBC2F /* Base */,
+				A8EF48EB25CCBD98000CBC2F /* ar */,
+			);
+			name = OfferCategoriesCollectionViewCell.xib;
 			sourceTree = "<group>";
 		};
 		A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A8F7C07A25AF6E1900075B53 /* Base */,
-				A8F7C07D25AF6E2A00075B53 /* en */,
-				A8F7C07F25AF6E3500075B53 /* ar */,
+				A8EF490325CCC1AE000CBC2F /* ar */,
 			);
 			name = Appointments.storyboard;
 			sourceTree = "<group>";
@@ -2680,8 +2683,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8FC8DA325BB9BAC007EA14D /* Base */,
-				A8FC8DA625BB9BBD007EA14D /* en */,
-				A8FC8DA825BB9BC6007EA14D /* ar */,
+				A8EF48D625CCBC54000CBC2F /* ar */,
 			);
 			name = Verification.storyboard;
 			sourceTree = "<group>";

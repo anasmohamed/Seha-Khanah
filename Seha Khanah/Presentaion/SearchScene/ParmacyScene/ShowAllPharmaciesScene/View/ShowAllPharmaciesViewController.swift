@@ -22,19 +22,14 @@ class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITa
           setupTableView()
         tableView.delegate = self
         tableView.dataSource = self
+        self.navigationItem.title = "Pharmacy".localized
         
       }
       
       
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if UserDefaults.standard.string(forKey: "lang") == "ar"
-        {
-            MOLH.setLanguageTo("ar")
-        }else{
-            MOLH.setLanguageTo("en")
-
-        }
+        
         
         pharmacyOffersPresenter.getPharmacyOffers()
 

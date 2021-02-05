@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "0Df-uj-Ll3"; */
+"0Df-uj-Ll3.normalTitle" = "حفظ";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "Ajw-zh-7zy"; */
+"Ajw-zh-7zy.placeholder" = "البريد الالكترونى";
+
+/* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "Wjd-GK-JOy"; */
+"Wjd-GK-JOy.placeholder" = "تاريخ الميلاد";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "bOY-jM-zZl"; */
+"bOY-jM-zZl.placeholder" = "الأسم بالكامل";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "d5h-rY-i3U"; */
+"d5h-rY-i3U.normalTitle" = "ذكر";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "ky4-lP-lc5"; */
+"ky4-lP-lc5.text" = "الجنس";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "nZd-uS-KAp"; */
+"nZd-uS-KAp.normalTitle" = "أنثى";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "zo8-er-USD"; */
+"zo8-er-USD.placeholder" = "رقم الموبايل بدون ..0";

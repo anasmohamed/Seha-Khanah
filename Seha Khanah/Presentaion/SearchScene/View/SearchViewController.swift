@@ -42,8 +42,6 @@ class SearchViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.items?[1].title = "Offers".localized
-        self.navigationItem.title = "Main".localized
 
     }
     @objc func handleSearchByNameTab(_ sender: UITapGestureRecognizer? = nil) {

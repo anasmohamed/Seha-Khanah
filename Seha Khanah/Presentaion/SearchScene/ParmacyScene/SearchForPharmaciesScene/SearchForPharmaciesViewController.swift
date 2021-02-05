@@ -36,7 +36,6 @@ class SearchForPharmaciesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Search For Pharmacies".localized
     }
     
     

@@ -1,64 +1,7 @@
 /* 
- Localizable.strings
- Seha Khanah
- 
- Created by Anas on 12/26/20.
- Copyright © 2020 Anas. All rights reserved.
- */
-"Offers" = "Offers";
+  Localizable.strings
+  Seha Khanah
 
-"Change Language" = "Change Language";
-
-"Settings" = "Settings";
-
-"Call US" = "Call US";
-
-"About the App" = "About the App";
-
-"How The App Works" = "How The App Works";
-
-"Login" = "Login";
-
-"More" = "More";
-
-"more" = "more";
-
-"Edit Your Password" = "Edit Your Password";
-
-"Edit Profile" = "Edit Profile";
-
-"Waiting Time:" = "Waiting Time:";
-
-"visitor" = "visitor";
-
-"Cost:" = "Cost:";
-
-" Overall Rating From " = " Overall Rating From ";
-
-"Visitor" = "Visitor";
-
-" Seen" = " Seen";
-
-"less" = "less";
-
-"Log out" = "Log out";
-
-"Favorite" = "Favorite";
-
-"Discount " = "Discount ";
-
-"Visitor " = "Visitor ";
-
-" Visitor " = " Visitor ";
-
-"Main" = "Main";
-
-"Choose Specialty" = "Choose Specialty";
-
-"Search For Pharmacies"; = "Search For Pharmacies";
-
-"Search For Labs" = "Search For Labs";
-
-"Date Requird" = "Date Requird";
-
-"Doctor Details" = "Doctor Details";
+  Created by Anas on 2/4/21.
+  Copyright © 2021 Anas. All rights reserved.
+*/

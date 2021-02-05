@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -18,26 +18,26 @@
             <objects>
                 <viewController storyboardIdentifier="BookViewController" id="tx7-30-usk" customClass="BookViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IN4-zT-SKK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-2q-IrR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-pC-XiH">
                                         <rect key="frame" x="40" y="70" width="334" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SRv-iZ-ZeG">
-                                                <rect key="frame" x="142.5" y="34.5" width="49" height="60"/>
+                                                <rect key="frame" x="145" y="34.666666666666671" width="44.333333333333343" height="57"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-I0-Dyu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="28.5"/>
-                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="25.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVs-WP-s3v">
-                                                        <rect key="frame" x="0.0" y="38.5" width="49" height="21.5"/>
+                                                        <rect key="frame" x="0.0" y="35.666666666666671" width="44.333333333333336" height="21.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -80,28 +80,28 @@
                                                 <rect key="frame" x="81" y="50" width="303" height="120"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="72g-8w-oav">
-                                                        <rect key="frame" x="0.0" y="0.0" width="303" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="303" height="33.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-m7-sOx">
-                                                        <rect key="frame" x="0.0" y="43.5" width="303" height="33"/>
+                                                        <rect key="frame" x="0.0" y="43.333333333333314" width="303" height="33.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CTA-jg-wue">
-                                                        <rect key="frame" x="0.0" y="86.5" width="303" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="86.666666666666686" width="303" height="33.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUh-aD-er3" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                                <rect key="frame" x="83" y="10" width="261" height="30"/>
+                                                <rect key="frame" x="83" y="10" width="202" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="wnm-xe-LW6"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="12"/>
                                                 <state key="normal" title="I Am Booking For Another Patient">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -144,13 +144,13 @@
                                                 <rect key="frame" x="62" y="5" width="37" height="38"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-gj-LPI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="21.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="21.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsj-nu-Mtz">
-                                                        <rect key="frame" x="0.0" y="21.5" width="37" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="21.333333333333314" width="37" height="16.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -180,7 +180,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxI-y5-irk">
-                                                <rect key="frame" x="62" y="68" width="37" height="21.5"/>
+                                                <rect key="frame" x="62" y="68" width="37" height="21.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -227,7 +227,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="New-XZ-EFR">
-                                                <rect key="frame" x="62" y="14.5" width="37" height="21.5"/>
+                                                <rect key="frame" x="62" y="14.333333333333369" width="37" height="21.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -268,7 +268,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="tZh-WV-rvM"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8we-Bb-POu">
-                                <rect key="frame" x="10" y="812" width="394" height="50"/>
+                                <rect key="frame" x="10" y="686" width="394" height="50"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QLU-70-UeY"/>

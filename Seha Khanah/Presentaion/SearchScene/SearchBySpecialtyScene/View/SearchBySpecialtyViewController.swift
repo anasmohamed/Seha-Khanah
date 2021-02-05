@@ -29,7 +29,7 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Choose Specialty".localized
+        self.navigationItem.title = "Specialty".localized
         searchBySpecialtyPresenter.getAllspecialty()
     }
     

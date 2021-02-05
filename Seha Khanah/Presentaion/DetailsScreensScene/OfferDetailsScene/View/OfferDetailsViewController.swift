@@ -55,6 +55,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         presenter.showDoctorDetails(id: id!)
         doctorImageView.layer.cornerRadius = doctorImageView.frame.width / 2
         setupCollectionView()
+        self.navigationItem.title = "Details".localized
         if MOLHLanguage.currentAppleLanguage() == "ar"
         {
             leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()

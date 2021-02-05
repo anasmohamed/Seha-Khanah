@@ -24,6 +24,7 @@ class AllCategoriesViewController: DropDownTableViewController ,AllCategoriesPro
 
         self.navigationController!.navigationBar.topItem!.backBarButtonItem = backButton;
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Categories".localized
     }
     
     override func viewWillAppear(_ animated: Bool) {

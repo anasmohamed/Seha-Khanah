@@ -26,6 +26,7 @@ class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSour
         tableView.dataSource = self
         regionPresenter = RegionPresenter(view: self)
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "AllRegionsCell")
+        self.navigationItem.title = "Region".localized
         
     }
     override func viewWillAppear(_ animated: Bool) {

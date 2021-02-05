@@ -45,10 +45,10 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12g-WY-dYO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="629"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-tE-qri">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="629"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-Vu-uVf">
                                                 <rect key="frame" x="55" y="40" width="210" height="150"/>
@@ -328,17 +328,17 @@
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ema-6Y-3Ec">
-                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
+                                <rect key="frame" x="109" y="187.5" width="102" height="105"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="DTR-mi-jQR">
-                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="26" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="QBU-zh-Pd4"/>
                                             <constraint firstAttribute="width" constant="50" id="oTh-8a-4IO"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chF-bm-z1u">
-                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="102" height="50"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -429,7 +429,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70t-LU-TyK">
-                                                    <rect key="frame" x="68" y="25" width="37" height="21.5"/>
+                                                    <rect key="frame" x="68" y="27" width="37" height="17.5"/>
                                                     <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -450,17 +450,17 @@
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o0O-JT-roX">
-                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
+                                <rect key="frame" x="109" y="187.5" width="102" height="105"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-P8-WV8">
-                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="26" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="WZE-YG-gJH"/>
                                             <constraint firstAttribute="width" constant="50" id="tve-4g-nCa"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeF-pO-OO0">
-                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="102" height="50"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -524,7 +524,7 @@
             </objects>
             <point key="canvasLocation" x="551" y="-496"/>
         </scene>
-        <!--Search For Pharmacies View Controller-->
+        <!--Pharmacies-->
         <scene sceneID="cDh-9W-VfY">
             <objects>
                 <viewController storyboardIdentifier="SearchForPharmaciesViewController" id="lAs-k9-etP" customClass="SearchForPharmaciesViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
@@ -686,7 +686,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dBu-7M-7JW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5UP-hh-vy5"/>
+                    <navigationItem key="navigationItem" title="Pharmacies" id="5UP-hh-vy5"/>
                     <connections>
                         <outlet property="arrowImageOne" destination="Loc-3c-3Cx" id="NbU-d2-UZg"/>
                         <outlet property="arrowImageThree" destination="nMi-5e-x6l" id="IcT-vh-yt1"/>
@@ -700,7 +700,7 @@
             </objects>
             <point key="canvasLocation" x="4057.971014492754" y="943.52678571428567"/>
         </scene>
-        <!--Search For All Labs View Controller-->
+        <!--Labs-->
         <scene sceneID="CrD-QT-IAe">
             <objects>
                 <viewController storyboardIdentifier="SearchForAllLabsViewController" id="cVB-bf-77r" customClass="SearchForAllLabsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
@@ -860,7 +860,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cnZ-dU-ITN"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nNY-jL-8ps"/>
+                    <navigationItem key="navigationItem" title="Labs" id="nNY-jL-8ps"/>
                     <connections>
                         <outlet property="arrowImageOne" destination="23s-DY-Ff7" id="AcW-YF-0RO"/>
                         <outlet property="arrowImageThree" destination="MZN-ww-krX" id="ubi-k8-cLt"/>
@@ -896,7 +896,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y8q-JH-RKN">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -927,7 +927,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8P-Ou-UBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6686" y="938"/>
+            <point key="canvasLocation" x="7157" y="276"/>
         </scene>
         <!--Show All Pharmacies View Controller-->
         <scene sceneID="Xre-K7-Ado">
@@ -1097,17 +1097,17 @@
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LMK-dP-dxs">
-                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
+                                <rect key="frame" x="109" y="187.5" width="102" height="105"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-XW-wYG">
-                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="26" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="U7X-RR-8hd"/>
                                             <constraint firstAttribute="width" constant="50" id="caa-fq-Lw3"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-NU-s0u">
-                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="102" height="50"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1147,14 +1147,14 @@
             </objects>
             <point key="canvasLocation" x="974" y="3177"/>
         </scene>
-        <!--Offers-->
+        <!--offers-->
         <scene sceneID="dfX-fV-cJ1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="evy-qG-dir" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Offers" image="tag" id="U4H-wZ-NQU"/>
+                    <tabBarItem key="tabBarItem" title="offers" image="tag" id="U4H-wZ-NQU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tio-DF-RD7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1169,7 +1169,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDl-FL-JbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="551" y="165"/>
+            <point key="canvasLocation" x="549" y="191"/>
         </scene>
         <!--More-->
         <scene sceneID="lYB-go-xUc">

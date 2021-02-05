@@ -88,7 +88,7 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Lab Details".localized
+        self.navigationItem.title = "Details".localized
         datesView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0.1, height: 0.1), radius: 3, scale: true)
         ratingView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)
         goToLocationView.dropShadow(color: .gray, opacity: 0.4, offSet: CGSize(width: 0, height: 1), radius: 3, scale: true)

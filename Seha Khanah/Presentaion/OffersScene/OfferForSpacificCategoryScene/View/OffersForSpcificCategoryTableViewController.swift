@@ -26,6 +26,16 @@ class OffersForSpcificCategoryTableViewController:UIViewController, UITableViewD
         tableView.dataSource = self
         setupTableView()
         noResultsStackView.isHidden = true
+       let backButton = UIBarButtonItem(
+                   title: "Offers".localized,
+                     style: UIBarButtonItem.Style.plain,
+                     target: nil,
+                     action: nil
+               );
+
+
+         self.navigationController!.navigationBar.topItem!.backBarButtonItem = backButton;
+        self.navigationItem.title = "Offers".localized
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

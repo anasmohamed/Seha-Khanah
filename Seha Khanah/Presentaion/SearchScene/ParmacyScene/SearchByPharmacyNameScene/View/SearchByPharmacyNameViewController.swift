@@ -25,7 +25,7 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
         searchByPharmacyNameTableView.dataSource = self
         pharmacyOffersPresenter = PharmacyOffersPresenter(view: self)
         setupTableView()
-        
+        self.navigationItem.title  = "Search".localized
     }
     
     
@@ -45,7 +45,7 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
         return pharmacyOffersPresenter.pharmacyOffersCount()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 310
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Edit Profile View Controller-->
         <scene sceneID="Drf-xv-oFT">
@@ -20,7 +25,7 @@
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <color key="color" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-rN-IEp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-rN-IEp">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Iow-d6-Wid">
@@ -31,7 +36,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6e7-Hz-Z9u"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zo8-er-USD">
@@ -39,7 +44,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="VTP-rc-Ehc"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ajw-zh-7zy">
@@ -47,7 +52,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="PpF-14-wYY"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-GK-JOy">
@@ -55,16 +60,16 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hiy-EU-D9B"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Eas-As-XGg">
                                                 <rect key="frame" x="0.0" y="200" width="394" height="20"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gF5-JW-23z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="20"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-iu-Vv8">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="couple-users-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-iu-Vv8">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="EXR-I0-JHW"/>
@@ -72,7 +77,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky4-lP-lc5">
-                                                                <rect key="frame" x="30" y="0.0" width="106.5" height="20"/>
+                                                                <rect key="frame" x="30" y="0.0" width="105.5" height="20"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -80,14 +85,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-O4-bgL">
-                                                        <rect key="frame" x="146.5" y="0.0" width="247.5" height="20"/>
+                                                        <rect key="frame" x="145.5" y="0.0" width="248.5" height="20"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-rY-i3U" customClass="RadioButton" customModule="MBRadioCheckboxButton">
                                                                 <rect key="frame" x="0.0" y="0.0" width="119" height="20"/>
+                                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                                 <state key="normal" title="Male"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZd-uS-KAp" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                                <rect key="frame" x="129" y="0.0" width="118.5" height="20"/>
+                                                                <rect key="frame" x="129" y="0.0" width="119.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                                 <state key="normal" title="Female"/>
                                                             </button>
                                                         </subviews>
@@ -102,6 +109,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OLF-VC-DXu"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <state key="normal" title="Save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -118,6 +126,8 @@
                                     <constraint firstItem="LIU-v3-npj" firstAttribute="trailing" secondItem="0Df-uj-Ll3" secondAttribute="trailing" constant="20" id="WfV-gh-ykC"/>
                                     <constraint firstItem="0Df-uj-Ll3" firstAttribute="leading" secondItem="LIU-v3-npj" secondAttribute="leading" constant="20" id="dLg-RN-tJ5"/>
                                     <constraint firstItem="Iow-d6-Wid" firstAttribute="leading" secondItem="LIU-v3-npj" secondAttribute="leading" constant="10" id="nDa-nh-6N6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iow-d6-Wid" secondAttribute="trailing" constant="10" id="pA8-Xp-Sq5"/>
+                                    <constraint firstItem="Iow-d6-Wid" firstAttribute="leading" secondItem="kZh-rN-IEp" secondAttribute="leading" constant="10" id="yhB-vA-asI"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="o5R-zW-6Hk"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="LIU-v3-npj"/>
@@ -150,6 +160,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="users" width="183.5" height="183.5"/>
+        <image name="couple-users-silhouette" width="16" height="16"/>
     </resources>
 </document>

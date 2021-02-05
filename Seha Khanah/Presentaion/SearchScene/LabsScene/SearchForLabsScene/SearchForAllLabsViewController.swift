@@ -38,7 +38,6 @@ class SearchForAllLabsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Search For Labs".localized
     }
     
     @objc func handleSearchByLabNameTab(_ sender: UITapGestureRecognizer? = nil) {
