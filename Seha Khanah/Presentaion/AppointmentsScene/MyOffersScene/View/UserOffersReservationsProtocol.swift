@@ -12,4 +12,5 @@ protocol UserOffersReservationsProtocol:class {
     func hideIndicator()
     func getMyOffersSuccess()
     func showError(error: String)
+    func showNoDataFoundStackView()
 }

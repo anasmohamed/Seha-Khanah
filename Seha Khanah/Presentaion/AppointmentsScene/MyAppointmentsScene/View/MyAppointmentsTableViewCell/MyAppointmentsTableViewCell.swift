@@ -26,7 +26,6 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     @IBOutlet weak var doctorPhoto: UIImageView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: UIView!
-    let locale = NSLocale.current.languageCode
     let cornerRadius : CGFloat = 10.0
     var actionBlock: (() -> Void)? = nil
     var mapStackViewActionBlock: (() -> Void)? = nil

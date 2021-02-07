@@ -22,11 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-AG-9Jb" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="40" y="325" width="334" height="300"/>
+                                <rect key="frame" x="20" y="118" width="374" height="645"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="uOs-Ye-qKr"/>
-                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lkt-AC-q47">
                                 <rect key="frame" x="20" y="793" width="374" height="40"/>
@@ -44,6 +41,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwq-IP-9RL">
                                         <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                         <state key="normal" title="تسجيل دخول"/>
                                         <connections>
                                             <action selector="loginBtnDidTapped:" destination="7eB-ek-BpO" eventType="touchUpInside" id="Nj8-Vi-o7x"/>
@@ -54,26 +52,16 @@
                                     <constraint firstAttribute="height" constant="40" id="ntl-UK-oux"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uI-Gf-XPR" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="40" y="195" width="334" height="130"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="j4x-Wj-Yqa"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="top" secondItem="4uI-Gf-XPR" secondAttribute="bottom" id="8Ag-LF-u0f"/>
-                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerX" secondItem="wh2-mC-BrC" secondAttribute="centerX" id="GZP-cr-UX7"/>
-                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="40" id="NMg-yc-vTe"/>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="leading" secondItem="vja-f6-5vz" secondAttribute="leading" constant="20" id="NaC-NO-D7f"/>
                             <constraint firstItem="Lkt-AC-q47" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="20" id="Pfm-pE-9P3"/>
                             <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="Lkt-AC-q47" secondAttribute="trailing" constant="20" id="X4k-bt-XrC"/>
-                            <constraint firstItem="4uI-Gf-XPR" firstAttribute="leading" secondItem="eNb-AG-9Jb" secondAttribute="leading" id="Z6E-hJ-cPM"/>
-                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerY" secondItem="wh2-mC-BrC" secondAttribute="centerY" id="b7u-7j-GSc"/>
                             <constraint firstItem="wh2-mC-BrC" firstAttribute="bottom" secondItem="Lkt-AC-q47" secondAttribute="bottom" constant="29" id="c6c-6z-Klk"/>
-                            <constraint firstItem="4uI-Gf-XPR" firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" id="dCh-g8-DA5"/>
-                            <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" constant="40" id="uNN-Qj-0MP"/>
+                            <constraint firstItem="Lkt-AC-q47" firstAttribute="top" secondItem="eNb-AG-9Jb" secondAttribute="bottom" constant="30" id="sEy-r1-uht"/>
+                            <constraint firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" constant="20" id="sdx-xX-XgD"/>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="top" secondItem="wh2-mC-BrC" secondAttribute="top" constant="30" id="xZX-11-71e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wh2-mC-BrC"/>
                     </view>
@@ -82,7 +70,6 @@
                         <outlet property="bookNowBtn" destination="RLM-ad-nev" id="CDf-y2-k1t"/>
                         <outlet property="loginBtn" destination="zwq-IP-9RL" id="VTd-8F-lCv"/>
                         <outlet property="sliderImageVIew" destination="eNb-AG-9Jb" id="Exx-ml-Fus"/>
-                        <outlet property="textSlideShow" destination="4uI-Gf-XPR" id="POw-7P-hXs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-0t-WpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

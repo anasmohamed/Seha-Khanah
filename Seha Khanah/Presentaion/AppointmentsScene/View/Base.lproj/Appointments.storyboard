@@ -110,10 +110,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-CL-gmM">
-                                <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
-                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ysc-NG-GPh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="730"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -128,20 +124,46 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-CL-gmM">
+                                <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wPW-X6-wnn">
+                                <rect key="frame" x="156.5" y="334.5" width="101.5" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mrz-FZ-EQf">
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Tr7-xt-YmK"/>
+                                            <constraint firstAttribute="height" constant="50" id="bUk-gK-eem"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBR-4T-grP">
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="wPW-X6-wnn" firstAttribute="centerY" secondItem="w9m-tI-9vf" secondAttribute="centerY" id="Dae-pJ-5Hq"/>
                             <constraint firstItem="Ysc-NG-GPh" firstAttribute="trailing" secondItem="noT-zv-rTj" secondAttribute="trailing" id="Drg-DM-V6o"/>
                             <constraint firstItem="Ysc-NG-GPh" firstAttribute="leading" secondItem="noT-zv-rTj" secondAttribute="leading" id="Kw7-8G-al0"/>
                             <constraint firstItem="noT-zv-rTj" firstAttribute="bottom" secondItem="Ysc-NG-GPh" secondAttribute="bottom" id="PMQ-9c-Let"/>
                             <constraint firstItem="Ysc-NG-GPh" firstAttribute="top" secondItem="noT-zv-rTj" secondAttribute="top" id="bBh-ft-MwC"/>
                             <constraint firstItem="Lk4-CL-gmM" firstAttribute="centerY" secondItem="w9m-tI-9vf" secondAttribute="centerY" id="dQO-hI-JJ4"/>
                             <constraint firstItem="Lk4-CL-gmM" firstAttribute="centerX" secondItem="w9m-tI-9vf" secondAttribute="centerX" id="g6M-m5-qCx"/>
+                            <constraint firstItem="wPW-X6-wnn" firstAttribute="centerX" secondItem="w9m-tI-9vf" secondAttribute="centerX" id="xbG-F0-H5z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="noT-zv-rTj"/>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="Lk4-CL-gmM" id="gHu-cg-vga"/>
+                        <outlet property="myAppointmentsTableView" destination="Ysc-NG-GPh" id="WcW-He-Xeg"/>
+                        <outlet property="noDataFoundStackView" destination="wPW-X6-wnn" id="7Gv-Rq-Sue"/>
                         <outlet property="tableView" destination="Ysc-NG-GPh" id="8RH-AA-LGU"/>
                     </connections>
                 </viewController>
@@ -157,10 +179,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Job-Gw-Lsb">
-                                <rect key="frame" x="188.5" y="364" width="37" height="37"/>
-                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gLB-qX-QWY">
                                 <rect key="frame" x="0.0" y="44" width="414" height="721"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -175,20 +193,45 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Job-Gw-Lsb">
+                                <rect key="frame" x="188.5" y="364" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d7D-Pl-fNq">
+                                <rect key="frame" x="156.5" y="330" width="101.5" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-Pq-kLN">
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="dZw-Bi-5G0"/>
+                                            <constraint firstAttribute="height" constant="50" id="qTi-2P-1p1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcf-8b-ecd">
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Job-Gw-Lsb" firstAttribute="centerX" secondItem="M2e-WK-dhY" secondAttribute="centerX" id="9c6-5M-5ir"/>
                             <constraint firstItem="6wB-Qm-Vfo" firstAttribute="bottom" secondItem="gLB-qX-QWY" secondAttribute="bottom" id="Nkq-y7-c92"/>
+                            <constraint firstItem="d7D-Pl-fNq" firstAttribute="centerY" secondItem="M2e-WK-dhY" secondAttribute="centerY" id="OFt-Hc-PhO"/>
                             <constraint firstItem="6wB-Qm-Vfo" firstAttribute="trailing" secondItem="gLB-qX-QWY" secondAttribute="trailing" id="aPQ-Kj-ZF4"/>
                             <constraint firstItem="gLB-qX-QWY" firstAttribute="leading" secondItem="6wB-Qm-Vfo" secondAttribute="leading" id="h7u-f8-RgN"/>
                             <constraint firstItem="Job-Gw-Lsb" firstAttribute="centerY" secondItem="M2e-WK-dhY" secondAttribute="centerY" id="oaV-qQ-RZa"/>
                             <constraint firstItem="gLB-qX-QWY" firstAttribute="top" secondItem="6wB-Qm-Vfo" secondAttribute="top" id="rRP-xP-uQ9"/>
+                            <constraint firstItem="d7D-Pl-fNq" firstAttribute="centerX" secondItem="M2e-WK-dhY" secondAttribute="centerX" id="rky-gS-zg1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6wB-Qm-Vfo"/>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="Job-Gw-Lsb" id="Oru-Ww-Rja"/>
+                        <outlet property="noDataFoundStackView" destination="d7D-Pl-fNq" id="yKL-JF-jkl"/>
                         <outlet property="tableView" destination="gLB-qX-QWY" id="Crf-yD-vEK"/>
                     </connections>
                 </viewController>
@@ -199,5 +242,6 @@
     </scenes>
     <resources>
         <image name="login (1)" width="64" height="64"/>
+        <image name="search-icon" width="100" height="100"/>
     </resources>
 </document>

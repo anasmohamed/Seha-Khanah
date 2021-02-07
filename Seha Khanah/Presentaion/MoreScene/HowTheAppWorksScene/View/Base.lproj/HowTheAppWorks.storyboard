@@ -33,21 +33,19 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-jL-W9n" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="40" y="338" width="334" height="230"/>
+                                <rect key="frame" x="20" y="84" width="374" height="678"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="gyR-mb-8gC"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="VVz-C8-gRp" firstAttribute="trailing" secondItem="x2g-jL-W9n" secondAttribute="trailing" constant="40" id="AP2-7Y-8G1"/>
-                            <constraint firstItem="x2g-jL-W9n" firstAttribute="leading" secondItem="VVz-C8-gRp" secondAttribute="leading" constant="40" id="Iy7-zJ-sPp"/>
+                            <constraint firstItem="k04-86-gmw" firstAttribute="top" secondItem="x2g-jL-W9n" secondAttribute="bottom" constant="40" id="Fwi-Nd-0Mt"/>
+                            <constraint firstItem="x2g-jL-W9n" firstAttribute="leading" secondItem="VVz-C8-gRp" secondAttribute="leading" constant="20" id="LEk-Gr-on8"/>
                             <constraint firstItem="VVz-C8-gRp" firstAttribute="bottom" secondItem="k04-86-gmw" secondAttribute="bottom" constant="20" id="LyX-X4-IVy"/>
                             <constraint firstItem="k04-86-gmw" firstAttribute="centerX" secondItem="VVz-C8-gRp" secondAttribute="centerX" id="SuX-IY-kSO"/>
                             <constraint firstItem="k04-86-gmw" firstAttribute="width" secondItem="hoK-iv-9TQ" secondAttribute="width" multiplier="0.9" id="bgF-xQ-5OX"/>
-                            <constraint firstItem="x2g-jL-W9n" firstAttribute="centerY" secondItem="VVz-C8-gRp" secondAttribute="centerY" id="hOM-ZR-kTC"/>
+                            <constraint firstItem="x2g-jL-W9n" firstAttribute="top" secondItem="VVz-C8-gRp" secondAttribute="top" constant="40" id="gWx-7h-DZz"/>
+                            <constraint firstItem="VVz-C8-gRp" firstAttribute="trailing" secondItem="x2g-jL-W9n" secondAttribute="trailing" constant="20" id="xp0-lr-iND"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VVz-C8-gRp"/>
                     </view>

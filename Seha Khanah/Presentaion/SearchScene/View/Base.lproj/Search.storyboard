@@ -328,17 +328,17 @@
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ema-6Y-3Ec">
-                                <rect key="frame" x="109" y="187.5" width="102" height="105"/>
+                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="DTR-mi-jQR">
-                                        <rect key="frame" x="26" y="0.0" width="50" height="50"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DTR-mi-jQR">
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="QBU-zh-Pd4"/>
                                             <constraint firstAttribute="width" constant="50" id="oTh-8a-4IO"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chF-bm-z1u">
-                                        <rect key="frame" x="0.0" y="55" width="102" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -429,7 +429,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70t-LU-TyK">
-                                                    <rect key="frame" x="68" y="27" width="37" height="17.5"/>
+                                                    <rect key="frame" x="68" y="25" width="37" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -450,17 +450,17 @@
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o0O-JT-roX">
-                                <rect key="frame" x="109" y="187.5" width="102" height="105"/>
+                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-P8-WV8">
-                                        <rect key="frame" x="26" y="0.0" width="50" height="50"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-P8-WV8">
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="WZE-YG-gJH"/>
                                             <constraint firstAttribute="width" constant="50" id="tve-4g-nCa"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeF-pO-OO0">
-                                        <rect key="frame" x="0.0" y="55" width="102" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -897,7 +897,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -909,10 +909,30 @@
                                 <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
                                 <color key="color" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eTU-E3-s9o">
+                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-0y-zy1">
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Gek-mg-XsJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="OSS-c9-3BB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT2-E5-LTu">
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eTU-E3-s9o" firstAttribute="centerY" secondItem="pze-Lm-23T" secondAttribute="centerY" id="396-uI-fAO"/>
                             <constraint firstItem="a3z-4y-0Am" firstAttribute="centerY" secondItem="pze-Lm-23T" secondAttribute="centerY" id="8eI-Np-1xJ"/>
+                            <constraint firstItem="eTU-E3-s9o" firstAttribute="centerX" secondItem="pze-Lm-23T" secondAttribute="centerX" id="MNb-dk-fGD"/>
                             <constraint firstItem="VSK-zm-o6u" firstAttribute="leading" secondItem="b0p-z8-hUN" secondAttribute="leading" id="NIt-rZ-cTM"/>
                             <constraint firstItem="a3z-4y-0Am" firstAttribute="centerX" secondItem="pze-Lm-23T" secondAttribute="centerX" id="V2d-OX-4gB"/>
                             <constraint firstItem="VSK-zm-o6u" firstAttribute="top" secondItem="b0p-z8-hUN" secondAttribute="top" id="VEE-PK-y3L"/>
@@ -922,6 +942,8 @@
                         <viewLayoutGuide key="safeArea" id="b0p-z8-hUN"/>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="a3z-4y-0Am" id="9ew-Qv-qN4"/>
+                        <outlet property="noDataFoundStackView" destination="eTU-E3-s9o" id="BGb-oG-TVI"/>
                         <outlet property="tableView" destination="VSK-zm-o6u" id="Sk4-Ce-Il6"/>
                     </connections>
                 </viewController>
@@ -955,20 +977,41 @@
                                 <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
                                 <color key="color" red="0.0039215686269999999" green="0.29803921570000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-nv-YC0">
+                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tuF-4A-8nY">
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Ec8-ci-sj6"/>
+                                            <constraint firstAttribute="height" constant="50" id="ucB-zl-WAv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZY-bG-FlK">
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nLr-E4-jYC" firstAttribute="top" secondItem="uuQ-jH-L6Y" secondAttribute="top" id="GKw-0I-Ske"/>
+                            <constraint firstItem="tw9-nv-YC0" firstAttribute="centerX" secondItem="cLl-f3-1hz" secondAttribute="centerX" id="H6o-la-qvc"/>
                             <constraint firstItem="u2K-7P-i7l" firstAttribute="centerX" secondItem="cLl-f3-1hz" secondAttribute="centerX" id="gZV-rF-jn0"/>
                             <constraint firstItem="uuQ-jH-L6Y" firstAttribute="bottom" secondItem="nLr-E4-jYC" secondAttribute="bottom" id="jdX-Z1-iZY"/>
                             <constraint firstItem="nLr-E4-jYC" firstAttribute="leading" secondItem="uuQ-jH-L6Y" secondAttribute="leading" id="ofD-e9-UIF"/>
                             <constraint firstItem="u2K-7P-i7l" firstAttribute="centerY" secondItem="cLl-f3-1hz" secondAttribute="centerY" id="qLt-la-eiL"/>
                             <constraint firstItem="uuQ-jH-L6Y" firstAttribute="trailing" secondItem="nLr-E4-jYC" secondAttribute="trailing" id="roU-BT-8Pd"/>
+                            <constraint firstItem="tw9-nv-YC0" firstAttribute="centerY" secondItem="cLl-f3-1hz" secondAttribute="centerY" id="wjC-cn-vfP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uuQ-jH-L6Y"/>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="u2K-7P-i7l" id="87I-oO-Mx3"/>
+                        <outlet property="noDataFoundStackView" destination="tw9-nv-YC0" id="kpa-eC-RU1"/>
                         <outlet property="tableView" destination="nLr-E4-jYC" id="ofE-vU-Dc1"/>
                     </connections>
                 </viewController>
@@ -1023,7 +1066,7 @@
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AEq-3q-7LM">
                                 <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-wx-z4B">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-wx-z4B">
                                         <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Iow-8T-AmS"/>
@@ -1061,6 +1104,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="eN0-Mu-3jt"/>
                     <connections>
+                        <outlet property="indicator" destination="5l2-UT-q8k" id="V7c-Y3-ipD"/>
                         <outlet property="noDataFoundStackView" destination="AEq-3q-7LM" id="fqj-yh-IlY"/>
                         <outlet property="searchByPharmacyNameTableView" destination="qHq-AI-Y9Y" id="dNY-UM-9KS"/>
                         <outlet property="searchBypharmacyNameBar" destination="OLO-Bu-MUa" id="kCw-fO-CCo"/>
@@ -1097,17 +1141,17 @@
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LMK-dP-dxs">
-                                <rect key="frame" x="109" y="187.5" width="102" height="105"/>
+                                <rect key="frame" x="109.5" y="187.5" width="101.5" height="105"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-XW-wYG">
-                                        <rect key="frame" x="26" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="25.5" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="U7X-RR-8hd"/>
                                             <constraint firstAttribute="width" constant="50" id="caa-fq-Lw3"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-NU-s0u">
-                                        <rect key="frame" x="0.0" y="55" width="102" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="101.5" height="50"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1154,7 +1198,7 @@
                     <tabBarItem key="tabBarItem" title="offers" image="tag" id="U4H-wZ-NQU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tio-DF-RD7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1202,7 +1246,7 @@
                     <tabBarItem key="tabBarItem" title="Appointments" image="calendar-1" id="bAL-Ya-unj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0B5-Ka-Smi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1243,6 +1287,7 @@
         <image name="pharmaci_ic" width="72" height="74"/>
         <image name="search" width="170.5" height="170.5"/>
         <image name="search-1" width="30" height="30"/>
+        <image name="search-icon" width="100" height="100"/>
         <image name="search_ic" width="24" height="24.5"/>
         <image name="tag" width="30" height="30"/>
     </resources>

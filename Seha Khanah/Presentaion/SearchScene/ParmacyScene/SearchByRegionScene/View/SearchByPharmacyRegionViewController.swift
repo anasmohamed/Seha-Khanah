@@ -11,14 +11,15 @@ import MOLH
 
 class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSource,UITableViewDelegate,AreasProtocol {
     
+    @IBOutlet weak var noDataFoundStackView: UIStackView!
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var tableView: UITableView!
     var regionPresenter: RegionPresenter!
     var searchForLab = false
     var searchForDoctor = false
     var sepcialtyId : String?
-    let locale = NSLocale.current.languageCode
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,8 @@ class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSour
     }
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllRegionsCell", for: indexPath)
+        cell.textLabel?.textColor = UIColor.init(red: 67/255, green: 67/255, blue: 67/255, alpha: 1)
+        cell.textLabel?.font = UIFont(name: "AGOOGLE", size: 14.0)
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             cell.textLabel?.text = regionPresenter.getAreasList()[indexPath.row].areaNameEn
@@ -72,23 +75,31 @@ class SearchByPharmacyRegionViewController:UIViewController, UITableViewDataSour
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
     }
     
     func pharamcyOffersResults() {
         tableView.reloadData()
+        tableView.isHidden = false
+        indicator.stopAnimating()
+        noDataFoundStackView.isHidden = true
+
+
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
+
     }
     
     func showNoDataFoundImage() {
-        
+        indicator.stopAnimating()
+        tableView.isHidden = true
+        noDataFoundStackView.isHidden = false
     }
     
     

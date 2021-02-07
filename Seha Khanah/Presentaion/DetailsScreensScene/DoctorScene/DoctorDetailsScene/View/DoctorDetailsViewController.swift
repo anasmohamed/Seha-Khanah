@@ -41,7 +41,6 @@ class DoctorDetailsViewController: UIViewController,DoctorDetailsProtocol {
     @IBOutlet weak var numberOfSeenLbl: UILabel!
     @IBOutlet weak var doctorImageView: UIImageView!
     @IBOutlet weak var goToLocationArrowImage: UIImageView!
-    let locale = NSLocale.current.languageCode
     var isAddToFavoriteBtnTapped = false
     var arrayOfSavedIds = [String]()
     @IBOutlet weak var rightArrowView: UIView!

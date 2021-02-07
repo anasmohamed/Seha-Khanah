@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Book Now"; ObjectID = "6IL-pP-eSx"; */
+"6IL-pP-eSx.normalTitle" = "احجز الان";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "INE-bC-5a2"; */
+"INE-bC-5a2.text" = "Label";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "kMx-Fg-QTB"; */
+"kMx-Fg-QTB.text" = "العنوان:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zoC-5b-eOK"; */
+"zoC-5b-eOK.text" = "Label";

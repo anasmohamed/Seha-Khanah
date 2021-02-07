@@ -10,9 +10,12 @@ import UIKit
 
 class MyOffersTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate ,UserOffersReservationsProtocol{
     
+    
+    
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     
+    @IBOutlet weak var noDataFoundStackView: UIStackView!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -88,11 +91,16 @@ class MyOffersTableViewController: UIViewController,UITableViewDataSource,UITabl
     }
     func getMyOffersSuccess() {
         indicator.stopAnimating()
-        
+        tableView.isHidden = true
+        noDataFoundStackView.isHidden = true
         tableView.reloadData()
     }
     
-    
+    func showNoDataFoundStackView() {
+        tableView.isHidden = true
+        noDataFoundStackView.isHidden = false
+        indicator.stopAnimating()
+    }
     
     
 }

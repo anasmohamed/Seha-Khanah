@@ -64,24 +64,28 @@ class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITa
    
       
       func showIndicator() {
-          
+        indicator.startAnimating()
       }
       
       func hideIndicator() {
-          
+        indicator.stopAnimating()
       }
       func pharamcyOffersResults() {
+        tableView.isHidden = false
           tableView.reloadData()
+        indicator.stopAnimating()
+        noDataFoundStackView.isHidden = true
+
       }
       
       func showError(error: String) {
-          
+        indicator.stopAnimating()
           
       }
       
       func showNoDataFoundImage() {
-          tableView.reloadData()
-          
+        tableView.isHidden = true
+        indicator.stopAnimating()
           noDataFoundStackView.isHidden = false
       }
       

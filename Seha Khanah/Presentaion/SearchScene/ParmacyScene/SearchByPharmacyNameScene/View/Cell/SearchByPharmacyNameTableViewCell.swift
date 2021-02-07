@@ -24,7 +24,6 @@ class SearchByPharmacyNameTableViewCell: UITableViewCell,PharmacyOfferTableViewC
     var bottomInset: CGFloat = 0
     var rightInset: CGFloat = 0
     let cornerRadius : CGFloat = 10.0
-    let locale = NSLocale.current.languageCode
     
     @IBOutlet weak var backView: UIView!
     override func awakeFromNib() {

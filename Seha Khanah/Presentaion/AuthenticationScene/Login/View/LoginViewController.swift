@@ -167,6 +167,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
     func loginSuccessWithFacebook(user: User) {
         loginSuccessNavigation(user:user)
+        UserDefaults.standard.set(true, forKey: "loginWithFacebook")
     }
     
     

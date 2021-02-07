@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class MoreTableViewController: UITableViewController {
     var settingsTitles = ["Settings".localized,"Call US".localized,"About the App".localized,"How The App Works".localized,"Login".localized]
@@ -87,6 +88,11 @@ class MoreTableViewController: UITableViewController {
                 let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
                 logoutSliderViewController.modalPresentationStyle = .fullScreen
                 self.navigationController!.present(logoutSliderViewController, animated: true)
+                if UserDefaults.standard.bool(forKey: "loginWithFacebook")
+                {
+                     let manager = LoginManager()
+                     manager.logOut()
+                }
                 UserDefaults.standard.removeObject(forKey: "isUserLoggedin")
                 UserDefaults.standard.removeObject(forKey: "email")
                 UserDefaults.standard.removeObject(forKey: "birthday")

@@ -12,4 +12,5 @@ protocol MyAppointmentsProtocol:class {
     func hideIndicator()
     func getMyAppointmentsSuccess()
     func showError(error: String)
+    func showNoDataFoundStackView()
 }

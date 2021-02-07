@@ -71,25 +71,31 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
     }
     
     func searchResults() {
+        searchBySpecialtyResultTableView.isHidden = false
         searchBySpecialtyResultTableView.reloadData()
+        noDataFoundStackView.isHidden = true
+        
+
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
+
         
     }
     
     func showNoDataFoundImage() {
         searchBySpecialtyResultTableView.reloadData()
-        
+        searchBySpecialtyResultTableView.isHidden = true
+
         noDataFoundStackView.isHidden = false
     }
 }

@@ -47,7 +47,6 @@ class BookViewController: UIViewController,BookingProtocol {
     var profissionalTitle: String?
     var doctorId : String?
     var bookingForAnotherPatientCheck = "0"
-    let locale = NSLocale.current.languageCode
     
     override func viewDidLoad() {
         super.viewDidLoad()

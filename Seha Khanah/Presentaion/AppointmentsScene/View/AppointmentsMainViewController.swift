@@ -17,7 +17,6 @@ class AppointmentsMainViewController: UIViewController {
     @IBOutlet weak var myAppointmentsView: UIView!
     var isUserLoggedIn = false
     @IBOutlet weak var myOffersView: UIView!
-    let locale = NSLocale.current.languageCode
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -381,7 +381,7 @@
 		A8AC86AD25875B2600604E64 /* Seha_Khanah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Seha_Khanah.xcdatamodel; sourceTree = "<group>"; };
 		A8AC86AF25875B2B00604E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A8AC86B425875B2B00604E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8AC86B425875B2B00604E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Seha Khanah/Info.plist"; sourceTree = SOURCE_ROOT; };
 		A8B8E4CB25A8BF70002F8149 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8B8E4CD25A8C376002F8149 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A8B8E4CF25A8C498002F8149 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
@@ -434,10 +434,8 @@
 		A8E8172325B22E6F00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LabDetails.storyboard; sourceTree = "<group>"; };
 		A8E8172A25B2393800DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookingDatesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A8E8173125B23AEA00DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchByLabNameTableViewCell.xib; sourceTree = "<group>"; };
-		A8E8173425B23AF200DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8E8173825B23C9600DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PharmacyDetails.storyboard; sourceTree = "<group>"; };
 		A8E8173F25B24A5500DE29A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchByPharmacyNameTableViewCell.xib; sourceTree = "<group>"; };
-		A8E8174225B24A5F00DE29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchByPharmacyNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8E87B4D25B8D5C100867430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OfferDetails.storyboard; sourceTree = "<group>"; };
 		A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsPresenter.swift; sourceTree = SOURCE_ROOT; };
 		A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsProtocol.swift; sourceTree = "<group>"; };
@@ -472,6 +470,8 @@
 		A8EF490725CCC40A000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
 		A8EF490925CCC870000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookNow.strings; sourceTree = "<group>"; };
 		A8EF490B25CCC8B7000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
+		A8F1C55E25CECE860082DC15 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
+		A8F1C56025CED1190082DC15 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByPharmacyNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldIcon+Extension.swift"; sourceTree = "<group>"; };
 		A8F7C07A25AF6E1900075B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Appointments.storyboard; sourceTree = "<group>"; };
@@ -2593,7 +2593,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8E8173125B23AEA00DE29A6 /* Base */,
-				A8E8173425B23AF200DE29A6 /* en */,
+				A8F1C55E25CECE860082DC15 /* ar */,
 			);
 			name = SearchByLabNameTableViewCell.xib;
 			sourceTree = "<group>";
@@ -2611,7 +2611,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A8E8173F25B24A5500DE29A6 /* Base */,
-				A8E8174225B24A5F00DE29A6 /* en */,
+				A8F1C56025CED1190082DC15 /* ar */,
 			);
 			name = SearchByPharmacyNameTableViewCell.xib;
 			sourceTree = "<group>";

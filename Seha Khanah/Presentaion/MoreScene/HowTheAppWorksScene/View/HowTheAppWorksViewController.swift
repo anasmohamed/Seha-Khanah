@@ -14,7 +14,7 @@ class HowTheAppWorksViewController: UIViewController {
     
     @IBOutlet weak var bookNowBtn: UIButton!
     
-    let localSource = [BundleImageSource(imageString: "slider_1"), BundleImageSource(imageString: "slider_2"), BundleImageSource(imageString: "slider_3"), BundleImageSource(imageString: "slider_4")]
+    let localSource = [BundleImageSource(imageString: "slider-image-1"), BundleImageSource(imageString: "slider-image-2"), BundleImageSource(imageString: "slider-image-3")]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "How The App Works".localized

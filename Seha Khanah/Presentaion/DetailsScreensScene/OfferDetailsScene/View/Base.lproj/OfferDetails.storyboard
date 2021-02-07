@@ -94,7 +94,7 @@
                                                 </subviews>
                                             </stackView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8K4-uq-urt">
-                                                <rect key="frame" x="20" y="50" width="354" height="218.5"/>
+                                                <rect key="frame" x="10" y="45" width="374" height="220.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gHl-tO-H7e">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -104,7 +104,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d8g-G4-mcQ">
-                                                        <rect key="frame" x="0.0" y="45.5" width="128" height="128"/>
+                                                        <rect key="frame" x="0.0" y="46.5" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5VY-Nx-6Xf">
                                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -114,7 +114,7 @@
                                                 </cells>
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBR-y2-Jod">
-                                                <rect key="frame" x="0.0" y="139.5" width="30" height="40"/>
+                                                <rect key="frame" x="0.0" y="135.5" width="30" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="MIg-0N-5Km">
                                                         <rect key="frame" x="5" y="10" width="20" height="20"/>
@@ -128,7 +128,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pz0-6w-GoU">
-                                                <rect key="frame" x="364" y="139.5" width="30" height="40"/>
+                                                <rect key="frame" x="364" y="135.5" width="30" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="nf6-xY-jvw">
                                                         <rect key="frame" x="5" y="10" width="20" height="20"/>
@@ -156,12 +156,12 @@
                                             <constraint firstItem="tuz-OK-ccY" firstAttribute="top" secondItem="sY7-20-oFE" secondAttribute="top" constant="10" id="KIx-c2-4z4"/>
                                             <constraint firstAttribute="bottom" secondItem="LCl-1P-o3w" secondAttribute="bottom" constant="8" id="Khj-nE-PmY"/>
                                             <constraint firstItem="LCl-1P-o3w" firstAttribute="leading" secondItem="sY7-20-oFE" secondAttribute="leading" constant="10" id="PsZ-xd-BLg"/>
-                                            <constraint firstItem="8K4-uq-urt" firstAttribute="leading" secondItem="sY7-20-oFE" secondAttribute="leading" constant="20" id="fgk-30-W6g"/>
+                                            <constraint firstItem="8K4-uq-urt" firstAttribute="leading" secondItem="sY7-20-oFE" secondAttribute="leading" constant="10" id="fgk-30-W6g"/>
                                             <constraint firstItem="JBR-y2-Jod" firstAttribute="centerY" secondItem="8K4-uq-urt" secondAttribute="centerY" id="hFC-m3-Hfr"/>
-                                            <constraint firstItem="8K4-uq-urt" firstAttribute="top" secondItem="tuz-OK-ccY" secondAttribute="bottom" constant="15" id="krG-5r-pAa"/>
-                                            <constraint firstItem="LCl-1P-o3w" firstAttribute="top" secondItem="8K4-uq-urt" secondAttribute="bottom" constant="2" id="nso-nv-2Ys"/>
+                                            <constraint firstItem="8K4-uq-urt" firstAttribute="top" secondItem="tuz-OK-ccY" secondAttribute="bottom" constant="10" id="krG-5r-pAa"/>
+                                            <constraint firstItem="LCl-1P-o3w" firstAttribute="top" secondItem="8K4-uq-urt" secondAttribute="bottom" constant="5" id="nso-nv-2Ys"/>
                                             <constraint firstAttribute="height" constant="300" id="oOL-VO-YD9"/>
-                                            <constraint firstAttribute="trailing" secondItem="8K4-uq-urt" secondAttribute="trailing" constant="20" id="qkf-vj-UZD"/>
+                                            <constraint firstAttribute="trailing" secondItem="8K4-uq-urt" secondAttribute="trailing" constant="10" id="qkf-vj-UZD"/>
                                             <constraint firstAttribute="trailing" secondItem="Pz0-6w-GoU" secondAttribute="trailing" id="xVB-Xo-6hO"/>
                                         </constraints>
                                     </view>

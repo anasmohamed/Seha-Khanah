@@ -9,6 +9,9 @@
 import UIKit
 
 class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MyAppointmentsProtocol {
+    
+    
+    @IBOutlet weak var noDataFoundStackView: UIStackView!
     @IBOutlet var myAppointmentsTableView: UITableView!
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
@@ -142,10 +145,15 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     func hideIndicator() {
         indicator.stopAnimating()
     }
-    
+    func showNoDataFoundStackView() {
+        noDataFoundStackView.isHidden = false
+        myAppointmentsTableView.isHidden = true
+        indicator.stopAnimating()
+    }
     func getMyAppointmentsSuccess() {
         indicator.stopAnimating()
-        
+        tableView.isHidden = false
+        noDataFoundStackView.isHidden = true
         tableView.reloadData()
     }
     

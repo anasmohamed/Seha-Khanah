@@ -12,11 +12,11 @@ import ImageSlideshow
 class LogoutSliderViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     
-    @IBOutlet weak var textSlideShow: ImageSlideshow!
+
     @IBOutlet weak var bookNowBtn: UIButton!
     @IBOutlet weak var sliderImageVIew: ImageSlideshow!
-    let localSource = [BundleImageSource(imageString: "slider_2"), BundleImageSource(imageString: "slider_3"), BundleImageSource(imageString: "slider_4")]
-    let localSourceText = [BundleImageSource(imageString: "second"), BundleImageSource(imageString: "third"), BundleImageSource(imageString: "first")]
+    let localSource = [BundleImageSource(imageString: "slider-image-1"), BundleImageSource(imageString: "slider-image-2"), BundleImageSource(imageString: "slider-image-3")]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 10
@@ -24,7 +24,6 @@ class LogoutSliderViewController: UIViewController {
         loginBtn.layer.borderWidth = 2
         
         bookNowBtn.layer.cornerRadius = 10
-        sliderImageVIew.slideshowInterval = 5.0
         sliderImageVIew.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         sliderImageVIew.contentScaleMode = UIViewContentMode.scaleAspectFill
         
@@ -32,38 +31,20 @@ class LogoutSliderViewController: UIViewController {
         let pageControl = UIPageControl()
         pageControl.currentPageIndicatorTintColor = UIColor.lightGray
         pageControl.pageIndicatorTintColor = UIColor.black
-        sliderImageVIew.pageIndicator = pageControl
         
         // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
         sliderImageVIew.activityIndicator = DefaultActivityIndicator()
         sliderImageVIew.delegate = self
-        
-        // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
+        sliderImageVIew.slideshowInterval = 3.0
         sliderImageVIew.setImageInputs(localSource)
         
+       
         
         
         
-        
-        
-        textSlideShow.slideshowInterval = 5.0
-        textSlideShow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
-        textSlideShow.contentScaleMode = UIViewContentMode.scaleAspectFill
-        
-        
-        
-        // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
+
         sliderImageVIew.delegate = self
-        
-        // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
-        textSlideShow.setImageInputs(localSourceText)
-        
-        
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
+ 
     }
     
     

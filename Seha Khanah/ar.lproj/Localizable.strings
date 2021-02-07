@@ -75,5 +75,14 @@
 
 "Lab Details" = "بيانات المختبر";
 
-"Test Type" = "نوع التحليل";
-"
+"Test Types" = "نوع التحليل";
+
+"Details" = "التفاصيل";
+
+"Enter Missing Data" = "من فضلك أدخل البيانات";
+
+"Region" = "المنطقة";
+
+"Pharmacy" = "الصدليات";
+
+"Specialty" = "التخصص";

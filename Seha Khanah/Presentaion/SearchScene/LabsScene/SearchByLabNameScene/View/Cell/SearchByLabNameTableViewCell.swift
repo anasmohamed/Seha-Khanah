@@ -20,7 +20,6 @@ class SearchByLabNameTableViewCell: UITableViewCell,SearchByLabNameTableViewCell
     @IBOutlet weak var accountPhoto: UIImageView!
     @IBOutlet weak var labPhoto: UIImageView!
     @IBOutlet weak var containerView: DropShadowView!
-    let locale = NSLocale.current.languageCode
     var bookBtnActionBlock: (() -> Void)? = nil
 
     let cornerRadius : CGFloat = 10.0

@@ -35,7 +35,6 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     
     var labDetailsPresenter : LabDetailsPresenter!
     var titleArray = [String]()
-    let locale = NSLocale.current.languageCode
     var latitude :String?
     var longitude :String?
     @IBOutlet weak var goToLocationView: UIView!

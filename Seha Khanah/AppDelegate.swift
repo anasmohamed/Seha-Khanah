@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable   {
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font:UIFont(name: "AGOOGLE", size: 15)!], for: .normal)
         GIDSignIn.sharedInstance().clientID = "151320045397-sotvam4tirfvpncfah1n2gjrlv1ak4gi.apps.googleusercontent.com"
         MOLHLanguage.setDefaultLanguage("ar")
-        MOLH.shared.activate(true)
+        MOLH.shared.activate(false)
         MOLH.shared.specialKeyWords = ["Cancel","Done"]
         reset()
         return true
@@ -51,25 +51,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable   {
 
     }
     
+//    func reset() {
+//        let rootViewController: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+//        let story = UIStoryboard(name: "Search", bundle: nil)
+//        rootViewController.rootViewController = story.instantiateViewController(withIdentifier: "TabBar")
+//    }
     func reset() {
-        let rootViewController: UIWindow = ((UIApplication.shared.delegate?.window)!)!
-        let story = UIStoryboard(name: "Search", bundle: nil)
-        rootViewController.rootViewController = story.instantiateViewController(withIdentifier: "TabBar")
-    }
+            let stry = UIStoryboard(name: "Search", bundle: nil)
+              window?.rootViewController = stry.instantiateInitialViewController()
+       }
+    // MARK: UISceneSession Lifecycle
 
-//    // MARK: UISceneSession Lifecycle
+    @available(iOS 13.0, *)
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
 //
-//    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-//        // Called when a new scene session is being created.
-//        // Use this method to select a configuration to create the new scene with.
-//        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-//    }
-//
-//    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-//        // Called when the user discards a scene session.
-//        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-//        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-//    }
+    @available(iOS 13.0, *)
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
 //
 //    // MARK: - Core Data stack
 //

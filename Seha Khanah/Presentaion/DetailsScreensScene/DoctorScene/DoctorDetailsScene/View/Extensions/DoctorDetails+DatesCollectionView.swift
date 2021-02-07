@@ -59,13 +59,13 @@ extension DoctorDetailsViewController : UICollectionViewDelegate,UICollectionVie
         if collectionView == datesCollectionView{
             
             // First section
-            width = 130
-            height = 200
+            width = 120
+            height = 170
             return CGSize(width: width, height: height)
         }else
         {
             width = 170
-            height = 150
+            height = 140
             
             return CGSize(width: width, height: height)
         }

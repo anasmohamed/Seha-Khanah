@@ -15,7 +15,6 @@ class SearchBySpcialtyTableViewCell: UITableViewCell,SearchBySpeialtyTableViewCe
     
     @IBOutlet weak var spcialtyImageView: UIImageView!
     @IBOutlet weak var spcialtyTitleLbl: UILabel!
-    let locale = NSLocale.current.languageCode
 
  
     func configure(result:SearchBySpecialtyModel){

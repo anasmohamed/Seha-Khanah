@@ -24,7 +24,6 @@ class PharamcyDetailsViewController: UIViewController,PharmacyDetailsProtocol {
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var pharmacyNameLbl: UILabel!
     @IBOutlet weak var pharmacyNameView: UIView!
-    let locale = NSLocale.current.languageCode
     var presenter : PharmacyDetailsPresenter!
     var pharmacyId: String?
     var lat : String?

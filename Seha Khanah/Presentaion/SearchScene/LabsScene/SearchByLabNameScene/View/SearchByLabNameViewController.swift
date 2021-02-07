@@ -106,9 +106,7 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     
     func showNoDataFoundImage() {
         indicator.stopAnimating()
-        
-        searchByLabNameTableView.reloadData()
-        
+        searchByLabNameTableView.isHidden = true
         noDataFoundStackView.isHidden = false
     }
     
@@ -121,9 +119,10 @@ class SearchByLabNameViewController: UIViewController,UITableViewDelegate,UITabl
     
     func labsResults() {
         indicator.stopAnimating()
-        
+        searchByLabNameTableView.isHidden = false
         searchByLabNameTableView.reloadData()
-        
+        noDataFoundStackView.isHidden = true
+
     }
     
     

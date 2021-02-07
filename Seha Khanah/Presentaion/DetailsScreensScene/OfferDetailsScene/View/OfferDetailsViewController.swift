@@ -43,7 +43,6 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     var presenter : OfferDetailsPresenter!
     var arrayOfSavedOffersIds = [String]()
     
-    var locale = NSLocale.current.languageCode
     @IBOutlet weak var addToFavoriteBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()

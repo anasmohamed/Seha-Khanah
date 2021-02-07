@@ -14,7 +14,6 @@ class FavoirteContainerViewController: UIViewController {
     @IBOutlet weak var favoriteDoctorsView: UIView!
     var isUserLoggedIn = false
     @IBOutlet weak var favoriteOffersView: UIView!
-    let locale = NSLocale.current.languageCode
     
     override func viewDidLoad() {
         super.viewDidLoad()

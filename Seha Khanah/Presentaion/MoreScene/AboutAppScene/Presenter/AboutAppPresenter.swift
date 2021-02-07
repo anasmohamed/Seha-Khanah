@@ -13,7 +13,6 @@ class AboutAppPresenter {
     private let aboutAppInteractor:AboutAppInteractor
      private var aboutApp: [AboutApp]
      private weak var view: AboutAppProtocol?
-    let locale = NSLocale.current.languageCode
 
      init(view: AboutAppProtocol) {
          self.view = view

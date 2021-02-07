@@ -32,7 +32,6 @@ class MostOrderedOffersTableViewCell:UITableViewCell,MostOrderedOffersTableViewC
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: DropShadowView!
     let cornerRadius : CGFloat = 5.0
-    let locale = NSLocale.current.languageCode
     static let identifier = "MostOrderedOffersTableViewCell"
     static func nib() ->UINib{
         return UINib(nibName: "MostOrderedOffersTableViewCell", bundle: nil)

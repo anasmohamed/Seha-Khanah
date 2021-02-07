@@ -9,6 +9,7 @@
 import UIKit
 
 class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,UISearchBarDelegate,PharmacyOffersViewProtocol{
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var searchBypharmacyNameBar: UISearchBar!
     @IBOutlet weak var searchByPharmacyNameTableView: UITableView!
@@ -73,24 +74,25 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
     }
     func pharamcyOffersResults() {
+        searchByPharmacyNameTableView.isHidden = false
         searchByPharmacyNameTableView.reloadData()
+        noDataFoundStackView.isHidden = true
     }
     
     func showError(error: String) {
-        
-        
+        indicator.stopAnimating()
     }
     
     func showNoDataFoundImage() {
-        searchByPharmacyNameTableView.reloadData()
-        
+        indicator.stopAnimating()
+        searchByPharmacyNameTableView.isHidden = true
         noDataFoundStackView.isHidden = false
     }
     

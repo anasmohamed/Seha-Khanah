@@ -26,7 +26,6 @@ class SearchResultTableViewCell: UITableViewCell,SearchedResultsTableViewCellVie
     @IBOutlet weak var rating: CosmosView!
     @IBOutlet weak var profissionalTitleEnLbl: UILabel!
     let cornerRadius : CGFloat = 10.0
-    let locale = NSLocale.current.languageCode
     var bookBtnActionBlock: (() -> Void)? = nil
 
     override func awakeFromNib() {

@@ -23,7 +23,6 @@ class LabDayDatesViewController: UIViewController,UICollectionViewDelegate,UICol
     var labId: String?
     var labAddress: String?
     var profissionalTitle: String?
-    let locale = NSLocale.current.languageCode
     
     @IBOutlet weak var dayDateLbl: UILabel!
     @IBOutlet weak var dayDatesCollectionView: UICollectionView!

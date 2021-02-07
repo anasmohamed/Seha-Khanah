@@ -110,22 +110,22 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
     }
     
     func showIndicator() {
-        
+        indicator.startAnimating()
     }
     
     func hideIndicator() {
-        
+        indicator.stopAnimating()
     }
     
     func searchResults() {
-        
+        indicator.stopAnimating()
         searchByNameResultsTableView.reloadData()
         searchByNameResultsTableView.isHidden = false
         noDataFoundStackView.isHidden = true
     }
     
     func showError(error: String) {
-        
+        indicator.stopAnimating()
     }
     //Calls this function when the tap is recognized.
     @objc func dismissKeyboard() {

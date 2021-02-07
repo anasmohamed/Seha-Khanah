@@ -26,7 +26,6 @@ class BookingDatesCollectionViewCell: UICollectionViewCell ,BookingDatesCollecti
     @IBOutlet weak var endHourLbl: UILabel!
     @IBOutlet weak var bookNowBtn: UIButton!
     let cornerRadius : CGFloat = 5.0
-    let locale = NSLocale.current.languageCode
     
     
     override func awakeFromNib() {

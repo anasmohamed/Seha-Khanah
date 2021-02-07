@@ -13,7 +13,6 @@ class OffersCategoriesPresenter {
     private let offersInteractor:OffersInteractor
     private var offers: [OffersCategory]
     private weak var view: OffersCategorisViewProtocol?
-    let locale = NSLocale.current.languageCode
     init(view: OffersCategorisViewProtocol) {
         self.view = view
         self.offersInteractor = OffersInteractor()

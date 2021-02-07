@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Search By Name"; ObjectID = "0Uo-xF-Hnk"; */
-"0Uo-xF-Hnk.text" = "بحث بأسم الطبيب";
+"0Uo-xF-Hnk.text" = "بحث بأسم المختبر";
 
 /* Class = "UISearchBar"; placeholder = "Search By Lab Name"; ObjectID = "0YY-Ud-VKo"; */
 "0YY-Ud-VKo.placeholder" = "بحث بأسم المختبر";
@@ -88,3 +88,5 @@
 
 
 "5UP-hh-vy5.title" = "البحث عن الصيدليات";
+
+"nNY-jL-8ps.title" = "المختبرات";
