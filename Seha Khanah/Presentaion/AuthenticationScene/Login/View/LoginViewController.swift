@@ -11,6 +11,7 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import GoogleSignIn
 import SwiftyJSON
+import Toast_Swift
 
 class LoginViewController: UIViewController ,LoginProtocol{
     
@@ -122,7 +123,8 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
     func showError(error: String) {
         indicator.stopAnimating()
-        
+        self.view.makeToast(error, duration: 5.0, position: .bottom)
+
     }
     func loginSuccessNavigation(user:User)  {
         indicator.stopAnimating()
@@ -190,7 +192,7 @@ extension LoginViewController: LoginButtonDelegate {
                 if let fields = result as? [String:Any], let firstName = fields["first_name"] as? String, let id = fields["id"] as? String, let email = fields["email"] as? String{
                     print("token\(AccessToken.current!.tokenString)")
                     let facebookProfileString = "http://graph.facebook.com/\(id)/picture?type=large"
-                    self.loginPresenter.loginWithSocial(accessToken:"medooking@gmail.com"
+                    self.loginPresenter.loginWithSocial(accessToken:email
                         , provider: "facebook")
                     print("email \(email)")
                     print(firstName, id, facebookProfileString)
@@ -215,7 +217,7 @@ extension LoginViewController :GIDSignInDelegate {
             }
             return
         }
-        self.loginPresenter.loginWithSocial(accessToken:self.loginPresenter.returnAccessToken()
+        self.loginPresenter.loginWithSocial(accessToken:user.profile.email
             , provider: "google")
         
         
