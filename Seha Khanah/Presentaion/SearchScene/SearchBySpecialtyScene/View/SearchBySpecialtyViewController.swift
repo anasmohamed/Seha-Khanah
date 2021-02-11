@@ -25,6 +25,7 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
         searchBySpecialtyResultTableView.dataSource = self
         searchBySpecialtyPresenter = SearchBySpecialtyPresenter(view: self)
         //        setupTableView()
+        setupToolbar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +38,28 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
     //         searchBySpecialtyResultTableView.register(UINib(nibName: "SearchBySpcialtyTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchBySpcialtyTableViewCell")
     //
     //     }
-    
+    func setupToolbar(){
+           //Create a toolbar
+           let bar = UIToolbar()
+           
+           //Create a done button with an action to trigger our function to dismiss the keyboard
+           let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMyKeyboard))
+           
+           //Create a felxible space item so that we can add it around in toolbar to position our done button
+           let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+           
+           //Add the created button items in the toobar
+           bar.items = [flexSpace, flexSpace, doneBtn]
+           bar.sizeToFit()
+           
+           //Add the toolbar to our textfield
+           searchBySpecialtyBar.inputAccessoryView = bar
+        
+       }
+       
+       @objc func dismissMyKeyboard(){
+           view.endEditing(true)
+       }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchBySpecialtyPresenter.searchResultCount()
     }

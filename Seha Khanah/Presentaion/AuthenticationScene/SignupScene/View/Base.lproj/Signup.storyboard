@@ -83,7 +83,7 @@
                                         <rect key="frame" x="0.0" y="250" width="304" height="20"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxn-LH-hpx">
-                                                <rect key="frame" x="0.0" y="0.0" width="121" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="couple-users-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="9zs-Gq-ukV">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -93,7 +93,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlY-DF-B4d">
-                                                        <rect key="frame" x="30" y="0.0" width="91" height="20"/>
+                                                        <rect key="frame" x="30" y="0.0" width="69.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -101,15 +101,15 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-LH-x1p">
-                                                <rect key="frame" x="131" y="0.0" width="173" height="20"/>
+                                                <rect key="frame" x="109.5" y="0.0" width="194.5" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-N5-jY3" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="81.5" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="92" height="20"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <state key="normal" title="Male"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uey-n0-RY0" customClass="RadioButton" customModule="MBRadioCheckboxButton">
-                                                        <rect key="frame" x="91.5" y="0.0" width="81.5" height="20"/>
+                                                        <rect key="frame" x="102" y="0.0" width="92.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                         <state key="normal" title="Female"/>
                                                     </button>
@@ -159,7 +159,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPX-hM-Utx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dlw-yn-01G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.29411764705882354" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">

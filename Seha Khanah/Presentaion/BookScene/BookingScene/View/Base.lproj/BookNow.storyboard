@@ -27,29 +27,27 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-pC-XiH">
                                         <rect key="frame" x="40" y="70" width="334" height="120"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SRv-iZ-ZeG">
-                                                <rect key="frame" x="145" y="34.666666666666671" width="44.333333333333343" height="57"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-I0-Dyu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="25.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="18"/>
-                                                        <color key="textColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVs-WP-s3v">
-                                                        <rect key="frame" x="0.0" y="35.666666666666671" width="44.333333333333336" height="21.333333333333329"/>
-                                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-I0-Dyu">
+                                                <rect key="frame" x="5" y="34.666666666666671" width="324" height="25.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVs-WP-s3v">
+                                                <rect key="frame" x="5" y="70.333333333333343" width="324" height="21.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="LsS-I0-Dyu" firstAttribute="leading" secondItem="T6B-pC-XiH" secondAttribute="leading" constant="5" id="ALV-ly-0Cz"/>
+                                            <constraint firstItem="YVs-WP-s3v" firstAttribute="leading" secondItem="T6B-pC-XiH" secondAttribute="leading" constant="5" id="BKd-el-qtF"/>
+                                            <constraint firstAttribute="trailing" secondItem="LsS-I0-Dyu" secondAttribute="trailing" constant="5" id="KpQ-7S-oz0"/>
+                                            <constraint firstAttribute="trailing" secondItem="YVs-WP-s3v" secondAttribute="trailing" constant="5" id="OJ4-OM-Wgv"/>
                                             <constraint firstAttribute="height" constant="120" id="Pbl-la-Y2s"/>
-                                            <constraint firstItem="SRv-iZ-ZeG" firstAttribute="centerX" secondItem="T6B-pC-XiH" secondAttribute="centerX" id="g3J-K5-KoW"/>
-                                            <constraint firstItem="SRv-iZ-ZeG" firstAttribute="top" secondItem="T6B-pC-XiH" secondAttribute="top" constant="34.5" id="mEa-E1-mRs"/>
+                                            <constraint firstItem="YVs-WP-s3v" firstAttribute="top" secondItem="LsS-I0-Dyu" secondAttribute="bottom" constant="10" id="iRn-OI-1gA"/>
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4l-gM-2wf">
@@ -254,6 +252,7 @@
                                     <constraint firstItem="6rx-nc-CuL" firstAttribute="leading" secondItem="BZS-2q-IrR" secondAttribute="leading" constant="10" id="Odh-at-dPh"/>
                                     <constraint firstItem="T6B-pC-XiH" firstAttribute="centerX" secondItem="BZS-2q-IrR" secondAttribute="centerX" id="STj-aH-vdU"/>
                                     <constraint firstAttribute="bottom" secondItem="JUP-Gt-RJd" secondAttribute="bottom" constant="20" id="TI0-CL-gQs"/>
+                                    <constraint firstItem="LsS-I0-Dyu" firstAttribute="top" secondItem="x4l-gM-2wf" secondAttribute="bottom" constant="4.6666666666666714" id="YyL-SB-hLJ"/>
                                     <constraint firstItem="JUP-Gt-RJd" firstAttribute="top" secondItem="lSe-yC-fOB" secondAttribute="bottom" constant="20" id="b86-7a-lMp"/>
                                     <constraint firstItem="lSe-yC-fOB" firstAttribute="top" secondItem="6rx-nc-CuL" secondAttribute="bottom" constant="10" id="bza-So-B4z"/>
                                     <constraint firstItem="x4l-gM-2wf" firstAttribute="centerX" secondItem="BZS-2q-IrR" secondAttribute="centerX" id="fgW-FA-y3I"/>

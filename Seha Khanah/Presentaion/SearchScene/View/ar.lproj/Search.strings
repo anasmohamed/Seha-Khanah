@@ -81,7 +81,7 @@
 "j0u-q4-2ho.text" = "بحث عن الصيدليات";
 
 /* Class = "UILabel"; text = "Search By Lab"; ObjectID = "n5v-rF-OlB"; */
-"n5v-rF-OlB.text" = "بحث بأسم المختبر";
+"n5v-rF-OlB.text" = "بحث عن مختبرات";
 
 /* Class = "UINavigationItem"; title = "Main"; ObjectID = "rEl-SG-JbZ"; */
 "rEl-SG-JbZ.title" = "الرئيسية";

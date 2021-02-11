@@ -53,7 +53,7 @@ class SearchByNameViewController: UIViewController ,UITableViewDataSource,UITabl
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 310
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("number ofr rows\(searchedResultsPresenter.searchResultCount())")

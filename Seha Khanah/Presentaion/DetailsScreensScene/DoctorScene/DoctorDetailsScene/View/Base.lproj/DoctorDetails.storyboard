@@ -37,18 +37,18 @@
                                                 <color key="textColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-gD-Y8k">
-                                                <rect key="frame" x="10" y="73" width="372" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-gD-Y8k">
+                                                <rect key="frame" x="10" y="73" width="372" height="21.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O79-mm-GOg" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="136" y="101" width="120" height="20"/>
+                                                <rect key="frame" x="136" y="104.33333333333334" width="120" height="20"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grz-kM-yg5" customClass="PaddingLabel" customModule="Seha_Khanah" customModuleProvider="target">
-                                                <rect key="frame" x="179" y="125" width="34.333333333333343" height="20"/>
+                                                <rect key="frame" x="179" y="128.33333333333334" width="34.333333333333343" height="20"/>
                                                 <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,14 +72,14 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utj-on-79Y">
-                                                <rect key="frame" x="0.0" y="160" width="392" height="2"/>
+                                                <rect key="frame" x="0.0" y="163.33333333333334" width="392" height="2"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="FL6-bT-byz"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="BNR-dH-3OY">
-                                                <rect key="frame" x="78.666666666666686" y="172" width="235" height="30"/>
+                                                <rect key="frame" x="78.666666666666686" y="175.33333333333334" width="235" height="30"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f9s-cy-DSV">
                                                         <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="30"/>
@@ -101,7 +101,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-io-TQ3">
-                                                                        <rect key="frame" x="0.0" y="19" width="34.333333333333336" height="11"/>
+                                                                        <rect key="frame" x="0.0" y="18.999999999999972" width="34.333333333333336" height="11"/>
                                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-Sv-43q">
-                                                                        <rect key="frame" x="0.0" y="17.666666666666686" width="80.666666666666671" height="12.333333333333336"/>
+                                                                        <rect key="frame" x="0.0" y="17.666666666666657" width="80.666666666666671" height="12.333333333333336"/>
                                                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>

@@ -43,7 +43,7 @@ class ShowAllPharmaciesViewController: UIViewController,UITableViewDelegate,UITa
           return pharmacyOffersPresenter.pharmacyOffersCount()
       }
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-          return 280
+          return 310
       }
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

@@ -48,7 +48,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz0-Wc-4mU">
-                                        <rect key="frame" x="158" y="177.5" width="236" height="20"/>
+                                        <rect key="frame" x="156" y="177.5" width="238" height="20"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -106,7 +106,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Qz0-Wc-4mU" secondAttribute="trailing" constant="5" id="3hj-PQ-JQZ"/>
                                     <constraint firstItem="Qz0-Wc-4mU" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="10" id="5SD-nf-AZF"/>
                                     <constraint firstItem="w5J-Yb-aB1" firstAttribute="leading" secondItem="i4z-Zp-bJG" secondAttribute="leading" constant="25" id="5UV-Qr-wrg"/>
-                                    <constraint firstItem="Qz0-Wc-4mU" firstAttribute="leading" secondItem="WLG-PG-JaT" secondAttribute="trailing" constant="2" id="6ot-wc-BTt"/>
+                                    <constraint firstItem="Qz0-Wc-4mU" firstAttribute="leading" secondItem="WLG-PG-JaT" secondAttribute="trailing" id="6ot-wc-BTt"/>
                                     <constraint firstAttribute="bottom" secondItem="evW-Fc-y5N" secondAttribute="bottom" constant="18" id="7Gz-f3-fv1"/>
                                     <constraint firstAttribute="trailing" secondItem="TOW-qS-nQ5" secondAttribute="trailing" id="8Q4-Xx-jfA"/>
                                     <constraint firstItem="WLG-PG-JaT" firstAttribute="top" secondItem="TOW-qS-nQ5" secondAttribute="bottom" constant="10" id="Dlc-Vc-9zR"/>

@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable   {
       UINavigationBar.appearance().barTintColor = UIColor.init(red: 0.0/255, green: 75.0/255, blue: 142.0/255, alpha: 1.0)
       UINavigationBar.appearance().tintColor = UIColor.white
       UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white,NSAttributedString.Key.font: UIFont(name: "AGOOGLE", size: 15)!]
-        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AGOOGLE", size: 10)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AGOOGLE", size: 10)!], for: .selected)
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font:UIFont(name: "AGOOGLE", size: 15)!], for: .normal)
         GIDSignIn.sharedInstance().clientID = "151320045397-sotvam4tirfvpncfah1n2gjrlv1ak4gi.apps.googleusercontent.com"
         MOLHLanguage.setDefaultLanguage("ar")

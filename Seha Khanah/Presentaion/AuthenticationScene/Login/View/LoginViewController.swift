@@ -52,7 +52,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
         print(token)
         loginPresenter.getUserToken(grantType:"client_credentials" , clientId: "7", clientSecret: "OYFfHRim0QjFYHSuBdWc49arCyII99agIFdpKV7e", scope: "*")
         
-        
+        setupToolbar()
         
     }
     
@@ -126,6 +126,26 @@ class LoginViewController: UIViewController ,LoginProtocol{
         self.view.makeToast(error, duration: 5.0, position: .bottom)
 
     }
+    func setupToolbar(){
+           //Create a toolbar
+           let bar = UIToolbar()
+           
+           //Create a done button with an action to trigger our function to dismiss the keyboard
+           let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissKeyboard))
+           
+           //Create a felxible space item so that we can add it around in toolbar to position our done button
+           let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+           
+           //Add the created button items in the toobar
+           bar.items = [flexSpace, flexSpace, doneBtn]
+           bar.sizeToFit()
+           
+           //Add the toolbar to our textfield
+           passwordTextField.inputAccessoryView = bar
+           emailTextField.inputAccessoryView = bar
+       }
+       
+       
     func loginSuccessNavigation(user:User)  {
         indicator.stopAnimating()
                let storyboard = UIStoryboard.init(name: "Search", bundle: nil)

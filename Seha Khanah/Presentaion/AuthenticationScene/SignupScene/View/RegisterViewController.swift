@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MBRadioCheckboxButton
 import Toast_Swift
-class RegisterViewController: UIViewController,RegisterProtocol {
+class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDelegate {
     let datePicker = UIDatePicker()
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
@@ -67,7 +67,8 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
-      
+//        phoneTextField.delegate = self
+        phoneTextField.keyboardType = .phonePad
     }
     
     func showIndicator() {
@@ -78,7 +79,15 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         indicator.stopAnimating()
         
     }
-    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //For mobile numer validation
+        if textField == phoneTextField {
+            let allowedCharacters = CharacterSet(charactersIn:"+0123456789 ")//Here change this characters based on your requirement
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
+        }
+        return true
+    }
     func resgiterSuccess(user: User) {
         indicator.stopAnimating()
         
@@ -109,7 +118,7 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         dateTextField.inputAccessoryView = toolBar
         dateTextField.inputView = datePicker
         datePicker.locale = Locale(identifier: "en_US")
-
+        
         datePicker.datePickerMode = .date
     }
     func setupLanguageBtns() {
@@ -132,7 +141,30 @@ class RegisterViewController: UIViewController,RegisterProtocol {
         dateTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
+    func setupToolbar(){
+        //Create a toolbar
+        let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
+        let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMyKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
+        bar.items = [flexSpace, flexSpace, doneBtn]
+        bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
+        phoneTextField.inputAccessoryView = bar
+        passwordTextField.inputAccessoryView = bar
+        emailTextField.inputAccessoryView = bar
+        userNameTextField.inputAccessoryView  = bar
+    }
     
+    @objc func dismissMyKeyboard(){
+        view.endEditing(true)
+    }
     @IBAction func registerBtnDidTapped(_ sender: Any) {
         guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text else {
             return
@@ -145,13 +177,13 @@ class RegisterViewController: UIViewController,RegisterProtocol {
             
             return
         }
-       
+        
         if dateTextField.text!.isEmpty {
             self.view.makeToast("Please Enter Password More Than 6 character", duration: 3.0, position: .bottom)
             return
         }else{
             registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date!)
-        
+            
         }
         
     }
