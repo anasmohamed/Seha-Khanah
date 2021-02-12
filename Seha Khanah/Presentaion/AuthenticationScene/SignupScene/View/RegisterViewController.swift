@@ -27,6 +27,13 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         }
     }
     
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+        {
+        didSet {
+            confirmPasswordTextField.tintColor = UIColor.lightGray
+            confirmPasswordTextField.setIcon(UIImage(named: "padlock-3")!)
+        }
+    }
     @IBOutlet weak var phoneTextField: UITextField!
         {
         didSet {
@@ -67,8 +74,8 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
-//        phoneTextField.delegate = self
-        phoneTextField.keyboardType = .phonePad
+        phoneTextField.delegate = self
+        setupToolbar()
     }
     
     func showIndicator() {
@@ -82,9 +89,13 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //For mobile numer validation
         if textField == phoneTextField {
-            let allowedCharacters = CharacterSet(charactersIn:"+0123456789 ")//Here change this characters based on your requirement
-            let characterSet = CharacterSet(charactersIn: string)
-            return allowedCharacters.isSuperset(of: characterSet)
+            let numberStr: String = string
+            let formatter: NumberFormatter = NumberFormatter()
+            formatter.locale = Locale(identifier: "EN")
+            if let final = formatter.number(from: numberStr) {
+                textField.text =  "\(textField.text ?? "")\(final)"
+            }
+            return false
         }
         return true
     }
@@ -108,7 +119,7 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     func showError(error: String) {
         indicator.stopAnimating()
         print("error message\(error)")
-        self.view.makeToast(error, duration: 3.0, position: .top)
+        self.view.makeToast(error.localized, duration: 3.0, position: .top)
     }
     func createDatePicker()  {
         let toolBar = UIToolbar()
@@ -146,7 +157,7 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         let bar = UIToolbar()
         
         //Create a done button with an action to trigger our function to dismiss the keyboard
-        let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMyKeyboard))
+        let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissMyKeyboard))
         
         //Create a felxible space item so that we can add it around in toolbar to position our done button
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
@@ -166,20 +177,25 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         view.endEditing(true)
     }
     @IBAction func registerBtnDidTapped(_ sender: Any) {
-        guard  let email = emailTextField.text, let password = passwordTextField.text, let userName = userNameTextField.text,let phone = phoneTextField.text else {
+        guard  let email = emailTextField.text, let password = passwordTextField.text,let confrimPassword = confirmPasswordTextField.text, let userName = userNameTextField.text,var phone = phoneTextField.text else {
             return
         }
+        phone = "+" + phone
         //        guard phone.count == 11 else {
         //            return
         //        }
         guard password.count > 6 else {
-            self.view.makeToast("Please Enter Password More Than 6 character", duration: 3.0, position: .top)
+            self.view.makeToast("Please Enter Password More Than 6 character".localized, duration: 3.0, position: .bottom)
             
             return
         }
-        
+        guard confrimPassword == password else {
+            self.view.makeToast("Passwords Didn't Match".localized, duration: 3.0, position: .bottom)
+            
+            return
+        }
         if dateTextField.text!.isEmpty {
-            self.view.makeToast("Please Enter Password More Than 6 character", duration: 3.0, position: .bottom)
+            self.view.makeToast("Please Enter Date".localized, duration: 3.0, position: .bottom)
             return
         }else{
             registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date!)

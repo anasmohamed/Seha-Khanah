@@ -88,3 +88,12 @@
 "Specialty" = "التخصص";
 
 "Categories" = "الأقسام";
+
+"The phonenumber has already been taken." = "رقم الجوال موجود بالفعل";
+
+"Please Enter Password More Than 6 character" = "يجب ان تكون كلمة السر اكثر من 6 ارقام او حروف";
+
+"Passwords Didn't Match" = "كلمتا السر غير متطابقتين";
+
+"Please Enter Date" = "من فضلك أدخل التاريخ";
+"Done" = "تم";

@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-DY-IVj">
-                                <rect key="frame" x="30" y="379" width="260" height="40"/>
+                                <rect key="frame" x="30" y="429" width="260" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FsQ-Cu-lHo"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-cr-3Zt">
-                                <rect key="frame" x="8" y="71" width="304" height="270"/>
+                                <rect key="frame" x="8" y="71" width="304" height="320"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIF-0j-Jgz">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
@@ -71,8 +71,16 @@
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-bR-HRQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdD-aQ-Gm3">
                                         <rect key="frame" x="0.0" y="200" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CND-HA-bFC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-bR-HRQ">
+                                        <rect key="frame" x="0.0" y="250" width="304" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="m1X-js-AAm"/>
                                         </constraints>
@@ -80,7 +88,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-vd-C0P">
-                                        <rect key="frame" x="0.0" y="250" width="304" height="20"/>
+                                        <rect key="frame" x="0.0" y="300" width="304" height="20"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxn-LH-hpx">
                                                 <rect key="frame" x="0.0" y="0.0" width="99.5" height="20"/>
@@ -139,6 +147,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Register Now" id="hwl-Cj-wVN"/>
                     <connections>
+                        <outlet property="confirmPasswordTextField" destination="IdD-aQ-Gm3" id="6bx-px-7LJ"/>
                         <outlet property="dateTextField" destination="SYg-bR-HRQ" id="PyE-Bi-Fru"/>
                         <outlet property="emailTextField" destination="qkH-xA-S9c" id="KM6-X7-jtP"/>
                         <outlet property="femaleRadioBtn" destination="Uey-n0-RY0" id="ES7-ne-i4v"/>

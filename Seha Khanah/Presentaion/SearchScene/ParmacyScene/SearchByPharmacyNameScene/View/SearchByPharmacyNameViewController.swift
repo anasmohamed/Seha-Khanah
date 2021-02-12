@@ -69,7 +69,7 @@ class SearchByPharmacyNameViewController: UIViewController,UITableViewDelegate,U
               let bar = UIToolbar()
               
               //Create a done button with an action to trigger our function to dismiss the keyboard
-              let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMyKeyboard))
+        let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissMyKeyboard))
               
               //Create a felxible space item so that we can add it around in toolbar to position our done button
               let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
