@@ -69,9 +69,15 @@ class LoginViewController: UIViewController ,LoginProtocol{
     }
     @IBAction func loginBtnDidTapped(_ sender: Any) {
         guard  let email = emailTextField.text, let password = passwordTextField.text else {
+            
             return
         }
-        loginPresenter.login(email: email, password:password)
+        if !email.isEmpty && !password.isEmpty{
+            loginPresenter.login(email: email, password:password)}
+        else{
+            self.view.makeToast("Please Enter Email and Password".localized, duration: 5.0, position: .bottom)
+
+        }
         
     }
     @objc func adjustForKeyboard(notification: Notification) {
@@ -123,7 +129,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
     func showError(error: String) {
         indicator.stopAnimating()
-        self.view.makeToast(error, duration: 5.0, position: .bottom)
+        self.view.makeToast(error.localized, duration: 5.0, position: .bottom)
 
     }
     func setupToolbar(){

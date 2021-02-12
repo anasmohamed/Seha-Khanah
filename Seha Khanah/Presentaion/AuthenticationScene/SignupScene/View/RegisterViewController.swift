@@ -171,6 +171,8 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         passwordTextField.inputAccessoryView = bar
         emailTextField.inputAccessoryView = bar
         userNameTextField.inputAccessoryView  = bar
+        
+        confirmPasswordTextField.inputAccessoryView = bar
     }
     
     @objc func dismissMyKeyboard(){

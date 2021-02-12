@@ -97,3 +97,11 @@
 
 "Please Enter Date" = "من فضلك أدخل التاريخ";
 "Done" = "تم";
+
+"The email field is required." = "يجب كتابة البريد الالكترونى";
+
+"The phonenumber format is invalid." = "رقم الجوال غير صحيح";
+
+"The birthday must be a date before today." = "التاريخ يجب ان يكون قبل تاريخ اليوم";
+
+"Please Enter Email and Password" = "من فضلك أدخل البريد الالكترونى وكلمة السر";
