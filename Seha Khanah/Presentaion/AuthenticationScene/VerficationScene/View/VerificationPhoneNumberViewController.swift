@@ -14,6 +14,8 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
     @IBOutlet weak var confirmationCodeTextField: UITextField!
     var presenter : VerificationPhoneNumberPresenter!
     var phoneNumber : String?
+    var email : String?
+    var isForgetPassword = false
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = VerificationPhoneNumberPresenter(view: self)
@@ -25,8 +27,11 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
         guard let confirmationCode = confirmationCodeTextField.text else {
             return
         }
-        presenter.verifyUser(phoneNumber: phoneNumber!, userType:"client" ,code:Int(confirmationCode)!)
-    }
+        if isForgetPassword{
+            presenter.verifyPassword(phoneNumber: phoneNumber!, userType:"client" ,code:Int(confirmationCode)!)
+        }else{
+            presenter.verifyUser(phoneNumber: phoneNumber!, userType:"client" ,code:Int(confirmationCode)!)
+        } }
     
     @IBAction func tryAgainBtnDidTapped(_ sender: Any) {
         presenter.verifyPhoneNumber(phoneNumber: phoneNumber!, userType:"client")
@@ -53,11 +58,21 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
     }
     func verifyUserSuccuess(message: String) {
         indicator.stopAnimating()
-
-        UserDefaults.standard.set(true, forKey: "isUserLoggedin")
-        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
-        let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        self.present(verificationPhoneNumberViewConroller, animated: true,completion: nil)
+        if isForgetPassword
+        {
+            let storyboard = UIStoryboard.init(name: "ResetForgetPassword", bundle: nil)
+            let resetForgetPasswordViewController = storyboard.instantiateViewController(withIdentifier: "ResetForgetPasswordViewController") as! ResetForgetPasswordViewController
+            resetForgetPasswordViewController.token = message
+            resetForgetPasswordViewController.email = email!
+            self.present(resetForgetPasswordViewController, animated: true,completion: nil)
+            
+        }else{
+            UserDefaults.standard.set(true, forKey: "isUserLoggedin")
+            let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+            let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "TabBar")
+            self.present(verificationPhoneNumberViewConroller, animated: true,completion: nil)
+        }
+        
     }
     
     

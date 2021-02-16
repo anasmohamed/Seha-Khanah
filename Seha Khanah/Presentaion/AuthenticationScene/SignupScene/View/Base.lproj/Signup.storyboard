@@ -167,7 +167,6 @@
                         <outlet property="maleRadioBtn" destination="ub5-N5-jY3" id="ATy-3c-F9e"/>
                         <outlet property="passwordTextField" destination="MtX-bN-EUW" id="4xj-tF-BEw"/>
                         <outlet property="phoneTextField" destination="to1-fq-U4e" id="vyH-AQ-q60"/>
-                        <outlet property="termsAndConditionBtnDidTapped" destination="fAd-by-gi6" id="8hb-k6-XpB"/>
                         <outlet property="userNameTextField" destination="JIF-0j-Jgz" id="0fP-12-ra9"/>
                     </connections>
                 </viewController>

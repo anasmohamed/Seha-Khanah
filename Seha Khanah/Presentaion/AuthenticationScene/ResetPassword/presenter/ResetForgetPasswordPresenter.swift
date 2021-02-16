@@ -36,4 +36,22 @@ class ResetForgetPasswordPresenter{
             
         }
     }
+    
+      func verifyResetPasswordToken(token: String) {
+          
+          view?.showIndicator()
+        forgetPasswordInteractor.verifyResetPasswordToken(token: token){ (result,error)  in
+              if let error = error {
+                  print("errrror\(error)")
+                  self.view?.showError(error: "")
+              }else{
+                  
+                  if result != nil{
+                    self.view?.verifyTokenSuccess(message: result!)
+                  }
+                  
+              }
+              
+          }
+      }
 }

@@ -18,6 +18,7 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
     @IBOutlet weak var forgetPasswordView: UIView!
     
     var presenter : ForgetPasswordPresenter!
+    var phone : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         cornerRadiusAndShodow(view:forgetPasswordView)
@@ -30,7 +31,8 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
             self.view.makeToast("Enter Missing Data".localized, duration: 3.0, position: .bottom)
             
         }else{
-            presenter.resetPassword(phone:phoneNumberTextField.text! , userType:"client")
+            phone = "+964" + phoneNumberTextField.text!
+            presenter.resetPassword(phone: phone , userType:"client")
         }
     }
     func cornerRadiusAndShodow(view:UIView)  {
@@ -55,6 +57,8 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
         let storyboard = UIStoryboard.init(name: "Verification", bundle: nil)
                let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "VerificationPhoneNumberViewController") as! VerificationPhoneNumberViewController
         verificationPhoneNumberViewConroller.phoneNumber = user.phoneNumber
+        verificationPhoneNumberViewConroller.email = user.email
+
         self.navigationController?.pushViewController(verificationPhoneNumberViewConroller, animated: true)
         
     }

@@ -59,4 +59,26 @@ class VerificationPhoneNumberPresenter {
             
         }
     }
+    func verifyPassword(phoneNumber:String,userType:String,code:Int) {
+        
+        view?.showIndicator()
+        verificationPhoneNumberInteractor.verifyUser(phoneNumber:phoneNumber , userType: userType,code:code){ (result,error)  in
+            if let error = error {
+                print("errrror\(error)")
+                self.view?.showError(error: error.localizedDescription)
+                
+            } else {
+                if result != nil{
+                    if Int(result!) == 200{
+                        self.view?.verifyUserSuccuess(message: "user verified successfully")
+                    }else{
+                        self.view?.showError(error: "Somthing Wrong Happend".localized)
+                        
+                    }
+                }
+                
+            }
+            
+        }
+    }
 }

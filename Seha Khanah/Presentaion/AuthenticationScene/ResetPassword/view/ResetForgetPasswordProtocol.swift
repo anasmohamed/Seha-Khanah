@@ -13,4 +13,5 @@ protocol ResetForgetPasswordProtocol:class {
        func resetPasswordSuccess(user: User)
        func showError(error: String)
        func showNoDataFoundImage()
+    func verifyTokenSuccess(message:String)
 }

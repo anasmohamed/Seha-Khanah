@@ -51,6 +51,9 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     }
     
     @IBAction func termsAndConditionBtnDidTapped(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "TermsAndCondition", bundle: nil)
+              let termsAndConditionViewController = storyboard.instantiateViewController(withIdentifier: "TermsAndConditionViewController") as! TermsAndConditionViewController
+              self.navigationController?.pushViewController(termsAndConditionViewController, animated: true)
     }
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -77,8 +80,9 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
-        phoneTextField.delegate = self
+//        phoneTextField.delegate = self
         setupToolbar()
+        phoneTextField.keyboardType = .asciiCapableNumberPad
     }
     
     func showIndicator() {

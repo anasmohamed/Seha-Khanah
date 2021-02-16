@@ -40,11 +40,12 @@
 		A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006D25ABC14800C750AE /* EditProfileViewController.swift */; };
 		A81BDB4E25BCB65E002B84E1 /* UILabel+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */; };
 		A8220B3C25DC4E89006BBF06 /* ForgetPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B3B25DC4E88006BBF06 /* ForgetPasswordProtocol.swift */; };
-		A8220B4025DC6BA5006BBF06 /* ResetForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8220B3F25DC6BA5006BBF06 /* ResetForgetPassword.storyboard */; };
 		A8220B4325DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4225DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift */; };
 		A8220B4725DC7200006BBF06 /* ResetForgetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4625DC7200006BBF06 /* ResetForgetPasswordInteractor.swift */; };
 		A8220B4925DC7223006BBF06 /* ResetForgetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4825DC7223006BBF06 /* ResetForgetPasswordPresenter.swift */; };
 		A8220B4B25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4A25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift */; };
+		A8220B4D25DC81FA006BBF06 /* TermsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4C25DC81FA006BBF06 /* TermsAndConditionViewController.swift */; };
+		A8220B4E25DC825F006BBF06 /* ResetForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8220B5025DC825F006BBF06 /* ResetForgetPassword.storyboard */; };
 		A828400B25B7508F000F6B19 /* AllCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */; };
 		A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */; };
 		A828400F25B754A0000F6B19 /* AllCategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */; };
@@ -278,11 +279,13 @@
 		A818006D25ABC14800C750AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Padding.swift"; sourceTree = "<group>"; };
 		A8220B3B25DC4E88006BBF06 /* ForgetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordProtocol.swift; sourceTree = "<group>"; };
-		A8220B3F25DC6BA5006BBF06 /* ResetForgetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetForgetPassword.storyboard; sourceTree = "<group>"; };
 		A8220B4225DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		A8220B4625DC7200006BBF06 /* ResetForgetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordInteractor.swift; sourceTree = "<group>"; };
 		A8220B4825DC7223006BBF06 /* ResetForgetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordPresenter.swift; sourceTree = "<group>"; };
 		A8220B4A25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordProtocol.swift; sourceTree = "<group>"; };
+		A8220B4C25DC81FA006BBF06 /* TermsAndConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionViewController.swift; sourceTree = "<group>"; };
+		A8220B4F25DC825F006BBF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ResetForgetPassword.storyboard; sourceTree = "<group>"; };
+		A8220B5225DC8266006BBF06 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ResetForgetPassword.strings; sourceTree = "<group>"; };
 		A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesInteractor.swift; sourceTree = "<group>"; };
 		A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesPresenter.swift; sourceTree = "<group>"; };
 		A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesProtocol.swift; sourceTree = "<group>"; };
@@ -800,7 +803,7 @@
 		A8220B3E25DC6B87006BBF06 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				A8220B3F25DC6BA5006BBF06 /* ResetForgetPassword.storyboard */,
+				A8220B5025DC825F006BBF06 /* ResetForgetPassword.storyboard */,
 				A8220B4225DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift */,
 				A8220B4A25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift */,
 			);
@@ -2100,6 +2103,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F1437E25DB2AC90061F839 /* TermsAndCondition.storyboard */,
+				A8220B4C25DC81FA006BBF06 /* TermsAndConditionViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2270,7 +2274,7 @@
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,
-				A8220B4025DC6BA5006BBF06 /* ResetForgetPassword.storyboard in Resources */,
+				A8220B4E25DC825F006BBF06 /* ResetForgetPassword.storyboard in Resources */,
 				A8EDCA2925CAAF3B001AC6B9 /* EditProfile.storyboard in Resources */,
 				A8F1437325DB28220061F839 /* ForgetPassword.storyboard in Resources */,
 				A8C0B2F425C57C370053FA0D /* Signup.storyboard in Resources */,
@@ -2424,6 +2428,7 @@
 				A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */,
 				A8952A832590092B0095B7BD /* MostOrderedOffersViewProtocol.swift in Sources */,
 				A8A7DD4125951960007FBFE0 /* Area.swift in Sources */,
+				A8220B4D25DC81FA006BBF06 /* TermsAndConditionViewController.swift in Sources */,
 				A88084E525AF975500A6EE84 /* ResetPasswordProtocol.swift in Sources */,
 				A8452B4F2593F89B005EB836 /* SearchByPharmacyRegionViewController.swift in Sources */,
 				A8FC8D9125BB7CEC007EA14D /* VerificationPhoneNumberProtocol.swift in Sources */,
@@ -2552,6 +2557,15 @@
 				A8EF48D225CCB91B000CBC2F /* ar */,
 			);
 			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		A8220B5025DC825F006BBF06 /* ResetForgetPassword.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8220B4F25DC825F006BBF06 /* Base */,
+				A8220B5225DC8266006BBF06 /* ar */,
+			);
+			name = ResetForgetPassword.storyboard;
 			sourceTree = "<group>";
 		};
 		A8674A28259749060099E7CE /* Offers.storyboard */ = {

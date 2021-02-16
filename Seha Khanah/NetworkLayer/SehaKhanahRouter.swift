@@ -54,8 +54,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case createCodeForResetPassword(email:String,userType:String)
     case resetForgetPassword(email:String,userType:String,token:String,password:String,confirmPassword:String)
     
-    
-    
+    case verifyPassword(phonenumber:String,userType:String,code:Int)
+    case verifyResetPasswordToken(token:String)
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -130,6 +130,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.createCodeForResetPassword
         case .resetForgetPassword:
             return NetworkingConstants.resetForgetPassword
+        case .verifyPassword:
+            return NetworkingConstants.verifyPassword
+        case .verifyResetPasswordToken:
+            return NetworkingConstants.verifyResetPasswordToken
             
         }
     }
@@ -160,7 +164,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .getOffresForSpacificCategory,
              .showOfferDetails,
              .userOffersReservations,
-             .offersForSpecificCategory:
+             .offersForSpecificCategory,
+             .verifyResetPasswordToken:
             return .get
         case .doctorReservation,
              .labReservation,
@@ -173,7 +178,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .sendMessage,
              .verifyUser,
              .createCodeForResetPassword,
-             .resetForgetPassword:
+             .resetForgetPassword,
+             .verifyPassword:
             return .post
             
         }
@@ -272,6 +278,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.resetForgetPasswordTokenParameter] = token
             body[NetworkingConstants.resetForgetPasswordNewPasswordParameter] = password
             body[NetworkingConstants.resetForgetPasswordConfirmePasswordParameter] = confirmPassword
+        case let .verifyPassword(phonenumber, userType, code):
+            body[NetworkingConstants.verifyPasswordPhoneNumberPrameter] = phonenumber
+            body[NetworkingConstants.verifyPasswordUserTypePrameter] = userType
+            body[NetworkingConstants.verifyPasswordCodePrameter] = code
         default:
             print("Empty request body")
         }
@@ -306,7 +316,6 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.showOfferDetails] = id
         case let .offersForSpecificCategory(id):
             params[NetworkingConstants.offersForSpecificCategory] = id
-            
         case let .cancelBooking(id):
             params[NetworkingConstants.cancelBooking] = id
         case let .showOffer(id):
@@ -314,6 +323,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
         case let .searchByAreaAndSpecialty(areaid,specialtyId):
             params[NetworkingConstants.searchByAreaAndSpecialtyAreaIdParamter] = areaid
             params[NetworkingConstants.searchByAreaAndSepecialtyIdParamter] = specialtyId
+        case let .verifyResetPasswordToken(token):
+            params[NetworkingConstants.verifyResetPasswordToken] = token
             
             
             //        case let .getUserToken(grantType,clientId,clientSecret,scope):
@@ -353,7 +364,6 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .booking,
              .searchByAreaAndSpecialty,
              .offerSlidShow,
-             
              .userOffersReservations:
             
             
@@ -370,7 +380,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .doctorReservation,
                .createCodeForResetPassword,
                .verifyUser,
-               .resetForgetPassword:
+               .resetForgetPassword,
+               .verifyPassword:
             
             return try URLEncoding.default.encode(urlRequest, with:body)
             
@@ -380,6 +391,13 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             
             urlRequest = URLRequest(url: URL(string: showLabDetailsUrlString + (labDetailsparamString as! String))!)
+            return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .verifyResetPasswordToken:
+            let verifyResetPasswordTokenUrlString = (urlRequest.url?.absoluteString)!
+            let verifyResetPasswordTokenParamString = params[NetworkingConstants.verifyResetPasswordToken]!
+            
+            
+            urlRequest = URLRequest(url: URL(string: verifyResetPasswordTokenUrlString + (verifyResetPasswordTokenParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
         case .showDoctorDetails:
             let showDoctorDetailsUrlString = (urlRequest.url?.absoluteString)!
@@ -429,7 +447,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
             let soffersForSpecificCategoryParamString = params[NetworkingConstants.offersForSpecificCategory]!
             urlRequest = URLRequest(url: URL(string: offersForSpecificCategoryUrlString + (soffersForSpecificCategoryParamString as! String))!)
             return try URLEncoding.default.encode(urlRequest, with:nil)
-       
+            
         }
     }
 }

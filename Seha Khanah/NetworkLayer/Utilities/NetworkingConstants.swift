@@ -127,6 +127,8 @@ class NetworkingConstants {
     static let getOffersForSpacificCategory = "api/offer-subcategory/"
     
     
+    static let verifyResetPasswordToken = "api/password/find/"
+    
     static let sendMessage = "api/send-message"
     static let sendMessagePhoneNumberPrameter = "phonenumber"
     static let sendMessageUserTypePrameter = "user_type"
@@ -136,6 +138,12 @@ class NetworkingConstants {
     static let verifyUserUserTypePrameter = "user_type"
     static let verifyUserCodePrameter = "code"
 
+    static let verifyPassword = "api/password/verify"
+    static let verifyPasswordPhoneNumberPrameter = "phonenumber"
+    static let verifyPasswordUserTypePrameter = "user_type"
+    static let verifyPasswordCodePrameter = "code"
+    
+    
     static let userOffersReservations = "api/user/offer/booking"
     
     static let offersForSpecificCategory = "api/offer-category/"
