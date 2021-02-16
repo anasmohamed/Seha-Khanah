@@ -50,6 +50,9 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         }
     }
     
+    @IBAction func termsAndConditionBtnDidTapped(_ sender: Any) {
+    }
+    
     @IBOutlet weak var passwordTextField: UITextField!
         {
         didSet {
@@ -182,7 +185,7 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         guard  let email = emailTextField.text, let password = passwordTextField.text,let confrimPassword = confirmPasswordTextField.text, let userName = userNameTextField.text,var phone = phoneTextField.text else {
             return
         }
-        phone = "+" + phone
+        phone = "+964" + phone
         //        guard phone.count == 11 else {
         //            return
         //        }

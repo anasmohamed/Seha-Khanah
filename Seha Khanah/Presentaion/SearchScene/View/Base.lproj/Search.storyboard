@@ -45,10 +45,10 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12g-WY-dYO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="635"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-tE-qri">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="635"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-Vu-uVf">
                                                 <rect key="frame" x="55" y="40" width="210" height="150"/>
@@ -1025,7 +1025,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Me9-DL-J9i" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1f3-4h-iMh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1222,7 +1222,7 @@
                     <tabBarItem key="tabBarItem" title="More" image="more" id="3fN-iN-2Oh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FJK-vh-Rq4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1279,7 +1279,7 @@
         <image name="calendar-1" width="29" height="30"/>
         <image name="doctor_ic" width="72" height="74"/>
         <image name="email-4" width="24" height="24"/>
-        <image name="envelope.fill" catalog="system" width="32" height="32"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="hom_row" width="72" height="74"/>
         <image name="lab_ic" width="72" height="74"/>
         <image name="logo" width="266.5" height="266.5"/>

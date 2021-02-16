@@ -63,6 +63,12 @@ class LoginViewController: UIViewController ,LoginProtocol{
         
     }
     
+    @IBAction func forgetPasswordBtnDidTapped(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "ForgetPassword", bundle: nil)
+               
+               let registerViewController = storyboard.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
+               self.navigationController!.pushViewController(registerViewController, animated: true)
+    }
     @IBAction func loginWithFacebookBtnDidTapped(_ sender: Any) {
         facebookLoginButton.sendActions(for: .touchUpInside)
         

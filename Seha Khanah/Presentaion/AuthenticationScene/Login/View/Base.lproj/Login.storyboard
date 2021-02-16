@@ -91,7 +91,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-2G-iGb" userLabel=":oginStackView">
-                                        <rect key="frame" x="20" y="426" width="374" height="90"/>
+                                        <rect key="frame" x="20" y="374" width="374" height="90"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Or Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-gX-KNf">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -125,7 +125,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-iU-XGu">
-                                        <rect key="frame" x="57" y="536" width="300" height="35"/>
+                                        <rect key="frame" x="57" y="484" width="300" height="35"/>
                                         <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="TbZ-Jj-4Nz"/>
@@ -139,19 +139,15 @@
                                             <action selector="loginBtnDidTapped:" destination="PgB-4O-OnJ" eventType="touchUpInside" id="Ib5-qk-A6x"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W6-Nc-uRQ">
-                                        <rect key="frame" x="137.5" y="362" width="139" height="34"/>
-                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
-                                        <state key="normal" title="Terms And Condition">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-hW-cpS">
-                                        <rect key="frame" x="106.5" y="579" width="201" height="37"/>
+                                        <rect key="frame" x="106.5" y="527" width="201" height="37"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                         <state key="normal" title="Did You Forget Password?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgetPasswordBtnDidTapped:" destination="PgB-4O-OnJ" eventType="touchUpInside" id="8eU-vs-DI1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -161,12 +157,10 @@
                                     <constraint firstItem="ZcH-8n-eeA" firstAttribute="trailing" secondItem="6qF-00-0Q0" secondAttribute="trailing" id="87d-cl-5cd"/>
                                     <constraint firstItem="Jk4-2G-iGb" firstAttribute="centerX" secondItem="137-7R-8l0" secondAttribute="centerX" id="8uj-ex-RDu"/>
                                     <constraint firstItem="qaE-iU-XGu" firstAttribute="top" secondItem="Jk4-2G-iGb" secondAttribute="bottom" constant="20" id="B2Z-Ca-usJ"/>
+                                    <constraint firstItem="Jk4-2G-iGb" firstAttribute="top" secondItem="ZcH-8n-eeA" secondAttribute="bottom" constant="20" id="D9T-ow-2rw"/>
                                     <constraint firstItem="Jk4-2G-iGb" firstAttribute="leading" secondItem="137-7R-8l0" secondAttribute="leading" constant="20" id="K81-yG-lWc"/>
                                     <constraint firstItem="ZcH-8n-eeA" firstAttribute="leading" secondItem="6qF-00-0Q0" secondAttribute="leading" id="Mnl-7j-1OW"/>
-                                    <constraint firstItem="0W6-Nc-uRQ" firstAttribute="top" secondItem="ZcH-8n-eeA" secondAttribute="bottom" constant="8" id="USZ-iX-BZ4"/>
-                                    <constraint firstItem="ZcH-8n-eeA" firstAttribute="centerX" secondItem="0W6-Nc-uRQ" secondAttribute="centerX" id="UwK-Vg-stX"/>
                                     <constraint firstAttribute="trailing" secondItem="Jk4-2G-iGb" secondAttribute="trailing" constant="20" id="c0v-Jg-pOh"/>
-                                    <constraint firstItem="Jk4-2G-iGb" firstAttribute="top" secondItem="0W6-Nc-uRQ" secondAttribute="bottom" constant="30" id="dzc-Nj-syq"/>
                                     <constraint firstItem="6qF-00-0Q0" firstAttribute="top" secondItem="BZZ-jr-1y5" secondAttribute="bottom" constant="20" id="iPf-I3-XR0"/>
                                     <constraint firstItem="578-NQ-LXJ" firstAttribute="top" secondItem="6qF-00-0Q0" secondAttribute="bottom" constant="25" id="j0L-33-qGk"/>
                                     <constraint firstItem="ZcH-8n-eeA" firstAttribute="top" secondItem="578-NQ-LXJ" secondAttribute="bottom" constant="8.5" id="kXU-St-xgh"/>

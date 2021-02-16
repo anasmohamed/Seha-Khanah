@@ -51,6 +51,25 @@ class NetworkingConstants {
     static let doctorReservation = "api/reservation"
     static let labReservation = "api/laboratory/reservation"
     
+    
+    static let resetForgetPassword = "api/password/reset"
+    static let resetForgetPasswordEmailParameter = "api/password/reset"
+    static let resetForgetPasswordUserTypeParameter = "user_type"
+    static let resetForgetPasswordTokenParameter = "token"
+    static let resetForgetPasswordNewPasswordParameter = "password"
+    static let resetForgetPasswordConfirmePasswordParameter = "password_confirmation"
+
+    
+    
+    
+    
+    
+    
+    
+    static let createCodeForResetPassword = "api/password/create"
+    static let createCodeForResetPasswordEmailParameter = "phonenumber"
+    static let createCodeForResetPasswordUserTypeParameter = "user_type"
+
     static let reservationNameParameter = "name"
     static let reservationEmailParameter = "email"
     static let reservationPhonenumberParameter = "phonenumber"

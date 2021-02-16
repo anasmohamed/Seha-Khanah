@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-DY-IVj">
-                                <rect key="frame" x="30" y="429" width="260" height="40"/>
+                                <rect key="frame" x="30" y="404" width="260" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FsQ-Cu-lHo"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-cr-3Zt">
-                                <rect key="frame" x="8" y="71" width="304" height="320"/>
+                                <rect key="frame" x="8" y="64" width="304" height="320"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JIF-0j-Jgz">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
@@ -131,17 +131,29 @@
                                 <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
                                 <color key="color" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAd-by-gi6">
+                                <rect key="frame" x="90.5" y="446" width="139" height="34"/>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
+                                <state key="normal" title="Terms And Condition">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="termsAndConditionBtnDidTapped:" destination="6ej-1z-kad" eventType="touchUpInside" id="0Kn-MC-Nxq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="9Gx-DY-IVj" firstAttribute="top" secondItem="nzs-cr-3Zt" secondAttribute="bottom" constant="38" id="8UQ-CE-Ns5"/>
+                            <constraint firstItem="9Gx-DY-IVj" firstAttribute="top" secondItem="nzs-cr-3Zt" secondAttribute="bottom" constant="20" id="8UQ-CE-Ns5"/>
+                            <constraint firstItem="fAd-by-gi6" firstAttribute="top" secondItem="9Gx-DY-IVj" secondAttribute="bottom" constant="2" id="LKY-Az-mjC"/>
                             <constraint firstItem="5re-mv-wwl" firstAttribute="centerX" secondItem="wQj-Em-3ci" secondAttribute="centerX" id="QVY-X3-fJu"/>
                             <constraint firstItem="SIM-hD-v7z" firstAttribute="trailing" secondItem="9Gx-DY-IVj" secondAttribute="trailing" constant="30" id="QZY-Id-TJE"/>
-                            <constraint firstItem="nzs-cr-3Zt" firstAttribute="top" secondItem="SIM-hD-v7z" secondAttribute="top" constant="27" id="YOv-K7-lex"/>
+                            <constraint firstItem="nzs-cr-3Zt" firstAttribute="top" secondItem="SIM-hD-v7z" secondAttribute="top" constant="20" id="YOv-K7-lex"/>
                             <constraint firstItem="SIM-hD-v7z" firstAttribute="trailing" secondItem="nzs-cr-3Zt" secondAttribute="trailing" constant="8" id="eNc-un-gfV"/>
                             <constraint firstItem="9Gx-DY-IVj" firstAttribute="leading" secondItem="SIM-hD-v7z" secondAttribute="leading" constant="30" id="jFC-7J-gUr"/>
                             <constraint firstItem="5re-mv-wwl" firstAttribute="centerY" secondItem="wQj-Em-3ci" secondAttribute="centerY" id="nZP-wZ-LBR"/>
                             <constraint firstItem="nzs-cr-3Zt" firstAttribute="leading" secondItem="SIM-hD-v7z" secondAttribute="leading" constant="8" id="nwZ-6v-cpQ"/>
+                            <constraint firstItem="fAd-by-gi6" firstAttribute="centerX" secondItem="SIM-hD-v7z" secondAttribute="centerX" id="zLS-wW-nbH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SIM-hD-v7z"/>
                     </view>
@@ -155,6 +167,7 @@
                         <outlet property="maleRadioBtn" destination="ub5-N5-jY3" id="ATy-3c-F9e"/>
                         <outlet property="passwordTextField" destination="MtX-bN-EUW" id="4xj-tF-BEw"/>
                         <outlet property="phoneTextField" destination="to1-fq-U4e" id="vyH-AQ-q60"/>
+                        <outlet property="termsAndConditionBtnDidTapped" destination="fAd-by-gi6" id="8hb-k6-XpB"/>
                         <outlet property="userNameTextField" destination="JIF-0j-Jgz" id="0fP-12-ra9"/>
                     </connections>
                 </viewController>
@@ -168,7 +181,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPX-hM-Utx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dlw-yn-01G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.29411764705882354" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">

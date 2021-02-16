@@ -51,6 +51,10 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case verifyUser(phonenumber:String,userType:String,code:Int)
     case userOffersReservations
     case offersForSpecificCategory(id:String)
+    case createCodeForResetPassword(email:String,userType:String)
+    case resetForgetPassword(email:String,userType:String,token:String,password:String,confirmPassword:String)
+    
+    
     
     var path: String {
         switch self {
@@ -122,6 +126,11 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.userOffersReservations
         case .offersForSpecificCategory:
             return NetworkingConstants.offersForSpecificCategory
+        case .createCodeForResetPassword:
+            return NetworkingConstants.createCodeForResetPassword
+        case .resetForgetPassword:
+            return NetworkingConstants.resetForgetPassword
+            
         }
     }
     
@@ -162,7 +171,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .updateUser,
              .resetPassword,
              .sendMessage,
-             .verifyUser:
+             .verifyUser,
+             .createCodeForResetPassword,
+             .resetForgetPassword:
             return .post
             
         }
@@ -252,6 +263,15 @@ enum SehaKhanahRouter: URLRequestConvertible {
             
             body[NetworkingConstants.loginWithSocialProviderParamter] = provider
             body[NetworkingConstants.loginWithSocialAccessTockenParamter] = accessTocken
+        case let .createCodeForResetPassword(email, userType):
+            body[NetworkingConstants.createCodeForResetPasswordEmailParameter] = email
+            body[NetworkingConstants.createCodeForResetPasswordUserTypeParameter] = userType
+        case let .resetForgetPassword(email, userType, token, password, confirmPassword):
+            body[NetworkingConstants.resetForgetPasswordEmailParameter] = email
+            body[NetworkingConstants.resetForgetPasswordUserTypeParameter] = userType
+            body[NetworkingConstants.resetForgetPasswordTokenParameter] = token
+            body[NetworkingConstants.resetForgetPasswordNewPasswordParameter] = password
+            body[NetworkingConstants.resetForgetPasswordConfirmePasswordParameter] = confirmPassword
         default:
             print("Empty request body")
         }
@@ -348,7 +368,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .loginWithSocial,
                .labReservation,
                .doctorReservation,
-               .verifyUser:
+               .createCodeForResetPassword,
+               .verifyUser,
+               .resetForgetPassword:
             
             return try URLEncoding.default.encode(urlRequest, with:body)
             

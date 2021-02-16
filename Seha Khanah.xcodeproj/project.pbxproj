@@ -39,6 +39,12 @@
 		A818006825AB7E5000C750AE /* RegisterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006725AB7E5000C750AE /* RegisterProtocol.swift */; };
 		A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818006D25ABC14800C750AE /* EditProfileViewController.swift */; };
 		A81BDB4E25BCB65E002B84E1 /* UILabel+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */; };
+		A8220B3C25DC4E89006BBF06 /* ForgetPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B3B25DC4E88006BBF06 /* ForgetPasswordProtocol.swift */; };
+		A8220B4025DC6BA5006BBF06 /* ResetForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8220B3F25DC6BA5006BBF06 /* ResetForgetPassword.storyboard */; };
+		A8220B4325DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4225DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift */; };
+		A8220B4725DC7200006BBF06 /* ResetForgetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4625DC7200006BBF06 /* ResetForgetPasswordInteractor.swift */; };
+		A8220B4925DC7223006BBF06 /* ResetForgetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4825DC7223006BBF06 /* ResetForgetPasswordPresenter.swift */; };
+		A8220B4B25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8220B4A25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift */; };
 		A828400B25B7508F000F6B19 /* AllCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */; };
 		A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */; };
 		A828400F25B754A0000F6B19 /* AllCategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */; };
@@ -209,11 +215,16 @@
 		A8E9681425AF21FD00B91375 /* MyAppointmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */; };
 		A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */; };
 		A8E9681825AF246400B91375 /* MyAppiontments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E9681725AF246400B91375 /* MyAppiontments.swift */; };
+		A8EBDC0D25DAE02700C5A652 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EBDC0C25DAE02700C5A652 /* ForgetPasswordViewController.swift */; };
 		A8EDCA2425CAADA7001AC6B9 /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDCA2625CAADA7001AC6B9 /* ResetPassword.storyboard */; };
 		A8EDCA2925CAAF3B001AC6B9 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EDCA2B25CAAF3B001AC6B9 /* EditProfile.storyboard */; };
 		A8EF48D725CCBC85000CBC2F /* AllCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EF48D925CCBC85000CBC2F /* AllCategories.storyboard */; };
 		A8EF48E025CCBCFD000CBC2F /* OfferSubCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EF48E225CCBCFD000CBC2F /* OfferSubCategory.storyboard */; };
 		A8EF48E725CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF48E925CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib */; };
+		A8F1437025DB25A80061F839 /* ForgetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1436F25DB25A80061F839 /* ForgetPasswordPresenter.swift */; };
+		A8F1437225DB25C30061F839 /* ForgetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1437125DB25C30061F839 /* ForgetPasswordInteractor.swift */; };
+		A8F1437325DB28220061F839 /* ForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F1437525DB28220061F839 /* ForgetPassword.storyboard */; };
+		A8F1437C25DB2AC90061F839 /* TermsAndCondition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F1437E25DB2AC90061F839 /* TermsAndCondition.storyboard */; };
 		A8F299892587AE7000A6BB35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F299882587AE7000A6BB35 /* RegisterViewController.swift */; };
 		A8F2998B2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */; };
 		A8F7C07925AF6E1900075B53 /* Appointments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */; };
@@ -266,6 +277,12 @@
 		A818006725AB7E5000C750AE /* RegisterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocol.swift; sourceTree = "<group>"; };
 		A818006D25ABC14800C750AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A81BDB4D25BCB65D002B84E1 /* UILabel+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Padding.swift"; sourceTree = "<group>"; };
+		A8220B3B25DC4E88006BBF06 /* ForgetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordProtocol.swift; sourceTree = "<group>"; };
+		A8220B3F25DC6BA5006BBF06 /* ResetForgetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetForgetPassword.storyboard; sourceTree = "<group>"; };
+		A8220B4225DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		A8220B4625DC7200006BBF06 /* ResetForgetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordInteractor.swift; sourceTree = "<group>"; };
+		A8220B4825DC7223006BBF06 /* ResetForgetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordPresenter.swift; sourceTree = "<group>"; };
+		A8220B4A25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetForgetPasswordProtocol.swift; sourceTree = "<group>"; };
 		A828400A25B7508F000F6B19 /* AllCategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesInteractor.swift; sourceTree = "<group>"; };
 		A828400C25B751ED000F6B19 /* AllCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesPresenter.swift; sourceTree = "<group>"; };
 		A828400E25B754A0000F6B19 /* AllCategoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesProtocol.swift; sourceTree = "<group>"; };
@@ -440,6 +457,7 @@
 		A8E9681325AF21FD00B91375 /* MyAppointmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsPresenter.swift; sourceTree = SOURCE_ROOT; };
 		A8E9681525AF222600B91375 /* MyAppointmentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsProtocol.swift; sourceTree = "<group>"; };
 		A8E9681725AF246400B91375 /* MyAppiontments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppiontments.swift; sourceTree = "<group>"; };
+		A8EBDC0C25DAE02700C5A652 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		A8EDCA2525CAADA7001AC6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ResetPassword.storyboard; sourceTree = "<group>"; };
 		A8EDCA2A25CAAF3B001AC6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditProfile.storyboard; sourceTree = "<group>"; };
 		A8EF48D225CCB91B000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Login.strings; sourceTree = "<group>"; };
@@ -470,6 +488,12 @@
 		A8EF490725CCC40A000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchResultTableViewCell.strings; sourceTree = "<group>"; };
 		A8EF490925CCC870000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/BookNow.strings; sourceTree = "<group>"; };
 		A8EF490B25CCC8B7000CBC2F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SuccessfulBooking.strings; sourceTree = "<group>"; };
+		A8F1436F25DB25A80061F839 /* ForgetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordPresenter.swift; sourceTree = "<group>"; };
+		A8F1437125DB25C30061F839 /* ForgetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordInteractor.swift; sourceTree = "<group>"; };
+		A8F1437425DB28220061F839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ForgetPassword.storyboard; sourceTree = "<group>"; };
+		A8F1437725DB28480061F839 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ForgetPassword.strings; sourceTree = "<group>"; };
+		A8F1437D25DB2AC90061F839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TermsAndCondition.storyboard; sourceTree = "<group>"; };
+		A8F1438025DB2ACE0061F839 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TermsAndCondition.strings; sourceTree = "<group>"; };
 		A8F1C55E25CECE860082DC15 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByLabNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8F1C56025CED1190082DC15 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/SearchByPharmacyNameTableViewCell.strings; sourceTree = "<group>"; };
 		A8F299882587AE7000A6BB35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -761,6 +785,42 @@
 				A88084E425AF975500A6EE84 /* ResetPasswordProtocol.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A8220B3D25DC6B78006BBF06 /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A8220B4525DC71DE006BBF06 /* Interactor */,
+				A8220B4425DC71D4006BBF06 /* presenter */,
+				A8220B3E25DC6B87006BBF06 /* view */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		A8220B3E25DC6B87006BBF06 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A8220B3F25DC6BA5006BBF06 /* ResetForgetPassword.storyboard */,
+				A8220B4225DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift */,
+				A8220B4A25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A8220B4425DC71D4006BBF06 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8220B4825DC7223006BBF06 /* ResetForgetPasswordPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		A8220B4525DC71DE006BBF06 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8220B4625DC7200006BBF06 /* ResetForgetPasswordInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A828400825B7500C000F6B19 /* Presenter */ = {
@@ -1740,6 +1800,9 @@
 		A8AC86BC25876D4F00604E64 /* AuthenticationScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8220B3D25DC6B78006BBF06 /* ResetPassword */,
+				A8F1437825DB2A4A0061F839 /* TermsAndCondition */,
+				A8EBDC0825DAD3C300C5A652 /* ForgetPassword */,
 				A8FC8D8425BB70CD007EA14D /* VerficationScene */,
 				A807E8B225B1BF34009C5CDA /* LogoutSliderScene */,
 				A8AC86BE25876DB300604E64 /* SignupScene */,
@@ -1989,6 +2052,58 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A8EBDC0825DAD3C300C5A652 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1436E25DB25860061F839 /* Interactor */,
+				A8F1436D25DB257B0061F839 /* Presenter */,
+				A8EBDC0925DAD3D800C5A652 /* View */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		A8EBDC0925DAD3D800C5A652 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1437525DB28220061F839 /* ForgetPassword.storyboard */,
+				A8EBDC0C25DAE02700C5A652 /* ForgetPasswordViewController.swift */,
+				A8220B3B25DC4E88006BBF06 /* ForgetPasswordProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8F1436D25DB257B0061F839 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1436F25DB25A80061F839 /* ForgetPasswordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8F1436E25DB25860061F839 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1437125DB25C30061F839 /* ForgetPasswordInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A8F1437825DB2A4A0061F839 /* TermsAndCondition */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1437925DB2A580061F839 /* View */,
+			);
+			path = TermsAndCondition;
+			sourceTree = "<group>";
+		};
+		A8F1437925DB2A580061F839 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1437E25DB2AC90061F839 /* TermsAndCondition.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A8FC8D8425BB70CD007EA14D /* VerficationScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -2143,6 +2258,7 @@
 				A8EF48E725CCBD91000CBC2F /* OfferCategoriesCollectionViewCell.xib in Resources */,
 				A89B33FA25B9DF26004B27DD /* Search.storyboard in Resources */,
 				A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */,
+				A8F1437C25DB2AC90061F839 /* TermsAndCondition.storyboard in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
 				A884DD86259A2BB0006D686B /* ChangeLanguage.storyboard in Resources */,
@@ -2154,7 +2270,9 @@
 				A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */,
 				A884DD78259A2093006D686B /* HowTheAppWorks.storyboard in Resources */,
 				A8FD3BF4259CBD5F002B0C07 /* Sukar-Regular.ttf in Resources */,
+				A8220B4025DC6BA5006BBF06 /* ResetForgetPassword.storyboard in Resources */,
 				A8EDCA2925CAAF3B001AC6B9 /* EditProfile.storyboard in Resources */,
+				A8F1437325DB28220061F839 /* ForgetPassword.storyboard in Resources */,
 				A8C0B2F425C57C370053FA0D /* Signup.storyboard in Resources */,
 				A80DD8D125A120AE00FD2CF1 /* LabServices.storyboard in Resources */,
 				A807E8B925B1CA84009C5CDA /* Login.storyboard in Resources */,
@@ -2253,12 +2371,14 @@
 				A8C1BCAB25B7A86D00E4CD05 /* OfferDetailsProtocol.swift in Sources */,
 				A82F34162587E489000A3591 /* LoginViewController.swift in Sources */,
 				A8FC8D8D25BB778E007EA14D /* VerificationPhoneNumberPresenter.swift in Sources */,
+				A8220B3C25DC4E89006BBF06 /* ForgetPasswordProtocol.swift in Sources */,
 				A8A7DD3D25950DDC007FBFE0 /* DropShadowView.swift in Sources */,
 				A8C8165225A753C600690AE8 /* PharmacyDetailsProtocol.swift in Sources */,
 				A83CB066258B63BC00207BDC /* SehaKhanahRouter.swift in Sources */,
 				A87083992596344E002AC96C /* SearchByLabNameProtocol.swift in Sources */,
 				A828400D25B751ED000F6B19 /* AllCategoriesPresenter.swift in Sources */,
 				A8C4B62E25BC5A4C00E92BB3 /* OfferSubCategoryProtocol.swift in Sources */,
+				A8F1437025DB25A80061F839 /* ForgetPasswordPresenter.swift in Sources */,
 				A856772725921C260086CD78 /* SearchedResultsTableViewCellView.swift in Sources */,
 				A818006E25ABC14800C750AE /* EditProfileViewController.swift in Sources */,
 				A870839325963336002AC96C /* SearchByLabNameInteractor.swift in Sources */,
@@ -2276,6 +2396,8 @@
 				A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */,
 				A8C7D22125B1015800C24023 /* MostOrderedOffersImage.swift in Sources */,
 				A86032302596A3D2003A7DA5 /* MoreTableViewController.swift in Sources */,
+				A8220B4925DC7223006BBF06 /* ResetForgetPasswordPresenter.swift in Sources */,
+				A8EBDC0D25DAE02700C5A652 /* ForgetPasswordViewController.swift in Sources */,
 				A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */,
 				A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */,
 				A8C1BCA925B7A18B00E4CD05 /* OfferDetails.swift in Sources */,
@@ -2338,6 +2460,7 @@
 				A856772225920B8C0086CD78 /* SearchedResults.swift in Sources */,
 				A88C23E2259356C5002AA4F7 /* SearchBySpcialtyTableViewCell.swift in Sources */,
 				A8674A3D259777110099E7CE /* CallUsViewController.swift in Sources */,
+				A8220B4725DC7200006BBF06 /* ResetForgetPasswordInteractor.swift in Sources */,
 				A8C4B62A25BC59DF00E92BB3 /* OfferSubCategoryInteractor.swift in Sources */,
 				A851FD7A25979CB00036790B /* AboutApp.swift in Sources */,
 				A806CB03259E1E5800D1764C /* LabDate.swift in Sources */,
@@ -2352,6 +2475,7 @@
 				A8C2E72C25B5CFF700D0A831 /* FavoriteDoctorsInteractor.swift in Sources */,
 				A843BBB525A87DD2006231F8 /* AppointmentsMainViewController.swift in Sources */,
 				A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */,
+				A8F1437225DB25C30061F839 /* ForgetPasswordInteractor.swift in Sources */,
 				A80DD8DD25A141C000FD2CF1 /* TimeCollectionViewCell.swift in Sources */,
 				A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */,
 				A828400F25B754A0000F6B19 /* AllCategoriesProtocol.swift in Sources */,
@@ -2371,11 +2495,13 @@
 				A8FC8D9925BB8C54007EA14D /* UserOffersReservationsPresenter.swift in Sources */,
 				A82EA358258F538100F30C61 /* OffersViewController+OffersCategoriesProtocolViewExtenstion.swift in Sources */,
 				A8D8621B25AC98970097ED93 /* EditUserProfilePresenter.swift in Sources */,
+				A8220B4325DC6FF2006BBF06 /* ResetForgetPasswordViewController.swift in Sources */,
 				A8952A7D259004090095B7BD /* MostOrderedOffersPresenter.swift in Sources */,
 				A8A7DD3F2595190E007FBFE0 /* RegionInteractor.swift in Sources */,
 				A806CAFE259E189900D1764C /* BookingDatesCollectionViewCell.swift in Sources */,
 				A8BFC9412594B33A002C90ED /* PharmacyOffersPresenter.swift in Sources */,
 				A8E4D18C25C07A4F005660EA /* SuccessBookingDoctorViewController.swift in Sources */,
+				A8220B4B25DC7261006BBF06 /* ResetForgetPasswordProtocol.swift in Sources */,
 				A870838F25962C4C002AC96C /* Lab.swift in Sources */,
 				A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */,
 				A8952A81259008360095B7BD /* MostOrderedOffersTableViewCellView.swift in Sources */,
@@ -2670,6 +2796,24 @@
 			name = OfferCategoriesCollectionViewCell.xib;
 			sourceTree = "<group>";
 		};
+		A8F1437525DB28220061F839 /* ForgetPassword.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8F1437425DB28220061F839 /* Base */,
+				A8F1437725DB28480061F839 /* ar */,
+			);
+			name = ForgetPassword.storyboard;
+			sourceTree = "<group>";
+		};
+		A8F1437E25DB2AC90061F839 /* TermsAndCondition.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8F1437D25DB2AC90061F839 /* Base */,
+				A8F1438025DB2ACE0061F839 /* ar */,
+			);
+			name = TermsAndCondition.storyboard;
+			sourceTree = "<group>";
+		};
 		A8F7C07B25AF6E1900075B53 /* Appointments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2813,7 +2957,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = W5RNAX3756;
 				INFOPLIST_FILE = "Seha Khanah/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -2834,7 +2978,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = W5RNAX3756;
 				INFOPLIST_FILE = "Seha Khanah/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
