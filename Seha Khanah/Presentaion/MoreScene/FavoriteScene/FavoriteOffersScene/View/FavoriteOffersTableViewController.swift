@@ -12,7 +12,7 @@ class FavoriteOffersTableViewController: UIViewController,UITableViewDelegate,UI
     
     
     
-    @IBOutlet weak var noFavortieOffersStackView: UIStackView!
+//    @IBOutlet weak var noFavortieOffersStackView: UIStackView!
     @IBOutlet weak var favortieOffersTableView: UITableView!
     
     var favoriteOffersPresenter: FavoriteOffersPresenter!
@@ -65,18 +65,18 @@ class FavoriteOffersTableViewController: UIViewController,UITableViewDelegate,UI
     }
     
     func getFavoriteOffersSuccess() {
-        noFavortieOffersStackView.isHidden = true
+//        noFavortieOffersStackView.isHidden = true
         
         favortieOffersTableView.reloadData()
     }
     
     func showError(error: String) {
-        noFavortieOffersStackView.isHidden = false
+//        noFavortieOffersStackView.isHidden = false
         
     }
     
     func showNoDataFoundImage() {
-        noFavortieOffersStackView.isHidden = false
+//        noFavortieOffersStackView.isHidden = false
     }
     
     

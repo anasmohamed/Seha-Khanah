@@ -11,7 +11,7 @@ import UIKit
 class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,FavoriteDoctorProtocol{
     
     
-    @IBOutlet weak var noFavortieDoctorsStackView: UIStackView!
+//    @IBOutlet weak var noFavortieDoctorsStackView: UIStackView!
     @IBOutlet weak var favortieDoctorsTableView: UITableView!
     
     var favoriteDoctorPresenter: FavoriteDoctosPresenter!
@@ -70,18 +70,18 @@ class FavoriteDoctorsViewController: UIViewController,UITableViewDelegate,UITabl
     }
     
     func getFavoriteDoctorsSuccess() {
-        noFavortieDoctorsStackView.isHidden = true
+//        noFavortieDoctorsStackView.isHidden = true
         
         favortieDoctorsTableView.reloadData()
     }
     
     func showError(error: String) {
-        noFavortieDoctorsStackView.isHidden = false
+//        noFavortieDoctorsStackView.isHidden = false
         
     }
     
     func showNoDataFoundImage() {
-        noFavortieDoctorsStackView.isHidden = false
+//        noFavortieDoctorsStackView.isHidden = false
     }
     
     
