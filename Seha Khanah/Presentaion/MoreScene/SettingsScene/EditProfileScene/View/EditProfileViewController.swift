@@ -33,7 +33,7 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         emailTextField.text = UserDefaults.standard.string(forKey: "email")
         mobileNumberTextField.text = UserDefaults.standard.string(forKey:"phoneNumber")
         selectedGender = UserDefaults.standard.string(forKey:"genderId" )!
-        
+        setupToolbar()
         // Do any additional setup after loading the view.
     }
     
@@ -79,6 +79,30 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         maleRadioBtn.style = .circle
         femaleRadioBtn.style = .circle
         
+    }
+    func setupToolbar(){
+        //Create a toolbar
+        let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
+        let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissMyKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
+        bar.items = [flexSpace, flexSpace, doneBtn]
+        bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
+        mobileNumberTextField.inputAccessoryView = bar
+        emailTextField.inputAccessoryView = bar
+        fullNameTExtField.inputAccessoryView  = bar
+        
+    }
+    
+    @objc func dismissMyKeyboard(){
+        view.endEditing(true)
     }
     @objc func doneBtnDidTapped()  {
         let formatter = DateFormatter()

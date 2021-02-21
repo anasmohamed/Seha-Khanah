@@ -79,13 +79,6 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" translatesAutoresizingMaskIntoConstraints="NO" id="REO-s3-m5P">
-                                        <rect key="frame" x="10" y="120" width="25" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="FBK-f8-0Le"/>
-                                            <constraint firstAttribute="width" constant="25" id="eeX-B2-HHP"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEL-8Y-uHN">
                                         <rect key="frame" x="43" y="123.5" width="233" height="23"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
@@ -117,7 +110,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-Qd-2Ic">
-                                        <rect key="frame" x="71" y="185" width="35" height="35"/>
+                                        <rect key="frame" x="30" y="185" width="35" height="35"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-bell-24" translatesAutoresizingMaskIntoConstraints="NO" id="x1B-hN-og6">
                                                 <rect key="frame" x="2.5" y="2.5" width="30" height="30"/>
@@ -136,28 +129,40 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Help" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tl-vl-cWy">
-                                        <rect key="frame" x="73" y="225" width="31" height="31.5"/>
+                                        <rect key="frame" x="32" y="225" width="31" height="21.5"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xbox-x-24" translatesAutoresizingMaskIntoConstraints="NO" id="1N5-rx-9LC">
-                                        <rect key="frame" x="143.5" y="185" width="40" height="40"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwX-kQ-76x">
+                                        <rect key="frame" x="146" y="185" width="35" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="1N5-rx-9LC">
+                                                <rect key="frame" x="2.5" y="2.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="LvB-gE-lbY"/>
+                                                    <constraint firstAttribute="width" constant="30" id="OXh-QL-XlP"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="FTo-Cx-wzt"/>
-                                            <constraint firstAttribute="width" constant="40" id="f8R-TI-UuF"/>
+                                            <constraint firstItem="1N5-rx-9LC" firstAttribute="centerX" secondItem="HwX-kQ-76x" secondAttribute="centerX" id="4zI-gu-1eG"/>
+                                            <constraint firstAttribute="width" constant="35" id="EjV-5G-tSY"/>
+                                            <constraint firstAttribute="height" constant="35" id="PIc-1r-5RA"/>
+                                            <constraint firstItem="1N5-rx-9LC" firstAttribute="centerY" secondItem="HwX-kQ-76x" secondAttribute="centerY" id="x2i-zY-Tlo"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="262" verticalHuggingPriority="259" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="758" text="Cancel" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmo-g4-T3I">
-                                        <rect key="frame" x="136" y="230" width="55" height="21.5"/>
+                                        <rect key="frame" x="140" y="225" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glI-qU-ud0">
-                                        <rect key="frame" x="221" y="185" width="35" height="35"/>
+                                        <rect key="frame" x="262" y="185" width="35" height="35"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" translatesAutoresizingMaskIntoConstraints="NO" id="MXs-6Z-jEy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="MXs-6Z-jEy">
                                                 <rect key="frame" x="2.5" y="2.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="4iG-0o-WAm"/>
@@ -174,47 +179,55 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nm-OK-1i7">
-                                        <rect key="frame" x="224" y="225" width="29.5" height="31.5"/>
+                                        <rect key="frame" x="222" y="225" width="120" height="21.5"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="15"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="REO-s3-m5P">
+                                        <rect key="frame" x="10" y="120" width="25" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="FBK-f8-0Le"/>
+                                            <constraint firstAttribute="width" constant="25" id="eeX-B2-HHP"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="glI-qU-ud0" firstAttribute="centerX" secondItem="7nm-OK-1i7" secondAttribute="centerX" id="207-FK-7ZR"/>
+                                    <constraint firstItem="glI-qU-ud0" firstAttribute="centerX" secondItem="7nm-OK-1i7" secondAttribute="centerX" constant="-2.5" id="207-FK-7ZR"/>
                                     <constraint firstItem="io4-lv-0iH" firstAttribute="top" secondItem="tU6-jB-Q2v" secondAttribute="bottom" constant="10" id="4SP-Lp-4bQ"/>
-                                    <constraint firstItem="lmo-g4-T3I" firstAttribute="leading" secondItem="M8J-Qd-2Ic" secondAttribute="trailing" constant="30" id="59Y-ax-Hkb"/>
+                                    <constraint firstItem="HwX-kQ-76x" firstAttribute="top" secondItem="4ln-eP-61Q" secondAttribute="bottom" constant="10" id="4aQ-b6-hWB"/>
                                     <constraint firstItem="2tl-vl-cWy" firstAttribute="top" secondItem="M8J-Qd-2Ic" secondAttribute="bottom" constant="5" id="5yq-Rm-boG"/>
                                     <constraint firstAttribute="trailing" secondItem="tU6-jB-Q2v" secondAttribute="trailing" id="6aR-6d-pcn"/>
-                                    <constraint firstItem="1N5-rx-9LC" firstAttribute="centerX" secondItem="JR2-kv-AOR" secondAttribute="centerX" id="8f7-od-4V8"/>
                                     <constraint firstItem="kEL-8Y-uHN" firstAttribute="centerY" secondItem="REO-s3-m5P" secondAttribute="centerY" id="BjT-3N-OY3"/>
                                     <constraint firstItem="ce0-bA-g3S" firstAttribute="top" secondItem="MgG-GL-l1p" secondAttribute="bottom" constant="8" id="DQX-HJ-fDr"/>
                                     <constraint firstItem="2tl-vl-cWy" firstAttribute="centerX" secondItem="x1B-hN-og6" secondAttribute="centerX" id="DQp-JO-ABQ"/>
-                                    <constraint firstItem="1N5-rx-9LC" firstAttribute="top" secondItem="4ln-eP-61Q" secondAttribute="bottom" constant="10" id="Ji8-YA-mWu"/>
+                                    <constraint firstItem="lmo-g4-T3I" firstAttribute="centerX" secondItem="HwX-kQ-76x" secondAttribute="centerX" id="IZP-81-bPK"/>
                                     <constraint firstItem="4ln-eP-61Q" firstAttribute="leading" secondItem="JR2-kv-AOR" secondAttribute="leading" id="KQw-2R-9o5"/>
                                     <constraint firstItem="io4-lv-0iH" firstAttribute="leading" secondItem="JR2-kv-AOR" secondAttribute="leading" constant="10" id="KqU-bQ-wxa"/>
                                     <constraint firstItem="tU6-jB-Q2v" firstAttribute="leading" secondItem="JR2-kv-AOR" secondAttribute="leading" id="MjJ-0K-5l5"/>
                                     <constraint firstItem="REO-s3-m5P" firstAttribute="top" secondItem="io4-lv-0iH" secondAttribute="bottom" constant="10" id="OKB-Ir-WOu"/>
                                     <constraint firstItem="M8J-Qd-2Ic" firstAttribute="top" secondItem="4ln-eP-61Q" secondAttribute="bottom" constant="10" id="OQu-uw-hbV"/>
+                                    <constraint firstItem="M8J-Qd-2Ic" firstAttribute="leading" secondItem="JR2-kv-AOR" secondAttribute="leading" constant="30" id="OvE-YW-FZ2"/>
                                     <constraint firstItem="MgG-GL-l1p" firstAttribute="leading" secondItem="kEL-8Y-uHN" secondAttribute="trailing" constant="10" id="SlR-4n-9Rz"/>
                                     <constraint firstItem="7nm-OK-1i7" firstAttribute="top" secondItem="glI-qU-ud0" secondAttribute="bottom" constant="5" id="TUU-fZ-Gx7"/>
                                     <constraint firstItem="MgG-GL-l1p" firstAttribute="top" secondItem="io4-lv-0iH" secondAttribute="bottom" constant="-5" id="WR0-9Y-cFI"/>
+                                    <constraint firstItem="lmo-g4-T3I" firstAttribute="top" secondItem="HwX-kQ-76x" secondAttribute="bottom" constant="5" id="ZKB-sD-aHL"/>
                                     <constraint firstItem="tU6-jB-Q2v" firstAttribute="top" secondItem="JR2-kv-AOR" secondAttribute="top" id="a3W-GW-j3z"/>
                                     <constraint firstItem="4ln-eP-61Q" firstAttribute="top" secondItem="ce0-bA-g3S" secondAttribute="bottom" constant="10" id="a8T-mO-T8F"/>
                                     <constraint firstItem="glI-qU-ud0" firstAttribute="top" secondItem="4ln-eP-61Q" secondAttribute="bottom" constant="10" id="brD-5c-1Vx"/>
                                     <constraint firstItem="REO-s3-m5P" firstAttribute="leading" secondItem="JR2-kv-AOR" secondAttribute="leading" constant="10" id="d0c-XG-YXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="glI-qU-ud0" secondAttribute="trailing" constant="30" id="d4m-Ug-vNR"/>
                                     <constraint firstAttribute="trailing" secondItem="4ln-eP-61Q" secondAttribute="trailing" id="e4x-He-l58"/>
-                                    <constraint firstItem="MXs-6Z-jEy" firstAttribute="leading" secondItem="1N5-rx-9LC" secondAttribute="trailing" constant="40" id="gfv-Qc-auS"/>
+                                    <constraint firstItem="7nm-OK-1i7" firstAttribute="leading" secondItem="lmo-g4-T3I" secondAttribute="trailing" constant="35" id="gir-dQ-uan"/>
                                     <constraint firstItem="kEL-8Y-uHN" firstAttribute="leading" secondItem="REO-s3-m5P" secondAttribute="trailing" constant="8" id="hu6-Fi-uhr"/>
-                                    <constraint firstItem="lmo-g4-T3I" firstAttribute="top" secondItem="1N5-rx-9LC" secondAttribute="bottom" constant="5" id="j65-ag-KXP"/>
                                     <constraint firstItem="lmo-g4-T3I" firstAttribute="centerX" secondItem="JR2-kv-AOR" secondAttribute="centerX" id="jW9-5R-ai1"/>
                                     <constraint firstItem="ce0-bA-g3S" firstAttribute="centerX" secondItem="MgG-GL-l1p" secondAttribute="centerX" id="kkf-v5-uOZ"/>
+                                    <constraint firstItem="HwX-kQ-76x" firstAttribute="centerX" secondItem="JR2-kv-AOR" secondAttribute="centerX" id="mH8-37-O2Z"/>
                                     <constraint firstItem="2tl-vl-cWy" firstAttribute="centerY" secondItem="lmo-g4-T3I" secondAttribute="centerY" id="nvB-aX-6Rh"/>
                                     <constraint firstItem="7nm-OK-1i7" firstAttribute="centerY" secondItem="lmo-g4-T3I" secondAttribute="centerY" id="qZ9-42-0zT"/>
                                     <constraint firstItem="ddG-0C-uE4" firstAttribute="leading" secondItem="io4-lv-0iH" secondAttribute="trailing" constant="8" id="raM-G1-ZFV"/>
                                     <constraint firstItem="ddG-0C-uE4" firstAttribute="top" secondItem="tU6-jB-Q2v" secondAttribute="bottom" constant="10" id="sFQ-aH-Cs0"/>
-                                    <constraint firstItem="1N5-rx-9LC" firstAttribute="leading" secondItem="x1B-hN-og6" secondAttribute="trailing" constant="40" id="yMI-pF-h39"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -240,7 +253,8 @@
                 <outlet property="addressLbl" destination="kEL-8Y-uHN" id="JmM-Sg-x91"/>
                 <outlet property="bellPhoto" destination="x1B-hN-og6" id="Z9v-tA-z2r"/>
                 <outlet property="bellView" destination="M8J-Qd-2Ic" id="E35-wi-Jxl"/>
-                <outlet property="cancelView" destination="1N5-rx-9LC" id="myb-MQ-aap"/>
+                <outlet property="cacelView" destination="HwX-kQ-76x" id="aKy-F6-T7a"/>
+                <outlet property="cancelView" destination="HwX-kQ-76x" id="Jv6-oB-WhR"/>
                 <outlet property="containerView" destination="69K-n1-ML7" id="wEb-Kp-fY7"/>
                 <outlet property="dateTimeLbl" destination="2Au-JF-45M" id="blx-bi-syD"/>
                 <outlet property="doctorAddressLbl" destination="kEL-8Y-uHN" id="tPd-2b-5ud"/>
@@ -258,9 +272,9 @@
     </objects>
     <resources>
         <image name="calendar-4-24" width="24" height="24"/>
+        <image name="cancel" width="16" height="16"/>
         <image name="icons8-bell-24" width="24" height="24"/>
-        <image name="marker" width="50" height="50"/>
+        <image name="location-pin" width="16" height="16"/>
         <image name="phone-26" width="26" height="26"/>
-        <image name="xbox-x-24" width="24" height="24"/>
     </resources>
 </document>

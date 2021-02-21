@@ -108,3 +108,18 @@
 "Please Enter Email and Password" = "من فضلك أدخل البريد الالكترونى وكلمة السر";
 
 "SMS send successfully" = "تم ارسال كود التفعيل";
+
+"Somthing Wrong Happend" = "حدث خطأ الرجاء أعد المحاوله";
+
+"user verified successfully" = "تم التأكد بنجاح";
+
+"reset password" = "تعيين كلمة مرور";
+
+"Verify" = "تأكيد";
+
+"The email has already been taken." = "البريد الألكترونى موجود بالفعل";
+
+
+"The birthday in not a valid date." = "تاريخ الميلاد غير صحيح";
+
+"Invalid Credentials" = "البريد الإلكترونى أو كلمة المرور غير صحيحة";

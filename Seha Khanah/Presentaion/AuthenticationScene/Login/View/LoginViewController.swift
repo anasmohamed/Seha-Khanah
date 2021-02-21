@@ -135,8 +135,10 @@ class LoginViewController: UIViewController ,LoginProtocol{
     
     func showError(error: String) {
         indicator.stopAnimating()
+        print(error)
+        if !error.isEmpty{
         self.view.makeToast(error.localized, duration: 5.0, position: .bottom)
-
+        }
     }
     func setupToolbar(){
            //Create a toolbar

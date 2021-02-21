@@ -48,7 +48,7 @@ class VerificationPhoneNumberPresenter {
             } else {
                 if result != nil{
                     if Int(result!) == 200{
-                        self.view?.verifyUserSuccuess(message: "user verified successfully")
+                        self.view?.verifyUserSuccuess(message: "user verified successfully".localized)
                     }else{
                         self.view?.showError(error: "Somthing Wrong Happend".localized)
                         
@@ -62,15 +62,15 @@ class VerificationPhoneNumberPresenter {
     func verifyPassword(phoneNumber:String,userType:String,code:Int) {
         
         view?.showIndicator()
-        verificationPhoneNumberInteractor.verifyUser(phoneNumber:phoneNumber , userType: userType,code:code){ (result,error)  in
+        verificationPhoneNumberInteractor.verifyPassword(phoneNumber:phoneNumber , userType: userType,code:code){ (result,error)  in
             if let error = error {
                 print("errrror\(error)")
                 self.view?.showError(error: error.localizedDescription)
                 
             } else {
-                if result != nil{
-                    if Int(result!) == 200{
-                        self.view?.verifyUserSuccuess(message: "user verified successfully")
+                if !result!.isEmpty{
+                    
+                        self.view?.verifyUserSuccuess(message: result!)
                     }else{
                         self.view?.showError(error: "Somthing Wrong Happend".localized)
                         
@@ -81,4 +81,4 @@ class VerificationPhoneNumberPresenter {
             
         }
     }
-}
+

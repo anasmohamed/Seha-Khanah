@@ -136,11 +136,11 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
         ratingsCollectionView.reloadData()
         if presenter.getDates().count == 0
         {
-            datesCollectionViewHeightConstraint.constant = 80
+            datesCollectionViewHeightConstraint.constant = 120
         }
         if presenter.getRatings().count == 0
         {
-            ratingsCollectionViewHeightConstraint.constant = 80
+            ratingsCollectionViewHeightConstraint.constant = 120
         }
     }
     

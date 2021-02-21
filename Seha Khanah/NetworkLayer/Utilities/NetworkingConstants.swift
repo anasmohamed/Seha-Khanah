@@ -53,7 +53,7 @@ class NetworkingConstants {
     
     
     static let resetForgetPassword = "api/password/reset"
-    static let resetForgetPasswordEmailParameter = "api/password/reset"
+    static let resetForgetPasswordEmailParameter = "phonenumber"
     static let resetForgetPasswordUserTypeParameter = "user_type"
     static let resetForgetPasswordTokenParameter = "token"
     static let resetForgetPasswordNewPasswordParameter = "password"

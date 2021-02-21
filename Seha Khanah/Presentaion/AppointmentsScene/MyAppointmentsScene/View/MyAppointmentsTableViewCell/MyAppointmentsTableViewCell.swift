@@ -11,7 +11,7 @@ import MOLH
 
 class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPrototol {
     
-    @IBOutlet weak var cancelView: UIImageView!
+    @IBOutlet weak var cancelView: UIView!
     @IBOutlet weak var bellView: UIView!
     @IBOutlet weak var doctorTitleUnderPhoneIconLbl: UILabel!
     @IBOutlet weak var doctorAddressLbl: UILabel!
@@ -29,8 +29,9 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     let cornerRadius : CGFloat = 10.0
     var actionBlock: (() -> Void)? = nil
     var mapStackViewActionBlock: (() -> Void)? = nil
+    @IBOutlet weak var cacelView: UIView!
     var helpRequestActionBlock: (() -> Void)? = nil
-
+    
     var lat : String?
     var longtiude : String?
     var bookingId:String?
@@ -38,10 +39,14 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         super.awakeFromNib()
         doctorPhoto.layer.cornerRadius = doctorPhoto.frame.width / 2
         bellView.layer.cornerRadius = bellView.frame.width / 2
-        bellView.layer.borderColor = UIColor.blue.cgColor
+        cancelView.layer.cornerRadius = cancelView.frame.width / 2
+        
+        bellView.layer.borderColor = UIColor.init(red: 25.0/255.0, green: 76.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor
         bellView.layer.borderWidth = 1
+        cancelView.layer.borderColor = UIColor.init(red: 25.0/255.0, green: 76.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor
+        cancelView.layer.borderWidth = 1
         mabMarkerView.layer.cornerRadius = bellView.frame.width / 2
-        mabMarkerView.layer.borderColor = UIColor.blue.cgColor
+        mabMarkerView.layer.borderColor = UIColor.init(red: 25.0/255.0, green: 76.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor
         mabMarkerView.layer.borderWidth = 1
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor

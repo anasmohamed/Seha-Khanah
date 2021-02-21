@@ -43,6 +43,7 @@
                                     <segment title="My Appointments"/>
                                     <segment title="Offers"/>
                                 </segments>
+                                <color key="tintColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentControllDidTappedWithSegment:" destination="GkP-TP-wKW" eventType="valueChanged" id="zky-0M-60p"/>
                                 </connections>

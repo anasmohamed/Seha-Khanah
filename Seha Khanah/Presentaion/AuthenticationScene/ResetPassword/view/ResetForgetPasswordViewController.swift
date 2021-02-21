@@ -23,6 +23,8 @@ class ResetForgetPasswordViewController: UIViewController,ResetForgetPasswordPro
         super.viewDidLoad()
         presenter = ResetForgetPasswordPresenter(view: self)
         presenter.verifyResetPasswordToken(token: token)
+        self.navigationItem.title = "reset password".localized
+        setupToolbar()
         // Do any additional setup after loading the view.
     }
     
@@ -61,7 +63,28 @@ class ResetForgetPasswordViewController: UIViewController,ResetForgetPasswordPro
 
            self.present(navigationController, animated: true, completion: nil)
     }
-    
+    func setupToolbar(){
+        //Create a toolbar
+        let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
+        let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissMyKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
+        bar.items = [flexSpace, flexSpace, doneBtn]
+        bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
+      
+        newPasswordTextField.inputAccessoryView = bar
+        confirmPasswordTextField.inputAccessoryView = bar
+    }
+    @objc func dismissMyKeyboard(){
+         view.endEditing(true)
+     }
     func showError(error: String) {
         indicator.stopAnimating()
         

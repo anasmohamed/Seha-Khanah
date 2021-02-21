@@ -117,12 +117,16 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
     
     func showLabDetails(labDetails:LabDetails) {
         labImages.auk.settings.contentMode = .scaleAspectFill
+        if labDetails.labPhotos.count != 0 {
         for image in labDetails.labPhotos
         {
             labImages.auk.show(url: image)
             
         }
         labImages.auk.startAutoScroll(delaySeconds: 3)
+        }else{
+            labImages.auk.show(url: labDetails.photo!)
+        }
         if  MOLHLanguage.currentAppleLanguage() == "en"{
             labName.text = labDetails.labNameEn
             labAdderss.text = labDetails.addressEn
@@ -137,11 +141,11 @@ class LabDetailsViewController: UIViewController, LabDetailsProtocol {
         ratingCollectionView.reloadData()
         if labDetailsPresenter.getDatesCount() == 0
         {
-            datesCollectionViewHeightConstraint.constant = 80
+            datesCollectionViewHeightConstraint.constant = 120
         }
         if labDetailsPresenter.getRatingsCount() == 0
         {
-            ratingsCollectionViewHeightConstraint.constant = 80
+            ratingsCollectionViewHeightConstraint.constant = 120
         }
     }
     

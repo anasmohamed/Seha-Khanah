@@ -23,6 +23,7 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
         super.viewDidLoad()
         cornerRadiusAndShodow(view:forgetPasswordView)
         presenter = ForgetPasswordPresenter(view: self)
+        self.navigationItem.title = "reset password".localized
         // Do any additional setup after loading the view.
     }
     
@@ -34,6 +35,7 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
             phone = "+964" + phoneNumberTextField.text!
             presenter.resetPassword(phone: phone , userType:"client")
         }
+        
     }
     func cornerRadiusAndShodow(view:UIView)  {
         view.layer.shadowColor = UIColor.gray.cgColor
@@ -57,8 +59,8 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
         let storyboard = UIStoryboard.init(name: "Verification", bundle: nil)
                let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "VerificationPhoneNumberViewController") as! VerificationPhoneNumberViewController
         verificationPhoneNumberViewConroller.phoneNumber = user.phoneNumber
-        verificationPhoneNumberViewConroller.email = user.email
-
+        verificationPhoneNumberViewConroller.email = user.phoneNumber
+        verificationPhoneNumberViewConroller.isForgetPassword = true
         self.navigationController?.pushViewController(verificationPhoneNumberViewConroller, animated: true)
         
     }

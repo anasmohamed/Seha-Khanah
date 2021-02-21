@@ -20,7 +20,7 @@ class LogoutSliderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 10
-        loginBtn.layer.borderColor = UIColor.blue.cgColor
+        loginBtn.layer.borderColor = UIColor.init(red: 25.0/255.0, green: 76.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor
         loginBtn.layer.borderWidth = 2
         
         bookNowBtn.layer.cornerRadius = 10

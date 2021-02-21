@@ -61,7 +61,7 @@
                                             <constraint firstAttribute="height" constant="40" id="KMc-B3-VTL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MtX-bN-EUW">
                                         <rect key="frame" x="0.0" y="150" width="304" height="40"/>

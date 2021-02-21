@@ -60,7 +60,7 @@ class AppointmentsMainViewController: UIViewController {
     
        @objc func handleGoToLoginTap(_ sender: UITapGestureRecognizer? = nil) {
         let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
-           let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! SearchByLabNameViewController
+           let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
            
            self.navigationController!.pushViewController(loginViewController, animated: true)
            

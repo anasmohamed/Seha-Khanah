@@ -19,6 +19,7 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     let genderRadioBtnsGroup = RadioButtonContainer()
     var selectedGender = "1"
     var date : Date? = nil
+    var finalPhoneNumber = ""
     @IBOutlet weak var userNameTextField: UITextField!
         {
         didSet {
@@ -52,8 +53,8 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     
     @IBAction func termsAndConditionBtnDidTapped(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "TermsAndCondition", bundle: nil)
-              let termsAndConditionViewController = storyboard.instantiateViewController(withIdentifier: "TermsAndConditionViewController") as! TermsAndConditionViewController
-              self.navigationController?.pushViewController(termsAndConditionViewController, animated: true)
+        let termsAndConditionViewController = storyboard.instantiateViewController(withIdentifier: "TermsAndConditionViewController") as! TermsAndConditionViewController
+        self.navigationController?.pushViewController(termsAndConditionViewController, animated: true)
     }
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -74,15 +75,15 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     
     var registerPresenter:RegisterPresenter!
     
-    override func viewDidLoad()
+    override  func viewDidLoad()
     {
         super.viewDidLoad()
         registerPresenter = RegisterPresenter(view: self)
         createDatePicker()
         setupLanguageBtns()
-//        phoneTextField.delegate = self
+        phoneTextField.delegate = self
         setupToolbar()
-        phoneTextField.keyboardType = .asciiCapableNumberPad
+        //        phoneTextField.keyboardType = .asciiCapableNumberPad
     }
     
     func showIndicator() {
@@ -95,12 +96,22 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //For mobile numer validation
+        if textField == dateTextField{
+          
+        }
         if textField == phoneTextField {
             let numberStr: String = string
             let formatter: NumberFormatter = NumberFormatter()
             formatter.locale = Locale(identifier: "EN")
             if let final = formatter.number(from: numberStr) {
                 textField.text =  "\(textField.text ?? "")\(final)"
+            }
+            let  char = string.cString(using: String.Encoding.utf8)!
+            let isBackSpace = strcmp(char, "\\b")
+            
+            if (isBackSpace == -92) {
+                print("Backspace was pressed")
+                return true
             }
             return false
         }
@@ -111,7 +122,7 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         
         let storyboard = UIStoryboard.init(name: "Verification", bundle: nil)
         let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "VerificationPhoneNumberViewController") as! VerificationPhoneNumberViewController
-        verificationPhoneNumberViewConroller.phoneNumber = phoneTextField.text
+        verificationPhoneNumberViewConroller.phoneNumber = finalPhoneNumber
         self.navigationController?.pushViewController(verificationPhoneNumberViewConroller, animated: true)
         UserDefaults.standard.set(user.email, forKey: "email")
         UserDefaults.standard.set(user.birthday, forKey: "birthday")
@@ -126,7 +137,9 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
     func showError(error: String) {
         indicator.stopAnimating()
         print("error message\(error)")
-        self.view.makeToast(error.localized, duration: 3.0, position: .top)
+        if !error.isEmpty{
+        self.view.makeToast(error.localized, duration: 5.0, position: .bottom)
+        }
     }
     func createDatePicker()  {
         let toolBar = UIToolbar()
@@ -189,7 +202,11 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
         guard  let email = emailTextField.text, let password = passwordTextField.text,let confrimPassword = confirmPasswordTextField.text, let userName = userNameTextField.text,var phone = phoneTextField.text else {
             return
         }
-        phone = "+964" + phone
+        if !phone.isEmpty{
+            phone = String(phone.suffix(10))
+            print("phone \(phone)")
+        finalPhoneNumber = "+964" + phone
+        }
         //        guard phone.count == 11 else {
         //            return
         //        }
@@ -207,7 +224,7 @@ class RegisterViewController: UIViewController,RegisterProtocol,UITextFieldDeleg
             self.view.makeToast("Please Enter Date".localized, duration: 3.0, position: .bottom)
             return
         }else{
-            registerPresenter.register(email: email, password: password, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date!)
+            registerPresenter.register(email: email, password: password, name: userName, phoneNumber: finalPhoneNumber, genderId: selectedGender, birthday: date!)
             
         }
         
