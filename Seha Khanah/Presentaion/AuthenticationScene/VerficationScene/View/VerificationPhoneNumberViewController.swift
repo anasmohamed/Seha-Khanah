@@ -24,20 +24,20 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
         // Do any additional setup after loading the view.
     }
     @IBAction func sendConfirmationCodeBtnDidTapped(_ sender: Any) {
-        guard let confirmationCode = confirmationCodeTextField.text else {
-            return
-        }
-        if !confirmationCode.isEmpty{
-            if isForgetPassword{
-                presenter.verifyPassword(phoneNumber: phoneNumber ?? "", userType:"client" ,code:Int(confirmationCode)!)
-            }else{
-                presenter.verifyUser(phoneNumber: phoneNumber ?? "" , userType:"client" ,code:Int(confirmationCode)!)
-            }
-            
-        }else{
-            self.view.makeToast("Enter Missing Data".localized, duration: 3.0, position: .bottom)
-            
-        }
+        //        guard let confirmationCode = confirmationCodeTextField.text else {
+        //            return
+        //        }
+        //        if !confirmationCode.isEmpty{
+        //            if isForgetPassword{
+        //                presenter.verifyPassword(phoneNumber: phoneNumber ?? "", userType:"client" ,code:Int(confirmationCode)!)
+        //            }else{
+        //                presenter.verifyUser(phoneNumber: phoneNumber ?? "" , userType:"client" ,code:Int(confirmationCode)!)
+        //            }
+        //
+        //        }else{
+        //            self.view.makeToast("Enter Missing Data".localized, duration: 3.0, position: .bottom)
+        //
+        //        }
         
     }
     
@@ -81,7 +81,7 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
             let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
             let verificationPhoneNumberViewConroller = storyboard.instantiateViewController(withIdentifier: "TabBar")
             verificationPhoneNumberViewConroller.modalPresentationStyle = .fullScreen
-            self.navigationController!.pushViewController(verificationPhoneNumberViewConroller, animated: true)
+            self.present(verificationPhoneNumberViewConroller, animated: true)
         }
         
     }
