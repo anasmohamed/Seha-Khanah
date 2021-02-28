@@ -55,14 +55,24 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 290
+        return 310
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
         cell.actionBlock = {
             print(indexPath.row)
-            self.myAppointmentsPresenter.cancelBooking(id: cell.bookingId!)
+            if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "1"
+            {
+                self.showAlert(bookingId: cell.bookingId!)
+                
+            }else{
+                self.myAppointmentsPresenter.deletAppointment(index: indexPath.row)
+
+                tableView.deleteRows(at: [indexPath], with: .fade)
+
+            }
+            tableView.reloadData()
         }
         cell.mapStackViewActionBlock = {
             self.openGoogleMap(lat: cell.lat!, lng: cell.longtiude!)
@@ -77,7 +87,18 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         return cell
     }
     
-    
+    func showAlert(bookingId : String)  {
+        let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default,handler: { action in
+            self.myAppointmentsPresenter.cancelBooking(id: bookingId)
+
+            
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
     func openGoogleMap(lat:String,lng: String) {
         let latDouble = Double(lat)
         let longDouble = Double(lng)

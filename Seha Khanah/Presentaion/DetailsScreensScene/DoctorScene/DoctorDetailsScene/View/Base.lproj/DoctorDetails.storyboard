@@ -453,6 +453,7 @@
                         <outlet property="cityNameLbl" destination="GDC-L9-AAq" id="dK2-d9-QJx"/>
                         <outlet property="costLbl" destination="TrS-io-TQ3" id="t6i-bI-oGv"/>
                         <outlet property="datesCollectionView" destination="pWW-Un-07c" id="188-xB-xEt"/>
+                        <outlet property="datesCollectionViewHeightConstraint" destination="uvK-IH-N9W" id="v7H-i1-Mvl"/>
                         <outlet property="datesView" destination="uWG-0d-iQ9" id="GO2-mG-oQU"/>
                         <outlet property="doctorImageView" destination="cKo-Nf-iwl" id="hAK-NT-BHE"/>
                         <outlet property="doctorNameLbl" destination="IGZ-cH-kLf" id="yua-BO-KA3"/>

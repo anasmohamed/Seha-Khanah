@@ -123,3 +123,9 @@
 "The birthday in not a valid date." = "تاريخ الميلاد غير صحيح";
 
 "Invalid Credentials" = "البريد الإلكترونى أو كلمة المرور غير صحيحة";
+
+"The reservation was successful and the visit did not take place yet" = "تم الحجز بنجاح ولم يتم الزيارة بعد";
+
+"Reservation canceled" = "تم إلغاء الحجز";
+
+"Visited" = "تمت الزيارة";

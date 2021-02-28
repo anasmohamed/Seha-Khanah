@@ -204,6 +204,7 @@
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8E3788725B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */; };
+		A8E43F8625EC5E8600698EE2 /* AddReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E43F8525EC5E8600698EE2 /* AddReview.storyboard */; };
 		A8E4D18C25C07A4F005660EA /* SuccessBookingDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */; };
 		A8E8171B25B2232900DE29A6 /* FavoirteContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */; };
 		A8E8172125B2253500DE29A6 /* FavoriteDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */; };
@@ -448,6 +449,7 @@
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfferDetails+DateAndRatingCollectionViewExtenstion.swift"; sourceTree = "<group>"; };
+		A8E43F8525EC5E8600698EE2 /* AddReview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddReview.storyboard; sourceTree = "<group>"; };
 		A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBookingDoctorViewController.swift; sourceTree = "<group>"; };
 		A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoirteContainerViewController.swift; sourceTree = "<group>"; };
 		A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsViewController.swift; sourceTree = "<group>"; };
@@ -1955,6 +1957,7 @@
 		A8C8165325A7CDF600690AE8 /* AppointmentsScene */ = {
 			isa = PBXGroup;
 			children = (
+				A8E43F8325EC5D2600698EE2 /* AddReviewScene */,
 				A843BBA825A87B49006231F8 /* MyOffersScene */,
 				A843BBA725A87B31006231F8 /* MyAppointmentsScene */,
 				A8C8165425A7CE0500690AE8 /* View */,
@@ -1999,6 +2002,22 @@
 				A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8E43F8325EC5D2600698EE2 /* AddReviewScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8E43F8425EC5E5E00698EE2 /* View */,
+			);
+			path = AddReviewScene;
+			sourceTree = "<group>";
+		};
+		A8E43F8425EC5E5E00698EE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8E43F8525EC5E8600698EE2 /* AddReview.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A8E8171425B221D900DE29A6 /* FavoriteScene */ = {
@@ -2264,6 +2283,7 @@
 				A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */,
 				A8F1437C25DB2AC90061F839 /* TermsAndCondition.storyboard in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
+				A8E43F8625EC5E8600698EE2 /* AddReview.storyboard in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
 				A884DD86259A2BB0006D686B /* ChangeLanguage.storyboard in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,

@@ -60,7 +60,7 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
             leftArrowImage.image = leftArrowImage.image?.flipIfNeeded()
             rightArrowImage.image = rightArrowImage.image?.flipIfNeeded()
             
-//            goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
+            //            goToLocationArrowImage.image = goToLocationArrowImage.image?.flipIfNeeded()
             
         }
         // Do any additional setup after loading the view.
@@ -103,9 +103,14 @@ class OfferDetailsViewController: UIViewController,OfferDetailsProtocol {
     
     func showOfferDetails(offerDetails: OfferDetails) {
         imageSlideShow.auk.settings.contentMode = .scaleAspectFill
-        for image in offerDetails.imagesList
-        {
-            imageSlideShow.auk.show(url: image)
+        if offerDetails.imagesList.count != 0{
+            for image in offerDetails.imagesList
+            {
+                imageSlideShow.auk.show(url: image)
+                
+            }
+        }else{
+            imageSlideShow.auk.show(url: offerDetails.photo!)
             
         }
         imageSlideShow.auk.startAutoScroll(delaySeconds: 3)

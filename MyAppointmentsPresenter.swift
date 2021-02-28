@@ -56,7 +56,13 @@ class MyAppointmentsPresenter {
     func getMyAppointmentsCount() -> Int {
         return myAppointments.count
     }
-    
+    func getAppointmentStatus(index:Int)-> String{
+        print("status id \(myAppointments[index].statusId!)")
+        return myAppointments[index].statusId!
+    }
+    func deletAppointment(index:Int)  {
+        myAppointments.remove(at: index)
+    }
     
     func configure(cell: MyAppointmentsTebleViewCellPrototol, for index: Int) {
         let appointment = myAppointments[index]

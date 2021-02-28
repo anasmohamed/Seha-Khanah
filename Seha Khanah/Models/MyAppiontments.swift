@@ -9,11 +9,11 @@
 import Foundation
 import SwiftyJSON
 class MyAppiontments: Codable {
-    var id: String?
-    var clientId :String?
-    var doctorId:String?
+    var id : String?
+    var clientId : String?
+    var doctorId: String?
     var bookingDate : String?
-    var statusId:String?
+    var statusId : String?
     var doctor : DoctorDetails?
     var status : BookingStatus?
     init?(withJSON data: JSON) {

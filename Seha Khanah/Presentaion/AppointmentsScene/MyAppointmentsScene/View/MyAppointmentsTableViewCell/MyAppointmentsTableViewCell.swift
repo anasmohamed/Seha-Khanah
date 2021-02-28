@@ -32,6 +32,7 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     @IBOutlet weak var cacelView: UIView!
     var helpRequestActionBlock: (() -> Void)? = nil
     
+    @IBOutlet weak var visitingStatusLbl: UILabel!
     var lat : String?
     var longtiude : String?
     var bookingId:String?
@@ -96,12 +97,25 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         doctorPhoto.kf.setImage(with: URL(string: (appintment.doctor?.photo)!))
         lat = appintment.doctor!.lat
         longtiude = appintment.doctor!.lng
+        switch appintment.statusId {
+        case "1":
+            visitingStatusLbl.text = "The reservation was successful and the visit did not take place yet".localized
+        case "2":
+            visitingStatusLbl.text = "Reservation canceled".localized
+
+        case "3":
+            visitingStatusLbl.text = "Visited".localized
+
+        default:
+            break
+        }
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = (appintment.doctor?.doctorFirstNameEn)! + " " + (appintment.doctor?.doctorLastNameEn)!
             doctorTitleLbl.text = appintment.doctor?.profissionalTitleEn
             doctorAddressLbl.text = appintment.doctor?.addressEn
             doctorTitleUnderPhoneIconLbl.text = appintment.doctor?.profissionalTitleEn
+            
             
         }else
         {

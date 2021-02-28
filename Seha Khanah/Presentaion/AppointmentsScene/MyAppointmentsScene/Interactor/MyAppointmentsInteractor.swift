@@ -26,9 +26,9 @@ class MyAppointmentsInteractor {
                  for myAppointment in myAppointments
                  {
                      let data = MyAppiontments(withJSON: myAppointment)
-                    if data?.statusId == "3"{
+                    
                      myAppointmentsList.append(data!)
-                    }
+                    
                  }
                  completionHandler(myAppointmentsList, nil)
              case .failure(let error):
