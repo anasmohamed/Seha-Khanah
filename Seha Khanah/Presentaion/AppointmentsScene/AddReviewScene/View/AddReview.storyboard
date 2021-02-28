@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A-Google.ttf">
+            <string>AGOOGLE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="dys-Kq-ozs">
@@ -19,14 +24,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUU-qE-0Ni">
                                 <rect key="frame" x="20" y="333" width="374" height="230"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVh-61-sbD">
-                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVh-61-sbD">
+                                        <rect key="frame" x="8" y="8" width="144.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="23"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnG-CU-YrY" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="94.5" y="36" width="185" height="33"/>
+                                        <rect key="frame" x="94.5" y="48" width="185" height="33"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starSize">
@@ -38,20 +43,33 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-fp-Pys">
-                                        <rect key="frame" x="10" y="77" width="354" height="98"/>
+                                        <rect key="frame" x="10" y="89" width="354" height="76"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK2-IP-DTa">
-                                        <rect key="frame" x="240" y="192" width="104" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK2-IP-DTa">
+                                        <rect key="frame" x="260" y="182" width="104" height="40"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="O42-vt-cFu"/>
+                                            <constraint firstAttribute="width" constant="104" id="XER-5X-n2A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5y-Qn-j0S">
-                                        <rect key="frame" x="10" y="192" width="102" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5y-Qn-j0S">
+                                        <rect key="frame" x="10" y="182" width="104" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="OCC-zX-Bnh"/>
+                                            <constraint firstAttribute="width" constant="104" id="wuF-gZ-zzT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
+                                        <state key="normal" title="Cancel"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -65,6 +83,8 @@
                                     <constraint firstItem="YUB-fp-Pys" firstAttribute="top" secondItem="tnG-CU-YrY" secondAttribute="bottom" constant="8" id="emB-Ra-lPC"/>
                                     <constraint firstItem="YUB-fp-Pys" firstAttribute="leading" secondItem="VUU-qE-0Ni" secondAttribute="leading" constant="10" id="fhy-cl-0Jm"/>
                                     <constraint firstAttribute="bottom" secondItem="B5y-Qn-j0S" secondAttribute="bottom" constant="8" id="jvx-ni-Nfu"/>
+                                    <constraint firstItem="B5y-Qn-j0S" firstAttribute="leading" secondItem="YUB-fp-Pys" secondAttribute="leading" id="ndC-WF-19W"/>
+                                    <constraint firstItem="XK2-IP-DTa" firstAttribute="trailing" secondItem="YUB-fp-Pys" secondAttribute="trailing" id="oOS-q3-ZRQ"/>
                                     <constraint firstAttribute="height" constant="230" id="q24-IJ-vkC"/>
                                     <constraint firstItem="B5y-Qn-j0S" firstAttribute="top" secondItem="YUB-fp-Pys" secondAttribute="bottom" constant="17" id="tHW-7d-I34"/>
                                     <constraint firstAttribute="trailing" secondItem="YUB-fp-Pys" secondAttribute="trailing" constant="10" id="zsh-VL-I73"/>
