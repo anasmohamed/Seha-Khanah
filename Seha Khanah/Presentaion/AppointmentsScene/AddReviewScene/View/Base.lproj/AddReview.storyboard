@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUU-qE-0Ni">
-                                <rect key="frame" x="20" y="333" width="374" height="230"/>
+                                <rect key="frame" x="20" y="318" width="374" height="260"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVh-61-sbD">
                                         <rect key="frame" x="8" y="8" width="144.5" height="33"/>
@@ -43,14 +43,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-fp-Pys">
-                                        <rect key="frame" x="10" y="89" width="354" height="76"/>
+                                        <rect key="frame" x="10" y="89" width="354" height="86"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK2-IP-DTa">
-                                        <rect key="frame" x="260" y="182" width="104" height="40"/>
+                                        <rect key="frame" x="260" y="212" width="104" height="40"/>
                                         <color key="backgroundColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="O42-vt-cFu"/>
@@ -65,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5y-Qn-j0S">
-                                        <rect key="frame" x="10" y="182" width="104" height="40"/>
+                                        <rect key="frame" x="10" y="212" width="104" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OCC-zX-Bnh"/>
                                             <constraint firstAttribute="width" constant="104" id="wuF-gZ-zzT"/>
@@ -78,13 +78,20 @@
                                             <action selector="cancelBtnDidTapped:" destination="PZd-Q8-SqR" eventType="touchUpInside" id="Gqc-Gx-Izx"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0t-zJ-sWu" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="10" y="183" width="159" height="20"/>
+                                        <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="14"/>
+                                        <state key="normal" title="Hide Your Information">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="G0t-zJ-sWu" firstAttribute="top" secondItem="YUB-fp-Pys" secondAttribute="bottom" constant="8" id="0hc-XA-A0m"/>
                                     <constraint firstItem="tnG-CU-YrY" firstAttribute="centerX" secondItem="VUU-qE-0Ni" secondAttribute="centerX" id="3Ju-Gx-CV8"/>
                                     <constraint firstItem="tnG-CU-YrY" firstAttribute="top" secondItem="zVh-61-sbD" secondAttribute="bottom" constant="7" id="GFp-v1-XSi"/>
                                     <constraint firstItem="zVh-61-sbD" firstAttribute="top" secondItem="VUU-qE-0Ni" secondAttribute="top" constant="8" id="SZM-fS-cSF"/>
-                                    <constraint firstItem="XK2-IP-DTa" firstAttribute="top" secondItem="YUB-fp-Pys" secondAttribute="bottom" constant="17" id="USC-Dh-5MP"/>
                                     <constraint firstItem="zVh-61-sbD" firstAttribute="leading" secondItem="VUU-qE-0Ni" secondAttribute="leading" constant="8" id="bKK-Lt-eip"/>
                                     <constraint firstAttribute="bottom" secondItem="XK2-IP-DTa" secondAttribute="bottom" constant="8" id="cfg-Gf-lub"/>
                                     <constraint firstItem="YUB-fp-Pys" firstAttribute="top" secondItem="tnG-CU-YrY" secondAttribute="bottom" constant="8" id="emB-Ra-lPC"/>
@@ -92,8 +99,9 @@
                                     <constraint firstAttribute="bottom" secondItem="B5y-Qn-j0S" secondAttribute="bottom" constant="8" id="jvx-ni-Nfu"/>
                                     <constraint firstItem="B5y-Qn-j0S" firstAttribute="leading" secondItem="YUB-fp-Pys" secondAttribute="leading" id="ndC-WF-19W"/>
                                     <constraint firstItem="XK2-IP-DTa" firstAttribute="trailing" secondItem="YUB-fp-Pys" secondAttribute="trailing" id="oOS-q3-ZRQ"/>
-                                    <constraint firstAttribute="height" constant="230" id="q24-IJ-vkC"/>
-                                    <constraint firstItem="B5y-Qn-j0S" firstAttribute="top" secondItem="YUB-fp-Pys" secondAttribute="bottom" constant="17" id="tHW-7d-I34"/>
+                                    <constraint firstAttribute="height" constant="260" id="q24-IJ-vkC"/>
+                                    <constraint firstItem="G0t-zJ-sWu" firstAttribute="leading" secondItem="YUB-fp-Pys" secondAttribute="leading" id="sEB-uk-CW0"/>
+                                    <constraint firstItem="B5y-Qn-j0S" firstAttribute="top" secondItem="G0t-zJ-sWu" secondAttribute="bottom" constant="9" id="v9m-jd-3NU"/>
                                     <constraint firstAttribute="trailing" secondItem="YUB-fp-Pys" secondAttribute="trailing" constant="10" id="zsh-VL-I73"/>
                                 </constraints>
                             </view>
@@ -110,6 +118,7 @@
                     <connections>
                         <outlet property="addReviewView" destination="VUU-qE-0Ni" id="AAe-At-rQn"/>
                         <outlet property="cancelBtn" destination="B5y-Qn-j0S" id="fZs-0q-sza"/>
+                        <outlet property="hideYourDataCheckBox" destination="G0t-zJ-sWu" id="ezS-nm-Yeq"/>
                         <outlet property="ratingView" destination="tnG-CU-YrY" id="6Fi-1y-zK2"/>
                         <outlet property="reviewTextView" destination="YUB-fp-Pys" id="GP9-8h-V27"/>
                         <outlet property="sumitBtn" destination="XK2-IP-DTa" id="aGb-be-psR"/>

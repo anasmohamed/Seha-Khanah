@@ -8,10 +8,11 @@
 
 import UIKit
 import Cosmos
-
+import MBRadioCheckboxButton
 import Toast_Swift
 class AddReviewViewController: UIViewController ,AddReviewProtocol,UITextViewDelegate{
     
+    @IBOutlet weak var hideYourDataCheckBox: CheckboxButton!
     
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var sumitBtn: UIButton!
@@ -22,17 +23,23 @@ class AddReviewViewController: UIViewController ,AddReviewProtocol,UITextViewDel
 
     var bookId = 0
     var presenter : AddReviewPresenter!
+    var checkbox = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         reviewTextView.text = "Add Review".localized
         reviewTextView.textColor = UIColor.lightGray
         reviewTextView.delegate = self
         presenter = AddReviewPresenter(view: self)
+        reviewTextView.layer.cornerRadius = 10
+        reviewTextView.layer.borderColor = UIColor.gray.cgColor
+        reviewTextView.layer.borderWidth = 1 
         addReviewView.layer.cornerRadius = 10
         sumitBtn.layer.cornerRadius = 10
         cancelBtn.layer.borderWidth = 1
         cancelBtn.layer.borderColor = UIColor.init(red: 25.0/255.0, green: 76.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor
         cancelBtn.layer.cornerRadius = 10
+        hideYourDataCheckBox.delegate = self
+
         // Do any additional setup after loading the view.
     }
     
@@ -42,7 +49,7 @@ class AddReviewViewController: UIViewController ,AddReviewProtocol,UITextViewDel
     }
     @IBAction func submitBtnDidTapped(_ sender: Any) {
         if !reviewTextView.text.isEmpty{
-            presenter.AddReview(comment: reviewTextView.text!, rating: Int(ratingView.rating), bookId:bookId, checkbox: 0)}
+            presenter.AddReview(comment: reviewTextView.text!, rating: Int(ratingView.rating), bookId:bookId, checkbox: checkbox)}
         else{
             self.view.makeToast("Please Enter Your Comment".localized, duration: 3.0, position: .bottom)
         }
@@ -88,5 +95,20 @@ class AddReviewViewController: UIViewController ,AddReviewProtocol,UITextViewDel
      // Pass the selected object to the new view controller.
      }
      */
+    
+}
+extension AddReviewViewController: CheckboxButtonDelegate {
+    
+    func chechboxButtonDidSelect(_ button: CheckboxButton) {
+        print("Select: ", button.title(for: .normal)!)
+        checkbox = 1
+    }
+    
+    func chechboxButtonDidDeselect(_ button: CheckboxButton) {
+        print("Deselect: ", button.title(for: .normal)!)
+        checkbox = 0
+
+    }
+    
     
 }

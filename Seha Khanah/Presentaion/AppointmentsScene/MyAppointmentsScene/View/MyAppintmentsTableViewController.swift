@@ -61,11 +61,20 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
         if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "1"{
+            cell.cancelView.isHidden = false
+            cell.cancelLbl.isHidden = false
+
             cell.cancelLbl.text = "Cancel".localized
             cell.cancelImageView.image = UIImage(named: "cancel")
         }else if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "3"{
+            cell.cancelView.isHidden = false
+            cell.cancelLbl.isHidden = false
+
             cell.cancelLbl.text = "Add Review".localized
-                       cell.cancelImageView.image = UIImage(named: "add-comment-button")
+            cell.cancelImageView.image = UIImage(named: "add-comment-button")
+        }else if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "2"{
+            cell.cancelView.isHidden = true
+            cell.cancelLbl.isHidden = true
         }
         cell.actionBlock = {
             print(indexPath.row)

@@ -195,8 +195,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var httpHeaders = HTTPHeaders()
         
         switch self {
-        case .booking,.updateUser,.userOffersReservations,.addReview:
+        case .booking,.updateUser,.userOffersReservations,.addReview,.doctorReservation,.labReservation,.userOffersReservations:
             let token = UserDefaults.standard.string(forKey: "token")
+            print(token)
             httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
 //            httpHeaders.add(name: "Content-Type", value:"application/X-Access-Token")
             httpHeaders.add(name: "Content-Type", value:"application/x-www-form-urlencoded")
