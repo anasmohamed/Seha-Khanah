@@ -146,7 +146,14 @@ class NetworkingConstants {
     
     static let userOffersReservations = "api/user/offer/booking"
     
-    static let offersForSpecificCategory = "api/offer-category/"
+    
+    
+    static let addReview = "api/user/booking/comment"
+    static let addReviewCommentParameter = "comment"
+    static let addReviewRatingParamter = "rating"
+    static let addReviewBookIdParameter = "book_id"
+    static let addReviewCheckboxParameter = "checkbox"
 
+    static let offersForSpecificCategory = "api/offer-category/"
 
 }

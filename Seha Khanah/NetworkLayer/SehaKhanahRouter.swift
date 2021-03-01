@@ -56,6 +56,9 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case verifyPassword(phonenumber:String,userType:String,code:Int)
     case verifyResetPasswordToken(token:String)
+    case addReview(comment: String,rating:Double,bookId:Int,checkBox:Bool)
+    
+    
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -134,7 +137,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.verifyPassword
         case .verifyResetPasswordToken:
             return NetworkingConstants.verifyResetPasswordToken
-            
+        case .addReview:
+            return NetworkingConstants.addReview
         }
     }
     
@@ -179,6 +183,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .verifyUser,
              .createCodeForResetPassword,
              .resetForgetPassword,
+             .addReview,
              .verifyPassword:
             return .post
             
@@ -282,6 +287,12 @@ enum SehaKhanahRouter: URLRequestConvertible {
             body[NetworkingConstants.verifyPasswordPhoneNumberPrameter] = phonenumber
             body[NetworkingConstants.verifyPasswordUserTypePrameter] = userType
             body[NetworkingConstants.verifyPasswordCodePrameter] = code
+        case let .addReview(comment, rating, bookId, checkBox):
+            body[NetworkingConstants.addReviewCommentParameter] = comment
+            body[NetworkingConstants.addReviewRatingParamter] = rating
+            body[NetworkingConstants.addReviewBookIdParameter] = bookId
+            body[NetworkingConstants.addReviewCheckboxParameter] = checkBox
+
         default:
             print("Empty request body")
         }
@@ -381,6 +392,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
                .createCodeForResetPassword,
                .verifyUser,
                .resetForgetPassword,
+               .addReview,
                .verifyPassword:
             
             return try URLEncoding.default.encode(urlRequest, with:body)

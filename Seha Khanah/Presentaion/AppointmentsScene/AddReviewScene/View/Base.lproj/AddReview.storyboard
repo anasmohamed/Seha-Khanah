@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Add Review View Controller-->
         <scene sceneID="dys-Kq-ozs">
             <objects>
-                <viewController id="PZd-Q8-SqR" sceneMemberID="viewController">
+                <viewController id="PZd-Q8-SqR" customClass="AddReviewViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Guk-h1-StQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-fp-Pys">
                                         <rect key="frame" x="10" y="89" width="354" height="76"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -61,6 +60,9 @@
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitBtnDidTapped:" destination="PZd-Q8-SqR" eventType="touchUpInside" id="Mcd-LM-ade"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5y-Qn-j0S">
                                         <rect key="frame" x="10" y="182" width="104" height="40"/>
@@ -70,6 +72,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelBtnDidTapped:" destination="PZd-Q8-SqR" eventType="touchUpInside" id="Gqc-Gx-Izx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -100,6 +105,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LER-GP-6mF"/>
                     </view>
+                    <connections>
+                        <outlet property="addReviewView" destination="VUU-qE-0Ni" id="AAe-At-rQn"/>
+                        <outlet property="cancelBtn" destination="B5y-Qn-j0S" id="fZs-0q-sza"/>
+                        <outlet property="ratingView" destination="tnG-CU-YrY" id="6Fi-1y-zK2"/>
+                        <outlet property="reviewTextView" destination="YUB-fp-Pys" id="GP9-8h-V27"/>
+                        <outlet property="sumitBtn" destination="XK2-IP-DTa" id="aGb-be-psR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jS8-DO-KCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

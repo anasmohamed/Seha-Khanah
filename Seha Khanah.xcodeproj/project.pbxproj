@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		983E5BABE968628AE8E4DF87 /* Pods_Seha_Khanah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */; };
+		A804C6EA25ED367C002F29E7 /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804C6E925ED367C002F29E7 /* AddReviewViewController.swift */; };
+		A804C6EB25ED4DE0002F29E7 /* AddReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A804C6ED25ED4DE0002F29E7 /* AddReview.storyboard */; };
+		A804C6F325ED4F61002F29E7 /* AddReviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804C6F225ED4F61002F29E7 /* AddReviewInteractor.swift */; };
+		A804C6F525ED4F87002F29E7 /* AddReviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804C6F425ED4F87002F29E7 /* AddReviewPresenter.swift */; };
+		A804C6F725ED4FD3002F29E7 /* AddReviewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804C6F625ED4FD3002F29E7 /* AddReviewProtocol.swift */; };
 		A806CAFE259E189900D1764C /* BookingDatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */; };
 		A806CB01259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */; };
 		A806CB03259E1E5800D1764C /* LabDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806CB02259E1E5800D1764C /* LabDate.swift */; };
@@ -204,7 +209,6 @@
 		A8DBD8332588EF21001C203E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD8322588EF21001C203E /* MainViewController.swift */; };
 		A8DBD837258908B5001C203E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBD836258908B5001C203E /* SearchViewController.swift */; };
 		A8E3788725B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */; };
-		A8E43F8625EC5E8600698EE2 /* AddReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E43F8525EC5E8600698EE2 /* AddReview.storyboard */; };
 		A8E4D18C25C07A4F005660EA /* SuccessBookingDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */; };
 		A8E8171B25B2232900DE29A6 /* FavoirteContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */; };
 		A8E8172125B2253500DE29A6 /* FavoriteDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */; };
@@ -248,6 +252,12 @@
 		3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.release.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.release.xcconfig"; sourceTree = "<group>"; };
 		4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seha Khanah.debug.xcconfig"; path = "Target Support Files/Pods-Seha Khanah/Pods-Seha Khanah.debug.xcconfig"; sourceTree = "<group>"; };
 		4BAB956F4EBA370A722B7DDF /* Pods_Seha_Khanah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seha_Khanah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A804C6E925ED367C002F29E7 /* AddReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		A804C6EC25ED4DE0002F29E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddReview.storyboard; sourceTree = "<group>"; };
+		A804C6EF25ED4DE6002F29E7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/AddReview.strings; sourceTree = "<group>"; };
+		A804C6F225ED4F61002F29E7 /* AddReviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewInteractor.swift; sourceTree = "<group>"; };
+		A804C6F425ED4F87002F29E7 /* AddReviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewPresenter.swift; sourceTree = "<group>"; };
+		A804C6F625ED4FD3002F29E7 /* AddReviewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewProtocol.swift; sourceTree = "<group>"; };
 		A806CAFC259E189900D1764C /* BookingDatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDatesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A806CB00259E1E0500D1764C /* BookingDatesCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDatesCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
 		A806CB02259E1E5800D1764C /* LabDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabDate.swift; sourceTree = "<group>"; };
@@ -449,7 +459,6 @@
 		A8DBD8322588EF21001C203E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DBD836258908B5001C203E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8E3788625B825F800FF268F /* OfferDetails+DateAndRatingCollectionViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OfferDetails+DateAndRatingCollectionViewExtenstion.swift"; sourceTree = "<group>"; };
-		A8E43F8525EC5E8600698EE2 /* AddReview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddReview.storyboard; sourceTree = "<group>"; };
 		A8E4D18B25C07A4F005660EA /* SuccessBookingDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBookingDoctorViewController.swift; sourceTree = "<group>"; };
 		A8E8171A25B2232900DE29A6 /* FavoirteContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoirteContainerViewController.swift; sourceTree = "<group>"; };
 		A8E8172025B2253500DE29A6 /* FavoriteDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoctorsViewController.swift; sourceTree = "<group>"; };
@@ -537,6 +546,22 @@
 				3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A804C6F025ED4F35002F29E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A804C6F425ED4F87002F29E7 /* AddReviewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A804C6F125ED4F43002F29E7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A804C6F225ED4F61002F29E7 /* AddReviewInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A806CAF9259E182100D1764C /* Cells */ = {
@@ -2007,6 +2032,8 @@
 		A8E43F8325EC5D2600698EE2 /* AddReviewScene */ = {
 			isa = PBXGroup;
 			children = (
+				A804C6F125ED4F43002F29E7 /* Interactor */,
+				A804C6F025ED4F35002F29E7 /* Presenter */,
 				A8E43F8425EC5E5E00698EE2 /* View */,
 			);
 			path = AddReviewScene;
@@ -2015,7 +2042,9 @@
 		A8E43F8425EC5E5E00698EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8E43F8525EC5E8600698EE2 /* AddReview.storyboard */,
+				A804C6ED25ED4DE0002F29E7 /* AddReview.storyboard */,
+				A804C6E925ED367C002F29E7 /* AddReviewViewController.swift */,
+				A804C6F625ED4FD3002F29E7 /* AddReviewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2283,7 +2312,7 @@
 				A8C4B61A25BC3ABA00E92BB3 /* Favorite.storyboard in Resources */,
 				A8F1437C25DB2AC90061F839 /* TermsAndCondition.storyboard in Resources */,
 				A8FD3BF2259CBD5F002B0C07 /* Sukar-Bold.ttf in Resources */,
-				A8E43F8625EC5E8600698EE2 /* AddReview.storyboard in Resources */,
+				A804C6EB25ED4DE0002F29E7 /* AddReview.storyboard in Resources */,
 				A860322D2596A1BC003A7DA5 /* More.storyboard in Resources */,
 				A884DD86259A2BB0006D686B /* ChangeLanguage.storyboard in Resources */,
 				A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */,
@@ -2384,6 +2413,8 @@
 				A828402425B77D78000F6B19 /* OffersForSpcificCategoryTableViewController.swift in Sources */,
 				A843BBB325A87D7D006231F8 /* MyOffersTableViewController.swift in Sources */,
 				A806CB0B259E2AC900D1764C /* LabDetailsViewController.swift in Sources */,
+				A804C6F525ED4F87002F29E7 /* AddReviewPresenter.swift in Sources */,
+				A804C6F325ED4F61002F29E7 /* AddReviewInteractor.swift in Sources */,
 				A8A98C012598EB53000146FB /* ShowAllLabsVIewController.swift in Sources */,
 				A8452B532593F935005EB836 /* ShowAllPharmaciesViewController.swift in Sources */,
 				A8A9B370258CE9E3002DA9A0 /* OffersCategoriesCellView.swift in Sources */,
@@ -2501,11 +2532,13 @@
 				A843BBB525A87DD2006231F8 /* AppointmentsMainViewController.swift in Sources */,
 				A8E9681625AF222600B91375 /* MyAppointmentsProtocol.swift in Sources */,
 				A8F1437225DB25C30061F839 /* ForgetPasswordInteractor.swift in Sources */,
+				A804C6EA25ED367C002F29E7 /* AddReviewViewController.swift in Sources */,
 				A80DD8DD25A141C000FD2CF1 /* TimeCollectionViewCell.swift in Sources */,
 				A843BBAB25A87BA0006231F8 /* MyAppintmentsTableViewController.swift in Sources */,
 				A828400F25B754A0000F6B19 /* AllCategoriesProtocol.swift in Sources */,
 				A856773525924D8D0086CD78 /* SearchBySpecialtyPresenter.swift in Sources */,
 				A8B8E4CE25A8C376002F8149 /* LoginInteractor.swift in Sources */,
+				A804C6F725ED4FD3002F29E7 /* AddReviewProtocol.swift in Sources */,
 				A85E32822594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift in Sources */,
 				A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */,
 				A856771C2591F9B80086CD78 /* SearchByNameInteractor.swift in Sources */,
@@ -2570,6 +2603,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A804C6ED25ED4DE0002F29E7 /* AddReview.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A804C6EC25ED4DE0002F29E7 /* Base */,
+				A804C6EF25ED4DE6002F29E7 /* ar */,
+			);
+			name = AddReview.storyboard;
+			sourceTree = "<group>";
+		};
 		A807E8BB25B1CA84009C5CDA /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
