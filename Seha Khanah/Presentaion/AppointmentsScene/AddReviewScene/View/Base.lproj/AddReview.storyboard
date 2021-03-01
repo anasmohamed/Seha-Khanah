@@ -16,7 +16,7 @@
         <!--Add Review View Controller-->
         <scene sceneID="dys-Kq-ozs">
             <objects>
-                <viewController id="PZd-Q8-SqR" customClass="AddReviewViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddReviewViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="PZd-Q8-SqR" customClass="AddReviewViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Guk-h1-StQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,9 @@
                                             <constraint firstAttribute="width" constant="104" id="wuF-gZ-zzT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="16"/>
-                                        <state key="normal" title="Cancel"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.29803921570000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="cancelBtnDidTapped:" destination="PZd-Q8-SqR" eventType="touchUpInside" id="Gqc-Gx-Izx"/>
                                         </connections>
@@ -96,7 +98,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VUU-qE-0Ni" firstAttribute="centerX" secondItem="Guk-h1-StQ" secondAttribute="centerX" id="6h2-MV-6x4"/>
                             <constraint firstItem="LER-GP-6mF" firstAttribute="trailing" secondItem="VUU-qE-0Ni" secondAttribute="trailing" constant="20" id="7mn-M4-aTl"/>

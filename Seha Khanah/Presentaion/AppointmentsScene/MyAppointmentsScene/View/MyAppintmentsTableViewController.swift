@@ -60,19 +60,30 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAppointmentsTableViewCell", for: indexPath) as! MyAppointmentsTableViewCell
+        if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "1"{
+            cell.cancelLbl.text = "Cancel".localized
+            cell.cancelImageView.image = UIImage(named: "cancel")
+        }else if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "3"{
+            cell.cancelLbl.text = "Add Review".localized
+                       cell.cancelImageView.image = UIImage(named: "add-comment-button")
+        }
         cell.actionBlock = {
             print(indexPath.row)
             if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "1"
             {
-                self.showAlert(bookingId: cell.bookingId!)
-                
-            }else{
-                self.myAppointmentsPresenter.deletAppointment(index: indexPath.row)
+                self.myAppointmentsPresenter.cancelBooking(id: cell.bookingId!)
 
-                tableView.deleteRows(at: [indexPath], with: .fade)
+            }else if self.myAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "3"{
+                let addReviewStoryboard = UIStoryboard.init(name: "AddReview", bundle: nil)
+                let addReviewViewController = addReviewStoryboard.instantiateViewController(withIdentifier:"AddReviewViewController") as! AddReviewViewController
+                addReviewViewController.bookId = Int(cell.bookingId!)!
+                addReviewViewController.onDoneBlock = {(message) in
+                    self.view.makeToast(message.localized, duration: 3.0, position: .bottom)
+
+                }
+                self.present(addReviewViewController,animated: true)
 
             }
-            tableView.reloadData()
         }
         cell.mapStackViewActionBlock = {
             self.openGoogleMap(lat: cell.lat!, lng: cell.longtiude!)
@@ -91,7 +102,8 @@ class MyAppintmentsTableViewController: UIViewController,UITableViewDelegate,UIT
         let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Yes", style: .default,handler: { action in
-            self.myAppointmentsPresenter.cancelBooking(id: bookingId)
+            
+            
 
             
         }))

@@ -16,7 +16,7 @@ class AddReviewPresenter {
         self.addReviewInteractor = AddReviewInteractor()
     }
     
-    func  AddReview(comment:String,rating:Double,bookId:Int,checkbox:Bool) {
+    func  AddReview(comment:String,rating:Int,bookId:Int,checkbox:Int) {
         
         view?.showIndicator()
         addReviewInteractor.AddReview(comment: comment, rating: rating, bookId: bookId, checkbox: checkbox){ (result,error)  in

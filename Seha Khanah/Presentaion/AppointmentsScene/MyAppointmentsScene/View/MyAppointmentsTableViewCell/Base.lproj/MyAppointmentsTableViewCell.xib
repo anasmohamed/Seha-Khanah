@@ -263,6 +263,8 @@
                 <outlet property="bellPhoto" destination="x1B-hN-og6" id="Z9v-tA-z2r"/>
                 <outlet property="bellView" destination="M8J-Qd-2Ic" id="E35-wi-Jxl"/>
                 <outlet property="cacelView" destination="HwX-kQ-76x" id="aKy-F6-T7a"/>
+                <outlet property="cancelImageView" destination="1N5-rx-9LC" id="RZi-me-h2p"/>
+                <outlet property="cancelLbl" destination="lmo-g4-T3I" id="Jx3-Uz-wct"/>
                 <outlet property="cancelView" destination="HwX-kQ-76x" id="Jv6-oB-WhR"/>
                 <outlet property="containerView" destination="69K-n1-ML7" id="wEb-Kp-fY7"/>
                 <outlet property="dateTimeLbl" destination="2Au-JF-45M" id="blx-bi-syD"/>

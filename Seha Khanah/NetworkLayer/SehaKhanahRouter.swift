@@ -56,7 +56,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     
     case verifyPassword(phonenumber:String,userType:String,code:Int)
     case verifyResetPasswordToken(token:String)
-    case addReview(comment: String,rating:Double,bookId:Int,checkBox:Bool)
+    case addReview(comment: String,rating:Int,bookId:Int,checkBox:Int)
     
     
     var path: String {
@@ -195,14 +195,16 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var httpHeaders = HTTPHeaders()
         
         switch self {
-        case .booking,.updateUser,.userOffersReservations:
+        case .booking,.updateUser,.userOffersReservations,.addReview:
             let token = UserDefaults.standard.string(forKey: "token")
             httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
-            httpHeaders.add(name: "Content-Type", value:"application/X-Access-Token")
+//            httpHeaders.add(name: "Content-Type", value:"application/X-Access-Token")
+            httpHeaders.add(name: "Content-Type", value:"application/x-www-form-urlencoded")
+
         case .loginWithSocial:
             let accesstoken = UserDefaults.standard.string(forKey: "accessToken")
             httpHeaders.add(name: "Authorization", value: "Bearer \(accesstoken!)")
-            httpHeaders.add(name: "Content-Type", value:"aapplication/x-www-form-urlencoded")
+            httpHeaders.add(name: "Content-Type", value:"application/x-www-form-urlencoded")
         //            httpHeaders[NetworkingConstants.contentType] = NetworkingConstants.contentTypeJSON
         default:
             print("Empty request headers")

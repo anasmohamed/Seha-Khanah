@@ -11,6 +11,8 @@ import MOLH
 
 class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPrototol {
     
+    @IBOutlet weak var cancelImageView: UIImageView!
+    @IBOutlet weak var cancelLbl: UILabel!
     @IBOutlet weak var cancelView: UIView!
     @IBOutlet weak var bellView: UIView!
     @IBOutlet weak var doctorTitleUnderPhoneIconLbl: UILabel!
@@ -35,7 +37,7 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
     @IBOutlet weak var visitingStatusLbl: UILabel!
     var lat : String?
     var longtiude : String?
-    var bookingId:String?
+    var bookingId : String?
     override func awakeFromNib() {
         super.awakeFromNib()
         doctorPhoto.layer.cornerRadius = doctorPhoto.frame.width / 2
@@ -97,25 +99,25 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         doctorPhoto.kf.setImage(with: URL(string: (appintment.doctor?.photo)!))
         lat = appintment.doctor!.lat
         longtiude = appintment.doctor!.lng
-        switch appintment.statusId {
-        case "1":
-            visitingStatusLbl.text = "The reservation was successful and the visit did not take place yet".localized
-        case "2":
-            visitingStatusLbl.text = "Reservation canceled".localized
-
-        case "3":
-            visitingStatusLbl.text = "Visited".localized
-
-        default:
-            break
-        }
+//        switch appintment.statusId {
+//        case "1":
+//            visitingStatusLbl.text = "The reservation was successful and the visit did not take place yet".localized
+//        case "2":
+//            visitingStatusLbl.text = "Reservation canceled".localized
+//
+//        case "3":
+//            visitingStatusLbl.text = "Visited".localized
+//
+//        default:
+//            break
+//        }
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = (appintment.doctor?.doctorFirstNameEn)! + " " + (appintment.doctor?.doctorLastNameEn)!
             doctorTitleLbl.text = appintment.doctor?.profissionalTitleEn
             doctorAddressLbl.text = appintment.doctor?.addressEn
             doctorTitleUnderPhoneIconLbl.text = appintment.doctor?.profissionalTitleEn
-            
+            visitingStatusLbl.text = appintment.status?.nameEn
             
         }else
         {
@@ -123,7 +125,8 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
             doctorTitleLbl.text = appintment.doctor?.profissionalTitleAr
             doctorAddressLbl.text = appintment.doctor?.addressAr
             doctorTitleUnderPhoneIconLbl.text = appintment.doctor?.profissionalTitleAr
-            
+            visitingStatusLbl.text = appintment.status?.nameAr
+
             
         }
     }
