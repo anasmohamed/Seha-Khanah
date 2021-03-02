@@ -162,7 +162,6 @@
 		A8A9B375258CF6B7002DA9A0 /* OffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9B374258CF6B7002DA9A0 /* OffersInteractor.swift */; };
 		A8AC86A425875B2600604E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A325875B2600604E64 /* AppDelegate.swift */; };
 		A8AC86A625875B2600604E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A525875B2600604E64 /* SceneDelegate.swift */; };
-		A8AC86A825875B2600604E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86A725875B2600604E64 /* ViewController.swift */; };
 		A8AC86AE25875B2600604E64 /* Seha_Khanah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC86AC25875B2600604E64 /* Seha_Khanah.xcdatamodeld */; };
 		A8AC86B025875B2B00604E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86AF25875B2B00604E64 /* Assets.xcassets */; };
 		A8AC86B325875B2B00604E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */; };
@@ -408,7 +407,6 @@
 		A8AC86A025875B2600604E64 /* Seha Khanah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seha Khanah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8AC86A725875B2600604E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8AC86AD25875B2600604E64 /* Seha_Khanah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Seha_Khanah.xcdatamodel; sourceTree = "<group>"; };
 		A8AC86AF25875B2B00604E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC86B225875B2B00604E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1643,6 +1641,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A880074C25EE6448002E7B34 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC86A325875B2600604E64 /* AppDelegate.swift */,
+				A8AC86A525875B2600604E64 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		A88084DE25AF911200A6EE84 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1795,15 +1802,13 @@
 		A8AC86A225875B2600604E64 /* Seha Khanah */ = {
 			isa = PBXGroup;
 			children = (
+				A880074C25EE6448002E7B34 /* Core */,
 				A8FD3BEC259CBD2D002B0C07 /* Fonts */,
 				A87D28D7258C173700B7957F /* Models */,
 				A83D6EBA258A391F00186693 /* NetworkLayer */,
 				A8AC86C1258790CE00604E64 /* Common */,
 				A8AC86BB25876D2C00604E64 /* Presentaion */,
-				A8AC86A325875B2600604E64 /* AppDelegate.swift */,
 				A8D2E36025AB42CB003C8DA7 /* GoogleService-Info.plist */,
-				A8AC86A525875B2600604E64 /* SceneDelegate.swift */,
-				A8AC86A725875B2600604E64 /* ViewController.swift */,
 				A8AC86AF25875B2B00604E64 /* Assets.xcassets */,
 				A8AC86B125875B2B00604E64 /* LaunchScreen.storyboard */,
 				A8AC86B425875B2B00604E64 /* Info.plist */,
@@ -2446,7 +2451,6 @@
 				A82EA35C258F551000F30C61 /* OffersViewController+MostOrdersOffesTableView.swift in Sources */,
 				A8FD3BF3259CBD5F002B0C07 /* Font.swift in Sources */,
 				A843BBB725A89DC4006231F8 /* MyAppointmentsTebleViewCellPrototol.swift in Sources */,
-				A8AC86A825875B2600604E64 /* ViewController.swift in Sources */,
 				A8E8171B25B2232900DE29A6 /* FavoirteContainerViewController.swift in Sources */,
 				A8567720259208920086CD78 /* SearchViewProtocol.swift in Sources */,
 				A8C7D22125B1015800C24023 /* MostOrderedOffersImage.swift in Sources */,
