@@ -14,7 +14,7 @@ class SettingsTableViewController: UITableViewController {
         ,"Change Language".localized
     ]
     var cellTitles = ["Change Language".localized]
-    var cellImagesWithRegisterdUser = ["user","lock","changelanguage"]
+    var cellImagesWithRegisterdUser = ["user","padlock-1","changelanguage"]
     var cellImages = ["changelanguage"]
     
     var isUserLoggedIn = false

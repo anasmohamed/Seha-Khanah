@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MOLH
 class SuccessBookingViewController: UIViewController {
     
     @IBOutlet weak var successBtn: UIButton!
@@ -28,7 +28,14 @@ class SuccessBookingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dayLbl.text = dayText
-        labServiceLbl.text = labService?.nameEn
+        if MOLHLanguage.currentAppleLanguage() == "en"
+        {
+            labServiceLbl.text = labService?.nameEn
+
+        }else{
+            labServiceLbl.text = labService?.nameAr
+
+        }
         labNameLbl.text = labName
         locationLbl.text = labAddress
         // Do any additional setup after loading the view.
