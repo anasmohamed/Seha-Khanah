@@ -8,12 +8,13 @@
 
 import UIKit
 import MBRadioCheckboxButton
-class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
+class EditProfileViewController: UIViewController ,EditUserProfileProtocol,UITextFieldDelegate{
     
     
     let datePicker = UIDatePicker()
     let genderRadioBtnsGroup = RadioButtonContainer()
     var selectedGender = "1"
+    var finalPhoneNumber = ""
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     @IBOutlet weak var femaleRadioBtn: RadioButton!
@@ -34,24 +35,26 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         mobileNumberTextField.text = UserDefaults.standard.string(forKey:"phoneNumber")
         selectedGender = UserDefaults.standard.string(forKey:"genderId" )!
         setupToolbar()
+        mobileNumberTextField.delegate = self
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func saveEditesBtnDidTapped(_ sender: Any) {
-        guard  let email = emailTextField.text, let userName = fullNameTExtField.text,let phone = mobileNumberTextField.text,let birthday = dateOfBirthTextField.text  else {
+        guard  let email = emailTextField.text, let userName = fullNameTExtField.text,var phone = mobileNumberTextField.text,let birthday = dateOfBirthTextField.text  else {
             return
         }
-        guard phone.count == 13 else {
-            return
+       if !phone.isEmpty{
+        phone = String(phone.suffix(10))
+        print("phone \(phone)")
+        finalPhoneNumber = "+964" + phone
         }
-        
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let date = dateFormatter.date(from:birthday)!
         print(date)
-        editProfilePresenter.editUserProfile(email: email, name: userName, phoneNumber: phone, genderId: selectedGender, birthday: date)
+        editProfilePresenter.editUserProfile(email: email, name: userName, phoneNumber: finalPhoneNumber, genderId: selectedGender, birthday: date)
     }
     func showError(error: String) {
         indicator.stopAnimating()
@@ -79,6 +82,28 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol{
         maleRadioBtn.style = .circle
         femaleRadioBtn.style = .circle
         
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //For mobile numer validation
+       
+        if textField == mobileNumberTextField {
+            let numberStr: String = string
+            let formatter: NumberFormatter = NumberFormatter()
+            formatter.locale = Locale(identifier: "EN")
+            if let final = formatter.number(from: numberStr) {
+                textField.text =  "\(textField.text ?? "")\(final)"
+            }
+            let  char = string.cString(using: String.Encoding.utf8)!
+            let isBackSpace = strcmp(char, "\\b")
+            
+            if (isBackSpace == -92) {
+                print("Backspace was pressed")
+                return true
+            }
+            return false
+        }
+        return true
     }
     func setupToolbar(){
         //Create a toolbar

@@ -18,6 +18,7 @@ class ResetPasswordViewController: UIViewController,ResetPasswordProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         resetPasswordPresenter = ResetPasswordPresenter(view:self)
+        setupToolbar()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +40,29 @@ class ResetPasswordViewController: UIViewController,ResetPasswordProtocol {
         view.layer.rasterizationScale = UIScreen.main.scale
         view.layer.cornerRadius = 5
     }
+    func setupToolbar(){
+        //Create a toolbar
+        let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
+     let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
+        bar.items = [flexSpace, flexSpace, doneBtn]
+        bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
+        newPasswordTextField.inputAccessoryView = bar
+        oldPasswordTextField.inputAccessoryView = bar
+
+    }
+    @objc func dismissKeyboard() {
+           //Causes the view (or one of its embedded text fields) to resign the first responder status.
+           view.endEditing(true)
+       }
     @IBAction func saveChangesBtnDidTapped(_ sender: Any) {
         guard let oldPassword = oldPasswordTextField.text,let newPassword = newPasswordTextField.text else {
             return

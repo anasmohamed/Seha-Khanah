@@ -24,6 +24,7 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
         cornerRadiusAndShodow(view:forgetPasswordView)
         presenter = ForgetPasswordPresenter(view: self)
         self.navigationItem.title = "reset password".localized
+        setupToolbar()
         // Do any additional setup after loading the view.
     }
     
@@ -52,7 +53,27 @@ class ForgetPasswordViewController: UIViewController,ForgetPasswordProtocol {
     func hideIndicator() {
         indicator.stopAnimating()
     }
-    
+    func setupToolbar(){
+        //Create a toolbar
+        let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
+     let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
+        bar.items = [flexSpace, flexSpace, doneBtn]
+        bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
+        phoneNumberTextField.inputAccessoryView = bar
+    }
+    @objc func dismissKeyboard() {
+           //Causes the view (or one of its embedded text fields) to resign the first responder status.
+           view.endEditing(true)
+       }
     func getMessageSuccess(user: User) {
         indicator.stopAnimating()
         self.view.makeToast("SMS send successfully".localized, duration: 3.0, position: .bottom)

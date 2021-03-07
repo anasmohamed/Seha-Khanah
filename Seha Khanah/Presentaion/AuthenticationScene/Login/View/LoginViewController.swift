@@ -112,10 +112,7 @@ class LoginViewController: UIViewController ,LoginProtocol{
     func isKeyPresentInUserDefaults(key: String) -> Bool {
         return UserDefaults.standard.object(forKey: key) != nil
     }
-    @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
+   
     func showIndicator() {
         indicator.startAnimating()
     }
@@ -158,7 +155,10 @@ class LoginViewController: UIViewController ,LoginProtocol{
            passwordTextField.inputAccessoryView = bar
            emailTextField.inputAccessoryView = bar
        }
-       
+       @objc func dismissKeyboard() {
+              //Causes the view (or one of its embedded text fields) to resign the first responder status.
+              view.endEditing(true)
+          }
        
     func loginSuccessNavigation(user:User)  {
         indicator.stopAnimating()

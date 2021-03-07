@@ -9,7 +9,7 @@
 import UIKit
 import MOLH
 
-class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPrototol {
+class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPrototol,MyLabAppointmentTableViewCellPrototol {
     
     @IBOutlet weak var cancelImageView: UIImageView!
     @IBOutlet weak var cancelLbl: UILabel!
@@ -111,6 +111,7 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
 //        default:
 //            break
 //        }
+        doctorTitleUnderPhoneIconLbl.textAlignment = .natural
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = (appintment.doctor?.doctorFirstNameEn)! + " " + (appintment.doctor?.doctorLastNameEn)!
@@ -131,5 +132,43 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
         }
     }
     
-    
+    func configure(appintment: MyLabAppointment) {
+            bookingId = appintment.id
+            dateTimeLbl.text = appintment.bookingDate
+        doctorPhoto.kf.setImage(with: URL(string: (appintment.lab?.photo)!))
+            lat = appintment.lab!.latitude
+        longtiude = appintment.lab!.logitude
+    //        switch appintment.statusId {
+    //        case "1":
+    //            visitingStatusLbl.text = "The reservation was successful and the visit did not take place yet".localized
+    //        case "2":
+    //            visitingStatusLbl.text = "Reservation canceled".localized
+    //
+    //        case "3":
+    //            visitingStatusLbl.text = "Visited".localized
+    //
+    //        default:
+    //            break
+    //        }
+        doctorTitleUnderPhoneIconLbl.textAlignment = .center
+
+            if  MOLHLanguage.currentAppleLanguage() == "en"
+            {
+                doctorNameLbl.text = (appintment.lab?.labNameEn)!
+                doctorTitleLbl.text = (appintment.lab?.doctorFirstNameEn)! + " " + (appintment.lab?.doctorLastNameEn)!
+                doctorAddressLbl.text = appintment.lab?.addressEn
+                doctorTitleUnderPhoneIconLbl.text = "lab".localized
+                visitingStatusLbl.text = appintment.status?.nameEn
+                
+            }else
+            {
+                doctorNameLbl.text = (appintment.lab?.labNameAr)
+                 doctorTitleLbl.text = (appintment.lab?.doctorFirstNameAr)! + " " + (appintment.lab?.doctorLastNameAr)!
+                doctorAddressLbl.text = appintment.lab?.addressAr
+                doctorTitleUnderPhoneIconLbl.text = "lab".localized
+                visitingStatusLbl.text = appintment.status?.nameAr
+
+                
+            }
+        }
 }

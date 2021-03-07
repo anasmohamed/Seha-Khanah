@@ -162,7 +162,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glI-qU-ud0">
                                         <rect key="frame" x="262" y="214.5" width="35" height="35"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="MXs-6Z-jEy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin-3" translatesAutoresizingMaskIntoConstraints="NO" id="MXs-6Z-jEy">
                                                 <rect key="frame" x="2.5" y="2.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="4iG-0o-WAm"/>
@@ -184,7 +184,7 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="REO-s3-m5P">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin-3" translatesAutoresizingMaskIntoConstraints="NO" id="REO-s3-m5P">
                                         <rect key="frame" x="10" y="120" width="25" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FBK-f8-0Le"/>
@@ -286,7 +286,7 @@
         <image name="calendar-4-24" width="24" height="24"/>
         <image name="cancel" width="16" height="16"/>
         <image name="icons8-bell-24" width="24" height="24"/>
-        <image name="location-pin" width="16" height="16"/>
+        <image name="location-pin-3" width="64" height="64"/>
         <image name="phone-26" width="26" height="26"/>
     </resources>
 </document>

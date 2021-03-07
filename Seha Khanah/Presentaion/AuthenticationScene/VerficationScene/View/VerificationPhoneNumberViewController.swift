@@ -21,23 +21,24 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
         presenter = VerificationPhoneNumberPresenter(view: self)
         presenter.verifyPhoneNumber(phoneNumber: phoneNumber!, userType:"client")
         self.navigationItem.title = "Verify".localized
+        setupToolbar()
         // Do any additional setup after loading the view.
     }
     @IBAction func sendConfirmationCodeBtnDidTapped(_ sender: Any) {
-        //        guard let confirmationCode = confirmationCodeTextField.text else {
-        //            return
-        //        }
-        //        if !confirmationCode.isEmpty{
-        //            if isForgetPassword{
-        //                presenter.verifyPassword(phoneNumber: phoneNumber ?? "", userType:"client" ,code:Int(confirmationCode)!)
-        //            }else{
-        //                presenter.verifyUser(phoneNumber: phoneNumber ?? "" , userType:"client" ,code:Int(confirmationCode)!)
-        //            }
-        //
-        //        }else{
-        //            self.view.makeToast("Enter Missing Data".localized, duration: 3.0, position: .bottom)
-        //
-        //        }
+                guard let confirmationCode = confirmationCodeTextField.text else {
+                    return
+                }
+                if !confirmationCode.isEmpty{
+                    if isForgetPassword{
+                        presenter.verifyPassword(phoneNumber: phoneNumber ?? "", userType:"client" ,code:Int(confirmationCode)!)
+                    }else{
+                        presenter.verifyUser(phoneNumber: phoneNumber ?? "" , userType:"client" ,code:Int(confirmationCode)!)
+                    }
+        
+                }else{
+                    self.view.makeToast("Enter Missing Data".localized, duration: 3.0, position: .bottom)
+        
+                }
         
     }
     
@@ -65,6 +66,27 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
         self.view.makeToast(error, duration: 3.0, position: .bottom)
         
     }
+    func setupToolbar(){
+        //Create a toolbar
+        let bar = UIToolbar()
+        
+        //Create a done button with an action to trigger our function to dismiss the keyboard
+     let doneBtn = UIBarButtonItem(title: "Done".localized, style: .plain, target: self, action: #selector(dismissKeyboard))
+        
+        //Create a felxible space item so that we can add it around in toolbar to position our done button
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        //Add the created button items in the toobar
+        bar.items = [flexSpace, flexSpace, doneBtn]
+        bar.sizeToFit()
+        
+        //Add the toolbar to our textfield
+        confirmationCodeTextField.inputAccessoryView = bar
+    }
+    @objc func dismissKeyboard() {
+           //Causes the view (or one of its embedded text fields) to resign the first responder status.
+           view.endEditing(true)
+       }
     func verifyUserSuccuess(message: String) {
         indicator.stopAnimating()
         if isForgetPassword

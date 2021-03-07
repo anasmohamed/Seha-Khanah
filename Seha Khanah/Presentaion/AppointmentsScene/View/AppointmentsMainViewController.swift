@@ -15,12 +15,15 @@ class AppointmentsMainViewController: UIViewController {
     @IBOutlet weak var noUserLoggedInStackView: UIStackView!
     @IBOutlet weak var segmentCotrol: UISegmentedControl!
     @IBOutlet weak var myAppointmentsView: UIView!
+    @IBOutlet weak var myLabsAppointmentsView: UIView!
     var isUserLoggedIn = false
     @IBOutlet weak var myOffersView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedin")
+        myOffersView.alpha = 0
+        myLabsAppointmentsView.alpha = 0
         if MOLHLanguage.currentAppleLanguage() == "ar"
         {
             exitArrowImage.image = exitArrowImage.image?.flipIfNeeded()
@@ -33,6 +36,7 @@ class AppointmentsMainViewController: UIViewController {
         }else{
             myAppointmentsView.alpha = 0
             myOffersView.alpha = 0
+            myLabsAppointmentsView.alpha = 0
             segmentCotrol.isHidden = true
             noUserLoggedInStackView.isHidden = false
         }
@@ -49,10 +53,18 @@ class AppointmentsMainViewController: UIViewController {
         if segment.selectedSegmentIndex == 0 {
             myAppointmentsView.alpha = 1
             myOffersView.alpha = 0
+            myLabsAppointmentsView.alpha = 0
             
-        } else {
+        } else if segment.selectedSegmentIndex == 1 {
             myAppointmentsView.alpha = 0
             myOffersView.alpha = 1
+            myLabsAppointmentsView.alpha = 0
+
+        }else{
+           myAppointmentsView.alpha = 0
+            myOffersView.alpha = 0
+            myLabsAppointmentsView.alpha = 1
+            
         }
         
     }

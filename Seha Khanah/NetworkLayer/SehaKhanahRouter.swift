@@ -58,7 +58,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case verifyResetPasswordToken(token:String)
     case addReview(comment: String,rating:Int,bookId:Int,checkBox:Int)
     
-    
+    case getUserLabsBookings
     var path: String {
         switch self {
         case .getOffersCategories:
@@ -139,6 +139,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             return NetworkingConstants.verifyResetPasswordToken
         case .addReview:
             return NetworkingConstants.addReview
+        case .getUserLabsBookings:
+            return NetworkingConstants.getUserLabsBookings
         }
     }
     
@@ -169,6 +171,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .showOfferDetails,
              .userOffersReservations,
              .offersForSpecificCategory,
+             .getUserLabsBookings,
              .verifyResetPasswordToken:
             return .get
         case .doctorReservation,
@@ -195,7 +198,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         var httpHeaders = HTTPHeaders()
         
         switch self {
-        case .booking,.updateUser,.userOffersReservations,.addReview,.doctorReservation,.labReservation,.userOffersReservations:
+        case .booking,.updateUser,.userOffersReservations,.addReview,.doctorReservation,.labReservation,.userOffersReservations,.getUserLabsBookings:
             let token = UserDefaults.standard.string(forKey: "token")
             print(token)
             httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
@@ -376,6 +379,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .searchForLabByAreaId,
              .getAllLabs,
              .booking,
+             .getUserLabsBookings,
              .searchByAreaAndSpecialty,
              .offerSlidShow,
              .userOffersReservations:

@@ -1,8 +1,10 @@
 
 /* Class = "UISegmentedControl"; j3a-yK-GFD.segmentTitles[0] = "My Appointments"; ObjectID = "j3a-yK-GFD"; */
-"j3a-yK-GFD.segmentTitles[0]" = "مواعيدى";
+"j3a-yK-GFD.segmentTitles[0]" = "العيادات";
 
 /* Class = "UISegmentedControl"; j3a-yK-GFD.segmentTitles[1] = "Offers"; ObjectID = "j3a-yK-GFD"; */
 "j3a-yK-GFD.segmentTitles[1]" = "العروض";
+
+"j3a-yK-GFD.segmentTitles[2]" = "مختبرات";
 
 "eKK-lB-zzG.text" = "لعرض الحجوزات الرجاء تسجيل الدخول";

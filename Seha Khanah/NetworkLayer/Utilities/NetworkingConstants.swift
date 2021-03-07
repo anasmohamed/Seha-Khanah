@@ -105,6 +105,8 @@ class NetworkingConstants {
     static let getUserTokenScopeParamter = "scope"
     
     static let getUserBookings = "api/user/booking"
+    static let getUserLabsBookings = "api/user/laboratory/booking"
+
     static let cancelBooking = "api/user/booking/cancle"
     
     static let resetPassword = "api/password/reset"

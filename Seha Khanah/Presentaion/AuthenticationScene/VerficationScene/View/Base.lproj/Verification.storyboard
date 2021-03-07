@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email (2)" translatesAutoresizingMaskIntoConstraints="NO" id="0wd-wj-f8W">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-11" translatesAutoresizingMaskIntoConstraints="NO" id="0wd-wj-f8W">
                                 <rect key="frame" x="157" y="109" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="AWP-vJ-DDF"/>
@@ -31,7 +31,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The confirmation code will be sent in an SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-pE-BYE">
                                 <rect key="frame" x="78" y="226" width="258.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="13"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Confirmation Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqb-VZ-hio">
@@ -145,6 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="email (2)" width="64" height="64"/>
+        <image name="email-11" width="256" height="256"/>
     </resources>
 </document>
