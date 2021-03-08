@@ -30,18 +30,19 @@
                                     <segment title="Doctors"/>
                                     <segment title="Offers"/>
                                 </segments>
+                                <color key="tintColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentControllDidTappedWithSegment:" destination="xCR-ao-xYY" eventType="valueChanged" id="QjC-rR-oGc"/>
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I58-7T-NEI">
-                                <rect key="frame" x="0.0" y="85" width="414" height="777"/>
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
                                 <connections>
                                     <segue destination="UYh-Ql-Rlp" kind="embed" id="Zcx-1W-0K9"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt1-N6-yau">
-                                <rect key="frame" x="0.0" y="93" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
                                 <connections>
                                     <segue destination="VhG-FR-LRn" kind="embed" id="WAx-UJ-jOV"/>
                                 </connections>
@@ -52,8 +53,8 @@
                             <constraint firstItem="Tt1-N6-yau" firstAttribute="trailing" secondItem="ICj-7A-GcR" secondAttribute="trailing" id="1d4-7k-Y1L"/>
                             <constraint firstItem="ICj-7A-GcR" firstAttribute="bottom" secondItem="I58-7T-NEI" secondAttribute="bottom" id="244-ea-Mxr"/>
                             <constraint firstItem="8We-TW-m6e" firstAttribute="top" secondItem="ICj-7A-GcR" secondAttribute="top" constant="10" id="A38-Sy-RkP"/>
-                            <constraint firstItem="Tt1-N6-yau" firstAttribute="top" secondItem="8We-TW-m6e" secondAttribute="bottom" constant="8" id="Pw7-kf-lio"/>
-                            <constraint firstItem="I58-7T-NEI" firstAttribute="top" secondItem="8We-TW-m6e" secondAttribute="bottom" id="ZvO-5Y-Wds"/>
+                            <constraint firstItem="Tt1-N6-yau" firstAttribute="top" secondItem="8We-TW-m6e" secondAttribute="bottom" constant="5" id="Pw7-kf-lio"/>
+                            <constraint firstItem="I58-7T-NEI" firstAttribute="top" secondItem="8We-TW-m6e" secondAttribute="bottom" constant="5" id="ZvO-5Y-Wds"/>
                             <constraint firstItem="ICj-7A-GcR" firstAttribute="trailing" secondItem="I58-7T-NEI" secondAttribute="trailing" id="cxY-IN-W5n"/>
                             <constraint firstItem="Tt1-N6-yau" firstAttribute="leading" secondItem="ICj-7A-GcR" secondAttribute="leading" id="icK-4f-aGQ"/>
                             <constraint firstItem="I58-7T-NEI" firstAttribute="leading" secondItem="ICj-7A-GcR" secondAttribute="leading" id="pIv-82-PXh"/>
@@ -77,15 +78,15 @@
             <objects>
                 <viewController id="VhG-FR-LRn" customClass="FavoriteOffersTableViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ea-0E-mFR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-vP-OkC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="728"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lWz-hE-khO">
-                                <rect key="frame" x="144" y="374" width="126" height="21.5"/>
+                                <rect key="frame" x="144" y="375.5" width="126" height="21.5"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-PU-vA9">
                                         <rect key="frame" x="-12" y="0.0" width="150" height="150"/>
@@ -127,15 +128,15 @@
             <objects>
                 <viewController id="UYh-Ql-Rlp" customClass="FavoriteDoctorsViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mfw-Co-wdA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-ir-DqO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-oz-Pbq">
-                                <rect key="frame" x="132" y="299" width="150" height="179.5"/>
+                                <rect key="frame" x="132" y="296.5" width="150" height="179.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="bru-b4-w12">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>

@@ -67,6 +67,8 @@ class EditProfileViewController: UIViewController ,EditUserProfileProtocol,UITex
         toolBar.setItems([doneBtn], animated: true)
         dateOfBirthTextField.inputAccessoryView = toolBar
         dateOfBirthTextField.inputView = datePicker
+        datePicker.locale = Locale(identifier: "en_US")
+
         datePicker.datePickerMode = .date
     }
     func setupLanguageBtns() {

@@ -139,3 +139,5 @@
 "Cancel" = "إلغاء";
 
 "lab" = "مختبر";
+
+"We cant find a user with that phonenumber." = "هذا الرقم غير مسجل لدينا";

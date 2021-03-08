@@ -101,6 +101,8 @@ class SearchBySpecialtyViewController: UIViewController ,SearchViewProtocol,UITa
     }
     
     func searchResults() {
+        indicator.stopAnimating()
+
         searchBySpecialtyResultTableView.isHidden = false
         searchBySpecialtyResultTableView.reloadData()
         noDataFoundStackView.isHidden = true

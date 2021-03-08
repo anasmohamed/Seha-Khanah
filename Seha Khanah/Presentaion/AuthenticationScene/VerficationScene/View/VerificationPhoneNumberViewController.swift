@@ -51,13 +51,14 @@ class VerificationPhoneNumberViewController: UIViewController ,VerificationPhone
     }
     
     func hideIndicator() {
-        indicator.startAnimating()
+        indicator.stopAnimating()
     }
     
     func sendMessageSuccuess(message: String) {
         indicator.stopAnimating()
         
-        
+        self.view.makeToast(message.localized, duration: 3.0, position: .bottom)
+
         print(message)
     }
     

@@ -29,6 +29,7 @@ class FavoirteContainerViewController: UIViewController {
             favoriteOffersView.alpha = 0
             segmentCotrol.isHidden = true
         }
+        
         let font = UIFont(name: "AGOOGLE", size: 12.0)
         segmentCotrol.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
         // Do any additional setup after loading the view.

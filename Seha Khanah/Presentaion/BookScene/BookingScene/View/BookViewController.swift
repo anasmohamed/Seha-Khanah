@@ -47,7 +47,7 @@ class BookViewController: UIViewController,BookingProtocol {
     var profissionalTitle: String?
     var doctorId : String?
     var bookingForAnotherPatientCheck = "0"
-    
+    var finalPhoneNumber = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         labImageView.layer.cornerRadius = labImageView.frame.width / 2
@@ -154,6 +154,11 @@ class BookViewController: UIViewController,BookingProtocol {
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
         print (date! + timeLbl.text!)
         if !emailTextField.text!.isEmpty && !mobileNumberTextField.text!.isEmpty && !fullNameTextField.text!.isEmpty{
+            if !mobileNumberTextField.text!.isEmpty{
+                let phone = String(mobileNumberTextField.text!.suffix(10))
+                print("phone \(phone)")
+                finalPhoneNumber = "+964" + phone
+            }
             var timeWithoutAMOrPM : String?
             if  (timeLbl.text?.contains("am"))!
             {
@@ -165,9 +170,9 @@ class BookViewController: UIViewController,BookingProtocol {
             }
             print (date! + " " + timeWithoutAMOrPM!)
             if isDoctor{
-                preseter?.bookDoctor(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
+                preseter?.bookDoctor(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:finalPhoneNumber , bookingDate:date! + " " + timeWithoutAMOrPM!,doctorId:labId! , checkbox: bookingForAnotherPatientCheck)
             }else{
-                preseter?.bookLab(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:mobileNumberTextField.text! , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
+                preseter?.bookLab(name:fullNameTextField.text! , email: emailTextField.text!, phoneNumber:finalPhoneNumber , bookingDate:date! + " " + timeWithoutAMOrPM!,labId:labId! , checkbox: "0")
             }
             
         }
