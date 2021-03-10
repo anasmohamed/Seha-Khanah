@@ -42,14 +42,14 @@ func getMyAppintments() {
 func cancelBooking(id:String) {
     
     view?.showIndicator()
-    myLabsAppointmentsInteractor.cancelBooking(id:id){ (result,error)  in
+    myLabsAppointmentsInteractor.cancelLabBooking(id:id){ (result,error)  in
         if let error = error {
             print("errrror\(error)")
             self.view?.showError(error: error.localizedDescription)
         }
         else {
             if result != nil{
-                self.view?.getMyLabsAppointmentsSuccess()
+                self.view?.cancelReservationSuccess()
 
             }
         }

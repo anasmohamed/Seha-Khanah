@@ -13,4 +13,6 @@ protocol MyLabsAppointmentsProtocol:class {
     func getMyLabsAppointmentsSuccess()
     func showError(error: String)
     func showNoDataFoundStackView()
+    func cancelReservationSuccess()
+
 }

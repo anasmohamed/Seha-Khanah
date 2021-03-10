@@ -11,12 +11,14 @@ import ImageSlideshow
 
 class LogoutSliderViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
+    var isLoginController = false
     
-
+    @IBOutlet weak var ButtonsStackView: UIStackView!
+    @IBOutlet weak var continueBtn: UIButton!
     @IBOutlet weak var bookNowBtn: UIButton!
     @IBOutlet weak var sliderImageVIew: ImageSlideshow!
     let localSource = [BundleImageSource(imageString: "slider-image-1"), BundleImageSource(imageString: "slider-image-2"), BundleImageSource(imageString: "slider-image-3")]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 10
@@ -27,7 +29,7 @@ class LogoutSliderViewController: UIViewController {
         sliderImageVIew.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
         sliderImageVIew.contentScaleMode = UIViewContentMode.scaleAspectFill
         
-        
+        continueBtn.layer.cornerRadius = 10
         let pageControl = UIPageControl()
         pageControl.currentPageIndicatorTintColor = UIColor.lightGray
         pageControl.pageIndicatorTintColor = UIColor.black
@@ -37,16 +39,30 @@ class LogoutSliderViewController: UIViewController {
         sliderImageVIew.delegate = self
         sliderImageVIew.slideshowInterval = 3.0
         sliderImageVIew.setImageInputs(localSource)
+        if isLoginController
+        {
+            ButtonsStackView.isHidden = true
+            continueBtn.isHidden = false
+        }else
+        {
+            ButtonsStackView.isHidden = false
+            continueBtn.isHidden = true
+        }
         
-       
         
         
         
-
+        
         sliderImageVIew.delegate = self
- 
+        
     }
     
+    @IBAction func continueBtnDidTapped(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
+        let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
+        tabBarViewController.modalPresentationStyle = .fullScreen
+        self.present(tabBarViewController, animated: true, completion: nil)
+    }
     
     @IBAction func bookNowBtnDidTapped(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
@@ -59,14 +75,14 @@ class LogoutSliderViewController: UIViewController {
         
         let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
         let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-
+        
         let navigationController = UINavigationController.init(rootViewController: loginViewController)
-     
+        
         navigationController.modalPresentationStyle = .fullScreen
-
+        
         self.present(navigationController, animated: true, completion: nil)
-//        self.navigationController?.presentingViewController?.present(loginViewController, animated:true , completion: nil)
-//        self.navigationController!.pushViewController(loginViewController, animated: true)
+        //        self.navigationController?.presentingViewController?.present(loginViewController, animated:true , completion: nil)
+        //        self.navigationController!.pushViewController(loginViewController, animated: true)
         
     }
     /*

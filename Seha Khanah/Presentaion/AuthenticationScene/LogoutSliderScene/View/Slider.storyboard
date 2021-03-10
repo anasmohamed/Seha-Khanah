@@ -22,11 +22,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNb-AG-9Jb" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="20" y="118" width="374" height="645"/>
+                                <rect key="frame" x="20" y="118" width="374" height="654"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lkt-AC-q47">
-                                <rect key="frame" x="20" y="793" width="374" height="40"/>
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLM-ad-nev">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
@@ -54,13 +54,31 @@
                                     <constraint firstAttribute="height" constant="40" id="ntl-UK-oux"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHR-vc-EWW">
+                                <rect key="frame" x="118.5" y="802" width="177" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hRv-5g-19c"/>
+                                    <constraint firstAttribute="width" constant="177" id="uxX-qX-q4T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AGOOGLE" family="A GOOGLE" pointSize="17"/>
+                                <state key="normal" title="استمرار">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueBtnDidTapped:" destination="7eB-ek-BpO" eventType="touchUpInside" id="cQT-vo-Kjx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="MHR-vc-EWW" firstAttribute="top" secondItem="eNb-AG-9Jb" secondAttribute="bottom" constant="30" id="HR6-CM-viw"/>
                             <constraint firstItem="eNb-AG-9Jb" firstAttribute="leading" secondItem="vja-f6-5vz" secondAttribute="leading" constant="20" id="NaC-NO-D7f"/>
                             <constraint firstItem="Lkt-AC-q47" firstAttribute="leading" secondItem="wh2-mC-BrC" secondAttribute="leading" constant="20" id="Pfm-pE-9P3"/>
                             <constraint firstItem="wh2-mC-BrC" firstAttribute="trailing" secondItem="Lkt-AC-q47" secondAttribute="trailing" constant="20" id="X4k-bt-XrC"/>
-                            <constraint firstItem="wh2-mC-BrC" firstAttribute="bottom" secondItem="Lkt-AC-q47" secondAttribute="bottom" constant="29" id="c6c-6z-Klk"/>
+                            <constraint firstItem="wh2-mC-BrC" firstAttribute="bottom" secondItem="MHR-vc-EWW" secondAttribute="bottom" constant="20" id="m7h-Kw-wss"/>
+                            <constraint firstItem="eNb-AG-9Jb" firstAttribute="centerX" secondItem="wh2-mC-BrC" secondAttribute="centerX" id="owZ-SI-F3b"/>
+                            <constraint firstItem="MHR-vc-EWW" firstAttribute="centerX" secondItem="Lkt-AC-q47" secondAttribute="centerX" id="s08-OT-9Us"/>
                             <constraint firstItem="Lkt-AC-q47" firstAttribute="top" secondItem="eNb-AG-9Jb" secondAttribute="bottom" constant="30" id="sEy-r1-uht"/>
                             <constraint firstAttribute="trailing" secondItem="eNb-AG-9Jb" secondAttribute="trailing" constant="20" id="sdx-xX-XgD"/>
                             <constraint firstItem="eNb-AG-9Jb" firstAttribute="top" secondItem="wh2-mC-BrC" secondAttribute="top" constant="30" id="xZX-11-71e"/>
@@ -69,7 +87,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="9B6-Cj-sOr"/>
                     <connections>
+                        <outlet property="ButtonsStackView" destination="Lkt-AC-q47" id="X4z-xT-Fho"/>
                         <outlet property="bookNowBtn" destination="RLM-ad-nev" id="CDf-y2-k1t"/>
+                        <outlet property="continueBtn" destination="MHR-vc-EWW" id="KRd-z9-OJg"/>
                         <outlet property="loginBtn" destination="zwq-IP-9RL" id="VTd-8F-lCv"/>
                         <outlet property="sliderImageVIew" destination="eNb-AG-9Jb" id="Exx-ml-Fus"/>
                     </connections>

@@ -47,7 +47,7 @@ class MyAppointmentsPresenter {
             }
             else {
                 if result != nil{
-                    self.view?.getMyAppointmentsSuccess()
+                    self.view?.cancelReservationSuccess()
 
                 }
             }

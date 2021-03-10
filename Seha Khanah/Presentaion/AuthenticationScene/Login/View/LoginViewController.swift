@@ -162,10 +162,11 @@ class LoginViewController: UIViewController ,LoginProtocol{
        
     func loginSuccessNavigation(user:User)  {
         indicator.stopAnimating()
-               let storyboard = UIStoryboard.init(name: "Search", bundle: nil)
-               let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
-               tabBarViewController.modalPresentationStyle = .fullScreen
-               self.present(tabBarViewController, animated: true, completion: nil)
+        let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
+        logoutSliderViewController.modalPresentationStyle = .fullScreen
+        logoutSliderViewController.isLoginController = true
+        self.navigationController!.present(logoutSliderViewController, animated: true)
+              
                UserDefaults.standard.set(true, forKey: "isUserLoggedin")
                UserDefaults.standard.set(user.email, forKey: "email")
                UserDefaults.standard.set(user.birthday, forKey: "birthday")

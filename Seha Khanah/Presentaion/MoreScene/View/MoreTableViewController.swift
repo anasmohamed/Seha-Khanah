@@ -85,22 +85,7 @@ class MoreTableViewController: UITableViewController {
                 self.navigationController!.pushViewController(favoirteContainerViewController, animated: true)
             case 5:
                 
-                let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
-                logoutSliderViewController.modalPresentationStyle = .fullScreen
-                self.navigationController!.present(logoutSliderViewController, animated: true)
-                if UserDefaults.standard.bool(forKey: "loginWithFacebook")
-                {
-                     let manager = LoginManager()
-                     manager.logOut()
-                }
-                UserDefaults.standard.removeObject(forKey: "isUserLoggedin")
-                UserDefaults.standard.removeObject(forKey: "email")
-                UserDefaults.standard.removeObject(forKey: "birthday")
-                UserDefaults.standard.removeObject(forKey: "genderId")
-                UserDefaults.standard.removeObject(forKey: "id")
-                UserDefaults.standard.removeObject(forKey: "name")
-                UserDefaults.standard.removeObject(forKey: "phoneNumber")
-                UserDefaults.standard.removeObject(forKey: "token")
+                showAlert()
                 
             default:
                 break
@@ -123,25 +108,41 @@ class MoreTableViewController: UITableViewController {
                 let howTheAppWorksViewController = UIStoryboard.init(name: "HowTheAppWorks", bundle: nil).instantiateViewController(withIdentifier: "HowTheAppWorksViewController") as! HowTheAppWorksViewController
                 self.navigationController!.pushViewController(howTheAppWorksViewController, animated: true)
             case 4:
-                
-                let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
-                logoutSliderViewController.modalPresentationStyle = .fullScreen
-                self.navigationController!.present(logoutSliderViewController, animated: true)
-                UserDefaults.standard.removeObject(forKey: "isUserLoggedin")
-                UserDefaults.standard.removeObject(forKey: "email")
-                UserDefaults.standard.removeObject(forKey: "birthday")
-                UserDefaults.standard.removeObject(forKey: "genderId")
-                UserDefaults.standard.removeObject(forKey: "id")
-                UserDefaults.standard.removeObject(forKey: "name")
-                UserDefaults.standard.removeObject(forKey: "phoneNumber")
-                UserDefaults.standard.removeObject(forKey: "token")
-                
+                showAlert()
+               
             default:
                 break
             }
         }
     }
-    
+    func showAlert()  {
+          let alert = UIAlertController(title: "Logout".localized, message: "Do you want to log out?".localized, preferredStyle: .alert)
+          
+          alert.addAction(UIAlertAction(title: "Yes".localized, style: .default,handler: { action in
+              let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
+              logoutSliderViewController.modalPresentationStyle = .fullScreen
+              self.navigationController!.present(logoutSliderViewController, animated: true)
+              if UserDefaults.standard.bool(forKey: "loginWithFacebook")
+              {
+                   let manager = LoginManager()
+                   manager.logOut()
+              }
+              UserDefaults.standard.removeObject(forKey: "isUserLoggedin")
+              UserDefaults.standard.removeObject(forKey: "email")
+              UserDefaults.standard.removeObject(forKey: "birthday")
+              UserDefaults.standard.removeObject(forKey: "genderId")
+              UserDefaults.standard.removeObject(forKey: "id")
+              UserDefaults.standard.removeObject(forKey: "name")
+              UserDefaults.standard.removeObject(forKey: "phoneNumber")
+              UserDefaults.standard.removeObject(forKey: "token")
+                             
+              
+              
+          }))
+          alert.addAction(UIAlertAction(title: "No".localized, style: .cancel, handler: nil))
+          
+          self.present(alert, animated: true,completion: nil)
+      }
 }
 
 

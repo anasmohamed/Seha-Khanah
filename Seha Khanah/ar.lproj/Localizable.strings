@@ -83,7 +83,7 @@
 
 "Region" = "المنطقة";
 
-"Pharmacy" = "الصدليات";
+"Pharmacy" = "الصيدليات";
 
 "Specialty" = "التخصص";
 
@@ -141,3 +141,19 @@
 "lab" = "مختبر";
 
 "We cant find a user with that phonenumber." = "هذا الرقم غير مسجل لدينا";
+
+"Booking Cancel" = "إلغاء الحجز";
+//
+"Are you sure to cancel the reservation?" = "هل انت متاكد من الغاء الحجز؟";
+//
+"Yes" = "نعم";
+//
+"No" = "لا";
+
+"Reservation Cancelled Successfully" = "تم إلغاء الحجز بنجاح";
+
+"Doctor" = "دكتور";
+
+"Logout" = "تسجيل خروج";
+
+"Do you want to log out?" = "هل تريد تسجيل الخروج؟";

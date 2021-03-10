@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 class MyLabsAppintmentsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MyLabsAppointmentsProtocol {
-   
+    
+    
+    
     
     
     @IBOutlet weak var noDataFoundStackView: UIStackView!
@@ -63,13 +65,13 @@ class MyLabsAppintmentsViewController: UIViewController,UITableViewDelegate,UITa
         if self.myLabsAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "1"{
             cell.cancelView.isHidden = false
             cell.cancelLbl.isHidden = false
-
+            
             cell.cancelLbl.text = "Cancel".localized
             cell.cancelImageView.image = UIImage(named: "cancel")
         }else if self.myLabsAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "3"{
             cell.cancelView.isHidden = false
             cell.cancelLbl.isHidden = false
-
+            
             cell.cancelLbl.text = "Add Review".localized
             cell.cancelImageView.image = UIImage(named: "add-comment-button")
         }else if self.myLabsAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "2"{
@@ -80,18 +82,17 @@ class MyLabsAppintmentsViewController: UIViewController,UITableViewDelegate,UITa
             print(indexPath.row)
             if self.myLabsAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "1"
             {
-                self.myLabsAppointmentsPresenter.cancelBooking(id: cell.bookingId!)
-
+                self.showAlert(bookingId : cell.bookingId!)
             }else if self.myLabsAppointmentsPresenter.getAppointmentStatus(index: indexPath.row) == "3"{
                 let addReviewStoryboard = UIStoryboard.init(name: "AddReview", bundle: nil)
                 let addReviewViewController = addReviewStoryboard.instantiateViewController(withIdentifier:"AddReviewViewController") as! AddReviewViewController
                 addReviewViewController.bookId = Int(cell.bookingId!)!
                 addReviewViewController.onDoneBlock = {(message) in
                     self.view.makeToast(message.localized, duration: 3.0, position: .bottom)
-
+                    
                 }
                 self.present(addReviewViewController,animated: true)
-
+                
             }
         }
         cell.mapStackViewActionBlock = {
@@ -106,20 +107,20 @@ class MyLabsAppintmentsViewController: UIViewController,UITableViewDelegate,UITa
         
         return cell
     }
-   
-       
+    
+    
     func showAlert(bookingId : String)  {
-        let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Booking Cancel".localized, message: "Are you sure to cancel the reservation?".localized, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Yes", style: .default,handler: { action in
+        alert.addAction(UIAlertAction(title: "Yes".localized, style: .default,handler: { action in
             
+            self.myLabsAppointmentsPresenter.cancelBooking(id: bookingId)
             
-
             
         }))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "No".localized, style: .cancel, handler: nil))
         
-        self.present(alert, animated: true)
+        self.present(alert, animated: true,completion: nil)
     }
     func openGoogleMap(lat:String,lng: String) {
         let latDouble = Double(lat)
@@ -137,6 +138,7 @@ class MyLabsAppintmentsViewController: UIViewController,UITableViewDelegate,UITa
         }
         
     }
+    
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -193,16 +195,22 @@ class MyLabsAppintmentsViewController: UIViewController,UITableViewDelegate,UITa
         tableView.isHidden = true
         indicator.stopAnimating()
     }
-   
+    
     func getMyLabsAppointmentsSuccess() {
-              indicator.stopAnimating()
-            tableView.isHidden = false
-            noDataFoundStackView.isHidden = true
-            tableView.reloadData()
-          }
+        indicator.stopAnimating()
+        tableView.isHidden = false
+        noDataFoundStackView.isHidden = true
+        tableView.reloadData()
+    }
     func showError(error: String) {
         indicator.stopAnimating()
         
     }
-    
+    func cancelReservationSuccess() {
+        self.view.makeToast("Reservation Cancelled Successfully".localized, duration: 3.0, position: .bottom)
+        if isUserLoggedIn {
+            myLabsAppointmentsPresenter.getMyAppintments()
+            
+        }
+    }
 }
