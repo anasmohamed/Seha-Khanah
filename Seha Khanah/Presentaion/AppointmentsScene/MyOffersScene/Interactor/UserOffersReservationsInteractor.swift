@@ -67,7 +67,7 @@ class UserOffersReservationsInteractor {
     }
     func cancelBooking(id:String,
                        completionHandler: @escaping (String?, Error?) -> Void) {
-        AF.request(SehaKhanahRouter.cancelBooking(id: id)).validate().responseJSON{
+        AF.request(SehaKhanahRouter.cancelOfferBooking(id: id)).validate().responseJSON{
             (response) in
             if let response = response.data {
                 print("Response Data: \(response)")

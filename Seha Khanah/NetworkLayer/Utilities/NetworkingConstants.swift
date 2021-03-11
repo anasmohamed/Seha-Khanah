@@ -109,6 +109,7 @@ class NetworkingConstants {
 
     static let cancelBooking = "api/user/booking/cancle/"
     static let cancelLabBooking = "api/user/laboratory/booking/cancle/"
+    static let cancelOfferBooking = "api/user/offer/booking/cancle/"
 
     static let resetPassword = "api/password/reset"
     static let emailResetPasswordParamter = "email"

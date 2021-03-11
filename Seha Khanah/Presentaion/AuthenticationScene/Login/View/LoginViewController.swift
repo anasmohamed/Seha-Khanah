@@ -23,11 +23,20 @@ class LoginViewController: UIViewController ,LoginProtocol{
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    
+    var isAppointmentViewController = false
     let facebookLoginButton = FBLoginButton(frame: .zero, permissions: [.publicProfile,.email])
     var loginPresenter : LoginPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if isAppointmentViewController{
+            self.navigationItem.setHidesBackButton(true, animated: true)
+            self.tabBarController?.tabBar.isHidden = true
+
+        }else{
+            self.navigationItem.setHidesBackButton(false, animated: true)
+            self.tabBarController?.tabBar.isHidden = false
+
+        }
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
         loginPresenter = LoginPresenter(view: self)

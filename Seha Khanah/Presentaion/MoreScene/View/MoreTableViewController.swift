@@ -108,8 +108,9 @@ class MoreTableViewController: UITableViewController {
                 let howTheAppWorksViewController = UIStoryboard.init(name: "HowTheAppWorks", bundle: nil).instantiateViewController(withIdentifier: "HowTheAppWorksViewController") as! HowTheAppWorksViewController
                 self.navigationController!.pushViewController(howTheAppWorksViewController, animated: true)
             case 4:
-                showAlert()
-               
+               let logoutSliderViewController = UIStoryboard.init(name: "Slider", bundle: nil).instantiateViewController(withIdentifier: "LogoutSliderViewController") as! LogoutSliderViewController
+               logoutSliderViewController.modalPresentationStyle = .fullScreen
+               self.navigationController!.present(logoutSliderViewController, animated: true)
             default:
                 break
             }

@@ -38,7 +38,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case booking
     case cancelBooking(id:String)
     case cancelLabBooking(id:String)
-    
+    case cancelOfferBooking(id:String)
     case resetPassword(email:String,userType:String,token:String,password:String,passwordConfirmation:String)
     
     case searchByAreaAndSpecialty(areaId:String,specialtyId:String)
@@ -63,6 +63,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
     case getUserLabsBookings
     var path: String {
         switch self {
+        case .cancelOfferBooking:
+            return NetworkingConstants.cancelOfferBooking
         case .cancelLabBooking:
             return NetworkingConstants.cancelLabBooking
         case .getOffersCategories:
@@ -177,6 +179,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
              .offersForSpecificCategory,
              .getUserLabsBookings,
              .cancelLabBooking,
+             .cancelOfferBooking,
              .verifyResetPasswordToken:
             return .get
         case .doctorReservation,
@@ -204,7 +207,7 @@ enum SehaKhanahRouter: URLRequestConvertible {
         let token = UserDefaults.standard.string(forKey: "token")
         
         switch self {
-        case .booking,.updateUser,.userOffersReservations,.addReview,.doctorReservation,.labReservation,.getUserLabsBookings,.cancelBooking,.cancelLabBooking:
+        case .booking,.updateUser,.userOffersReservations,.addReview,.doctorReservation,.labReservation,.getUserLabsBookings,.cancelBooking,.cancelLabBooking,.cancelOfferBooking:
             print(token!)
             httpHeaders.add(name: "Authorization", value: "Bearer \(token!)")
             //            httpHeaders.add(name: "Content-Type", value:"application/X-Access-Token")
@@ -342,6 +345,8 @@ enum SehaKhanahRouter: URLRequestConvertible {
             params[NetworkingConstants.cancelBooking] = id
         case let .cancelLabBooking(id):
             params[NetworkingConstants.cancelLabBooking] = id
+        case let .cancelOfferBooking(id):
+            params[NetworkingConstants.cancelOfferBooking] = id
         case let .showOffer(id):
             params[NetworkingConstants.showOfferDetails] = id
         case let .searchByAreaAndSpecialty(areaid,specialtyId):
@@ -463,7 +468,16 @@ enum SehaKhanahRouter: URLRequestConvertible {
             urlRequest.headers = httpHeaders
             
             return try URLEncoding.default.encode(urlRequest, with:nil)
+        case .cancelOfferBooking:
+            print("headers \(httpHeaders)")
             
+            let cancelOfferBookingUrlString = (urlRequest.url?.absoluteString)!
+            
+            let cancelOfferBookingParamString = params[NetworkingConstants.cancelOfferBooking]!
+            urlRequest = URLRequest(url: URL(string: cancelOfferBookingUrlString + (cancelOfferBookingParamString as! String))!)
+            urlRequest.headers = httpHeaders
+            
+            return try URLEncoding.default.encode(urlRequest, with:nil)
         case .showOffer:
             let showOfferUrlString = (urlRequest.url?.absoluteString)!
             

@@ -111,7 +111,7 @@ class MyAppointmentsTableViewCell: UITableViewCell,MyAppointmentsTebleViewCellPr
 //        default:
 //            break
 //        }
-        doctorTitleUnderPhoneIconLbl.textAlignment = .natural
+        doctorTitleUnderPhoneIconLbl.textAlignment = .center
         if  MOLHLanguage.currentAppleLanguage() == "en"
         {
             doctorNameLbl.text = (appintment.doctor?.doctorFirstNameEn)! + " " + (appintment.doctor?.doctorLastNameEn)!
