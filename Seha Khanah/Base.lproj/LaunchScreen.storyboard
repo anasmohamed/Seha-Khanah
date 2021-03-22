@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,19 +13,19 @@
             <objects>
                 <viewController storyboardIdentifier="LaunchScreen" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-Bp-WGZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <viewLayoutGuide key="safeArea" id="Ks8-eq-Zkx"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Q8a-IM-eu3">
-                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <rect key="frame" x="493.5" y="664.5" width="37" height="37"/>
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0aB-0c-yFh">
-                                <rect key="frame" x="112" y="242" width="190" height="200"/>
+                                <rect key="frame" x="417" y="472" width="190" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Apk-Kr-TSC"/>
                                     <constraint firstAttribute="width" constant="190" id="RBg-E0-PSW"/>
@@ -35,11 +35,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="w2l-Bp-WGZ" secondAttribute="trailing" id="Cv6-0Z-elg"/>
-                            <constraint firstItem="w2l-Bp-WGZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LMO-Cb-f3X"/>
+                            <constraint firstItem="w2l-Bp-WGZ" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="LMO-Cb-f3X"/>
                             <constraint firstItem="Q8a-IM-eu3" firstAttribute="top" secondItem="0aB-0c-yFh" secondAttribute="bottom" constant="-7.5" id="N6T-zn-1iu"/>
                             <constraint firstItem="Q8a-IM-eu3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RqN-iD-PbS"/>
-                            <constraint firstItem="w2l-Bp-WGZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SEY-bC-M4F"/>
-                            <constraint firstItem="w2l-Bp-WGZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cc3-oe-pld"/>
+                            <constraint firstItem="w2l-Bp-WGZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="SEY-bC-M4F"/>
+                            <constraint firstItem="w2l-Bp-WGZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cc3-oe-pld"/>
                             <constraint firstItem="0aB-0c-yFh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dUS-V0-aXX"/>
                             <constraint firstItem="Q8a-IM-eu3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zjw-CW-YbA"/>
                         </constraints>

@@ -27,6 +27,7 @@
 		A8094A922597BA75003F414A /* AboutAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A912597BA75003F414A /* AboutAppPresenter.swift */; };
 		A8094A942597BA98003F414A /* AboutAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094A932597BA98003F414A /* AboutAppProtocol.swift */; };
 		A8094AA92597D192003F414A /* HowTheAppWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */; };
+		A80BDF6A26023D4A00476EC9 /* MyAuthorizationAppleIDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80BDF6926023D4A00476EC9 /* MyAuthorizationAppleIDButton.swift */; };
 		A80DD8CD25A120AE00FD2CF1 /* LabServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DD8CC25A120AE00FD2CF1 /* LabServices.swift */; };
 		A80DD8D125A120AE00FD2CF1 /* LabServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80DD8D025A120AE00FD2CF1 /* LabServices.storyboard */; };
 		A80DD8D325A120AE00FD2CF1 /* LabServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DD8D225A120AE00FD2CF1 /* LabServicesTableViewController.swift */; };
@@ -277,6 +278,8 @@
 		A8094A912597BA75003F414A /* AboutAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		A8094A932597BA98003F414A /* AboutAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppProtocol.swift; sourceTree = "<group>"; };
 		A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTheAppWorksViewController.swift; sourceTree = "<group>"; };
+		A80BDF6726023B5100476EC9 /* صحة خانة.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "صحة خانة.entitlements"; sourceTree = "<group>"; };
+		A80BDF6926023D4A00476EC9 /* MyAuthorizationAppleIDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthorizationAppleIDButton.swift; sourceTree = "<group>"; };
 		A80DD8CC25A120AE00FD2CF1 /* LabServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabServices.swift; sourceTree = "<group>"; };
 		A80DD8D025A120AE00FD2CF1 /* LabServices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LabServices.storyboard; sourceTree = "<group>"; };
 		A80DD8D225A120AE00FD2CF1 /* LabServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabServicesTableViewController.swift; sourceTree = "<group>"; };
@@ -410,7 +413,7 @@
 		A8A9B36F258CE9E3002DA9A0 /* OffersCategoriesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCategoriesCellView.swift; sourceTree = "<group>"; };
 		A8A9B371258CEEA3002DA9A0 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		A8A9B374258CF6B7002DA9A0 /* OffersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersInteractor.swift; sourceTree = "<group>"; };
-		A8AC86A025875B2600604E64 /* Seha Khanah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seha Khanah.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AC86A025875B2600604E64 /* صحة خانة.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "صحة خانة.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC86A325875B2600604E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC86A525875B2600604E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A8AC86AD25875B2600604E64 /* Seha_Khanah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Seha_Khanah.xcdatamodel; sourceTree = "<group>"; };
@@ -635,6 +638,14 @@
 				A8094AA82597D192003F414A /* HowTheAppWorksViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A80BDF6826023D1500476EC9 /* SignInWithAppleButton */ = {
+			isa = PBXGroup;
+			children = (
+				A80BDF6926023D4A00476EC9 /* MyAuthorizationAppleIDButton.swift */,
+			);
+			path = SignInWithAppleButton;
 			sourceTree = "<group>";
 		};
 		A80DD8CE25A120AE00FD2CF1 /* LabSerivcesScene */ = {
@@ -1808,7 +1819,7 @@
 		A8AC86A125875B2600604E64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8AC86A025875B2600604E64 /* Seha Khanah.app */,
+				A8AC86A025875B2600604E64 /* صحة خانة.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1816,6 +1827,7 @@
 		A8AC86A225875B2600604E64 /* Seha Khanah */ = {
 			isa = PBXGroup;
 			children = (
+				A80BDF6726023B5100476EC9 /* صحة خانة.entitlements */,
 				A880074C25EE6448002E7B34 /* Core */,
 				A8FD3BEC259CBD2D002B0C07 /* Fonts */,
 				A87D28D7258C173700B7957F /* Models */,
@@ -1883,6 +1895,7 @@
 		A8AC86C1258790CE00604E64 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A80BDF6826023D1500476EC9 /* SignInWithAppleButton */,
 				A8F2998A2587AF3500A6BB35 /* UITextFieldIcon+Extension.swift */,
 				A83CB061258B4DBA00207BDC /* State.swift */,
 				A8A7DD3C25950DDC007FBFE0 /* DropShadowView.swift */,
@@ -2303,7 +2316,7 @@
 			);
 			name = "Seha Khanah";
 			productName = "Seha Khanah";
-			productReference = A8AC86A025875B2600604E64 /* Seha Khanah.app */;
+			productReference = A8AC86A025875B2600604E64 /* صحة خانة.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2601,6 +2614,7 @@
 				A85E32822594A12100842D0F /* SearchByPharmacyNameTableViewCell.swift in Sources */,
 				A8BFC9432594B3AE002C90ED /* PharmacyOffersViewProtocol.swift in Sources */,
 				A856771C2591F9B80086CD78 /* SearchByNameInteractor.swift in Sources */,
+				A80BDF6A26023D4A00476EC9 /* MyAuthorizationAppleIDButton.swift in Sources */,
 				A85E32852594A40500842D0F /* PharmacyOffer.swift in Sources */,
 				A843BBAF25A87BE9006231F8 /* MyAppointmentsTableViewCell.swift in Sources */,
 				A85E32872594ADBD00842D0F /* PharmacyOffersInteractor.swift in Sources */,
@@ -3092,8 +3106,9 @@
 			baseConfigurationReference = 4B2CFFACA35D7A4AC1B8348A /* Pods-Seha Khanah.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Seha Khanah/صحة خانة.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = W5RNAX3756;
 				INFOPLIST_FILE = "Seha Khanah/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -3102,7 +3117,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "anas.Seha-Khanah";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "صحة خانة";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3113,8 +3128,9 @@
 			baseConfigurationReference = 3DA4EE16A079CCA158986A8D /* Pods-Seha Khanah.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Seha Khanah/صحة خانة.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = W5RNAX3756;
 				INFOPLIST_FILE = "Seha Khanah/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -3123,7 +3139,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "anas.Seha-Khanah";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "صحة خانة";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

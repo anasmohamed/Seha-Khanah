@@ -16,7 +16,7 @@
         <!--Login-->
         <scene sceneID="OMj-Ub-07e">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="PgB-4O-OnJ" customClass="LoginViewController" customModule="Seha_Khanah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="PgB-4O-OnJ" customClass="LoginViewController" customModule="صحة_خانة" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogr-ri-yed">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,6 @@
                                 <constraints>
                                     <constraint firstItem="BZZ-jr-1y5" firstAttribute="centerX" secondItem="137-7R-8l0" secondAttribute="centerX" id="1Oj-w3-HWp"/>
                                     <constraint firstAttribute="bottom" secondItem="8eK-hW-cpS" secondAttribute="bottom" constant="137" id="5YY-dp-paN"/>
-                                    <constraint firstAttribute="trailing" secondItem="6qF-00-0Q0" secondAttribute="trailing" constant="57" id="6XQ-1e-Lkp"/>
                                     <constraint firstItem="ZcH-8n-eeA" firstAttribute="trailing" secondItem="6qF-00-0Q0" secondAttribute="trailing" id="87d-cl-5cd"/>
                                     <constraint firstItem="Jk4-2G-iGb" firstAttribute="centerX" secondItem="137-7R-8l0" secondAttribute="centerX" id="8uj-ex-RDu"/>
                                     <constraint firstItem="qaE-iU-XGu" firstAttribute="top" secondItem="Jk4-2G-iGb" secondAttribute="bottom" constant="20" id="B2Z-Ca-usJ"/>
@@ -194,6 +193,7 @@
                         <outlet property="mainScrollViewBottomConstraint" destination="FP4-I6-FNd" id="IWk-Ig-qtl"/>
                         <outlet property="passwordTextField" destination="7Dq-SX-3ZD" id="Zg7-Wz-I5J"/>
                         <outlet property="signinWithGoogleBtn" destination="TsU-cj-Hnh" id="065-6h-Prn"/>
+                        <outlet property="socialStackView" destination="6qF-00-0Q0" id="9iR-d9-keG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1g-aH-p8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
