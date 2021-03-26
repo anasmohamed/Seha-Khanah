@@ -30,17 +30,6 @@ class LoginViewController: UIViewController ,LoginProtocol{
     var loginPresenter : LoginPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
-        if #available(iOS 13.0, *) {
-            let authorizationButton = ASAuthorizationAppleIDButton()
-
-
-            
-            authorizationButton.addTarget(self, action: #selector(handleLogInWithAppleIDButtonPress), for: .touchDown)
-            socialStackView.addArrangedSubview(authorizationButton)
-
-        } else {
-            // Fallback on earlier versions
-        }
         
         if isAppointmentViewController{
             self.navigationItem.setHidesBackButton(true, animated: true)
@@ -51,8 +40,13 @@ class LoginViewController: UIViewController ,LoginProtocol{
             self.tabBarController?.tabBar.isHidden = false
             
         }
+        if #available(iOS 13.0, *) {
+            setupProviderLoginView()
+        } else {
+            // Fallback on earlier versions
+        }
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tapGestureRecognizer)
+//        view.addGestureRecognizer(tapGestureRecognizer)
         loginPresenter = LoginPresenter(view: self)
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -89,6 +83,12 @@ class LoginViewController: UIViewController ,LoginProtocol{
         
         
     }
+    @available(iOS 13.0, *)
+    func setupProviderLoginView() {
+        let authorizationButton = ASAuthorizationAppleIDButton()
+        authorizationButton.addTarget(self, action: #selector(handleLogInWithAppleIDButtonPress), for: .touchUpInside)
+        self.socialStackView.addArrangedSubview(authorizationButton)
+    }
     
     @IBAction func forgetPasswordBtnDidTapped(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "ForgetPassword", bundle: nil)
@@ -113,7 +113,8 @@ class LoginViewController: UIViewController ,LoginProtocol{
         }
         
     }
-    @objc private func handleLogInWithAppleIDButtonPress() {
+    @objc
+    func handleLogInWithAppleIDButtonPress() {
         if #available(iOS 13.0, *) {
             let appleIDProvider = ASAuthorizationAppleIDProvider()
             let request = appleIDProvider.createRequest()
@@ -318,22 +319,22 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
             
             // For the purpose of this demo app, store the `userIdentifier` in the keychain.
             self.loginPresenter.loginWithSocial(accessToken:email!
-                                   , provider: "apple")
+                , provider: "apple")
             self.saveUserInKeychain(userIdentifier)
             
             // For the purpose of this demo app, show the Apple ID credential information in the `ResultViewController`.
-//            self.showResultViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
+            //            self.showResultViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
             
-//        case let passwordCredential as ASPasswordCredential:
-//            
-//            // Sign in using an existing iCloud Keychain credential.
-//            let username = passwordCredential.user
-//            let password = passwordCredential.password
+            //        case let passwordCredential as ASPasswordCredential:
+            //
+            //            // Sign in using an existing iCloud Keychain credential.
+            //            let username = passwordCredential.user
+            //            let password = passwordCredential.password
             
             // For the purpose of this demo app, show the password credential as an alert.
-//            DispatchQueue.main.async {
-//                self.showPasswordCredentialAlert(username: username, password: password)
-//            }
+            //            DispatchQueue.main.async {
+            //                self.showPasswordCredentialAlert(username: username, password: password)
+            //            }
             
         default:
             break
